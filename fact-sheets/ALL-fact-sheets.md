@@ -951,6 +951,397 @@ https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/
 # Product fact sheets
 
 ## Product name
+Cytron PS2 Shield
+
+## Aliases
+SHIELD-PS2, Shield-PS2, Cytron PS2 Shield, PS2 Shield, PS2 Shield for Arduino
+
+## What it is
+An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, wired or wireless, into a simple UART protocol so the Arduino can read button and joystick states and drive the controller's vibration motors. It is powered from the Arduino main board (5 V) and has stackable headers with jumper-selectable UART pins and baud rate.
+
+## Specs and functions
+- Product code: SHIELD-PS2
+- Primary source: Shield-PS2 User's Manual V1.0, September 2013 (no datasheet exists)
+- Input voltage (logic operation voltage): 4.5 V min, 5.5 V max
+- Current consumption: 100 mA min, 150 mA typical, 500 mA max
+- VIOH (logic input high level): 3.5 V min, 5.0 V typical, 5.5 V max
+- VIOL (logic input low level): 0 V min, 0 V typical, 1.0 V max
+- Power source: powered from the Arduino main board; "5V powered, low current consumption"
+- Logic level: 5 V
+- UART baud rate (jumper-selectable): 4800, 9600, 57600, 115200; the shield must be reset after changing the jumper
+- UART RX pin (jumper-selectable): D0, D2, D8 or D10; default D2
+- UART TX pin (jumper-selectable): D1, D3, D9 or D11; default D3
+- Shield reset line: Arduino A1 (pull low to reset the shield)
+- Controllers: SONY PS2 controller, wired or wireless; the controller automatically operates in analog mode
+- Vibration motors: controllable (motor 1 on/off; motor 2 speed 0–255)
+- Status LED (orange): blinking = no controller detected; steady low brightness = controller detected; steady high brightness = digital button pressed
+- Power LED (green)
+- Buttons: Arduino main board reset button (Arduino needs around 30 ms to be ready after reset); PS2 RST button (resets the shield only)
+- Headers: stackable analog, power and digital I/O headers (JP4, JP7)
+- Protocol: Arduino sends one command byte (decimal); 0–15 = digital buttons (reply 0 = pressed, 1 = not pressed); 16–19 = joystick X/Y axes (0–255, 128 neutral); 20–27 = joystick up/down/left/right values (0–100); 28 = connection status (1 = detected); 29 + value = motor 1 on/off; 30 + value = motor 2 speed 0–255; 31 = all buttons and joysticks in 6 bytes
+- Packing list: 1 x Shield-PS2, 3 x mini jumper
+- Warranty: 12 months
+- Dimensions: [NOT STATED]
+- Onboard interface IC: [NOT STATED]
+
+## Interfaces and compatibility
+- Compatible boards: Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo and possibly other pin-compatible main boards; library README uses CT UNO
+- Hardware serial option: D0/D1 (unplug the PS2 controller before uploading code); software serial options: D2/D3 (default), D8/D9, D10/D11
+- SoftwareSerial RX restriction from the manual: Mega RX only on 10, 11, 12, 13, 50–53, 62–69; Leonardo RX only on 8, 9, 10, 11, 14, 15, 16
+- PS2 connector socket for a wired controller or wireless receiver; no modification needed
+- Arduino library: Cytron_PS2Shield — https://github.com/CytronTechnologies/Cytron_PS2Shield (ZIP install; examples ReadButton and ReadJoystick)
+- Library API: Cytron_PS2Shield(rxpin, txpin) or Cytron_PS2Shield() for hardware serial; begin(baudrate); readButton(key); readAllButton() with ps_data[6]; vibrate(motor, value); reset(1/0); SERIAL_ERR flag
+- Library constants: PS2_SELECT … PS2_SQUARE (digital), PS2_JOYSTICK_LEFT_X_AXIS … PS2_JOYSTICK_RIGHT_RIGHT (analog), PS2_CONNECTION_STATUS, PS2_MOTOR_1, PS2_MOTOR_2, PS2_BUTTON_JOYSTICK
+- On Leonardo the library maps Serial to Serial1 for the hardware-serial constructor
+- Controller sold separately: Cytron wired (PS-GP-1) or wireless (PS-GP-2) PS2 controller
+
+## Use cases
+- Reading joystick and button states of a PS2 controller as easily as reading UART data
+- Remote-controlling Arduino robots with a wired or wireless PS2 controller
+- Controlling the PS2 controller's vibration motors from the Arduino
+
+## Known limitations
+- Powered only from the Arduino's 5 V (4.5–5.5 V); up to 500 mA consumption
+- Baud rate must match the jumper and the shield must be reset after changing the baud jumper
+- Using hardware serial (D0/D1): programming may fail unless the PS2 controller is unplugged first
+- On Mega and Leonardo only certain pins support SoftwareSerial RX (see manual table)
+- A1 is used as the shield reset line
+- Joystick analog values are not linear and have a large dead zone near the centre
+- Compatibility is not guaranteed for PS2 controllers from other sources; the controller is not included
+- Logic input high level minimum 3.5 V (3.3 V hosts not stated)
+
+## Positioning (kept apart from specs)
+- "a compact yet reliable PS2 Controller Converter"
+- "Reading Joy-stick and button's state of PS2 controller will be as easy as reading UART data"
+
+## Price band
+- RM65.10 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-ps2-shield
+
+## Datasheet
+https://docs.google.com/document/d/1cifT1XqOquLffnu5J961wpKakSO8_LpV35v4sKSaIQU/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1cifT1XqOquLffnu5J961wpKakSO8_LpV35v4sKSaIQU/edit
+
+# Product fact sheets
+
+## Product name
+Cytron ESP8266 WiFi Shield
+
+## Aliases
+SHIELD-ESP-WIFI, Cytron ESP8266 WiFi Shield, ESP8266 WiFi Shield, ESPWiFi Shield, ESP WiFi Shield, ESPWiFi Shield Rev2.0
+
+## What it is
+An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module preloaded with AT-command firmware, which the Arduino talks to over a jumper-selected hardware or software UART. It also has a USB jumper position for PC-to-ESP communication, a microSD card slot on D4, a 3.3 V ESP GPIO breakout, a prototyping area, a Flash/Run switch and separate Arduino and ESP reset buttons.
+
+## Specs and functions
+- Product code: SHIELD-ESP-WIFI
+- Current hardware revision: Rev2.0
+- Primary source: ESPWiFi Shield Rev2.0 User's Manual V2.1, August 2021 (no datasheet exists); Rev1.0 User's Manual V1.0, Nov 2015
+- Wi-Fi module: ESP-WROOM-02 (Rev2.0); Rev1.0 manual says only "ESP8266 module"
+- Module (vendor datasheet v2.0, Nov 2016): IEEE 802.11 b/g/n, 2.4–2.5 GHz, 2 MB SPI flash, 3.0–3.6 V operating voltage, 80 mA average operating current, −40 to 85 °C
+- Preloaded firmware: AT firmware; current Cytron binary Cytron_ESP-12F_WROOM-02_AT_Firmware_V2.2.0.bin (ESP-AT v2.2.0 with UART0 on GPIO1/GPIO3)
+- Default UART as shipped: 9600 baud, 8 data bits, 1 stop bit, no parity (manual prints "9600 kbps")
+- After a fresh firmware flash the module runs at 115200; the manual sets 9600 with AT+UART_DEF=9600,8,1,0,0
+- Arduino RX pin (jumper): D0, D2, D8, D10, D12 or USB
+- Arduino TX pin (jumper): D1, D3, D9, D11, D13 or USB
+- microSD card chip select: D4 (no other connection allowed on this pin)
+- ESP 3V3 GPIO breakout: 9 digital I/O pins and 1 analog input pin; all 3.3 V tolerant only
+- Prototyping area
+- LEDs: Power LED (on when 5 V is supplied to the module), RX LED, TX LED
+- Buttons/switches: Arduino Reset button, ESP Reset button, Flash/Run slide switch (Flash = wait for firmware upload; Run = run installed firmware)
+- Headers: stackable digital I/O and analog input headers
+- Firmware flashing: Espressif Flash Download Tool, 115200 baud, binary at address 0x0; settings CrystalFreq 26M, SPI SPEED 40MHz, SPI MODE DIO, FLASH SIZE 32Mbit, DoNotChgBin selected
+- Packing list: 1 x ESPWiFi Shield, 2 x mini jumper
+- Warranty: 6 months (user manuals V1.0 and V2.1) / 12 months (product page, read 2026-10-16)
+- Dimensions: [NOT STATED]
+- 3.3 V regulator and output current: [NOT STATED]
+- Shield power input range: [NOT STATED] (powered from the Arduino's 5 V)
+- Rev1.0 vs Rev2.0 differences stated: Rev2.0 manual names the ESP-WROOM-02 module and adds a Firmware Installation chapter; pins, jumpers, LEDs, buttons and defaults are identical in both manuals
+
+## Interfaces and compatibility
+- Compatible boards: Arduino Uno, Arduino Duemilanove, Arduino Mega2560, Arduino Leonardo and possibly other pin-compatible main boards; CT-UNO and CIKU also named
+- Recommended UART pairs (RX/TX): USB/USB (Uno/Mega/Leonardo, PC-to-ESP only); D0/D1 (Uno/Mega/Leonardo, hardware serial); D2/D3 (Arduino Uno only; recommended default); D8/D9 (Uno/Leonardo); D10/D11 (Uno/Mega/Leonardo); D12/D13 (Uno/Mega)
+- D10/D11 and D12/D13 on Uno only if no SPI is used; the microSD card cannot be used in that case
+- USB position: hold the Arduino in reset (RST to GND) or upload an empty sketch first
+- Arduino library: Cytron ESPWiFi Shield v3.0.2 — https://github.com/CytronTechnologies/CytronWiFiShield (Library Manager "Cytron ESPWiFi Shield" or ZIP)
+- Library headers: CytronWiFiShield.h, CytronWiFiClient.h, CytronWiFiServer.h, SoftwareSerial.h; global object `wifi`
+- Library API: wifi.begin(rx=2, tx=3) or begin(HardwareSerial&); test(); reset(); firmwareVersion(); echo(); setBaud(); getMode(); setMode(WIFI_STA/WIFI_AP/WIFI_BOTH); connectAP(ssid, pwd); disconnectAP(); softAP(); SSID(); RSSI(); localIP(); config(ip, gateway, subnet); softAPIP(); status(); updateStatus(); tcpConnect(); sslConnect(); tcpSend(); close(); setMux(); configureTCPServer(); setServerTimeout()
+- ESP8266Client: connect(host/ip, port), secure_connect(), available(), read(), write(), stop(), connected()
+- ESP8266Server(port=80): begin(), available(), hasClient(), closeClient(), arg(), args(), uri(), method()
+- Library begin() auto-detects a module at 115200 and switches it to 9600
+- Firmware binaries: https://github.com/CytronTechnologies/esp-at-binaries (use the ESP-12F/WROOM-02 2 MB-or-above build, not the ESP-01S 1 MB build)
+- Example sketch: CytronWiFiDemo (joins an AP, HTTP GET client test, serves /, /analog and /info on port 80)
+
+## Use cases
+- Adding a low-cost Wi-Fi solution to any Arduino project
+- Creating a simple Wi-Fi web server with Arduino Uno + ESPWiFi Shield
+- Performing AT tests and sending AT commands to the ESP8266 from the PC
+- Using the ESP8266 as an additional microcontroller with custom firmware (advanced users)
+- Extra file storage with the microSD slot; small circuits on the prototyping area
+
+## Known limitations
+- D4 is reserved for the microSD chip select
+- UART on D10–D13 disables SPI and the microSD card on Arduino Uno
+- D2/D3 UART pair is for Arduino Uno only
+- ESP GPIO breakout is 3.3 V tolerant only
+- PC-to-ESP (USB jumper) use and firmware flashing require the Arduino to be held in reset or loaded with an empty sketch
+- Firmware must be flashed at 115200 or below; after flashing the module defaults to 115200 and must be set back to 9600
+- ESP-AT v2.x command set is not fully compatible with legacy NONOS-AT firmware
+- Warranty stated as 6 months in the user manuals, 12 months on the product page
+- Shield power input range, regulator current and dimensions not stated
+
+## Positioning (kept apart from specs)
+- "provides low cost WiFi solution with any Arduino projects"
+- "easy and stable UART interface for users to communicate with onboard WiFi module"
+
+## Price band
+- RM52.40 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-esp8266-wifi-shield
+
+## Datasheet
+https://docs.google.com/document/d/1LFCe6MTNQh_0EBHRgc0f6n_hDLNUG8sFuM53oBJG8eE/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1LFCe6MTNQh_0EBHRgc0f6n_hDLNUG8sFuM53oBJG8eE/view
+
+# Product fact sheets
+
+## Product name
+LiPo Power Shield
+
+## Aliases
+SHIELD-LIPO, LiPo Power Shield, Cytron LiPo Power Shield, Shield LiPo, Shield-LiPo, LiPo Shield for Arduino
+
+## What it is
+An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo battery through an onboard 5 V boost converter, with an integrated 500 mA charger fed from the shield's own micro-USB port or from the Arduino's USB port. It has a power switch, charge/full/low-battery/power LEDs, under-voltage protection and a solder jumper for reading the battery voltage from the Arduino.
+
+## Specs and functions
+- Product code: SHIELD-LIPO
+- Primary source: Cytron LiPo Power Shield User's Manual V1.0, January 2016 (no datasheet exists)
+- Output voltage: 5 V
+- Output current: "Output current: 1A" (Features list); body text: "at least 500mA current, and peak at 1A"
+- Battery: 3.7 V 1300 mAh LiPo (single cell)
+- Integrated charger, charging current: 500 mA
+- Charging input: onboard micro-USB port (USB Micro B cable) or the USB port on the Arduino
+- Low battery indicator threshold: 3.3 V
+- Under-voltage protection cut-out: 2.4 V
+- LEDs: Low power (battery below 3.3 V), Power (green), Full (fully charged), Charge (charging)
+- Power switch: switches the battery on/off
+- Main board reset button (Arduino needs around 30 ms to be ready after reset)
+- VBATT solder jumper on the back of the shield: solder the pads to monitor battery voltage from the Arduino
+- Stackable side headers
+- ICSP header: not passed through (the battery is in the way)
+- Packing list: 1 x SHIELD-LIPO
+- Warranty: 12 months
+- Dimensions: [NOT STATED]
+- Boost converter / charger IC: [NOT STATED]
+- Arduino pins used: [NOT STATED]
+- Battery connector type: [NOT STATED]
+
+## Interfaces and compatibility
+- Compatible boards: Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo and possibly other pin-compatible main boards; hardware example uses Arduino UNO / CT-UNO
+- Can be stacked with shields on top, or placed on top of other shields; shields that use ICSP for data (e.g. Ethernet Shield) must be below the LiPo shield
+- Charging from the Arduino's USB port requires the shield's power switch to be OFF; charging from the onboard USB port works with the switch ON or OFF
+- Battery voltage monitoring: bridge the VBATT solder jumper, then read it with the Arduino and view it in the Arduino IDE Serial Monitor (example sketch in the manual)
+- Battery sold separately as an option (3.7 V 1300 mAh LiPo, Lip-3.7-1300) on the product page
+- No Cytron library or GitHub repository for this product
+
+## Use cases
+- Taking an Arduino anywhere with portable LiPo power
+- Charging the LiPo battery from the onboard USB port or the Arduino's USB port
+- Monitoring the battery voltage from the Arduino via the VBATT solder jumper
+
+## Known limitations
+- Output current at least 500 mA continuous, 1 A peak (Features line states 1 A)
+- Single-cell 3.7 V LiPo only; under-voltage cut-out at 2.4 V
+- ICSP header is not passed through; ICSP-dependent shields must sit below it
+- Battery does not charge from the Arduino's USB port while the shield is switched ON
+- Battery voltage monitoring requires soldering the VBATT jumper
+- Battery not in the manual's packing list (separate item)
+- Arduino pins used, dimensions and the monitoring analog pin are not stated in the manual text
+
+## Positioning (kept apart from specs)
+- "You can take your Arduino anywhere you wish with this LiPo Power Shield."
+
+## Price band
+- RM57.75 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-lipo-power-shield
+
+## Datasheet
+https://docs.google.com/document/d/1SKOewuQDMKS-EQSgeAn7w-p6xtPRtCQVZl9MHfjzGYo/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1SKOewuQDMKS-EQSgeAn7w-p6xtPRtCQVZl9MHfjzGYo/view
+
+# Product fact sheets
+
+## Product name
+Cytron 8 Channels RC Servo Controller Shield for Arduino (SHIELD-SERVO)
+
+## Aliases
+SHIELD-SERVO, SHIELD-Servo, Shield-Servo, Cytron Servo Shield, Servo Controller Shield, 8 Channels RC Servo Controller Shield for Arduino, Cytron 8 Channel Servo Shield
+
+## What it is
+An Arduino shield that controls up to 8 RC servo motors over a UART command protocol from an Arduino-compatible board, a PC (via UC00A/UC00C USB-to-serial) or another microcontroller. It has a built-in 5 V switching regulator (4 A continuous, 5 A peak) fed from a 7–25 V servo supply input.
+
+## Specs and functions
+- Servo channels: 8, controlled independently or simultaneously (User's Manual V1.1)
+- Servo supply input VM: 7 V to 25 V; absolute maximum rating 7 V min / 25 V max, VM current 5 A max (User's Manual V1.1)
+- On-board 5 V switching regulator for the servos: 4 A continuous, 5 A peak, total for all servos (User's Manual V1.1); product page states "5V at 5A (peak)"
+- Servo pulse range: 0.5 ms to 2.5 ms (User's Manual V1.1)
+- Position resolution: 0.25 µs; position value 0–8000 (13-bit); pulse width = (0.25 µs × position) + 0.5 ms (User's Manual V1.1)
+- Speed per command: 0–100; 1 = slowest, 100 = fastest, 0 = full speed (faster than 100) (User's Manual V1.1)
+- Host interface: UART, TTL/CMOS 5 V logic; factory default baud rate 9600; baud rate saved in non-volatile memory (User's Manual V1.1)
+- Arduino UART pins selected by DIP switch: shield TX on D0, D2, D10 or D12; shield RX on D1, D3, D11 or D13 (User's Manual V1.1)
+- Alternative 6-pin UART header for UC00A/UC00C: DTR (reset via 0.1 µF), TX, RX, VSEL (5 V in, powers the controller), CTS (not connected), GND (User's Manual V1.1)
+- UART command set: activate/deactivate channel (mode 110, 2 bytes), position and speed (mode 111, 4 bytes), position reporting (mode 101, 1 byte, 2-byte reply), starting position at next start-up (mode 100, 3 bytes, reply 0x04); channel 0 = all channels (User's Manual V1.1)
+- Servos are deactivated at power-up until the activate command is sent (User's Manual V1.1)
+- Servo signal outputs S1–S8: TTL/CMOS 5 V logic; inputs 5 V logic-level compatible (User's Manual V1.1)
+- LEDs: servo power indicator (MPWR) and small green logic power indicator (PWR) (User's Manual V1.1)
+- Buttons: reset (shield controller only, not Arduino) and test (runs every connected servo in a predetermined movement) (User's Manual V1.1)
+- Solder jumper K: share the Arduino 5 V for the servos or supply the Arduino from a single source (User's Manual V1.1)
+- Wrong-polarity protection on the VM input (User's Manual V1.1)
+- Dimension: 7.4 cm × 6.6 cm (User's Manual V1.1)
+- Warranty: 6 months (User's Manual V1.1); 12 months (product page, read 2026-10-16)
+- Arduino library "Cytron Servo Shield" version 2.0.0 (Arduino Library Manager / GitHub); functions init, setChannel, position, angle, getPosition, getAngle, setStartPosition, setStartAngle, registerErrorCallback (GitHub)
+- Library angle() maps 0–180° to positions 156–7260; getPosition() timeout 100 ms; setStartPosition() waits up to 5 s for 0x04 (GitHub)
+- PC GUI "Shield-Servo GUI" written in VB.net (Visual Studio Community 2015), source on the repository's visual-basic branch (User's Manual V1.1, GitHub)
+
+## Interfaces and compatibility
+- Arduino-compatible hosts named: Arduino/Genuino UNO, Mega, CT-UNO, CT-ARM (User's Manual V1.1)
+- 10/8/6-way Arduino headers to the host (User's Manual V1.1)
+- PC control through UC00A or UC00C USB-to-serial converter plugged into the 6-pin header; more than one UC00A/UC00C may be connected to control more than one shield (User's Manual V1.1)
+- Any other microcontroller with 5 V TTL UART via the 6-pin header; direct connection to SKXBee mentioned (User's Manual V1.1)
+- Logic power comes from the Arduino header or from UC00A/UC00C VSEL, not from VM (User's Manual V1.1)
+- Servo power from VM/GND through the regulator, or from the Arduino 5 V by soldering jumper K (User's Manual V1.1)
+- Software: Arduino library (hardware serial or SoftwareSerial), sample sketch "Shield Servo Example.ino" for CT-UNO, VB.net GUI for PC (User's Manual V1.1, GitHub)
+- Packing list: 1 × SHIELD-Servo board; manual and sample code are downloads (User's Manual V1.1)
+
+## Use cases
+- Controlling 8 RC servo motors from an Arduino main board over UART
+- Controlling servos from a computer through UC00A/UC00C and the Shield-Servo GUI
+- Robotics using RC servos: humanoid robots, biologically inspired robots, robotic arms (User's Manual V1.1 framing)
+- Offloading servo speed/position control from the host so the host can run other routines
+
+## Known limitations
+- Regulator output is 4 A continuous / 5 A peak total for all 8 servos (User's Manual V1.1)
+- Powering servos from the Arduino 5 V (jumper K) is "strongly not recommended" for more than one small servo; Arduino 5 V is normally only 1 A max (User's Manual V1.1)
+- If jumper K is used (Arduino 5 V powering servos), do NOT connect any power to VM and GND (User's Manual V1.1)
+- VM absolute maximum 25 V, minimum 7 V (User's Manual V1.1)
+- Servos are deactivated at start-up; the activate command must be sent first (User's Manual V1.1)
+- Position reporting command with channel 0 is not executed (User's Manual V1.1)
+- UART is 5 V logic; the 6-pin header TX/RX "should be interfaced to 5V logic UART" (User's Manual V1.1)
+- Only UART control is described; no I2C, SPI, PWM-input or RC-receiver input (User's Manual V1.1)
+- No command to change the baud rate is documented; default 9600 (User's Manual V1.1)
+- Reset button resets the shield controller only, not the Arduino; do not press during operation (User's Manual V1.1)
+- Manufacturing test point header must not be connected or shorted (User's Manual V1.1)
+- Pulse-width-to-angle correspondence varies between servo manufacturers (User's Manual V1.1)
+- GUI project needs Visual Studio Community 2015 or newer and may need the latest .NET Framework (User's Manual V1.1)
+
+## Positioning (kept apart from specs)
+- Product page: 8-channel RC servo controller shield for Arduino with built-in 5 V at 5 A (peak) switching regulator, supply 7 V to 25 V
+- User's Manual: "reliable yet user friendly RC Servo motor controller to hobbyist and students"; "the enhanced version from SC08A" with on-board regulator and UC00A/UC00C interface; UART "present a flexible, fast and easy to use feature"
+
+## Price band
+RM79.80 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-8-channels-rc-servo-controller-shield-for-arduino
+
+## Datasheet
+https://docs.google.com/document/d/191P6FwTgJ_dWhAhB3eWfP0YMSbI4_7Kehgzw3pYy-AY/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/191P6FwTgJ_dWhAhB3eWfP0YMSbI4_7Kehgzw3pYy-AY/view
+
+# Product fact sheets
+
+## Product name
+Cytron Screw Terminal Shield (SHIELD-SCREW2)
+
+## Aliases
+SHIELD-SCREW2, Shield-Screw2, Screw Terminal Shield, Cytron Screw Terminal Shield, Cytron Screw Shield, Screw Terminal Shield for Arduino
+
+## What it is
+An Arduino-format shield that extends all pins of the Arduino out to 3.5mm pitch screw terminals. It also carries a prototyping area of 0.1" spaced through-holes (connected and unconnected), a couple of 5V and GND busses, a reset button and a LED.
+
+## Specs and functions
+- Shield function: Adapter Prototype (Getting Started Guide)
+- Screw terminal pitch: 3.5mm (Getting Started Guide)
+- Pins extended: "all pins of the Arduino" to screw terminals (Getting Started Guide)
+- Prototyping area: large prototyping space of both connected and unconnected 0.1" spaced through-holes (Getting Started Guide); located at the middle of the board (product page)
+- Power busses: a couple of 5V and GND busses (Getting Started Guide)
+- Reset button: yes (Getting Started Guide)
+- LED: one LED (Getting Started Guide)
+- Board size: 74.93mm x 81.28mm (Getting Started Guide)
+- Stackable: Yes (Getting Started Guide)
+- Terminal count: [NOT STATED]
+- Terminal voltage/current rating: [NOT STATED]
+- ISP/ICSP pads: [NOT STATED]
+- Packing list: Screw Terminal Shield only (Getting Started Guide)
+- Warranty: 12 months, manufacturing defects only; damage caused by misuse not covered; freight cost both ways not covered (Getting Started Guide; product page also states 12 months)
+
+## Interfaces and compatibility
+- Compatible mainboards: Arduino Uno, Arduino Mega 2560, Arduino Mega ADK, Arduino Leonardo, Arduino Due, CT-UNO, CIKU (Getting Started Guide)
+- Mounts by stacking on the Arduino main board headers; stackable, so another shield can go on top (Getting Started Guide)
+- Interface to the user: 3.5mm pitch screw terminals for the Arduino pins; 0.1" prototyping through-holes; 5V and GND busses (Getting Started Guide)
+- No software or library required (Getting Started Guide has no software section)
+- Exact terminal order and count: [NOT STATED]
+
+## Use cases
+- Screwing wires directly to the Arduino pins instead of using jumper wires
+- Prototyping circuits on the 0.1" through-hole area while the Arduino pins remain available on screw terminals
+- Stacking under another shield (stackable headers)
+
+## Known limitations
+- Terminal count, terminal order and terminal ratings are not stated in the Getting Started Guide
+- No ISP/ICSP pads are documented
+- No regulator, fuse or protection is documented; the 5V and GND busses are the Arduino's own supply
+- Whether the extra Arduino Mega 2560 / Due pins are brought to terminals is not stated
+- The Getting Started Guide is V1.0, JAN 2015
+
+## Positioning (kept apart from specs)
+- Product page: "upgraded the screw shield with the prototyping area at the middle"
+- Getting Started Guide: has "a lot of the utility provided by Arduino Protoshield"
+
+## Price band
+RM31.50 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-screw-terminal-shield
+
+## Datasheet
+https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/edit
+
+# Product fact sheets
+
+## Product name
 Robo Pico
 
 ## Aliases
@@ -1958,6 +2349,80 @@ https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1
 # Product fact sheets
 
 ## Product name
+Grove WiFi 8266 - IoT for micro:bit and beyond — GRV-WIFI-8266
+
+## Aliases
+GRV-WIFI-8266, Grove WiFi 8266, Grove WiFi 8266 - IoT for micro:bit and beyond, Grove WiFi 8266 IoT for micro:bit & Beyond, Cytron Grove WiFi 8266, ESP8266 WiFi Grove Module, Grove ESP8266
+
+## What it is
+A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected to a host controller through a 4-pin Grove port (GND, VCC, RX, TX) as a UART serial link. It ships with Cytron's build of the Espressif ESP-AT (AT-command) firmware and has a reset button, a boot button, a power LED and a breakout of all ESP-12F pins.
+
+## Specs and functions
+- Wi-Fi module: Ai-Thinker ESP-12F, powered by the ESP8266 (datasheet)
+- Power input voltage (VCC): 3.0 V min, 6.0 V max (datasheet)
+- Digital input voltage (Rx & GPIOs): low level −0.3 V min to 0.8 V max; high level 2.5 V min to 3.6 V max (datasheet)
+- Digital output voltage (Tx & GPIOs): low level 0 V min to 0.4 V max; high level 2.6 V min to 3.3 V max (datasheet)
+- Operating temperature: −20 °C min, 85 °C max (datasheet)
+- Reset button: resets the ESP8266 (datasheet)
+- Boot button: press and hold while resetting to enter bootloader mode, used to update firmware or program the ESP8266 (datasheet)
+- Power LED: on when powered up (datasheet)
+- ESP-12F pins breakout: all module pins broken out; pinout printed on the bottom of the PCB (datasheet)
+- Preloaded firmware: Cytron_ESP-12F_WROOM-02_AT_Firmware V2.2.0, compiled by Cytron from Espressif ESP-AT source (Cytron GitHub esp-at-binaries)
+- AT command UART in Cytron firmware: UART0 GPIO3 (RX) / GPIO1 (TX); log output UART1 GPIO2 (TX) (Cytron GitHub esp-at-binaries)
+- UART baud used by Cytron software: 115200 (Cytron GitHub)
+- Supply current: [NOT STATED]
+- Dimensions: [NOT STATED] (datasheet gives a drawing only)
+- Weight: [NOT STATED]
+- Flash size, RF standard, antenna: [NOT STATED] by Cytron sources
+- Datasheet: GROVE WIFI 8266 Datasheet, Rev 1.0, August 2021
+
+## Interfaces and compatibility
+- Grove port, 4 pins: GND (ground); VCC (positive supply, 3 V–6 V); RX (serial Rx of the ESP8266, connect to host's Tx); TX (serial Tx of the ESP8266, connect to host's Rx) (datasheet)
+- Host boards used by Cytron software: micro:bit (MakeCode extension, PXT target microbit); Maker Pi Pico and Maker Pi RP2040 (CircuitPython IoT examples) (Cytron GitHub)
+- MakeCode extension: pxt-esp8266, version 2.0.1, block category "ESP8266 WiFi", tested with Espressif ESP-AT firmware v2.2.0; default init Tx P16, Rx P15, baud 115200; blocks for WiFi connect, ThingSpeak upload, Blynk read/write, internet time (SNTP) and Telegram message; https://github.com/CytronTechnologies/pxt-esp8266 (Cytron GitHub)
+- CircuitPython examples: Adafruit libraries adafruit_espatcontrol, adafruit_requests, adafruit_minimqtt, adafruit_io; UART TX GP16 / RX GP17 at 115200; examples for Adafruit IO, Blynk, simple test, Telegram, ThingSpeak; requires ESP-AT firmware v2.2.0 and above; https://github.com/CytronTechnologies/MAKER-PI-PICO/tree/main/Example%20Code/CircuitPython/IoT (Cytron GitHub)
+- ESP-AT firmware binaries and update notes: https://github.com/CytronTechnologies/esp-at-binaries (Cytron GitHub)
+- AT command reference named by Cytron: Espressif ESP-AT User Guide, release v2.2.0.0 for ESP8266 (Cytron GitHub)
+- Warranty: 12 months (product page)
+
+## Use cases
+- Enable a micro:bit to send and receive data over Wi-Fi with MakeCode blocks (Cytron GitHub)
+- Upload sensor data to ThingSpeak from micro:bit or Raspberry Pi Pico (Cytron GitHub)
+- Read and write Blynk virtual pins from micro:bit or Raspberry Pi Pico (Cytron GitHub)
+- Send Telegram bot messages from micro:bit or Raspberry Pi Pico (Cytron GitHub)
+- Get internet time (SNTP) on micro:bit (Cytron GitHub)
+- Send data to Adafruit IO from Maker Pi Pico / Maker Pi RP2040 with CircuitPython (Cytron GitHub)
+
+## Known limitations
+- Serial RX/GPIO input high level is 2.5–3.6 V max and TX output high is 2.6–3.3 V; the logic is 3.3 V level even though VCC accepts 3–6 V (datasheet)
+- The module is used as an AT-command modem over UART; Espressif ESP-AT v2.x commands are not fully compatible with the legacy NONOS-AT v1.7.x firmware (Cytron GitHub esp-at-binaries)
+- Cytron's firmware keeps AT on GPIO1/GPIO3; stock Espressif ESP-AT v2.0.0 and above uses GPIO13/GPIO15 for AT, so reflashing with stock Espressif binaries moves the AT UART off the Grove RX/TX pins (Cytron GitHub esp-at-binaries)
+- ThingSpeak data can only be uploaded every 15 seconds (Cytron GitHub pxt-esp8266)
+- The Cytron ESP-01S AT firmware (1 MB flash) does not support OTA update and is not the binary for this module; this module uses the ESP-12F/WROOM-02 binary for 2 MB flash or above (Cytron GitHub esp-at-binaries)
+- Supply current, dimensions, weight, flash size and RF specification are not stated in the Cytron datasheet
+- The GitHub firmware-update procedures cover the ESP-01S and the ESP8266 WiFi Shield; no Grove-module-specific procedure is given (Cytron GitHub esp-at-binaries)
+
+## Positioning (kept apart from specs)
+- Product page name: "Grove WiFi 8266 - IoT for micro:bit and beyond" (product page)
+
+## Price band
+RM27.72 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond
+
+## Datasheet
+https://docs.google.com/document/d/1ub3WuRrp1F8QijoHCDjOez6SC1mtG5pQglhiPdeB12k/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1ub3WuRrp1F8QijoHCDjOez6SC1mtG5pQglhiPdeB12k/edit
+
+# Product fact sheets
+
+## Product name
 Maker Mini Sumo Controller
 
 ## Aliases
@@ -2236,6 +2701,230 @@ Datasheet
 # Product fact sheets
 
 ## Product name
+8 Channel Servo Controller (SC08A)
+
+## Aliases
+SC08A, SC08A Servo Controller, 8 Channel Servo Controller, Cytron SC08A, SC08A 8 Channel Servo Controller
+
+## What it is
+A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 V TTL UART at 9600 baud from a PC via UC00A or from a microcontroller. Two boards can be linked to control 16 servos; servo power is a separate supply on a terminal block and there is no on-board regulator.
+
+## Specs and functions
+- Servo channels: 8, driven independently (User's Manual V1.0)
+- Extendable to 16 channels: two controllers linked together to drive 16 servos (User's Manual V1.0)
+- Servo pulse range: 0.5 ms to 2.5 ms (User's Manual V1.0)
+- Resolution: 8000 steps = 0.25 µs; pulse width = (0.25 µs × position) + 0.5 ms, position 0–8000 (User's Manual V1.0)
+- Optional servo ramping: one of 100 ramp rates per servo; speed byte 0–100, 1 = slowest, 100 = fastest, 0 = faster than 100 (User's Manual V1.0)
+- Servo activation for each channel: any channel can be activated or deactivated; initial status is deactivated (User's Manual V1.0)
+- Optional position reporting: request the position of an individual servo; 2-byte reply (User's Manual V1.0)
+- Independent starting position command for each channel, applied at the next start-up, 0–8000; reply byte 0x04 (User's Manual V1.0)
+- UART: 9600 baud rate, TTL level (User's Manual V1.0)
+- UART command set: activate/deactivate (mode 110, 2 bytes), position and speed (mode 111, 4 bytes), position reporting (mode 101, 1 byte), starting position (mode 100, 3 bytes); channel 0 = all channels (User's Manual V1.0)
+- Controller supply: 5 V, from UC00A (PC use) or shared from the host microcontroller board (User's Manual V1.0)
+- Servo supply: independent source on the blue terminal block; 4.8 V to 9 V (standard 4.8 V to 6.0 V); some servos need 7.2 V (User's Manual V1.0)
+- Microcontroller: PIC16F1827 (User's Manual V1.0)
+- JP11 mini jumper: "1-8" for a single board or the first board, "9-16" for the second board (User's Manual V1.0)
+- LEDs: orange servo power indicator; green 5 V for PIC indicator (User's Manual V1.0)
+- Buttons: servo test (drives servos to the end position); reset (stops all pulse generation, servos free-run) (User's Manual V1.0)
+- Connectors: two 4-way UART/expansion headers (U_1, U_2) (User's Manual V1.0)
+- Packing list: 1 × SC08A main board, 1 × 2510H-04 connector with terminal pins, 1 × 2561-04 connector with terminal pins, 1 × mini jumper for JP11 (User's Manual V1.0)
+- Warranty: 6 months (User's Manual V1.0); 12 months (product page, read 2026-10-16)
+
+## Interfaces and compatibility
+- PC: UC00A USB-to-UART converter plugged into the 4-way UART connector; driver creates a virtual COM port; SC08A takes its 5 V from the UC00A (User's Manual V1.0)
+- Microcontroller: 5 V TTL UART and 5 V supply, minimum 3 wires; TX/RX cross-connected; SC08A TX only needed for position reporting (User's Manual V1.0)
+- Only one host (computer or microcontroller) may be connected at a time (User's Manual V1.0)
+- Expansion: second SC08A joined by a separate 4-way interlink cable via U_1 or U_2; board 2 jumper at "9-16"; board 2 channel S1 is addressed as S9 (User's Manual V1.0)
+- Sample code: SK40C_16F877A_SC08A (PICC Lite, PIC16F877A on SK40C, also PIC16F876A) (User's Manual V1.0); GitHub SC08A_PIC16F877A (Feb 2011, Apr 2014) and SC08A_PIC18F4520 (May 2012) (GitHub)
+- PC GUI "SC08A Servo Control Panel" for 8 or 16 servos; GitHub GUI_SC08A, VB 2010 Express project, July 2012 (User's Manual V1.0, GitHub)
+- Wireless servo control tutorial with XBee series 1 and SKXBee (GitHub)
+- Servo named in the manual's speed table: Cytron C36S (User's Manual V1.0)
+
+## Use cases
+- Driving 8 RC servos from a PC through UC00A and the SC08A Servo Control Panel
+- Driving RC servos from a PIC microcontroller (SK40C) over UART
+- Linking two boards for 16-servo projects
+- Wireless servo control over XBee (Cytron tutorial)
+- Robotics using RC servos: humanoid robots, biologically inspired robots, robotic arms (User's Manual framing)
+
+## Known limitations
+- No on-board regulator: the servo supply goes directly to the servos; over-supply voltage may spoil the servo motor (User's Manual V1.0)
+- Servo power must be connected correctly before servos are plugged in, else all servo motors will be damaged (User's Manual V1.0)
+- Servo headers are not polarised; a servo plugged in backwards may be destroyed (User's Manual V1.0)
+- Controller needs its own 5 V from the UC00A or the host (User's Manual V1.0)
+- Only one host may be connected at a time (User's Manual V1.0)
+- The expansion cable must not be used to connect the SC08A to a microcontroller (User's Manual V1.0)
+- Wrong UART connection can spoil the SC08A and the host (User's Manual V1.0)
+- Position reporting is not executed for channel 0 (User's Manual V1.0)
+- Reset stops all pulses; servos free-run until re-activated (User's Manual V1.0)
+- Only UART at 9600 baud is described; no I2C, SPI, PWM-input or RC receiver input, and no baud-rate change command (User's Manual V1.0)
+- Pulse-width-to-angle correspondence varies between servo manufacturers (User's Manual V1.0)
+- Speed-vs-time figures are approximate and vary with the servo (User's Manual V1.0)
+
+## Positioning (kept apart from specs)
+- User's Manual: 8-channel servo controller, extendable to 16 channels, with position reporting, per-channel activation, start-up position and ramping, for RC servo robotics (humanoid, biologically inspired robots, robotic arms)
+
+## Price band
+RM65.10 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-8-channel-servo-controller
+
+## Datasheet
+https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view
+
+## Source type
+Datasheet
+
+## Source link
+https://www.gotronic.fr/pj2-38783-nt-3349.pdf
+
+# Product fact sheets
+
+## Product name
+UC00C (CH340) USB to UART Converter
+
+## Aliases
+UC00C, UC00C CH340, CH340 USB to UART Converter, Cytron UC00C, Cytron USB to UART Converter UC00C
+
+## What it is
+A small USB-powered converter board that gives a computer a virtual COM port and connects it directly to a microcontroller's TTL UART at 3.3 V or 5 V logic. It plugs onto Arduino-style bootloader headers (Pro Mini, BBFuino, Fio) for program loading.
+
+## Specs and functions
+- USB-to-UART chip: "USB to UART chip", not named (user manual); CH340 (product page title)
+- USB connector: USB Micro-B socket
+- Power: USB powered, no external source required; "5V from USB port is available for user"
+- UART logic level: 3.3 V or 5 V TTL, set by the VCC selectable slide switch (label F)
+- VCC output pin: 3.3 V or 5 V, follows the switch
+- 6-way header socket: DTR, RX, TX, VCC, CTS, GND
+- DTR: used for auto-reset on Arduino-compatible boards
+- CTS: hardware handshaking pin
+- LEDs: Power LED (green), RX LED, TX LED (RX/TX LEDs work only when connected to a PC over USB)
+- Driver: plug and play, driver needed for first-time use only; appears as a Virtual COM port
+- Operating systems stated: Windows 7, 8 and 10
+- Dimension: 3.9 cm x 2 cm
+- Packing list: 1 x UC00C (USB Micro-B cable optional, not included)
+- Warranty: 1 year (user manual); 12 months (product page)
+- Baud rate range, VCC/5V output current, supply current, operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Host: PC USB port (Micro-B cable)
+- Target: any 3.3 V or 5 V TTL UART device; "development between computer and microcontroller, 3.3V or 5V logic"
+- Bootloader compatible: BBFuino, Boarduino, Arduino Mini Pro "etc."; header socket reserved for loading program to Arduino Mini Pro, BBFuino, Fio and others
+- Driver links (product page): Windows CH341SER V3.5 Mar2019 https://drive.google.com/file/d/1kk0b2HTYLKBXxS4TNNlC_neef6iE94sV/view ; Mac CH341SER_MAC V1.5 Mar2019 https://drive.google.com/file/d/1iZ4fO-eAttw0ztlWVN_VTPB9cVSOu3CX/view ; Linux CH341SER_LINUX V1.5 Mar2019 https://drive.google.com/file/d/1YQcex-0j6PN2I8J1Fa5ecxfsCLarANj2/view ; Mac troubleshooting https://cdn.cytron.io/makeruno/Troubleshooting_CH431_Driver_For_Mac.pdf
+- User manual (2016) states "Linux normally pre-installed with the proper driver"
+
+## Use cases
+- Serial communication between a microcontroller and a PC through a virtual COM port
+- Loading program into Arduino boards without an onboard USB chip (Arduino Mini Pro, BBFuino, Fio, Boarduino)
+- Replacing the old PC serial port (DB9) plus RS232 level shifter path with a USB connection
+
+## Known limitations
+- "Vsel" and "5V" are supplied directly from the computer's USB port; it is advised not to use this power to power application circuits or devices; wrong polarity, wrong voltage or a short might permanently damage the computer
+- Only CTS is broken out as a handshake pin; RTS, DSR, DCD and RI are not on the 6-way socket
+- USB powered only; no external power input
+- Does not provide RS232 levels (TTL UART only)
+- The user manual names only Windows 7, 8 and 10; Windows 11 and current macOS support are not stated
+- Driver installation is required once before the COM port appears
+
+## Positioning (kept apart from specs)
+- "Low cost, easy to use USB to UART converter" aimed at development between computer and microcontroller (user manual)
+- "USB plug and play, direct interface with microcontroller" (user manual)
+
+## Price band
+RM15.75 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-uc00c-ch340-usb-to-uart-converter
+
+## Datasheet
+https://docs.google.com/document/d/1adRsDAq_2xHbCvTTBw_mdcA3iCzYsW2S5WuDaZOizjc/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1adRsDAq_2xHbCvTTBw_mdcA3iCzYsW2S5WuDaZOizjc/view
+
+# Product fact sheets
+
+## Product name
+UC00A (FTDI) USB to UART Converter
+
+## Aliases
+UC00A, UC00A Rev3.0, UC00A R3, FTDI USB to UART Converter, Cytron UC00A, Cytron USB to UART Converter UC00A
+
+## What it is
+A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer a virtual COM port and connects directly to a 3.3 V or 5 V TTL UART device. Rev3.0 (current) has a USB Micro-B socket, a 3.3V/5V slide switch and a standard 6-way header socket for Arduino-style bootloader headers.
+
+## Specs and functions
+- USB-to-UART chip: "FTDI chip" (user manual); FT232RL (Rev3.0 schematic linked from product page)
+- USB connector: USB Micro-B socket
+- Power: USB powered, no external source required
+- UART logic level: 3.3 V or 5 V TTL, set by Vsel slide switch (label G); default Vsel is 5V
+- Standard 6-way header socket: DTR, RXI, TXO, VCC, CTS, GND (DTR marked Green, GND marked Black)
+- VCC pin: 3.3 V or 5 V output, follows Vsel
+- Extra UART pins (JP4/JP6): 5V, GND, CTS, DCD, DSR, RI, RX, RTS, DTR, TX; logic level follows Vsel
+- 5V pin: constant 5 V from USB, not affected by Vsel; maximum current "limited from USB port, normally is 900mA"
+- DTR: used for auto-reset on Arduino-compatible boards
+- CTS, DCD, DSR, RI, RTS: "unused under normal UART operation"
+- LEDs: Power LED (green), FTDI TX indicator LED, FTDI RX indicator LED
+- Driver: plug and play, FTDI driver needed for first-time use only; appears as a Virtual COM port
+- Operating systems stated: Windows XP, Vista, 7, 8 and 10
+- Dimension (Rev3.0): 4.4 cm x 2 cm
+- Packing list: 1 x UC00A Rev3.0 (USB Micro-B cable optional, not included)
+- Warranty: 6 months (Rev3.0 user manual, Dec 2018); 12 months (product page, 2026-10-16)
+- Revision history: Rev1.0 (2008) USB-A plug, 5 V only, 4-way 2510 pin header, 5V max 200 mA; Rev2.0 (2012) Mini USB, Vsel solder jumper, 4-way 2510 connector plus 6-way socket, 5V max 250 mA, 3.3V max 50 mA, 3.9 cm x 2 cm; Rev3.0 (current) Micro-B, slide switch, 6-way socket plus JP4/JP6, no 2510 connector
+- Baud rate range, VCC output current (Rev3.0), supply current, operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Host: PC USB port (Micro-B cable)
+- Target: "any device which offer 3.3V/5V UART interface, this includes microcontroller, RFID reader, XBee, Bluetooth, WiFi, wireless module and more"
+- Bootloader compatible: BBFuino, Boarduino, Arduino Mini Pro "etc."; 6-way socket used for loading program to Arduino Pro Mini, BBFuino, Fio and others
+- Program loading stated for Arduino Pro Mini, Arduino FIO, ArduPilot, Rainbow LED Ring V3, BBFuino
+- Arduino Pro Mini wiring: DTR (Green) to RESET, RX to TXD, TX to RXD, Vsel to 5V, CTS to GND, GND (Black) to GND
+- PC-to-PC link: two UC00A cross-wired RXI to TXO, TXO to RXI, GND to GND, same baud on both PCs
+- Drivers: FTDI VCP driver; manual links Driver Installation Guide for Win 7 https://drive.google.com/file/d/12HDo0o2ygGj9s0I90drnNp0FnFZG2jAx/view and FTDI driver page http://www.ftdichip.com/FTDrivers.htm
+- Schematic Rev3.0: https://drive.google.com/file/d/15aQuzmaxM7FiHtMJkuptoebEAMuz-Wip/view
+
+## Use cases
+- Serial communication between a microcontroller or UART module and a PC through a virtual COM port
+- Loading program into Arduino boards without an onboard USB chip (Arduino Pro Mini, FIO, BBFuino, ArduPilot, Rainbow LED Ring V3)
+- Testing a UART device (example: SKPS PS2 controller converter) from a PC terminal
+- Communication between two PCs using two UC00A boards
+
+## Known limitations
+- "Vsel" and "5V" are supplied directly from the computer's USB port; it is advised not to use this power to power application circuits or devices; wrong polarity, wrong voltage or a short might permanently damage the computer
+- Handshake pins CTS, DCD, DSR, RI, RTS and DTR are "unused under normal UART operation"
+- USB powered only; no external power input
+- TTL UART only; does not provide RS232 levels
+- Rev3.0 has no 4-way 2510 connector (Rev1.0/Rev2.0 cables do not apply)
+- The user manual names only Windows XP to Windows 10; Windows 11 and current macOS support are not stated
+- Driver installation is required once before the COM port appears
+- Warranty differs between user manual (6 months) and product page (12 months)
+
+## Positioning (kept apart from specs)
+- "Low cost, easy to use USB to UART converter" aimed at development between computer and microcontroller (user manual)
+- "USB plug and play, direct interface with microcontroller and it provides 5V power supply from USB port" (user manual)
+
+## Price band
+RM43.05 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-uc00a-ftdi-usb-to-uart-converter
+
+## Datasheet
+https://docs.google.com/document/d/1pFK7DSRuZB7SeP3aCmjYzWB0i7aT-C_W_D-x25WLops/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1pFK7DSRuZB7SeP3aCmjYzWB0i7aT-C_W_D-x25WLops/view
+
+# Product fact sheets
+
+## Product name
 Maker Line
 
 ## Aliases
@@ -2384,6 +3073,425 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1SppJcAoTFGFDSaeBXrI4Ocq24quq-5ybFpr2bNsGMOI/edit
+
+# Product fact sheets
+
+## Product name
+Maker Reflect: Simplifying IR Reflectance Sensor for Beginner (MAKER-REFLECT)
+
+## Aliases
+MAKER-REFLECT, V-MAKER-REFLECT, Maker Reflect, Cytron Maker Reflect, Maker Reflect: Simplifying IR Reflectance Sensor for Beginner, Maker Reflect IR Reflectance Sensor, Maker Reflectance Sensor, Analog Reflectance Sensor (Line Detector)
+
+## What it is
+A tiny analog infrared reflectance sensor (line detector) with a 3-pin VCC/GND/OUT connector; its analog output voltage rises on darker surfaces. It runs from 3.0 V to 5.5 V and senses 1 mm to 40 mm at VCC = 5 V with a black line on a white surface.
+
+## Specs and functions
+- Sensor type: IR Reflectance Sensor — infrared sensors for line detection (datasheet)
+- VCC voltage: 3.0 V min, 5.5 V max (datasheet absolute maximum ratings)
+- Analog output voltage: 0 V min, VCC max (datasheet)
+- Output rule: higher voltage = darker surface (datasheet)
+- Sensing distance: 1 mm min, 40 mm max, at VCC = 5 V with a black line on white surface (datasheet)
+- Sensing distance may reduce if VCC is less than 5 V or the line-background contrast is low (datasheet)
+- Reverse polarity protection: none — "Reversed Polarity will damage the sensor" (datasheet)
+- On-board threshold, trimmer, calibration or switch: none listed (datasheet)
+- Indicator LED: none listed (datasheet)
+- Supply current: [NOT STATED]
+- Sensor IC / IR part number: [NOT STATED]
+- Dimensions: [NOT STATED] (datasheet gives a drawing only)
+- Operating temperature: [NOT STATED]
+- Datasheet: MAKER-REFLECT Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, November 2019
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Connector: 3 pins — VCC (power input), GND (ground), OUT (analog output)
+- Read with any analog input (ADC) pin; no library needed
+- Compatible boards named in the datasheet: [NOT STATED]
+- SUMO:BIT edge-sensor ports accept "Maker Reflect or any other analog sensors" (SUMO:BIT datasheet)
+- Maker Mini Sumo Controller edge ports (A0/A1, analog) are read with the Cytron Maker Sumo Library (Maker Mini Sumo datasheet and library)
+- Sold on the same product page as the newer Maker Reflect S (option "Maker Reflect S", code MAKER-REFLECT-S); the product page says "The new Maker Reflect S comes with a smaller threshold sensing for more stable output"
+- Documents linked from the product page: datasheet only
+
+## Use cases
+- Line detection (datasheet: "Infrared sensors for line detection")
+- Edge sensor for sumo robots (SUMO:BIT and Maker Mini Sumo edge-sensor ports)
+
+## Known limitations
+- Analog output only; the threshold must be set in code
+- Reversed polarity will damage the sensor (no reverse polarity protection)
+- Sensing distance of 1 mm to 40 mm applies at VCC = 5 V with a black line on white; it reduces at lower VCC or low contrast
+- Supply current, dimensions and sensor part number are not stated in the datasheet
+- No Cytron library or code example
+
+## Positioning (kept apart from specs)
+- "Simplifying IR Reflectance Sensor for Beginner" (product page title)
+- Cytron's beginner-series reflectance sensor; the newer Maker Reflect S is positioned as the more stable-output option on the same page
+
+## Price band
+RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner
+
+## Datasheet
+https://docs.google.com/document/d/1RdldHYXGyjtmrZmqSi-gXY-nAEqwA7t_kV5X4JFv7qE/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1RdldHYXGyjtmrZmqSi-gXY-nAEqwA7t_kV5X4JFv7qE/edit
+
+# Product fact sheets
+
+## Product name
+Maker Reflect S (MAKER-REFLECT-S)
+
+## Aliases
+MAKER-REFLECT-S, Maker Reflect S, Cytron Maker Reflect S, Maker Reflect-S, MakerReflectS
+
+## What it is
+The newer "S" variant of the Maker Reflect infrared reflectance sensor (line detector) with the same 3-pin VCC/GND/OUT connector; its output is higher on darker surfaces and its datasheet lists it as digital-IO compatible with no ADC required. It is a 5 VDC sensor with an optimal sensing distance of 3 mm.
+
+## Specs and functions
+- Sensor type: IR Reflectance Sensor — infrared sensors for line detection (datasheet)
+- Operating voltage: 5VDC (datasheet)
+- Supply current: 25mA (datasheet)
+- Digital IO Compatible (datasheet)
+- No ADC required (datasheet)
+- Optimal sensing distance: 3mm (0.125") (datasheet)
+- Output: "OUT : Analog output. Higher voltage = darker surface." (datasheet connector table)
+- Threshold: "The new Maker Reflect S comes with a smaller threshold sensing for more stable output" (product page); no numeric threshold stated
+- Reverse polarity protection: none — "Reversed Polarity will damage the sensor" (datasheet)
+- On-board adjustment, trimmer or switch: none listed (datasheet)
+- Indicator LED: none listed (datasheet)
+- Supply voltage min/max: [NOT STATED]
+- Sensing distance min/max: [NOT STATED]
+- Output voltage levels: [NOT STATED]
+- Sensor IC / IR part number: [NOT STATED]
+- Dimensions: [NOT STATED] (datasheet gives a drawing only)
+- Operating temperature: [NOT STATED]
+- Datasheet: MAKER-REFLECT-S Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, February 2026
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Connector: 3 pins — VCC (power input), GND (ground), OUT (output)
+- Readable on a digital input pin (datasheet: "Digital IO Compatible", "No ADC required") or an analog input (datasheet: "Analog output")
+- Compatible boards named in the datasheet: [NOT STATED]
+- Sold as the option "Maker Reflect S" on the Maker Reflect product page (code MAKER-REFLECT-S)
+- The Ikedo Mini Sumo Robot V2 product page lists its edge sensors as "Maker Reflect S"; the Ikedo V2 Getting Started guide calls them "Maker Reflectance Sensor" and links the older Maker Reflect page; neither Reflect datasheet mentions the Ikedo kit
+- Documents linked from the product page: datasheet only
+
+## Use cases
+- Line detection (datasheet: "Infrared sensors for line detection")
+- Edge sensor on sumo robots (Ikedo Mini Sumo Robot V2 product page)
+
+## Known limitations
+- Only 5VDC is stated as the operating voltage; 3.3 V operation is not stated
+- Reversed polarity will damage the sensor (no reverse polarity protection)
+- Only the 3 mm optimal sensing distance is stated; no minimum/maximum range
+- The datasheet calls OUT an analog output and also says "Digital IO Compatible / No ADC required"; output voltage levels are not stated
+- Dimensions and sensor part number are not stated in the datasheet
+- No Cytron library or code example
+
+## Positioning (kept apart from specs)
+- "The new Maker Reflect S comes with a smaller threshold sensing for more stable output" (product page)
+- Sold under "Maker Reflect: Simplifying IR Reflectance Sensor for Beginner" as the newer option
+
+## Price band
+RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner
+
+## Datasheet
+https://docs.google.com/document/d/1lRTCSQkuwSsE6LYWHZ6CR2ripHQt-P-qIVuzjREYJ18/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1lRTCSQkuwSsE6LYWHZ6CR2ripHQt-P-qIVuzjREYJ18/edit
+
+# Product fact sheets
+
+## Product name
+Maker Soil Moisture Sensor (Capacitive) (MAKER-SOIL-MOISTURE)
+
+## Aliases
+MAKER-SOIL-MOISTURE, Maker Soil Moisture Sensor, Maker Soil Moisture Sensor (Capacitive), Maker Soil Moisture, Maker Soil Sensor, Maker Soil, Cytron Maker Soil Moisture Sensor, Cytron Soil Moisture Sensor
+
+## What it is
+A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove port (GND, VCC, DIS, OUT). It gives an analog output voltage that is higher when the soil has less moisture, has three LED indicators (Blue WET, Green MOIST, Red DRY), and a DIS pin that disables the sensor when HIGH.
+
+## Specs and functions
+- Sensing method: capacitive probe used to detect the presence of water in soil (datasheet)
+- VCC voltage: 2.5 VDC min, 7.0 VDC max (datasheet absolute ratings)
+- Analog output voltage (OUT): 1.0 V min, 5.2 V max (datasheet)
+- Output rule: higher voltage = less moisture (datasheet)
+- Disable pin threshold voltage (DIS): VCC − 0.8 V min; HIGH signal disables the sensor (datasheet)
+- LED turn-on output voltage at VCC = 3.3 V: Blue (WET) 1.4–1.8 V; Green (MOIST) 1.8–2.1 V; Red (DRY) 2.1–2.3 V (datasheet)
+- LED turn-on output voltage at VCC = 5.0 V: Blue (WET) 2.3–2.7 V; Green (MOIST) 2.7–3.1 V; Red (DRY) 3.1–3.6 V (datasheet)
+- Current consumption: 5.4–5.6 mA at VCC = 3.3 V; 3.6–3.7 mA at VCC = 5.0 V (datasheet)
+- Current consumption when disabled: 80–140 µA at VCC = 3.3 V; 140–180 µA at VCC = 5.0 V (datasheet)
+- LED indicators turn on depending on the value of the output (datasheet)
+- Calibration or threshold adjustment on board: none listed (datasheet)
+- Sensor IC: [NOT STATED]
+- Reverse polarity protection: [NOT STATED]
+- Dimensions: [NOT STATED] (datasheet gives a drawing only)
+- Operating temperature: [NOT STATED]
+- Datasheet: MAKER SOIL MOISTURE SENSOR Datasheet, Rev 1.0, January 2022
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Grove port, 4 pins: GND (ground), VCC (power input), DIS (disable pin, HIGH disables), OUT (analog output)
+- Read OUT with any analog input (ADC); drive DIS from a digital output if power saving is needed; no library needed
+- Compatible boards named in the datasheet: [NOT STATED]
+- Cytron board examples that read it on a Grove analog port: Robo Pico (Grove 6, GP27), Robo ESP32 (Grove 7, D36), Maker Uno RP2040 example repo (Cytron GitHub)
+- Sold with Grove cable options (product page)
+- Documents linked from the product page: datasheet and 3D CAD (https://drive.google.com/file/d/1stZDBLdZ1141wIdrRsNFRAVAT8iRiCNg/view)
+
+## Use cases
+- Detect the presence of water in soil (datasheet)
+- Soil moisture reading on a Grove analog port of a Cytron board (Cytron GitHub examples)
+- Cytron tutorial: 3D Printed Self-Watering Pot featuring Maker Soil Moisture Sensor (2022-03-25)
+
+## Known limitations
+- Output voltage can reach 5.2 V; at VCC = 5.0 V the DRY band (3.1–3.6 V) is above a 3.3 V ADC's full scale
+- DIS threshold is VCC − 0.8 V, so at VCC = 5 V a 3.3 V GPIO may not reach it
+- LED turn-on bands differ between VCC = 3.3 V and VCC = 5.0 V; the output is a relative reading, not a moisture percentage
+- Current draw is higher at 3.3 V (5.4–5.6 mA) than at 5.0 V (3.6–3.7 mA)
+- Maximum supply is 7.0 VDC
+- Sensor IC, reverse polarity protection, dimensions and probe depth are not stated in the datasheet
+- Out of stock on my.cytron.io (2026-10-16)
+
+## Positioning (kept apart from specs)
+- Cytron "Maker" series sensor: a capacitive (not resistive) soil moisture sensor with Grove connection and LED moisture indicators
+
+## Price band
+RM20.58 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-soil-moisture-sensor
+
+## Datasheet
+https://docs.google.com/document/d/1XErDF1j2W9LaeTdB7ySIbm4T83_ov0TZtVC47lmC7Pg/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1XErDF1j2W9LaeTdB7ySIbm4T83_ov0TZtVC47lmC7Pg/edit
+
+# Product fact sheets
+
+## Product name
+MCP9700 Linear Temperature Sensor (LM35 Compatible) — BCY-TEMP-MCP9700
+
+## Aliases
+BCY-TEMP-MCP9700, MCP9700 Linear Temperature Sensor, MCP9700 Linear Temperature Sensor (LM35 Compatible), MCP9700 Temperature Sensor, Cytron MCP9700, MCP9700 Sensor by Cytron
+
+## What it is
+A small three-pin breakout board (GND, VCC, OUT) carrying a Microchip MCP9700 analog temperature sensor IC. The output voltage rises 10.0 mV per °C with 500 mV at 0 °C, and the board runs from 2.3 to 5.5 V.
+
+## Specs and functions
+- Sensor IC: MCP9700 (Cytron datasheet title and product name); MCP9700 vs MCP9700A grade [NOT STATED]
+- VCC voltage: 2.3 V min, 5.5 V max (datasheet)
+- Sensor output voltage (VOUT): 100 mV min, 2000 mV max (datasheet)
+- Output voltage at TA = 0 °C: 500 mV typ (datasheet)
+- Temperature coefficient (TC): 10 mV/°C typ (datasheet)
+- Temperature range: −40 °C min, +150 °C max (datasheet)
+- Current consumption: 6 µA typ, 12 µA max (datasheet)
+- Output current: 100 µA max (datasheet)
+- Output type: analog voltage on OUT (datasheet)
+- Conversion equation: TA (°C) = (VOUT − 500 mV) / 10 mV/°C (datasheet Section 3)
+- Accuracy: [NOT STATED]
+- Dimensions: [NOT STATED] (datasheet gives a drawing only)
+- Weight: [NOT STATED]
+- Reverse-polarity protection: [NOT STATED]
+- Datasheet: BCY-TEMP-MCP9700 Linear Temperature Sensor Datasheet, Rev 1.0, August 2023
+
+## Interfaces and compatibility
+- Pins: GND (ground), VCC (power input, 2.3–5.5 V), OUT (analog output, 10.0 mV/°C) (datasheet)
+- Connector type: [NOT STATED] in datasheet text
+- No I²C, SPI, Grove or Maker Port connector named; needs one ADC-capable pin on the host (datasheet)
+- Compatible boards named by Cytron: Arduino UNO or Maker UNO, Raspberry Pi Pico (Cytron GitHub example README); "applicable to other microcontroller analog pin" (Cytron GitHub)
+- Example code: Arduino (A0, 5 V / 10-bit ADC conversion), CircuitPython (board.GP28, 3.3 V / 65536), MicroPython (machine.ADC(28), 3.3 V / 65536) at https://github.com/CytronTechnologies/Cytron-BCY-TEMP-MCP9700 (Cytron GitHub)
+- Warranty: 12 months (product page)
+
+## Use cases
+- Reading ambient temperature on an Arduino UNO / Maker UNO analog pin (Cytron GitHub example)
+- Reading ambient temperature on a Raspberry Pi Pico with CircuitPython or MicroPython (Cytron GitHub example)
+
+## Known limitations
+- Analog output only; no digital interface, library or calibration register (datasheet)
+- Output must be corrected for the 500 mV offset at 0 °C; the equation is TA = (VOUT − 500) / 10 (datasheet)
+- Output current is limited to 100 µA max; the output is a signal for an ADC pin, not a load driver (datasheet)
+- Accuracy is not stated in the Cytron datasheet
+- Dimensions are not stated in the datasheet text
+- Reverse-polarity protection is not stated
+
+## Positioning (kept apart from specs)
+- Product page name: "MCP9700 Linear Temperature Sensor (LM35 Compatible)" (product page); the datasheet does not mention the LM35
+
+## Price band
+RM7.77 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-mcp9700-linear-temperature-sensor-by-cytron
+
+## Datasheet
+https://docs.google.com/document/d/1Yg4krOVZN__Q0NPKvb4om0IJVZMJksBEIjuhJPlcBTM/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1Yg4krOVZN__Q0NPKvb4om0IJVZMJksBEIjuhJPlcBTM/edit
+
+# Product fact sheets
+
+## Product name
+Advanced Auto-Calibrating Line Sensor (LSA08)
+
+## Aliases
+LSA08, Advance Line Following Sensor Bar, LSA08 Line Sensor, Cytron LSA08, Advanced Auto Calibrating Line Sensor, Auto-Calibrating Line Sensor Bar
+
+## What it is
+An 8-sensor line-following sensor bar with sensors spaced 16 mm apart, an on-board 2x8 LCD with SEL and MODE buttons, and auto-calibration. It outputs the line position over UART, as an analog voltage, or as 8 parallel digital lines, and provides a junction pulse and junction counter.
+
+## Specs and functions
+- Sensors: 8 sensor pairs (S0–S7) spaced at 16 mm (user manual)
+- Operating voltage: 7.5 V min, 12 V typical, 20 V max (user manual); typical wiring 9–12 V (user manual)
+- Current consumption at 12 V: 25.3 mA min, 25.5 mA typical, 130 mA max; "typically around 26mA" (user manual)
+- Input signal VIH 2–5 V; VIL 0–0.8 V; output signal 5 V (user manual)
+- Maximum current per I/O signal pin: 20 mA (user manual)
+- Sensing distance from board: 1 cm min, 3 cm typical, 5 cm max (user manual)
+- Minimum line width: 15 mm (user manual)
+- Refresh rate: 100 Hz (user manual); Cytron Tindie listing says up to 200 Hz
+- Line position: 0 (sensor 0) to 70 (sensor 7), 35 = between S3 and S4, linear (user manual)
+- Analog output: 0 V to 4.5 V = position 0 to 70; 5 V = no line; Position = (AN voltage / 4.5 V) x 70 (user manual)
+- UART: 1 start bit, 8 data bits, no parity, 1 stop bit; baud settings 0 = 9600, 1 = 19200, 2 = 38400, 3 = 57600, 4 = 115200, 5 = 230400 (user manual)
+- UART output modes: 0 = no output; 1 = one byte of sensor digital values (LSB = sensor 0, MSB = sensor 7); 2 = one byte line position 0–70, 255 = no line; 3 = 9-byte raw packet, header 0x00 + 8 raw sensor bytes (user manual)
+- UART data streams from TX only while UEN is pulled low (user manual)
+- UART command packet: ADDRESS, COMMAND, DATA, CHECKSUM (lower byte of ADDRESS + COMMAND + DATA); max 20 ms between bytes; setting commands answered with "OK" (user manual)
+- UART commands: C 0x43 calibrate (0); L 0x4C line mode (0 = Light-On, 1 = Dark-On); T 0x54 threshold (0–7); J 0x4A junction width (3–8); A 0x41 UART address (0–255); B 0x42 LCD backlight (0–10); S 0x53 LCD contrast (0–255); R 0x52 baud setting (0–5); D 0x44 UART output mode (0–3); 0x50 junction information (0 = clear counter, 1 = read counter); 0x4F line/sensor information (1 = sensor byte, 2 = line position) (user manual)
+- Default settings: Line Mode Light On; Threshold 4; Junction width 5; UART address 1; Baudrate 0 (9600); UART mode 0; LCD backlight 2 (user manual)
+- Calibration: MODE twice to CALB, SEL to start, swing the sensors across bright and dark surfaces; values saved to non-volatile memory; also started by UART command C (user manual)
+- Junction pulse (JPULSE): pulse generated each time the bar crosses a junction at least Junction Width sensors wide; internal junction counter readable over UART (user manual)
+- LCD: shows line position and bar chart; "****" = no line; backlight 0–10 (0 = off) (user manual)
+- Power polarity protection (user manual)
+- Dimensions: PCB 135 mm x 45.7 mm; mounting holes 127.3 mm x 38 mm apart; sensor pitch 16 mm (user manual drawing)
+- Packing list: 1 x LSA08 PCB, 1 x LSA08 cable connector (user manual)
+
+## Interfaces and compatibility
+- Port A (10 pins, pin 1 = square pad): 1 TX, 2 RX, 3 UEN (active low), 4 AN, 5 JPULSE, 6–8 not used, 9 VIN (12 V), 10 GND (user manual)
+- Port B (10 pins): 1–8 O0–O7 digital outputs (5 V = line detected), 9 VIN (12 V), 10 GND (user manual)
+- Board can be powered from VIN/GND of either Port A or Port B; both ports may be used at once (user manual)
+- TX is floating/high-impedance when not sending; RX is weakly pulled up (user manual)
+- Multiple LSA08 on one UART by giving each a unique address; multiple on analog need one ADC channel each (user manual)
+- Manual example controllers: SK40C with MD10C, MC40A, IFC system (IFC-MB00, IFC-PC00, IFC-AI08, IFC-DI08, IFC-BH02, IFC-BL02, IFC-CP04), MC40SE; DC Geared Mobile Robot Base Set HD-BSC-SPG-G (user manual)
+- Software: Cytron LSA08 C library (LSA08.h) for PIC with C Library Manual V1.1 Jan 2013; example projects for SK40C+MD10C, MC40A (analog and UART PID), IFC in GitHub repo https://github.com/CytronTechnologies/Cytron_LSA08 (user manual, GitHub)
+- Library position convention: -35 to 35 with centre 0; 127 = no line (library manual)
+
+## Use cases
+- Line following for embedded systems or robots (user manual)
+- Cross-junction detection and counting using JPULSE or the UART junction counter (user manual)
+- Line following on reflective or glossy surfaces and on red, green, blue, white, black or grey surfaces (user manual)
+- PID line-following robots with SK40C, MC40A or IFC controllers (user manual)
+
+## Known limitations
+- Operating voltage 7.5–20 V; not a 5 V or 3.3 V-powered board (user manual)
+- Outputs are 5 V signals; I/O pins limited to 20 mA (user manual)
+- Minimum line width 15 mm; sensing distance 1–5 cm (user manual)
+- Refresh rate 100 Hz (user manual)
+- Default UART mode is 0 (no output); UART data only streams while UEN is low (user manual)
+- Incomplete UART packets are discarded after 20 ms (user manual)
+- Polling line position by command is slower than streaming with UEN (user manual)
+- Only one Cytron library exists and it is for PIC C; no Arduino library (library manual, GitHub)
+- Hidden debug mode exits only by power cycling (user manual)
+- Manual (2012) states warranty 6 months; product page states 12 months
+
+## Positioning (kept apart from specs)
+- "Advance" line sensor bar with LCD and on-board buttons for instant configuration without a computer (user manual)
+- Auto-calibration minimises setup effort for line-following robots (user manual)
+- Low current consumption and polarity protection (user manual)
+
+## Price band
+RM204.75 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-advanced-auto-calibrating-line-sensor
+
+## Datasheet
+https://drive.google.com/file/d/0BzFWfMiqqjyqXzFaMTNHMy1pWUE/view
+
+## Source type
+Datasheet
+
+## Source link
+https://raw.githubusercontent.com/CytronTechnologies/Cytron_LSA08/master/LSA08_User_Manual.pdf
+
+# Product fact sheets
+
+## Product name
+Rotary Encoder Kit (RE08A)
+
+## Aliases
+RE08A, Rotary Encoder Kit, RE08A Rotary Encoder Kit, Cytron Rotary Encoder Kit, Simple Rotary Encoder Kit, 8-slot Rotary Encoder Kit
+
+## What it is
+A single-channel optical rotary encoder kit made of a sensor board with a slotted opto interrupter and an 8-slot disc that gives 16 transitions per revolution. It has a 3-pin interface (+5, Gnd, Sig), a green indicator LED and a pulse output internally pulled up to 5 V.
+
+## Specs and functions
+- Disc: 8 slots giving 16 transitions per revolution (user manual)
+- Disc size: 35 mm outer diameter x 3 mm inner diameter (user manual)
+- Sensor board size: 12 mm (height) x 35 mm (length) x 15 mm (width) (user manual)
+- Supply voltage (+5): 4.5 V min, 5 V typical, 5.5 V max (user manual)
+- Output: 0 V to 5 V pulses; low 0–1.0 V (0.8 V typical), high 4.5–4.9 V (4.7 V typical) with +5 = 5 V (user manual)
+- Output frequency: up to 1 kHz (1000 pulses/sec) (user manual)
+- Current at low state: 25 mA min, 30 mA typical, 40 mA max (user manual)
+- Current at high state: 5 uA min, 10 uA typical, 20 uA max (user manual)
+- Operating temperature: 0 °C to 75 °C, 25 °C typical (user manual)
+- Sig is internally pulled up to 5 V; no external component needed (user manual)
+- Truth table: beam unblocked (slot) = LED ON, Sig 0 V; beam blocked = LED OFF, Sig 5 V (user manual)
+- Packing list: 1 x RE08A sensor board, 1 x 8-slot disc (user manual)
+- Ready to use without further soldering (user manual)
+
+## Interfaces and compatibility
+- 3-pin header: +5 (5 V supply), Gnd (supply negative), Sig (pulse output) (user manual)
+- Board labels: A optical sensor, B +5, C Gnd, D Sig, E indicator LED (user manual)
+- Connect Sig to a microcontroller counter, clock or encoder input; mount the disc on a motor shaft or gear output so it passes through the sensor gap (user manual)
+- Software setup depends on the microcontroller and is not covered by the manual (user manual)
+- No Cytron library or GitHub example found
+
+## Use cases
+- Counting pulses to measure shaft rotation, speed or distance on a motor shaft or gear output (user manual)
+
+## Known limitations
+- 5 V device: supply 4.5–5.5 V and 5 V output levels (user manual)
+- Single signal output; no second channel listed (user manual)
+- Output frequency limited to 1 kHz (user manual)
+- Reversed supply polarity can damage the sensor (user manual)
+- Disc slots must not be broken during installation (user manual)
+- Manual (2008) states warranty 6 months; product page states 12 months
+
+## Positioning (kept apart from specs)
+- Simple 3-pin interface and on-board LED indicator; ready to use without soldering (user manual)
+
+## Price band
+RM38.85 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-rotary-encoder-kit
+
+## Datasheet
+https://drive.google.com/file/d/0BzFWfMiqqjyqdlpDUTc5ektndlE/view
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-39/pdf/cytron-simple-rotary-encoder-kit-users-manual.pdf
 
 # Product fact sheets
 

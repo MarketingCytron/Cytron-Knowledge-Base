@@ -58,6 +58,23 @@ Arduino-board notes for every agent:
 - **Maker Nano power:** Vin 7.0–30.0 V, but the 5V pin gives only **100 mA** and 3V3 only **50 mA** (including the board's own use) — never copy Maker UNO's 500 mA. D2–D13 LEDs light whenever the pin is high (cut a trace to disable).
 - **Cytron UNO:** DC jack 7–15 V recommended (6–20 V absolute); 5 V regulator 1 A max only stated "with Vin at 12V"; 3.3 V 500 mA; select "Arduino Uno"; one user LED (D13), no button or buzzer. **Never describe the Special Edition as identical** or invent what is special about it.
 
+### Arduino shields (non-motor)
+
+| Product | File | Code | Function | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Cytron PS2 Shield | [`shield-ps2.md`](shield-ps2.md) | `SHIELD-PS2` | PS2 controller interface over UART | User's Manual V1.0, Sep 2013 (no datasheet) | **Medium** |
+| Cytron ESP8266 WiFi Shield | [`shield-esp-wifi.md`](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` (Rev 2.0) | ESP-WROOM-02 Wi-Fi over UART + microSD | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) | **Medium** |
+| LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
+| 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium** |
+| Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 | **Medium-low** |
+
+Shield notes for every agent:
+- **PS2 Shield:** button reads are 0 = pressed, 1 = released; `begin()` baud must match the jumper and the shield must be reset after moving it; A1 is the shield reset line; default D2 RX / D3 TX; on Mega only D10 can be SoftwareSerial RX.
+- **ESP8266 WiFi Shield:** ships at 9600 8N1 (the manual's "9600 kbps" is a typo); after reflashing it runs 115200 — set it back with `AT+UART_DEF=9600,8,1,0,0`. Firmware ESP-AT V2.2.0, library "Cytron ESPWiFi Shield" v3.0.2. D4 is reserved for microSD CS; UART on D10–D13 kills SPI/microSD; ESP GPIO breakout is 3.3 V only.
+- **LiPo Power Shield:** charging via the Arduino's USB only works with the shield switch OFF; ICSP is not passed through; bridge the VBATT solder jumper to read battery voltage.
+- **Servo Shield / SC08A:** servos are deactivated at power-up — send the activate command first. Speed byte 0 = fastest. Resolution 0.25 µs, position 0–8000 = 0.5–2.5 ms; the shield library's `angle()` maps 0–180° to 156–7260. Servo shield: jumper K (servos from Arduino 5 V) and VM input are mutually exclusive. SC08A has **no regulator** — servo supply goes straight to the servos.
+- **Screw Terminal Shield:** 3.5 mm pitch; wire by the silkscreen label, not terminal position; no ISP pads, terminal count or ratings are stated — don't quote any.
+
 ### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO)
 
 | Product | File | Code | Chip | Primary source | Confidence |
@@ -84,6 +101,7 @@ Pico / RP2040 / RP2350 notes for every agent:
 | SUMO:BIT | [`sumo-bit.md`](sumo-bit.md) | Not stated | Sumo robot controller; needs 2× MD13S | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) | **Medium** |
 | REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium** |
 | ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
+| Grove WiFi 8266 | [`grove-wifi-8266.md`](grove-wifi-8266.md) | `GRV-WIFI-8266` | ESP8266 Wi-Fi Grove module (ESP-AT), 3.3 V logic | Datasheet Rev 1.0, Aug 2021 | **Medium-high** |
 
 micro:bit notes for every agent:
 - **Motors and servos on MOTION:BIT, MOTION:BIT Pro, REKA:BIT and SUMO:BIT are driven over I2C (P19/P20) by an on-board chip**, not by micro:bit GPIO: MOTION:BIT PCA9685 at 0x40; REKA:BIT PIC16F1827 at 0x08 (an I2C Grove device must not use 0x08); SUMO:BIT RP2040 co-processor at 0x09.
@@ -91,6 +109,7 @@ micro:bit notes for every agent:
 - **SUMO:BIT USB-C is for its own firmware only**, not for programming. Opponent sensors P12–P16 read LOW on detection; edge sensors P0/P1 are analog.
 - **ZOOM:BIT uses a REKA:BIT.** micro:bit V1 has no speaker (sound needs a Grove buzzer; sound-expression blocks are V2 only). The micro:bit is only included in some purchase options.
 - **MakeCode extensions:** `motionbit` (also serves MOTION:BIT Pro), `rekabit`, `sumobit`, `zoombit`. "Python" means MakeCode's Python mode unless a file says otherwise.
+- **Grove WiFi 8266 logic is 3.3 V** (RX high max 3.6 V) even though VCC accepts 3–6 V — level-shift from 5 V hosts. Ships with Cytron's ESP-AT v2.2.0 build (AT on GPIO1/GPIO3), 115200 baud; MakeCode default Tx P16 / Rx P15; Pico examples TX GP16 / RX GP17; legacy NONOS-AT v1.x commands are not fully compatible.
 
 ### Cytron sumo robot controllers
 
@@ -99,6 +118,9 @@ micro:bit notes for every agent:
 | Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
 | URC10 | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
 | IR Sumo Start | [`ir-sumo-start.md`](ir-sumo-start.md) | `IR-SUMO-START` | — (IR start module) | Datasheet Rev 1.0, Apr 2025 | **Medium-high** |
+| SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) | **Medium** |
+| UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
+| UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
 
 ### Sensors
 
@@ -106,10 +128,21 @@ micro:bit notes for every agent:
 |---|---|---|---|---|---|
 | Maker Line | [`maker-line.md`](maker-line.md) | `MAKER-LINE` | 5 digital (high = line) + 1 analog; 3.0–5.5 V | Datasheet Rev 1.0, Jul 2019 | **Medium-high** |
 | Maker Object | [`maker-object.md`](maker-object.md) | `MAKER-OBJECT` | IR object sensor, digital **active LOW**; 4.5–5.5 V | Datasheet Rev 1.0, Dec 2019 | **Medium-high** |
+| Maker Reflect | [`maker-reflect.md`](maker-reflect.md) | `MAKER-REFLECT` (page variant `V-MAKER-REFLECT`) | Analog IR reflectance, 3.0–5.5 V, 1–40 mm | Datasheet Rev 1.0, Nov 2019 | **Medium-high** |
+| Maker Reflect S | [`maker-reflect-s.md`](maker-reflect-s.md) | `MAKER-REFLECT-S` | IR reflectance, **5 V only**, 25 mA, optimal 3 mm | Datasheet Rev 1.0, Feb 2026 | **Medium** |
+| Maker Soil Moisture Sensor | [`maker-soil-moisture.md`](maker-soil-moisture.md) | `MAKER-SOIL-MOISTURE` | Capacitive soil moisture, analog OUT 1.0–5.2 V + DIS pin | Datasheet Rev 1.0, Jan 2022 | **Medium-high** |
+| MCP9700 Temperature Sensor | [`mcp9700-temperature-sensor.md`](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Analog temperature, 10 mV/°C with 500 mV offset at 0 °C | Datasheet Rev 1.0, Aug 2023 | **Medium-high** |
+| LSA08 Line Sensor | [`lsa08.md`](lsa08.md) | `LSA08` | 8-sensor auto-calibrating line sensor bar; analog / digital / UART | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) | **Medium-high** |
+| RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium** |
 
 Sensor notes for every agent:
 - **Maker Line:** digital outputs go HIGH when the line is detected; which colour counts as the line is set by the Light/Dark switch. Analog below 0.1×Vcc = line not found, above 0.9×Vcc = cross detected (not "far left / far right"). 4–40 mm sensing height is stated only at VCC = 5 V, black line on white. Calibrate: hold button >2 s, sweep across the line, press again.
 - **Maker Object:** range is 40–140 cm on white A4 but only 15–60 cm on black A4 — never write "up to 140 cm" alone. Digital detect/no-detect only (no distance value); 5 V supply; output high is VCC − 0.5 V to VCC, so don't wire it straight into a 3.3 V-only GPIO without checking. Not a Grove/Maker Port connector.
+- **Maker Reflect:** output voltage is HIGHER on darker surfaces (white = lower); sumo edge logic looks for a low reading. **Maker Reflect and Maker Reflect S specs are not interchangeable** — Reflect 3.0–5.5 V analog 1–40 mm; Reflect S 5 V only, 25 mA, optimal 3 mm, no min/max range stated. Neither has reverse-polarity protection, an LED, a trimmer or calibration.
+- **Maker Soil Moisture:** higher voltage = drier; OUT spans 1.0–5.2 V, so at 5 V the DRY band (3.1–3.6 V) exceeds a 3.3 V ADC; DIS threshold is VCC − 0.8 V (unreachable from a 3.3 V GPIO at 5 V supply). The reading is qualitative, not a percentage.
+- **MCP9700:** T(°C) = (VOUT − 500 mV) / 10 mV. "LM35 compatible" means the same slope, not the same zero — LM35-style code reads ~50 °C high. Output current 100 µA max; never quote ±2/±4 °C accuracy (not stated).
+- **LSA08:** powered from 7.5–20 V (12 V typical), outputs are 5 V logic; UART streams only while UEN is held low and the default UART mode is 0 = no output; "no line" = 255 (UART), 5 V (analog), 127 (C library). Refresh 100 Hz (Tindie's 200 Hz is wrong).
+- **RE08A:** 16 pulses per revolution, single channel (no direction), Sig LOW when a slot is in front of the sensor, output limited to 1 kHz.
 
 ### Cytron motor drivers
 
