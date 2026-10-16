@@ -383,6 +383,90 @@ https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontr
 # Product fact sheets
 
 ## Product name
+Maker UNO Plus for Education (Arduino Compatible)
+
+## Aliases
+MAKER-UNO-PLUS, Maker UNO Plus, Maker UNO+, Cytron Maker UNO Plus, Maker UNO Plus: Simplifying Arduino for Education, Maker UNO Plus for Education
+
+## What it is
+An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and programmed through a USB Micro-B socket via an FT231X USB-to-serial chip. It adds LEDs on the digital pins, a piezo buzzer on pin 8 with a slide switch and a programmable push button on pin 2.
+
+## Specs and functions
+- Product code: MAKER-UNO-PLUS
+- User's Manual: Rev 1.0, Oct 2018 (no separate datasheet)
+- Microcontroller: SMD ATmega328P (the same microcontroller as the Arduino UNO) with Optiboot (UNO) bootloader
+- USB-to-serial: FT231X
+- USB connector: USB Micro-B socket (main supply, program upload, Serial Monitor)
+- Operating voltage: 5V
+- Input voltage via USB connector: 4.8 V min, 5.2 V max; "5V (USB only)"
+- 5V current: "USB source"
+- 3.3V voltage regulator: 500mA maximum; DC current for 3.3V pin 500 mA max continuous
+- DC current per I/O pin: 20 mA max
+- I/O levels: 0-5V outputs with 3.3V compatible inputs
+- Digital I/O pins: 14 (6 PWM outputs); analog inputs: 6
+- UART, SPI, I2C: 1, 1, 1; external interrupts: 2
+- Flash, SRAM, EEPROM: 32KB, 2KB, 1KB
+- Clock speed: 16MHz
+- ISP 6-pin (2x3) header, for AVR programmer; also usable for SPI
+- LED array for 5V, 3.3V, TX, RX and the digital pins; programmable indicator LEDs at pins 2 – 13 (user manual introduction says D0 to D13); standard LED on pin 13
+- Pin LEDs driven through a series of MOSFETs, so each LED can be controlled as an output or act as an input indicator, even for input pull-up
+- USB-serial LED shows upload and Serial Monitor data
+- Programmable push button: pin 2 to GND, configure as INPUT_PULLUP
+- Piezo buzzer: pin 8, through a slide switch (on = buzzer; off = pin 8 free for other uses)
+- Reset button
+- FCC, CE, RoHS: Yes
+- PCB colour: purple
+- Packing list: 1 × Maker Uno Plus (Code: MAKER-UNO-PLUS), 1 × Micro USB cable, 1 × Pin Header Sticker
+- Warranty: user manual 6 months, manufacturing defects only; product page 12 months
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Arduino UNO R3-standard female headers; R3 shield compatible; SDA, SCL and IOREF broken out as on UNO R3
+- No Vin pin: Arduino shields that require Vin are not compatible, unless the shield can select an external power source instead of Vin
+- Arduino IDE: select "Arduino/Genuino UNO" and the correct COM port; compatible with Arduino UNO example code and libraries
+- Cytron learning guide: Windows installs the driver automatically; macOS 10.11 and later does not need the FTDI driver
+- Portable power: power bank or Cytron LiPo Power Shield
+- Differences from Arduino Uno: input 5V USB only (Uno: 7 - 12V recommended, 6 - 20V limit via adapter); 5V current "USB source" (Uno: 1A); 3.3V current 500mA (Uno: 50mA); USB-serial FT231X (Uno: ATmega16U2); SMD ATmega328P; USB Micro-B; no DC jack; no Vin; onboard LEDs, button and buzzer
+- Differences from Maker UNO (user manual table): USB-serial FT231X (Maker UNO: CH340G); FCC, CE, RoHS Yes (Maker UNO: No)
+
+## Use cases
+- Students learning coding and microcontrollers
+- Learning digital input, output and PWM (piezo buzzer and LED brightness) with just the board
+- Playing tones with the onboard buzzer (Arduino example toneMelody)
+
+## Known limitations
+- Power through USB only: the DC jack (12V adapter input) and the 5V linear regulator were removed
+- No Vin pin; shields that need Vin and cannot select another power source are not compatible (example: GPRS Shield V3.0)
+- 5V current is limited by the USB source; 3.3V pin 500 mA max; 20 mA max per I/O pin
+- Pin 8 is shared with the buzzer: slide the switch off to use pin 8 for other purposes
+- Pin 2 is used by the onboard button
+- Use only 1 power source at a time
+- User manual (Oct 2018) and product page disagree on warranty: 6 months vs 12 months
+
+## Positioning (kept apart from specs)
+- "Simplifying Arduino for Education"
+- Designed and developed specially for students to learn coding and microcontroller
+- Named Maker UNO Plus "to encourage everyone to be a maker"
+- Redesign of CT-UNO with ARUS and rero, "more affordable, and more beginner friendly"
+
+## Price band
+RM75.60 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-uno-plus-simplifying-arduino-for-education
+
+## Datasheet
+https://docs.google.com/document/d/1M2sYWbmmt-Auyq963b5VpsdONsfrjwCBTLAf0VuP6zk/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1M2sYWbmmt-Auyq963b5VpsdONsfrjwCBTLAf0VuP6zk/edit
+
+# Product fact sheets
+
+## Product name
 Maker Uno RP2040
 
 ## Aliases
@@ -489,6 +573,77 @@ https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/
 # Product fact sheets
 
 ## Product name
+Maker Nano for Projects (Arduino Compatible)
+
+## Aliases
+MAKER-NANO, Maker Nano, Cytron Maker Nano, Maker Nano: Simplifying Arduino for Projects, Maker Nano for Projects
+
+## What it is
+An Arduino Nano-form-factor board whose pin header is compatible with the original Arduino Nano. It adds LEDs on D2–D13, a piezo buzzer with a mute switch, a user button on D2 and a 7.0–30.0 VDC Vin input.
+
+## Specs and functions
+- Product code: MAKER-NANO
+- Datasheet: Rev 1.0, June 2020; spec table titled "Absolute Maximum Ratings"
+- Power input voltage (Vin): 7.0 – 30.0 VDC
+- Digital input voltage: low level 0 – 0.5 V; high level 1.7 – 5.0 V
+- Analog input voltage: 0 – 5.0 V
+- DC +5V maximum current (including onboard usage): 100 mA
+- DC +3V3 maximum current (including onboard usage): 50 mA
+- Micro USB port: upload Arduino program from PC; debugging (Serial Monitor)
+- Digital IO LEDs on D2 – D13: turn on when the IO state is high
+- Digital IO LEDs enable jumper (bottom): cut the trace to disable the digital IO LEDs, to save power or reduce distraction
+- Power LEDs for 3V3 and 5V: turn on when powered up
+- Serial port LEDs: TX on when data is transmitted from Maker Nano; RX on when data is received by Maker Nano
+- Programmable piezo buzzer (bottom): can play tone or melody
+- Mute switch: mutes the piezo buzzer if pin D8 is used for other purposes
+- User programmable button: connected to pin D2 internally, accessible from the user program
+- Reset button
+- Microcontroller: [NOT STATED]
+- USB-serial chip and driver: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Pin header: "Compatible with original Arduino Nano"
+- Arduino: program uploaded from PC through the Micro USB port
+- Arduino IDE board to select: [NOT STATED]
+- Differences from the genuine Arduino Nano: [NOT STATED] (the datasheet's comparison table is an image); stated additions are the D2 – D13 IO LEDs, buzzer with mute switch, user button on D2, power LEDs and IO-LED enable jumper
+- Box contents: [NOT STATED]
+
+## Use cases
+- Building projects with an Arduino Nano-compatible board ("Simplifying Arduino for Projects")
+- Playing a tone or melody on the onboard piezo buzzer
+- Reading the onboard user button on D2 from the user program
+
+## Known limitations
+- DC +5V output is limited to 100 mA and DC +3V3 to 50 mA, both including onboard usage
+- Vin minimum is 7.0 V; maximum 30.0 V
+- Digital and analog inputs must not exceed 5.0 V
+- D8 is shared with the piezo buzzer: use the mute switch when D8 is used for other purposes
+- D2 is used by the onboard user button
+- The digital IO LEDs on D2 – D13 light when a pin is high; they can only be disabled by cutting the enable-jumper trace
+
+## Positioning (kept apart from specs)
+- "Simplifying Arduino for Projects"
+
+## Price band
+RM37.38 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-nano-simplifying-arduino-for-projects
+
+## Datasheet
+https://docs.google.com/document/d/1lUUJSzbsvzH_Ss6vDcHpGfVY7p_txuW5BZ1QOmHgcBA/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1lUUJSzbsvzH_Ss6vDcHpGfVY7p_txuW5BZ1QOmHgcBA/view
+
+# Product fact sheets
+
+## Product name
 Maker Nano RP2040
 
 ## Aliases
@@ -564,6 +719,144 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/15IMxlESQE43sP7brZpqlfHVTAdX1N_XenzpvfP8cT_8/edit
+
+# Product fact sheets
+
+## Product name
+Cytron UNO - Arduino UNO Compatible
+
+## Aliases
+CT-UNO, CT UNO, Cytron UNO, CT UNO (Arduino Uno Compatible)
+
+## What it is
+A Cytron version of the Arduino UNO built on an SMD ATmega328 with the Optiboot (UNO) bootloader, programmed over USB Micro-B through an FTDI FT231X USB-serial chip. It can be powered from a 2.1 mm DC adapter socket or from USB.
+
+## Specs and functions
+- Product code: CT-UNO
+- Microcontroller: SMD ATmega328 with Optiboot (UNO) bootloader (manual spec section names it ATmega328p)
+- Clock speed: 16MHz
+- Flash memory: 32k
+- Digital I/O pins: 14 (6 PWM outputs)
+- Analog inputs: 6 (can be digital I/O too)
+- Peripherals: UART, SPI, external interrupts, I2C
+- I/O levels: 0-5V digital outputs with 3.3V compatible inputs
+- USB-to-serial: FTDI FT231X; needs the FTDI VCP driver
+- USB connector: USB Micro-B socket (program upload and power)
+- DC input: Adapter Socket (2.1mm)
+- Input voltage via adapter (recommended): 7 V min, 15 V max
+- Input voltage via adapter (limits): 6 V min, 20 V max
+- If both adapter and USB are connected, the board automatically uses the adapter
+- 5V regulator: 1 A max (with Vin at 12V)
+- 3.3V regulator: 500 mA max
+- Per-pin current: [NOT STATED] (manual: refer to the ATmega328P specification)
+- LEDs: RX LED, TX LED, Power LED (green), programmable LED on pin 13 (active HIGH, orange); TX, RX, Power and pin 13 LEDs moved to the board edge
+- Reset button
+- ISP 6-pin header (SPI and power); for uploading the Arduino Uno bootloader with an AVR programmer (e.g. AVR USBasp)
+- Extra pads for stacking on strip/donut board (0.1" pitch)
+- PCB colour: white
+- Packing list: 1 x CT-UNO board; USB Micro B cable and 12V 2A AC to DC Adapter are optional add-ons (cable sold separately)
+- Warranty: 12 months, manufacturing defects only; misuse and freight both ways not covered
+- Dimensions: [NOT STATED]
+- User's Manual: V1.0, Nov 2014
+
+## Interfaces and compatibility
+- Arduino R3 standard headers; R3 shield compatible; SDA, SCL and IOREF broken out as on UNO R3
+- Arduino IDE: Tools > Board > "Arduino Uno", then select the CT-UNO serial port
+- Driver: FTDI VCP driver from http://www.ftdichip.com/Drivers/VCP.htm
+- Manual examples: LCD Keypad shield; wireless remote omni robot with SHIELD-XBEE and FD04A-R2
+- Differences from Arduino UNO R3: FTDI FT231X USB-serial, USB Micro-B socket, SMD ATmega328, 7–15 V recommended input, upgraded on-board regulator (5V 1A), LEDs moved to the edge, extra pads, white PCB
+- MicroPython / CircuitPython: [NOT STATED]
+
+## Use cases
+- Stacking Arduino UNO shields (e.g. LCD Keypad shield)
+- Mobile robots with shields (e.g. wireless remote omni robot with SHIELD-XBEE and FD04A-R2)
+- Stacking onto strip/donut board for custom circuits
+
+## Known limitations
+- 5V regulator 1 A rating is given only with Vin at 12V
+- 3.3V regulator limited to 500 mA
+- Adapter input 7–15 V recommended; 6–20 V absolute limits
+- Uses an FTDI FT231X: Windows driver install may fail until the FTDI VCP driver is installed
+- USB cable not included
+- Only one user LED (pin 13); no user button or buzzer
+- Per-pin current, reverse-polarity and over-current protection: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- User manual: combines "the simplicity of the UNO's Optiboot bootloader (which load program faster), the stability of the FTDI and the R3 shield compatibility of the latest Arduino UNO R3"
+- User manual: "White PCB!"
+- cytron.com.my product page recommends Maker UNO for beginners and students
+
+## Price band
+RM61.74 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-uno-arduino-uno-compatible
+
+## Datasheet
+https://docs.google.com/document/d/1lAeGP_92g0VC_xuyL_ibK_EhHU-cxrf3AOS--tf-hvw/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1lAeGP_92g0VC_xuyL_ibK_EhHU-cxrf3AOS--tf-hvw/view
+
+# Product fact sheets
+
+## Product name
+Cytron UNO Special Edition - Arduino Compatible
+
+## Aliases
+CT-UNO-SE, Cytron UNO Special Edition, Cytron UNO SE, Cytron UNO Special Edition - Arduino Compatible
+
+## What it is
+An Arduino-compatible board sold by Cytron as the Cytron UNO Special Edition (CT-UNO-SE). Cytron documents it with the CT-UNO (Cytron UNO) User's Manual and schematic; how it differs from the standard Cytron UNO is not stated.
+
+## Specs and functions
+- Product code: CT-UNO-SE
+- Warranty: 12 months (product page)
+- Documentation: the product page links the CT-UNO User's Manual (V1.0, Nov 2014) and CT-UNO Schematic; the manual does not mention the Special Edition
+- Per the linked CT-UNO manual (not confirmed to apply unchanged to CT-UNO-SE):
+- Microcontroller: SMD ATmega328 (ATmega328p in spec section) with Optiboot (UNO) bootloader; 32k Flash; 16MHz
+- USB-to-serial: FTDI FT231X; USB Micro-B socket
+- DC input: Adapter Socket (2.1mm); 7–15 V recommended, 6–20 V limits
+- 5V regulator: 1 A max (with Vin at 12V); 3.3V regulator: 500 mA max
+- I/O: 14 digital I/O (6 PWM), 6 analog inputs; 0-5V digital outputs with 3.3V compatible inputs
+- LEDs: RX, TX, Power (green), programmable LED on pin 13 (active HIGH); reset button; ISP 6-pin header; extra pads; white PCB
+- Special Edition differences from Cytron UNO: [NOT STATED]
+- Packing list: [NOT STATED]
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Per the linked CT-UNO manual: Arduino R3 standard headers, R3 shield compatible; Arduino IDE board "Arduino Uno"; FTDI VCP driver
+- SE-specific interfaces: [NOT STATED]
+- MicroPython / CircuitPython: [NOT STATED]
+
+## Use cases
+[NOT STATED]
+
+## Known limitations
+- No source states what makes the Special Edition different from the standard Cytron UNO
+- Technical specs come only from the CT-UNO User's Manual, which does not name the Special Edition
+- Per the linked CT-UNO manual: 5V regulator 1 A rating given only with Vin at 12V; 3.3V regulator limited to 500 mA; adapter input 7–15 V recommended, 6–20 V limits; FTDI VCP driver needed
+
+## Positioning (kept apart from specs)
+[NOT STATED]
+
+## Price band
+RM63.00 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-cytron-uno-special-arduino-compatible
+
+## Datasheet
+https://docs.google.com/document/d/1lAeGP_92g0VC_xuyL_ibK_EhHU-cxrf3AOS--tf-hvw/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1lAeGP_92g0VC_xuyL_ibK_EhHU-cxrf3AOS--tf-hvw/view
 
 # Product fact sheets
 
@@ -1061,6 +1354,79 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1JoHsZk5IipQPCLXWbZYpDKjGlnkyACOJ1taUrKVsRg8/edit
+
+# Product fact sheets
+
+## Product name
+Maker Pi Pico Mini: Simplifying Projects with Raspberry Pi Pico
+
+## Aliases
+MAKER-PI-PICO-MINI, MAKER-PI-PICO-MINI-NB, Maker Pi Pico Mini, Cytron Maker Pi Pico Mini
+
+## What it is
+A small carrier board for the Raspberry Pi Pico / Pico W with status LEDs, a button, a passive buzzer, an RGB LED, three JST-SH Maker Ports and a USB-rechargeable single-cell LiPo / Li-Ion battery input. MAKER-PI-PICO-MINI comes with a Pico / Pico W pre-mounted; MAKER-PI-PICO-MINI-NB has a Pi Pico socket instead.
+
+## Specs and functions
+- Power input voltage, USB: 4.5–5.5 VDC (Datasheet, Absolute Maximum Ratings)
+- Power input voltage, LiPo battery: 3.3–4.2 VDC
+- Digital input voltage: low -0.3 to 0.8 V; high 2.0 to 3.6 V
+- Digital output voltage: low 0 to 0.5 V; high 2.6 to 3.3 V
+- Analog input voltage: 0 to 3.3 V
+- Operating temperature: -20 to 85 ℃
+- Dimensions: 53.85 mm × 23.12 mm
+- Status LEDs for GP0 - GP5 (6 LEDs), turn on when the IO state is high
+- GPIO LED Enable Jumper: cut the trace to disable the GPIO LEDs
+- Programmable button on GP20 (hardware pull-up and debounce capacitor per schematic)
+- Reset button (RUN)
+- Programmable passive piezo buzzer on GP18
+- User programmable WS2812B RGB LED on GP28
+- LiPo battery connector for single cell LiPo / Li-Ion, rechargeable via USB; charging LED
+- Battery charger MCP73831T-2ACI/OT and protection IC CT2105 (schematic)
+- 3.3V power LED
+- GPIO breakout for all Pico pins (headers not pre-soldered on the pre-mounted version)
+- Pi Pico socket on MAKER-PI-PICO-MINI-NB only
+
+## Interfaces and compatibility
+- Host: Raspberry Pi Pico / Pico W
+- 3x Maker Ports, JST-SH 4-ways, pin order GND, 3V3, GPIO, GPIO: GP0/GP1 (I2C0 SDA0/SCL0, UART0 TX0/RX0), GP4/GP5 (I2C0 SDA0/SCL0, UART1 TX1/RX1), GP26/GP27 (I2C1 SDA1/SCL1, A0/A1)
+- Maker Ports compatible with Qwiic, STEMMA QT and Grove (via conversion cable)
+- Board uses GP0–GP5 (status LEDs), GP18 (buzzer), GP20 (button), GP28 (RGB LED)
+- Battery: single cell LiPo / Li-Ion
+
+## Use cases
+- Projects with Raspberry Pi Pico / Pico W
+- Battery-powered Pico / Pico W projects with USB recharging
+- Connecting Qwiic, STEMMA QT and Grove (via conversion cable) modules to a Pico
+
+## Known limitations
+- No audio jack, no microSD socket, no ESP-01 socket, no buzzer mute switch, no on/off switch
+- Maker Ports are JST-SH; Grove modules need a conversion cable
+- Maker Ports GP0/GP1 and GP4/GP5 both use I2C0
+- Only GP26 and GP27 offer analog input on a Maker Port; GP28 (A2) drives the RGB LED
+- Status LEDs on GP0–GP5 light whenever the pin is HIGH; cut the jumper to disable them
+- GPIO breakout headers are not pre-soldered on the version with Pico / Pico W pre-mounted
+- If the board cannot be turned on with the battery connected, charge the battery to activate the battery protection circuit
+- Pico 2 / Pico 2 W compatibility: [NOT STATED]
+- Charge current and 3V3 current budget for Maker Ports: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Product page title: "Maker Pi Pico Mini: Simplifying Projects with Raspberry Pi Pico"
+- Datasheet tagline: "Simplifying Projects with Raspberry Pi Pico / Pico W"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-maker-pi-pico-mini-simplifying-projects-with-raspberry-pi-pico
+
+## Datasheet
+https://docs.google.com/document/d/14Yzc7C-3NXtMi0Cuqn2ZFWilJjBVvCIbsKoMZJ8b24Q/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/14Yzc7C-3NXtMi0Cuqn2ZFWilJjBVvCIbsKoMZJ8b24Q/edit
 
 # Product fact sheets
 
@@ -2195,6 +2561,225 @@ https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/
 # Product fact sheets
 
 ## Product name
+0.8Amp 5V-26V DC Motor Driver Shield for Arduino (2 Channels)
+
+## Aliases
+SHIELD-2AMOTOR, Cytron 2A Motor Driver Shield, 2A Motor Driver Shield, 0.8Amp 5V-26V DC Motor Driver Shield for Arduino, 0.8Amp 5V-26V DC Motor Driver Shield
+
+## What it is
+An Arduino shield that drives two brushed DC motors in both directions using the L298P IC. Mini jumpers select sign-magnitude or locked-antiphase control and the motor power source.
+
+## Specs and functions
+- Channels: 2, brushed DC motors
+- Motor supply voltage: 5 V to 26 V
+- Continuous current: 0.8 A per channel
+- Peak current: 2 A per channel; the spec table carries the footnote "*Must not exceed 10 seconds" without marking which row it applies to
+- The "2A" in the product code and manual title is the peak rating; the product page title's "0.8Amp" is the continuous rating
+- Logic input high: 3.3 V min, 5.5 V max; logic input low: 0 V to 0.5 V
+- 3.3V and 5V logic level input
+- Maximum PWM frequency: 10 kHz
+- Driver IC: L298P
+- Control modes: Signed Magnitude (default) and Locked Anti-Phase, selected by moving 4 mini jumpers
+- Power source selection: external (PWRIN) or internal (VIN, from the Arduino power source)
+- Reverse polarity protection on the external power (PWRIN) input
+- Over-current, thermal and under-voltage protection: [NOT STATED]
+- Test switch for both channels; PWR LED (motor power indicator)
+- Reset button for the Arduino main board
+- Stackable I/O header pins
+- LSS05 connector
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Warranty: 12 months, manufacturing defect only
+- In the box: 1 x SHIELD-2AMOTOR, 5 x mini jumper
+
+## Interfaces and compatibility
+- Signed Magnitude: DIR 1 = D4, EN 1 = D5, EN 2 = D6, DIR 2 = D7
+- Locked Anti-Phase: DIR 1 = D5, EN 1 = D4, EN 2 = D7, DIR 2 = D6
+- LSS05 pins: 5V, GND, A1 = O1, A2 = O2, A3 = O3, A4 = O4, A5 = O5, D8 = Cal
+- MOTOR1 and MOTOR2 terminal blocks; PWRIN terminal for external power
+- Compatible with Arduino Uno, Leonardo, Mega, Due and possibly other pin compatible main boards
+- Arduino: Cytron Motor Drivers Library (PWM_DIR_DUAL example); in Signed Magnitude mode use PWM pin 5 / DIR pin 4 for motor 1 and PWM pin 6 / DIR pin 7 for motor 2
+
+## Use cases
+- Controlling dual brushed DC motors with an Arduino Uno, Leonardo, Mega or Due
+- Connecting the LSS05 line sensor directly to the Arduino through the shield
+
+## Known limitations
+- Continuous current is 0.8 A per channel; 2 A is peak only
+- Motor supply maximum 26 V
+- Reverse polarity protection covers the PWRIN input only
+- Maximum PWM frequency 10 kHz; logic input maximum 5.5 V
+- Uses Arduino pins D4 to D7 (and A1 to A5 and D8 when the LSS05 connector is used)
+
+## Positioning (kept apart from specs)
+[NOT STATED]
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-0.8amp-5v-26v-dc-motor-driver-shield-for-arduino-2-channels
+
+## Datasheet
+https://docs.google.com/document/d/1EiQAE_9VpDDm4rjZrySAoGjQldJnTk6rJIsUkqCT37w/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1EiQAE_9VpDDm4rjZrySAoGjQldJnTk6rJIsUkqCT37w/view
+
+# Product fact sheets
+
+## Product name
+1.2Amp 7V-30V DC Motor Driver Shield for Arduino (2 Channels)
+
+## Aliases
+SHIELD-3AMOTOR, Cytron 3A Motor Driver Shield, 3A Motor Driver Shield, 1.2Amp 7V-30V DC Motor Driver Shield for Arduino, 1.2Amp 7V-30V DC Motor Driver Shield
+
+## What it is
+An Arduino shield that drives two brushed DC motors in both directions using the DRV8871 IC. A DIP switch selects sign-magnitude or locked-antiphase control.
+
+## Specs and functions
+- Channels: 2, brushed DC motors
+- Motor supply voltage: 7 V to 30 V; above 12 V the PWRIN-Vin connection pad must be cut and the Arduino powered separately
+- Continuous current: 1.2 A per channel (depends on room temperature)
+- Peak current: 3 A per channel, must not exceed 1 second
+- The "3A" in the product code and manual title is the peak rating; the product page title's "1.2Amp" is the continuous rating
+- Logic input high: 1.5 V min, 5 V max; logic input low: 0 V to 0.5 V
+- Supports 3.3V and 5V logic level input
+- Maximum PWM frequency: [NOT STATED]
+- Driver IC: DRV8871
+- Control modes: Sign Magnitude and Locked Anti-Phase, selected by DIP switch (switches 5, 6, 7, 8 ON = Sign Magnitude; switches 1, 2, 3, 4 ON = Locked Anti-Phase)
+- Current limit protection
+- No polarity protection for V motor
+- Thermal and under-voltage protection: [NOT STATED]
+- Test buttons for both channels; Motor 1 and Motor 2 direction LEDs; power LED
+- Reset button
+- Stackable Arduino header pins
+- LSS05 Auto-Calibrating Line Sensor connector
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Warranty: 12 months, manufacturing defect only; cutting any trace voids the warranty
+- In the box: 1 x Cytron 3A Motor Driver (Code: SHIELD-3AMOTOR)
+
+## Interfaces and compatibility
+- Sign Magnitude: DIR1 = D4, EN1 = D5, EN2 = D6, DIR2 = D7
+- Locked Anti-Phase: DIR1 = D5, EN1 = D4, EN2 = D7, DIR2 = D6
+- Control pins can be changed only by cutting traces on the back and soldering jumpers (voids warranty)
+- LSS05 pins: O1 = D13, O2 = D12, O3 = D11, O4 = D10, O5 = D9, Calibrate = D8
+- Screw terminal blocks for Motor 1, Motor 2 and power supply
+- PWRIN (shield power terminal) and Arduino Vin are joined by a connection pad by default
+- Compatible with Arduino Uno, Leonardo, Mega, Due, Zero, 101 and possibly other pin compatible boards such as CIKU, CT UNO and CT ARM
+- Arduino: Cytron Motor Drivers Library (PWM_DIR_DUAL example); in Sign Magnitude mode use PWM pin 5 / DIR pin 4 for motor 1 and PWM pin 6 / DIR pin 7 for motor 2
+
+## Use cases
+- Controlling dual DC motors from an Arduino
+- Line following robot with the LSS05 line sensor connected directly to the shield
+
+## Known limitations
+- Continuous current is 1.2 A per channel; 3 A is peak only, for no more than 1 second
+- No polarity protection on the motor supply; double check the connection before connecting power
+- Supplying more than 12 V requires cutting the PWRIN-Vin trace, which voids the warranty
+- Set only Sign Magnitude or Locked Anti-Phase on the DIP switch at a time; mixing the setting causes unexpected results
+- The manual specifies a battery power source; SMPS use is not covered
+- Uses Arduino pins D4 to D7 (and D8 to D13 when the LSS05 connector is used)
+
+## Positioning (kept apart from specs)
+- The manual describes it as "an improvement from our previous Cytron 2A Motor Driver Shield" that "can handle higher current up to 3A together with limit current protection"
+
+## Price band
+RM41.79 on offer (was RM92.40) (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-1.2amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels
+
+## Datasheet
+https://docs.google.com/document/d/1gzOZmvPOlycLE2lz935gsNGHn9SZdbbSCnHCQyKssi8/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1gzOZmvPOlycLE2lz935gsNGHn9SZdbbSCnHCQyKssi8/view
+
+# Product fact sheets
+
+## Product name
+1.5Amp 7V-15V DC Motor Driver (4 Channels)
+
+## Aliases
+FD04A, FD04A Rev2.0, FD04A R2, FD04A-R2, 1.5Amp 7V-15V DC Motor Driver, 4 Channel Motor Driver
+
+## What it is
+A four-channel bi-directional driver for four brushed DC motors, built on the L298P IC. Each channel is controlled by a direction pin and an enable/speed-control pin.
+
+## Specs and functions
+- Channels: 4 (M1, M2, M3, M4), brushed DC motors
+- Motor supply voltage: 7 V to 15 V (user manual). Product page title says 7V-15V; product page URL slug says "7v-25v"
+- Continuous current: 1.5 A per channel (user manual spec table)
+- Peak current: 2.5 A (user manual spec table; duration not stated)
+- Manual introduction also says "up to 2A for each channel"; the spec table gives 1.5 A continuous and 2.5 A peak
+- Logic input high: 3.3 V min, 5.5 V max; logic input low: 0 V to 0.5 V
+- 3.3V and 5V logic level input
+- Maximum PWM frequency: 10 kHz
+- Control per channel: direction pin and enable/Speed Control pin; Enable 0 = both outputs LOW; Enable 1 + Direction 0 = OUT A HIGH, OUT B LOW; Enable 1 + Direction 1 = OUT A LOW, OUT B HIGH
+- Driver IC: L298P
+- Onboard 5V voltage regulator supplies the transistors and L298P and the V pin (5 V output)
+- Reverse polarity protection on the motor supply
+- Schottky clamping diodes
+- Power toggle switch; feature list also states "Solid state switch for power"
+- Test switches (A and B) for every channel
+- Power indicator LED and motor status indicator LEDs
+- 3 mm mounting holes for standard PCB stands
+- Over-current, thermal and under-voltage protection: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Warranty: 12 months, manufacturing defects only
+- In the box: 1 x FD04A Rev2.0 board, 1 x 14 way IDE cable connector
+
+## Interfaces and compatibility
+- Control pins through a 7 x 2 (14-way) IDE socket or through extra solder pads
+- Control pins 1-8: Motor 1 direction, Motor 1 enable/Speed Control, Motor 2 direction, Motor 2 enable/Speed Control, Motor 3 direction, Motor 3 enable/Speed Control, Motor 4 direction, Motor 4 enable/Speed Control; V = 5V output; G = ground; x = not connected
+- POWER terminal block for motor supply; four MOTOR terminal blocks M1 to M4
+- IDE connector compatible with FD04A Rev1.0; can replace FD04A Rev1.0 in the PR19
+- 5V from the V pin can supply the PR19 main board; do not supply another 5V into the V pin
+- Arduino: Cytron Motor Drivers Library (PWM_DIR_DUAL example)
+- PIC sample code: DIY-PR19-PIC16F777 on GitHub
+
+## Use cases
+- Driving four brushed DC motors from one board
+- Replacing FD04A Rev1.0 in the PR19 robot or other FD04A projects
+
+## Known limitations
+- Motor supply maximum is 15 V
+- Continuous current is 1.5 A per channel; peak 2.5 A
+- Maximum PWM frequency 10 kHz
+- Logic input maximum 5.5 V
+- Do not supply 5V into the V pin
+- Over-current, thermal and under-voltage protection are not stated
+
+## Positioning (kept apart from specs)
+- The manual describes FD04A Rev2.0 as "an enhanced version of FD04A Rev1.0"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-1.5amp-7v-25v-dc-motor-driver-4-channels
+
+## Datasheet
+https://docs.google.com/document/d/1SWq9YtW6gsr8n9eIz2X8ek8Na8KoJ30whM5HsOdCnSc/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1SWq9YtW6gsr8n9eIz2X8ek8Na8KoJ30whM5HsOdCnSc/edit
+
+# Product fact sheets
+
+## Product name
 MD10C 10Amp 5V-30V DC Motor Driver (Rev 3.0)
 
 ## Aliases
@@ -2279,6 +2864,374 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1rgQzn-nWn-qcWNnHjDZvIYqUrdCeBQQxXA-TU3BF0AQ/view
+
+# Product fact sheets
+
+## Product name
+10 Amp 7V-30V Potentiometer & Switch Control DC Motor Driver (MD10-POT)
+
+## Aliases
+MD10-POT, MD10POT, Cytron MD10-POT, 10 Amp 7V-30V Potentiometer & Switch Control DC Motor Driver, Potentiometer and Switch Control 10Amp DC Motor Driver
+
+## What it is
+A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30 A peak for less than 10 seconds. Speed and direction are set with a 10KΩ potentiometer and an SPDT switch, or with PWM and DIR signals from a controller.
+
+## Specs and functions
+- Product code: MD10-POT
+- Channels: 1
+- Power input voltage: 7 V min, 30 V max
+- Maximum motor current, continuous: 10 A
+- Maximum motor current, peak: 30 A (less than 10 seconds)
+- Logic input voltage, low level (PWM, DIR): 0 V min, 0.5 V max
+- Logic input voltage, high level (PWM, DIR): 3 V min, 30 V max
+- Internal PWM generator frequency: 9 KHz min, 11 KHz max (output frequency when potentiometer is used)
+- External PWM input frequency: DC to 20 KHz (output frequency = input frequency)
+- Speed control: 10KΩ potentiometer or PWM signal; direction control: SPDT switch or DIR pin
+- Truth table: PWM Low = both outputs low (brake, DIR don't care); PWM High + DIR Low = MA high, MB low (forward); PWM High + DIR High = MA low, MB high (reverse)
+- Test buttons to test the functionality of the motor / driver
+- Power LED; Motor Status LEDs (turn on when the motor is running)
+- 3D printable case STL file linked on the product page
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
+- Packing list: [NOT STATED]
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- Power Input Terminal: connect to battery
+- Motor Output Terminal: connect to motor (outputs MA and MB)
+- Speed Control Potentiometer connector: 10KΩ potentiometer
+- Direction Switch connector: SPDT switch
+- PWM/DIR Input: PWM signal for speed, DIR pin for direction
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, pwmPin, dirPin)`
+- Connector pin order: [NOT STATED]
+- Locked-antiphase PWM: [NOT STATED]
+- RC, analog voltage or serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Control a DC motor's speed with a 10KΩ potentiometer and its direction with an SPDT switch
+- Control the motor with a PWM signal and a DIR pin
+- Test the functionality of the motor / driver with the test buttons
+
+## Known limitations
+- Power input 7 V minimum, 30 V maximum
+- Peak 30 A only for less than 10 seconds; 10 A continuous
+- Logic low must be 0.5 V or below
+- PWM Low brakes the motor regardless of DIR
+- Single channel, brushed DC motor
+- Forward/reverse depends on motor wiring
+- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
+- Switching power supply / regenerative current guidance: [NOT STATED]
+
+## Positioning (kept apart from specs)
+[NOT STATED]
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-10-amp-7v-30v-potentiometer-and-switch-control-dc-motor-driver
+
+## Datasheet
+https://docs.google.com/document/d/1U_dn6OCEw76pqJaIzZYuWqWoU1C9APwpNp8qztaJ1uA/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1U_dn6OCEw76pqJaIzZYuWqWoU1C9APwpNp8qztaJ1uA/view
+
+# Product fact sheets
+
+## Product name
+10Amp 7V-30V DC Motor Driver Shield for Arduino
+
+## Aliases
+SHIELD-MD10, SHIELD-MD10 R2, Cytron SHIELD-MD10, Cytron 10A Motor Driver Shield, Shield MD10 Rev 2.0
+
+## What it is
+A single-channel Arduino shield that drives one brushed DC motor at up to 10 A continuous. Speed and direction come from a PWM pin and a DIR pin selected with mini jumpers.
+
+## Specs and functions
+- Motor supply voltage (Rev 2.0): feature list "7V to 30V"; the same manual's Absolute Maximum Rating table says 7 V min, 25 V max (both from the Rev2.0 user manual)
+- Rev 1.0: 7 V to 25 V
+- Maximum continuous motor current: 10 A
+- Peak motor current: 15 A, must not exceed 10 seconds
+- 1 channel, bi-directional
+- Logic input high level (VIOH): 3 V min, 5.5 V max
+- Logic input low level (VIOL): 0 V min, 0 V typical, 0.5 V max
+- 3.3V and 5V logic level input
+- Maximum PWM frequency: 10 kHz
+- Fully NMOS H-Bridge; no heat sink is required
+- Test Button A (current A to B) and Test Button B (current B to A)
+- Red LED A, Red LED B, Green Power LED
+- Reset button for the Arduino main board
+- Rev 2.0 boards labelled "SHIELD-MD10 R2" on front and back
+- Packing list: 1 x SHIELD-MD10 shield, 2 x mini jumper
+- Warranty: 12 months, manufacturing defects only
+- Over-current, thermal, under-voltage, reverse-polarity protection: [NOT STATED]
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- PWM pin selectable: D3, D5, D6, D9, D10 or D11 (default D3)
+- DIR pin selectable: D2, D4, D7, D8, D12 or D13 (default D2)
+- Terminal block: POWER +, POWER -, Motor Output A, Motor Output B
+- Stackable digital, analog and power headers; only RST and GND of the power header connect to the shield
+- Optional External Control header for microcontrollers other than Arduino
+- Compatible with Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo "and possibly other pin compatible main boards"
+- Arduino library: Cytron Motor Drivers Library, PWM_DIR example
+- 3D files (STEP, IGS) for SHIELD-MD10 R2 on GitHub
+
+## Use cases
+- Controlling one high-current brushed DC motor from an Arduino UNO, Duemilanove, Mega or Leonardo
+- Controlling the motor from other microcontrollers through the Optional External Control header
+
+## Known limitations
+- Single channel only
+- Peak 15 A for no more than 10 seconds
+- PWM frequency up to 10 kHz
+- The shield does not power the Arduino; the Arduino needs its own power source
+- Power up the Arduino and load the sketch before powering the shield
+- Rev2.0 manual states two different maximum voltages (30 V feature list, 25 V table)
+- Rev 1.0 boards: 25 V maximum
+- No protection features stated
+
+## Positioning (kept apart from specs)
+- "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino
+
+## Datasheet
+https://docs.google.com/document/d/1zITY9dHK26-iBkS9AnZ0ZUS3Z8K8NzLu3t709F7r7us/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1zITY9dHK26-iBkS9AnZ0ZUS3Z8K8NzLu3t709F7r7us/view
+
+# Product fact sheets
+
+## Product name
+MDD10A 10Amp 5V-30V DC Motor Driver (2 Channels) (Rev 2.0)
+
+## Aliases
+MDD10A, MDD10A Rev2.0, Cytron MDD10A, 10Amp 5V-30V DC Motor Driver (2 Channels), Dual Channel 10A DC Motor Driver
+
+## What it is
+A dual-channel, bi-directional driver for two brushed DC motors, powered from 5–30 V and controlled with a PWM and a DIR signal per channel from a microcontroller. Each channel is rated 10 A continuous and 30 A peak for up to 10 seconds.
+
+## Specs and functions
+- Product code: MDD10A; current revision Rev 2.0 (boards shipped after Jan 2017)
+- Channels: 2 (bi-directional, brushed DC motors)
+- Power input voltage: 5 V to 30 V (Rev 2.0); earlier boards 25 V max
+- Maximum continuous motor current: 10 A per channel, tested in room temperature at 25°C
+- Peak motor current: 30 A per channel, must not exceed 10 seconds
+- Logic input high level: 3 V min, 5.5 V max
+- Logic input low level: 0 V min, 0 V typical, 0.5 V max
+- Logic level input: 3.3V and 5V (for PWM and DIR) (product page)
+- Maximum PWM frequency: 20 kHz; actual output frequency is the same as input frequency
+- Control modes: Sign-Magnitude PWM (PWM = speed, DIR = direction) and Locked-Antiphase PWM (PWM pin tied to logic high, PWM signal on DIR; 50% duty = stop); selected by wiring
+- Truth table (each channel): PWM Low = both outputs low (DIR don't care); PWM High + DIR Low = A high, B low; PWM High + DIR High = A low, B high
+- Fully NMOS H-Bridge; manual states no heat sink is required
+- Solid-state components (no mechanical relay)
+- Regenerative Braking (product page)
+- 4 test buttons (M1A, M1B, M2A, M2B), 2 per channel
+- Red LEDs M1A, M1B, M2A, M2B show current direction; green power LED
+- Dimensions: 84.5 mm x 62 mm
+- Packing list: 1 x MDD10A; 1 x 2510 PCB connector 5-way female; 5 x 2510 terminal pin
+- Warranty: 12 months, manufacturing defects only
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Input header (2510, 5 pins): pin 1 GND, pin 2 PWM2, pin 3 DIR2, pin 4 PWM1, pin 5 DIR1
+- Terminal block (6 pins): 1 Motor 1 Output B, 2 Motor 1 Output A, 3 POWER +, 4 POWER -, 5 Motor 2 Output A, 6 Motor 2 Output B
+- Compatible with Arduino and Raspberry Pi (3.3V and 5V logic)
+- Not an Arduino shield; connect with wires
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR_DUAL example, one `CytronMD(PWM_DIR, pwmPin, dirPin)` object per channel
+- Getting started with SK40C (PIC) in the user's manual
+- RC servo signal: not supported
+- Analog input / serial input: [NOT STATED]
+- Isolation: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Drive 2 brushed DC motors with high current up to 10A continuously
+- Control the motors manually with the onboard test buttons
+- Control two DC motors from Arduino UNO
+- Control two DC motors from SK40C
+
+## Known limitations
+- Use a battery when driving an inductive load such as a DC brush motor; most switching power supplies shut down when regenerative current from the motor is detected
+- If a switching power supply is needed, a battery with the same rated voltage must be in parallel with it to absorb the regenerative current
+- No reverse polarity protection at Vmotor (product page): check polarity before power-up
+- Logic inputs 5.5 V max (not for 12 V or 24 V logic)
+- Peak 30 A per channel only for 10 seconds or less; 10 A continuous tested at 25°C
+- Not for RC PWM (TTL PWM from a microcontroller only)
+- Brushed DC motors only
+- PWM Low brakes the channel (both outputs low) regardless of DIR
+- Motor direction depends on wiring
+- Header order is PWM2/DIR2 (pins 2–3) before PWM1/DIR1 (pins 4–5)
+- Boards shipped before Jan 2017 are limited to 25 V
+- Over-current, thermal and under-voltage protection: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "the dual-channel version of MD10C" (user's manual)
+- Solid-state components "result in faster response time and eliminate the wear and tear of the mechanical relay"
+
+## Price band
+- www.cytron.io volume prices: 5 or more $22.33; 20 or more $21.15; 50 or more $19.98 (read 16 Oct 2026); single-unit price [NOT STATED]
+
+## Product page
+https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
+
+## Datasheet
+https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
+
+# Product fact sheets
+
+## Product name
+10Amp 7V-30V DC Motor Driver Shield for Arduino (2 Channels)
+
+## Aliases
+SHIELD-MDD10, Cytron SHIELD-MDD10, Shield MDD10, 10A Dual Channel DC Motor Driver Shield for Arduino
+
+## What it is
+An Arduino-shield-format driver for two brushed DC motors, 10 A continuous per channel from a 7–30 V battery. Each motor is controlled by a PWM input and a DIR input on jumper-selected Arduino pins.
+
+## Specs and functions
+- Power input voltage: 7 V to 30 V (VB+ / VB-)
+- Motor current per channel: 10 A continuous; 30 A peak
+- Peak current is limited by the overcurrent protection circuit; actual limit depends on board temperature; 30 A value is at room temperature (25 - 30 degree Celsius); no peak duration stated
+- 2 channels, PWM + DIR control per channel
+- Logic input (PWM & DIR): low level 0 V to 0.8 V; high level 1.5 V to 5.5 V
+- PWM frequency: standard DC to 20 kHz; extended 20 kHz to 40 kHz (continuous motor current reduced in the extended range); output frequency is same as input frequency
+- Truth table: PWM low = brake (both outputs low); PWM high + DIR low = forward; PWM high + DIR high = backward (actual direction depends on motor connection)
+- Built-in 5 V buck regulator powers the Arduino by default; DC +5V output 500 mA max
+- Overcurrent protection with active current limiting (OC LED on when limiting)
+- Temperature protection: higher board temperature gives a lower current-limit threshold
+- Undervoltage shutdown (ERR LED on)
+- Test buttons MA (forward) and MB (backward), run the motor at full speed
+- LEDs: Power, motor status MA/MB, Error, OC
+- Arduino reset button
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Arduino shield form factor: male header (bottom) to the Arduino, female header (top) for stacking other shields
+- PWM/DIR Input Pin Selector to choose the Arduino pins for PWM and DIR; selectable pins: [NOT STATED]
+- 5V Output solder jumper: cut the track to stop the shield powering the Arduino 5V pin
+- Power Input Terminal VB+ / VB-; Motor Output Terminals MA / MB per motor
+- Arduino library: Cytron Motor Drivers Library, PWM_DIR_DUAL example (CytronMD with PWM_DIR)
+- Logic high threshold 1.5 V to 5.5 V
+- 3D CAD file linked from the product page
+
+## Use cases
+- Driving two brushed DC motors from an Arduino
+- Driving a motor that stalls or is oversized, with current limiting protecting the driver ("when the motor stalls or an oversized motor is hooked up")
+
+## Known limitations
+- No reverse polarity protection: "Connecting in reverse polarity will damage the motor driver instantaneously."
+- 5 V output to the Arduino is 500 mA max
+- Continuous current is reduced when PWM runs at 20–40 kHz
+- Current-limit threshold falls as the board heats up
+- Output shuts down if the power input drops below the lower limit (threshold [NOT STATED])
+- Locked-antiphase operation: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- [NOT STATED]
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels
+
+## Datasheet
+https://docs.google.com/document/d/1QHlQbs6f5fY_BMBs3hJRg1QLFe4yqy4nyH3mBavZ2-0
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1QHlQbs6f5fY_BMBs3hJRg1QLFe4yqy4nyH3mBavZ2-0
+
+# Product fact sheets
+
+## Product name
+10Amp 6V-24V DC Motor Driver HAT for Raspberry Pi (2 Channels)
+
+## Aliases
+HAT-MDD10, Cytron HAT-MDD10, 10Amp DC Motor Driver for Raspberry Pi, MDD10 HAT for Raspberry Pi
+
+## What it is
+A Raspberry Pi HAT that drives two brushed DC motors at up to 10 A continuous each from a 6–24 V supply. Each motor is controlled by a PWM and a DIR signal on fixed Raspberry Pi GPIOs.
+
+## Specs and functions
+- Power input voltage: 6 V to 24 V (absolute maximum)
+- Maximum continuous motor current: 10 A (without heatsink at 25 ℃)
+- Peak motor current: 30 A, must not exceed 10 seconds
+- Current limiting at 30 A
+- 2 channels, bi-directional
+- Logic input high level (VIOH): 3 V min, 5.5 V max
+- Logic input low level (VIOL): 0 V min, 0 V typical, 0.5 V max
+- 3.3V and 5V logic level input
+- Maximum PWM frequency: 20 kHz (actual output frequency is same as input frequency)
+- Sign-magnitude PWM and locked-antiphase PWM
+- Truth table: PWM low = both outputs low; PWM high + DIR low = A high, B low; PWM high + DIR high = A low, B high
+- Fully NMOS H-Bridge; no heat sink is required
+- Test switches M1A, M1B, M2A, M2B; LED indicators per output; power LED
+- Dimension: 67.5 mm x 59 mm
+- Packing list: 1 x Hat-MDD10, 1 x PC104 Header Pin (2x20) (CN-PH-PC104)
+- Warranty: 12 months, manufacturing defects only
+- Thermal, under-voltage, reverse-polarity protection: [NOT STATED]
+
+## Interfaces and compatibility
+- PWM1 = GPIO12, DIR1 = GPIO26, PWM2 = GPIO13, DIR2 = GPIO24 (BCM numbering)
+- Terminal block: M1A, M1B, VM, GND, M2A, M2B
+- Raspberry Pi compatible connector; Raspberry Pi 3 named in the manual and sample code
+- Python sample code (RPi.GPIO) for sign-magnitude (HatMDD10SM.py) and locked-antiphase (HatMDD10LA.py) on GitHub; written in Python 2 syntax
+- Whether it powers the Raspberry Pi: [NOT STATED]
+
+## Use cases
+- Driving two high-current brushed DC motors with a Raspberry Pi as the controller
+
+## Known limitations
+- Supports TTL PWM from a microcontroller, not PWM from an RC receiver
+- 24 V is the absolute maximum supply
+- Peak 30 A must not exceed 10 seconds
+- 10 A continuous rating is without heatsink at 25 ℃
+- GPIO pins are fixed (no pin selector described)
+- Sample code uses Python 2 print statements
+
+## Positioning (kept apart from specs)
+- "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-10amp-6v-24v-dc-motor-driver-hat-for-rpi-2-channels
+
+## Datasheet
+https://docs.google.com/document/d/19JLDnzU0y-9FKH4ZXm0lk4xtMJKtaKTDBT5ulGgj8UI/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/19JLDnzU0y-9FKH4ZXm0lk4xtMJKtaKTDBT5ulGgj8UI/view
 
 # Product fact sheets
 
@@ -2450,90 +3403,6 @@ https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf
 # Product fact sheets
 
 ## Product name
-MDD10A 10Amp 5V-30V DC Motor Driver (2 Channels) (Rev 2.0)
-
-## Aliases
-MDD10A, MDD10A Rev2.0, Cytron MDD10A, 10Amp 5V-30V DC Motor Driver (2 Channels), Dual Channel 10A DC Motor Driver
-
-## What it is
-A dual-channel, bi-directional driver for two brushed DC motors, powered from 5–30 V and controlled with a PWM and a DIR signal per channel from a microcontroller. Each channel is rated 10 A continuous and 30 A peak for up to 10 seconds.
-
-## Specs and functions
-- Product code: MDD10A; current revision Rev 2.0 (boards shipped after Jan 2017)
-- Channels: 2 (bi-directional, brushed DC motors)
-- Power input voltage: 5 V to 30 V (Rev 2.0); earlier boards 25 V max
-- Maximum continuous motor current: 10 A per channel, tested in room temperature at 25°C
-- Peak motor current: 30 A per channel, must not exceed 10 seconds
-- Logic input high level: 3 V min, 5.5 V max
-- Logic input low level: 0 V min, 0 V typical, 0.5 V max
-- Logic level input: 3.3V and 5V (for PWM and DIR) (product page)
-- Maximum PWM frequency: 20 kHz; actual output frequency is the same as input frequency
-- Control modes: Sign-Magnitude PWM (PWM = speed, DIR = direction) and Locked-Antiphase PWM (PWM pin tied to logic high, PWM signal on DIR; 50% duty = stop); selected by wiring
-- Truth table (each channel): PWM Low = both outputs low (DIR don't care); PWM High + DIR Low = A high, B low; PWM High + DIR High = A low, B high
-- Fully NMOS H-Bridge; manual states no heat sink is required
-- Solid-state components (no mechanical relay)
-- Regenerative Braking (product page)
-- 4 test buttons (M1A, M1B, M2A, M2B), 2 per channel
-- Red LEDs M1A, M1B, M2A, M2B show current direction; green power LED
-- Dimensions: 84.5 mm x 62 mm
-- Packing list: 1 x MDD10A; 1 x 2510 PCB connector 5-way female; 5 x 2510 terminal pin
-- Warranty: 12 months, manufacturing defects only
-- Operating temperature: [NOT STATED]
-
-## Interfaces and compatibility
-- Input header (2510, 5 pins): pin 1 GND, pin 2 PWM2, pin 3 DIR2, pin 4 PWM1, pin 5 DIR1
-- Terminal block (6 pins): 1 Motor 1 Output B, 2 Motor 1 Output A, 3 POWER +, 4 POWER -, 5 Motor 2 Output A, 6 Motor 2 Output B
-- Compatible with Arduino and Raspberry Pi (3.3V and 5V logic)
-- Not an Arduino shield; connect with wires
-- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR_DUAL example, one `CytronMD(PWM_DIR, pwmPin, dirPin)` object per channel
-- Getting started with SK40C (PIC) in the user's manual
-- RC servo signal: not supported
-- Analog input / serial input: [NOT STATED]
-- Isolation: [NOT STATED]
-- Wire size: [NOT STATED]
-
-## Use cases
-- Drive 2 brushed DC motors with high current up to 10A continuously
-- Control the motors manually with the onboard test buttons
-- Control two DC motors from Arduino UNO
-- Control two DC motors from SK40C
-
-## Known limitations
-- Use a battery when driving an inductive load such as a DC brush motor; most switching power supplies shut down when regenerative current from the motor is detected
-- If a switching power supply is needed, a battery with the same rated voltage must be in parallel with it to absorb the regenerative current
-- No reverse polarity protection at Vmotor (product page): check polarity before power-up
-- Logic inputs 5.5 V max (not for 12 V or 24 V logic)
-- Peak 30 A per channel only for 10 seconds or less; 10 A continuous tested at 25°C
-- Not for RC PWM (TTL PWM from a microcontroller only)
-- Brushed DC motors only
-- PWM Low brakes the channel (both outputs low) regardless of DIR
-- Motor direction depends on wiring
-- Header order is PWM2/DIR2 (pins 2–3) before PWM1/DIR1 (pins 4–5)
-- Boards shipped before Jan 2017 are limited to 25 V
-- Over-current, thermal and under-voltage protection: [NOT STATED]
-
-## Positioning (kept apart from specs)
-- "the dual-channel version of MD10C" (user's manual)
-- Solid-state components "result in faster response time and eliminate the wear and tear of the mechanical relay"
-
-## Price band
-- www.cytron.io volume prices: 5 or more $22.33; 20 or more $21.15; 50 or more $19.98 (read 16 Oct 2026); single-unit price [NOT STATED]
-
-## Product page
-https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
-
-## Datasheet
-https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
-
-## Source type
-Datasheet
-
-## Source link
-https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
-
-# Product fact sheets
-
-## Product name
 MDD20A 20Amp 6V-30V DC Motor Driver (2 Channels)
 
 ## Aliases
@@ -2696,6 +3565,95 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit
+
+# Product fact sheets
+
+## Product name
+30Amp 5V-30V DC Motor Driver (MD30C)
+
+## Aliases
+MD30C, MD30C Rev2.0, Cytron MD30C, 30Amp 5V-30V DC Motor Driver, MD30C 30A DC Motor Driver
+
+## What it is
+A single-channel, bi-directional driver for one brushed DC motor, powered from 5–30 V and rated 30 A continuous and 80 A peak for up to 1 second. It takes PWM and DIR signals from a microcontroller or runs standalone from its onboard PWM generator with switches and a speed potentiometer.
+
+## Specs and functions
+- Product code: MD30C; hardware Revision 2.0 since January 2016
+- Channels: 1 (bi-directional, brushed DC motor)
+- Power input voltage (motor supply): 5 V min, 30 V max
+- Maximum continuous motor current: 30 A
+- Peak motor current: 80 A, must not exceed 1 second
+- Idle current: 100 mA max
+- Logic input high level: 3 V min, 5.5 V max
+- Logic input low level: 0 V min, 0.5 V max
+- Logic level input: 3.3V and 5V
+- Maximum PWM frequency: 20 KHz; actual output frequency is same as input frequency when external PWM is selected
+- PWM source selected by jumpers: internal potentiometer = JP4 INT POT + JP6 INT PWM; external potentiometer = JP4 EXT POT + JP6 INT PWM; external PWM signal = JP4 don't care + JP6 EXT PWM
+- Truth table: PWM Low = both outputs low (brake, DIR don't care); PWM High + DIR Low = A high, B low (CW); PWM High + DIR High = A low, B high (CCW)
+- Fully NMOS H-Bridge; manual states no heatsink or fan is required
+- Reverse polarity protection
+- 2 test buttons (A and B); external switches can be connected
+- Red LED A, Red LED B (current direction), Green Power LED
+- Packing list: 1 x MD30C; 2 x Mini Jumper; 1 x 2510 PCB Connector 3 Ways (Female); 3 x 2510 Terminal Pin
+- Warranty: 6 months, manufacturing defects only
+- CE, FCC and RoHS certificates linked on the product page
+- Internal PWM generator frequency: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Over-current, thermal and under-voltage protection: [NOT STATED]
+
+## Interfaces and compatibility
+- Input header (2510, 3 pins): pin 1 GND, pin 2 PWM (not RC PWM), pin 3 DIR
+- Power terminal block and motor terminal block; for current above 20A, solder wires directly to the pads at the bottom layer
+- JP4 and JP6: PWM source selector jumpers
+- JP5: external 10K Ohm potentiometer port
+- JP7 and JP8: external switches
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, pwmPin, dirPin)`
+- Getting started with SK40C in the user's manual
+- Works with 3.3V and 5V logic controllers
+- RC (Radio Control) PWM: not supported
+- Analog voltage input / serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Drive medium to high power DC brushed motor with current capacity up to 80A peak and 30A continuously
+- Operate without a host controller using the onboard switches and speed potentiometer
+- Mount external switches and potentiometer at an easy to reach place
+- Control the motor from a microcontroller (example with SK40C)
+
+## Known limitations
+- Battery recommended as the power source
+- If a switching power supply is used, parallel it with a same-voltage battery to absorb the re-gen power from the motor
+- Connecting the battery to the motor port will burn the MOSFETs and is not covered under warranty
+- Set either DIR or PWM pin LOW first when power is on
+- Logic inputs 5.5 V max (not for 12 V or 24 V logic)
+- Peak 80 A only for 1 second or less
+- Not for RC (Radio Control) PWM
+- For current above 20A, solder wires to the bottom-layer pads instead of using the terminal block
+- JP6 must be EXT PWM for microcontroller control; with JP4 on EXT POT the onboard potentiometer has no effect
+- PWM Low brakes the motor regardless of DIR
+- Brushed DC motor only, one channel
+- Motor direction depends on wiring
+
+## Positioning (kept apart from specs)
+- "the successor of MD30B"
+- "user friendly features such as reverse polarity protection and onboard PWM generator which allows it to operate without a host controller"
+- "Fully NMOS design not only provides faster switching time, it is also more efficient and no heatsink or fan is required."
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-30amp-5v-30v-dc-motor-driver
+
+## Datasheet
+https://docs.google.com/document/d/178uDa3dmoG0ZX859rWUOS2Xyafkd8hSsSET5-ZLXMYQ/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/178uDa3dmoG0ZX859rWUOS2Xyafkd8hSsSET5-ZLXMYQ/view
 
 # Product fact sheets
 
@@ -3072,6 +4030,97 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit
+
+# Product fact sheets
+
+## Product name
+160Amp 8V-28V SmartDrive DC Motor Driver (MDS160A, SmartDrive160)
+
+## Aliases
+MDS160A, SmartDrive160, SmartDrive 160, Cytron MDS160A, 160Amp 8V-28V SmartDrive DC Motor Driver
+
+## What it is
+A single-channel, bi-directional smart driver for one high-power brushed DC motor, 8–28 V input and 160 A continuous. An onboard microcontroller provides RC, Analog, PWM, Simplified Serial and Packetized Serial input modes, temperature-based current limiting and thermal protection.
+
+## Specs and functions
+- Product code: MDS160A (SmartDrive160)
+- Channels: 1 (bi-directional, brushed DC motor)
+- Input voltage (motor supply): 8 V min, 28 V max
+- Maximum continuous motor current: 160 A (depends on the room temperature)
+- Peak motor current: 190 A (1 minute); 175 A (2 minutes); 160 A continuously (depends on the room temperature)
+- Logic input high level: 3 V min, 5.5 V max; low level: 0 V min, 0 V typical, 0.5 V max (not applicable for PWM signal, which is low-pass filtered to analog)
+- Analog input range: 0 – 5V
+- 5V output current: 1 A max
+- Switching frequency: 16 KHz
+- Input modes, selected by 8-way DIP switch and read at power-up: RC, Analog, PWM, Simplified Serial, Packetized Serial
+- RC mode: single or left/right mix; exponential option; MCU mode (centre fixed at 1.5 ms, timeout disabled); otherwise 100 ms signal-loss timeout stops the motor
+- Analog/PWM mode: 2.5V = stop (centre mode) or sign-magnitude (Input 1 speed 0V stop to 5V full, Input 2 direction); single or left/right mix; exponential option
+- Simplified Serial baud rates: 1200, 2400, 4800, 9600, 19200, 38400, 57600, 115200; one byte (127 stop, 0 full reverse, 255 full forward); Slave Select on Input 2
+- Packetized Serial: auto-baud from header byte 85; 4-byte packet (header, address 0–15, command, checksum = header + address + command); up to 16 units on one UART
+- Current limit by board temperature: below 60°C 194A; 60–70°C 175A; 70–80°C 163A; 80–90°C 144A; 90–100°C 125A; 100–110°C 100A; above 110°C 50A
+- LiPo under voltage warning (below 3.3V per cell; warning only)
+- Overvoltage protection, overcurrent protection (current limited each PWM cycle), over temperature protection
+- Cooling fan; height 75mm including the cooling fan
+- 2 test buttons (A, B)
+- LEDs: A, B, OC (overcurrent), ERR (error blink codes), STAT (motor running), PWR
+- On/Off switch terminal (shorted by solder bridge by default)
+- Warranty: 12 months, manufacturing defects only
+- Reverse polarity protection: [NOT STATED]
+- Length and width: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Positive and negative supply terminals; Motor Terminal A and B
+- Input header (4 pins): pin 1 IN2, pin 2 IN1, pin 3 +5V output, pin 4 Gnd
+- Error LED blinks: 2 = Input Error, 3 = Lipo Undervoltage, 4 = Over Voltage, 5 = Over Temperature
+- Works with hobby RC transmitter and receiver, potentiometer, joystick or foot pedal with potentiometer, or a microcontroller (PWM, RC-style pulse or UART)
+- Two units can operate in mixed mode for a differential drive robot
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example; driver must be configured as Sign-Magnitude PWM Input mode (DIP 10010001)
+- Recommended power sources: 7 – 18 cells NiMH or NiCd; 3 – 6 cells LiPo or Li-Ion; 12V – 24V sealed lead acid; 8V – 28V power supply in parallel with a battery of the same voltage
+- 3D CAD files linked on the product page
+- Wire size: [NOT STATED]
+- Max PWM input frequency: [NOT STATED]
+
+## Use cases
+- Drive high power brushed DC motor with current capacity up to 160A continuously
+- Drive a robot with differential drive using two units in mixed mode
+- Control the motor with a standard hobby radio control transmitter and receiver
+- Control the motor with a joystick or foot pedal with potentiometer
+- Connect multiple units to a single microcontroller UART port
+- Fast test and manual operation with the on board push buttons
+
+## Known limitations
+- A power supply that cannot sink current (bench top or AC to DC switching power supply) must be in parallel with a same-voltage battery; otherwise the input voltage might rise to a level where the driver will be destroyed permanently
+- Input mode is read only at power-up; change the DIP switch then power cycle
+- RC transmitter must be turned on before powering up the driver
+- In Analog/PWM mode the stop signal must be present at power-on, else Input Error
+- Packetized Serial: allow a one-second delay between applying power and sending the header byte
+- +5V pin is an output up to 1A only; do not connect to another 5V source
+- LiPo under voltage is a warning only; motor power is not cut
+- Current limit drops with board temperature (50A above 110°C)
+- Peak and continuous ratings depend on the room temperature
+- If the board is off when power is supplied, the SWITCH terminal must be shorted
+- Reverse polarity protection: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "one of the latest smart series motor drivers" (user's manual, Aug 2014)
+- "MOSFETs are switched at 16 KHz to ensure quiet operation and no annoying whining sound"
+- "This make driving a robot with differential drive a truly plug and play experience."
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-160amp-8v-28v-smartdrive-dc-motor-driver
+
+## Datasheet
+https://docs.google.com/document/d/1nkdj8CrZKoc4PHemBqlvpEJkQ2KjUHGqCTI8S5-mba4/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1nkdj8CrZKoc4PHemBqlvpEJkQ2KjUHGqCTI8S5-mba4/view
 
 # Product fact sheets
 
@@ -4065,6 +5114,236 @@ https://my.cytron.io/p-iriv-edgeai-safety-box-kit
 
 ## Source link
 [NOT STATED]
+
+# Product fact sheets
+
+## Product name
+Maker pHAT: Simplifying Raspberry Pi for Education
+
+## Aliases
+HAT-MAKER, Maker pHAT, Cytron Maker pHAT, Maker pHAT: Simplifying Raspberry Pi for Education
+
+## What it is
+A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header and adds a USB Micro-B socket for 5V power and a USB-to-UART serial console, 8 GPIO indicator LEDs, 3 push buttons, an active buzzer and labelled breakout pins. It needs a Raspberry Pi (not included).
+
+## Specs and functions
+- Product code: HAT-MAKER
+- User's manual: Rev 1.10, Feb 2019 (no separate datasheet)
+- Form factor: Raspberry Pi Zero size, standard Raspberry Pi GPIO footprint
+- 8 GPIO indicator LEDs on GPIO 17, 18, 27, 22, 25, 12, 13, 19; these GPIOs can be configured as output, input or input pull-up
+- 3 programmable push buttons: SW1 GPIO 21, SW2 GPIO 16, SW3 GPIO 20; configure as input pull-up (the manual's feature list says "GPIO 21, 19 and 20"; its board layout, section 7.2 and demo code say 21, 16 and 20)
+- Active buzzer on GPIO 26: HIGH = on, LOW = off
+- USB Micro-B socket for 5V input and USB-to-UART communication, connected to the Raspberry Pi UART (TX GPIO 14, RX GPIO 15)
+- USB-serial IC: FT231X (manual board layout); the manual's feature list says CH340
+- USB-serial activity indicator LED
+- Labelled breakouts: 5V, 3.3V, GND; I2C SDA GPIO 2, SCL GPIO 3; UART TX GPIO 14, RX GPIO 15; SPI MOSI GPIO 10, MISO GPIO 9, SCK GPIO 11, CE0 GPIO 8, CE1 GPIO 7; GPIO 17, 18, 27, 22, 25, 12, 13, 19
+- Input voltage: USB 5V, from computer, power bank or standard USB adapter
+- Absolute maximum input voltage via USB connector: 4.8 – 5.2 V
+- DC current for 5V pin (max continuous): limited by USB (no figure given)
+- Rev1.10 has pre-soldered SMD header pins on the breakout pads
+- Purple PCB
+- Warranty: 1 year (user's manual); 12 months (Cytron product page)
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Raspberry Pi 3B / 3B+ and Raspberry Pi Zero / W / WH
+- Stacks directly on Raspberry Pi Zero WH
+- Raspberry Pi 3 Model B / B+ need the 2x20 PC104 stacking header (included)
+- Serial console: add enable_uart=1 to config.txt; terminal speed 115200 (PuTTY on Windows)
+- USB-serial drivers linked in the manual for Windows 10 and macOS (CH341SER)
+- Python 3 with the gpiozero library (LED, Button, Buzzer); demo code in the manual and on a Cytron gist
+- In the box: 1x Maker pHAT (HAT-MAKER), 1x 2x20 Stacking Header (CN-PH-PC104)
+
+## Use cases
+- Getting started with Raspberry Pi without a monitor, keyboard or mouse (headless), using the serial console
+- Remote access to the Raspberry Pi through serial, then setting up Wi-Fi and VNC
+- Learning to interface with sensors and actuators and coding with the onboard LEDs, push buttons and buzzer
+- Prototyping with labelled GPIO, SPI, UART and I2C breakouts
+- Hardware shutdown with push buttons
+
+## Known limitations
+- Power input is USB 5V only (4.8 – 5.2 V absolute maximum)
+- 5V pin current is limited by the USB source
+- Push buttons need the GPIO set as input pull-up
+- LEDs are only on GPIO 17, 18, 27, 22, 25, 12, 13, 19
+- Do not unplug the USB cable without a proper shutdown; it might corrupt the microSD card
+- The USB serial console uses the Pi UART on GPIO 14/15 and needs enable_uart=1
+- Raspberry Pi 3 Model B / B+ need the stacking header to fit
+- The printed demo code in the manual has an undefined variable (times) in the shutdown branch; the gist version uses range(3)
+- The manual's setup steps are for Raspbian Stretch / NOOBS (2019)
+- Raspberry Pi not included
+
+## Positioning (kept apart from specs)
+- "Maker pHAT is designed for anyone who want to get start with any Raspberry Pi projects"
+- Designed to ease getting started with Raspberry Pi headless, and prototyping
+- Addresses beginner pain points: no onboard USB-to-UART, no GPIO status indicator, unlabelled GPIO, no programmable push button for proper shutdown
+- Product name tagline: "Simplifying Raspberry Pi for Education"
+- "PURPLE PCB!"
+
+## Price band
+RM45.78 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-phat-simplifying-raspberry-pi-for-education
+
+## Datasheet
+https://docs.google.com/document/d/1iDYLyoQKOPJRD5m5ivu8Ivv6zyeLIc3IxUtRKOx7n8k/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1iDYLyoQKOPJRD5m5ivu8Ivv6zyeLIc3IxUtRKOx7n8k/view
+
+# Product fact sheets
+
+## Product name
+Maker Hat Base - HAT & GPIO Extension for Raspberry Pi 400
+
+## Aliases
+MAKER-HAT-BASE, Maker Hat Base, Cytron Maker Hat Base, Maker Hat Base - HAT & GPIO Extension for Raspberry Pi 400, HAT & GPIO Extension for Raspberry Pi 400
+
+## What it is
+A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable and extends it to a pin header for stacking a Raspberry Pi HAT, a labelled pin breakout, GPIO status LEDs, 3 Grove ports, 4 buttons and a buzzer. It has no processor of its own; every function is a Raspberry Pi GPIO.
+
+## Specs and functions
+- Product code: MAKER-HAT-BASE
+- Datasheet: Rev 1.0, September 2021
+- Pin header for stacking a Raspberry Pi HAT
+- IDC socket for connecting to the Raspberry Pi via 40-way ribbon cable
+- Raspberry Pi pins breakout for jumper cables
+- GPIO status LEDs: turn on when the GPIO state is high
+- 3 Grove ports: I2C (SCL GPIO3, SDA GPIO2), UART (RXD GPIO15, TXD GPIO14), GPIO (GPIO12, GPIO13)
+- 4 programmable push buttons, active low, on GPIO17, 22, 23 and 27; enable the internal pull-up to use them
+- Programmable fixed tone buzzer, resonant frequency 2700±300Hz, on GPIO26
+- Mute switch for the buzzer, for when GPIO26 is used for other purposes
+- 3.3V power LED and 5V power LED (on when powered up)
+- 5V supply: supplied by Raspberry Pi
+- 3.3V supply: 3.235 – 3.365 V, max 800 mA
+- GPIO specification: refer to Raspberry Pi
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Designed for the Raspberry Pi 400 (datasheet)
+- Cytron product page images also mention Raspberry Pi 3 and 4
+- Connects to the Raspberry Pi through a 40-way ribbon cable to the IDC socket
+- Accepts a stacked Raspberry Pi HAT on the pin header
+- Grove I2C, UART and GPIO modules
+- CAD file available (MAKER-HAT-BASE CAD.zip)
+
+## Use cases
+- Stacking a Raspberry Pi HAT on the Raspberry Pi 400
+- Connecting components to the Raspberry Pi pins with jumper cables
+- Connecting Grove modules over I2C, UART or GPIO
+- Using the onboard buttons and buzzer as programmable inputs and output
+
+## Known limitations
+- 5V is supplied by the Raspberry Pi; the board has no separate power input
+- 3.3V supply max 800 mA
+- GPIO limits follow the Raspberry Pi
+- Buttons are active low and need the internal pull-up enabled
+- Buzzer is fixed tone (2700±300Hz) on GPIO26; mute it with the switch if GPIO26 is used for other purposes
+- A stacked HAT shares the same GPIOs as the buttons, buzzer and Grove ports
+- Out of stock on my.cytron.io (2026-10-16)
+- Raspberry Pi not included
+
+## Positioning (kept apart from specs)
+- Datasheet subtitle: "HAT & GPIO Extension for Raspberry Pi 400"
+
+## Price band
+RM45.78 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-hat-base-hat-and-gpio-extension-for-raspberry-pi-400
+
+## Datasheet
+https://docs.google.com/document/d/12l4vzu-r3VRBCLkCsuM00KOYnMPnQw5HxdfxjA3p5E0/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/12l4vzu-r3VRBCLkCsuM00KOYnMPnQw5HxdfxjA3p5E0/edit
+
+# Product fact sheets
+
+## Product name
+CM4 Maker Board: Maker's Carrier Board for Raspberry Pi CM4/CM5
+
+## Aliases
+MAKER-CM4, V-MAKER-CM4, CM4 Maker Board, Cytron CM4 Maker Board
+
+## What it is
+A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Raspberry Pi 4-style ports, M.2 NVMe, camera and display connectors, an RTC and maker parts (Grove ports, buttons, buzzer, GPIO LEDs). The datasheet covers CM4; the product page title also names CM5.
+
+## Specs and functions
+- Power input: USB-C 5V or DC power jack 7V - 18V (only one is needed)
+- HDMI: 1x full size, up to 4K resolution (HDMI 0 of CM4)
+- USB: 4x USB 2.0 Host
+- Ethernet: 1Gbps Gigabit Ethernet
+- M.2 Key-M connector for PCIe modules: NVMe SSD 2230 & 2242 (bootable)
+- microSD card slot for Raspberry Pi CM4 Lite
+- CSI camera port: 15-pin 2-lane MIPI CSI, CAM 1 of CM4, compatible with Raspberry Pi Camera Module
+- DSI display port: 15-pin 2-lane MIPI DSI, DSI 1 of CM4
+- PCF85063A RTC with CR2032 coin cell holder
+- 10 GPIO LEDs (GPIO 2, 3, 5, 6, 12, 13, 14, 15, 23, 24), turn on when the IO state is high
+- Passive piezo buzzer on GPIO 19 with buzzer mute switch
+- Analog audio out (line level): Left GPIO 19, Right GPIO 18
+- User programmable buttons: GPIO 17, 22, 27
+- 2 power buttons in series (GLOBAL_EN & GPIO 4), both pressed together to turn the CM4 ON/OFF; external power button header in parallel (not soldered by default)
+- Boot switch: RUN or BOOT (BOOT loads the OS image to the CM4 eMMC via USB-C)
+- Status LEDs: M.2, ACT, PWR, 5V
+- Dimensions: 110 mm × 110 mm; 4 mounting holes Ø 3.2 mm at 104 mm × 104 mm
+
+## Interfaces and compatibility
+- Compute Module: Raspberry Pi CM4 (Lite or with eMMC) per datasheet Rev 1.2; product page title says "for Raspberry Pi CM4/CM5"
+- 40-pin GPIO breakout, pinout exactly the same as Raspberry Pi 4
+- Grove ports: 2x GPIO (GPIO 5, 6 and GPIO 23, 24), 1x PWM (GPIO 12, 13), 1x UART (GPIO 14, 15), 1x I2C (GPIO 2, 3); each GND, 3V3, pin, pin
+- Maker Port: I2C on GPIO 2, 3 (shared with the Grove I2C port), compatible with QWIIC / Stemma QT / Grove (with conversion cable)
+- Storage: microSD (CM4 Lite), CM4 eMMC, M.2 NVMe 2230 / 2242
+- Official Raspberry Pi Camera Module and 7-Inch Display (need the matching dt-blob.bin)
+- Setup script and pre-configured bootloader for Raspberry Pi OS (CytronTechnologies/MAKER-CM4_Script)
+
+## Use cases
+- Maker's carrier board for Raspberry Pi CM4
+- Connecting Grove, QWIIC and Stemma QT modules to a Compute Module
+- Booting a CM4 from NVMe SSD, eMMC or microSD
+
+## Known limitations
+- M.2 SATA SSD is not supported
+- microSD slot is not accessible by Raspberry Pi CM4 with eMMC
+- USB host on CM4 is disabled by default; the setup script (Raspberry Pi OS only) enables it
+- Power buttons cannot wake the CM4 after shutdown unless Cytron's pre-configured bootloader is flashed
+- Piezo buzzer shares GPIO 19 with the analog audio out; use the mute switch when using audio
+- The audio remap line must be commented out to use hardware PWM for the buzzer
+- Maker Port shares GPIO 2, 3 with the Grove I2C port
+- dt-blob.bin method is only for the official Raspberry Pi Camera Module and 7-Inch Display
+- Make sure the CM4 orientation is correct in the socket
+- ESD may disturb normal function; power cycle to recover
+- No fan header, USB 3.0 or PoE listed in the datasheet
+- CM5 support: named in the product page title only; not described in the datasheet
+- Operating temperature and supply current rating: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Datasheet title: "CM4 Maker Board — Maker's Carrier Board for Raspberry Pi CM4"
+- Product page title: "CM4 Maker Board: Maker's Carrier Board for Raspberry Pi CM4/CM5"
+- Product page bundles: "CM4 Maker board ONLY" and "CM4 Maker Board + CM4NW216 + Accessories"
+- Out of stock on my.cytron.io (2026-10-16)
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-cm4-maker-board-and-kits
+
+## Datasheet
+https://docs.google.com/document/d/1XmZSR81IN70pndZ2odBmlZgAufiIBawVdKZ71C7101Y/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1XmZSR81IN70pndZ2odBmlZgAufiIBawVdKZ71C7101Y/edit
 
 # Product fact sheets
 

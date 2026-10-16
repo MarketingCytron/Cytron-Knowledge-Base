@@ -1,6 +1,6 @@
 # Cytron Product Knowledge Base
 
-Verified, source-tagged product facts for **Cytron-brand products** — Arduino, ESP32, Pico and micro:bit boards, robot controllers, sensors, motor drivers and the IRIV industrial series.
+Verified, source-tagged product facts for **Cytron-brand products** — Arduino, ESP32, Pico, Raspberry Pi and micro:bit boards, robot controllers, sensors, motor drivers and the IRIV industrial series.
 
 It is written to be used as ground truth by AI assistants that write tutorials, articles and product content, and by the people who review that content.
 
@@ -22,9 +22,9 @@ It is written to be used as ground truth by AI assistants that write tutorials, 
 - A fact that only a third party states is never presented as a specification — it is listed under *Needs verification*.
 - If a source does not state something, the fact sheet says **[NOT STATED]**.
 
-## Products covered (45)
+## Products covered (62)
 
-Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Maker UNO · Maker Uno RP2040 · Maker Nano RP2040 · Robo Uno Shield · Robo Pico · EDU PICO V2 · Maker Pi RP2040 · Maker Pi Pico · MOTION 2350 Pro · MOTION:BIT · MOTION:BIT Pro · SUMO:BIT · REKA:BIT · ZOOM:BIT · Maker Mini Sumo Controller · URC10 · IR Sumo Start · Maker Line · Maker Object · Maker Drive · MDD3A · MD10C · MD13S · MD20A · MDD10A · MDD20A · MD25HV · MDDS10 · MDDS30 · MDDS60 · Enhanced SmartDrive40 (MDS40B) · MDDRC5 · MDDRC10 · iMD16 · Industrial IO HAT+ · IRIV PiControl CM4 · IRIV PiControl CM5 · IRIV IO Controller · IRIV IOC MQTT Gateway · IRIV SmartHub CM5 · IRIV EdgeAI CM5 · IRIV EdgeAI Safety Box Kit
+Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Maker UNO · Maker UNO Plus · Maker Uno RP2040 · Maker Nano · Maker Nano RP2040 · Cytron UNO · Cytron UNO Special Edition · Robo Uno Shield · Robo Pico · EDU PICO V2 · Maker Pi RP2040 · Maker Pi Pico · Maker Pi Pico Mini · MOTION 2350 Pro · MOTION:BIT · MOTION:BIT Pro · SUMO:BIT · REKA:BIT · ZOOM:BIT · Maker Mini Sumo Controller · URC10 · IR Sumo Start · Maker Line · Maker Object · Maker Drive · MDD3A · SHIELD-2AMOTOR · SHIELD-3AMOTOR · FD04A · MD10C · MD10-POT · SHIELD-MD10 · MDD10A · SHIELD-MDD10 · HAT-MDD10 · MD13S · MD20A · MDD20A · MD25HV · MD30C · MDDS10 · MDDS30 · MDDS60 · Enhanced SmartDrive40 (MDS40B) · SmartDrive160 (MDS160A) · MDDRC5 · MDDRC10 · iMD16 · IRIV PiControl CM4 · IRIV PiControl CM5 · IRIV IO Controller · IRIV IOC MQTT Gateway · IRIV SmartHub CM5 · IRIV EdgeAI CM5 · IRIV EdgeAI Safety Box Kit · Maker pHAT · Maker Hat Base · CM4 Maker Board · Industrial IO HAT+
 
 ## Notes
 

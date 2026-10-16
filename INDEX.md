@@ -41,6 +41,10 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium** |
+| Maker UNO Plus | [`maker-uno-plus.md`](maker-uno-plus.md) | `MAKER-UNO-PLUS` | ATmega328P + **FT231X** (not CH340) | User's Manual Rev 1.0, Oct 2018 (no datasheet) | **Medium** |
+| Maker Nano | [`maker-nano.md`](maker-nano.md) | `MAKER-NANO` | Not stated by Cytron (resellers: ATmega328P + CH340C) | Datasheet Rev 1.0, Jun 2020 | **Medium-low** |
+| Cytron UNO | [`cytron-uno.md`](cytron-uno.md) | `CT-UNO` | ATmega328P + **FT231X** | User's Manual V1.0, Nov 2014 (no datasheet) | **Medium-high** |
+| Cytron UNO Special Edition | [`cytron-uno-se.md`](cytron-uno-se.md) | `CT-UNO-SE` | Not stated for SE | Shares the CT-UNO manual, which never mentions SE | **Low** |
 | Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
 | Maker Nano RP2040 | [`maker-nano-rp2040.md`](maker-nano-rp2040.md) | `MAKER-NANO-RP2040` | RP2040 | Datasheet Rev 1.1, Jul 2024 | **Medium** |
 | Robo Uno Shield | [`robo-uno-shield.md`](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | None — shield for UNO-form-factor boards | Datasheet Rev 1.0, Feb 2025 | **Medium** |
@@ -49,6 +53,10 @@ Arduino-board notes for every agent:
 - **Maker UNO has no DC jack and no VIN** — USB Micro-B 4.8–5.2 V only. Select "Arduino Uno" in the IDE; CH340 driver needed.
 - **Maker Uno RP2040 is 3.3 V logic** — only 3.3 V-compatible UNO shields; power from USB-C or 1-cell LiPo (3.6–6 V); code uses GP numbers, not UNO D-numbers.
 - **Robo Uno Shield:** 3.6–6 V single-cell input only; cannot be powered from the Arduino VIN pin; its micro-USB charges/powers the shield only (no code upload). Follow Cytron's code for motor pins (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`) until the design team resolves the datasheet conflict. Grove 4 and the Maker Port share A4/A5; buttons D2/D3 are the Grove 6 pins.
+- **USB-serial chips differ:** Maker UNO = CH340; **Maker UNO Plus and Cytron UNO = FTDI FT231X** (use the FTDI driver, not Maker UNO's CH340 steps). Maker Nano's chip is not stated by Cytron.
+- **Maker UNO Plus is USB-only** (4.8–5.2 V; no DC jack, no Vin, no 5 V regulator); button D2 needs `INPUT_PULLUP`; buzzer D8 with mute switch; LEDs on pins 2–13.
+- **Maker Nano power:** Vin 7.0–30.0 V, but the 5V pin gives only **100 mA** and 3V3 only **50 mA** (including the board's own use) — never copy Maker UNO's 500 mA. D2–D13 LEDs light whenever the pin is high (cut a trace to disable).
+- **Cytron UNO:** DC jack 7–15 V recommended (6–20 V absolute); 5 V regulator 1 A max only stated "with Vin at 12V"; 3.3 V 500 mA; select "Arduino Uno"; one user LED (D13), no button or buzzer. **Never describe the Special Edition as identical** or invent what is special about it.
 
 ### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO)
 
@@ -58,12 +66,14 @@ Arduino-board notes for every agent:
 | EDU PICO V2 | [`edu-pico-v2.md`](edu-pico-v2.md) | `EDU-PICO2` (`EDU-PICO2-NB` = no Pico) | Raspberry Pi Pico 2 W | Datasheet Rev 1.1, Jun 2026 | **Medium** |
 | Maker Pi RP2040 | [`maker-pi-rp2040.md`](maker-pi-rp2040.md) | `MAKER-PI-RP2040` | RP2040 soldered on (no Pico socket) | Datasheet Rev 1.2, Jan 2022 | **Medium-high** |
 | Maker Pi Pico | [`maker-pi-pico.md`](maker-pi-pico.md) | `MAKER-PI-PICO` (`MAKER-PI-PICO-NB` = Maker Pi Pico Base, no Pico) | Raspberry Pi Pico soldered on | Datasheet Rev 1.2, Mar 2021 | **Medium-high** |
+| Maker Pi Pico Mini | [`maker-pi-pico-mini.md`](maker-pi-pico-mini.md) | `MAKER-PI-PICO-MINI` (`-NB` = socket, no Pico) | Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Jun 2022 | **Medium-high** |
 | MOTION 2350 Pro | [`motion-2350-pro.md`](motion-2350-pro.md) | Not stated (mirrors use `MOTION-2350-PRO`) | RP2350 | Datasheet **Rev 2.0, Sep 2025** | **Medium** |
 
 Pico / RP2040 / RP2350 notes for every agent:
 - **MOTION 2350 Pro Rev 2.0 motors are 5 A continuous / 10 A peak per channel**, with over-current, 150 ℃ thermal and >18 V input shutdown. 3 A (and "no over-current protection") is the Rev 1.0 board — don't use 3 A for the current board. Motors GP8–GP15, servos GP0–GP7, buttons GP20/GP21, buzzer GP22, 2 RGB LEDs GP23; Arduino `LED_BUILTIN` = GP2 (a servo pin). Never publish the datasheet's "VIN = VADC / 6.1" until the design team confirms it.
 - **Maker Pi RP2040 brake/coast:** High/High = coast, Low/Low = brake (datasheet). In CircuitPython `throttle = 0` coasts and `throttle = None` brakes — the opposite of Cytron's demo comments. Power 3.6–6 V (USB, LiPo or VIN); motor/servo voltage = input voltage.
 - **Maker Pi Pico is USB-powered only** (4.5–5.5 V; no battery or VIN). GP18 drives both the buzzer and the left audio channel (mute the buzzer when using the jack); audio is not amplified. RGB: Maker Pi RP2040 = 2× WS2812B on GP18; Maker Pi Pico = 1× WS2812B on GP28.
+- **Maker Pi Pico Mini Maker Ports are JST-SH (Qwiic/STEMMA QT)**, not Grove (Grove needs a conversion cable); the GP0/GP1 and GP4/GP5 ports both sit on I2C0. No audio jack, microSD, ESP-01 socket or mute switch (unlike Maker Pi Pico).
 
 ### micro:bit accessories
 
@@ -120,6 +130,15 @@ Sensor notes for every agent:
 | MDDRC5 | [`mddrc5.md`](mddrc5.md) | `MDDRC5` | 2 ch R/C, 7–30 V, 5 A cont / 20 A peak (<1 s) per ch | Datasheet Rev 1.0, Mar 2026 | **Medium-high** |
 | MDDRC10 | [`mddrc10.md`](mddrc10.md) | `MDDRC10` | 2 ch R/C, 7–30 V, 10 A cont / 30 A peak (current-limited) per ch | Datasheet Rev 1.0, Aug 2020 | **Medium-high** |
 | iMD16 | [`imd16.md`](imd16.md) | `IMD16` | 1 ch, 16 A cont / 30 A peak (<10 s), no current limit | Datasheet Rev 1.0, Apr 2026 | **Medium-high** |
+| SHIELD-2AMOTOR | [`shield-2amotor.md`](shield-2amotor.md) | `SHIELD-2AMOTOR` | 2 ch Arduino shield, 5–26 V, **0.8 A cont** / 2 A peak | User's Manual V1.1, Feb 2015 | **Medium** |
+| SHIELD-3AMOTOR | [`shield-3amotor.md`](shield-3amotor.md) | `SHIELD-3AMOTOR` | 2 ch Arduino shield, 7–30 V, **1.2 A cont** / 3 A peak (≤1 s) | User's Manual Rev 1.0, Apr 2017 | **Medium** |
+| FD04A | [`fd04a.md`](fd04a.md) | `FD04A` (Rev 2.0) | **4 ch**, 7–15 V, 1.5 A cont / 2.5 A peak, L298P | User's Manual V1.2, Jun 2025 | **Medium** |
+| MD10-POT | [`md10-pot.md`](md10-pot.md) | `MD10-POT` | 1 ch, 7–30 V, 10 A / 30 A peak (<10 s); pot + switch or PWM/DIR | Datasheet Rev 1.0, Oct 2018 | **Medium** |
+| SHIELD-MD10 | [`shield-md10.md`](shield-md10.md) | `SHIELD-MD10` (Rev 2.0, "R2") | 1 ch Arduino shield, 7–30 V (abs-max table says 25 V), 15 A peak (10 s) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 | **Medium** |
+| SHIELD-MDD10 | [`shield-mdd10.md`](shield-mdd10.md) | `SHIELD-MDD10` | 2 ch Arduino shield, 7–30 V, 10 A / 30 A over-current limit (temperature-dependent) | Datasheet Rev 1.0, May 2019 | **Medium** |
+| HAT-MDD10 | [`hat-mdd10.md`](hat-mdd10.md) | `HAT-MDD10` | 2 ch Raspberry Pi HAT, 6–24 V, 10 A / 30 A (10 s) | User's Manual V1.0, Mar 2017 | **Medium** |
+| MD30C | [`md30c.md`](md30c.md) | `MD30C` (Rev 2.0) | 1 ch, 5–30 V, 30 A cont / 80 A peak (≤1 s) | User's Manual V1.4, Dec 2017 (no datasheet) | **Medium-high** |
+| MDS160A SmartDrive160 | [`mds160a.md`](mds160a.md) | `MDS160A` | 1 ch, 8–28 V, 160 A cont / 175 A (2 min) / 190 A (1 min) | User's Manual V1.0, Aug 2014 (no datasheet) | **Medium-high** |
 
 Motor-driver notes for every agent:
 - **No reverse-polarity protection** on MD10C, MD13S, MD20A, MDD10A, MDD20A, MD25HV, MDDS10, MDDS30, MDDS60, MDS40B, MDDRC10 (Maker Drive, MDD3A and MDDRC5 do have it).
@@ -130,12 +149,24 @@ Motor-driver notes for every agent:
 - **Brake vs coast differs by board.** Both inputs LOW = brake on Maker Drive, MDD3A and Robo Pico; both HIGH = coast on Maker Drive but brake on MDD3A. PWM LOW = brake on MD10C, MDD10A, iMD16. Check each file.
 - **Control mode:** Maker Drive and MDD3A are two-PWM (CytronMotorDriver `PWM_PWM`), not PWM+DIR.
 - **MDDRC5:** peak is 20 A for <1 s (product page says <5 s); its 5 V RC-header pin is for the receiver only (500 mA) — never power a servo from it; USB-C does not power the motors.
+- **Shield/HAT drivers (2026-10-16 batch):** the "3A"/"2A" in SHIELD-3AMOTOR / SHIELD-2AMOTOR are **peak** ratings — continuous is 1.2 A / 0.8 A. Both use D4–D7 for motors: `CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);` (the library example's 3/4/9/10 pins don't match). SHIELD-3AMOTOR above 12 V needs the PWRIN–Vin link cut (voids warranty).
+- **SHIELD-MDD10 powers the Arduino by default** (5 V buck, 500 mA; cut a jumper to disable); **SHIELD-MD10 does not** (power the Arduino first). HAT-MDD10 uses fixed BCM pins PWM1 GPIO12, DIR1 GPIO26, PWM2 GPIO13, DIR2 GPIO24.
+- **Peak-duration differs:** MD30C 80 A ≤1 s; MD10-POT 30 A <10 s; SHIELD-MDD10 30 A is a temperature-dependent over-current limit with no duration; MDS160A 190 A for 1 min / 175 A for 2 min. MD10-POT logic high is 3–30 V; MD30C and MDS160A ≤5.5 V.
+- **MDS160A** reads its DIP-switch mode only at power-up (power-cycle after changing); its +5V pin is a 1 A output — never connect another 5 V source; a supply that can't absorb regenerated current needs a same-voltage battery in parallel or the driver "will be destroyed permanently". MD30C: battery on the motor port burns the MOSFETs (not covered by warranty). Reverse-polarity protection is stated for MD30C and FD04A only in this batch; SHIELD-3AMOTOR has none.
 
-### Raspberry Pi accessories (industrial)
+### Raspberry Pi boards, HATs and accessories
 
 | Product | File | Code | For | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Industrial IO HAT+ | [`industrial-io-hat-plus.md`](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi 5 only | Datasheet Rev 1.0, Sep 2025 | **Medium-high** |
+| Maker pHAT | [`maker-phat.md`](maker-phat.md) | `HAT-MAKER` | Raspberry Pi 3B/3B+, Zero/W/WH (manual) | User's Manual Rev 1.10, Feb 2019 (no datasheet) | **Medium** |
+| Maker Hat Base | [`maker-hat-base.md`](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi 400 (page also shows Pi 3/4) | Datasheet Rev 1.0, Sep 2021 | **Medium-high** |
+| CM4 Maker Board | [`cm4-maker-board.md`](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi CM4 (product page title now says CM4/CM5) | Datasheet Rev 1.2, Oct 2023 | **Medium** |
+
+Raspberry Pi board notes for every agent:
+- **CM4 Maker Board:** the 4 USB ports need `dtoverlay=dwc2,dr_mode=host` (USB host is off by default on CM4). M.2 is NVMe 2230/2242 only — no SATA. microSD works only with CM4 Lite. Both power buttons must be pressed together. Left audio GPIO19 (shared with the buzzer — use the mute switch), right GPIO18. **Do not claim CM5 support** until the design team confirms it.
+- **Maker pHAT:** SW2 is **GPIO16** (the manual's feature list says 19 — wrong; 19 is an LED). Don't name its USB-serial chip or driver until the schematic is checked. Serial console needs `enable_uart=1`, 115200 baud.
+- **Maker Hat Base:** buttons GPIO17/22/23/27 active low (enable pull-up); fixed-tone buzzer on GPIO26 behind a mute switch; takes 5 V from the Pi (no own input); 3.3 V rail 800 mA max.
 
 ### IRIV industrial series
 
