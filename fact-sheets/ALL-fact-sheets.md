@@ -296,6 +296,199 @@ https://docs.google.com/document/d/1vVYSdn84I8Hvi9SWHU54lhH_vWlhD3mwJ6pcSyLNGcE/
 # Product fact sheets
 
 ## Product name
+Maker UNO
+
+## Aliases
+MAKER-UNO, Maker UNO, Maker UNO: Simplifying Arduino for Education
+
+## What it is
+An Arduino UNO-compatible board built on the ATmega328P, powered and programmed through a USB Micro-B socket via a CH340 USB-to-serial chip. It adds LEDs on the digital pins, a piezo buzzer on pin 8 and a programmable push button on pin 2.
+
+## Specs and functions
+- Product code: MAKER-UNO
+- Microcontroller: SMD ATmega328P (the same microcontroller as the Arduino UNO) with Optiboot (UNO) bootloader
+- Clock speed: 16MHz
+- Flash memory: 32k
+- Digital I/O pins: 14 (6 PWM outputs)
+- Analog inputs: 6
+- I/O levels: 0-5V outputs with 3.3V compatible inputs
+- USB-to-serial: CH340 (board layout names the chip CH340G)
+- USB connector: USB Micro-B socket (main power, program upload, debugging)
+- Input voltage via USB connector: 4.8 V min, 5.2 V max
+- Power: USB 5V from computer, power bank or standard USB adapter; Cytron LiPo Power Shield for portable use
+- 3.3V voltage regulator: 500mA maximum; DC current for 3.3V pin 500 mA max continuous
+- DC current per I/O pin: 20 mA max
+- 5V output current: [NOT STATED]
+- LEDs: LED array for 5V, 3.3V, TX, RX and all digital pins; standard LED on pin 13 (user manual: a programmable LED on every digital pin, D0 to D13; product page: "12x LEDs")
+- Pin LEDs are driven through a series of MOSFETs, so an LED can be controlled or act as an indicator for an input, even a pull-up input
+- USB-serial LED shows upload and Serial Monitor activity
+- Programmable push button: pin 2 to GND, configure as INPUT_PULLUP
+- Piezo buzzer: pin 8, through a slide switch (on = buzzer, off = pin 8 free for other uses)
+- Reset button
+- ISP 6-pin (2x3) header for AVR programmers; also usable for SPI
+- PCB colour: purple
+- Packing list: 1 × Maker Uno (Code: MAKER-UNO); product page: pin header label stickers included
+- Warranty: 6 months, manufacturing defects only (user manual Rev 1.0); product page: 12 months
+- Dimensions: [NOT STATED]
+- User's Manual: Rev 1.0, Dec 2017; board package section updated 21 March 2018
+
+## Interfaces and compatibility
+- Arduino UNO R3-standard female headers; R3 shield compatible
+- SDA, SCL and IOREF pins are broken out as on the UNO R3
+- No Vin pin: Arduino shields that require Vin are not compatible
+- No DC jack: power through USB only (product page)
+- Differences from Arduino UNO: CH340 instead of ATmega16u2 (product page: "to bring down the cost"), USB Micro-B, no DC jack, no Vin pin, onboard LEDs, buzzer and button
+- Arduino IDE: select board "Arduino/Genuino Uno" and the correct COM port (Cytron advises this board "for safety purpose")
+- Optional Cytron board package "Maker Uno" (Boards Manager URL https://cytrontechnologies.github.io/package_cytron_makeruno_index.json); it sets all digital pins to OUTPUT by default; latest version in the index 1.1.0-rc2
+- CH340 driver needed; port appears as "USB-SERIAL CH340 (COMx)" in Device Manager
+- MicroPython / CircuitPython: [NOT STATED]
+
+## Use cases
+- Arduino learning in classrooms (boards "used in classes are powered using USB")
+- Testing code without external parts using the onboard LEDs, buzzer and button
+- Troubleshooting with pin LEDs that show input state
+- Portable projects powered by a power bank or Cytron LiPo Power Shield
+
+## Known limitations
+- Power from USB only, 4.8–5.2 V; no DC jack and no Vin pin
+- Shields that need Vin do not work
+- 3.3V pin limited to 500 mA; each I/O pin to 20 mA
+- Pin 8 is shared with the buzzer; switch the buzzer off to use pin 8 for other purposes
+- Pin 2 is shared with the onboard button
+- With board "Arduino/Genuino Uno", floating input pins can make the pin LEDs light up randomly
+- The Maker Uno board package sets all digital pins to OUTPUT by default
+- Use one power source at a time
+- Needs the CH340 driver for USB programming
+- 5V output current and protection features: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Product page: "an Arduino Compatible board specially designed to simplify building your projects"
+- User manual: "PURPLE PCB !"; three extra features that make it "more suitable for beginner"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.com.my/p-maker-uno-simplifying-arduino-for-education
+
+## Datasheet
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf
+
+# Product fact sheets
+
+## Product name
+Maker Uno RP2040
+
+## Aliases
+MAKER-UNO-RP2040, Cytron Maker Uno RP2040, MakerUnoRP2040, Uno RP2040
+
+## What it is
+A development board in the Arduino UNO form factor built around the Raspberry Pi RP2040 (dual-core ARM Cortex-M0+). It uses 3.3 V logic and has onboard Grove ports, servo ports, LEDs, a buzzer and a LiPo charger.
+
+## Specs and functions
+- Product code: MAKER-UNO-RP2040
+- Datasheet: Rev 1.0, February 2024; its spec table is titled "Absolute Maximum Ratings"
+- MCU: Raspberry Pi RP2040, dual-core ARM Cortex-M0+, up to 133 MHz, 264 KB SRAM
+- Flash: 2 MB (Winbond W25Q16JVUXIQ per schematic; not stated in the datasheet)
+- USB Type-C: for both powering and programming the board from a PC
+- Power input voltage (USB or LiPo/Li-Ion): 3.6 – 6 V
+- Nominal sources: LiPo / Li-Ion 3.7V (single cell only) or USB-C 5V
+- Battery: 2-pin JST-PH connector for a single-cell LiPo / Li-Ion battery, rechargeable via USB, protected from overcharge and over-discharge; charging LED on while charging, off when full
+- On/Off slide switch; power LEDs for 3.3V and 5V
+- Total +3V3 output current: 500 mA max; total +5V output current: 600 mA max
+- Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.62 – 3.3 V; analog input 0 – 3.3 V
+- Operating temperature: -20 – 85 ℃
+- USB VID & PID (CircuitPython & Arduino Core): VID 0x2E8A, PID 0x1071
+- Reset button; Boot button (hold while resetting to enter bootloader mode)
+- User programmable button: GP2
+- Piezo buzzer: GP8, with buzzer mute switch on the bottom layer
+- RGB LEDs: 2x WS2812B on GP25
+- GPIO status LEDs: 16 (GP0–GP13, GP20, GP21), on when the GPIO is high; can be disabled by cutting a solder jumper (closed by default)
+- Servo ports: 4 x RC servo, signal on GP14, GP15, GP16, GP17
+- Vservo: USB only → VUSB - 0.4 V; LiPo/Li-Ion only → VBAT; USB and LiPo/Li-Ion → VUSB - 0.4 V
+- Grove ports: 6 (4-pin, 2.0 mm pitch), 3.3V power pin
+- Grove 1: GP0, GP1 (PWM0, SPI0, I2C0, UART0)
+- Grove 2: GP4, GP5 (PWM2, SPI0, I2C0, UART1)
+- Grove 3: GP6, GP26 (GP26 = ADC0)
+- Grove 4: GP7, GP27 (GP27 = ADC1)
+- Grove 5: GP28, GP29 (ADC2, ADC3; I2C0; UART0)
+- Grove 6: GP20, GP21 (I2C0 SDA0/SCL0; UART1)
+- Maker Port: JST-SH 4-pin, GP20 / GP21, shared with Grove 6
+- SPI header (2x3 male): MISO GP12, SCK GP10, MOSI GP11, 5V, RESET, GND
+- Analog inputs: A0–A3 = GP26–GP29 (ADC0–ADC3)
+- Peripherals: 2x I2C, 2x SPI, 2x UART, 16 PWM (8 slices x 2 outputs)
+- Onboard ICs (schematic): MCP73831T-2ACI/OT charger, MT3608 5 V boost, AP1117E33L 3.3 V regulator, 12 MHz crystal
+- Packing list: 1x Maker Uno RP2040, 1x Silicone Rubber Feet (pack of 4), 4x Grove to female header cable
+
+## Interfaces and compatibility
+- Arduino UNO form factor; use 3.3 V-compatible UNO shields only
+- Digital header order (from USB end): GP21 (SCL), GP20 (SDA), NC, GND, GP10, GP12, GP11, GP13, GP9, GP8 | GP7, GP6, GP5, GP4, GP3, GP2, GP0, GP1
+- Power header order: NC, IOREF, RESET, 3.3V, 5V, GND, GND, "~5V out"
+- Analog header: A0 GP26, A1 GP27, A2 GP28, A3 GP29, SDA GP20, SCL GP21
+- Maker Port: compatible with QWIIC / Stemma QT / Grove (with conversion cable)
+- Arduino IDE 2: Earle F. Philhower "Raspberry Pi Pico/RP2040" core, Boards Manager URL https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json, board "Cytron Maker Uno RP2040"
+- CircuitPython: board id cytron_maker_uno_rp2040 (circuitpython.org); Thonny variant "Cytron Technologies • Maker Uno RP2040"
+- MicroPython: no custom Cytron firmware yet; Cytron points to the Pico (rp2-pico) MicroPython firmware
+- Cytron example code (Arduino, CircuitPython, MicroPython) in the CytronTechnologies/Cytron-MAKER-UNO-RP2040 GitHub repo
+- Accessories used in Cytron examples: TS90A micro servo, Maker Soil Sensor, ultrasonic ranging module, SSD1306 0.96" I2C OLED
+
+## Use cases
+- Programming with Arduino IDE, CircuitPython or MicroPython in the Uno form factor
+- Plug-and-play Grove and Maker Port sensors and modules
+- Driving up to 4 servo motors from the onboard servo ports
+- Portable projects powered by a single-cell LiPo / Li-Ion battery
+- Offline Dino Game Cheat with Maker Uno RP2040
+- DHT11 sensor data logging
+- Playing a game using a joystick
+
+## Known limitations
+- 3.3 V logic: digital input high max 3.6 V, analog input 0 – 3.3 V; not for 5 V shields or 5 V signals
+- Spec values are absolute maximum ratings
+- Power inputs are only USB Type-C and the LiPo/Li-Ion connector (3.6 – 6 V); no DC jack or VIN input
+- The UNO VIN position is labelled "~5V out"; the AREF position is NC
+- Code pin numbers are GP numbers; the D10–D13 positions carry GP10, GP12, GP11, GP13 and the D1/D0 positions carry GP0/GP1
+- Only 4 analog inputs (GP26–GP29)
+- Servo voltage equals the power-source voltage (VUSB - 0.4 V on USB, VBAT on battery only); servo current limit not stated
+- Total +3V3 output 500 mA max; total +5V output 600 mA max
+- Shared PWM channels cannot run PWM at the same time: GP0/GP16 (Servo 3), GP1/GP17 (Servo 4), GP4/GP20, GP5/GP21, GP10/GP26, GP11/GP27, GP12/GP28, GP13/GP29, GP9/GP25
+- Grove 6, the Maker Port and header SDA/SCL all use GP20/GP21
+- Grove 3 and Grove 4 cannot carry I2C (two SDA or two SCL pins each)
+- Mute the buzzer if GP8 is used for other purposes
+- If the board cannot be turned on with the battery connected, charge the battery to activate the battery protection circuit
+- Battery charge current not stated
+- Switch the board on before entering bootloader mode; the COM port may need reselecting after each upload
+- The datasheet does not state the flash size or the RGB LED count
+
+## Positioning (kept apart from specs)
+- Brings the Raspberry Pi RP2040 into the familiar Uno form factor while keeping its user-friendly nature
+- Large flash makes CircuitPython and MicroPython possible on an Uno-style board
+- Maker series features: onboard LEDs for troubleshooting, programmable buzzer and button, Grove and Maker ports for plug-and-play connections
+- Follows the move from 5V to 3.3V microcontrollers
+
+## Price band
+USD 14.90 (Cytron tutorial page hardware list)
+
+## Product page
+https://my.cytron.io/p-maker-uno-rp2040
+
+## Datasheet
+https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/edit
+
+# Product fact sheets
+
+## Product name
 Robo Pico
 
 ## Aliases
@@ -1064,6 +1257,173 @@ https://docs.google.com/document/d/1rgQzn-nWn-qcWNnHjDZvIYqUrdCeBQQxXA-TU3BF0AQ/
 # Product fact sheets
 
 ## Product name
+MD13S 13Amp 6V-30V DC Motor Driver
+
+## Aliases
+MD13S, Cytron MD13S, 13Amp 6V-30V DC Motor Driver, 13Amp DC Motor Driver, MD13S 13Amp DC Motor Driver
+
+## What it is
+A single-channel, bi-directional driver for one brushed DC motor, powered from 6 V to 30 V and controlled with a PWM and a DIR signal from a microcontroller. It is rated 13 A continuous and 30 A peak for up to 10 seconds.
+
+## Specs and functions
+- Product code: MD13S; user's manual V1.1, June 2018
+- Channels: 1 (bi-directional, brushed DC motor)
+- Power input voltage: 6 V to 30 V
+- Maximum continuous motor current: 13 A (without heatsink at 25℃)
+- Peak motor current: 30 A, must not exceed 10 seconds
+- Current limiting at 30A; OC LED lights when output current is over the 30A limit
+- Logic input high level: 3 V min, 5.5 V max
+- Logic input low level: 0 V min, 0 V typical, 0.5 V max
+- 3.3V and 5V logic level input
+- Maximum PWM frequency: 20 KHz; actual output frequency is same as input frequency
+- Control modes: sign-magnitude PWM (PWM = speed, DIR = direction) and locked-antiphase PWM (PWM pin held high, PWM signal on DIR; 50% duty cycle = motor stops); selected by wiring
+- Truth table: PWM Low = both outputs low (DIR don't care); PWM High + DIR Low = A high, B low; PWM High + DIR High = A low, B high
+- Fully NMOS H-Bridge; manual states no heat sink is required
+- Regenerative Braking (product page)
+- 2 test switches (MA, MB)
+- LEDs: MA, MB (current direction), Power, OC (Over Current), ERR (fault detected in on-board MOSFET driver)
+- GROVE compatible connector
+- SMD compatible
+- RoHS, FCC and CE compliance (product page)
+- Dimensions: 61 mm x 33 mm
+- Packing list (user's manual): 1 x MD13S 13A DC Motor Driver; 2 x Terminal socket, Black for power and Green for Motor; Grove connector with cable
+- Packing list (product page): 1 x MD13S motor driver board; 1 x Green + Black 2-way terminal blocks (Normally Black is for Motor, Green is for Power); 1 x Grove connector (Grove to Grove)
+- Warranty: 12 months, manufacturing defects only
+- Thermal protection: [NOT STATED]
+- Under-voltage protection: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Terminal block: POWER + (6V to 30V), POWER -, Motor Output A, Motor Output B
+- Input pins: GND (logic ground), PWM (speed control, not for RC PWM), DIR (direction control)
+- Grove-compatible input connector; Grove pinout [NOT STATED]
+- Works with TTL PWM from a microcontroller at 3.3 V or 5 V logic
+- Not an Arduino shield; can be used with wire connection
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, 3, 4)`
+- RC servo signal: not supported
+- Analog input / serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Drive a high current brushed DC motor up to 13A continuously
+- Bi-directional control for one brushed DC motor with PWM and DIR signals from a microcontroller
+- Test the motor manually with the onboard MA and MB test switches
+
+## Known limitations
+- No polarity protection (product page): check polarity before power-up
+- Logic inputs 5.5 V max (not for 12 V or 24 V logic)
+- Not for RC receiver PWM (TTL PWM from a microcontroller only)
+- Peak 30 A only for 10 seconds or less; 13 A continuous stated without heatsink at 25℃
+- Current limiting at 30A; behaviour beyond the limit [NOT STATED]
+- One brushed DC motor only
+- PWM Low sets both outputs low regardless of DIR
+- Motor direction depends on wiring
+- Battery vs switching power supply guidance: [NOT STATED] in the user's manual
+- Terminal socket colours differ between user's manual (Black for power, Green for Motor) and product page (Normally Black is for Motor, Green is for Power)
+- Listed as Out Of Stock on my.cytron.io (16 Oct 2026)
+
+## Positioning (kept apart from specs)
+- "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay"
+- "Fully NMOS H-Bridge for better efficiency and no heat sink is required"
+
+## Price band
+- my.cytron.io: 1 unit RM55.60; 5 or more RM52.80; 20 or more RM50.00; 50 or more RM47.20 (read 16 Oct 2026)
+
+## Product page
+https://my.cytron.io/p-13amp-6v-30v-dc-motor-driver
+
+## Datasheet
+https://www.electrokit.com/upload/product/41018/41018267/MD13S%20User's%20Manual.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://www.electrokit.com/upload/product/41018/41018267/MD13S%20User's%20Manual.pdf
+
+# Product fact sheets
+
+## Product name
+MD20A 20Amp 6V-30V DC Motor Driver
+
+## Aliases
+MD20A, Cytron MD20A, 20Amp 6V-30V DC Motor Driver
+
+## What it is
+A single-channel, bi-directional driver for one brushed DC motor, powered from 6 V to 30 V and controlled with a PWM and a DIR signal. It is rated 20 A continuous and 60 A peak, with overcurrent current limiting, temperature-dependent current limit and undervoltage shutdown.
+
+## Specs and functions
+- Product code: MD20A; datasheet Rev 1.0, Feb 2019
+- Channels: 1 (bi-directional, brushed DC motor)
+- Power input voltage: 6 V min, 30 V max
+- Maximum motor current: 20 A continuous
+- Peak motor current: 60 A, limited by the overcurrent protection circuit; actual current limit depends on board temperature; value shown is at room temperature (25 - 30 degree Celsius)
+- Peak current duration: [NOT STATED]
+- Logic input voltage (PWM & DIR) low level: 0 V min, 0.8 V max
+- Logic input voltage (PWM & DIR) high level: 1.5 V min, 15 V max
+- Inputs compatible with 1.8V, 3.3V, 5V and 12V logic (product page)
+- PWM frequency, standard: DC to 20 KHz; output frequency is same as input frequency
+- PWM frequency, extended: 20 to 40 KHz; continuous motor current will be reduced in the extended range
+- Product page states PWM frequency up to 20kHz
+- Control: PWM & DIR inputs; compatible with sign-magnitude and locked-antiphase PWM operation (product page)
+- Truth table: PWM Low = MA Low, MB Low (Brake), DIR don't care; PWM High + DIR Low = MA High, MB Low (Forward); PWM High + DIR High = MA Low, MB High (Backward)
+- Overcurrent protection with active current limiting: PWM is chopped and motor current is held at the maximum current limit; OC LED on
+- Temperature protection: the higher the board temperature, the lower the current limiting threshold
+- Undervoltage shutdown: output shut down when power input drops below the lower limit; ERR LED on
+- Test buttons MA (Forward) and MB (Backward); motor runs at full speed
+- LEDs: Power, Motor Status (MA, MB), Error (undervoltage shutdown or hardware fault), OC (Overcurrent)
+- Packing list: 1 x 20Amp 6V-30V DC Motor Driver; 4 x PCB Spacer
+- Warranty: 12 months
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Power Input Terminal: VB+ (positive), VB- (negative); connect to battery
+- Motor Output Terminal: MA, MB
+- PWM/DIR Input: DIR (direction input), PWM (PWM input for motor speed control), GND (signal ground)
+- Compatible with Arduino, Raspberry Pi, PLC, etc (product page)
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, 3, 4)`
+- RC, analog and serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Bidirectional control for one brushed DC motor
+- Control the motor with PWM & DIR signal from Arduino, Raspberry Pi or PLC
+- Test the functionality of the motor driver with the onboard test buttons
+
+## Known limitations
+- Power input does not have reverse-voltage protection; connecting in reverse polarity will damage the motor driver instantaneously
+- Peak current is limited by the overcurrent protection circuit and the limit falls as board temperature rises
+- Continuous motor current is reduced when PWM operates in the extended 20 to 40 KHz range
+- Undervoltage threshold: [NOT STATED]
+- Logic inputs 15 V max
+- One brushed DC motor only
+- PWM Low brakes the motor regardless of DIR
+- Motor direction depends on motor connection; swapping MA and MB reverses it
+- Battery vs switching power supply guidance: [NOT STATED] beyond "Connect to battery."
+
+## Positioning (kept apart from specs)
+- "Inputs compatible with 1.8V, 3.3V, 5V and 12V logic (Arduino, Raspberry Pi, PLC, etc)." (product page)
+- Overcurrent protection "prevents the motor driver from damage when the motor stalls or an oversized motor is hooked up" (datasheet)
+
+## Price band
+- www.cytron.io: $17.25; 10 or more $15.87; 50 or more $14.66 (read 16 Oct 2026; currency shown only as "$")
+
+## Product page
+https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver
+
+## Datasheet
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf
+
+# Product fact sheets
+
+## Product name
 MDD10A 10Amp 5V-30V DC Motor Driver (2 Channels) (Rev 2.0)
 
 ## Aliases
@@ -1144,6 +1504,172 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
+
+# Product fact sheets
+
+## Product name
+MDD20A 20Amp 6V-30V DC Motor Driver (2 Channels)
+
+## Aliases
+MDD20A, Cytron MDD20A, 20Amp 6V-30V DC Motor Driver (2 Channels), 20A 6V-30V Dual DC Motor Driver, Dual Channel 20A DC Motor Driver
+
+## What it is
+A dual-channel, bi-directional driver for two brushed DC motors, powered from 6–30 V and controlled with a PWM and a DIR signal per channel. Each channel is rated 20 A continuous and 60 A peak.
+
+## Specs and functions
+- Product code: MDD20A; datasheet Rev 1.0, July 2020
+- Channels: 2 (bi-directional, brushed DC motors)
+- Power input voltage: 6 V min, 30 V max
+- Maximum motor current per channel: 20 A continuous, 60 A peak
+- Peak current is limited by the overcurrent protection circuit; actual current limit depends on board temperature; value shown is at room temperature (25 - 30 degree Celsius); peak duration [NOT STATED]
+- Logic input voltage (PWM & DIR): low level 0 V to 0.8 V; high level 1.5 V to 15 V; maximum input voltage can be extended up to 30V by connecting a 10K ohm resistor in series
+- Logic compatibility (product page): 1.8V, 3.3V, 5V and 12V logic (Arduino, Raspberry Pi, PLC, etc)
+- PWM frequency: standard up to 20 kHz; extended 20 kHz to 40 kHz, where continuous motor current will be reduced; output frequency is same as input frequency
+- Control: PWM & DIR per channel (PWMx = speed, DIRx = direction)
+- Truth table (each channel): PWMx Low = MxA Low, MxB Low (Brake, DIRx don't care); PWMx High + DIRx Low = MxA High, MxB Low (Forward); PWMx High + DIRx High = MxA Low, MxB High (Backward); actual direction depends on motor connection
+- Locked-antiphase PWM: "Compatible with sign-magnitude and locked-antiphase PWM operation" (product page; not mentioned in the datasheet)
+- Overcurrent protection with active current limiting: PWM to the motor is chopped and motor current is held at the maximum current limit; OC LED turns on
+- Temperature protection: the higher the board temperature, the lower the current limiting threshold
+- Undervoltage shutdown: output shuts down when power input voltage drops below the lower limit; Error LED turns on
+- Test buttons: motor will run at full speed
+- LEDs: Power LED, Motor Status LEDs (MxA forward, MxB backward), Error LED (undervoltage shutdown or hardware fault), OC (Overcurrent) LED
+- Weight: 89g (product page)
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Packing list (product page): 1 x 20Amp 6V-30V DC Motor Driver (2 Channels), 4 x PCB Spacer
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Power input terminal: VB+ (positive), VB- (negative); connect to battery
+- Motor output terminals: MxA / MxB per channel
+- PWM/DIR input per channel: DIRx (direction input), PWMx (PWM input for motor speed control), GND (signal ground)
+- No 5V output or separate logic supply listed
+- Compatible with Arduino, Raspberry Pi, PLC, etc (product page)
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR_DUAL example, one `CytronMD(PWM_DIR, pwmPin, dirPin)` object per channel
+- RC / analog / serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Bidirectional control for two brushed DC motors
+- Automated Guided Vehicle (AGV)
+- Solar Tracker
+- Game Simulator
+- Mobile Robot
+- Automation Machine
+
+## Known limitations
+- No reverse polarity protection: connecting in reverse polarity will damage the motor driver instantaneously
+- Logic input high level max 15 V; up to 30 V only with a 10K ohm resistor in series
+- Continuous motor current is reduced when PWM operates in the extended 20–40 kHz range
+- Peak current is limited by the overcurrent protection circuit and the limit drops as board temperature rises
+- PWM Low brakes the channel regardless of DIR
+- Motor direction depends on motor wiring
+- Brushed DC motors only
+- Switching power supply / regenerative current guidance: [NOT STATED]
+- Heatsink / fan requirement: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Product page features: "Buttons for quick testing." "LEDs for motors output state."
+
+## Price band
+- www.cytron.io volume prices: 5 or more $33.25; 20 or more $31.50; 50 or more $29.75 (read 16 Oct 2026); single-unit price [NOT STATED]
+
+## Product page
+https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver-2-channels
+
+## Datasheet
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf
+
+# Product fact sheets
+
+## Product name
+MD25HV 25Amp 7V-58V High Voltage DC Motor Driver
+
+## Aliases
+MD25HV, Cytron MD25HV, 25Amp 7V-58V High Voltage DC Motor Driver, MD25HV High Voltage 7V-58V 25Amp DC Motor Driver
+
+## What it is
+A single-channel, bi-directional driver for one brushed DC motor, powered from 7–58 V and rated 25 A continuous and 60 A peak. It is controlled either by PWM/DIR signals or by a potentiometer and direction switch.
+
+## Specs and functions
+- Product code: MD25HV; datasheet Rev 1.0, Jan 2019
+- Channels: 1 (bi-directional, brushed DC motor)
+- Power input voltage: 7 V min, 58 V max
+- Maximum motor current: 25 A continuous, 60 A peak; peak duration [NOT STATED]
+- 5V output voltage: 4.9 V min, 5.1 V max; 5V output maximum current: 250 mA
+- Potentiometer analog input voltage (POT 2): 0 V to 5 V
+- Direction switch input voltage (MA, MB): low level 0 V to 0.8 V; high level 3 V to 5 V
+- Logic input voltage (PWM, DIR): low level 0 V to 0.8 V; high level 3 V to 30 V
+- Logic compatibility (product page): 1.8V, 3.3V, 5V, 12V and 24V logic (Arduino, Raspberry Pi, PLC, etc); datasheet: logic input high level min 3 V
+- PWM input frequency: DC to 40 kHz
+- Motor driver output PWM frequency: 16 kHz, independent of input frequency
+- Lock-Antiphase PWM is not supported
+- Input Mode 1: PWM/DIR input; Input Mode 2: Potentiometer/Switch input; mode selection method [NOT STATED]
+- Truth table (PWM/DIR): PWM Low = MA Low, MB Low (Brake, DIR don't care); PWM High + DIR Low = MA High, MB Low (Forward); PWM High + DIR High = MA Low, MB High (Backward); actual direction depends on motor connection
+- Overcurrent protection with active current limiting: PWM to the motor is chopped and motor current is held at the maximum current limit; OC LED turns on
+- Temperature protection: the higher the board temperature, the lower the current limiting threshold
+- Undervoltage shutdown: output shuts down when power input voltage drops below the lower limit
+- Error LED blink codes: 2 = MOSFET Driver Error (undervoltage error or hardware failure); 3 = Overvoltage Error (power input voltage has exceeded the maximum rating); 4 = Overheat Error (board temperature over 80℃ (176℉), warning only, driver can still be safely operated)
+- Test buttons MA (forward) and MB (backward): motor will run at 78% of full speed
+- LEDs: Power LED, Error LED, OC (Overcurrent) LED, Motor Status LEDs MA (forward) / MB (backward)
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Packing list (product page): 1 x MD25HV, 1 x Potentiometer with connector, 1 x Rocker switch with connector, 4 x Nylon PCB Standoffs/Spacers
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Power input terminal: VB+ (positive), VB- (negative); connect to battery
+- Motor output terminal: MA / MB
+- PWM/DIR input: PWM (speed), DIR (direction), 5VO (5V output, can be used to power Arduino and other MCU), GND (signal ground)
+- Speed control potentiometer (10KΩ): POT 1 (GND, lowest speed), POT 2 (Analog In, middle pin), POT 3 (5V, highest speed)
+- Direction switch (SPDT): MA (short to GND to run forward), COM (connected to GND internally), MB (short to GND to run backward); MA and MB internally pulled high
+- Compatible with Arduino, Raspberry Pi, PLC, etc (product page)
+- Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD(PWM_DIR, pwmPin, dirPin)`
+- RC / serial input: [NOT STATED]
+- Wire size: [NOT STATED]
+
+## Use cases
+- Bidirectional control for one brushed DC motor
+- Control the motor with PWM/DIR signal from Arduino and other MCU
+- Control the motor speed with a 10KΩ potentiometer and direction with an SPDT switch
+
+## Known limitations
+- No reverse polarity protection: connecting in reverse polarity will damage the motor driver instantaneously
+- Lock-Antiphase PWM is not supported
+- Output PWM is 16 kHz regardless of input PWM frequency
+- Logic input high level min 3 V (datasheet), although the product page lists 1.8V logic
+- Direction switch inputs (MA, MB) max 5 V
+- 5V output max 250 mA
+- With a switching power supply, connect a motor shunt regulator or rechargeable battery with the same voltage in parallel to absorb regenerative energy from the motor during deceleration (otherwise Overvoltage Error)
+- Current limiting threshold drops as board temperature rises
+- Test buttons run the motor at 78% of full speed only
+- PWM Low brakes the motor regardless of DIR
+- Brushed DC motors only
+- Heatsink / fan requirement: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Product page features: "Buttons for quick testing." "LEDs for motor output state." "Dual Input Mode: PWM/DIR or Potentiometer/Switch Input."
+
+## Price band
+- www.cytron.io volume prices: 5 or more $56.05; 10 or more $53.10; 30 or more $50.15 (read 16 Oct 2026); single-unit price [NOT STATED]
+
+## Product page
+https://www.cytron.io/p-25amp-7v-58v-high-voltage-dc-motor-driver
+
+## Datasheet
+https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit
 
 # Product fact sheets
 
@@ -1230,6 +1756,296 @@ Datasheet
 
 ## Source link
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-165/pdf/mdds10_users_manual.pdf
+
+# Product fact sheets
+
+## Product name
+SmartDriveDuo-30 (MDDS30)
+
+## Aliases
+MDDS30, SmartDriveDuo-30, SmartDriveDuo 30, Smart Drive Duo 30
+
+## What it is
+A dual-channel brushed DC motor driver that runs two motors from one 7–35 V supply. It takes RC receiver, analog, PWM or UART serial input, selected by DIP switch.
+
+## Specs and functions
+- Product code: MDDS30
+- Motor channels: 2 (bi-directional, brushed DC)
+- Input voltage (motor supply): 7 V to 35 V
+- Maximum continuous motor current (IMAX): 30 A each channel, depends on room temperature
+- Peak motor current (IPEAK): 80 A each channel, must not exceed 1 second
+- Logic input high (VIOH): 1.3–5 V; logic input low (VIOL): 0–0.7 V
+- Input dead-band (RC, Analog and PWM mode only): ±10%
+- Switching frequency: 18 KHz
+- Input modes: RC, Analog, PWM, Serial Simplified, Serial Packetized, selected by DIP switch SW1–SW3 (SW1:SW2 00 RC; 01 Analog; 10 PWM; 11 with SW3=0 Serial Simplified; 11 with SW3=1 Serial Packetized)
+- RC and Analog/PWM options: SW3:SW4 Mixed (00), Independent Right (01), Independent Left (10), Independent Both (11); SW5 exponential response on/off
+- RC SW6: MCU mode on Rev1.00 boards; Full Range mode on Rev1.10 boards (released Jan 2019, firmware update, revision sticker on board)
+- Analog/PWM SW6: Locked Anti-Phase (stop at 2.5 V / 50% duty) or Signed Magnitude (stop at 0 V / 0% duty; IN1/IN2 set direction); PWM accepts TTL PWM 1.3–5 V HIGH and is low-pass filtered onboard
+- Battery monitor SW7:SW8: 00 LiPo, 01 NiMH, 10 SLA, 11 Off
+- Serial Simplified: 1 byte per command (bit 7 LEFT/RIGHT, bit 6 CW/CCW, bits 5–0 speed 0–63); baud 1200, 2400, 4800, 9600, 19200, 38400, 57600 or 115200 set by SW4–SW6
+- Serial Packetized: 4-byte packet (header 0x55 / 85, channel and address, command 0–255, checksum = header + address + command); address 0–7 by SW4–SW6; up to 8 drivers on one UART Tx
+- Serial Packetized auto-baud: send dummy byte 128 (0x80) once, one second after power-up; autobaud range 4800–115200 bps
+- Control inputs: Grove connector AN1 (LEFT), AN2 (RIGHT); Grove connector IN1 (LEFT direction; UART receive in serial modes), IN2 (RIGHT direction); RC input RC1, RC2
+- Terminals: Power Supply terminal block, Motor LEFT and Motor RIGHT terminal blocks (MLA/MLB, MRA/MRB); wires can also be soldered to the bottom pad
+- Test buttons: 1 per motor, for fast test and manual operation
+- Reset button: restarts the system to change mode without power cycling
+- LEDs: RUN, ERR and OC per channel; motor direction LEDs; Power LED; Error LED blinks 2 input error, 3 under voltage, 4 over voltage, 5 over temperature
+- Protections: thermal protection (max current 80 A below 50 °C, 50 A at 50–70 °C, 40 A at 70–100 °C, 30 A above 100 °C), current limit protection, over voltage (>35 V will not operate), battery low voltage warning
+- Cooling fan connector (NC, +ve 5V, -ve): optional fan turns on automatically above 50 °C
+- Packing list: 1 × SmartDriveDuo-30, 2 × Grove 4 Pin Buckled 20cm Cable, 2 × 2561 3 Ways Connector Extension Wire
+- Optional fan kit (not included): DC5V Brushless Fan 40 x 40 x 20mm, 4 × PCB Stand 30mm, 4 × Bolt M3 x 25mm, 4 × M3 Nut
+- Warranty: 12 months, manufacturing defects only
+- 5V output current: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- User's Manual: Rev 1.2, September 2023
+
+## Interfaces and compatibility
+- Signal sources: RC transmitter/receiver, analog joystick, microcontroller (Analog, PWM, UART)
+- Logic input high range is 1.3–5 V; the manual does not explicitly state 3.3 V compatibility
+- UART: receive only (IN1); no TX pin described
+- Grove connectors; manual sample wiring uses CT UNO or Arduino Uno with Base Shield V2
+- Cytron_SmartDriveDuo Arduino library (version 1.0.0, architectures=avr) for SmartDriveDuo-10, SmartDriveDuo-30 and SmartDriveDuo-60, with PWM, Serial Simplified and Serial Packetized examples written for MDDS30
+
+## Use cases
+- Differential drive mobile robot controlled by an RC controller
+- Motor control from an analog joystick
+- Motor control from a microcontroller via PWM, Serial Simplified or Serial Packetized
+- Up to 8 drivers sharing one microcontroller UART Tx pin (Serial Packetized)
+
+## Known limitations
+- No polarity protection on V motor / power input; double check connections before powering up
+- Supply must stay within 7–35 V; above 35 V the driver will not operate
+- A power supply that cannot sink current (bench-top or AC-to-DC switching supply) must have a battery of the same voltage connected in parallel to absorb regenerated current, or the driver may be destroyed permanently
+- Pushing the robot with no battery connected might burn the driver; this is misuse and not covered by warranty
+- 30 A continuous depends on room temperature; 80 A peak must not exceed 1 second
+- Maximum current is reduced from 50 °C (down to 30 A above 100 °C)
+- Under voltage is a warning only; motor power is maintained; LiPo below 3.0 V per cell must be replaced/recharged
+- Input must be at stop at power-up (RC, Analog, PWM) or the driver shows Input Error
+- The RC transmitter must be ON before powering up the driver
+- Do not use an external BEC/regulator for the RC receiver; if required, disconnect the middle (red) wire
+- Input mode is read only at power-up; press RESET or power cycle after changing the DIP switch
+- RC SW6 function differs between Rev1.00 (MCU mode) and Rev1.10 (Full Range mode) boards
+- Serial Packetized auto-baud byte is 0x80, not the 0x55 used by MDDS10 and MDDS60
+- Maximum PWM input frequency: [NOT STATED]
+- Wire size: "use wire with proper thickness to support the expected current"; gauge and fuse rating [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Manual: "MOSFETs are switched at 18 KHz to ensure quiet operation and no annoying whining sound"
+- Manual: "SmartDriveDuo-30's feature makes driving a robot with differential drive a truly plug and play experience"
+- Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-mdds30
+
+## Datasheet
+https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view
+
+# Product fact sheets
+
+## Product name
+SmartDriveDuo-60 (MDDS60)
+
+## Aliases
+MDDS60, SmartDriveDuo-60, SmartDriveDuo 60, Smart Drive Duo 60
+
+## What it is
+A dual-channel brushed DC motor driver that runs two motors from one 10–45 V supply. It takes RC receiver, analog, PWM or UART serial input, selected by DIP switch.
+
+## Specs and functions
+- Product code: MDDS60
+- Motor channels: 2 (bi-directional, brushed DC)
+- Input voltage (motor supply): 10 V to 45 V
+- Maximum continuous motor current (IMAX): 60 A each channel, depends on room temperature
+- Peak motor current (IPEAK): 100 A each channel, must not exceed 1 second
+- Logic input high (VIOH): 1.3–5 V; logic input low (VIOL): 0–0.7 V
+- 5V output current: 500 mA max ("Do not connect to another 5V source")
+- Switching frequency: 16 KHz
+- Input modes: RC, Analog, PWM, Simplified Serial, Packetized Serial, selected by DIP switch SW1–SW3 (SW1:SW2 00 RC; 01 Analog; 10 PWM; 11 with SW3=0 Simplified Serial; 11 with SW3=1 Packetized Serial)
+- RC and Analog/PWM options: SW3:SW4 Mixed (00), Independent Right (01), Independent Left (10), Independent Both (11); SW5 exponential response on/off
+- RC MCU mode (SW6=1): centre fixed at 1.5 ms, signal-loss timeout disabled; SW6=0: centre calibrated at power-up, motor stops after 100 ms without signal
+- Analog/PWM (0–5 V): Locked Anti-Phase (SW6=0, stop at 2.5 V) or Signed Magnitude (SW6=1, 0 V stop, 5 V full speed, DIG1/DIG2 set direction); PWM input is low-pass filtered onboard
+- Simplified Serial: 1 byte per command (bit 7 = LEFT/RIGHT); baud 1200, 2400, 4800, 9600, 19200, 38400, 57600 or 115200 set by SW4–SW6
+- Packetized Serial: 4-byte packet (header 85 decimal / hex 55, address, command 0–255, checksum = header + address + command); address 0–7 by SW4–SW6; up to 8 drivers on one UART Tx; auto-baud from the header byte, sent one second after power-up
+- Input terminal block: DIG1 (LEFT direction; UART Rx in serial modes), DIG2 (RIGHT direction), AN1 (LEFT), AN2 (RIGHT), +5V, GND; RC input: RC1, RC2
+- Terminals: Power Supply terminal block, Motor LEFT and Motor RIGHT terminal blocks; wires can also be soldered to the bottom pad
+- Power Switch terminal block: switches the microcontroller and logic circuit; ON by default; cut/unsolder the bottom-layer link to use an external switch
+- Test buttons: 1 per motor, for fast test and manual operation
+- "RST" reset button to change input mode without power cycling
+- LEDs: RUN_L, RUN_R, motor direction LEDs; Error LED (2 blinks input error, 3 under voltage, 4 over voltage, 5 over temperature, 6 shutdown)
+- Cooling fan: runs once the driver is powered up
+- Thermal protection: duty cycle reduced in steps from 100% below 50 °C to 5% at 100–105 °C; shutdown above 105 °C; channel restarts below 70 °C
+- Battery low voltage indicator and battery over voltage indicator (above 45 V the driver will not operate)
+- Packing list: 1 × SmartDriveDuo-60 with top and bottom cover, 2 × 2561 Servo Extension cable
+- Hardware revision: Rev1.10 shipped since January 2019 (component change; performance and interface unchanged)
+- Warranty: 12 months, manufacturing defects only
+- Over-current protection: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- User's Manual: Rev 1.1, July 2019
+
+## Interfaces and compatibility
+- Signal sources: RC transmitter/receiver, joystick or foot pedal with potentiometer, Cytron Breakout board with Joystick soldered, microcontroller (PWM, UART)
+- Logic input high range is 1.3–5 V; the manual does not explicitly state 3.3 V compatibility
+- UART: receive only (DIG1 Rx); no TX pin described
+- Cytron_SmartDriveDuo Arduino library (version 1.0.0, architectures=avr) for SmartDriveDuo-10, SmartDriveDuo-30 and SmartDriveDuo-60
+
+## Use cases
+- Differential drive mobile robot controlled by an RC controller
+- Motor control from a joystick or foot pedal with potentiometer
+- Motor control from a microcontroller via PWM, Simplified Serial or Packetized Serial
+- Up to 8 drivers sharing one microcontroller UART Tx pin (Packetized Serial)
+
+## Known limitations
+- No polarity protection on V motor / power input; double check connections before powering up
+- Supply must stay within 10–45 V; above 45 V the driver will not operate
+- A power supply that cannot sink current (bench-top or AC-to-DC switching supply) must have a battery of the same voltage connected in parallel to absorb regenerated current, or the driver may be destroyed permanently
+- 60 A continuous depends on room temperature; 100 A peak must not exceed 1 second
+- Output is derated from 50 °C and shuts down above 105 °C
+- Under voltage is a warning only; motor power is maintained; LiPo below 3.0 V per cell must be replaced/recharged
+- Input must be at stop at power-up (RC, Analog, PWM) or the driver shows Input Error
+- The RC transmitter must be ON before powering up the driver
+- Input mode is read only at power-up; press "RST" or power cycle after changing the DIP switch
+- Packetized Serial: wait one second after power-up before sending the header; baud rate cannot change without power cycle or reset
+- In Mixed mode the left and right motors must be wired to the matching terminal blocks
+- +5V output must not be connected to another 5V source; 500 mA max
+- Maximum PWM input frequency: [NOT STATED]
+- Wire size: "use wire with proper thickness to support the expected current"; gauge and fuse rating [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Manual: "MOSFETs are switched at 16 KHz to ensure quiet operation and no annoying whining sound"
+- Manual: "SmartDriveDuo-60's feature makes driving a robot with differential drive a truly plug and play experience"
+- Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
+
+## Price band
+[NOT STATED]
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view
+
+# Product fact sheets
+
+## Product name
+Enhanced SmartDrive40 (MDS40B) — 40Amp 10V-45V SmartDrive DC Motor Driver
+
+## Aliases
+MDS40B, Enhanced SmartDrive40, SmartDrive40, 40Amp 10V-45V SmartDrive DC Motor Driver
+
+## What it is
+A single-channel brushed DC motor driver for medium to high power motors, running from a 10–45 V supply. An onboard microcontroller provides RC, Analog, PWM, Simplified Serial and Packetized Serial input modes, selected with a DIP switch.
+
+## Specs and functions
+- Product code: MDS40B
+- User's Manual: Rev 1.1, July 2023 (spec table titled "Absolute Maximum Rating of Enhanced SmartDrive40")
+- Motor channels: 1 (one brushed DC motor per board; two boards for a differential-drive robot)
+- Input Voltage (Motor Supply Voltage): 10–45 V
+- Maximum continuous motor current: 40 A (depends on the room temperature)
+- Peak motor current: 80 A, must not exceed 1 second
+- Logic input high level (VIOH): 1.3–5 V; logic input low level (VIOL): 0–0.7 V
+- Product page: "3.3 and 5V compatible input"
+- 5V output current: 500 mA max (do not connect to another 5V source)
+- MOSFETs switched at 16 KHz for quiet operation
+- Input modes: RC, Analog, PWM, Simplified Serial, Packetized Serial; selected with an 8-position DIP switch, read at power-up (press RST or power cycle after changing)
+- RC mode (SW1:SW2 = 00): Independent (input 1 only), Mixed Right, Mixed Left; SW5 exponential response; SW6 MCU Mode (off: centre calibrated at power-up, motor stops after 100 ms signal loss; on: centre fixed at 1.5 ms, no timeout, motor keeps previous speed)
+- RC transmitter must be ON before powering up the driver
+- Analog mode (SW1:SW2 = 01) and PWM mode (SW1:SW2 = 10): 0–5 V input range; PWM input is low-pass filtered to analog
+- SW6 in Analog/PWM: Locked Anti-Phase (stop at 2.5 V) or Signed Magnitude (Input 1 speed 0 V stop to 5 V full, Input 2 digital direction)
+- Stop signal (2.5 V, or 0 V in Signed Magnitude) must be present at power-up, otherwise Input Error
+- Simplified Serial (SW1–SW3 = 110): Input 1 = UART Rx, Input 2 = Slave Select; one byte: 127 stop, 0 full reverse, 255 full forward; baud 1200, 2400, 4800, 9600, 19200, 38400, 57600 or 115200 set by SW4–SW6
+- Packetized Serial (SW1–SW3 = 111): 4-byte packet — header 85, address 0–7 (SW4–SW6), command (127 stop, 0 full reverse, 255 full forward), checksum = header + address + command; auto-baud from the first header byte; up to 8 units on one UART Tx pin; allow one-second delay after power-up before sending the header
+- Error LED: 2 blinks Input Error; 3 blinks Under Voltage; 4 blinks Over Voltage (MDS40B will not operate); 5 blinks Over Temperature
+- Over-temperature current limit: below 50 °C 80 A; 50–70 °C 50 A; 70–100 °C 45 A; 100–110 °C 40 A; above 110 °C 35 A
+- Under voltage (LiPo, below 3.0 V per cell): warning only, motor power is not cut
+- Over voltage: above 45 V the driver will not operate
+- Run LED, Error LED, Motor LED indicators (LED A on = current from output A to B)
+- Two motor test buttons (A: current flows from output A to B; B: vice versa)
+- Reset button (RST)
+- Power Switch Terminal Block: switches the microcontroller and logic circuit; ON by default
+- Fan connector for an optional 5V cooling fan (always on, no speed control)
+- Dimensions (product page): 105 mm (W) x 106 mm (D) x 38 mm (H) driver board; 125 mm (W) x 107 mm (D) x 47 mm (H) with the base
+- Packing list: 1 x Enhanced SmartDrive40 with top and bottom cover; 2 x 2561 Servo Extension cable
+- Warranty: 12 months, manufacturing defects only
+- Reverse polarity protection: none
+- Operating temperature: [NOT STATED]
+- Weight: [NOT STATED]
+- PWM input maximum frequency: [NOT STATED]
+
+## Interfaces and compatibility
+- Power Supply Terminal block (screw terminal or solder to bottom-layer pad)
+- Motor Terminal Block (screw terminal or solder to bottom-layer pad)
+- Analog/PWM/Serial Input Terminal Block: GND, 5V (output), IN1, IN2
+- RC Input Pin: RC1 forward/reverse, RC2 steering
+- Fan connector (5V)
+- Power Switch Terminal Block
+- Recommended power sources: 9–18 cells NiMH or NiCd (up to 30 cells; low voltage warning only up to 18 cells); 3–6 cells LiPo or Li-Ion (up to 10 cells; warning only up to 6 cells); 10–45 V sealed lead acid; 10–45 V power supply in parallel with a battery of the same voltage
+- Wire: use wire thick enough for the expected current; product page recommends Multicore Wire AWG14
+- Arduino: CytronMotorDriver library, PWM_DIR example (MDS40B set to Sign-Magnitude PWM Input mode)
+- 3.3 V PWM input supported (product page); input pins are pulled up, so NPN optocouplers can be used (product page)
+- Joystick breakout board recommended for Analog Locked Anti-Phase mode
+- Onboard current sensor: not accessible (product page)
+
+## Use cases
+- Medium to high power brushed DC motor
+- Robot with differential drive (two units, Mixed Left and Mixed Right)
+- Control from a standard hobby radio control transmitter and receiver, or a microcontroller generating the similar signal
+- Motor controlled by a joystick or foot pedal with potentiometer
+- Microcontroller control via PWM or UART serial
+
+## Known limitations
+- Drives one motor only; two motors need two boards
+- No reverse polarity protection; double check the connection before powering up
+- Peak 80 A must not exceed 1 second; continuous 40 A depends on room temperature
+- Current limit drops with board temperature (down to 35 A above 110 °C)
+- With a power supply that cannot sink current (bench top or AC to DC switching power supply), a battery with the same voltage must be connected in parallel to absorb regenerative current; otherwise the input voltage might rise and destroy the driver permanently or trip the supply's protection
+- Above 45 V the driver will not operate
+- Under-voltage is a warning only; motor power is not cut, the user must stop and replace the battery
+- Battery low voltage warning works only up to 18 NiMH/NiCd cells or 6 LiPo/Li-Ion cells
+- Input must be at stop at power-up in RC, Analog and PWM modes, otherwise Input Error
+- RC transmitter must be on before powering the driver
+- With MCU Mode on there is no signal-loss timeout; the motor keeps its previous speed
+- DIP switch changes need a reset or power cycle
+- Packetized Serial needs a one-second delay after power-up before the header byte; baud rate fixed until power cycle or reset
+- Do not connect the 5V output to another 5V source; 5V output limited to 500 mA
+- Manual's features list says "dual brushed DC motor", but the board drives a single motor (product page: Motor Channel 1)
+
+## Positioning (kept apart from specs)
+- Product page: improved from MDS40A based on user feedback ("Enhanced SmartDrive40")
+- Product page enhancements: increased Vin range up to 45 VDC; responsive current limiting sensor and algorithm; high ampere screw terminals; additional terminal to deactivate the driver without a high power switch; switching regulator for 5V; option to add a fan; ready header for RC receiver; over voltage protection
+- Product page lists "Regenerative Braking."
+- User's Manual: makes driving a robot with differential drive "a truly plug and play experience"
+
+## Price band
+$62.50 ex tax (www.cytron.io, read 2026-10-16); 5 or more $57.50; 10 or more $50.00
+
+## Product page
+https://www.cytron.io/p-40amp-10v-45v-smartdrive-dc-motor-driver
+
+## Datasheet
+https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit
 
 # Product fact sheets
 
@@ -1333,6 +2149,99 @@ Datasheet
 
 ## Source link
 [NOT STATED]
+
+# Product fact sheets
+
+## Product name
+MDDRC10 10Amp 7V-30V DC Motor Driver for R/C (2 Channels)
+
+## Aliases
+MDDRC10, 10Amp 7V-30V DC Motor Driver for R/C (2 Channels), 10Amp 7V-30V DC Motor Driver for R/C
+
+## What it is
+A dual-channel brushed DC motor driver controlled directly from an R/C receiver, driving two DC motors from a 7–30 V supply. Its RC1/RC2 inputs work in Independent Mode or Mixed Mode, selected with an onboard switch.
+
+## Specs and functions
+- Product code: MDDRC10
+- Datasheet: Rev 1.0, August 2020 (spec table titled "MDDRC10 Absolute Maximum Ratings")
+- Power input voltage: 7–30 V (VB+ positive, VB- negative; datasheet: "Connect to battery.")
+- Maximum motor current (per channel): 10 A continuous
+- Peak motor current (per channel): 30 A, limited by the overcurrent protection circuit; actual current limit depends on board temperature; value shown is at room temperature (25–30 °C); peak duration [NOT STATED]
+- Motor channels: 2 (bidirectional control for two brushed DC motors)
+- Motor output PWM frequency: 20 KHz
+- Control input: R/C signal on RC1 and RC2
+- RC input voltage (RC1 & RC2): low level 0–0.7 V, high level 1.5–15 V
+- RC signal timing: frequency 10–100 Hz, deadband ±35 µs, fullscale ±435 µs
+- 5V output for the RC receiver: 500 mA max, from an onboard switching regulator; do not use it to power a servo motor
+- RC input auto-calibration: neutral points and offsets calibrated automatically at every power-up (captures the first valid RC signal as neutral)
+- Mixed Mode: RC1 = forward/backward speed, RC2 = turn left/right
+- Independent Mode: RC1 = left motor speed and direction, RC2 = right motor speed and direction
+- Mode selection switch selects Independent or Mixed Mode
+- Test buttons: motor runs at full speed
+- LEDs: Power LED; Motor status LEDs (MxA = Forward, MxB = Backward, actual direction depends on motor connection); Error LED; OC (Overcurrent) LED on while current limiting is active
+- Error LED codes: 2 blinks = RC Input Error (no RC signal or pulse width out of range); 3 blinks = Undervoltage / MOSFET Driver Error; 4 blinks = Overvoltage Error
+- Overcurrent protection with active current limiting: PWM chopped, current held at the maximum limit
+- Temperature protection: the higher the board temperature, the lower the current limiting threshold
+- Undervoltage shutdown: output shuts down when input drops below the lower limit
+- Reverse polarity protection: none (reverse polarity damages the driver instantaneously)
+- 10 A per channel continuously without any additional heatsink (product page)
+- Packing list (product page): 1 x 10Amp 7V-30V DC Motor Driver for R/C (2 Channels), 2 x 2561 3-way connector extension wire, 4 x PCB Spacer
+- Warranty: 12 months
+- Dimensions: [NOT STATED]
+- Operating temperature: [NOT STATED]
+- Weight: [NOT STATED]
+- Terminal type and wire size: [NOT STATED]
+- Undervoltage / overvoltage thresholds: [NOT STATED]
+- Failsafe motor behaviour on RC signal loss: [NOT STATED]
+
+## Interfaces and compatibility
+- Power input terminal: VB+, VB-
+- Motor output terminals: MxA, MxB per motor; swapping MxA and MxB reverses rotation
+- RC input header: RC1, RC2 (signal), +5V (receiver supply, 500 mA max), GND
+- Works with an R/C receiver; no coding or programming needed
+- Microcontroller, USB, firmware or software library: [NOT STATED]
+- Differences from MDDRC5 (per each datasheet): MDDRC10 is 10 A continuous / 30 A peak per channel vs MDDRC5 5 A / 20 A; MDDRC10 has no reverse polarity protection (MDDRC5 has); MDDRC10 lists temperature protection and RC auto-calibration; MDDRC10 test buttons run at full speed (MDDRC5 half speed); MDDRC10 has no RP2040, USB-C or alignment potentiometers described
+
+## Use cases
+- Differential drive motors in mobile robots (Mixed Mode preferred)
+- Non-wheeled motors, or controlling the motors independently (Independent Mode)
+- RC vehicle or mobile robot without any microcontroller
+- RC Lawn Mower
+- Combat Robot
+- Sumo Robot
+- RC Toy
+
+## Known limitations
+- Power input 7–30 V absolute maximum
+- No reverse polarity protection; connecting the battery in reverse polarity damages the motor driver instantaneously
+- Motor current 10 A continuous per channel; 30 A peak is current-limited and falls as the board temperature rises (30 A at 25–30 °C)
+- 5V output limited to 500 mA; do not use it to power a servo motor
+- RC transmitter must be on with sticks at neutral before switching on the driver, because neutral is captured at power-up
+- RC signal must be 10–100 Hz; missing signal or out-of-range pulse width gives an RC Input Error
+- Motor output shuts down on undervoltage
+- Overvoltage gives an error; with a switching power supply, connect a motor shunt regulator or a rechargeable battery with the same voltage in parallel to absorb regenerative energy from the motor during deceleration
+- Test buttons run the motor at full speed
+- Motor direction depends on terminal wiring; the Forward/Backward LED labels follow the terminals
+- No failsafe behaviour or peak current duration stated
+
+## Positioning (kept apart from specs)
+- Product page: "Building a RC vehicle or mobile robot without any microcontroller? MDDRC10 is what you need."
+- "Plug & play, controlled from RC directly."
+
+## Price band
+$39.00 ex tax (www.cytron.io, read 2026-10-16; shown Out of Stock); 5 or more $37.05; 20 or more $35.10; 50 or more $31.20
+
+## Product page
+https://www.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
+
+## Datasheet
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf
 
 # Product fact sheets
 

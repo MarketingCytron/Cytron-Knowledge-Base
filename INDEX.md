@@ -36,18 +36,29 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 | Robo ESP32 | [`robo-esp32.md`](robo-esp32.md) | `ROBO-ESP32` | None onboard — hosts a 30-pin NodeMCU ESP32 / Maker ESP32 | Active (Datasheet Rev 1.1, Feb 2026) | **Medium** |
 | Maker Feather AIoT S3 | [`maker-feather-aiot-s3.md`](maker-feather-aiot-s3.md) | `MAKER-FEATHER-AIOT-S3` (+`-H`) | ESP32-S3 (WROOM-1-N8R8) | Active | **Medium-high** |
 
+### Arduino-compatible boards
+
+| Product | File | Code | Chip | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium** |
+| Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
+
+Arduino-board notes for every agent:
+- **Maker UNO has no DC jack and no VIN** — USB Micro-B 4.8–5.2 V only. Select "Arduino Uno" in the IDE; CH340 driver needed.
+- **Maker Uno RP2040 is 3.3 V logic** — only 3.3 V-compatible UNO shields; power from USB-C or 1-cell LiPo (3.6–6 V); code uses GP numbers, not UNO D-numbers.
+
 ### Raspberry Pi Pico boards and kits (Robo series, EDU PICO)
 
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Robo Pico | [`robo-pico.md`](robo-pico.md) | `ROBO-PICO` | None onboard — hosts a Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Apr 2023 | **Medium** |
 | EDU PICO V2 | [`edu-pico-v2.md`](edu-pico-v2.md) | `EDU-PICO2` (`EDU-PICO2-NB` = no Pico) | Raspberry Pi Pico 2 W | Datasheet Rev 1.1, Jun 2026 | **Medium** |
-| Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
 
 ### Cytron sumo robot controllers
 
 | Product | File | Code | Chip | Status | Confidence |
 |---|---|---|---|---|---|
+| Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
 | URC10 | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
 | IR Sumo Start | [`ir-sumo-start.md`](ir-sumo-start.md) | `IR-SUMO-START` | — (IR start module) | Datasheet Rev 1.0, Apr 2025 | **Medium-high** |
 
@@ -58,12 +69,24 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 | Maker Drive | [`maker-drive.md`](maker-drive.md) | `MAKER-DRIVE` | 2 ch, 2.5–9.5 V, 1 A cont / 1.5 A peak (<5 s) | Datasheet Rev 1.0, Feb 2019 | **Medium-high** |
 | MDD3A | [`mdd3a.md`](mdd3a.md) | `MDD3A` | 2 ch, 4–16 V, 3 A cont / 5 A peak (<5 s) | Datasheet Rev 1.0, Mar 2019 | **Medium** |
 | MD10C | [`md10c.md`](md10c.md) | `MD10C` (Rev 3.0) | 1 ch, 5–30 V, 13 A cont / 30 A peak (≤10 s) | User's Manual Rev3.0 V1.0, Aug 2018 (no datasheet) | **Medium** |
+| MD13S | [`md13s.md`](md13s.md) | `MD13S` | 1 ch, 13 A, current limit 30 A; logic ≤5.5 V | User's Manual V1.1, Jun 2018 (no datasheet) | **Medium** |
+| MD20A | [`md20a.md`](md20a.md) | `MD20A` | 1 ch, 6–30 V, 20 A cont / 60 A peak (current-limited, no duration); logic 1.5–15 V | Datasheet Rev 1.0, Feb 2019 | **Medium-high** |
 | MDD10A | [`mdd10a.md`](mdd10a.md) | `MDD10A` (Rev 2.0) | 2 ch, 5–30 V, 10 A cont / 30 A peak (≤10 s) per ch | User's Manual V2.0, Jun 2017 (no datasheet) | **Medium-high** |
+| MDD20A | [`mdd20a.md`](mdd20a.md) | `MDD20A` | 2 ch, 6–30 V, 20 A cont / 60 A peak (current-limited) per ch | Datasheet Rev 1.0, Jul 2020 | **Medium-high** |
+| MD25HV | [`md25hv.md`](md25hv.md) | `MD25HV` | 1 ch, 7–58 V, 25 A cont / 60 A peak (current-limited); no locked-antiphase | Datasheet Rev 1.0, Jan 2019 | **Medium-high** |
 | MDDS10 SmartDriveDuo-10 | [`mdds10.md`](mdds10.md) | `MDDS10` | 2 ch, 10 A cont / 30 A peak (≤1 s) | User's Manual V1.0, Jun 2015 (no datasheet) | **Medium** |
+| MDDS30 SmartDriveDuo-30 | [`mdds30.md`](mdds30.md) | `MDDS30` | 2 ch, 7–35 V, 30 A cont / 80 A peak (≤1 s) per ch | User's Manual Rev 1.2, Sep 2023 (no datasheet) | **Medium-high** |
+| MDDS60 SmartDriveDuo-60 | [`mdds60.md`](mdds60.md) | `MDDS60` | 2 ch, 10–45 V, 60 A cont / 100 A peak (≤1 s) per ch | User's Manual Rev 1.1, Jul 2019 (no datasheet) | **Medium** |
+| Enhanced SmartDrive40 | [`smartdrive40.md`](smartdrive40.md) | `MDS40B` | **1 ch**, 40 A cont / 80 A peak (≤1 s) | User's Manual Rev 1.1, Jul 2023 (no datasheet) | **Medium-high** |
 | MDDRC5 | [`mddrc5.md`](mddrc5.md) | `MDDRC5` | 2 ch R/C, 7–30 V, 5 A cont / 20 A peak (<1 s) per ch | Datasheet Rev 1.0, Mar 2026 | **Medium-high** |
+| MDDRC10 | [`mddrc10.md`](mddrc10.md) | `MDDRC10` | 2 ch R/C, 7–30 V, 10 A cont / 30 A peak (current-limited) per ch | Datasheet Rev 1.0, Aug 2020 | **Medium-high** |
 | iMD16 | [`imd16.md`](imd16.md) | `IMD16` | 1 ch, 16 A cont / 30 A peak (<10 s), no current limit | Datasheet Rev 1.0, Apr 2026 | **Medium-high** |
 
-- **No reverse-polarity protection** on MD10C, MDD10A, MDDS10 (Maker Drive and MDD3A do have it). **No over-current protection is stated on any of them** — never claim it.
+Motor-driver notes for every agent:
+- **No reverse-polarity protection** on MD10C, MD13S, MD20A, MDD10A, MDD20A, MD25HV, MDDS10, MDDS30, MDDS60, MDS40B, MDDRC10 (Maker Drive, MDD3A and MDDRC5 do have it).
+- **Over-current:** only MD13S ("current limiting at 30A"), MD20A, MDD20A, MD25HV, MDDRC10, MDDRC5 and MDDS30 state current limiting; never claim it for the others. Where a peak is current-limited (MD20A, MDD20A, MD25HV, MDDRC10) no peak duration is stated — don't invent one.
+- **SmartDriveDuo serial:** MDDS30's packetized start-up byte is 0x80 (128); MDDS10/MDDS60 use 0x55. Cytron's Arduino library header byte (0x85) contradicts all three manuals.
+- **MDS40B (Enhanced SmartDrive40) drives one motor** — a two-motor robot needs two boards (Mixed Left + Mixed Right).
 - **Switching power supplies:** MDD10A, MDDS10 and iMD16 documents warn about regenerated current / back-EMF — use a battery, or a battery of the same voltage in parallel (MDDS10, MDD10A), or bulk capacitors / TVS (iMD16).
 - **Brake vs coast differs by board.** Both inputs LOW = brake on Maker Drive, MDD3A and Robo Pico; both HIGH = coast on Maker Drive but brake on MDD3A. PWM LOW = brake on MD10C, MDD10A, iMD16. Check each file.
 - **Control mode:** Maker Drive and MDD3A are two-PWM (CytronMotorDriver `PWM_PWM`), not PWM+DIR.

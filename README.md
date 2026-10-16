@@ -1,6 +1,6 @@
 # Cytron Product Knowledge Base
 
-Verified, source-tagged product facts for **Cytron-brand products** — boards, robot controllers, motor drivers and the IRIV industrial series.
+Verified, source-tagged product facts for **Cytron-brand products** — Arduino, ESP32 and Pico boards, robot controllers, motor drivers and the IRIV industrial series.
 
 It is written to be used as ground truth by AI assistants that write tutorials, articles and product content, and by the people who review that content.
 
@@ -22,9 +22,9 @@ It is written to be used as ground truth by AI assistants that write tutorials, 
 - A fact that only a third party states is never presented as a specification — it is listed under *Needs verification*.
 - If a source does not state something, the fact sheet says **[NOT STATED]**.
 
-## Products covered (23)
+## Products covered (33)
 
-Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Robo Pico · EDU PICO V2 · Maker Mini Sumo Controller · URC10 · IR Sumo Start · Maker Drive · MDD3A · MD10C · MDD10A · MDDS10 · MDDRC5 · iMD16 · Industrial IO HAT+ · IRIV PiControl CM4 · IRIV PiControl CM5 · IRIV IO Controller · IRIV IOC MQTT Gateway · IRIV SmartHub CM5 · IRIV EdgeAI CM5 · IRIV EdgeAI Safety Box Kit
+Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Maker UNO · Maker Uno RP2040 · Robo Pico · EDU PICO V2 · Maker Mini Sumo Controller · URC10 · IR Sumo Start · Maker Drive · MDD3A · MD10C · MD13S · MD20A · MDD10A · MDD20A · MD25HV · MDDS10 · MDDS30 · MDDS60 · Enhanced SmartDrive40 (MDS40B) · MDDRC5 · MDDRC10 · iMD16 · Industrial IO HAT+ · IRIV PiControl CM4 · IRIV PiControl CM5 · IRIV IO Controller · IRIV IOC MQTT Gateway · IRIV SmartHub CM5 · IRIV EdgeAI CM5 · IRIV EdgeAI Safety Box Kit
 
 ## Notes
 
