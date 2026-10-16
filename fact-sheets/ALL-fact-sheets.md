@@ -489,6 +489,175 @@ https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/
 # Product fact sheets
 
 ## Product name
+Maker Nano RP2040
+
+## Aliases
+MAKER-NANO-RP2040, Cytron Maker Nano RP2040, MakerNanoRP2040
+
+## What it is
+An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP2040. It has GPIO status LEDs, two RGB LEDs, a piezo buzzer, a user button and two Maker Ports.
+
+## Specs and functions
+- Product code: MAKER-NANO-RP2040
+- MCU: Raspberry Pi RP2040
+- Datasheet: Rev 1.1, July 2024; its spec table is titled "Absolute Maximum Ratings"
+- Flash: [NOT STATED] in the Cytron datasheet
+- USB: Micro USB port, for program upload and power
+- Power input voltage (Vin): 7.0 – 30.0 VDC
+- DC +5V max current (including onboard usage): 110 mA powered from Vin, 500 mA powered from USB
+- DC +3V3 max current (including onboard usage): 110 mA powered from Vin, 500 mA powered from USB
+- RGB LEDs: 2 x WS2812B, user programmable, on GP11
+- User programmable button: GP20
+- Boot button (hold while resetting to enter bootloader mode) and Reset button
+- Piezo buzzer: GP22, able to play tone or melody, with mute switch
+- Digital IO LEDs: on when the IO state is high (14 LEDs, 85 µA each); the datasheet table lists GP0 – GP9, GP16 – GP18
+- Digital IO LEDs enable jumper: cut the trace to disable the LEDs (~1.19 mA saved); solder it to re-enable
+- 5V and 3.3V power LEDs
+- Maker Port 0: JST-SH 4-way, GPIO, I2C, UART
+- Maker Port 1: JST-SH 4-way, GPIO, I2C, Analog In
+- Analog inputs: A0 – A3 = GP26 – GP29
+- Header (silkscreen GP numbers): D2 – D9 = GP2 – GP9, D10 = GP17, D11 = GP19, D12 = GP16, D13 = GP18, A4 – A7 = GP12 – GP15; AREF position is NC; GP0 and GP1 sit at the Nano TX/RX positions
+- Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
+- USB VID 0x2E8A, PID 0x100F (CircuitPython & Arduino Core)
+
+## Interfaces and compatibility
+- Pin header: "Compatible with original Arduino Nano"
+- Maker Ports: compatible with Qwiic, STEMMA QT and Grove (via conversion cable)
+- CircuitPython: Cytron firmware at circuitpython.org board "cytron_maker_nano_rp2040", with NeoPixel and simpleio built in; pin names LED (GP2), RGB/NEOPIXEL (GP11), BUTTON (GP20), BUZZER (GP22), A0 – A3
+- MicroPython: loaded using the Raspberry Pi guide (no Cytron-specific firmware)
+- Arduino: Arduino IDE upload per the datasheet; the arduino-pico (Earle Philhower) core has the board "Cytron Maker Nano RP2040"
+- Cytron GitHub: CircuitPython and MicroPython examples; a new board's code.py is the demo program
+
+## Use cases
+- Projects that need an Arduino Nano form factor with an RP2040 MCU
+- Connecting Qwiic, STEMMA QT or Grove modules through the Maker Ports
+
+## Known limitations
+- 3.3 V logic: digital input high level max 3.6 V, so 5 V signals can't drive the pins directly
+- Only A0 – A3 (GP26 – GP29) are analog inputs; A4 – A7 (GP12 – GP15) have no ADC; AREF position is NC
+- Code uses GP numbers, not Arduino D numbers
+- Default I2C/UART in CircuitPython is GP0/GP1 and arduino-pico Wire is on GP0/GP1, not A4/A5
+- board.LED / PIN_LED is GP2, a header pin; there is no separate user LED
+- +5V and +3V3 are limited to 110 mA each when powered from Vin
+- Spec values are absolute maximum ratings
+- The datasheet does not state the Maker Port pin assignments
+- The datasheet's Digital IO LED list (GP0 – GP9, GP16 – GP18) does not match its own count of 14 LEDs
+- The datasheet's mute-switch text refers to "pin D8", while the buzzer is on GP22
+- The setup-circuitpython.md guide in Cytron's Maker Nano GitHub repo is copied from Maker Pi RP2040 and links that board's firmware
+- No protection features are stated in the datasheet
+
+## Positioning (kept apart from specs)
+- Datasheet tagline: "Simplifying Projects with Raspberry Pi RP2040"
+- GitHub README: "a small but powerful MCU for your project"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-maker-nano-rp2040
+
+## Datasheet
+https://docs.google.com/document/d/15IMxlESQE43sP7brZpqlfHVTAdX1N_XenzpvfP8cT_8/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/15IMxlESQE43sP7brZpqlfHVTAdX1N_XenzpvfP8cT_8/edit
+
+# Product fact sheets
+
+## Product name
+Robo Uno Shield
+
+## Aliases
+SHIELD-ROBO-UNO, Robo Uno Shield, Robo Uno Shield for Arduino, Robo Uno, Robo Uno Shield: The All-in-One Robotics Shield
+
+## What it is
+An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 servo ports, 6 Grove ports, a Maker Port and a built-in single-cell LiPo/Li-ion charger. It is powered from 3.6–6 V through its own VIN terminal, LiPo port or micro-USB.
+
+## Specs and functions
+- Product code: SHIELD-ROBO-UNO
+- Datasheet: Rev 1.0, February 2025 (spec table titled "Absolute Maximum Ratings")
+- Power input voltage (USB, LiPo or VIN): 3.6–6 V
+- VIN terminal block: 3.6–6 V, reverse polarity protection
+- LiPo connector: JST PH2.0, single-cell LiPo / Li-ion; rechargeable via the shield's micro-USB port; protected from overcharge and over-discharge
+- Micro-USB port: powers the shield and charges the battery only; no data or code upload
+- Digital input voltage: low 0–0.5 V, high 2.7–5 V
+- Digital output voltage: low 0–0.5 V, high 4.2–5 V
+- Analog input voltage: 0–5 V
+- Motor and servo voltage: equal to the power input voltage (VUSB − 0.4 V when powered from USB; VLiPo or VIN when only one of those is connected)
+- DC motor driver: dual-channel H-bridge, 2 DC motors
+- Maximum DC motor current per channel: 1 A continuous, 1.5 A peak (< 5 seconds)
+- DC motor driver PWM frequency: 20 kHz max
+- Motor driver truth table: Low/Low = Brake; High/Low = Forward; Low/High = Backward; High/High = Coast (outputs Hi-Z)
+- Motor test buttons (motor runs at full speed) and motor status LEDs: MxA forward, MxB backward
+- Servo ports: 4 x RC servo, signal on D9, D10, D11, D12; V+ equal to the power source voltage
+- Total 5V output current (Grove ports): 400 mA max
+- Grove ports: 6; Maker Port: 1 (shared with Grove 4)
+- RGB LEDs on D13 (user-programmable)
+- Piezo buzzer on D8 (bottom side) with mute switch
+- Programmable buttons on D2 and D3
+- Status LEDs for the Grove-port pins (on when the pin is high); launch material: "2x RGB LEDs / 10x GPIO LEDs"
+- On/Off switch, power LED, reset button (resets the shield and the microcontroller)
+- Operating temperature: −20 to 85 ℃
+- Motor driver IC: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Charging current: [NOT STATED]
+
+## Interfaces and compatibility
+- DC motor pins: datasheet Table 1 lists M1A D4, M1B D5, M2A D6, M2B D7; Cytron's example code uses Motor 1 PWM = D5, DIR = D4 and Motor 2 PWM = D6, DIR = D7 (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`)
+- Grove 1: A0, A1; Grove 2: A2, A3; Grove 3: A1, A3 (as printed in the datasheet); Grove 4: A4 (SDA), A5 (SCL); Grove 5: D0 (RX), D1 (TX); Grove 6: D2, D3
+- Maker Port: A4, A5; compatible with QWIIC / Stemma QT / Grove (with conversion cable)
+- Datasheet and GitHub name Arduino Uno and Maker UNO
+- Launch compatible-board list: Maker Uno / Maker Uno X / Maker Uno Plus; Maker Uno RP2040; Cytron Uno; Uno Compatible (CH340); Official Arduino Uno Rev3; Official Arduino Uno R4 Minima; Official Arduino Mega 2560 Rev3; Wifi Uno ESP8266; Official Arduino Zero, Leonardo and GIGA R1 listed as "Not tested"
+- Libraries in Cytron examples: Cytron Motor Drivers Library (CytronMotorDriver.h), Servo, Adafruit_NeoPixel, U8g2
+- Packing list: 1x Robo Uno Shield board, 1x Small Philips Screwdriver, 4x Grove to Female Header Cable
+
+## Use cases
+- Building robots using Arduino Uno, Arduino Mega, Maker Uno, or compatible boards
+- Mobile robot projects for the RBT syllabus (light, sound and movement)
+- Teaching robotics with simplified wiring and power options (educators and training centres)
+- Adding sensors and modules through Grove ports and the Maker Port without messy wiring
+- Troubleshooting wiring vs code with status LEDs and motor test buttons
+
+## Known limitations
+- Power input 3.6–6 V only (absolute maximum); only single-cell batteries are supported
+- Cannot be powered through the VIN pin of the microcontroller (e.g. Arduino Uno, Maker UNO)
+- The shield's micro-USB port cannot be used for data communication or uploading code
+- Motor and servo voltage equals the power input voltage; no separate motor supply
+- Motor current 1 A continuous per channel; 1.5 A peak only for < 5 seconds
+- Total 5V output on the Grove ports limited to 400 mA
+- Datasheet advises one power source at a time (LiPo and VIN together not recommended)
+- If the board will not turn on with a battery connected, the battery must be charged to activate the protection circuit
+- Grove 4 and the Maker Port share A4/A5; buttons D2/D3 share pins with Grove 6
+- Motor test buttons run the motor at full speed; motor direction depends on wiring
+- Protection stated in the datasheet is limited to VIN reverse polarity and battery overcharge / over-discharge
+
+## Positioning (kept apart from specs)
+- "The All-in-One Robotics Shield"
+- Launch pitch: "Designed for Beginners and Intermediate Learners"
+- "Simply add your preferred microcontroller, motor, robot base, and sensors"
+- Part of Cytron's Robo series (alongside Robo Pico)
+
+## Price band
+[NOT STATED]
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit
+
+# Product fact sheets
+
+## Product name
 Robo Pico
 
 ## Aliases
@@ -714,6 +883,711 @@ Datasheet
 
 ## Source link
 [NOT STATED]
+
+# Product fact sheets
+
+## Product name
+Maker Pi RP2040
+
+## Aliases
+MAKER-PI-RP2040, Cytron Maker Pi RP2040, Maker Pi RP2040: Simplifying Robotics with Raspberry Pi RP2040
+
+## What it is
+A robot controller board with the Raspberry Pi RP2040 microcontroller soldered on the board. It has a 2-channel DC motor driver, 4 servo ports and 7 Grove ports.
+
+## Specs and functions
+- Product code: MAKER-PI-RP2040
+- Datasheet: Rev 1.2, January 2022; its spec table is titled "Absolute Maximum Ratings"
+- MCU (product page): Raspberry Pi RP2040, dual-core Arm Cortex-M0+, 264KB internal RAM, 2MB of Flash memory, "the exact same specifications with Raspberry Pi Pico"
+- Power input voltage (USB, LiPo or VIN): 3.6 – 6 V
+- Power sources: Micro USB, single-cell LiPo / Li-Ion connector, VIN terminal (any power source within 3.6 - 6V); product page: "Automatic power selection: USB 5V, LiPo (1-cell) or Vin (3.6-6V)"
+- Battery: rechargeable via USB, protected from overcharge and over-discharge; product page: built-in 1-cell LiPo/Li-Ion charger
+- On/Off switch, power LED, reset button (resets the RP2040), boot button (hold while resetting to enter bootloader mode), debug port
+- DC motor driver: 2 channels, 1 A continuous and 1.5 A peak (< 5 seconds) per channel, PWM frequency max 20 kHz
+- Product page: controls 2x brushed DC motors or 1x bipolar/unipolar stepper motor
+- Motor pins: M1A = GP8, M1B = GP9, M2A = GP10, M2B = GP11
+- Motor truth table: A Low, B Low → Brake; A High, B Low → Forward; A Low, B High → Backward; A High, B High → Hi-Z (Open), Coast
+- Motor test buttons (motor runs at full speed: MxA forward, MxB backward) and motor status LEDs
+- Servo ports: 4 x RC servo, signal on GP12, GP13, GP14, GP15; V+ equals the power source voltage
+- Vmotor & Vservo: USB only → VUSB - 0.4 V; LiPo only or VIN only → VLiPo or VIN; USB + LiPo → VUSB - 0.4 V; USB + VIN: VIN < VUSB → VUSB - 0.4 V, VIN > VUSB and VIN - VUSB < 0.6 → VIN - 0.4 V, VIN - VUSB > 0.6 → VIN
+- RGB LEDs: WS2812B on GP18 (product page: 2x RGB LED (Neopixel))
+- Programmable buttons: GP20 and GP21
+- Piezo buzzer: GP22, with buzzer mute switch
+- Grove ports: 7; total +3V3 output current 300 mA max
+- Grove 1: GP0, GP1 (PWM0, SPI0, I2C0, UART0)
+- Grove 2: GP2, GP3 (PWM1, SPI0, I2C1)
+- Grove 3: GP4, GP5 (PWM2, SPI0, I2C0, UART1)
+- Grove 4: GP16, GP17 (PWM0, SPI0, I2C0, UART0)
+- Grove 5: GP6, GP26 (GP26 = ADC0)
+- Grove 6: GP26, GP27 (ADC0, ADC1; I2C1)
+- Grove 7: GP7, GP28 (GP28 = ADC2)
+- GPIO status LEDs: 13, for the Grove-port GPIOs (GP0–7, GP16, GP17, GP26–28), on when the GPIO is high
+- Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
+- Operating temperature: -20 – 85 ℃
+- USB VID & PID (CircuitPython & Arduino Core): VID 0x2E8A, PID 0x1000
+- Product page: dimensions 88mm(L) x 64mm(W) x 13mm(H); 4x 4.8mm mounting hole (LEGO® pin compatible); 6x M3 screw hole
+
+## Interfaces and compatibility
+- Micro USB (upload programs and power), LiPo battery connector, VIN terminal, 2 DC motor terminals, 4 servo ports, 7 Grove ports, debug port
+- CircuitPython: preloaded with a demo program; board-specific firmware at circuitpython.org/board/cytron_maker_pi_rp2040 with adafruit_motor, neopixel and simpleio built in; the Raspberry Pi Pico CircuitPython firmware also works if those libraries are added manually
+- Bootloader: hold BOOT and press RST to get the RPI-RP2 drive, then copy the .uf2 file
+- MicroPython and C/C++ for Pico/RP2040
+- Arduino: datasheet lists the USB VID/PID for the Arduino Core; product page points to Arduino's official news
+- Product page: "Software, firmware, libraries and resources that are developed for Pico should work seamlessly"
+- Wi-Fi: product page suggests adding a Grove WiFi 8266 module via a Grove port
+- Compatible accessory (product page): USB Micro B cable
+
+## Use cases
+- Robotics with the Raspberry Pi RP2040
+- DIY robot / motion control projects
+- Driving 2 brushed DC motors or 1 bipolar/unipolar stepper motor
+- Driving up to 4 RC servo motors
+- Connecting Grove modules (digital, analog, I2C, SPI, UART)
+
+## Known limitations
+- Spec values are absolute maximum ratings
+- Power input range is 3.6 – 6 V; motor and servo voltage equals the power input voltage (VUSB - 0.4 V on USB only)
+- Motor current: 1 A continuous, 1.5 A peak for under 5 seconds per channel; PWM max 20 kHz
+- Pins used by the board: GP8–GP11 (motors), GP12–GP15 (servos), GP18 (RGB), GP20, GP21 (buttons), GP22 (buzzer)
+- GP26 is on both Grove 5 and Grove 6
+- Grove 5 and Grove 7 cannot carry I2C
+- Grove +3V3 total: 300 mA max
+- A High / B High is coast, not brake; Low / Low is brake. With adafruit_motor, throttle = 0 drives both pins high (coast on this board) and throttle = None drives both low (brake) — the opposite of the comments in Cytron's demo code
+- Motor test buttons run the motor at full speed without any code
+- Connecting LiPo and VIN at the same time is not recommended, "Although it's perfectly safe to do so"
+- If the board cannot be turned on with the battery connected, charge the battery to activate the battery protection circuit
+- Battery charge current is not stated
+- No onboard Wi-Fi
+
+## Positioning (kept apart from specs)
+- Datasheet tagline: "Simplifying Robotics with Raspberry Pi® RP2040"
+- Product page: "Cytron Maker Pi RP2040 is basically the Raspberry Pi Pico + Maker series' goodness"
+- Cytron internal: "very well received among the users", launched in Jun 2021
+
+## Price band
+RM48.00 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-pi-rp2040-simplifying-robotics-with-raspberry-pi-rp2040
+
+## Datasheet
+https://docs.google.com/document/d/1DJASwxgbattM37V4AIlJVR4pxukq0up25LppA8-z_AY/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1DJASwxgbattM37V4AIlJVR4pxukq0up25LppA8-z_AY/edit
+
+# Product fact sheets
+
+## Product name
+Maker Pi Pico
+
+## Aliases
+MAKER-PI-PICO, Cytron Maker Pi Pico, Maker Pi Pico: Simplifying Raspberry Pi Pico for Beginners
+
+## What it is
+A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboard. It breaks out all Pico pins and adds LEDs, buttons, a buzzer, audio out, a microSD socket, an ESP-01 socket and 6 Grove ports.
+
+## Specs and functions
+- Product code: MAKER-PI-PICO
+- Datasheet: Rev 1.2, March 2021 (covers MAKER-PI-PICO and MAKER-PI-PICO-NB); its spec table is titled "Absolute Maximum Ratings"
+- Host board: Raspberry Pi Pico, soldered onboard (product page packing list)
+- Power input voltage (USB): 4.5 – 5.5 VDC
+- Micro USB port: used to power up the Maker Pi Pico and upload programs from PC
+- 3V3 power LED
+- GPIO LEDs: LED indicator for Raspberry Pi Pico GPIO, on when the GPIO state is high (product page: "LED indicators on all GPIO pins")
+- WS2812B RGB LED: 1, on GP28
+- Programmable buttons: 3, on GP20, GP21 and GP22; Rev1.0.0 to 1.1.0 = enable internal pull-up in software; Rev1.2.0 = pulled-up permanently on hardware with debouncing capacitor
+- Reset button: resets the Raspberry Pi Pico
+- Piezo buzzer: GP18, with buzzer mute switch
+- Audio out: non amplified, 3.5mm stereo audio jack; Left channel GP18, Right channel GP19
+- Micro SD card socket: GP10 CLK / SCK, GP11 CMD / SDI, GP12 DAT0 / SDO, GP13 DAT1 / X, GP14 DAT2 / X, GP15 CD/DAT3 / CSn (SD mode / SPI mode); unused pins must be configured as internal pull-ups
+- ESP-01 socket: for ESP-01 ESP8266 WiFi module, GP16-17 (product page)
+- Grove ports: 6 (product page)
+- GPIO breakout: two 20 ways pin headers, male pin headers on MAKER-PI-PICO
+- Debugging port breakout
+- Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.62 – 3.3 V; analog input 0 – 3.3 V
+- Operating temperature: -20 – 85 ℃
+
+## Interfaces and compatibility
+- Micro USB (power and programming), 6 Grove ports, 3.5mm stereo audio jack, micro SD card socket, ESP-01 socket, debugging port breakout, two 20-way GPIO pin headers
+- Programming: CircuitPython, MicroPython and C/C++; programs upload over USB by drag and drop
+- Cytron out-of-the-box demo code in CircuitPython and MicroPython on GitHub (CytronTechnologies/MAKER-PI-PICO)
+- RGB LED on GP28 is driven with the Pico's PIO feature (product page Q&A)
+- Grove: official or compatible Grove 4-pin cables recommended (product page Q&A)
+- Pico W: product page Q&A says Maker Pi Pico with an ESP-01 module "Can achieve the same purpose, but code and library will not be the same"
+- Packing list: 1 x Maker Pi Pico (Raspberry Pi Pico soldered onboard, with CircuitPython loaded), 1x Pinout reference card
+
+## Use cases
+- Learning Raspberry Pi Pico for beginners
+- STEM & robotics projects
+- Real-Time Multitasking on Maker Pi Pico Using pyRTOS
+- Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line
+- Play MP3 File on Maker Pi Pico Using CircuitPython
+- Read and Display Environment Sensor Data Using Raspberry Pi Pico and CircuitPython
+- Metronome with Maker Pi Pico, programmed with CircuitPython
+- Ultrasonic HC-SR04P Using Raspberry Pi Pico
+- IoT-enabling a project with an ESP-01 module
+
+## Known limitations
+- Spec values are absolute maximum ratings
+- Power input is USB only, 4.5 – 5.5 VDC
+- Audio output is not amplified; connect an earphone or amplified speaker
+- GP18 is shared by the piezo buzzer and the left audio channel
+- Unused microSD pins must be configured as internal pull-ups
+- On PCB Rev1.0.0 to 1.1.0 the button pull-ups must be enabled in software
+- The RGB LED on GP28 needs the Pico's PIO feature to drive it
+- The ESP-01 module is not included in the packing list
+- The datasheet names the Raspberry Pi Pico only
+
+## Positioning (kept apart from specs)
+- Datasheet tagline: "Simplifying Raspberry Pi Pico for Beginner"
+- Product page: "It is a compact yet feature-packed board designed to sit at the heart of your STEM & robotics projects."
+- Product page: "Work out-of-the-box. No soldering!"
+
+## Price band
+RM48.00 (Cytron product page, read 2026-10-16)
+
+## Product page
+https://my.cytron.io/p-maker-pi-pico
+
+## Datasheet
+https://docs.google.com/document/d/1JoHsZk5IipQPCLXWbZYpDKjGlnkyACOJ1taUrKVsRg8/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1JoHsZk5IipQPCLXWbZYpDKjGlnkyACOJ1taUrKVsRg8/edit
+
+# Product fact sheets
+
+## Product name
+MOTION 2350 Pro
+
+## Aliases
+MOTION-2350-PRO, Cytron MOTION 2350 Pro, MOTION 2350 Pro Rev 2.0, MOTION2350 Pro
+
+## What it is
+A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brushed DC motor driver, 8 servo ports and 3 Maker Ports. The current board is Rev 2.0.
+
+## Specs and functions
+- MCU: RP2350
+- Datasheet: Rev 2.0, September 2025; its spec table is titled "Absolute Maximum Ratings"
+- Revision ID: Rev 2.0 has a "REV 2.0" silkscreen label just below the "MOTION 2350 PRO" logo; its bottom side has fewer IC chips
+- Power input voltage (USB or VIN): 3.6 – 16 V; absolute maximum VIN 18 V, recommended maximum 16 V
+- VIN terminal: external 3.6V – 16V DC; can be powered by an external LiPo or 4x AA batteries
+- USB-C: program upload and power
+- On/Off switch, plus an Ext. On/Off switch header (onboard switch must be Off to use it)
+- Overvoltage protection: above 18V the board shuts down, and resumes once the voltage is back in the safe range
+- DC motor driver: 4 channels (M1–M4), 5 A continuous and 10 A peak (< 5 seconds) per channel, PWM frequency max 20 kHz
+- Motor driver has overcurrent and overtemperature protection: shutdown threshold 150 ℃, thermal hysteresis (recovery) 60 ℃; the datasheet text says it resumes below a safe temperature (typically 100°C)
+- Motor pins: M1A = GP8, M1B = GP9, M2A = GP10, M2B = GP11, M3A = GP12, M3B = GP13, M4A = GP14, M4B = GP15
+- Vmotor: USB only → VUSB - 0.4 V to VUSB; VIN only → VIN; USB + VIN: VIN < VUSB → VUSB - 0.4 V to VUSB, VIN > VUSB and VIN - VUSB < 0.6 V → VIN - 0.4 V, VIN - VUSB > 0.6 V → VIN
+- Motor test buttons (run the motor at full speed) and motor status LEDs
+- Servo ports: 8 x RC servo, signal on GP0 – GP7, header marked GND / 5V / SIG
+- 5V servo supply: VIN > 5.8 V → 5 V from a buck converter; VIN < 5.5 V → follows VIN (Schmitt-trigger switching)
+- Total +5V output current (servo ports): 3 A when VIN < 5.8 V, 2.5 A when VIN > 5.8 V
+- Total +3V3 output current (GPIO breakout & Maker Ports): 200 mA max
+- Maker Ports: 3 x JST-SH 4-way, on GP16/GP17, GP26/GP27, GP28/GP29
+- GPIO breakout: 8 pins (GP16 – GP19, GP26 – GP29) in colour-coded GVS format with 3.3V
+- USB host (Type-A): D+ = GP24, D- = GP25; 5 V, 100 mA max
+- RGB LEDs: 2 x WS2812B (NeoPixel compatible) on GP23
+- User buttons: GP20 and GP21
+- Piezo buzzer: GP22, with buzzer mute switch
+- Measure VIN jumper: solder it to read VIN on GP29 (ADC3); formula as printed "VIN = VADC / 6.1"
+- GPIO/servo status LEDs: on when the IO is high
+- Debug header: SWDIO, GND, SWCLK; BOOT and RST buttons
+- Digital input: low -0.3 – 0.8 V, high 2.0 – 5.5 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
+- Operating temperature: -20 – 85 ℃
+
+## Interfaces and compatibility
+- Maker Ports: compatible with Qwiic, STEMMA QT and Grove (via conversion cable)
+- USB host for a USB joystick/gamepad
+- 4 brushed DC motor terminals, 8 servo ports, 8-pin GPIO breakout, VIN terminal, USB-C
+- CircuitPython: preloaded with a demo program; firmware is board "cytron_motion_2350_pro" on circuitpython.org (board.M1A – board.M4B, NEOPIXEL, VOLTAGE_MONITOR; NeoPixel, Motor and SimpleIO libraries built in)
+- MicroPython: official board CYTRON_MOTION_2350_PRO (pin names M1A – M4B, BTN1, BTN2, NEOPIXEL)
+- C/C++: listed on the product page
+- Arduino: product page says "Arduino IDE (coming soon)"; the arduino-pico (Earle Philhower) core includes the board "Cytron Motion 2350 Pro"
+- Product page: compatible with the existing Raspberry Pi Pico ecosystem
+
+## Use cases
+- Building an advanced robot while minimizing effort on electronics and focusing on mechanics
+- Robots with mecanum wheels using the 4-channel driver
+- Robots controlled by a USB joystick/gamepad through the USB host port
+
+## Known limitations
+- Rev 2.0 ratings (5 A continuous / 10 A peak) apply to Rev 2.0 only; Rev 1.0 is rated 3 A continuous / 5 A peak and has no motor overcurrent protection
+- Product page and Cytron's GitHub pinout image still state 3 A per channel (Rev 1 figures)
+- Thermal shutdown may occur even if current is below the rated value; a heatsink or better airflow helps
+- Spec values are absolute maximum ratings
+- Connecting USB and VIN at the same time is not recommended (the datasheet says it is safe)
+- Servo 5V rail follows VIN when VIN is below 5.5 V
+- Maker Ports and the GPIO breakout share GP16, GP17, GP26, GP27, GP28, GP29; free user GPIO is GP16 – GP19 and GP26 – GP29 only
+- With the VIN jumper soldered, GP29 is used and its GPIO LED stays on
+- Motor test buttons run the motor at full speed without any code
+- The ext. switch header works only with the onboard switch Off
+- USB host output: 100 mA max
+- The datasheet has no motor-driver truth table (brake/coast not stated)
+- arduino-pico maps LED_BUILTIN to GP2 (a servo pin), Serial1 to GP0/GP1 and SPI to GP4 – GP7 (servo pins)
+- Cytron's demo code comment says the NeoPixels are on GP18; the code and datasheet use GP23
+
+## Positioning (kept apart from specs)
+- Datasheet tagline: "An Advanced Robotics Controller for Beginners"
+- Product page: "Built for beginner and intermediate users to experience the Pro version of the board"
+- Product page: "Maker" features such as silkscreen GPIO references, colored headers, quick test buttons and motor output LEDs
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-motion-2350-pro
+
+## Datasheet
+https://www.farnell.com/datasheets/4726021.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://www.farnell.com/datasheets/4726021.pdf
+
+# Product fact sheets
+
+## Product name
+MOTION:BIT
+
+## Aliases
+MOTION:BIT, MOTION-BIT, Motion:Bit, MOTIONBIT, MOTION:BIT for micro:bit, MOTION:BIT - Simplifying Motion Control with micro:bit
+
+## What it is
+A robotics and motion-control expansion board for the BBC micro:bit that drives brushed DC motors and 8 RC servos. It runs from an onboard 18650 Li-Ion battery holder (charged over micro USB) or an external 3.6–6 V input.
+
+## Specs and functions
+- Product code: MOTION-BIT (datasheet document title)
+- Datasheet: Rev 1.0, February 2023 (spec table titled "Absolute Maximum Ratings")
+- Power input voltage: 3.6 V min, 6 V max
+- Power sources: 18650 Li-Ion battery holder; micro USB (charges the battery or powers the board, no data transmission); power input terminal for external 3.6V - 6V (external LiPo or 4x AA batteries)
+- Analog input voltage: 0–3.3 V
+- Total +3V3 output current (GPIO Breakout & Grove Ports): 200 mA max
+- Total +5V output current: 300 mA max
+- Maximum DC motor current: 1 A continuous; 1.5 A peak (< 5 seconds)
+- DC motor channels: 4 (M1, M2, M3, M4) (MakeCode extension)
+- Motor voltage at full speed is equal to power source voltage
+- Servos: connectors for 8x RC servo motors; V+ voltage is equal to power source voltage
+- Servo control in MakeCode: 0–180 degrees (500–2500 µs pulse, 50 Hz); disable servo sends no pulse
+- Motor and servo outputs driven by a PCA9685 at I2C address 0x40 (MakeCode extension code)
+- RGB LEDs: 2 user-programmable WS2812B RGB LEDs, connected to P8
+- Ext. RGB LED connector for external WS2812B RGB LEDs, daisy-chained to the onboard RGB LEDs (Dout of RGB LED 1)
+- GPIO status LEDs: on when the IO state is high
+- Motor test buttons: motor runs at full speed
+- Motor status LEDs: on when the motor is running
+- Power/Charge LED: power on when powered; charge on while charging, off when full
+- On/Off switch and Ext. On/Off switch header
+- Motor driver IC: [NOT STATED]
+- Buzzer: [NOT STATED]
+- Dimensions: [NOT STATED] (drawing only)
+- Protections (reverse polarity, over-current, thermal, battery): [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- micro:bit V1 and V2 (MakeCode extension README)
+- micro:bit socket: plug in with the micro:bit LEDs facing out
+- GPIO breakout, colour-coded GVS, 3.3V power per GPIO: P0, P1, P2, Button A, Button B, P9, P12, P13, P14, P15, P16
+- Maker Ports: JST-SH 4-way, compatible with Qwiic, STEMMA QT and Grove (via conversion cable); datasheet: "These pins are available on Maker Ports: P0-P9, P1-P2, P2-P12"
+- Maker Port (I2C): JST-SH 4-way, for I2C modules only
+- I2C breakout: micro:bit I2C pins (P19 SCL, P20 SDA)
+- P8: onboard RGB LEDs
+- 5V Supply output for external sensors/modules
+- Motor terminals: direction depends on polarity
+- MakeCode extension: pxt-motionbit (block category "MOTION:BIT"), search "motionbit" or https://github.com/cytrontechnologies/pxt-motionbit
+- MakeCode blocks: run motor (speed 0–255), brake motor, set servo position, disable servo, RGB pixel colour and brightness, external RGB pixels
+- Python: [NOT STATED]
+
+## Use cases
+- Robots and motion-control projects with micro:bit ("simplifying robots & motion control projects making with micro:bit")
+- Projects with mechanical movements using DC motors and servos
+- Adding sensors and modules through the GPIO breakout and Maker Ports
+
+## Known limitations
+- Power input 3.6–6 V absolute maximum
+- DC motor current 1 A continuous; 1.5 A peak only for < 5 seconds (per channel or total not stated)
+- +5V output total 300 mA; +3V3 total 200 mA shared by GPIO breakout and Grove ports
+- Analog input 0–3.3 V
+- Servo V+ and motor full-speed voltage equal the power source voltage (no servo voltage selection)
+- Micro USB is for power and charging only; no data transmission
+- Maker Port (I2C) is for I2C modules only
+- P8 is used by the RGB LEDs
+- I2C address 0x40 is used by the motor/servo controller
+- External On/Off switch works only when the onboard switch is Off
+- Motor test buttons run the motor at full speed
+- Motor direction depends on wiring polarity
+
+## Positioning (kept apart from specs)
+- Datasheet subtitle: "Simplifying Motion Control with micro:bit"
+- "MOTION:BIT aims at simplifying robots & motion control projects making with micro:bit." (MakeCode extension README)
+- "students can build projects with mechanical movements right away" (MakeCode extension README)
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-motionbit
+
+## Datasheet
+https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit
+
+# Product fact sheets
+
+## Product name
+MOTION:BIT Pro
+
+## Aliases
+MOTION:BIT Pro, MOTION-BIT-PRO, Motion:Bit Pro, MOTIONBIT PRO, MOTION:BIT Pro for micro:bit, MOTION:BIT Pro - 12V Robotics Expansion Board for micro:bit
+
+## What it is
+A higher-voltage robotics and motion-control expansion board for the BBC micro:bit, powered from an external 7–12 V input, that drives brushed DC motors and 8 RC servos. It is programmed with the same MOTION:BIT MakeCode extension as MOTION:BIT.
+
+## Specs and functions
+- Product code: MOTION-BIT-PRO (datasheet document title)
+- Datasheet: Rev 1.0, April 2024 (spec table titled "Absolute Maximum Ratings")
+- Power input terminal: external 7V - 12V (external LiPo or 4x AA batteries)
+- Power input voltage absolute maximum: 6 V min, 16 V max
+- Analog input voltage: 0–3.3 V
+- Total +3V3 output current (GPIO Breakout & Grove Ports): 200 mA max
+- Maximum DC motor current: 3 A continuous; 5 A peak (< 5 seconds)
+- DC motors controlled with the MOTION:BIT MakeCode extension (channels M1–M4 in the extension)
+- Motor voltage at full speed is equal to power source voltage
+- Servos: connectors for 8x RC servo motors
+- RGB LEDs: user-programmable WS2812B RGB LEDs, connected to P8
+- Ext. RGB LED connector for external WS2812B RGB LEDs, daisy-chained (Dout of RGB LED 1)
+- GPIO status LEDs: on when the IO state is high
+- Motor test buttons: motor runs at full speed
+- Motor status LEDs: on when the motor is running
+- On/Off switch and Ext. On/Off switch header
+- Battery holder: none listed in the datasheet
+- Motor driver IC: [NOT STATED]
+- Buzzer: [NOT STATED]
+- Dimensions: [NOT STATED] (drawing only)
+- Protections (reverse polarity, over-current, thermal): [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- micro:bit versions: [NOT STATED]
+- micro:bit socket: plug in with the micro:bit LEDs facing out
+- GPIO breakout, colour-coded GVS, 3.3V power per GPIO: P0, P1, P2, Button A, Button B, P9, P12, P13, P14, P15, P16
+- Maker Ports: JST-SH 4-way, compatible with Qwiic, STEMMA QT and Grove (via conversion cable); datasheet: "These pins are available on Maker Ports: P0-P9, P1-P2, P2-P12"
+- Maker Port (I2C): JST-SH 4-way, for I2C modules only
+- I2C breakout: micro:bit I2C pins (P19 SCL, P20 SDA)
+- P8: onboard RGB LEDs
+- 5V Supply output for external sensors/modules
+- Motor terminals MA and MB: swapping the connection reverses the direction
+- MakeCode: "Add MOTION:BIT Extension in MakeCode Editor to control the DC Motors and Servo Motors"; https://makecode.microbit.org/pkg/CytronTechnologies/pxt-motionbit (search "motionbit" in Extensions)
+- Python: [NOT STATED]
+
+## Use cases
+- Controlling DC motors and servo motors with micro:bit ("Simplifying Motion Control with micro:bit")
+- Adding sensors and modules through the GPIO breakout and Maker Ports
+
+## Known limitations
+- External input 7–12 V; absolute maximum 6–16 V
+- DC motor current 3 A continuous; 5 A peak only for < 5 seconds (per channel or total not stated)
+- +5V output total 3 A; +3V3 total 200 mA shared by GPIO breakout and Grove ports
+- Analog input 0–3.3 V
+- If the servo jumper is set to VIN, the servo voltage rating must be compatible with VIN, else it might damage the servo
+- Motor full-speed voltage equals the power source voltage
+- No battery holder listed in the datasheet
+- Maker Port (I2C) is for I2C modules only
+- P8 is used by the RGB LEDs
+- External On/Off switch works only when the onboard switch is Off
+- Motor test buttons run the motor at full speed
+- Motor direction depends on wiring
+
+## Positioning (kept apart from specs)
+- Datasheet subtitle: "Simplifying Motion Control with micro:bit"
+- Datasheet header: "Simplifying Digital Making"
+
+## Price band
+[NOT STATED]
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view
+
+## Source type
+Datasheet
+
+## Source link
+https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view
+
+# Product fact sheets
+
+## Product name
+SUMO:BIT
+
+## Aliases
+SUMO:BIT, SUMOBIT, SUMO-BIT, SUMO BIT
+
+## What it is
+A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plugs in two external MD13S motor drivers, and provides opponent-sensor, edge-sensor, servo/RC, RGB LED, mode-switch and joystick connections.
+
+## Specs and functions
+- Product code: [NOT STATED]
+- Power input voltage (LiPo battery): 7 V min, 25 V max; reverse polarity protection
+- Vibration-proof on/off slide switch with MOSFET latching circuit; green power LED
+- Battery voltage can be monitored programmatically (battery + terminal feeds an analog input)
+- 2 × sockets for external MD13S motor driver boards (one per motor channel); MD13S can be removed and replaced
+- With MD13S: 13 A continuous per channel, 30 A peak per channel (peak must not last longer than 10 seconds), motor PWM frequency up to 20 kHz
+- 2 × motor current sensors, one for each motor channel
+- 4 × red motor status LEDs (MLA/MRA forward, MLB/MRB backward)
+- 5 × opponent sensor input ports, pulled up to 5V, with active-low status LEDs; voltage divider protects the micro:bit pins
+- 2 × edge sensor input ports (analog sensors); voltage divider adjusts the output voltage
+- 1 × general purpose port P2 (analog/digital) with active-low status LED; voltage divider reduces 5V to about 3V
+- 2 × servo ports that can also be used as RC pins; servo voltage 5 V max
+- 2 × WS2812B RGB LEDs, user programmable
+- 1 × 4-way DIP switch for mode/tactic selection, up to 16 configurations (mode 0–15 in the MakeCode extension)
+- USB-A port for wireless joystick connection; USB host output 5 V, 600 mA max
+- +5V output maximum current (total): 600 mA
+- Motor Alignment Module: potentiometer to balance left/right motor speed, test button runs the motors forward for 1 second, potentiometer indicator LEDs
+- Firmware Update Module: USB-C port for firmware upload (not for programming) and boot button
+- RP2040 co-processor at I2C address 0x09 controls motors, servos, RGB LEDs, mode switch, motor current and battery voltage (Cytron GitHub)
+- Datasheet: Rev 1.0, December 2024
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- micro:bit plugs into a vertical edge-connector socket with the LED matrix facing up
+- Supported micro:bit versions (V1/V2): [NOT STATED]
+- micro:bit pin use (MakeCode extension source): P0 right edge sensor (analog), P1 left edge sensor (analog), P2 general-purpose port, P12 opponent Right, P13 opponent Front Right, P14 opponent Front Center, P15 opponent Front Left, P16 opponent Left, I2C to the RP2040 co-processor (address 0x09)
+- Servos, RGB LEDs, motors, mode switch and battery voltage are controlled through the RP2040, not micro:bit pins
+- Opponent sensors: Maker Object or other digital sensors; detection is LOW
+- Edge sensors: Maker Reflect or any other analog sensors; edge detected when the reading is below the calibrated threshold
+- Motor drivers: MD13S × 2, inserted from the bottom of the PCB
+- MakeCode extension: pxt-sumobit (search "sumobit"), https://github.com/cytrontechnologies/pxt-sumobit, v1.3.6, approved on makecode.microbit.org
+- Extension blocks: DC Motors, Servos, Mode, Motor Current, Opponent Sensors, Edge Sensors, RGB LED, Battery, Robot Kit (countdown, backoff, attack, search)
+- MicroPython / Arduino: [NOT STATED]
+- USB joystick and RC-receiver input blocks: [NOT STATED]
+
+## Use cases
+- Sumo robot projects and competitions with the BBC micro:bit, for learners of all ages
+- Selecting a tactic or mode with the DIP switch before a match
+- Wireless joystick control through the USB-A port
+- SUMO:BIT Robot Kit builds
+
+## Known limitations
+- Battery input must stay within 7–25 V (LiPo)
+- Motor ratings apply only with the MD13S motor drivers; the board drives no motors on its own
+- Peak motor current 30 A per channel must not last longer than 10 seconds
+- +5V output is 600 mA total, shared by servos and other 5V loads; servo voltage 5 V max
+- USB-C port is for firmware updates only, not for programming the micro:bit
+- micro:bit must be inserted with the LED matrix facing up; MD13S must be inserted from the bottom of the PCB
+- P2 port signal passes through a voltage divider (5V to about 3V)
+- Supported micro:bit version: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Cytron launch artwork: "Beginner Friendly, Competition Ready."
+- "Start your sumo journey with the SUMO:BIT Robot Kit!"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-sumo-bit
+
+## Datasheet
+https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf
+
+# Product fact sheets
+
+## Product name
+REKA:BIT
+
+## Aliases
+REKA:BIT, REKABIT, REKA-BIT, REKA BIT, REKA:BIT Simplifying Robotics with micro:bit
+
+## What it is
+A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC motor driver, 4 servo ports, RGB LEDs and 6 Grove ports. It works with micro:bit V1 and V2.
+
+## Specs and functions
+- Product code: [NOT STATED]
+- Power input voltage: 3.6 V min, 6 V max (DC jack)
+- On/Off switch and power LED
+- Low Voltage LED: blinks when the power input is below 3.6V; can be used as the low battery indicator
+- Over Voltage LED: on when the power input is over 7V; power to the servos and DC motors is cut off
+- 2-channel DC motor driver: 1 A continuous, 1.5 A peak (< 5 seconds) per motor; motor voltage at full speed equals the power source voltage
+- Motor status LEDs: MxA forward, MxB backward
+- Motor test buttons (M1A, M1B, M2A, M2B): run the motor at full speed without code
+- 4 × RC servo ports; servo V+ equals the power source voltage
+- WS2812B RGB LEDs, user programmable, connected to P8 (2 pixels in the MakeCode extension)
+- 6 × Grove ports: 3 × analog input/digital IO, 2 × digital IO, 1 × I2C interface
+- GPIO status LEDs on the Grove-port GPIOs (on when HIGH)
+- Analog input voltage: 0–3.3 V
+- Total +3V3 output current (Grove ports): 300 mA max
+- Co-processor PIC16F1827 at I2C address 0x08 drives the motors and servos (Cytron GitHub)
+- Datasheet: Rev 1.0, April 2021
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- Works with micro:bit V1 & V2
+- micro:bit pin use: P8 RGB LEDs; I2C to the co-processor (address 0x08) for motors, servos, power state, low-battery state, over-voltage state and input voltage
+- Grove port to micro:bit pin map: [NOT STATED]
+- Grove ports are 3.3 V; analog inputs 0–3.3 V
+- MakeCode extension: pxt-rekabit, https://github.com/CytronTechnologies/pxt-rekabit, v1.2.3, approved on makecode.microbit.org
+- Extension blocks: DC Motors (run 0–255, brake), Servos (0–180°, disable), RGB LED (clear, brightness, pixel colour)
+- MakeCode Python: test program viewable in MakeCode Python mode
+- REKA:BIT RBT Project Kit extension: https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit (RGB Stick, Big LED, soil moisture, ultrasonic)
+- MicroPython library: [NOT STATED]
+
+## Use cases
+- Simplifying robots and projects with micro:bit
+- Student projects with mechanical movement using DC motors and servos
+- Adding sensors and modules through Grove ports
+- REKA:BIT RBT Project Kit (STEAM and RBT projects for beginners)
+
+## Known limitations
+- Power input 3.6–6 V; above 7V the servo and DC motor power is cut off
+- Below 3.6V only the Low Voltage LED blinks; no under-voltage cut-off is stated
+- DC motor current 1 A continuous, 1.5 A peak for less than 5 seconds
+- Servo V+ and motor voltage equal the power source voltage (not regulated)
+- Grove analog input max 3.3 V; Grove +3V3 output 300 mA total
+- Do not use I2C address 0x08 on the Grove I2C port (used by the co-processor)
+- On micro:bit V1, P9 is shared with the LED matrix, so the P9 status LED stays lit
+- Motor direction depends on wiring; swapping MxA and MxB reverses it
+- Reverse-polarity protection: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "Simplifying Robotics with micro:bit"
+- "REKA" comes from the Malay word "reka bentuk", which means design
+- With the built-in dual-channel DC motor driver, 4x servo control and dedicated power input, students can build projects with mechanical movements right away
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://www.cytron.io/p-rekabit-simplifying-robotics-with-microbit
+
+## Datasheet
+https://docs.google.com/document/d/1axLhH-zaFDheOyz6gbXfYEysigGxpmMnRBC93SW-zR8/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1axLhH-zaFDheOyz6gbXfYEysigGxpmMnRBC93SW-zR8/edit
+
+# Product fact sheets
+
+## Product name
+ZOOM:BIT Robot Car Kit for micro:bit
+
+## Aliases
+ZOOM:BIT, ZOOMBIT, ZOOM BIT, ZOOM:BIT Robot Car Kit, ZOOM:BIT Robot Car
+
+## What it is
+A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with a line sensor, an ultrasonic sensor, two LED headlights, two DC motors and a servo-driven head. It comes with a printed building and coding guide book and a line following track.
+
+## Specs and functions
+- Product code: [NOT STATED]
+- Purchase options: ZOOM:BIT with micro:bit V2 included; ZOOM:BIT without micro:bit; ZOOM:BIT Classroom Pack (10x with micro:bit V2 included)
+- Controller board: REKA:BIT (with or without micro:bit)
+- Kit contents: Zoom Track, REKA:BIT (with or without micro:bit), Maker Line Sensor, Grove Cable x4, Ultrasonic Sensor, LED Module x2, DC Motor & Wheel x2, Screwdriver, Screw & Nut x4, Castor, Double-sided Tape x5, Power & Data Cable, Servo Motor, White Rivet x4, Black Rivet x8, AA Battery x4, Battery Holder; printed guide book
+- Guide book: 9 chapters plus a bonus chapter (product page: "10-lesson guide book")
+- Battery: AA Battery x4 in a battery holder
+- REKA:BIT power input voltage: 3.6 – 6 V (absolute maximum ratings)
+- REKA:BIT analog input voltage: 0 – 3.3 V
+- REKA:BIT total +3V3 output current (Grove ports): 300 mA max
+- DC motor current: 1 A continuous, 1.5 A peak (< 5 seconds)
+- DC motor voltage at full speed and servo V+: equal to the power source voltage
+- Low voltage LED blinks below 3.6 V; over voltage LED lights above 7 V and power to the servos and DC motors is cut off
+- Drive motors: left = M1, right = M2 (REKA:BIT motor channels)
+- Motor test buttons on REKA:BIT run a motor at full speed (MxA forward, MxB backward)
+- Maker Line sensor: 5 IR sensors (S1–S5) with LED indicators, calibration button, line-colour switch ("DARK" for a black line); read on P1 (analog)
+- Ultrasonic sensor: trigger P2, echo P12; MakeCode block returns 1 – 255 cm, 255 if over 255 cm or no echo
+- Headlights (LED modules): left P13, right P15
+- RGB LEDs: 2 x WS2812B on REKA:BIT, on P8, labelled "0" and "1"
+- Head: 180 degree servo motor on a REKA:BIT servo port
+- Motors and servos are controlled by the REKA:BIT co-processor over I2C (address 0x08)
+- Power switch: slide OFF then ON to reset
+- Warranty: 12 months
+
+## Interfaces and compatibility
+- micro:bit V1 and V2; V1 has no built-in speaker, so sound needs a Grove buzzer on Port P0:P1
+- Sound expression and built-in speaker blocks are for micro:bit V2 only
+- I2C port: guide book suggests adding a Grove OLED Display
+- MakeCode extension: zoombit — https://github.com/cytrontechnologies/pxt-zoombit (search "zoombit" under Extensions)
+- The zoombit extension loads the REKA:BIT extension (pxt-rekabit), whose blocks appear in the REKA:BIT category
+- MakeCode Block, JavaScript and Python modes
+- ZOOM:BIT blocks: headlights (set / toggle), move, turn, set motors speed (-255 to 255), brake, line detected on (far left / left / center / right / far right / all / none), line position (-100 to 100), ultrasonic distance (cm)
+- WebUSB download needs the new Edge or Chrome browser and the latest micro:bit firmware
+- Quick Start Guide in 5 languages
+
+## Use cases
+- Display text and animation
+- Play simple melodies
+- When dark, turn on headlights
+- Move & turn on command
+- Signal using RGB LEDs
+- Control head movement/angle
+- Detect and avoid obstacles
+- Follow the line & stay on track
+- Change from one mode to another
+- Remote control (bonus chapter)
+- ZOOM:BIT with HuskyLens (Cytron video content and workshops)
+
+## Known limitations
+- The micro:bit is not included in the "ZOOM:BIT without micro:bit" option
+- micro:bit V1 has no built-in speaker; a Grove buzzer is needed for sound
+- Pins used by the kit: P1 (Maker Line), P2 and P12 (ultrasonic), P13 and P15 (headlights), P8 (RGB LEDs), plus the I2C bus to the REKA:BIT co-processor
+- Power input values are absolute maximum ratings: 3.6 – 6 V; over 7 V cuts power to the servos and DC motors
+- DC motor current: 1 A continuous, 1.5 A peak for under 5 seconds
+- Grove +3V3 total: 300 mA max
+- Motor direction depends on the motor connection; if the wheels don't spin in the direction of the red arrows, correct the DC motor connections
+- Motor test buttons run the motor at full speed without any code
+- The Maker Line sensor needs calibration before line following, and again if the sensor height, the line or the background colour changes
+- Ultrasonic block returns 255 when nothing is detected or the distance is over 255 cm
+- The guide book does not state the battery voltage or chemistry
+- The guide book does not mention Python; Python is through MakeCode's Python mode
+- Assembly: wires face inwards with the notch facing outwards; clamp the exposed wire lead, not the insulator
+
+## Positioning (kept apart from specs)
+- "Looking for a solution to introduce robotics and coding to your kids?"
+- "This kit comes with a step-by-step building guide written in simple language and a generous dose of graphics to help young learners to follow along."
+- "You can easily program ZOOM:BIT using open-sourced Microsoft MakeCode Editor."
+- Classroom Pack: "Save more with this Classroom Pack!"
+
+## Price band
+Cytron product page (www.cytron.io, read 2026-10-16): $62.50 offer price (12% off); currency and variant not stated on the page
+
+## Product page
+https://www.cytron.io/p-zoombit-robot-car-kit-for-microbit
+
+## Datasheet
+https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf
 
 # Product fact sheets
 
@@ -992,6 +1866,158 @@ Datasheet
 
 ## Source link
 [NOT STATED]
+
+# Product fact sheets
+
+## Product name
+Maker Line
+
+## Aliases
+MAKER-LINE, Maker Line, Maker Line: Simplifying Line Sensor for Beginner, Maker Line Sensor, Cytron Maker Line
+
+## What it is
+A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sensor) and 1 analog output for line position. It runs from 3.0–5.5 V and is calibrated with one button.
+
+## Specs and functions
+- Product code: MAKER-LINE
+- Datasheet: Rev 1.0, July 2019 (spec table titled "Absolute Maximum Ratings")
+- VCC voltage: 3.0–5.5 V; reverse polarity protection on VCC and GND
+- Sensors: 5 infrared line sensors (S1–S5)
+- Digital outputs D1–D5: one per sensor, High when the line is detected; low level 0–0.5 V, high level 0.7×VCC to VCC
+- Analog output AN: 0 to VCC; voltage represents line position
+- Analog output vs position: line not found < 0.1 × Vcc; Left 0.1 × Vcc; Center Vcc / 2; Right 0.9 × Vcc; cross detected (all sensors on) > 0.9 × Vcc
+- Analog output at Vcc = 5 V: 0–0.5 V not found, 0.5 V left, 2.5 V center, 4.5 V right, 4.5–5 V cross; at Vcc = 3.3 V: 0–0.33 V, 0.33 V, 1.65 V, 2.97 V, 2.97–3.3 V
+- Sensing distance: 4–40 mm (VCC = 5V, black line on white surface); may reduce if VCC is less than 5V or contrast is low
+- Sensor refresh rate: 200 Hz
+- Recommended line width: 13–30 mm
+- Line Color Switch: Light / Dark
+- Digital truth table: Light switch + light surface = High; Light + dark = Low; Dark + light = Low; Dark + dark = High
+- Calibration: mount the sensor as used and power up; set the line colour switch; press and hold the calibrate button for more than 2 seconds; all 5 LEDs blink in calibration mode; move the sensor across the line so all sensors see it; press the button again to exit
+- Calibration result: running light = successful; fast blink = failed (contrast too low or sensor too high)
+- Calibration can also be entered/exited by shorting CAL to GND
+- Calibration data saved in EEPROM, kept after power-off; recalibrate only if sensor height, line or background colour changes
+- Indicators: power LED; 5 sensor LEDs (on when the line is detected)
+- Dimensions: [NOT STATED]
+- Current consumption: [NOT STATED]
+- Sensor spacing: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- I/O connector pins: VCC, GND, AN, CAL, D1, D2, D3, D4, D5
+- Product listing: "DC 3.3V and 5V compatible (With reverse polarity protection)"
+- Product listing: "Support wide range of controllers such as Arduino, Raspberry Pi, etc."
+- Connection diagrams for digital output and analog output in the datasheet
+- Software library / example code: [NOT STATED]
+- Packing list: 1 x Maker Line; 2 x 5mm PCB stand (screw and nut); 2 x 10mm PCB stand (screw and nut); 2 x M3 screw 4mm; 2 x M3 nut
+
+## Use cases
+- Line following mobile robot for school project or competition
+- Automated Guided Vehicle (AGV) for industrial use
+- Precise line-following control such as PID using the analog output
+
+## Known limitations
+- VCC absolute maximum 5.5 V (minimum 3.0 V)
+- Sensing distance 4–40 mm is specified at VCC = 5V with a black line on white; it may reduce at lower VCC or low contrast
+- Recommended line width 13–30 mm
+- Digital outputs swing to VCC (high level 0.7×VCC to VCC); analog output spans 0 to VCC
+- Must be calibrated before use; sensor height must not change during calibration; recalibrate after changing height, line colour or background colour
+- Calibration fails if contrast is too low or the sensor is too high from the surface
+- Analog output below 0.1 × Vcc means line not found; above 0.9 × Vcc means cross detected
+
+## Positioning (kept apart from specs)
+- Datasheet subtitle: "Simplifying Line Sensor for Beginner"
+- Product listing: no need to adjust a potentiometer for each sensor; "easy calibration process"
+- Product listing: "Analog output also offers higher resolution compared to individual digital outputs"
+
+## Price band
+- USD 9.90 on Cytron's Tindie store (sold out since Jan 28, 2024), checked 16 Oct 2026
+
+## Product page
+https://my.cytron.io/p-maker-line-simplifying-line-sensor-for-beginner
+
+## Datasheet
+https://docs.google.com/document/d/1wZwWl72CKkajTDIyiMxSQ3bwXbWbqW0eq7rdg2MUPeU/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1wZwWl72CKkajTDIyiMxSQ3bwXbWbqW0eq7rdg2MUPeU/edit
+
+# Product fact sheets
+
+## Product name
+Maker Object
+
+## Aliases
+MAKER-OBJECT, Maker Object, Maker Object Sensor, Cytron Maker Object, Maker Object: Simplifying Object Sensor for Beginner
+
+## What it is
+A small digital infrared object sensor. It sends modulated IR light and pulls its output LOW when it picks up IR light reflected from an object within the set range.
+
+## Specs and functions
+- Product code: MAKER-OBJECT
+- VCC voltage: 4.5 V min, 5.5 V max
+- Output: NPN output with internal pull-up; LOW when an object is detected (active low)
+- Output voltage, object detected: 0 V min, 0.8 V max
+- Output voltage, no object detected: VCC - 0.5 V min, VCC max
+- Sensing distance (adjustable), white surface (A4 size): 40 cm min, 140 cm max
+- Sensing distance (adjustable), black surface (A4 size): 15 cm min, 60 cm max
+- Response time (based on IR sensor's datasheet): 180 µs min, 350 µs max
+- IR transmitter: infrared LED that transmits modulated infrared light
+- IR receiver with built-in 38kHz bandpass filter
+- Sensing range trimmer, adjusted with a small Phillips head screwdriver through a small opening at the front of the sensor
+- Maximum distance setting: power on, turn the trimmer clockwise until the output LED turns off, then counter-clockwise slowly until the LED just turns on
+- Minimum distance setting: power on, turn the trimmer counter-clockwise until the output LED turns off, then clockwise slowly until the LED just turns on
+- Power LED (on when powered); Output LED (on when an object is detected)
+- Reverse polarity protection on the power input
+- Gives a detected / not-detected signal only, not a distance value
+- Datasheet: Rev 1.0, December 2019
+- Dimensions: [NOT STATED]
+- Supply current: [NOT STATED]
+- IR LED / IR receiver part numbers: [NOT STATED]
+- Operating temperature: [NOT STATED]
+
+## Interfaces and compatibility
+- 3-pin connector: 5V (power input), GND (ground), OUT (NPN output with internal pull-up, active low)
+- Not a Grove or Maker Port connector
+- Read OUT as a plain digital input; no library needed
+- Maker Mini Sumo Controller: 5 opponent-sensor ports, pulled up to +5V, active low, with status LEDs; MAKER-OBJECT ports on the bottom layer are wired in parallel
+- Cytron Maker Sumo Library (Arduino): opponent inputs OPP_FC (D6), OPP_FL (D5), OPP_FR (D7), OPP_L (D12), OPP_R (D13); AutoSumo example treats LOW as opponent detected
+- Ikedo Mini Sumo Robot V2 kit includes 5 x Maker Object Sensor (opponent)
+- Compatible boards listed in the datasheet: [NOT STATED]
+- MicroPython / CircuitPython / MakeCode examples: [NOT STATED]
+
+## Use cases
+- Object detection: reflected IR light from an object turns the output LOW
+- Opponent sensor in sumo robots (Ikedo Mini Sumo Robot V2 kit, with the Maker Mini Sumo Controller)
+
+## Known limitations
+- VCC must be 4.5–5.5 V; not for a 3.3 V supply
+- Output HIGH (no object) is VCC - 0.5 V to VCC, close to the 5 V supply
+- Sensing range depends on the target: 40–140 cm on a white A4-size surface but only 15–60 cm on a black A4-size surface
+- Range is set by hand with the trimmer, not in code
+- Digital output only; no distance reading
+- Response time figure is taken from the IR sensor's datasheet
+- Supply current and output current: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Datasheet subtitle: "Simplifying Object Sensor for Beginner"
+
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/p-maker-object-simplifying-object-sensor-for-beginner
+
+## Datasheet
+https://docs.google.com/document/d/1SppJcAoTFGFDSaeBXrI4Ocq24quq-5ybFpr2bNsGMOI/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1SppJcAoTFGFDSaeBXrI4Ocq24quq-5ybFpr2bNsGMOI/edit
 
 # Product fact sheets
 

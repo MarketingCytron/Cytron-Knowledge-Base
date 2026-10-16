@@ -159,7 +159,7 @@ It ships with the UF2 bootloader and CircuitPython preinstalled [DS][GH].
 ## Sources
 - [DS] Maker Feather AIoT S3 Datasheet Rev 1.1, Jan 2023 — https://docs.google.com/document/d/1vVYSdn84I8Hvi9SWHU54lhH_vWlhD3mwJ6pcSyLNGcE/edit
 - [DS] MAKER-FEATHER-AIOT-S3 Schematic.pdf (REV 1.0.0, 10/18/2022) — https://drive.google.com/file/d/1s7VMlzyGdPTzRH8j-vfVWBLO983qKnwl/view
-- [DS] Pinout diagram — https://static.cytron.io/image/catalog/products/V-MAKER-FEATHER-AIOT-S3/MAKER-FEATHER-AIOT-S3%20Pinout.png (also (Cytron document — link not public))
+- [DS] Pinout diagram — https://static.cytron.io/image/catalog/products/V-MAKER-FEATHER-AIOT-S3/MAKER-FEATHER-AIOT-S3%20Pinout.png (also https://docs.google.com/drawings/d/e/2PACX-1vSd5MxXd2huv0QwrVJ2ijKLdzdCjQ__A8QhtFlWPrrWygAon_1teaNJq9zFrGCh_PumrNcDhEta-k8c/pub?w=3162&h=2502)
 - [PP] https://my.cytron.io/p-v-maker-feather-aiot-s3-simplifying-aiot-with-esp32 ; https://my.cytron.io/p-maker-feather-aiot-s3 ; https://my.cytron.io/p-maker-feather-aiot-s3-presoldered-headers
 - [GH] https://github.com/adafruit/circuitpython/tree/main/ports/espressif/boards/cytron_maker_feather_aiot_s3 (pins.c, mpconfigboard.h/.mk, board.c)
 - [GH] https://github.com/espressif/arduino-esp32/tree/master/variants/cytron_maker_feather_aiot_s3 (pins_arduino.h, variant.cpp) and https://github.com/espressif/arduino-esp32/blob/master/boards.txt

@@ -42,17 +42,45 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 |---|---|---|---|---|---|
 | Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium** |
 | Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
+| Maker Nano RP2040 | [`maker-nano-rp2040.md`](maker-nano-rp2040.md) | `MAKER-NANO-RP2040` | RP2040 | Datasheet Rev 1.1, Jul 2024 | **Medium** |
+| Robo Uno Shield | [`robo-uno-shield.md`](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | None — shield for UNO-form-factor boards | Datasheet Rev 1.0, Feb 2025 | **Medium** |
 
 Arduino-board notes for every agent:
 - **Maker UNO has no DC jack and no VIN** — USB Micro-B 4.8–5.2 V only. Select "Arduino Uno" in the IDE; CH340 driver needed.
 - **Maker Uno RP2040 is 3.3 V logic** — only 3.3 V-compatible UNO shields; power from USB-C or 1-cell LiPo (3.6–6 V); code uses GP numbers, not UNO D-numbers.
+- **Robo Uno Shield:** 3.6–6 V single-cell input only; cannot be powered from the Arduino VIN pin; its micro-USB charges/powers the shield only (no code upload). Follow Cytron's code for motor pins (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`) until the design team resolves the datasheet conflict. Grove 4 and the Maker Port share A4/A5; buttons D2/D3 are the Grove 6 pins.
 
-### Raspberry Pi Pico boards and kits (Robo series, EDU PICO)
+### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO)
 
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Robo Pico | [`robo-pico.md`](robo-pico.md) | `ROBO-PICO` | None onboard — hosts a Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Apr 2023 | **Medium** |
 | EDU PICO V2 | [`edu-pico-v2.md`](edu-pico-v2.md) | `EDU-PICO2` (`EDU-PICO2-NB` = no Pico) | Raspberry Pi Pico 2 W | Datasheet Rev 1.1, Jun 2026 | **Medium** |
+| Maker Pi RP2040 | [`maker-pi-rp2040.md`](maker-pi-rp2040.md) | `MAKER-PI-RP2040` | RP2040 soldered on (no Pico socket) | Datasheet Rev 1.2, Jan 2022 | **Medium-high** |
+| Maker Pi Pico | [`maker-pi-pico.md`](maker-pi-pico.md) | `MAKER-PI-PICO` (`MAKER-PI-PICO-NB` = Maker Pi Pico Base, no Pico) | Raspberry Pi Pico soldered on | Datasheet Rev 1.2, Mar 2021 | **Medium-high** |
+| MOTION 2350 Pro | [`motion-2350-pro.md`](motion-2350-pro.md) | Not stated (mirrors use `MOTION-2350-PRO`) | RP2350 | Datasheet **Rev 2.0, Sep 2025** | **Medium** |
+
+Pico / RP2040 / RP2350 notes for every agent:
+- **MOTION 2350 Pro Rev 2.0 motors are 5 A continuous / 10 A peak per channel**, with over-current, 150 ℃ thermal and >18 V input shutdown. 3 A (and "no over-current protection") is the Rev 1.0 board — don't use 3 A for the current board. Motors GP8–GP15, servos GP0–GP7, buttons GP20/GP21, buzzer GP22, 2 RGB LEDs GP23; Arduino `LED_BUILTIN` = GP2 (a servo pin). Never publish the datasheet's "VIN = VADC / 6.1" until the design team confirms it.
+- **Maker Pi RP2040 brake/coast:** High/High = coast, Low/Low = brake (datasheet). In CircuitPython `throttle = 0` coasts and `throttle = None` brakes — the opposite of Cytron's demo comments. Power 3.6–6 V (USB, LiPo or VIN); motor/servo voltage = input voltage.
+- **Maker Pi Pico is USB-powered only** (4.5–5.5 V; no battery or VIN). GP18 drives both the buzzer and the left audio channel (mute the buzzer when using the jack); audio is not amplified. RGB: Maker Pi RP2040 = 2× WS2812B on GP18; Maker Pi Pico = 1× WS2812B on GP28.
+
+### micro:bit accessories
+
+| Product | File | Code | Role | Primary source | Confidence |
+|---|---|---|---|---|---|
+| MOTION:BIT | [`motion-bit.md`](motion-bit.md) | `MOTION-BIT` | Motor + servo expansion board, 3.6–6 V | Datasheet Rev 1.0, Feb 2023 | **Medium** |
+| MOTION:BIT Pro | [`motion-bit-pro.md`](motion-bit-pro.md) | `MOTION-BIT-PRO` | Motor + servo expansion board, 7–12 V | Datasheet Rev 1.0, Apr 2024 | **Medium** |
+| SUMO:BIT | [`sumo-bit.md`](sumo-bit.md) | Not stated | Sumo robot controller; needs 2× MD13S | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) | **Medium** |
+| REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium** |
+| ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
+
+micro:bit notes for every agent:
+- **Motors and servos on MOTION:BIT, MOTION:BIT Pro, REKA:BIT and SUMO:BIT are driven over I2C (P19/P20) by an on-board chip**, not by micro:bit GPIO: MOTION:BIT PCA9685 at 0x40; REKA:BIT PIC16F1827 at 0x08 (an I2C Grove device must not use 0x08); SUMO:BIT RP2040 co-processor at 0x09.
+- **REKA:BIT servo/motor voltage is the raw battery voltage** (not regulated 5 V); above 7 V it cuts servo and motor power; below 3.6 V it only blinks an LED. MOTION:BIT Pro servo power is jumper-selected 5 V or VIN (VIN can damage servos).
+- **SUMO:BIT USB-C is for its own firmware only**, not for programming. Opponent sensors P12–P16 read LOW on detection; edge sensors P0/P1 are analog.
+- **ZOOM:BIT uses a REKA:BIT.** micro:bit V1 has no speaker (sound needs a Grove buzzer; sound-expression blocks are V2 only). The micro:bit is only included in some purchase options.
+- **MakeCode extensions:** `motionbit` (also serves MOTION:BIT Pro), `rekabit`, `sumobit`, `zoombit`. "Python" means MakeCode's Python mode unless a file says otherwise.
 
 ### Cytron sumo robot controllers
 
@@ -61,6 +89,17 @@ Arduino-board notes for every agent:
 | Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
 | URC10 | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
 | IR Sumo Start | [`ir-sumo-start.md`](ir-sumo-start.md) | `IR-SUMO-START` | — (IR start module) | Datasheet Rev 1.0, Apr 2025 | **Medium-high** |
+
+### Sensors
+
+| Product | File | Code | Output | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Maker Line | [`maker-line.md`](maker-line.md) | `MAKER-LINE` | 5 digital (high = line) + 1 analog; 3.0–5.5 V | Datasheet Rev 1.0, Jul 2019 | **Medium-high** |
+| Maker Object | [`maker-object.md`](maker-object.md) | `MAKER-OBJECT` | IR object sensor, digital **active LOW**; 4.5–5.5 V | Datasheet Rev 1.0, Dec 2019 | **Medium-high** |
+
+Sensor notes for every agent:
+- **Maker Line:** digital outputs go HIGH when the line is detected; which colour counts as the line is set by the Light/Dark switch. Analog below 0.1×Vcc = line not found, above 0.9×Vcc = cross detected (not "far left / far right"). 4–40 mm sensing height is stated only at VCC = 5 V, black line on white. Calibrate: hold button >2 s, sweep across the line, press again.
+- **Maker Object:** range is 40–140 cm on white A4 but only 15–60 cm on black A4 — never write "up to 140 cm" alone. Digital detect/no-detect only (no distance value); 5 V supply; output high is VCC − 0.5 V to VCC, so don't wire it straight into a 3.3 V-only GPIO without checking. Not a Grove/Maker Port connector.
 
 ### Cytron motor drivers
 
