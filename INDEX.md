@@ -72,7 +72,7 @@ Arduino-board notes for every agent:
 | Cytron ESP8266 WiFi Shield | [`shield-esp-wifi.md`](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` (Rev 2.0) | ESP-WROOM-02 Wi-Fi over UART + microSD | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) | **Medium** |
 | LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
 | 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium** |
-| Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 | **Medium-low** |
+| Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 + product photos | **Medium** |
 | Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Product page only | **Medium-low** |
 
 Shield notes for every agent:

@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 4 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 5 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -13,7 +13,7 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 | 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 3 | 4 | Done (2026-10-19) | Product page (CT-UNO + side connectors) + CT-UNO manual |
 | 4 | 8 | [Maker Nano](maker-nano.md) | `MAKER-NANO` | Arduino-compatible boards | Sold | Medium-high | Low | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images |
 | 5 | 37 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium | Medium | 9 | 5 | 6 | Done (2026-10-19) | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no… |
-| 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium-low | High | 10 | 2 | 4 | Not started | Getting Started Guide V1.0, Jan 2015 |
+| 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium | Medium | 5 | 2 | 1 | Done (2026-10-19) | Getting Started Guide V1.0, Jan 2015 + product photos |
 | 7 | 30 | [DIY Fire Detection (Pico)](diy-fire-detection-pico.md) | `PR-DIY-FIRE-PICO` | Pico project bundles | Out of stock | Medium-low | High | 9 | 2 | 8 | Not started | Cytron tutorial (Nov 2023) + product page |
 | 8 | 74 | [Robo Base](robo-base.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-low | High | 9 | 2 | 4 | Not started | Product page + Getting Started tutorial (section list) |
 | 9 | 121 | [Jetson Orin Nano Workshop](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | Workshops and services | Sold | Medium-low | High | 9 | 2 | 5 | Not started | Tentative timetable + product page |
@@ -137,3 +137,4 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 - **Cytron UNO Special Edition** (2026-10-19): Full product page read: SE is "exactly the same as CT-UNO, with the special side connectors" for stacking on top of or under a shield, so the CT-UNO manual applies. Added dimension drawing (68.58 × 55.88 mm, 4 × Ø3 mm holes), SRAM/EEPROM. Confidence Low → Medium-high. Open: side-connector type and packing list (photo only).
 - **Maker Nano** (2026-10-19): Read Cytron product-page images (Arduino Nano vs Maker Nano table, pinout, layout, dimension drawing): ATmega328P, CH340C, 45.80 × 21.09 mm, A6/A7 analog-only, full pin functions; CH34X driver links; packing list 1 x Maker Nano; IDE board "Arduino Nano" (Cytron tutorial). Confidence Medium-low → Medium-high. Open: processor/bootloader option, button pull-up, USB+Vin behaviour.
 - **EDU:BIT** (2026-10-19): Guide book (132 pp, 4th printing May 2021, ISBN 978-967-19475-0-0) read as images: USB Y-cable powers EDU:BIT via barrel plug, power switch, INT/EXT audio switch, servo wiring S/+/−, volume 0–255. New KB rule 7: education kits use the guide book as main source, no datasheet required → confidence Medium-low → Medium. Power limits stay "not stated" (use the supplied cable).
+- **Screw Terminal Shield** (2026-10-19): Read Cytron product photos: 32 screw terminals (16 per side), full order (IOREF, RST, VIN, GND, 5V, GND, 5V, GND, 3V3, GND, A0–A5 / AREF, GND, D13–D0) — confirms the RobotShop forum report; Uno R3 pins only (no Mega extras); SCL/SDA solder holes only; no ICSP pads. Confidence Medium-low → Medium. Open: terminal current rating, LED function, strip layout.

@@ -5,8 +5,11 @@
 | Product code | SHIELD-SCREW2 [UM][PP] |
 | Family | Arduino shields and breakout boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: Cytron product photos (top, angle, bottom) read — terminal count and full terminal order confirmed; product page text re-read (no new specs) |
 | Primary source | "Shield-Screw2 Getting Started Guide" (Cytron Screw Terminal Shield, SHIELD-SCREW2), V1.0, JAN 2015, Cytron Technologies Sdn. Bhd. — a Getting Started Guide / user manual [UM]. No separate Cytron datasheet was found. |
+
+Tag notes: [PP: photo] = Cytron's own product photos on my.cytron.io (shield-screw2-a/b/c, top, angled and bottom views), read visually 2026-10-19 — silkscreen labels only, not electrical specs.
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -34,20 +37,27 @@ Every row below is from Section 2.0 "Specification" of the Getting Started Guide
 | LED | Yes ("a LED") | [UM] §1.0 |
 | Packing list | Screw Terminal Shield (board only) | [UM] §3.0 |
 | Warranty | 12 months, manufacturing defects only; misuse not covered; freight both ways not covered | [UM] §6.0; [PP] 12 months |
-| Terminal count, terminal current/voltage rating, ISP/ICSP pads, weight, operating temperature | Not stated | [UM] |
+| Terminal count | 32 screw terminals (16 per side, in 2-way blocks) | [PP: photo] |
+| Board silkscreen | "SHIELD-SCREW" (top), "SCREW PROTO SHIELD" + cytron.com.my (bottom) | [PP: photo] |
+| Terminal current/voltage rating, wire gauge, weight, operating temperature | Not stated | [UM][PP] |
+| ISP/ICSP pads | None visible in the product photos; not mentioned in the guide | [PP: photo][UM] |
 
 ## Interfaces, terminals and pin mapping
-- **Screw terminals:** 3.5 mm pitch, extending "all pins of the Arduino" [UM]. The guide does not list the terminals individually, give a count, or state the terminal order — its hardware section is a photo of the shield stacked on an Arduino Uno, which the Google Doc text export does not reproduce [UM]. See Needs verification for the terminal order reported by a reseller forum.
+- **Screw terminals:** 3.5 mm pitch, extending "all pins of the Arduino" [UM]. The guide gives no list; the terminal labels below are read from Cytron's product photos [PP: photo].
+- **Power / analog side (16 terminals, from the end nearest the board edge with IOREF):** IOREF, RST, VIN, GND, 5V, GND, 5V, GND, 3V3, GND, A0, A1, A2, A3, A4, A5 [PP: photo]. Read from A0 upward this is GND, 3V3, GND, 5V, GND, 5V, GND, VIN, RST, IOREF — the same order a RobotShop forum post reported [3P], now confirmed by Cytron's photo.
+- **Digital side (16 terminals):** AREF, GND, D13, D12, D11, D10, D9, D8, D7, D6, D5, D4, D3, D2, D1, D0 [PP: photo].
+- **Uno R3 footprint only:** terminals exist only for the Uno R3 header pins; the Mega/Due extra pins (D22–D53, A6–A15) have no terminals [PP: photo]. The R3 SCL and SDA pins (beside AREF) are broken out as solder holes next to the header, not to screw terminals [PP: photo].
+- **Header breakout holes:** every header pin has a labelled solder hole beside the stacking header (IOREF, RST, 3V3, 5V, GND, GND, VIN, A0–A5; SCL, SDA, AREF, GND, D13–D8; D7–D0) [PP: photo].
 - **Stackable headers:** the shield is stackable, so another shield can go on top and the Arduino headers remain available [UM].
 - **Prototyping area:** 0.1" (2.54 mm) grid through-holes, some connected in strips ("connected") and some isolated ("unconnected"), placed in the middle of the board [UM][PP]. Which holes are strip-connected is not stated in text.
-- **Busses:** more than one 5V bus and more than one GND bus ("a couple") run beside the prototyping area [UM].
+- **Busses:** more than one 5V bus and more than one GND bus ("a couple") [UM]; the photos show a 5V row and a GND row along the top and along the bottom edge of the prototyping area [PP: photo].
 - **Reset button:** on the shield, because a stacked shield covers the Arduino's own reset button [UM]. Its wiring (to RESET) is implied by the name, not stated.
-- **LED:** one LED [UM]. Whether it is a power LED or a user LED, and which pin it is on, is not stated.
+- **LED:** one LED [UM], a small SMD part beside the reset button near the 5V bus label, with no silkscreen name [PP: photo]. Whether it is a power LED or a user LED, and which pin it is on, is not stated.
 - **ISP / ICSP pads:** not mentioned anywhere in the guide [UM]. Do not claim them.
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - No code is needed for the shield itself: it only re-routes Arduino pins to screw terminals [UM]. Pin numbers in a sketch are the Arduino's own pin numbers.
-- Always **read the silkscreen label at each terminal**, not the position: a reseller forum reports that the terminal order on the power side differs from the Arduino Uno header order, although each terminal is correctly labelled ([3P] — see Needs verification). Tutorials should show wires going to a labelled terminal (e.g. "the terminal marked 5V"), never "the third terminal from the left".
+- Always **read the silkscreen label at each terminal**, not the position: the power-side terminal order (IOREF, RST, VIN, GND, 5V, GND, 5V, GND, 3V3, GND) differs from the Arduino Uno header order [PP: photo], although each terminal is labelled. Tutorials should show wires going to a labelled terminal (e.g. "the terminal marked 5V"), never "the third terminal from the left".
 - Use a small flat screwdriver to open the 3.5 mm terminals before inserting bare wire; the guide gives no wire-gauge range, so do not state one.
 - The shield's reset button is the one to press when a stacked shield hides the Arduino's own button [UM].
 - Board size 74.93 mm x 81.28 mm is larger than an Arduino Uno outline, so the shield overhangs the Uno — allow room in an enclosure [UM].
@@ -69,7 +79,8 @@ Every row below is from Section 2.0 "Specification" of the Getting Started Guide
 - Related Cytron boards: the guide calls it a superset of a Protoshield; Cytron's separate SHIELD-PROTO2 prototyping shield is a different product (no KB file — no Cytron datasheet/manual found).
 
 ## Common mistakes / troubleshooting
-- "The GND terminal is where my Uno has VIN" → the shield re-orders the power-side terminals; wire by the label printed on the shield, not by Uno header position ([3P] report, logic consistent with [UM] "extends all pins").
+- "The GND terminal is where my Uno has VIN" → the shield re-orders the power-side terminals; wire by the label printed on the shield, not by Uno header position [PP: photo].
+- On a Mega or Due, pins above D13 and A5 have no screw terminals — use the board's own headers for them [PP: photo].
 - Arduino does not reset → press the shield's reset button, which is wired for exactly this use [UM].
 - Terminal does not grip wire → terminal screw not opened enough before inserting the wire; 3.5 mm pitch terminals take thin wire only (gauge not stated).
 - Expecting an ISP header → none is documented [UM].
@@ -78,25 +89,21 @@ Every row below is from Section 2.0 "Specification" of the Getting Started Guide
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Terminal order vs Arduino Uno header | [UM] silent (only a photo) | [3P] RobotShop forum (2019): power-side order GND, 3V3, GND, 5V, GND, 5V, GND, VIN, RST, IOREF, differs from Uno order but labels are correct | No conflict in text; [3P] fact kept in Needs verification only |
+| Terminal order vs Arduino Uno header | [UM] silent (only a photo) | [3P] RobotShop forum (2019) power-side order | **Resolved** — Cytron product photo shows the same order [PP: photo] |
 | Compatible boards | [UM] Uno, Mega 2560, Mega ADK, Leonardo, Due, CT-UNO, CIKU | [3P] RobotShop: "Mega 2560 Rev3, Genuino and similar" | [UM] wins; no contradiction |
 
 No disagreement between the Getting Started Guide [UM] and the product page [PP] was found.
 
 ## Needs verification
-- Total number of screw terminals and the exact terminal-by-terminal order (guide only has a photo) — confirm from the board or design team [DT].
-- Whether the Mega 2560 / Mega ADK / Due extra pins (D22–D53, A6–A15) are brought to terminals, or only the Uno-footprint pins — the 74.93 mm x 81.28 mm board size suggests the latter, but it is not stated.
 - Screw-terminal current and voltage rating, and accepted wire gauge — not stated.
 - Which through-holes in the prototyping area are strip-connected and which are isolated — not stated in text.
 - LED function (power indicator vs user LED) and the pin it is on — not stated.
-- Whether ISP/ICSP pass-through pads exist — not mentioned.
-- Power-side terminal order GND, 3V3, GND, 5V, GND, 5V, GND, VIN, RST, IOREF — [3P] forum report only.
-- Whether an IOREF terminal exists (implied by the [3P] report only).
 - Weight, operating temperature — not stated.
 - The guide is V1.0 from JAN 2015; whether the board has been revised since (the product page says the proto area was moved "to the middle") — confirm the current revision matches the guide [DT].
 
 ## Sources
 - [UM] "Shield-Screw2 Getting Started Guide", V1.0, JAN 2015, Cytron Technologies Sdn. Bhd. (Google Doc; the product page links it without a label) — https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/edit
-- [PP] Cytron product page (read by coordinator 2026-10-16: product code, price RM31.50, stock 128, warranty 12 months, "upgraded the screw shield with the prototyping area at the middle") — https://my.cytron.io/p-cytron-screw-terminal-shield
+- [PP: photo] Cytron product photos — https://static.cytron.io/image/catalog/products/SHIELD-SCREW2/shield-screw2-a.png , -b.png (top), -c.png (bottom)
+- [PP] Cytron product page (re-read 2026-10-19: 127 in stock, RM31.50, no new specs; earlier read 2026-10-16: product code, price RM31.50, stock 128, warranty 12 months, "upgraded the screw shield with the prototyping area at the middle") — https://my.cytron.io/p-cytron-screw-terminal-shield
 - [3P] (cross-check only) RobotShop product page, SKU RB-Cyt-243, Manufacturer # SHIELD-SCREW2 — https://www.robotshop.com/products/cytron-screw-terminal-shield-arduino
 - [3P] (cross-check only) RobotShop Community thread "Cytron screw shield", Jan 2019 — https://community.robotshop.com/forum/t/cytron-screw-shield/37525

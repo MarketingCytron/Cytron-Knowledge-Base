@@ -19,9 +19,9 @@ An Arduino-format shield that extends all pins of the Arduino out to 3.5mm pitch
 - LED: one LED (Getting Started Guide)
 - Board size: 74.93mm x 81.28mm (Getting Started Guide)
 - Stackable: Yes (Getting Started Guide)
-- Terminal count: [NOT STATED]
+- Terminal count: 32 screw terminals, 16 per side (product photos)
 - Terminal voltage/current rating: [NOT STATED]
-- ISP/ICSP pads: [NOT STATED]
+- ISP/ICSP pads: none shown in the product photos
 - Packing list: Screw Terminal Shield only (Getting Started Guide)
 - Warranty: 12 months, manufacturing defects only; damage caused by misuse not covered; freight cost both ways not covered (Getting Started Guide; product page also states 12 months)
 
@@ -30,7 +30,8 @@ An Arduino-format shield that extends all pins of the Arduino out to 3.5mm pitch
 - Mounts by stacking on the Arduino main board headers; stackable, so another shield can go on top (Getting Started Guide)
 - Interface to the user: 3.5mm pitch screw terminals for the Arduino pins; 0.1" prototyping through-holes; 5V and GND busses (Getting Started Guide)
 - No software or library required (Getting Started Guide has no software section)
-- Exact terminal order and count: [NOT STATED]
+- Terminal order (product photos): power/analog side IOREF, RST, VIN, GND, 5V, GND, 5V, GND, 3V3, GND, A0 – A5; digital side AREF, GND, D13 – D0
+- Terminals cover the Arduino Uno R3 header pins only; Mega/Due extra pins have no terminals; SCL/SDA are solder holes only
 
 ## Use cases
 - Screwing wires directly to the Arduino pins instead of using jumper wires
