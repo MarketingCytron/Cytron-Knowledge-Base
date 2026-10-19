@@ -6,10 +6,11 @@
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
-| Primary source | No Cytron datasheet or guide book could be read. Main source: Cytron product page https://my.cytron.io/p-edubit-training-and-project-kits-for-microbit (read 2026-10-19) [PP]. Supporting: Lesson guide: "Learn Coding Bit by Bit with EDU:BIT Course Overview" (PDF, Cytron Drive, no revision/date) [UM]; EDU:BIT Resource Hub (Cytron Google Site) [PP: Resource Hub]; MakeCode extension pxt-edubit v1.15.0 [GH] |
+| Reviewed | 2026-10-19 — master-table review: the Farnell "datasheet" link turned out to be the full English guide book (132 pages, 4th printing May 2021) and was read as page images; power cable, power switch, INT/EXT audio switch and servo-port wiring added. Still no electrical datasheet |
+| Primary source | No Cytron electrical datasheet found. Guide book **"Explore STEM & Coding with EDU:BIT"** (Cytron Technologies, © 2020, ISBN 978-967-19475-0-0, Fourth Printing May 2021; written by Cheryl Ng, SC Lim & Adrian Teo; 132 pages incl. covers) read as page images from the Farnell copy [UM-book]. Main source for specs: Cytron product page https://my.cytron.io/p-edubit-training-and-project-kits-for-microbit (read 2026-10-19) [PP]. Supporting: Lesson guide: "Learn Coding Bit by Bit with EDU:BIT Course Overview" (PDF, Cytron Drive, no revision/date) [UM]; EDU:BIT Resource Hub (Cytron Google Site) [PP: Resource Hub]; MakeCode extension pxt-edubit v1.15.0 [GH] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Notes: the Farnell datasheet copy (https://www.farnell.com/datasheets/3685792.pdf), the English guide book (http://link.cytron.io/edubit-book-english) and GitLab gitlab.com/cytrontech/rh2t/edubit could not be fetched from here. No power-input voltage, current limit or protection threshold is stated in any Cytron source read — see *Needs verification*.
+Notes: [UM-book] = the English guide book PDF that Farnell hosts as its "datasheet" (https://www.farnell.com/datasheets/3685792.pdf, 102 MB, image-only; pages read visually 2026-10-19: contents, Ch.1 setup, Ch.3 Music, Ch.8 DC motor, Ch.9 servo, closing pages). It is a children's activity book with no electrical specification section. The link.cytron.io book link and GitLab gitlab.com/cytrontech/rh2t/edubit could not be fetched from here. No power-input voltage, current limit or protection threshold is stated in any Cytron source read — see *Needs verification*.
 
 ## What it is
 - A micro:bit training and project kit for beginners: a board with built-in modules ("Bits"), a printed step-by-step guide book of "10+1 hands-on coding lessons", game maps and accessories, a servo motor and a DC motor [PP].
@@ -38,7 +39,9 @@ Cytron product page "Specifications" — every row [PP]:
 | Co-processor | PIC16F1937, I2C slave address 0x08 | [GH] |
 | Indicator LEDs | For digital and analog IO pins | [PP] |
 | Warranty | 12 months | [PP] |
-| Power input voltage / connector / battery | Not stated in any Cytron source read | — |
+| Power input | The supplied USB cable splits into a micro USB plug (to the micro:bit) and a round barrel plug (to EDU:BIT); the computer's USB powers EDU:BIT through it. "Remember to power up EDU:BIT by sliding the switch to ON" | [UM-book] |
+| Input voltage range, current, battery option | Not stated in any Cytron source read | — |
+| Audio switch | Slide switch INT (onboard piezo buzzer) / EXT (external speakers or headphones on the audio jack) | [UM-book] |
 | Motor / servo current, servo voltage | Not stated | — |
 | Weight, operating temperature | Not stated | — |
 
@@ -53,8 +56,9 @@ Each feature and its micro:bit IO pin is labelled on the board [PP]. Pin numbers
 | RGB Bit | P13 | 4 pixels, `neopixel.create(P13, 4, NeoPixelMode.RGB)` | [GH] |
 | Traffic Light Bit | P14 red, P15 yellow, P16 green | `digitalWritePin` | [GH] |
 | Button Bit | In parallel with micro:bit buttons A and B | Default MakeCode Input blocks | [GH] |
-| Music Bit (piezo + audio jack) | Default MakeCode Music blocks (pin not stated) | — | [GH] |
+| Music Bit (piezo + audio jack) | Default MakeCode Music blocks (pin not stated); INT/EXT switch selects buzzer or audio jack; volume block 0–255 | — | [GH][UM-book] |
 | Servo ports S1–S3 | I2C co-processor 0x08 | registers 1–3 | [GH] |
+| Servo port wiring | S = orange/yellow (signal), + = red, − = brown/black; Ch.9 plugs the servo into Servo Port 1 | — | [UM-book] |
 | DC motor ports M1, M2 | I2C co-processor 0x08 | registers M1A 4, M1B 5, M2A 6, M2B 7 | [GH] |
 | I2C port | 3.3V | Grove-type port | [PP] |
 
@@ -76,7 +80,7 @@ Co-processor register map (main.ts) [GH]: 0 revision; 1–3 servo 1–3; 4–7 M
 
 ## Power and electrical limits
 - "Dedicated controller and power supply"; supports up to 3 servo motors and 2 DC motors [PP].
-- Kit includes "1x USB power and data cable" [PP]. Connector type, input voltage range and battery option are not stated by Cytron.
+- Kit includes "1x USB power and data cable" [PP]: a Y-cable whose micro USB end goes to the micro:bit and whose barrel plug powers EDU:BIT from the computer's USB [UM-book]. Switch EDU:BIT ON with its power switch before use [UM-book]. Input voltage range and battery option are not stated by Cytron.
 - The co-processor reports power state, low-battery state, over-voltage state and input voltage (VIN register ÷ 10, in volts) through hidden extension blocks [GH]. Thresholds and protection behaviour are not stated.
 - I2C port is 3.3V [PP].
 - Motor/servo current limits, servo supply voltage and reverse-polarity protection: not stated.
@@ -130,17 +134,17 @@ The course-overview PDF text came out with columns interleaved; the pairing abov
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
 | Product name | [PP] "Training & Project Kit" | [3P] The Pi Hut "Learning & Project Kit" | Use the Cytron name |
+| Ch.3 song | Course overview / Resource Hub: "Play Baby Shark" | [UM-book] 4th printing: "I Will Follow You" | Printings differ; not a spec |
 | Guide book translations | [PP] and Resource Hub Download page: 12 languages incl. French, German, Korean, Spanish | [PP: Resource Hub] Helpdesk FAQ: Malay, Tamil, Thai, Hungarian, Japanese, Simplified Chinese, Italian; "German and French are in progress" | Product page (read 2026-10-19) wins; the Helpdesk FAQ is undated and probably older |
 | Board size | [PP] 157.50 x 124.50 x 19.00 mm | [3P] recantha "16 cm x 12 cm" PCB | [PP] wins |
 | Teachable Machine ch.5 | Resource Hub title "Color Controlled Motor System" | its URL slug "...color-controlled-light-system" | Title used; not a spec |
 
 ## Needs verification
-- **Cytron datasheet**: Farnell copy https://www.farnell.com/datasheets/3685792.pdf exists (linked from Farnell's EDUBIT-NB page) but could not be read here. Read it to fill power, current and pin facts.
-- **Guide book PDF** (http://link.cytron.io/edubit-book-english) could not be read; chapter list is from the course overview + Resource Hub.
-- Power input connector, voltage range and battery support. [3P] recantha: the supplied cable has USB, micro USB (for the micro:bit) and a barrel jack that powers the board and motors.
+- **Electrical datasheet:** the Farnell "datasheet" is the guide book; no EDU:BIT electrical datasheet has been found. Ask [DT] for one (power input range, current limits, protection).
+- Barrel-jack voltage range and whether a 5 V adapter or battery pack may be used instead of the USB Y-cable.
 - Low-battery and over-voltage thresholds and what the board does at them (registers exist [GH]).
 - DC motor and servo current limits, servo supply voltage, motor driver IC, reverse-polarity protection.
-- Music Bit pin and an INT/EXT speaker/audio-jack switch ([3P] recantha mentions the switch).
+- Music Bit pin (the INT/EXT switch is now confirmed [UM-book]).
 - RGB LED part number (extension uses NeoPixel mode RGB; part not stated). Co-processor PIC16F1937 is from a code comment only.
 - Pin map of the I2C port and of each broken-off module's Grove connector.
 - Board code "EDUBIT" and reseller code "EDUBIT-NB" ([3P] Farnell MPN). [3P] Farnell weight 0.85 kg; [3P] recantha 126-page book; [3P] recantha: servo plastic pieces and cardboard props in the box.
@@ -154,5 +158,6 @@ The course-overview PDF text came out with columns interleaved; the pairing abov
 - [PP: tutorial] Chapter 1: Setting Up EDU:BIT with Teachable Machine (TM): https://my.cytron.io/tutorial/chapter-1-setting-up-edubit-with-teachable-machine-tm
 - [PP] Demo code: https://link.cytron.io/edubit-demo-code → https://makecode.microbit.org/51429-17321-87791-03541
 - [GH] https://github.com/CytronTechnologies/pxt-edubit — README.md, pxt.json, main.ts, motors.ts, power.ts, rgb_bit.ts, sound_bit.ts, potentio_bit.ts, ir_bit.ts, traffic_light_bit.ts, test.ts via https://raw.githubusercontent.com/CytronTechnologies/pxt-edubit/master/
-- Not readable: https://www.farnell.com/datasheets/3685792.pdf ; http://link.cytron.io/edubit-book-english ; https://gitlab.com/cytrontech/rh2t/edubit
+- [UM-book] Explore STEM & Coding with EDU:BIT (English guide book, 4th printing May 2021) — Farnell copy https://www.farnell.com/datasheets/3685792.pdf (image-only PDF, read visually 2026-10-19)
+- Not readable: http://link.cytron.io/edubit-book-english ; https://gitlab.com/cytrontech/rh2t/edubit
 - [3P] (cross-check only) https://uk.farnell.com/cytron/edubit-nb/programmable-board-education/dp/3942218 ; https://thepihut.com/collections/cytron/products/edu-bit-learning-project-kit-for-micro-bit ; https://www.recantha.co.uk/blog/?p=21134

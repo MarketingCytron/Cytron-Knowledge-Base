@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 3 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 4 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -12,7 +12,7 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 | 2 | 107 | [IRIV EdgeAI Safety Box Kit](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV industrial | Inquiry | Medium-low | High | 13 | 14 | 3 | Waiting on team (2026-10-19) | No kit datasheet exists. Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 |
 | 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 3 | 4 | Done (2026-10-19) | Product page (CT-UNO + side connectors) + CT-UNO manual |
 | 4 | 8 | [Maker Nano](maker-nano.md) | `MAKER-NANO` | Arduino-compatible boards | Sold | Medium-high | Low | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images |
-| 5 | 37 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium-low | High | 11 | 4 | 6 | Not started | Product page + course overview + pxt-edubit v1.15.0 (no datasheet readable) |
+| 5 | 37 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium-low | High | 10 | 5 | 6 | Done (2026-10-19) | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no… |
 | 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium-low | High | 10 | 2 | 4 | Not started | Getting Started Guide V1.0, Jan 2015 |
 | 7 | 30 | [DIY Fire Detection (Pico)](diy-fire-detection-pico.md) | `PR-DIY-FIRE-PICO` | Pico project bundles | Out of stock | Medium-low | High | 9 | 2 | 8 | Not started | Cytron tutorial (Nov 2023) + product page |
 | 8 | 74 | [Robo Base](robo-base.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-low | High | 9 | 2 | 4 | Not started | Product page + Getting Started tutorial (section list) |
@@ -136,3 +136,4 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 
 - **Cytron UNO Special Edition** (2026-10-19): Full product page read: SE is "exactly the same as CT-UNO, with the special side connectors" for stacking on top of or under a shield, so the CT-UNO manual applies. Added dimension drawing (68.58 × 55.88 mm, 4 × Ø3 mm holes), SRAM/EEPROM. Confidence Low → Medium-high. Open: side-connector type and packing list (photo only).
 - **Maker Nano** (2026-10-19): Read Cytron product-page images (Arduino Nano vs Maker Nano table, pinout, layout, dimension drawing): ATmega328P, CH340C, 45.80 × 21.09 mm, A6/A7 analog-only, full pin functions; CH34X driver links; packing list 1 x Maker Nano; IDE board "Arduino Nano" (Cytron tutorial). Confidence Medium-low → Medium-high. Open: processor/bootloader option, button pull-up, USB+Vin behaviour.
+- **EDU:BIT** (2026-10-19): Farnell "datasheet" link is the English guide book (132 pp, 4th printing May 2021, ISBN 978-967-19475-0-0), read as images: USB Y-cable powers EDU:BIT via barrel plug, power switch ON, INT/EXT audio switch, servo wiring S/+/−, volume 0–255. Confidence stays Medium-low: no electrical datasheet (input voltage range, current limits, protection) — ask the design team.

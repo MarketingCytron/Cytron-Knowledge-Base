@@ -11,7 +11,7 @@ A micro:bit training and project kit: a board with built-in modules (buzzer, sen
 
 ## Specs and functions
 - Product code: V-EDUBIT (board code EDUBIT; reseller EDUBIT-NB)
-- 1x piezo buzzer with audio jack
+- 1x piezo buzzer with audio jack; INT/EXT slide switch selects the onboard buzzer or external speakers/headphones on the jack (guide book)
 - 1x sound sensor (micro:bit P1, analog)
 - 1x potentiometer (micro:bit P2, analog)
 - 1x IR sensor (micro:bit P8, digital)
@@ -24,14 +24,15 @@ A micro:bit training and project kit: a board with built-in modules (buzzer, sen
 - Modules can be broken off the board and reconnected with plug-and-play (Grove) cables
 - Works out of the box: lights and melody on button press, no wiring needed
 - Dimension: 157.50 mm x 124.50 mm x 19.00 mm
-- Power input voltage / connector: [NOT STATED]
+- Power: the supplied USB Y-cable powers EDU:BIT through a barrel plug (and the micro:bit through micro USB) from a computer USB port; power switch must be ON (guide book)
+- Power input voltage range: [NOT STATED]
 - Motor and servo current limits: [NOT STATED]
 - Weight: [NOT STATED]
 - Warranty: 12 months
 - Packing list (with micro:bit V2): 1x EDU:BIT board, 1x micro:bit V2, 1x step-by-step guide book, 1x USB power and data cable, 2x game maps, 2x game accessories, 7x Grove cables, 1x servo motor, 1x DC motor, 1x pulley wheel, 1x fan blade
 - Without micro:bit option: same contents minus the micro:bit
 - Classroom Pack: 10 sets, each with micro:bit V2
-- Guide book: 10 chapters + 1 bonus — Hello, World!; Rock, Paper, Scissors (Button Bit); Music (Music Bit); Win, Lose or Draw (Traffic Light Bit); IR Digital Dice / Snakes and Ladders (IR Bit); Tag, You're It (Potentio Bit); Applause (Sound Bit); Let's Take a Spin / Finger Twister (DC motor); Penalty Shoot-Out (servo); Mastermind (RGB Bit); Bonus: Simon Says with LEDs (radio)
+- Guide book: "Explore STEM & Coding with EDU:BIT" (Cytron, ISBN 978-967-19475-0-0, 4th printing May 2021), 10 chapters + 1 bonus — Hello, World!; Rock, Paper, Scissors (Button Bit); Music (Music Bit); Win, Lose or Draw (Traffic Light Bit); IR Digital Dice / Snakes and Ladders (IR Bit); Tag, You're It (Potentio Bit); Applause (Sound Bit); Let's Take a Spin / Finger Twister (DC motor); Penalty Shoot-Out (servo); Mastermind (RGB Bit); Bonus: Simon Says with LEDs (radio)
 - Guide book PDFs: English, Malay, Chinese, Tamil, Thai, Japanese, Hungarian, Italian, French, German, Korean, Spanish
 
 ## Interfaces and compatibility
