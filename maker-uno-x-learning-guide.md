@@ -10,7 +10,7 @@
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are images and were not readable; "ti" ligature drops appear in places). [PP] = my.cytron.io page "Learning Guide for Beginners with Maker Uno X compatible with Arduino" (coordinator capture 2026-10-19). This file documents the **book** only. The Maker UNO X board has no KB file yet (on hold) — statements about the board below are what the guide says, not board specs.
+Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are images and were not readable; "ti" ligature drops appear in places). [PP] = my.cytron.io page "Learning Guide for Beginners with Maker Uno X compatible with Arduino" (coordinator capture 2026-10-19). This file documents the **book** only. The Maker UNO X board has its own KB file (`maker-uno-x.md`) — statements about the board below are what the guide says.
 
 ## What it is
 - A printed beginner's guidebook for learning Arduino on the **Maker UNO X** board, sold on its own as "Learning Guide for Beginners with Maker Uno X compatible with Arduino"; "designed for the Maker Uno X Learning Box"; packing: 1× book [PP].

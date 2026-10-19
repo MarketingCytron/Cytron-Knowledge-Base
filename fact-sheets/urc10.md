@@ -78,10 +78,10 @@ An Arduino UNO-compatible controller board with an onboard 2-channel brushed DC 
 - Named "Sumo Robot Controller" on the datasheet and user manual; the board silkscreen calls it "2x10A UNO ROBOT CONTROLLER"
 
 ## Price band
-[NOT STATED]
+RM156.24 (Cytron product page "Sumo Robot Controller R1.1", read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-sumo-robot-controller-r1.1
 
 ## Datasheet
 [NOT STATED]
