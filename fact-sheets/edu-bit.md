@@ -62,7 +62,7 @@ A micro:bit training and project kit: a board with built-in modules (buzzer, sen
 - The extension resets the micro:bit when the EDU:BIT power is switched on
 - RGB LED default brightness in the extension is 25 (of 255)
 - The kit without micro:bit does not include a micro:bit board
-- Power input voltage range, battery option and protection thresholds: [NOT STATED]
+- Power EDU:BIT with the supplied USB cable as shown in the guide book; other power sources, input voltage range and protection thresholds: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 - EDU:BIT was 575% funded on Kickstarter on Oct 22, 2020

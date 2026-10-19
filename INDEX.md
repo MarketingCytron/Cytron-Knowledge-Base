@@ -14,6 +14,10 @@ This is the public edition. Internal working notes (internal document links, pri
 3. **Read the *Conflicts* and *Needs verification* sections** before writing about a product. Anything listed under *Needs verification* must not appear as fact in published content.
 4. **Pin rules are hard rules.** Code and wiring must follow each file's "Pin rules and gotchas".
 6. **Dated facts** (price, stock, store list) must be re-checked on the live page before going public.
+7. **Source rule by product type (decided 19 Oct 2026):**
+   - **Boards, shields, sensors, motor drivers, controllers:** the Cytron datasheet is the main source (rule 2).
+   - **Education kits** (e.g. EDU:BIT, Maker UNO Learning Box): the Cytron **guide book** is the main source. Students and teachers follow the book, so a datasheet is **not required** and its absence does not lower confidence. Electrical limits the book does not give stay "not stated"; for power, say "use the supplied cable / power source".
+   - **Robot and project kits** (e.g. SUMO:BIT Robot Kit, Robot Battle, SOCCER:BIT, Ikedo kits): the **board inside follows its own datasheet** — link to the board's KB file, never re-document it. The **kit accessories, assembly and lessons** use the Cytron **guide book or guide tutorial** as the main source; no accessory datasheet is required.
 
 ## How the KB is arranged (two layers)
 
@@ -129,7 +133,7 @@ Pico / RP2040 / RP2350 notes for every agent:
 | REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium** |
 | ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
 | Grove WiFi 8266 | [`grove-wifi-8266.md`](grove-wifi-8266.md) | `GRV-WIFI-8266` | ESP8266 Wi-Fi Grove module (ESP-AT), 3.3 V logic | Datasheet Rev 1.0, Aug 2021 | **Medium-high** |
-| EDU:BIT | [`edu-bit.md`](edu-bit.md) | `V-EDUBIT` (board `EDUBIT`) | micro:bit training board with break-off modules, 3 servo + 2 DC motor ports, 10+1 game lessons | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no electrical datasheet) | **Medium-low** |
+| EDU:BIT | [`edu-bit.md`](edu-bit.md) | `V-EDUBIT` (board `EDUBIT`) | micro:bit training board with break-off modules, 3 servo + 2 DC motor ports, 10+1 game lessons | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no electrical datasheet) | **Medium** |
 
 micro:bit notes for every agent:
 - **Motors and servos on MOTION:BIT, MOTION:BIT Pro, REKA:BIT and SUMO:BIT are driven over I2C (P19/P20) by an on-board chip**, not by micro:bit GPIO: MOTION:BIT PCA9685 at 0x40; REKA:BIT PIC16F1827 at 0x08 (an I2C Grove device must not use 0x08); SUMO:BIT RP2040 co-processor at 0x09.
@@ -356,7 +360,7 @@ IRIV notes for every agent:
 ## How to add or update a product
 
 1. Check it is a Cytron-brand product. Then copy `_TEMPLATE.md` to `<product-slug>.md`.
-2. Start from the Cytron datasheet. Tag every fact with its source. Put conflicts and unconfirmed items in their sections — don't drop them.
+2. Start from the main source for the product type (rule 7: datasheet for boards; guide book for education kits; board datasheet + guide book/tutorial for robot kits). Tag every fact with its source. Put conflicts and unconfirmed items in their sections — don't drop them.
 3. Fill `fact-sheets/<product-slug>.md` in the Content Hub template from that reference (only what it states), and add it to `fact-sheets/ALL-fact-sheets.md`. Check the aliases don't clash with another product.
 4. Add the row to *Products* above with an honest confidence level.
 5. Commit to this repository with a message like `kb: add <product>`.
