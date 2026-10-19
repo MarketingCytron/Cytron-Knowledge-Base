@@ -12,8 +12,10 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 ## Specs and functions
 - Product code: Robo Base (series page code V-ROBO-BASE-MINI); Robo Base and Robo Base Mini share one product page
 - Material: durable PCB material; "non-copper PCB" (BEETLE:BIT product page)
-- Thickness: [NOT STATED] (image only on the product page)
-- Dimensions: [NOT STATED] (image only on the product page)
+- Dimensions: 154 × 124 × 2 mm; mounting holes Ø3 mm
+- Thickness: 2.0 mm
+- Material: non-copper PCB, with printed labels for board and accessory mounting positions
+- Servo mounting holes: 3
 - Weight: [NOT STATED]
 - Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
 - Double Base 4WD: 2x Robo Base, 4x M3 PCB stand (screw+nut) 30mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
@@ -25,7 +27,9 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 
 ## Interfaces and compatibility
 - Mechanical part; no electrical interface
-- Controller boards with compatible mounting holes: REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Controller boards with compatible mounting holes: REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Robo ESP32, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Mounting hardware (Getting Started with Robo Base tutorial): 10mm M3 standoffs for REKA:BIT, MOTION, Robo and Maker Pi RP2040 boards; 10mm M2.5 standoffs, bolts and nuts for Raspberry Pi 4/5 and Jetson (M2.5 not in the kits); Maker UNO mounts flat with 4 M3 bolts and nuts; micro servo with M2 bolts and nuts
+- Assembly order: DC motor > castor > sensor > servo > boards; positions for N20 and W420 ball castors
 - Attachments covered by the Getting Started with Robo Base tutorial: TT motor and castors, ultrasonic sensor, Maker Line, micro servo motor, ⌀37mm 12V DC motor
 - Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
 - Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
@@ -40,7 +44,8 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
 - Single Base Only is the plate only, with no screws or standoffs
-- Dimensions and thickness are not stated in text (image only)
+- Raspberry Pi and Jetson boards need M2.5 hardware and the micro servo needs M2 bolts — not included in any kit
+- The tutorial recommends heat-shrink tubing on the ⌀37mm 12V DC motor wires to prevent short circuits
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - Product page price is a range for the whole Robo Base series; per-option prices are not stated
 

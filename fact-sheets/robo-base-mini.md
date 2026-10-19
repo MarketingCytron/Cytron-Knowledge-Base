@@ -12,8 +12,9 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 ## Specs and functions
 - Product code: Robo Base Mini (series page code V-ROBO-BASE-MINI); Robo Base Mini and Robo Base share one product page
 - Material: durable PCB material; "non-copper PCB" (STRIKER:BIT product page)
-- Thickness: [NOT STATED] (image only on the product page)
-- Dimensions: [NOT STATED] (image only on the product page)
+- Dimensions: 109 × 88 × 1.6 mm
+- Thickness: 1.6 mm
+- Use: robot base or adapter board; no printed labels; no servo mounting holes
 - Weight: [NOT STATED]
 - Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
 - Double Base 4WD: 2x Robo Base Mini, 4x M3 PCB stand (screw+nut) 25mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
@@ -41,7 +42,6 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
 - Single Base Only is the plate only, with no screws or standoffs
-- Dimensions and thickness are not stated in text (image only)
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - The ⌀37mm 12V DC motor mounting is covered for Robo Base, not for Robo Base Mini
 - Product page price is a range for the whole Robo Base series; per-option prices are not stated

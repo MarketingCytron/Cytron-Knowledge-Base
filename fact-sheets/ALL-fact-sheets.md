@@ -2450,67 +2450,6 @@ https://docs.google.com/document/d/1T3FAROtD-uECHmBquAbhmKK9bxdzDWIQn_PhV93oKSo/
 # Product fact sheets
 
 ## Product name
-DIY Fire Detection and Suppression with Raspberry Pi Pico
-
-## Aliases
-PR-DIY-FIRE-PICO, DIY Fire Detection and Suppression with Raspberry Pi Pico, DIY Fire Detection Pico, Fire Detection and Suppression Pico Kit, Pico Fire Detection Kit
-
-## What it is
-A beginner project kit for building a fire detection and suppression system with a Raspberry Pi Pico, a flame sensor and a water pump, programmed in CircuitPython with the Thonny editor. When the flame sensor detects fire, the code runs the water pump for 5 seconds and then switches it off.
-
-## Specs and functions
-- Product code: PR-DIY-FIRE-PICO
-- Controller: Raspberry Pi Pico
-- Sensor: flame sensor (model: [NOT STATED])
-- Actuator: water pump (model and voltage: [NOT STATED])
-- Firmware: CircuitPython, written and uploaded with Thonny
-- Behaviour: endless loop reading the flame sensor; on fire detected the water pump runs for 5 seconds, then switches off
-- Flame sensor connection: GP3
-- Water pump connection: motor terminal 1
-- Full component list and quantities: [NOT STATED] (product cards did not render in the text read)
-- CircuitPython libraries: [NOT STATED]
-- Code listing: [NOT STATED] (video tutorial)
-- Warranty: [NOT STATED]
-- Dimensions, weight: [NOT STATED]
-
-## Interfaces and compatibility
-- Raspberry Pi Pico (product page links the Pico datasheet)
-- Flame sensor on GP3
-- Water pump on motor terminal 1 (a motor-driver terminal, not a Pico GPIO; board not named in the text read)
-- Software: Thonny editor with CircuitPython; a video on getting started with Thonny is linked
-- Guide: Cytron tutorial "DIY Fire Detection and Suppression with Raspberry Pi Pico" (Abdulrahman Alhamed, 08 Nov 2023)
-
-## Use cases
-- Build a fire detection and suppression system using a Raspberry Pi Pico, a flame sensor, and a water pump (quick video tutorial)
-- Keep your surroundings safe from fire hazards (tutorial framing)
-
-## Known limitations
-- The pump runs for a fixed 5 seconds per detection
-- Only two wiring facts are stated: flame sensor to GP3 and water pump to motor terminal 1
-- The parts list, code and libraries are in the video and product cards, not in the text read
-- Out of stock on my.cytron.io on 2026-10-19
-
-## Positioning (kept apart from specs)
-- "Quick and easy video tutorial" for a DIY fire detection and suppression system (tutorial excerpt)
-
-## Price band
-RM103.08 (Cytron product page, read 2026-10-19)
-
-## Product page
-https://my.cytron.io/p-diy-fire-detection-suppression-raspberry-pi-pico
-
-## Datasheet
-[NOT STATED]
-
-## Source type
-Website
-
-## Source link
-https://my.cytron.io/tutorial/diy-fire-detection-and-suppression-with-raspberry-pi-pico
-
-# Product fact sheets
-
-## Product name
 MOTION:BIT
 
 ## Aliases
@@ -5744,8 +5683,10 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 ## Specs and functions
 - Product code: Robo Base (series page code V-ROBO-BASE-MINI); Robo Base and Robo Base Mini share one product page
 - Material: durable PCB material; "non-copper PCB" (BEETLE:BIT product page)
-- Thickness: [NOT STATED] (image only on the product page)
-- Dimensions: [NOT STATED] (image only on the product page)
+- Dimensions: 154 × 124 × 2 mm; mounting holes Ø3 mm
+- Thickness: 2.0 mm
+- Material: non-copper PCB, with printed labels for board and accessory mounting positions
+- Servo mounting holes: 3
 - Weight: [NOT STATED]
 - Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
 - Double Base 4WD: 2x Robo Base, 4x M3 PCB stand (screw+nut) 30mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
@@ -5757,7 +5698,9 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 
 ## Interfaces and compatibility
 - Mechanical part; no electrical interface
-- Controller boards with compatible mounting holes: REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Controller boards with compatible mounting holes: REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Robo ESP32, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Mounting hardware (Getting Started with Robo Base tutorial): 10mm M3 standoffs for REKA:BIT, MOTION, Robo and Maker Pi RP2040 boards; 10mm M2.5 standoffs, bolts and nuts for Raspberry Pi 4/5 and Jetson (M2.5 not in the kits); Maker UNO mounts flat with 4 M3 bolts and nuts; micro servo with M2 bolts and nuts
+- Assembly order: DC motor > castor > sensor > servo > boards; positions for N20 and W420 ball castors
 - Attachments covered by the Getting Started with Robo Base tutorial: TT motor and castors, ultrasonic sensor, Maker Line, micro servo motor, ⌀37mm 12V DC motor
 - Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
 - Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
@@ -5772,7 +5715,8 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
 - Single Base Only is the plate only, with no screws or standoffs
-- Dimensions and thickness are not stated in text (image only)
+- Raspberry Pi and Jetson boards need M2.5 hardware and the micro servo needs M2 bolts — not included in any kit
+- The tutorial recommends heat-shrink tubing on the ⌀37mm 12V DC motor wires to prevent short circuits
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - Product page price is a range for the whole Robo Base series; per-option prices are not stated
 
@@ -5810,8 +5754,9 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 ## Specs and functions
 - Product code: Robo Base Mini (series page code V-ROBO-BASE-MINI); Robo Base Mini and Robo Base share one product page
 - Material: durable PCB material; "non-copper PCB" (STRIKER:BIT product page)
-- Thickness: [NOT STATED] (image only on the product page)
-- Dimensions: [NOT STATED] (image only on the product page)
+- Dimensions: 109 × 88 × 1.6 mm
+- Thickness: 1.6 mm
+- Use: robot base or adapter board; no printed labels; no servo mounting holes
 - Weight: [NOT STATED]
 - Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
 - Double Base 4WD: 2x Robo Base Mini, 4x M3 PCB stand (screw+nut) 25mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
@@ -5839,7 +5784,6 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
 - Single Base Only is the plate only, with no screws or standoffs
-- Dimensions and thickness are not stated in text (image only)
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - The ⌀37mm 12V DC motor mounting is covered for Robo Base, not for Robo Base Mini
 - Product page price is a range for the whole Robo Base series; per-option prices are not stated

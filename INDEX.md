@@ -17,6 +17,7 @@ This is the public edition. Internal working notes (internal document links, pri
 7. **Source rule by product type (decided 19 Oct 2026):**
    - **Boards, shields, sensors, motor drivers, controllers:** the Cytron datasheet is the main source (rule 2).
    - **Education kits** (e.g. EDU:BIT, Maker UNO Learning Box): the Cytron **guide book** is the main source. Students and teachers follow the book, so a datasheet is **not required** and its absence does not lower confidence. Electrical limits the book does not give stay "not stated"; for power, say "use the supplied cable / power source".
+   - **Mechanical hardware with no electronics** (e.g. Robo Base, Robo Base Mini, brackets, chassis plates, wheels): the Cytron **guide tutorial** and the product page (including its spec images) are the main source. A datasheet is not required.
    - **Robot and project kits** (e.g. SUMO:BIT Robot Kit, Robot Battle, SOCCER:BIT, Ikedo kits): the **board inside follows its own datasheet** — link to the board's KB file, never re-document it. The **kit accessories, assembly and lessons** use the Cytron **guide book or guide tutorial** as the main source; no accessory datasheet is required.
 
 ## How the KB is arranged (two layers)
@@ -119,7 +120,6 @@ Pico / RP2040 / RP2350 notes for every agent:
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | Board + parts bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium** |
-| DIY Fire Detection and Suppression (Pico) | [`diy-fire-detection-pico.md`](diy-fire-detection-pico.md) | `PR-DIY-FIRE-PICO` | Project kit: Pico + flame sensor + pump, CircuitPython | Cytron tutorial (Nov 2023) + product page | **Medium-low** |
 
 - **Maker Nano RP2040 + Grove WiFi 8266:** power the Grove WiFi from 5 V, not 3.3 V (the Blynk doc says 3.3 V is not enough). The Blynk doc's sample code carries a template ID — never copy it. Board facts live in `maker-nano-rp2040.md`.
 
@@ -227,7 +227,7 @@ Sensor notes for every agent:
 | STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium-low** |
 | Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
 | Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
-| Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-low** |
+| Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images | **Medium-high** |
 | Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-low** |
 | Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Product page + Installation Guide tutorial | **Medium** |
 

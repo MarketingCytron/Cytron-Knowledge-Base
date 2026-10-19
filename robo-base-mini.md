@@ -22,8 +22,9 @@ No datasheet spec table exists. Facts stated in text:
 | Item | Value | Src |
 |---|---|---|
 | Material | PCB ("durable PCB material"); "non-copper PCB" on the STRIKER:BIT page | [PP] |
-| Thickness | **Not stated in Cytron text** (Features "Material & Thickness" is an image) | [PP] |
-| Dimensions | **Not stated in text** (Features "Dimension" is an image) | [PP] |
+| Thickness | 1.6 mm (Cytron Robo Base Series comparison image) | [PP: img] |
+| Dimensions | 109 × 88 × 1.6 mm (comparison image) | [PP: img] |
+| Use / labels / servo holes | "Robot Base, Adapter Board"; "No Label"; no servo mounting holes (comparison image) | [PP: img] |
 | Weight | Not stated | — |
 | Fixings used | Standard screws, nuts and standoffs; kit hardware is M3 | [PP] |
 | Kit options | Double Base 4WD (Mecanum Wheels) / Double Base 2WD (Rubber Wheels) / Double Base with Accessories / Single Base Only | [PP] |
@@ -52,7 +53,7 @@ No datasheet spec table exists. Facts stated in text:
 - **4WD = 4 TT motors + mecanum wheels; 2WD = 2 TT motors + 2 wheels + W420 castor** [PP].
 - **"Rubber Wheels" vs "plastic wheels":** option name vs packing list on the same page [PP] — quote the packing list.
 - Single Base Only = plate only, no hardware [PP].
-- No dimensions in text — do not state a size, and do not say "half the size of Robo Base".
+- Size 109 × 88 × 1.6 mm [PP: img] (Robo Base is 154 × 124 × 2 mm). Do not say "half the size of Robo Base".
 
 ## Power and electrical limits
 - None (mechanical part). Motor, servo and battery limits belong to the controller board's KB file (e.g. `motion-bit.md`, `reka-bit.md`, `maker-drive.md`, `robo-pico.md`).
@@ -78,10 +79,10 @@ No datasheet spec table exists. Facts stated in text:
 |---|---|---|---|
 | 2WD wheel type | [PP] option name "Double Base 2WD (Rubber Wheels)" | [PP] packing list "2x plastic wheels"; [3P] Switch Science 10530 also "plastic wheel" | Use the packing-list wording; tyre material in Needs verification |
 | TT motor brackets in 4WD kit | [PP] 2x TT DC gear motor bracket | [3P] Switch Science 10531 (4WD Mini) lists 4x TT DC gear motor bracket | [PP] wins (2x); count goes to Needs verification |
-| Plate thickness | [PP] not stated in text | [3P] The Pi Hut: "1.6 mm non-copper PCB" | Not stated as spec; Needs verification |
+| Plate thickness | [PP: img] 1.6 mm | [3P] The Pi Hut: "1.6 mm non-copper PCB" | Consistent; Cytron image confirms 1.6 mm |
 
 ## Needs verification
-- **Dimensions, thickness (1.6 mm per The Pi Hut [3P]) and weight** — images only on the Cytron page.
+- **Weight** — not stated. (Dimensions and thickness now from Cytron's comparison image, reviewed 19 Oct 2026.)
 - **TT motor bracket count in the 4WD kit** (2 per Cytron page vs 4 per Switch Science) — see Conflicts.
 - **"2x 48mm Mecanum left and right wheel set"** — whether this means 4 wheels in total.
 - **Wheel/tyre material** for 2WD (rubber vs plastic).
