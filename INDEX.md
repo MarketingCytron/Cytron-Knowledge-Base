@@ -43,7 +43,7 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 | Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium** |
 | Maker UNO Plus | [`maker-uno-plus.md`](maker-uno-plus.md) | `MAKER-UNO-PLUS` | ATmega328P + **FT231X** (not CH340) | User's Manual Rev 1.0, Oct 2018 (no datasheet) | **Medium** |
 | Maker UNO X | [`maker-uno-x.md`](maker-uno-x.md) | `MAKER-UNO-X` | ATmega328P + CH340-family USB chip (page: "CH9340") | Guide book v1.5, Feb 2023 + product page (no datasheet) | **Medium** |
-| Maker Nano | [`maker-nano.md`](maker-nano.md) | `MAKER-NANO` | Not stated by Cytron (resellers: ATmega328P + CH340C) | Datasheet Rev 1.0, Jun 2020 | **Medium-low** |
+| Maker Nano | [`maker-nano.md`](maker-nano.md) | `MAKER-NANO` | ATmega328P + **CH340C** | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images | **Medium-high** |
 | Cytron UNO | [`cytron-uno.md`](cytron-uno.md) | `CT-UNO` | ATmega328P + **FT231X** | User's Manual V1.0, Nov 2014 (no datasheet) | **Medium-high** |
 | Cytron UNO Special Edition | [`cytron-uno-se.md`](cytron-uno-se.md) | `CT-UNO-SE` | ATmega328P + **FT231X** (same as CT-UNO) | Product page (CT-UNO + side connectors) + CT-UNO manual | **Medium-high** |
 | Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
@@ -54,10 +54,10 @@ Arduino-board notes for every agent:
 - **Maker UNO has no DC jack and no VIN** — USB Micro-B 4.8–5.2 V only. Select "Arduino Uno" in the IDE; CH340 driver needed.
 - **Maker Uno RP2040 is 3.3 V logic** — only 3.3 V-compatible UNO shields; power from USB-C or 1-cell LiPo (3.6–6 V); code uses GP numbers, not UNO D-numbers.
 - **Robo Uno Shield:** 3.6–6 V single-cell input only; cannot be powered from the Arduino VIN pin; its micro-USB charges/powers the shield only (no code upload). Follow Cytron's code for motor pins (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`) until the design team resolves the datasheet conflict. Grove 4 and the Maker Port share A4/A5; buttons D2/D3 are the Grove 6 pins.
-- **USB-serial chips differ:** Maker UNO = CH340; **Maker UNO Plus and Cytron UNO = FTDI FT231X** (use the FTDI driver, not Maker UNO's CH340 steps). Maker Nano's chip is not stated by Cytron.
+- **USB-serial chips differ:** Maker UNO = CH340; **Maker UNO Plus and Cytron UNO = FTDI FT231X** (use the FTDI driver, not Maker UNO's CH340 steps). **Maker Nano = CH340C** (CH34X driver; Cytron comparison table).
 - **Maker UNO Plus is USB-only** (4.8–5.2 V; no DC jack, no Vin, no 5 V regulator); button D2 needs `INPUT_PULLUP`; buzzer D8 with mute switch; LEDs on pins 2–13.
 - **Maker UNO X:** USB Micro-B only (no DC jack or Vin named); the built-in LEDs and buzzer (D8) work only with the **Debug** switch on — switch Debug off to use D8 for something else; button D2 needs `INPUT_PULLUP`; USB driver does not support Windows 7.
-- **Maker Nano power:** Vin 7.0–30.0 V, but the 5V pin gives only **100 mA** and 3V3 only **50 mA** (including the board's own use) — never copy Maker UNO's 500 mA. D2–D13 LEDs light whenever the pin is high (cut a trace to disable).
+- **Maker Nano power:** Vin 7.0–30.0 V, but the 5V pin gives only **100 mA** and 3V3 only **50 mA** (including the board's own use) — never copy Maker UNO's 500 mA. D2–D13 LEDs light whenever the pin is high (cut a trace to disable). A6/A7 are analog-only. IDE board: "Arduino Nano".
 - **Cytron UNO:** DC jack 7–15 V recommended (6–20 V absolute); 5 V regulator 1 A max only stated "with Vin at 12V"; 3.3 V 500 mA; select "Arduino Uno"; one user LED (D13), no button or buzzer. **Cytron UNO Special Edition (CT-UNO-SE)** is the same board with special side connectors for stacking on top of or under a shield (product page, 19 Oct 2026).
 
 ### Arduino shields (non-motor)

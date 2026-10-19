@@ -26,17 +26,21 @@ An Arduino Nano-form-factor board whose pin header is compatible with the origin
 - Mute switch: mutes the piezo buzzer if pin D8 is used for other purposes
 - User programmable button: connected to pin D2 internally, accessible from the user program
 - Reset button
-- Microcontroller: [NOT STATED]
-- USB-serial chip and driver: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Microcontroller: ATmega328P, 16MHz; 32KB flash, 2KB SRAM, 1KB EEPROM
+- I/O: 20 digital I/O, 6 PWM, 8 analog inputs (10-bit; A6 and A7 analog only), 1 UART, 1 SPI, 1 I2C, 2 external interrupts
+- Power supply: Vin or USB; onboard 5V regulator
+- USB-serial chip: CH340C; CH34X driver
+- Dimensions: 45.80 mm × 21.09 mm (1mm longer and 3mm wider than the original Arduino Nano); header rows 15.24 mm apart
+- Packing list: 1 x Maker Nano
 - Warranty: 12 months (product page)
 
 ## Interfaces and compatibility
 - Pin header: "Compatible with original Arduino Nano"
 - Arduino: program uploaded from PC through the Micro USB port
-- Arduino IDE board to select: [NOT STATED]
-- Differences from the genuine Arduino Nano: [NOT STATED] (the datasheet's comparison table is an image); stated additions are the D2 – D13 IO LEDs, buzzer with mute switch, user button on D2, power LEDs and IO-LED enable jumper
-- Box contents: [NOT STATED]
+- Arduino IDE board: Arduino Nano (Cytron tutorial); processor/bootloader option [NOT STATED]
+- Same pin arrangement as the original Arduino Nano; compatible with most Arduino Nano daughter boards; breadboard friendly
+- Differences from Arduino Nano 3.x: Vin 7 – 30V (Nano 7 – 12V), CH340C instead of FTDI FT232RL, 12 programmable LEDs on D2 – D13, programmable push button on D2, piezo buzzer on D8, 21 × 46 mm
+- USB Micro B cable: not included (sold separately)
 
 ## Use cases
 - Building projects with an Arduino Nano-compatible board ("Simplifying Arduino for Projects")
@@ -49,13 +53,16 @@ An Arduino Nano-form-factor board whose pin header is compatible with the origin
 - Digital and analog inputs must not exceed 5.0 V
 - D8 is shared with the piezo buzzer: use the mute switch when D8 is used for other purposes
 - D2 is used by the onboard user button
+- A6 and A7 are analog inputs only
+- Needs the CH34X USB driver
 - The digital IO LEDs on D2 – D13 light when a pin is high; they can only be disabled by cutting the enable-jumper trace
 
 ## Positioning (kept apart from specs)
 - "Simplifying Arduino for Projects"
+- "Love Maker UNO? But it's too big to fit into your project?" — a smaller board that keeps Maker UNO's learning features (LEDs, button, buzzer)
 
 ## Price band
-RM37.38 (Cytron product page, read 2026-10-16)
+RM37.38 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-nano-simplifying-arduino-for-projects
