@@ -11,7 +11,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 
 ## Specs and functions
 - Product code: KIT-IRIV-EAI-PPE
-- Availability: by enquiry (product page, 2026-10-19)
+- Sales status: Inquiry (sold by enquiry on the product page, 2026-10-19)
 - Warranty: 12 months
 - Controller: 1x IRIV EdgeAI CM5 Wireless, 8GB RAM, 32GB eMMC, 26 TOPS AI
 - Processor: Raspberry Pi Compute Module 5, Broadcom BCM2712 quad-core 64-bit Cortex-A76 (ARM v8) @ 2.4GHz
@@ -32,12 +32,12 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Digital inputs: 2x isolated (up to 50V)
 - Wireless: 2.4/5.0 GHz IEEE 802.11 b/g/n/ac WiFi, Bluetooth 5.0, BLE
 - Display: 1x full-size HDMI 2.0 (up to 4K@60Hz); SSD1315 0.96" OLED status display
-- Kit power supply: industrial switching power supply 24V 36W, wide DC and AC input voltage
+- Kit power supply: Industry Switching Power Supply 24V 36W (Cytron PS-36W-24V, Mornsun LM35-23B24R2): 80–305 VAC 47–63 Hz or 100–430 VDC input, 24 V 1.5 A output, short-circuit, over-current and over-voltage protection; operating −40 to +85 ℃ with derating above +50 ℃
 - Controller power input: DC 10–30V, surge-protected
 - Cooling: 24V DC exhaust fan with 2x intake/exhaust dust filters
 - Enclosure: IP67 ABS industrial enclosure, 250 × 350 × 160mm
 - Controller dimensions: 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
-- Controller operating temperature: -20 to 60 ℃; kit operating temperature [NOT STATED]
+- Controller: same controller as the IRIV EdgeAI CM5 (Cytron team, 2026-10-19); operating temperature −20 to 60 ℃; kit operating temperature [NOT STATED]
 - First run: connect the box to the local network (wired LAN recommended), read its IP address on the front OLED, open it in a web browser, sign in with the factory account from the Quick Start Guide; the box forces a new password (at least 8 characters) on first sign-in
 - Setup wizard: Secure account → Add camera → Ready; camera discovery, shared-credential pairing or manual RTSP URL; re-run from Settings → Setup wizard
 - Runs without internet: inference is on the device and video does not leave the site

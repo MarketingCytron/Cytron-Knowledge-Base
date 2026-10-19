@@ -9,7 +9,7 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 
 | Queue | KB # | Product | Code | Family | Sales status | Confidence | Priority | Open checks | Conflicts | Gaps | Review | Primary source |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2 | 107 | [IRIV EdgeAI Safety Box Kit](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV industrial | Status not confirmed | Medium-low | High | 12 | 14 | 3 | Waiting on team (2026-10-19) | No kit datasheet exists. Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 |
+| 2 | 107 | [IRIV EdgeAI Safety Box Kit](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV industrial | Inquiry | Medium-low | High | 13 | 14 | 3 | Waiting on team (2026-10-19) | No kit datasheet exists. Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 |
 | 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Low | High | 4 | 2 | 7 | Not started | Shares the CT-UNO manual, which never mentions SE |
 | 4 | 8 | [Maker Nano](maker-nano.md) | `MAKER-NANO` | Arduino-compatible boards | Sold | Medium-low | High | 11 | 1 | 6 | Not started | Datasheet Rev 1.0, Jun 2020 |
 | 5 | 37 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium-low | High | 11 | 4 | 6 | Not started | Product page + course overview + pxt-edubit v1.15.0 (no datasheet readable) |

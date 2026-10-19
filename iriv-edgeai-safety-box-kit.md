@@ -24,11 +24,17 @@ Kit-level rows. All other controller specs: `kb/iriv-edgeai-cm5.md` [DS-CM5].
 | Processor | Raspberry Pi Compute Module 5, Broadcom BCM2712 quad-core 64-bit Cortex-A76 (ARM v8) @ 2.4GHz | [DS-CM5] |
 | Ethernet (controller) | 2x RJ45 Gigabit (10/100/1000M) | [DS-CM5] |
 | Digital outputs | 2x isolated, dry contact (solid state relay), max 50 V (DC or AC load), max 500 mA, 1500 Vrms isolation | [DS-CM5] |
+| Kit power supply | 1x "Industry Switching Power Supply 24V 36W, Wide DC and AC Input Voltage" [PP] — the same name as Cytron product **PS-36W-24V** (brand Mornsun, LM35-23BxxR2 series, 24 V model LM35-23B24R2) [PP: PS-36W-24V][VEN: Mornsun] | [PP] |
+| PSU input | 80–305 VAC (47–63 Hz) or 100–430 VDC on the same terminals; input current 0.8 A at 115 VAC, 0.6 A at 230 VAC | [PP: PS-36W-24V][VEN: Mornsun] |
+| PSU output | 24 V, 1.5 A, 36 W (adjustable 22.8–27.6 V); efficiency 88.5% typ. at 230 VAC | [PP: PS-36W-24V][VEN: Mornsun] |
+| PSU protection | Short circuit (hiccup, self-recovery, <3 s), over-current 120–200% Io, over-voltage ≤33.6 V; 4000 VAC input–output isolation; Class I (case must be earthed) | [VEN: Mornsun] |
+| PSU environment | Operating −40 to +85 ℃ with derating above +50 ℃ (2.5 %/℃ from +50 to +70 ℃); 20–90 %RH non-condensing; free-air convection cooling — "for applications in closed environment please consult Mornsun FAE"; 99 × 65 × 30 mm, 150 g | [VEN: Mornsun] |
 | Enclosure | "Ready-to-Deploy IP67 ABS Industrial Enclosure" | [PP] |
 | Enclosure dimensions | 250mm × 350mm × 160mm | [PP] |
 | Controller dimensions | 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors) | [DS-CM5] |
 | Camera stream capacity | Up to 6 RTSP IP camera sub-streams, 640x360 @ 15–25 FPS, H.264/H.265 | [PP] |
 | Status display | Front OLED shows the box's IP address for first sign-in | [QSG] |
+| Operating temperature | Kit: not stated. Parts: controller −20 to 60 ℃ [DS-CM5]; PSU −40 to +85 ℃ with derating above +50 ℃ [VEN: Mornsun]. The enclosed box's own range (with fan) is still for the team | [DS-CM5][VEN: Mornsun] |
 | Controller power consumption | Max 11 W (stress-ng CPU test, USB load excluded; AI HAT+/NVMe load not stated) | [DS-CM5] |
 | Weight, humidity, certifications, kit power consumption | Not stated | — |
 
@@ -53,7 +59,9 @@ How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the
 - Do not mix kit specs into IRIV EdgeAI CM5 content, and do not call the kit "IRIV EdgeAI CM5".
 
 ## Power and electrical limits
-- Kit mains input: UK plug cord with 13A fuse (C13) into an IEC fused, switched inlet; 24V 36W switching PSU with "Wide DC and AC Input Voltage" — numeric AC input range not stated [PP].
+- Kit mains input: UK plug cord with 13A fuse (C13) into an IEC fused, switched inlet; 24V 36W PSU (PS-36W-24V / Mornsun LM35-23B24R2) accepts 80–305 VAC 47–63 Hz or 100–430 VDC; 0.6 A input at 230 VAC [PP: PS-36W-24V][VEN: Mornsun].
+- PSU output 24 V 1.5 A feeds the controller (VIN 10–30 V) and the 24V fan; the exact wiring through the 6P terminal block is not documented.
+- The PSU is rated for free-air convection; Mornsun asks users to consult them for closed enclosures [VEN: Mornsun] — one reason the kit's fan and the box's own temperature rating matter.
 - Controller VIN: 10–30 VDC, surge protected up to 60 V for 20 ms; max 11 W under CPU stress (USB load excluded) [DS-CM5].
 - DO: 50 V / 500 mA per channel, isolation 1500 Vrms [DS-CM5].
 
@@ -82,8 +90,9 @@ How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the
 | Live View layouts | [LP]: "Smart, Grid, Focus, Single" | [QSG]: Auto, Grid, Focus, Single + separate Smart Live switch | [QSG] (more detailed, Cytron tutorial) |
 
 ## Needs verification
-- A kit datasheet or user manual (none found). IP67 rating as stated applies to the ABS enclosure; whether it holds for the assembled kit with fan, filters and RJ45 pass-throughs is not stated.
-- Kit operating temperature, humidity, weight, certifications, PSU AC/DC input range, total kit power consumption.
+- Team answer (2026-10-19): the kit uses the same controller as the IRIV EdgeAI CM5, so the CM5 datasheet is the controller spec [DT]. Still no kit-level sheet for the assembled box. IP67 rating as stated applies to the ABS enclosure; whether it holds for the assembled kit with fan, filters and RJ45 pass-throughs is not stated.
+- Kit operating temperature and humidity of the assembled box, weight, certifications, total kit power consumption.
+- Confirm the kit ships the PS-36W-24V (Mornsun LM35-23B24R2) — identified by its identical product name.
 - Internal wiring (PSU → controller VIN, fan, 6P terminal block); whether the fan is temperature-controlled.
 - Which DO the PPE alarm uses (DO0 implied, not stated) and whether DO assignment is configurable.
 - Three live product-page errors to fix (DO "directly trigger 50V DC", PSU "DC 10V–30V", "2 x MIPI CSI" under camera connectivity) — see Conflicts.
@@ -94,6 +103,8 @@ How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the
 ## Sources
 - [PP] https://my.cytron.io/p-iriv-edgeai-safety-box-kit — read 2026-10-19 (RM7,999.00, Enquiry, 12-month warranty, description, features, hardware specs, packing list, resources)
 - [QSG] IRIV EdgeAI Safety Box: Quick Start Guide (Asri Ruslan, 17 Aug 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-quick-start-guide
+- [PP: PS-36W-24V] Industry Switching Power Supply 24V 36W, Wide DC and AC Input Voltage (Mornsun, RM89.00) — https://my.cytron.io/p-industry-switching-power-supply-24v-36w-wide-dc-and-ac-input-voltage
+- [VEN: Mornsun] LM35-23BxxR2 datasheet 2023.07.14-A/1 (linked from that page) — https://drive.google.com/file/d/1A2HJg8hk1-A60YMEfViTI_Fh13rufIcy/view
 - [PP: tutorial] IRIV EdgeAI Safety Box: Ready for OSHMP30 (Asri Ruslan, 12 Oct 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-ready-for-oshmp30
 - [LP] Landing page — https://marketingcytron.github.io/iriv-edgeai-safety-box/ (also https://my.cytron.io/iriv-edgeai-safety-box)
 - [VEN] Raspberry Pi AI HAT+ (Hailo-8 26 TOPS / Hailo-8L 13 TOPS) — https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
