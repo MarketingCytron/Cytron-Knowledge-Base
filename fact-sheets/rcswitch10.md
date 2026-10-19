@@ -16,12 +16,10 @@ An RC controlled relay switch that can be turned on and off by using an RC contr
 - Dimension: 43.4mm x 38.3mm x 17.4mm (product page)
 - Control: turned on and off by using an RC controller (product page)
 - Warranty: 12 months (product page)
-- RC input pulse widths, switching threshold and failsafe behaviour: [NOT STATED]
-- Supply voltage and current of the switch board: [NOT STATED]
+- RC-side supply: diagram shows "4V-6V"; pin and current draw [NOT STATED]
 - Package contents: [NOT STATED]
 
 ## Interfaces and compatibility
-- Input: RC controller (product page); connector type and pin order [NOT STATED]
 - Output: one SPDT relay contact set rated 250VAC, 30VDC, 10A (product page)
 - Compatible RC receivers/transmitters: [NOT STATED]
 - Software: none required; operated by an RC controller (product page)
@@ -35,9 +33,9 @@ An RC controlled relay switch that can be turned on and off by using an RC contr
 - Non-critical automotive electrics like glow wire
 
 ## Known limitations
-- No Cytron datasheet or user manual is available; the product page's connection-diagram link returns "not found"
-- RC signal thresholds and failsafe (signal-loss) behaviour are not published
-- Board supply voltage, current draw, connector type and package contents are not stated
+- The relay switches only near the ends of the RC pulse range (ON below 1.2 ms, OFF above 1.8 ms); behaviour between 1.2 and 1.8 ms is not stated
+- Switch is OFF when no RC signal is received; a receiver that keeps sending pulses after losing the transmitter is not "no signal"
+- Board current draw, connector type and package contents are not stated
 - Contact rating is given only as 250VAC, 30VDC, 10A; no load-type derating is stated
 
 ## Positioning (kept apart from specs)
