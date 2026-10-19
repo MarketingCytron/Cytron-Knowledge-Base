@@ -8570,18 +8570,24 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 
 ## Specs and functions
 - Product code: KIT-IRIV-EAI-PPE
+- Availability: by enquiry (product page, 2026-10-19)
+- Warranty: 12 months
 - Controller: 1x IRIV EdgeAI CM5 Wireless, 8GB RAM, 32GB eMMC, 26 TOPS AI
 - Processor: Raspberry Pi Compute Module 5, Broadcom BCM2712 quad-core 64-bit Cortex-A76 (ARM v8) @ 2.4GHz
+- RAM: 8GB (controller datasheet type: LPDDR4-4267)
 - Storage: 32GB eMMC + pre-installed 128GB NVMe 2242 B+M-Key MakerDisk SSD
+- AI accelerator: Hailo-8 NPU, 26 TOPS, on the Raspberry Pi AI HAT+ PCIe port
 - Camera stream capacity: up to 6 RTSP IP camera sub-streams, 640x360 @ 15–25 FPS, H.264/H.265
 - PPE detection: safety helmet and hi-vis / safety vest, enabled per camera; only non-compliant PPE raises an alert
 - Restricted zones: polygon or circle zones drawn on the live view; multiple zones per camera; detects people, vehicles and animals entering; zone entry tracked until clear
 - Alerts: isolated digital outputs DO0/DO1 (stack lights, buzzers/sirens, door interlocks, relays), Telegram, Email, MQTT
 - Event records: timestamp, camera, detection type, snapshot; optional event clips; filter by date range, camera, zone, detection type
-- Dashboard: live camera streams with detection boxes, confidence scores and recent events; layouts Smart, Grid, Focus, Single; multi-user access control
+- Web interface: five tabs — Live View, Analytics, Events, Reports, Settings (cameras, models, alerts, users, system)
+- Live View: detections drawn on each camera tile; layouts Auto, Grid, Focus, Single; Smart Live switch stops idle tiles after about 30 seconds and resumes on motion or a detection; cameras can be started and stopped
 - Analytics: compliance rates, PPE vs zone events, most active zone, top violation type, helmet-vs-vest split
-- Reports: CSV and PDF export
+- Reports: audit-ready CSV/PDF reports; Reports tab generates a PDF safety report for a period; Workplace Safety Audit report on demand or by email every month
 - Software: pre-loaded web UI and pre-trained PPE and safety-zone models; on-board database; inference runs locally on the Hailo NPU, video is not uploaded to the cloud
+- Digital outputs: 2x isolated dry contact (solid state relay), max 50 V DC or AC, max 500 mA, 1500 Vrms isolation (controller datasheet); product page says "up to 50V DC"
 - Digital inputs: 2x isolated (up to 50V)
 - Wireless: 2.4/5.0 GHz IEEE 802.11 b/g/n/ac WiFi, Bluetooth 5.0, BLE
 - Display: 1x full-size HDMI 2.0 (up to 4K@60Hz); SSD1315 0.96" OLED status display
@@ -8591,7 +8597,9 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Enclosure: IP67 ABS industrial enclosure, 250 × 350 × 160mm
 - Controller dimensions: 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - Controller operating temperature: -20 to 60 ℃; kit operating temperature [NOT STATED]
-- Setup steps: connect existing cameras; discover via ONVIF or add RTSP URL; draw restricted zones on the live frame; enable helmet and/or vest detection per camera; detection and event logging start
+- First run: connect the box to the local network (wired LAN recommended), read its IP address on the front OLED, open it in a web browser, sign in with the factory account from the Quick Start Guide; the box forces a new password (at least 8 characters) on first sign-in
+- Setup wizard: Secure account → Add camera → Ready; camera discovery, shared-credential pairing or manual RTSP URL; re-run from Settings → Setup wizard
+- Runs without internet: inference is on the device and video does not leave the site
 - Typical setup is stated as under 10 minutes per camera
 - In the box: 1x IRIV EdgeAI CM5 Wireless 8GB RAM / 32GB eMMC / 26 TOPS AI; 1x NVMe 2242 B+M-Key MakerDisk SSD 128GB; 2x Gigabit Ethernet cables 0.5m; 1x industrial switching power supply 24V 36W; 1x UK plug power cord with 13A fuse, C13 (D-shape); 1x IEC fuse chassis male power plug with switch; 2x female-to-female RJ45 extension ports; 1x 24V DC fan; 2x intake/exhaust filters; 1x DIN-rail power-distribution terminal block 6P
 
@@ -8641,7 +8649,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Aligned with Malaysia's OSHMP30 framework
 
 ## Price band
-[NOT STATED]
+RM7,999.00 (Cytron product page, availability "Enquiry", read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-edgeai-safety-box-kit
@@ -8650,10 +8658,10 @@ https://my.cytron.io/p-iriv-edgeai-safety-box-kit
 [NOT STATED]
 
 ## Source type
-[NOT STATED]
+Website
 
 ## Source link
-[NOT STATED]
+https://my.cytron.io/p-iriv-edgeai-safety-box-kit
 
 # Product fact sheets
 

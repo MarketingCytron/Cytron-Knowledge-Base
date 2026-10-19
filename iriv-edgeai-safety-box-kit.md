@@ -4,7 +4,8 @@
 |---|---|
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: live product page, Quick Start Guide (17 Aug 2026), OSHMP30 article (12 Oct 2026) and GitHub landing page read; still no kit datasheet or user manual |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -17,14 +18,22 @@ Kit-level rows. All other controller specs: `kb/iriv-edgeai-cm5.md` [DS-CM5].
 
 | Item | Value | Src |
 |---|---|---|
+| Product code | KIT-IRIV-EAI-PPE | [PP] |
+| Price / availability | RM7,999.00; availability "Enquiry" (2026-10-19) | [PP] |
+| Warranty | 12 months | [PP] |
 | Processor | Raspberry Pi Compute Module 5, Broadcom BCM2712 quad-core 64-bit Cortex-A76 (ARM v8) @ 2.4GHz | [DS-CM5] |
 | Ethernet (controller) | 2x RJ45 Gigabit (10/100/1000M) | [DS-CM5] |
 | Digital outputs | 2x isolated, dry contact (solid state relay), max 50 V (DC or AC load), max 500 mA, 1500 Vrms isolation | [DS-CM5] |
+| Enclosure | "Ready-to-Deploy IP67 ABS Industrial Enclosure" | [PP] |
+| Enclosure dimensions | 250mm × 350mm × 160mm | [PP] |
 | Controller dimensions | 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors) | [DS-CM5] |
+| Camera stream capacity | Up to 6 RTSP IP camera sub-streams, 640x360 @ 15–25 FPS, H.264/H.265 | [PP] |
+| Status display | Front OLED shows the box's IP address for first sign-in | [QSG] |
 | Controller power consumption | Max 11 W (stress-ng CPU test, USB load excluded; AI HAT+/NVMe load not stated) | [DS-CM5] |
 | Weight, humidity, certifications, kit power consumption | Not stated | — |
 
 ## Interfaces, terminals and pin mapping
+No kit-specific pin map is published. The kit's alarm outputs are the controller's DO0/DO1 [PP]. Controller mapping from DS-CM5 §5.1 (full table in `kb/iriv-edgeai-cm5.md`):
 
 | Function | Channel | Raspberry Pi CM5 | Kit use |
 |---|---|---|---|
@@ -37,14 +46,25 @@ Pluggable terminal (DS-CM5): top row VIN · RS485 A/B/G · DO0 (2 contacts) · L
 How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the box is **not documented** in any source read.
 
 ## Rules and gotchas (for code, wiring and tutorials)
+- **DO0/DO1 are dry contacts (SSR), not voltage outputs** — max 50 V DC or AC, 500 mA; the siren/stack light needs its own supply [DS-CM5]. The live page wording "can directly trigger 50V DC industrial stack lights" and "up to 50V DC" [PP] must not be read as "the DO supplies 50 V". For inductive loads Cytron recommends a flyback diode [DS-CM5].
+- **AI accelerator is Hailo-8, 26 TOPS** — not the 13 TOPS (Hailo-8L) option of the standalone controller [PP][VEN]. It sits on the PCIe port as the AI HAT+; never call it an M.2 module — the M.2 Key-M socket holds the 128GB SSD [PP][DS-CM5].
+- **Kit PSU vs controller input:** the live page puts "(DC 10V–30V wide input range with surge protection)" after the 24V 36W PSU [PP], but 10–30 V DC is the controller's VIN [DS-CM5] and the packing list calls the PSU "Wide DC and AC Input Voltage" [PP]. Do not quote 10–30 V as the kit's mains input.
+- **Camera inputs:** the live page lists "2 x MIPI CSI ports" under Camera Connectivity [PP], but the kit software is documented only for RTSP IP cameras [PP][QSG]. Do not say the kit works with CSI cameras.
 - Do not mix kit specs into IRIV EdgeAI CM5 content, and do not call the kit "IRIV EdgeAI CM5".
 
 ## Power and electrical limits
+- Kit mains input: UK plug cord with 13A fuse (C13) into an IEC fused, switched inlet; 24V 36W switching PSU with "Wide DC and AC Input Voltage" — numeric AC input range not stated [PP].
 - Controller VIN: 10–30 VDC, surge protected up to 60 V for 20 ms; max 11 W under CPU stress (USB load excluded) [DS-CM5].
 - DO: 50 V / 500 mA per channel, isolation 1500 Vrms [DS-CM5].
 
 ## Software support
+- **Export:** "audit-ready CSV/PDF reports" [PP]; Reports tab generates PDF; Events has export [QSG]; the landing page lists CSV plus snapshots and optional clips [LP].
+- **Five tabs** [QSG]: Live View (camera grid with detections drawn live; zones drawn here), Analytics (charts and summaries over time), Events (record with evidence, filters and export), Reports (generate a PDF safety report for a period), Settings (cameras, models, alerts, users, system).
+- **Live View controls** [QSG]: layouts Auto, Grid, Focus, Single; camera list with Start/Stop (a stopped camera produces no detections or events); tile full screen, previous/next camera (← →), camera settings; **Smart Live** switch — an idle tile stops sending pictures after about 30 seconds and resumes on motion or a detection; status strip with violation status and alert counts by PPE type and zone; recent-events rail with snapshot preview.
+- **Offline operation:** all inference is on the device; video does not leave the site and the system keeps working without internet [QSG].
+- **Reports** [PP: tutorial]: a ready-made "Workplace Safety Audit" report on demand, or by email every month; each situation is saved once with a photo and a short video.
 - No "SmartHub" dashboard feature is mentioned in any Safety Box source read (see Needs verification).
+- Cytron articles: Quick Start Guide https://my.cytron.io/tutorial/iriv-edgeai-safety-box-quick-start-guide [QSG]; OSHMP30 article https://my.cytron.io/tutorial/iriv-edgeai-safety-box-ready-for-oshmp30 [PP: tutorial]. Product-page resources also link the CM5 "Getting Started" video and guide and a "Bookworm OS For IRIV Edge AI" image (controller-level, not kit-specific) [PP].
 
 ## Compatibility and accessories
 - Controller expansion still available: 1x mPCIe (USB 2.0 only, 4G/LoRa), 2x MIPI CSI, 2x USB 3.0, RS485, DI [DS-CM5]. Not stated as supported by the Safety Box software.
@@ -56,16 +76,24 @@ How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
+| DO rating | Live [PP] (still): "Isolated Digital Outputs (up to 50V DC)", "can directly trigger 50V DC industrial stack lights" | DS-CM5: dry contact, max 50 V DC **or AC**, 500 mA | DS-CM5 wins; dry contact, load needs own supply. **Fix the live page** |
+| Power input | Live [PP]: "24V 36W Industrial Switching Power Supply (DC 10V–30V wide input range with surge protection)" | Live packing list [PP]: PSU "Wide DC and AC Input Voltage"; DS-CM5: 10–30 V DC is the controller VIN | 10–30 V is the controller VIN; kit is mains-fed via the PSU. **Fix the live page** |
+| Camera inputs | Live [PP] Camera Connectivity: "2 x RJ45 Gigabit Ethernet + 2 x MIPI CSI ports" | Live [PP] note and [QSG]: kit "requires IP cameras with RTSP streaming support" | Kit software is documented for RTSP only; CSI ports are controller hardware. Ask whether to drop CSI from the kit page |
+| Live View layouts | [LP]: "Smart, Grid, Focus, Single" | [QSG]: Auto, Grid, Focus, Single + separate Smart Live switch | [QSG] (more detailed, Cytron tutorial) |
 
 ## Needs verification
 - A kit datasheet or user manual (none found). IP67 rating as stated applies to the ABS enclosure; whether it holds for the assembled kit with fan, filters and RJ45 pass-throughs is not stated.
 - Kit operating temperature, humidity, weight, certifications, PSU AC/DC input range, total kit power consumption.
 - Internal wiring (PSU → controller VIN, fan, 6P terminal block); whether the fan is temperature-controlled.
 - Which DO the PPE alarm uses (DO0 implied, not stated) and whether DO assignment is configurable.
+- Three live product-page errors to fix (DO "directly trigger 50V DC", PSU "DC 10V–30V", "2 x MIPI CSI" under camera connectivity) — see Conflicts.
 - Any "SmartHub" dashboard feature — no Safety Box source mentions it; IRIV SmartHub CM5 is a separate product. Do not claim a link.
-- Whether "EAI-W832-26TOPS" is the controller SKU; price; live product-page content after 2026-09-18.
+- Whether "EAI-W832-26TOPS" is the controller SKU.
 - OS image / software version, update channel, licence terms; whether a subscription is needed.
 
 ## Sources
-- [PP] https://my.cytron.io/p-iriv-edgeai-safety-box-kit and landing page https://my.cytron.io/iriv-edgeai-safety-box — not reachable 2026-10-16; facts via  KB below
+- [PP] https://my.cytron.io/p-iriv-edgeai-safety-box-kit — read 2026-10-19 (RM7,999.00, Enquiry, 12-month warranty, description, features, hardware specs, packing list, resources)
+- [QSG] IRIV EdgeAI Safety Box: Quick Start Guide (Asri Ruslan, 17 Aug 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-quick-start-guide
+- [PP: tutorial] IRIV EdgeAI Safety Box: Ready for OSHMP30 (Asri Ruslan, 12 Oct 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-ready-for-oshmp30
+- [LP] Landing page — https://marketingcytron.github.io/iriv-edgeai-safety-box/ (also https://my.cytron.io/iriv-edgeai-safety-box)
 - [VEN] Raspberry Pi AI HAT+ (Hailo-8 26 TOPS / Hailo-8L 13 TOPS) — https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html
