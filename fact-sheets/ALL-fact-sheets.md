@@ -1342,6 +1342,71 @@ https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/
 # Product fact sheets
 
 ## Product name
+Cytron Prototyping Shield (SHIELD-PROTO2)
+
+## Aliases
+SHIELD-PROTO2, Shield-Proto2, Cytron Prototyping Shield, Prototyping Shield for Arduino, Cytron Proto Shield, Cytron Arduino Proto Shield
+
+## What it is
+An Arduino prototyping shield with a standard 0.1" x 0.1" prototyping area, stackable headers, a reset button, one LED and GND and +5V rails, revised to be UNO R3 and Leonardo compatible. It is delivered assembled.
+
+## Specs and functions
+- Prototyping area: standard 0.1" x 0.1" (product page)
+- Headers: stackable, 4 rows of stackable header (product page)
+- Reset button: yes (product page)
+- LED: one LED for power or output indicator (product page)
+- Every pin extended out to two sides of the headers (product page)
+- Rails: GND and +5V (product page)
+- Mounting: 4 screw holes (product page)
+- ISP: pads for ISP prepared (product page)
+- SMD components: 4 SMD components (LED, push-button and resistor) soldered on the labelled PCB (product page)
+- Dimension: 68.58mm x 58.42mm (product page)
+- Delivered assembled (product page)
+- Packing list: 1x shield (product page)
+- Warranty: 12 months (product page)
+- LED circuit details: [NOT STATED]
+- Rail current rating: [NOT STATED]
+
+## Interfaces and compatibility
+- Compatible with Arduino UNO R3 and Leonardo (product page)
+- Mounts on the Arduino with stackable headers (product page)
+- ISP pads prepared; a fitted ISP header is [NOT STATED]
+- Software: none required; Fritzing files provided (product page)
+
+## Use cases
+- Building circuits on a standard 0.1" protoboard grid on top of an Arduino, without the Arduino's 0.1-inch header offset
+- Low-cost prototyping with maximum prototyping area within the Arduino dimensions
+
+## Known limitations
+- No Cytron datasheet or user manual; the product page is the only Cytron text source
+- Only pads for ISP are stated, not a fitted ISP header
+- How the LED is wired is not stated
+- No regulator, fuse or protection is stated; the +5V rail comes from the Arduino
+- Only UNO R3 and Leonardo compatibility is stated
+- Schematic and PCB prints are provided "given as is"
+
+## Positioning (kept apart from specs)
+- Product page: low cost, maximum prototyping area within Arduino dimensions
+- Product page: solves the 0.1-inch offset of the Arduino header versus standard protoboard
+
+## Price band
+RM14.70 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-cytron-prototyping-shield
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-cytron-prototyping-shield
+
+# Product fact sheets
+
+## Product name
 Maker UNO Edu Kit (Arduino Compatible)
 
 ## Aliases
@@ -2782,6 +2847,93 @@ https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1
 # Product fact sheets
 
 ## Product name
+EDU:BIT Training & Project Kit for micro:bit
+
+## Aliases
+V-EDUBIT, EDUBIT, EDUBIT-NB, EDU:BIT, EDU BIT, EDU-BIT, EDU:BIT Training & Project Kit, EDU:BIT Classroom Pack
+
+## What it is
+A micro:bit training and project kit: a board with built-in modules (buzzer, sensors, LEDs, buttons, servo and DC motor ports) plus a guide book of 10+1 coding lessons, game accessories, a servo motor and a DC motor. It works with micro:bit V1 and V2.
+
+## Specs and functions
+- Product code: V-EDUBIT (board code EDUBIT; reseller EDUBIT-NB)
+- 1x piezo buzzer with audio jack
+- 1x sound sensor (micro:bit P1, analog)
+- 1x potentiometer (micro:bit P2, analog)
+- 1x IR sensor (micro:bit P8, digital)
+- 4x programmable RGB LEDs (micro:bit P13)
+- 3x big LEDs, traffic light: red P14, yellow P15, green P16
+- 2x push buttons (in parallel with micro:bit buttons A and B)
+- 3x servo ports and 2x DC motor ports, driven by a dedicated controller and power supply (PIC16F1937 co-processor at I2C address 0x08, Cytron GitHub)
+- 1x I2C port (3.3V)
+- Indicator LEDs for digital and analog IO pins; each feature and its micro:bit IO pin labelled on the board
+- Modules can be broken off the board and reconnected with plug-and-play (Grove) cables
+- Works out of the box: lights and melody on button press, no wiring needed
+- Dimension: 157.50 mm x 124.50 mm x 19.00 mm
+- Power input voltage / connector: [NOT STATED]
+- Motor and servo current limits: [NOT STATED]
+- Weight: [NOT STATED]
+- Warranty: 12 months
+- Packing list (with micro:bit V2): 1x EDU:BIT board, 1x micro:bit V2, 1x step-by-step guide book, 1x USB power and data cable, 2x game maps, 2x game accessories, 7x Grove cables, 1x servo motor, 1x DC motor, 1x pulley wheel, 1x fan blade
+- Without micro:bit option: same contents minus the micro:bit
+- Classroom Pack: 10 sets, each with micro:bit V2
+- Guide book: 10 chapters + 1 bonus — Hello, World!; Rock, Paper, Scissors (Button Bit); Music (Music Bit); Win, Lose or Draw (Traffic Light Bit); IR Digital Dice / Snakes and Ladders (IR Bit); Tag, You're It (Potentio Bit); Applause (Sound Bit); Let's Take a Spin / Finger Twister (DC motor); Penalty Shoot-Out (servo); Mastermind (RGB Bit); Bonus: Simon Says with LEDs (radio)
+- Guide book PDFs: English, Malay, Chinese, Tamil, Thai, Japanese, Hungarian, Italian, French, German, Korean, Spanish
+
+## Interfaces and compatibility
+- Works with micro:bit V1 & V2
+- micro:bit pins used: P1 sound, P2 potentiometer, P8 IR, P13 RGB LEDs, P14/P15/P16 traffic light, I2C (co-processor 0x08) for servos S1–S3 and motors M1/M2
+- Programmed with Microsoft MakeCode (blocks, JavaScript or Python mode) and the EDU:BIT extension pxt-edubit, https://github.com/CytronTechnologies/pxt-edubit (v1.15.0)
+- Extension blocks: Sound Bit, Potentio Bit, IR Bit, RGB Bit, Traffic Light Bit, Motors & Servos (motor speed 0–255, servo 0–180°); Music Bit and Button Bit use the built-in Music and Input blocks
+- Resource Hub with chapter resources and sample code: http://link.cytron.io/edubit-resource-hub
+- Out-of-the-box demo code: https://link.cytron.io/edubit-demo-code
+- Grove WiFi 8266 tutorial listed on the product page
+- MicroPython library: [NOT STATED]
+
+## Use cases
+- Beginner micro:bit kit for STEAM and coding
+- 10+1 hands-on coding lessons, each built around a classic childhood game, with a challenge at the end of each chapter
+- Training kit that works with no wiring
+- Custom projects using the broken-off modules
+- Projects with up to 3 servo motors and 2 DC motors while playing music
+- AI projects with Teachable Machine (tutorial series ch.1–6: object sorting, face recognition door, gesture-controlled fan, colour-controlled motor, object counter)
+- Classroom teaching (Classroom Pack of 10)
+
+## Known limitations
+- The default EDU:BIT MakeCode extension is not compatible with Bluetooth (NeoPixel/RGB dependencies); a modified version is provided in the Teachable Machine Chapter 1 tutorial
+- P1, P2, P8, P13, P14, P15 and P16 are used by the onboard modules
+- Do not use I2C address 0x08 on the I2C port (used by the co-processor)
+- Servos and DC motors can only be driven through the co-processor (extension blocks), not directly from micro:bit pins
+- The extension resets the micro:bit when the EDU:BIT power is switched on
+- RGB LED default brightness in the extension is 25 (of 255)
+- The kit without micro:bit does not include a micro:bit board
+- Power input voltage range, battery option and protection thresholds: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- EDU:BIT was 575% funded on Kickstarter on Oct 22, 2020
+- Specially designed to encourage kids to explore STEAM and learn coding
+- "Cannot control servo motor and play music at the same time on your micro:bit? Servo motor refuses to move correctly? ... EDU:BIT takes care of these issues with its dedicated controller and power supply."
+- Name-writing space on the board
+- Guide books translated by volunteers into many languages
+
+## Price band
+RM156.00–RM2,390.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-edubit-training-and-project-kits-for-microbit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-edubit-training-and-project-kits-for-microbit
+
+# Product fact sheets
+
+## Product name
 Grove WiFi 8266 - IoT for micro:bit and beyond — GRV-WIFI-8266
 
 ## Aliases
@@ -4155,6 +4307,66 @@ https://www.gotronic.fr/pj2-38783-nt-3349.pdf
 # Product fact sheets
 
 ## Product name
+RCSwitch10 - RC controlled Relay Switch (RCS10A)
+
+## Aliases
+RCS10A, RCSwitch10, RCSwitch10 - RC controlled Relay Switch, RC Controlled Relay Switch, Cytron RCSwitch10, Cytron RC Relay Switch
+
+## What it is
+An RC controlled relay switch that can be turned on and off by using an RC controller. It has one single pole, double throw relay.
+
+## Specs and functions
+- Relay type: Single pole, double throw (product page)
+- Max voltage: 250VAC, 30VDC (product page)
+- Max current: 10A (product page)
+- Dimension: 43.4mm x 38.3mm x 17.4mm (product page)
+- Control: turned on and off by using an RC controller (product page)
+- Warranty: 12 months (product page)
+- RC input pulse widths, switching threshold and failsafe behaviour: [NOT STATED]
+- Supply voltage and current of the switch board: [NOT STATED]
+- Package contents: [NOT STATED]
+
+## Interfaces and compatibility
+- Input: RC controller (product page); connector type and pin order [NOT STATED]
+- Output: one SPDT relay contact set rated 250VAC, 30VDC, 10A (product page)
+- Compatible RC receivers/transmitters: [NOT STATED]
+- Software: none required; operated by an RC controller (product page)
+- Fritzing part linked from the product page
+
+## Use cases
+- Powerful auxiliary weapons in RC combat tournament
+- Glow plugs on nitro RC vehicles
+- High powered lighting system on RC aircraft, boats and cars
+- Domestic appliances and home automation
+- Non-critical automotive electrics like glow wire
+
+## Known limitations
+- No Cytron datasheet or user manual is available; the product page's connection-diagram link returns "not found"
+- RC signal thresholds and failsafe (signal-loss) behaviour are not published
+- Board supply voltage, current draw, connector type and package contents are not stated
+- Contact rating is given only as 250VAC, 30VDC, 10A; no load-type derating is stated
+
+## Positioning (kept apart from specs)
+- Product page frames it for RC hobby use (RC combat, nitro RC vehicles, RC aircraft, boats and cars) as well as domestic appliances and home automation
+
+## Price band
+RM40.95 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-rcswitch10-rc-controlled-relay-switch
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-rcswitch10-rc-controlled-relay-switch
+
+# Product fact sheets
+
+## Product name
 UC00C (CH340) USB to UART Converter
 
 ## Aliases
@@ -4294,6 +4506,178 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1pFK7DSRuZB7SeP3aCmjYzWB0i7aT-C_W_D-x25WLops/view
+
+# Product fact sheets
+
+## Product name
+TTL UART to RS232 Converter (URS232A)
+
+## Aliases
+URS232A, TTL UART to RS232 Converter, Cytron TTL UART to RS232 Converter, UART to RS232 Converter, Cytron URS232A
+
+## What it is
+A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devices such as a GSM modem or RFID reader. It uses the MAX232 and comes pre-soldered with a male DB9 connector, the MAX232 and capacitors.
+
+## Specs and functions
+- Level-shifter IC: MAX232 (product page)
+- RS232 connector: DB9-Male (PC side) (product page)
+- Signals supported: Tx, Rx, CTS and RTS (product page)
+- Assembly: pre-soldered male DB9 connector, MAX232 and capacitors (product page)
+- Warranty: 12 months (product page)
+- Supply voltage: [NOT STATED]
+- TTL logic level (3.3V/5V): [NOT STATED]
+- Baud rate range: [NOT STATED]
+- Dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Microcontroller side: TTL UART with Tx, Rx, CTS and RTS (product page); connector type and pin order [NOT STATED]
+- Device side: DB9-Male (PC side) RS232 connector (product page)
+- Works with Cytron UC00A or UC00C to make a USB-to-RS232 converter (product page)
+- UC00C's 6-way socket has no RTS pin, so RTS handshake is not available from UC00C as documented (UC00C user manual, via KB)
+- Software: none needed on the board
+
+## Use cases
+- Interfacing a microcontroller with RS232 devices such as a GSM modem or RFID reader
+- Making a USB-to-RS232 converter together with UC00A or UC00C
+
+## Known limitations
+- No Cytron datasheet or user manual; the product page is the only Cytron text source
+- Supply voltage, logic level and TTL-side pinout are not stated
+- The schematic linked from the product page could not be read for this fact sheet
+- The DB9 is male (PC side), the same gender as a PC serial port
+- The product page's "Serial Loopback Test" tutorial link returns 404
+
+## Positioning (kept apart from specs)
+- Product page frames it as the way to connect microcontroller projects to RS232 devices and, with UC00A or UC00C, to build a USB-to-RS232 converter
+
+## Price band
+RM22.05 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-ttl-uart-to-rs232-converter
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-ttl-uart-to-rs232-converter
+
+# Product fact sheets
+
+## Product name
+Breakout Board PS2 Connector (BB-PSC)
+
+## Aliases
+BB-PSC, Breakout Board PS2 Connector, Cytron Breakout Board PS2 Connector, PS2 Connector Breakout Board, PS2 Breakout Board
+
+## What it is
+A breakout board with a PS2 connector (female) pre-soldered on the PCB and its pins broken out to 0.1" for use on a breadboard or donut board. It lets a PS2 controller be wired directly to a microcontroller's pins.
+
+## Specs and functions
+- Connector: PS2 Connector (Female), pre-soldered on the PCB (product page)
+- Pins broken out to 0.1" (product page)
+- Mounting: breadboard or donut board (product page)
+- Signals wired in Cytron's tutorial: DATA, CMD, ATT, CLK, +5V, GND (Cytron tutorial "Maker Mini Sumo with PS2 Controller")
+- Number of pins and pin order: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- Maker Mini Sumo wiring (Cytron tutorial): DATA → D2 (START), CMD → D7 (OPP_FR), ATT → D6 (OPP_FC), CLK → D5 (OPP_FL), +5V → any + terminal, GND → any − terminal
+- Library: Arduino PS2X library (Cytron GitHub, https://github.com/CytronTechnologies/PS2X_lib); tutorial uses ps2x.config_gamepad(5,7,6,2,true,true), argument order clk, cmd, att, dat, pressures, rumble
+- Tutorial controller: Wireless PS2 Controller (Compatible), 2.4GHz, about 10 m range, 2 AAA batteries
+- Different from SHIELD-PS2, which converts the PS2 controller to UART and uses a different library
+
+## Use cases
+- Connecting a PS2 controller connector to a breadboard or donut board
+- Controlling a Maker Mini Sumo robot with a wireless PS2 controller (Cytron tutorial)
+
+## Known limitations
+- No Cytron datasheet or user manual; product page and one Cytron tutorial are the sources
+- Pin count, pin order and dimensions are not stated
+- Supply-voltage rating for the connected PS2 receiver is not stated (the tutorial uses +5V)
+- On Maker Mini Sumo all Object Sensors must be removed when connecting the PS2 breakout (Cytron tutorial)
+- On Maker Mini Sumo the PS2X example pins (13, 11, 10, 12) must be changed to (5, 7, 6, 2) (Cytron tutorial)
+- Press reset after connecting (Cytron tutorial)
+
+## Positioning (kept apart from specs)
+- Product page frames it as a pre-soldered PS2 connector broken out for breadboard or donut board use
+
+## Price band
+RM9.45 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-breakout-board-ps2-connector
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller
+
+# Product fact sheets
+
+## Product name
+Breakoutboard for SPG10 (BB-SPG10)
+
+## Aliases
+BB-SPG10, Breakoutboard for SPG10, Breakout Board for SPG10, SPG10 Breakout Board, Cytron BB-SPG10
+
+## What it is
+A small breakout board that mounts to the rear of the SPG10 DC brush motor to give it a secure power cable. It needs two-point soldering and comes with a 2-way cable with the proper jack.
+
+## Specs and functions
+- Designed to fit SPG10 DC brushed motor (product page)
+- Tiny, compact (product page)
+- Requires two-point soldering, about 1 minute (product page)
+- Mounts to the back/rear of the SPG10 motor (product page)
+- Centre hole allows rear shaft access (product page)
+- Ready with JST socket and cable/wire; 2-way cable included with the proper jack (product page)
+- Additional terminal pads for soldering if a cable is not preferred (product page)
+- User manual: none ("quite self explanatory") (product page)
+- Dimensions: [NOT STATED]
+- JST series, pitch and cable length: [NOT STATED]
+- Current and voltage rating: [NOT STATED]
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- Motor side: two solder points to the SPG10 motor (product page)
+- Output: JST socket with 2-way cable, or additional terminal pads (product page)
+- Compatible motor: SPG10 DC brushed motor (product page); other motors [NOT STATED]
+- Software: none
+
+## Use cases
+- Giving an SPG10 DC brush motor a secure power cable with a ready jack instead of wires soldered straight to the motor terminals
+
+## Known limitations
+- No user manual or datasheet exists (product page)
+- Soldering is required
+- Dimensions, connector series, cable length and electrical ratings are not stated
+- Fit is stated only for the SPG10 DC brushed motor
+
+## Positioning (kept apart from specs)
+- Product page: tiny, compact; about 1 minute of soldering; "quite self explanatory"
+
+## Price band
+RM3.15 special offer, was RM6.30 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-breakoutboard-for-spg10
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-breakoutboard-for-spg10
 
 # Product fact sheets
 
@@ -4869,6 +5253,199 @@ https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-39/pdf/cytron-simple-rotary-encoder
 # Product fact sheets
 
 ## Product name
+50A Current Sensor — BB-ACS756
+
+## Aliases
+BB-ACS756, 50A Current Sensor, Cytron 50A Current Sensor, Cytron BB-ACS756, ACS756 50A Current Sensor Breakout, 50A Current Sensor Breakout
+
+## What it is
+A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A version) that measures AC or DC current and gives an analog output voltage. It is supplied with a Dean-T connector set and a 3-way right-angle pin header that are not soldered.
+
+## Specs and functions
+- Sensor IC: Allegro ACS756, X050 (50 Amp) version, model ACS756KCA-050B-PFF-T (product page)
+- Current type: AC or DC; output voltage proportional to AC or DC current (product page)
+- Primary sampled current: −50 A to +50 A (Allegro ACS756 chip datasheet, chip-level)
+- Supply: 5.0 V single supply (product page); the chip itself is specified 3 V min, 5.0 V typ, 5.5 V max and factory-trimmed at 5 V (Allegro chip datasheet)
+- Sensitivity: 40 mV/A (product page; Allegro typical at 25 °C); 37.2–42.8 mV/A over −40 °C to 125 °C (Allegro chip datasheet)
+- Output at 0 A: VCC/2, i.e. 2.5 V at VCC = 5 V (Allegro chip datasheet)
+- Total output error: 0.8% at TA = 25 °C (product page)
+- Internal conductor resistance: 130 µΩ (product page)
+- Isolation: 3 kV RMS minimum from pins 1-3 to 4-5 (product page)
+- Output rise time: 3 µs (product page)
+- Factory-trimmed; stable offset; nearly zero magnetic hysteresis (product page)
+- On-board capacitors: 0.1 µF on VIOUT–GND and 0.1 µF on VCC–GND (Cytron schematic)
+- Dimension: 1.43 x 1.435 inch (product page)
+- Included: one set of Dean-T connector and a 3-way right-angle pin header, not soldered (product page)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Current path: 2-pin IN (+/−) and 2-pin OUT (+/−); the + line runs IN+ → ACS756 IP+ → IP− → OUT+, the − line passes straight through from IN to OUT (Cytron schematic)
+- Signal header, 3 pins: 1 VCC, 2 GND, 3 VIOUT (analog output) (Cytron schematic)
+- Output: single analog voltage; read with any ADC-capable pin
+- Output is ratiometric: the 0 A level and sensitivity scale with VCC (Allegro chip datasheet)
+- Fritzing part linked from the product page (product page)
+- Library / sample code: [NOT STATED]
+
+## Use cases
+- Motor control (product page)
+- Load detection (product page)
+- Power supplies (product page)
+- Over-current fault protection (product page)
+
+## Known limitations
+- The Dean-T connector and 3-way header are not soldered when purchased (product page)
+- Output sits at VCC/2 at 0 A and is ratiometric to the supply, so supply variation changes offset and sensitivity (Allegro chip datasheet)
+- Specified for a 5.0 V supply (product page); Allegro says 3.3 V operation needs confirmation of accuracy from Allegro (Allegro chip datasheet)
+- Chip output drive: 3 mA source, 1 mA sink max; minimum load 4.7 kΩ (Allegro chip datasheet)
+- No Cytron datasheet, user manual or sample code exists; board-level maximum continuous current is [NOT STATED]
+
+## Positioning (kept apart from specs)
+- [NOT STATED]
+
+## Price band
+RM52.50 (10+ RM47.25, 30+ RM42.00) (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-50a-current-sensor
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-50a-current-sensor
+
+# Product fact sheets
+
+## Product name
+RGB LED Stick (Neopixel-compatible) by Cytron — BCY-NEO-STICK-8
+
+## Aliases
+BCY-NEO-STICK-8, RGB LED Stick (Neopixel-compatible) by Cytron, RGB LED Stick, Cytron RGB LED Stick, NeoPixel RGB LED Stick by Cytron, Cytron NeoPixel Stick
+
+## What it is
+A small PCB stick with 8 addressable 5050 RGB LEDs (SK6812-based, WS2812B-compatible) controlled through one data pin. Sticks can be chained through the data-out pin.
+
+## Specs and functions
+- LEDs: 8 addressable RGB LEDs in series, 5050 package (product page)
+- LED type: SK6812-based, compatible with WS2812B; NeoPixel compatible (product page)
+- Drive: ~18 mA constant-current drive per LED; no external resistors (product page)
+- Supply, as worded on the product page: "Power the whole thing with 5VDC (4-7V works)"; 5V pin: "regulated supply between 5V and about 7V. More than that could harm the LED, less than 5V will either reduce brightness, or it just won't turn on" (product page)
+- Data: single data line with a timing-specific protocol (product page)
+- Viewing angle: 120° (product page)
+- Red: 620–630 nm, 550–700 mcd (product page)
+- Green: 515–530 nm, 1100–1400 mcd (product page)
+- Blue: 465–475 nm, 200–400 mcd (product page)
+- Dimensions: 51.10 mm x 10.22 mm x 3.19 mm (product page)
+- Weight: 2.57 g (product page)
+- Header pins pre-soldered on the input pins (product page)
+- Total current: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Pins: DI (data in), 5V, GND, DO (data out to next stick) (product page)
+- Arduino: works with the NeoPixel Arduino library; 8 MHz or faster processor required (product page)
+- Controllers named on the page: real-time microcontrollers (AVR, Arduino, PIC, mbed) (product page)
+- Maker Pi Pico: connect to Pin 7 (GP7) and leave the white wire unconnected; CircuitPython in Thonny (Cytron tutorial)
+- REKA:BIT RBT Project Kit: on a REKA:BIT Grove IO port; MakeCode extension pxt-rekabit-rbt-project-kit, `set RGB Stick at pin` block (P0, P1, P2, P13, P15), 8 LEDs numbered 0–7, brightness 0–255 (RBT kit guide and Cytron GitHub)
+
+## Use cases
+- Blue/red/green and random colour patterns with Maker Pi Pico and CircuitPython (Cytron tutorial)
+- Boom Barrier Gate and Mobile Robot Car projects in the REKA:BIT RBT Project Kit (RBT kit guide)
+
+## Known limitations
+- The page says it cannot be used with a Linux-based microcomputer or an interpreted microcontroller such as netduino or Basic Stamp (product page); Cytron's own tutorials run it from CircuitPython on Maker Pi Pico and MakeCode on micro:bit
+- Supply wording on the page: less than 5V will either reduce brightness or it just won't turn on, and more than about 7V could harm the LED (product page)
+- Needs a timing-specific single-wire protocol, so a library or extension is needed (product page)
+- Only the input pins come with headers pre-soldered (product page)
+
+## Positioning (kept apart from specs)
+- "NeoPixel compatible" (product page)
+
+## Price band
+RM9.35 (10+ RM8.88, 50+ RM8.41) (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron
+
+# Product fact sheets
+
+## Product name
+3-Axis Accelerometer — SN-ADXL335-CY
+
+## Aliases
+SN-ADXL335-CY, 3-Axis Accelerometer, Cytron 3-Axis Accelerometer, Cytron ADXL335 Breakout, ADXL335 3-Axis Accelerometer Breakout
+
+## What it is
+A breakout board for the Analog Devices ADXL335 ±3 g 3-axis analog accelerometer, with an on-board 3.3 V regulator so it runs from 2.5 V to 6 V. It is out of stock on my.cytron.io (2026-10-19).
+
+## Specs and functions
+- Sensor IC: Analog Devices ADXL335 (product page)
+- Axes: 3 (product page)
+- Range: ±3g (product page)
+- Regulator: on-board 3.3V regulator (product page)
+- Operating voltage: 2.5V–6.0V (product page)
+- Typical current: 300 µA (product page features); the page description says "only 320uA" (product page)
+- Bandwidth: adjustable with one capacitor per axis; the included 0.1 µF capacitors set each axis to 50 Hz (product page)
+- Fully assembled and tested (product page)
+- Dimension: 19.5mm x 22mm (product page)
+- Chip sensitivity: 300 mV/g typ at VS = 3 V, ratiometric to supply (ADXL335 vendor datasheet, chip-level)
+- Chip 0 g output: nominally VS/2 (ADXL335 vendor datasheet, chip-level)
+- Chip operating temperature: −40 °C to +85 °C (ADXL335 vendor datasheet, chip-level)
+- Board pinout: [NOT STATED]
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Outputs: analog voltage per axis (X, Y, Z) (ADXL335 vendor datasheet); needs three ADC inputs
+- Board pin labels and order: [NOT STATED]
+- Self-test pin on the board: [NOT STATED]
+- Library / sample code: [NOT STATED]
+
+## Use cases
+- Tilt-angle measurement (Cytron tutorial title "Measuring Tilt Angle with Gyro and Accelerometer", product page)
+
+## Known limitations
+- Out of stock on my.cytron.io (2026-10-19)
+- Bandwidth is set to 50 Hz per axis by the fitted 0.1 µF capacitors (product page)
+- Analog outputs are ratiometric to the chip supply, so zero-g and sensitivity scale with it (ADXL335 vendor datasheet)
+- The product page states two current figures (300 µA and 320 µA)
+- The page's resource list mislabels the datasheet as "ADXL355 Datasheet" (product page)
+- One linked tutorial ("Accelerometer ADXL335 Fast Test and Angle Test") returns 404
+
+## Positioning (kept apart from specs)
+- "only 320uA" current draw (product page)
+
+## Price band
+RM38.85 (10+ RM35.70, 30+ RM31.08) (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-3-axis-accelerometer
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-3-axis-accelerometer
+
+# Product fact sheets
+
+## Product name
 STEM Robot Building Base Bundles
 
 ## Aliases
@@ -5054,6 +5631,210 @@ Website
 
 ## Source link
 https://my.cytron.io/p-robo-bracket-for-microservo-motor
+
+# Product fact sheets
+
+## Product name
+Robo Base
+
+## Aliases
+Robo Base, Cytron Robo Base, Robo Base PCB Chassis, Robo Base Kit, Robo Base Double Base 2WD, Robo Base Double Base 4WD, Robo Base Basic Bundle
+
+## What it is
+A PCB chassis plate for building small mobile robot cars, or for mounting a Cytron controller board on another chassis. It is sold as a single plate or as Double Base kits with M3 standoffs, and optionally TT motors and wheels.
+
+## Specs and functions
+- Product code: Robo Base (series page code V-ROBO-BASE-MINI); Robo Base and Robo Base Mini share one product page
+- Material: durable PCB material; "non-copper PCB" (BEETLE:BIT product page)
+- Thickness: [NOT STATED] (image only on the product page)
+- Dimensions: [NOT STATED] (image only on the product page)
+- Weight: [NOT STATED]
+- Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
+- Double Base 4WD: 2x Robo Base, 4x M3 PCB stand (screw+nut) 30mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
+- Double Base 2WD: 2x Robo Base, 4x M3 PCB stand 30mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 2x TT motor 15cm wire, 2x plastic wheels, 2x TT motor bracket, 1x W420 ball castor
+- Double Base with Accessories: 2x Robo Base, 4x M3 PCB stand 30mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench
+- Single Base Only: 1x Robo Base
+- Standoffs: 30mm and 10mm M3 (Robo Base Mini uses 25mm instead of 30mm)
+- Warranty: 12 months
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Controller boards with compatible mounting holes: REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Attachments covered by the Getting Started with Robo Base tutorial: TT motor and castors, ultrasonic sensor, Maker Line, micro servo motor, ⌀37mm 12V DC motor
+- Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
+- Used in BEETLE:BIT (2x Robo Base PCB only, in the accessories kit)
+
+## Use cases
+- Build a small mobile robot car (2WD with castor, or 4WD with mecanum wheels)
+- Use as an adapter plate to mount a Cytron controller board on another robot chassis
+- Line following with Maker Line, obstacle sensing with an ultrasonic sensor, servo add-ons
+- Fire Fighting Robot using MOTION 2350 Pro; Line Following with Robo Base using URC10 (Cytron tutorials)
+
+## Known limitations
+- No controller board, battery, sensors or servo are included in any kit option
+- Single Base Only is the plate only, with no screws or standoffs
+- Dimensions and thickness are not stated in text (image only)
+- The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
+- Product page price is a range for the whole Robo Base series; per-option prices are not stated
+
+## Positioning (kept apart from specs)
+- "Inspired by Nature" (Fiddler beetle) design (product page)
+- "Cost-friendly alternative to metal chassis and tougher than fragile acrylic plates" (product page)
+- Flexible platform, reconfigurable with standard screws, nuts and standoffs (product page)
+
+## Price band
+RM9.00–RM112.00 for the whole Robo Base series page, covering Robo Base and Robo Base Mini in all kit options (Cytron product page, read 2026-10-19); "Robo Base Basic Bundle" RM41.80 (product card in the Getting Started with Robo Base tutorial, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-robo-base-mini-and-kits
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-robo-base-mini-and-kits
+
+# Product fact sheets
+
+## Product name
+Robo Base Mini
+
+## Aliases
+Robo Base Mini, Cytron Robo Base Mini, Robobase Mini, Robo Base Mini Kit, Robo Base Mini Basic Bundle, Robobase Mini kit for 2WD Robot, Robo Base Mini Double Base 2WD, Robo Base Mini Double Base 4WD
+
+## What it is
+The smaller PCB chassis plate in Cytron's Robo Base series, for building small mobile robot cars or for mounting a Cytron controller board on another chassis. It is sold as a single plate or as Double Base kits with M3 standoffs, and optionally TT motors and wheels.
+
+## Specs and functions
+- Product code: Robo Base Mini (series page code V-ROBO-BASE-MINI); Robo Base Mini and Robo Base share one product page
+- Material: durable PCB material; "non-copper PCB" (STRIKER:BIT product page)
+- Thickness: [NOT STATED] (image only on the product page)
+- Dimensions: [NOT STATED] (image only on the product page)
+- Weight: [NOT STATED]
+- Kit options: Double Base 4WD (Mecanum Wheels), Double Base 2WD (Rubber Wheels), Double Base with Accessories, Single Base Only
+- Double Base 4WD: 2x Robo Base Mini, 4x M3 PCB stand (screw+nut) 25mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 4x TT motor 15cm wire, 2x 48mm Mecanum left and right wheel set, 2x TT DC gear motor bracket
+- Double Base 2WD: 2x Robo Base Mini, 4x M3 PCB stand 25mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench, 2x TT motor 15cm wire, 2x plastic wheels, 2x TT motor bracket, 1x W420 ball castor
+- Double Base with Accessories: 2x Robo Base Mini, 4x M3 PCB stand 25mm, 4x M3 PCB stand 10mm, 12x M3 bolt 6mm, 12x M3 nut, 1x transparent Philips screwdriver, 1x mini cross wrench
+- Single Base Only: 1x Robo Base Mini
+- Standoffs: 25mm and 10mm M3 (Robo Base uses 30mm instead of 25mm)
+- Warranty: 12 months
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Controller boards with compatible mounting holes (Robo Base series list): REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
+- Attachments covered by the Getting Started with Robo Base Mini tutorial: DC motor and castors, Maker Line, ultrasonic sensor, micro servo, battery
+- Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
+- Used in STRIKER:BIT ("Robobase Mini kit for 2WD Robot")
+
+## Use cases
+- Build a small mobile robot car (2WD with castor, or 4WD with mecanum wheels)
+- Use as an adapter plate to mount a Cytron controller board on another robot chassis
+- Robo Base Mini Line Following Robot with Maker UNO and Maker Drive (Cytron tutorial)
+- Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive (Cytron tutorial)
+- Line Following Robo Base Mini with ESP32 (Cytron project)
+
+## Known limitations
+- No controller board, battery, sensors or servo are included in any kit option
+- Single Base Only is the plate only, with no screws or standoffs
+- Dimensions and thickness are not stated in text (image only)
+- The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
+- The ⌀37mm 12V DC motor mounting is covered for Robo Base, not for Robo Base Mini
+- Product page price is a range for the whole Robo Base series; per-option prices are not stated
+
+## Positioning (kept apart from specs)
+- "Inspired by Nature" (Fiddler beetle) design (product page)
+- "Cost-friendly alternative to metal chassis and tougher than fragile acrylic plates" (product page)
+- Flexible platform, reconfigurable with standard screws, nuts and standoffs (product page)
+
+## Price band
+RM9.00–RM112.00 for the whole Robo Base series page, covering Robo Base and Robo Base Mini in all kit options (Cytron product page, read 2026-10-19); "Robo Base Mini Basic Bundle" RM19.80 (product card in the Getting Started with Robo Base Mini tutorial, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-robo-base-mini-and-kits
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-robo-base-mini-and-kits
+
+# Product fact sheets
+
+## Product name
+Robo Grip Mini Kits
+
+## Aliases
+V-ROBO-GRIP-MINI, Robo Grip Mini, Robo Grip Mini Kits, Robo Grip Mini Kit, Cytron Robo Grip Mini, Robo Grip Mini PCB, Robo Grip PCB, Robo Grip Mini Basic Bundle, Robo Grip Mini Gripper
+
+## What it is
+A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Base Mini chassis. It is sold as a gripper only, a 1-axis gripper with 2 micro servos, or a 2-axis gripper with 3 micro servos.
+
+## Specs and functions
+- Product code: V-ROBO-GRIP-MINI
+- Material: PCB; thickness [NOT STATED] (image only on the product page)
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Options: Gripper only / 1-axis Gripper (2 micro servo) / 2-axis Gripper (3 micro servos)
+- Servo configurations: 1 servo = main gripping motion; 2 servos = adds arm movement; 3 servos = better angle control and positioning
+- Servos supplied: TS90A micro servo (2x in the 1-axis kit, 3x in the 2-axis kit); none in Gripper only
+- 2-axis kit (3 servos) contents: 1x Robo Grip Mini PCB, 6x M2 bolt 6mm, 6x M2 nut, 1x M3 PCB stand 40mm, 4x nylon M3 PCB stand 20mm + nut set, 4x nylon M3 PCB stand 10mm + nut set, 12x M3 bolt 6mm, 4x M3 bolt 12mm, 4x M3 nut, 5x M3 lock nut, 6x M3 plastic washer H1 W7, 5x M3 plastic washer H3 W7, 2x M3 black plastic rivet 3x6, M2 and M3 transparent Philips screwdrivers, mini cross wrench, 2x Robo Bracket for Micro Servo Motor, 1x aluminium micro servo bracket, 4x M2 bolt 6mm, 4x M3 bolt 6mm, 3x TS90A micro servo, 1x assembly guide
+- 1-axis kit (2 servos): same, but 1x Robo Bracket and 2x TS90A
+- Gripper only ("with Accessories"): PCB, hardware, tools and assembly guide; no servos, no bracket
+- 40mm M3 standoff: "SS" (product page) vs "brass" (Installation Guide tutorial)
+- Assembly: snap and break every part off the PCB, then file the snapped parts
+- Warranty: [NOT STATED] (field blank on the product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Servos: SG90, MG90S, TS90A, EF90D, FS90R and same-dimension servos
+- Chassis: mounting holes compatible with the Robo Base Series (Robo Base, Robo Base Mini)
+- Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90)
+- Used in BEETLE:BIT ("Robo Grip PCB with accessories", gripper servo on REKA:BIT S1)
+- Used in STRIKER:BIT ("Robo Grip Mini Basic Bundle", used with a 3D-printed part as a servo shooter)
+- Cytron project: ZOOM:BIT with Robo Grip Mini
+
+## Use cases
+- Add a servo gripper to a Robo Base or Robo Base Mini robot car
+- Build a one-axis or two-axis gripper arm with micro servos
+- ZOOM:BIT with Robo Grip Mini (Cytron project)
+- BEETLE:BIT gripper robot car; STRIKER:BIT servo shooter
+
+## Known limitations
+- Gripper only option includes no servo and no Robo Bracket
+- Maximum 3 servos in Cytron's configurations (1, 2 or 3)
+- Only SG90-size micro servos are stated to fit; FS90R is a continuous-rotation servo
+- No controller board, battery or chassis included
+- Parts must be snapped off the PCB and filed before assembly
+- PCB thickness and dimensions are not stated in text
+- Warranty is not stated on the product page
+
+## Positioning (kept apart from specs)
+- "Stag Beetle" inspired design (product page)
+- "Cost-friendly alternative to metal grippers", durable PCB (product page)
+- Easy snap-and-play assembly with standard screws, nuts and standoffs (product page)
+
+## Price band
+RM34.90–RM94.19 across the three options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-robo-grip-mini-kits
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-robo-grip-mini-kits
 
 # Product fact sheets
 

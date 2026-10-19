@@ -67,6 +67,7 @@ Arduino-board notes for every agent:
 | LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
 | 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium** |
 | Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 | **Medium-low** |
+| Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Product page only | **Medium-low** |
 
 Shield notes for every agent:
 - **PS2 Shield:** button reads are 0 = pressed, 1 = released; `begin()` baud must match the jumper and the shield must be reset after moving it; A1 is the shield reset line; default D2 RX / D3 TX; on Mega only D10 can be SoftwareSerial RX.
@@ -74,6 +75,7 @@ Shield notes for every agent:
 - **LiPo Power Shield:** charging via the Arduino's USB only works with the shield switch OFF; ICSP is not passed through; bridge the VBATT solder jumper to read battery voltage.
 - **Servo Shield / SC08A:** servos are deactivated at power-up — send the activate command first. Speed byte 0 = fastest. Resolution 0.25 µs, position 0–8000 = 0.5–2.5 ms; the shield library's `angle()` maps 0–180° to 156–7260. Servo shield: jumper K (servos from Arduino 5 V) and VM input are mutually exclusive. SC08A has **no regulator** — servo supply goes straight to the servos.
 - **Screw Terminal Shield:** 3.5 mm pitch; wire by the silkscreen label, not terminal position; no ISP pads, terminal count or ratings are stated — don't quote any.
+- **Prototyping Shield:** the page says the ISP **pads** are prepared — don't claim an ISP header is fitted. Compatibility stated for UNO R3 and Leonardo only.
 
 ### Arduino kits and books
 
@@ -125,6 +127,7 @@ Pico / RP2040 / RP2350 notes for every agent:
 | REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium** |
 | ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
 | Grove WiFi 8266 | [`grove-wifi-8266.md`](grove-wifi-8266.md) | `GRV-WIFI-8266` | ESP8266 Wi-Fi Grove module (ESP-AT), 3.3 V logic | Datasheet Rev 1.0, Aug 2021 | **Medium-high** |
+| EDU:BIT | [`edu-bit.md`](edu-bit.md) | `V-EDUBIT` (board `EDUBIT`) | micro:bit training board with break-off modules, 3 servo + 2 DC motor ports, 10+1 game lessons | Product page + course overview + pxt-edubit v1.15.0 (no datasheet readable) | **Medium-low** |
 
 micro:bit notes for every agent:
 - **Motors and servos on MOTION:BIT, MOTION:BIT Pro, REKA:BIT and SUMO:BIT are driven over I2C (P19/P20) by an on-board chip**, not by micro:bit GPIO: MOTION:BIT PCA9685 at 0x40; REKA:BIT PIC16F1827 at 0x08 (an I2C Grove device must not use 0x08); SUMO:BIT RP2040 co-processor at 0x09.
@@ -133,6 +136,7 @@ micro:bit notes for every agent:
 - **ZOOM:BIT uses a REKA:BIT.** micro:bit V1 has no speaker (sound needs a Grove buzzer; sound-expression blocks are V2 only). The micro:bit is only included in some purchase options.
 - **MakeCode extensions:** `motionbit` (also serves MOTION:BIT Pro), `rekabit`, `sumobit`, `zoombit`. "Python" means MakeCode's Python mode unless a file says otherwise.
 - **Grove WiFi 8266 logic is 3.3 V** (RX high max 3.6 V) even though VCC accepts 3–6 V — level-shift from 5 V hosts. Ships with Cytron's ESP-AT v2.2.0 build (AT on GPIO1/GPIO3), 115200 baud; MakeCode default Tx P16 / Rx P15; Pico examples TX GP16 / RX GP17; legacy NONOS-AT v1.x commands are not fully compatible.
+- **EDU:BIT pins (from pxt-edubit):** sound P1, potentiometer P2, IR P8, 4 RGB LEDs P13, traffic light P14/P15/P16; buttons parallel micro:bit A/B. Motors and servos only via the PIC16F1937 co-processor at I2C 0x08 (3 servo ports, not 4). The default extension does not work with Bluetooth (NeoPixel dependency) — use the modified one from the Teachable Machine tutorial.
 
 ### micro:bit kits
 
@@ -159,11 +163,15 @@ micro:bit kit notes for every agent:
 | Product | File | Code | Chip | Status | Confidence |
 |---|---|---|---|---|---|
 | Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
-| URC10 | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
+| URC10 ("Sumo Robot Controller R1.1" on my.cytron.io) | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
 | IR Sumo Start | [`ir-sumo-start.md`](ir-sumo-start.md) | `IR-SUMO-START` | — (IR start module) | Datasheet Rev 1.0, Apr 2025 | **Medium-high** |
 | SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) | **Medium** |
+| RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Product page only (manual link returns "not found") | **Low** |
 | UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
+| URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + TI MAX232 [VEN] | **Medium-low** |
+| Breakout Board PS2 Connector | [`bb-psc.md`](bb-psc.md) | `BB-PSC` | Female PS2 connector broken out to 0.1" | Product page + Maker Mini Sumo PS2 tutorial | **Medium** |
+| Breakoutboard for SPG10 | [`bb-spg10.md`](bb-spg10.md) | `BB-SPG10` | Rear-mount cable breakout for SPG10 motor, JST socket + cable | Product page ("no user's manual") | **Medium-low** |
 
 ### Sumo robot kits and parts
 
@@ -188,6 +196,9 @@ micro:bit kit notes for every agent:
 | MCP9700 Temperature Sensor | [`mcp9700-temperature-sensor.md`](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Analog temperature, 10 mV/°C with 500 mV offset at 0 °C | Datasheet Rev 1.0, Aug 2023 | **Medium-high** |
 | LSA08 Line Sensor | [`lsa08.md`](lsa08.md) | `LSA08` | 8-sensor auto-calibrating line sensor bar; analog / digital / UART | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) | **Medium-high** |
 | RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium** |
+| 50A Current Sensor | [`bb-acs756.md`](bb-acs756.md) | `BB-ACS756` | Allegro ACS756 ±50 A breakout, 40 mV/A, 5 V | Product page + Cytron schematic + Allegro [VEN] | **Medium** |
+| RGB LED Stick | [`rgb-led-stick.md`](rgb-led-stick.md) | `BCY-NEO-STICK-8` | 8× SK6812 (WS2812B-compatible) chainable stick | Product page + tutorial | **Medium** |
+| 3-Axis Accelerometer | [`sn-adxl335-cy.md`](sn-adxl335-cy.md) | `SN-ADXL335-CY` | ADXL335 ±3 g breakout, 2.5–6 V (on-board 3.3 V reg), 50 Hz | Product page + ADI [VEN] | **Medium-low** |
 
 Sensor notes for every agent:
 - **Maker Line:** digital outputs go HIGH when the line is detected; which colour counts as the line is set by the Light/Dark switch. Analog below 0.1×Vcc = line not found, above 0.9×Vcc = cross detected (not "far left / far right"). 4–40 mm sensing height is stated only at VCC = 5 V, black line on white. Calibrate: hold button >2 s, sweep across the line, press again.
@@ -205,8 +216,12 @@ Sensor notes for every agent:
 | STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium-low** |
 | Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
 | Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
+| Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-low** |
+| Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-low** |
+| Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Product page + Installation Guide tutorial | **Medium** |
 
 - **STEM base includes no electronics, battery or cable ties**; motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
+- **Robo Base series:** no kit includes a controller, battery, sensors or servo; 2WD option is named "Rubber Wheels" but lists "plastic wheels". **Robo Grip Mini:** max 3 servos ("1-axis" = 2 servos, "2-axis" = 3); "Gripper only" has no servo or Robo Bracket; snap and file the parts before assembly. In STRIKER:BIT it is a shooter.
 
 ### Cytron motor drivers
 
