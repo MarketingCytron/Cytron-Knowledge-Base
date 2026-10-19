@@ -75,6 +75,20 @@ Shield notes for every agent:
 - **Servo Shield / SC08A:** servos are deactivated at power-up — send the activate command first. Speed byte 0 = fastest. Resolution 0.25 µs, position 0–8000 = 0.5–2.5 ms; the shield library's `angle()` maps 0–180° to 156–7260. Servo shield: jumper K (servos from Arduino 5 V) and VM input are mutually exclusive. SC08A has **no regulator** — servo supply goes straight to the servos.
 - **Screw Terminal Shield:** 3.5 mm pitch; wire by the silkscreen label, not terminal position; no ISP pads, terminal count or ratings are stated — don't quote any.
 
+### Arduino kits and books
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Maker UNO Edu Kit | [`maker-uno-edu-kit.md`](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Maker UNO + components kit for classes (School Package 10+1) | Getting Started Module PDF + Teacher Guidebook (no version/date) | **Medium-low** |
+| Maker UNO Learning Box | [`maker-uno-learning-box.md`](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Maker UNO + parts for 17 projects / 7 lessons | Product page (Beginner Guide PDF host blocked) | **Medium** |
+| PikaBot | [`pikabot.md`](pikabot.md) | `V-KIT-PIKABOT` | Maker UNO + Maker Drive smart-car kit, Arduino IDE or mBlock booklet | PikaBot booklet (image-only) + Cytron PikaBot Resources doc with code | **Medium** |
+| Maker Uno X Learning Guide (book) | [`maker-uno-x-learning-guide.md`](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Printed 17-project guide for the Maker UNO X Learning Box | Guide v1.5, Feb 2023 (read to Lesson 6) | **Medium** |
+
+Arduino-kit notes for every agent:
+- **PikaBot pins (Cytron code):** left motor D11/D10, right D9/D3 (`PWM_PWM`), ultrasonic TRIG D5 / ECHO D4, IR left A0 / right A1 (LOW = white, HIGH = black), start button D2, buzzer D8. Sensors are generic IR modules and HC-SR04, not Maker Line / Maker Object. Maker UNO has no DC jack/Vin — the battery feeds Maker Drive.
+- **Edu Kit vs Learning Box contents differ** (Learning Box: IR sensor, SR04, 1N4007, 2× 2N2222, 10/10/10 resistors). The Edu Kit packing list is not in any Cytron text — don't publish a list.
+- **Maker UNO X guide wiring is for the X board** (it has a Debug switch the plain Maker UNO lacks); don't apply its pin notes to the Maker UNO Learning Box without checking.
+
 ### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO)
 
 | Product | File | Code | Chip | Primary source | Confidence |
@@ -91,6 +105,15 @@ Pico / RP2040 / RP2350 notes for every agent:
 - **Maker Pi RP2040 brake/coast:** High/High = coast, Low/Low = brake (datasheet). In CircuitPython `throttle = 0` coasts and `throttle = None` brakes — the opposite of Cytron's demo comments. Power 3.6–6 V (USB, LiPo or VIN); motor/servo voltage = input voltage.
 - **Maker Pi Pico is USB-powered only** (4.5–5.5 V; no battery or VIN). GP18 drives both the buzzer and the left audio channel (mute the buzzer when using the jack); audio is not amplified. RGB: Maker Pi RP2040 = 2× WS2812B on GP18; Maker Pi Pico = 1× WS2812B on GP28.
 - **Maker Pi Pico Mini Maker Ports are JST-SH (Qwiic/STEMMA QT)**, not Grove (Grove needs a conversion cable); the GP0/GP1 and GP4/GP5 ports both sit on I2C0. No audio jack, microSD, ESP-01 socket or mute switch (unlike Maker Pi Pico).
+
+### Pico / RP2040 project bundles
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | Board + parts bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium** |
+| DIY Fire Detection and Suppression (Pico) | [`diy-fire-detection-pico.md`](diy-fire-detection-pico.md) | `PR-DIY-FIRE-PICO` | Project kit: Pico + flame sensor + pump, CircuitPython | Cytron tutorial (Nov 2023) + product page | **Medium-low** |
+
+- **Maker Nano RP2040 + Grove WiFi 8266:** power the Grove WiFi from 5 V, not 3.3 V (the Blynk doc says 3.3 V is not enough). The Blynk doc's sample code carries a template ID — never copy it. Board facts live in `maker-nano-rp2040.md`.
 
 ### micro:bit accessories
 
@@ -111,6 +134,26 @@ micro:bit notes for every agent:
 - **MakeCode extensions:** `motionbit` (also serves MOTION:BIT Pro), `rekabit`, `sumobit`, `zoombit`. "Python" means MakeCode's Python mode unless a file says otherwise.
 - **Grove WiFi 8266 logic is 3.3 V** (RX high max 3.6 V) even though VCC accepts 3–6 V — level-shift from 5 V hosts. Ships with Cytron's ESP-AT v2.2.0 build (AT on GPIO1/GPIO3), 115200 baud; MakeCode default Tx P16 / Rx P15; Pico examples TX GP16 / RX GP17; legacy NONOS-AT v1.x commands are not fully compatible.
 
+### micro:bit kits
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| REKA:BIT RBT Project Kit | [`rekabit-rbt-project-kit.md`](rekabit-rbt-project-kit.md) | `V-KIT-REKABIT-RBT` | RBT Y5/Y6 kit: REKA:BIT + 7 components, 5 projects | Quick Start Guide (Malay, v1.0) + resource hub + pxt-rekabit-rbt-project-kit | **Medium** |
+| Auto Plant Watering Kit | [`auto-plant-watering-kit.md`](auto-plant-watering-kit.md) | `V-KIT-RBT-APW` | REKA:BIT + soil sensor + pump + servo; IoT option adds Grove WiFi 8266 | Lesson Guide (English, Apr 2022) | **Medium-high** |
+| BEETLE:BIT | [`beetlebit.md`](beetlebit.md) | `V-BEETLEBIT` | REKA:BIT gripper robot car, 7 chapters | Resource hub + MakeCode chapter programs (booklet PDF is image-only) | **Medium** |
+| STRIKER:BIT | [`strikerbit.md`](strikerbit.md) | `V-STRIKERBIT` | 4-robot classroom soccer kit on MOTION:BIT + Robo Base Mini | Scoring sheet + product page (booklet PDF image-only) | **Medium-low** |
+| SUMO:BIT Robot Kit (1 kg) | [`sumobit-robot-kit.md`](sumobit-robot-kit.md) | `V-KIT-SUMOBIT` | 1 kg sumo robot on SUMO:BIT + 2× MD13S | Google Slides guides (Assembly/Checking/Maintenance/Autonomous/RC, Dec 2024) | **Medium-high** |
+| Robot Battle (500g) SUMO:BIT | [`robot-battle-500g-sumobit.md`](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | 500 g battle robot on SUMO:BIT, no controller, no warranty | Product page only | **Medium-low** |
+| SOCCER:BIT (4 wheel) | [`soccerbit-robot-kit.md`](soccerbit-robot-kit.md) | `V-SCRBIT-4WD` | 4-motor soccer robot on SUMO:BIT | Product page only (its "user manual" link is the MD13S manual) | **Medium-low** |
+| DIY RC Boat Using micro:bit | [`diy-rc-boat-microbit.md`](diy-rc-boat-microbit.md) | `PR-DIY-BOAT-MBIT` | Project kit: 2 micro:bits + MOTION:BIT boat | Product page + tutorial (partial) | **Medium-low** |
+
+micro:bit kit notes for every agent:
+- **Soil moisture reading rises as soil dries** — the APW trigger is `reading > threshold`; there is no fixed threshold in the booklet. APW wiring: sensor P2:P12 (read P2), pump MOTOR 2, servo S1; servo sweeps 30–150°.
+- **RBT kit extension is `pxt-rekabit-rbt-project-kit`** (search "rekabit rbt project"); ultrasonic returns 300 cm when nothing is detected (ZOOM:BIT's returns 255). RGB Stick and Ultrasonic blocks need an init block.
+- **BEETLE:BIT uses `pxt-zoombit`** (there is no beetlebit extension); gripper servo S1, motors M1 left / M2 right, Maker Line P1, ultrasonic P2 trig / P12 echo; RC mode needs a second micro:bit (not included).
+- **SUMO:BIT kit motors are 12 V 580 rpm** (torque not stated — don't borrow 3.5 kgf·cm from the RC bundle); built weight ≈860 g before weights. For USB-joystick or hobby-RC mode the micro:bit must be removed; only Cytron's USB Joystick is supported. Battle kit: 495 g, 15×15×4 cm, charger included; sumo kit: charger NOT included.
+- **STRIKER:BIT:** the servo part is a shooter, not a gripper; each robot needs two micro:bits (robot + Joystick:bit); battery is a button-top 18650. Score rules: max 2 yellow cards per robot, 2 red per team.
+
 ### Cytron sumo robot controllers
 
 | Product | File | Code | Chip | Status | Confidence |
@@ -121,6 +164,17 @@ micro:bit notes for every agent:
 | SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) | **Medium** |
 | UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
+
+### Sumo robot kits and parts
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Ikedo Mini Sumo Robot V2 | [`ikedo-mini-sumo-v2.md`](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Maker Mini Sumo + 5 Maker Object + 2 edge sensors, 600 rpm, ~200 g | Ikedo Bot V2 Getting Started Instruction | **Medium** |
+| Ikedo Mini Sumo Robot Pro Bundle | [`ikedo-mini-sumo-pro.md`](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Pro: 800 rpm 3.1 kg·cm, steel shield, razor blade, 350 g | Product page | **Medium-low** |
+| 1KG Sumo Robot Bundles (RC) | [`sumo-1kg-rc-bundle.md`](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | MDDRC10 RC sumo, no code, 580 rpm 3.5 kgf·cm, 856 g | Product page (user-guide tutorials blocked) | **Medium-low** |
+| PCB Plate for Sumo Robot | [`pcb-sumo-plate.md`](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Training blade substitute, 15 cm (1 kg) / 10 cm (500 g) | Product page | **Medium-high** |
+
+- **1KG RC bundle has no microcontroller** — the page's "Microcontroller: MDDRC10" is a motor driver; no sensors, no autonomous mode. **No warranty** on all three robot bundles. Kit pages say opponent range "50cm adjustable" — the Maker Object datasheet says 40–140 cm (white) / 15–60 cm (black).
 
 ### Sensors
 
@@ -143,6 +197,16 @@ Sensor notes for every agent:
 - **MCP9700:** T(°C) = (VOUT − 500 mV) / 10 mV. "LM35 compatible" means the same slope, not the same zero — LM35-style code reads ~50 °C high. Output current 100 µA max; never quote ±2/±4 °C accuracy (not stated).
 - **LSA08:** powered from 7.5–20 V (12 V typical), outputs are 5 V logic; UART streams only while UEN is held low and the default UART mode is 0 = no output; "no line" = 255 (UART), 5 V (analog), 127 (C library). Refresh 100 Hz (Tindie's 200 Hz is wrong).
 - **RE08A:** 16 pulses per revolution, single channel (no direction), Sig LOW when a slot is in front of the sensor, output limited to 1 kHz.
+
+### Robot parts and accessories
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium-low** |
+| Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
+| Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
+
+- **STEM base includes no electronics, battery or cable ties**; motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
 
 ### Cytron motor drivers
 
@@ -201,6 +265,26 @@ Raspberry Pi board notes for every agent:
 - **Maker pHAT:** SW2 is **GPIO16** (the manual's feature list says 19 — wrong; 19 is an LED). Don't name its USB-serial chip or driver until the schematic is checked. Serial console needs `enable_uart=1`, 115200 baud.
 - **Maker Hat Base:** buttons GPIO17/22/23/27 active low (enable pull-up); fixed-tone buzzer on GPIO26 behind a mute switch; takes 5 V from the Pi (no own input); 3.3 V rail 800 mA max.
 
+### Power and accessories
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| 27W PD USB-C PSU | [`usbc-psu-27w-pd.md`](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | PD adapter 5.1 V 5 A / 9 V 3 A / 12 V 2.25 A / 15 V 1.8 A; UK/EU/US plug | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
+| 17.5W USB-C PSU | [`usbc-psu-17w5.md`](usbc-psu-17w5.md) | `V-AD-5V3P5A` | 5 V 3.5 A fixed, no PD; 20 AWG 1.5 m cable | Datasheet Rev 2.0, Oct 2024 | **Medium-high** |
+| 18650 Li-Ion 2200 mAh | [`li-ion-18650-2200.md`](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Button-top cell, no protection circuit, 1-week warranty | Product page + PKCELL vendor sheet (2019) | **Medium** |
+| Cooling Fan for RPi 30 mm | [`rpi-cooling-fan-30mm.md`](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | 3–5 V 0.2 A two-wire fan, 30×30×8 mm | Product page | **Medium** |
+
+- **PSU notes:** the 27W unit's 5 V profile is 5 A (5.1 V typ.); the 17.5W unit has no PD and was designed for Pi 4 B (Pi 5 appears only on the page list). **18650:** max discharge 1C ≈ 2.2 A per Cytron (vendor says 1.5C); cannot ship to Sabah/Sarawak/overseas; never treat it as an AA.
+
+### Storage (MakerDisk)
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| MakerDisk NVMe 2242 | [`makerdisk-nvme-2242.md`](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | M.2 2242 NVMe 128/256/512 GB, RPi OS Bookworm preloaded | Datasheet Rev 1.0, Apr 2024 | **Medium-high** |
+| MakerDisk NVMe 2280 (RPi OS) | [`makerdisk-nvme-2280.md`](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | M.2 2280 NVMe 128 GB–1 TB, RPi OS preloaded | Product page | **Medium-low** |
+| MakerDisk NVMe 2280 (JetPack) | [`makerdisk-nvme-2280-jetpack.md`](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | 256/512 GB, JetPack 6.2 for Jetson Orin Nano Super 8GB only | Product page | **Medium-low** |
+| MakerDisk 2.5" SATA 120 GB | [`makerdisk-sata-120gb.md`](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | SATA III SSD, RPi OS preloaded, USB-SATA boot | Product page | **Medium-low** |
+
 ### IRIV industrial series
 
 | Product | File | Code | Processor | Primary source | Confidence |
@@ -223,6 +307,17 @@ IRIV notes for every agent:
 - **Bare "IRIV PiControl" is ambiguous** between CM4 (`IRIV-PICL`) and CM5 (`IRIV-PICL5`); the shared datasheet code `IRIV-PICONTROL` covers both.
 - **Safety Box Kit is not a certified safety system**, detects helmets and vests only, needs RTSP IP cameras (not included), and its "up to 6 cameras" holds only for 640x360 sub-streams at 15–25 FPS. No accuracy figure exists — "96% compliant" in marketing is an example dashboard reading.
 - **Bare "IRIV SmartHub" is ambiguous** with the SmartHub dashboard feature of EdgeAI. Always use the full name.
+
+### Workshops and services
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| AI Agent Workshop for RPI 5 | [`ai-agent-workshop-rpi5.md`](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | 2-day AgentBox (Pi 5 local AI agent hub) workshop + kit | Course outline (no date) + product page | **Medium-low** |
+| Jetson Orin Nano AI Fundamentals Workshop | [`jetson-orin-nano-workshop.md`](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | 1-day workshop, NVIDIA certification; kit = Orin Nano Super 8GB + 512 GB JetPack SSD | Tentative timetable + product page | **Medium-low** |
+| Cytron Raspbot Workshop | [`raspbot-workshop.md`](raspbot-workshop.md) | `V-TRAINING-AI` | 1-day Edge AI workshop with Raspbot (Pi 5), max 5 pax, HQ Penang | Workshop tentative + product page | **Medium** |
+| Flash JetPack / Orin Nano Upgrade Service | [`jetpack-flash-service.md`](jetpack-flash-service.md) | `SEV-JN-ORNN` | Software-only JetPack 5.x → 6.x flash, RM150 by enquiry | Product page | **Medium-low** |
+
+- **Workshop dates are purchase variants and expire** — re-check the page before quoting one; several listed dates had passed on 2026-10-19. Only the Raspbot workshop states a participant cap, meals and a certificate.
 ## Quick cross-product facts (ESP32 family)
 
 | | Maker ESP32 | Robo ESP32 | Maker Feather AIoT S3 |

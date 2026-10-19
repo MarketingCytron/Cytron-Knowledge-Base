@@ -1342,6 +1342,311 @@ https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/
 # Product fact sheets
 
 ## Product name
+Maker UNO Edu Kit (Arduino Compatible)
+
+## Aliases
+V-KIT-MUNO-EDU, KIT-MAKER-UNO-EDU, Maker UNO Edu Kit, Maker UNO Edu Kit (Arduino Compatible), Maker UNO EduKit, Maker UNO Edu Kit School Package 10+1
+
+## What it is
+A classroom kit built around the Maker UNO (an Arduino UNO-compatible board with on-board LEDs, a piezo buzzer and a programmable button), sold with a Getting Started Module of 10 lessons and 2 projects and a Teacher Guidebook for the Malaysian Form 2 RBT syllabus.
+
+## Specs and functions
+- Product code: V-KIT-MUNO-EDU (my.cytron.io); older Cytron page: KIT-MAKER-UNO-EDU
+- Purchase options: Maker UNO Edu Kit (single set); School Package 10+1 ("10 sets + 1 free set (Get 11 sets for the price of 10)")
+- Controller board: Maker UNO (ATmega328P, CH340 USB-serial, Micro USB, no DC jack) — board details in the Maker UNO fact sheet
+- On-board I/O used in lessons: "12x LEDs, 1x piezo buzzer and 1x programmable button"
+- Pin-label stickers included (user peels and applies them)
+- Box has an opening for the USB cable so the board can stay in the box
+- Getting Started Module lessons: 1 The LED (Digital Output); 2 LED Blinking; 3 LED Output (PWM); 4 Push Button as Digital Input; 5 Serial Write; 6 Serial Read; 7 Tone Melody; 8 Potentiometer as Analog Input; 9 LDR as Analog Input; 10 Controlling Motor
+- Getting Started Module projects: Interactive Traffic Light; Light Theremin
+- Lesson pins: LED pin 7 (L1, L2, L6); LED pin 3 PWM (L3); LED pin 4 + button pin 2 INPUT_PULLUP (L4); Serial 9600 baud (L5, L6); 10 kΩ potentiometer on A0 + LED 13 (L8); LDR with 10 kΩ on A0 + LED 13, threshold 600 (L9); motor from pin 6 through 220 Ω and a transistor, speeds 255/123/50/0 (L10)
+- Interactive Traffic Light: vehicle green pin 5, yellow pin 6, red pin 7; pedestrian green pin 3, red pin 4; button pin 2; 5 x 220 Ω; yellow 2 s, red, pedestrian green 5 s
+- Light Theremin: LDR + 10 kΩ on A0, piezo buzzer pin 8 via tone(), LED 13 shows calibration, calibration for the first 5 s after power-up
+- Teacher Guidebook: 4 units, 10 hours total — Unit 1 Microcontroller Theory (2 h), Unit 2 Output (3 h), Unit 3 Input (2 h), Unit 4 Combination of Input and Output (3 h); learning standards 2.4.1–2.4.8; assessment Tier 1–6; Appendix 1 programming from Android (USB OTG Checker, ArduinoDroid)
+- Software: Arduino IDE (module written for 1.8.x); CH340/CH341 USB driver for Windows and macOS
+- Packing list: [NOT STATED] (product page list is an image; not in the module or Teacher Guidebook)
+- Warranty: [NOT STATED] (blank on product page)
+- Dimensions and weight: [NOT STATED]
+
+## Interfaces and compatibility
+- Power and programming over Micro USB only (Maker UNO has no DC jack and no Vin pin)
+- Button: D2 with INPUT_PULLUP (pressed = LOW)
+- Buzzer: D8 through the on-board slide switch (on to use the buzzer, off to free pin 8)
+- PWM pins: ~3, ~5, ~6, ~9, ~10, ~11
+- Analog inputs used: A0
+- Arduino libraries and code compatible; Arduino UNO R3 shields except those needing Vin (see Maker UNO fact sheet)
+- Documents linked: Maker UNO User's Manual, Getting Started Module PDF, schematic, Fritzing part, CH341 drivers, DSKP KSSM RBT Tingkatan 2, Teacher's Guide, Student's Class Module, Answer Scheme, Bahasa Malaysia versions
+- Default sketch: github.com/CytronTechnologies/MakerUno_Examples (MakerUno_DefaultSketch)
+
+## Use cases
+- Teaching Arduino coding in class with the Maker UNO's on-board LEDs, buzzer and button before building circuits
+- Form 2 RBT (DSKP KSSM) microcontroller unit: theory, output, input, combined input/output, project creation
+- Digital output, PWM fading, push button input, serial write/read, tone melody, potentiometer and LDR analog input, DC motor speed control
+- Interactive Traffic Light project
+- Light Theremin project
+- School Package 10+1 for a class set
+
+## Known limitations
+- Power is USB only; no DC jack and no Vin pin on the Maker UNO
+- The on-board button occupies D2 and the buzzer occupies D8 (slide switch)
+- analogWrite() works only on PWM pins ~3, ~5, ~6, ~9, ~10, ~11
+- Pin-label stickers must be applied by the user
+- Teacher Guidebook units 2.4, 3.4 and 4.3 need internet access; each student needs a Maker UNO; some topics need laptops or phones
+- The Getting Started Module has no printed version or date
+- Packing list and warranty are not stated in any Cytron text read
+
+## Positioning (kept apart from specs)
+- "Many students lack basic electronics knowledge and struggle with circuit diagrams, often spending much of a lesson wiring and troubleshooting."
+- "The kit lets students skip building basic circuits at first and start coding quickly, with a project that lights the board and plays a melody on a button press."
+- "The onboard LEDs act as both outputs and indicators, showing pin activity so students can tell whether a problem comes from wiring or code."
+- School Package: "Get 11 sets for the price of 10"
+
+## Price band
+RM60.00 (single kit) to RM689.92 (School Package 10+1) (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-maker-uno-edu-kits-arduino-compatible
+
+## Datasheet
+https://cdn.cytron.io/makeruno/Maker_Uno_Edu_Kit_Module.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://cdn.cytron.io/makeruno/Maker_Uno_Edu_Kit_Module.pdf
+
+# Product fact sheets
+
+## Product name
+Maker UNO Learning Box - Everything You Need to Start Making
+
+## Aliases
+KIT-MAKER-UNO-START, Maker UNO Learning Box, Maker UNO Learning Box - Everything You Need to Start Making, Maker UNO Learning Kit
+
+## What it is
+A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, transistors, diode, potentiometer, IR line sensor, SR04 ultrasonic sensor, 3 V motor and breadboard needed for the 17 projects in Cytron's "Arduino Learning Guide for Beginner Using Maker UNO". The guide is a PDF linked from the product page.
+
+## Specs and functions
+- Product code: KIT-MAKER-UNO-START
+- Controller board: 1x Maker UNO (board details in the Maker UNO fact sheet)
+- Lessons: 7 lessons, 17 projects
+- Lesson 1 Digital Output: P1 Turn On An LED; P2 Blink An LED; P3 Blink the LEDs In Sequence
+- Lesson 2 Digital Input: P4 On-board Pushbutton Switch; P5 External Pushbutton Switch
+- Lesson 3 Analog Output: P6 Construct An LED Circuit; P7 Fade An LED
+- Lesson 4 Melody Tone: P8 Compose Basic Tone; P9 Compose "Happy Birthday" Melody; P10 Optimize Your Code
+- Lesson 5 Analog Input: P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line
+- Lesson 6 DC Motor: P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton
+- Lesson 7 Ultrasonic Sensor: P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor
+- Packing list: 1x Maker UNO; 1x 3V miniature brush motor; 1x DIY 4-blade propeller (blue); 1x SR04 ultrasonic sensor; 1x IR line sensor; 3x LED 5mm red; 3x LED 5mm yellow; 3x LED 5mm green; 3x pushbutton switch; 10x 220Ω; 10x 1kΩ; 10x 10kΩ; 1x 1N4007 diode; 2x 2N2222 transistor; 1x finger preset 10K; 1x 40-way M-M jumper; 1x 40-way M-F jumper; 1x Micro B USB cable; 1x breadboard 8.5cm x 5.5cm
+- Software: Arduino IDE; CH341 (CH34x) USB driver; Maker UNO default sketch on GitHub
+- Warranty: 12 months
+- Dimensions and weight: [NOT STATED]
+- Project wiring (pins per project): [NOT STATED] (guide PDF not read)
+
+## Interfaces and compatibility
+- Power and programming over Micro USB only (Maker UNO has no DC jack and no Vin pin)
+- On-board button D2 (INPUT_PULLUP), on-board piezo buzzer D8 (slide switch), PWM on ~3, ~5, ~6, ~9, ~10, ~11, analog inputs A0–A5 (Maker UNO board facts)
+- IR line sensor is read as an analog input in the lessons
+- Ultrasonic sensor: SR04
+- Motor projects use the 2N2222 transistors and the 1N4007 diode
+- Arduino IDE (arduino.cc); CH34X driver for Windows (V3.5, Mar 2019), macOS (V1.5, Mar 2019), Linux (V1.5, Mar 2019, usually preinstalled); plug the Maker UNO in during driver installation
+- Default program: github.com/CytronTechnologies/MakerUno_Examples (MakerUno_DefaultSketch)
+
+## Use cases
+- Learning Arduino from zero with no electronics or coding background (students and teachers)
+- Digital output: turn on, blink and sequence LEDs
+- Digital input: on-board and external pushbutton switches
+- Analog output: build an LED circuit and fade an LED
+- Melody tone: basic tones, "Happy Birthday" melody, code optimisation
+- Analog input: serial monitor values, analog IR sensor reading, black line detection
+- DC motor: control a motor and its speed with a pushbutton
+- Ultrasonic sensor: set up the sensor and build a car's rear bumper sensor
+
+## Known limitations
+- Power is USB only; no battery or adapter in the kit
+- The guide is a PDF download; a printed copy is not listed in the packing list
+- Project wiring is in the guide PDF, which was not read for this fact sheet
+- Not the Maker UNO X Learning Box: same 17-project structure but a different board and guide edition
+- The 3 V motor must be driven through the supplied transistor, not directly from an I/O pin (Maker UNO I/O pin limit 20 mA)
+
+## Positioning (kept apart from specs)
+- "Everything You Need to Start Making"
+- A beginner Arduino learning set created by a non-technical author, for students and teachers who lack electronics or coding experience; each lesson shows a visible result early, then gives a brief explanation of how it works
+- "Arduino is the easiest platform to learn digital making."
+
+## Price band
+RM62.90 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-making
+
+## Datasheet
+https://s3-ap-southeast-1.amazonaws.com/cdn.cytron.io/makeruno/Arduino_Learning_Guide_for_Beginner_Using_Maker_UNO.pdf
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-making
+
+# Product fact sheets
+
+## Product name
+Learning Guide for Beginners with Maker Uno X compatible with Arduino
+
+## Aliases
+BOK-MUNOX, Maker UNO X Learning Guide, Maker Uno X Learning Guide book, Learning Guide for Beginners with Maker Uno X, Arduino Learning Guide for Beginners Using Maker UNO X, Maker UNO X guide book
+
+## What it is
+A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technologies, written by ET Tan) that teaches Arduino on the Maker UNO X board through Lesson 0 Setting Up plus 7 lessons and 17 projects. It is designed for the Maker Uno X Learning Box and sold on its own as one book.
+
+## Specs and functions
+- Product code: BOK-MUNOX
+- Format: printed book; packing: 1x book
+- Edition read: v1.5, February 2023 ("Arduino Learning Guide For Beginners — MAKER UNO X"; "Explore STEM and Coding with Maker UNO Xperiment Kit"); earlier edition v1.4, February 2020
+- Written by ET Tan (Tan Eng Tong, Co-founder and CEO, Cytron Technologies); edited by Cheryl Ng; illustrated by Suhana Azmi; revised by Hairil and 'Awatif (v1.5)
+- Target board: Maker UNO X (with the Maker UNO X Learning Box)
+- Lesson 0 Setting Up: pin-label stickers, breadboard stuck onto the board, micro USB cable; Arduino IDE download; CH341 driver for Windows (CH341SER.EXE) and Mac (CH341SER_MAC.ZIP)
+- Lesson 1 Digital Output: P1 Turn On An LED; P2 Blink An LED; P3 Blink the LEDs In Sequence
+- Lesson 2 Digital Input: P4 On-board Pushbutton Switch; P5 External Pushbutton Switch
+- Lesson 3 Analog Output: P6 Construct An LED Circuit; P7 Fade An LED
+- Lesson 4 Melody Tone: P8 Compose Basic Tone; P9 Compose "Happy Birthday" Melody; P10 Optimize Your Code
+- Lesson 5 Analog Input: P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line
+- Lesson 6 DC Motor: P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton
+- Lesson 7 Ultrasonic Sensor: P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor
+- Project pins (as stated in the guide): P1–P3 LEDs on pins 7 and 2–7; P4 on-board switch pin 2 (INPUT_PULLUP) and LED 4; P5 external pushbutton on pin 3 with a 10 kΩ pull-up; P6–P7 external LED with 220 Ω on pin 5 (PWM); P8–P10 piezo buzzer on pin 8 via tone(); P11 potentiometer on A0; P12–P13 IR sensor VCC 5V, GND, A0 to A0; P14 DC motor on pin 5 through a 2N2222 transistor, 220 Ω resistor and a diode
+- Tone values taught: Do 262, Re 294, Mi 330, Fa 349, So 392, La 440, Ti 494, high Do 523 Hz; delay 30 % longer than the note duration
+- IR threshold rule: (reading on white + reading on black) / 2; author's example 500
+- Motor speed demo: analogWrite(5, 255) for 3 s then analogWrite(5, 80) for 3 s; kit motor rated 3–6 V
+- Each project links a demo video by QR code; each lesson ends with a Task and a summary
+- Page count, size, ISBN: [NOT STATED]
+- Warranty: 12 months
+
+## Interfaces and compatibility
+- For the Maker UNO X board: on-board LEDs on pins 2–13, piezo buzzer on pin 8, on-board switch on pin 2, "Debug" mode slide switch that enables the built-in LEDs and buzzer, PWM on pins 3, 5, 6, 9, 10, 11, analog input on A0–A5
+- Software: Arduino IDE from arduino.cc (Windows 10+ 64-bit installer recommended; Mac package); CH341 driver; Mac port shown as /dev/cu.usbserial-220
+- Not the guide for the Maker UNO Learning Box (that kit uses the Maker UNO edition of the guide)
+
+## Use cases
+- A student (or teacher) learning Arduino for the first time
+- Turn on, blink and sequence LEDs
+- Read the on-board and an external pushbutton; pull-up and pull-down circuits
+- Build an LED circuit and fade it with PWM
+- Play tones and the "Happy Birthday" melody; use the toneMelody example
+- Read a potentiometer and an IR sensor; detect a black line
+- Control a DC motor and its speed
+- Set up an ultrasonic sensor and build a car's rear bumper sensor
+
+## Known limitations
+- Written for the Maker UNO X: Debug mode must be on for the built-in LEDs and buzzer; switch it off to use pin 8 for another device
+- The on-board switch occupies pin 2 and cannot be shared with other components while in use
+- P6 blinks forever once the switch is pressed until reset; P9 plays once because the code is in setup()
+- The motor may lack torque if its blades rest on a surface; applying voltage beyond the motor's rating shortens its life
+- Projects 15–17 and the total page count were not read for this sheet
+- The product page does not state which edition ships
+
+## Positioning (kept apart from specs)
+- "I wrote this guide with you in mind - a student (or teacher), learning Arduino for the first time."
+- "I just added explanation on some aspects that I initially struggled with and I also simplified the technical part for better understanding."
+- "Simplifying Digital Making"
+
+## Price band
+RM39.00 (5+ RM37.10, 10+ RM35.10) (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-arduino-learning-guide-for-beginners-with-maker-uno-x
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+[NOT STATED]
+
+# Product fact sheets
+
+## Product name
+PikaBot - Maker UNO Smart Car Kit
+
+## Aliases
+V-KIT-PIKABOT, KIT-PIKABOT, PikaBot, Pikabot, PIKABOT, PikaBot Smart Car Kit, Maker UNO Smart Car Kit, PikaBot - Maker UNO Smart Car Kit
+
+## What it is
+A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive motor driver, with two TT gear motors, two IR line-tracking modules and an HC-SR04 ultrasonic sensor, assembled with jumper wires and powered by 4 AA batteries. It comes with a project booklet in an Arduino IDE (English) or mBlock (Bahasa Melayu) edition.
+
+## Specs and functions
+- Product code: V-KIT-PIKABOT (reseller model: KIT-PIKABOT)
+- Booklet options: Arduino IDE (English); mBlock (Bahasa Melayu, v1.1)
+- Controller: Maker UNO (see Maker UNO fact sheet)
+- Motor driver: Maker Drive (see Maker Drive fact sheet)
+- Motors: 2x 3-6VDC dual-axis TT gear motor with pre-soldered wires
+- Wheels: 2x rubber wheel 63mm x 15mm
+- Sensors: 2x IR line tracking module; 1x HC-SR04 ultrasonic
+- Power: 4x AA batteries in a 4xAA battery holder; powers controller and motors; panel-mount rocker switch
+- Breadboard: 1x mini breadboard 35x42mm; 40-way M-F jumper; 40-way M-M jumper
+- Packing list (product page, truncated): 1x Maker UNO, 1x Maker Drive, 2x TT gear motor, 2x rubber wheel, 2x IR line tracking module, 1x HC-SR04 ultrasonic, 4x AA batteries, 1x 4xAA battery holder, 1x mini breadboard, 40-way M-F jumper, 40-way M-M jumper
+- No soldering: assembled with jumper wires
+- Arduino booklet projects: 1 Let's Move It (3 steps + Rectangle, Circle, Triangle challenges); 2 Oh No! Stop! (2 steps + challenge); 3 Black or White Line? (2 steps + challenge); 4 Music On (2 steps + Super Mario, Baby Shark, Birthday Song challenges)
+- mBlock lesson series: 1 Move Around; 2 Detect Object; 3 Line Follow
+- Arduino library: Cytron Motor Drivers Library (CytronMotorDriver.h), PWM_PWM mode
+- Pin map (Cytron sample code): left motor D11/D10; right motor D9/D3; ultrasonic TRIG D5, ECHO D4; left IR A0, right IR A1 (digital read); start button D2 (on-board, INPUT_PULLUP); buzzer D8 (on-board)
+- IR logic in code: LOW = white surface, HIGH = black line
+- Ultrasonic distance in code: pulseIn(ECHO, HIGH) x 0.017 cm; lessons stop at 15 cm and avoid at 20 cm
+- Warranty: [NOT STATED]
+- Dimensions and weight: [NOT STATED]
+
+## Interfaces and compatibility
+- Maker UNO: USB Micro-B for programming; no DC jack or Vin pin
+- Maker Drive: PWM_PWM control, 2.5–9.5 VDC input, 1 A continuous / 1.5 A peak per channel, 5 V 200 mA output (Maker Drive datasheet)
+- Arduino IDE with the Cytron Motor Drivers Library (booklet shows Arduino 1.8.10 and library 1.0.1)
+- mBlock 5 (online ide.mblock.cc or offline) with the "PikaBot" extension added from the device panel; upload mode over the COM port
+- CH34x USB driver for the Maker UNO (CH341SER shown in the booklet)
+- pitches.h must be present as a second tab for the music projects (full file in the Resources doc)
+
+## Use cases
+- Learning electronics, microcontrollers, sensors, motors and coding with a mobile robot
+- Project 1: move forward, backward, turn; drive a rectangle, circle and triangle
+- Project 2: measure distance with the ultrasonic sensor; stop or avoid obstacles
+- Project 3: read the IR line sensors; follow a black line; stop at a full black line
+- Project 4: play melodies on the Maker UNO buzzer (toneMelody, Super Mario, Baby Shark, Birthday Song)
+- Reuse the parts to build new robots from cardboard, cartons, bottles or old toys
+
+## Known limitations
+- The booklet PDF is image-only; its wiring diagrams were not readable for this sheet
+- The product page packing list is truncated in the capture; the full list is not confirmed from Cytron text
+- Programs wait for the on-board D2 button before moving; the buzzer needs the D8 slide switch on
+- Turn convention in Cytron code: robotMove(-200, 200) = turn left, robotMove(200, -200) = turn right; swapped motor wires reverse this
+- The Maker UNO cannot take the battery directly (no DC jack, no Vin)
+- The IR modules and HC-SR04 are generic modules, not Cytron Maker Line / Maker Object
+- Warranty, weight and age range are not stated
+
+## Positioning (kept apart from specs)
+- DIY mobile robot kit; no soldering (jumper wires)
+- "Schematics and mounting locations are printed inside the box"
+- Programmable in the Arduino IDE or the block-based mBlock environment
+- Cytron EDU line-up lists PikaBot beside ZOOM:BIT, Ikedo and EDU PICO; BEETLE:BIT is positioned as the next step after PikaBot
+
+## Price band
+RM128.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-pikabot-maker-uno-smart-car-kit
+
+## Datasheet
+https://drive.google.com/file/d/1G9rhCY_9ogJN4ufXdAwFmrgbaEHKP3Cp/view
+
+## Source type
+Datasheet
+
+## Source link
+[NOT STATED]
+
+# Product fact sheets
+
+## Product name
 Robo Pico
 
 ## Aliases
@@ -1914,6 +2219,134 @@ https://www.farnell.com/datasheets/4726021.pdf
 # Product fact sheets
 
 ## Product name
+Maker Nano RP2040 Getting Started Bundles
+
+## Aliases
+V-MN2040, Maker Nano RP2040 Getting Started Bundles, Maker Nano RP2040 Getting Started Kit, Maker Nano RP2040 Getting Started With Blynk IoT, Maker Nano RP2040 Blynk IoT Bundle
+
+## What it is
+Two beginner bundles around the Cytron Maker Nano RP2040 board: a Getting Started Kit of breadboard electronics for the Arduino-IDE lessons, and a Getting Started With Blynk IoT variant that adds a Grove WiFi 8266 for Blynk IoT lessons. Each is paired with a Cytron Getting Started Google Doc.
+
+## Specs and functions
+- Product code: V-MN2040
+- Variants: Getting Started Kit; Getting Started With Blynk IoT
+- Controller board: Maker Nano RP2040 (MAKER-NANO-RP2040) — board specs are in the Maker Nano RP2040 fact sheet
+- Wi-Fi module (Blynk variant): Grove WiFi 8266, Ai-Thinker ESP-12F module preloaded with Espressif ESP-AT firmware (doc wording "v2.20")
+- Components used in "Getting Started With Maker Nano RP2040": 1x Maker Nano RP2040 (MAKER-NANO-RP2040), 1x Breadboard 8.5x5.5cm 400 holes (BD-BB-0508), 1x 40-Way 10cm Dupont Jumper Wire (WR-JW-4010MM), 1x Finger Adjust Preset 10K (RS-MP3386-10K), 2x LED 5mm Green (DS-LED-5NG), 2x LED 5mm Yellow (DS-LED-5NY), 2x LED 5mm Red (DS-LED-5NR), 1x DIY 4 Blades 56mm Motor Propeller Blue (HD-PROP-4B), 1x 3V Miniature Brush Motor with wire leads (MO-300CA-11440), 1x Transistor 2N2222 (TR-2N-2222), 10x Resistor 0.25W 5% 220R (RS-025W-220R), 1x LDR Small (SN-LDR-S), 1x Diode 1N4007 (DI-1N4007), 1x USB Micro B Cable (WR-USB-UB), 1x Resistor 0.25W 5% 10K (RS-025W-10K)
+- Components used in "Getting Started With Maker Nano RP2040 And Blynk IoT": same list without the 10K resistor; the Grove WiFi 8266 used in every lesson is not in that table
+- Product page packing list per variant: [NOT STATED] (did not extract)
+- Getting Started doc lessons: 1 LED Blink, 2 Siren, 3 Digital Input, 4 Analog Input, 5 Light Dependent Resistor, 6 Temperature Sensor, 7 DC Motor, 8 Neopixel; projects: 1 Knight Rider, 2 Interactive Traffic Light, 3 Temperature Alarm, 4 Light Theremin
+- Blynk IoT doc lessons: 1 Getting Connected, 2 Simple LED Control, 3 Push Button As Input, 4 Analog Input, 5 Temperature Sensor, 6 Neopixel Color, 7 Motor Speed Controller, 8 Going Mobile; Chapter 3 Projects has no content
+- Blynk setup in the doc: create a Blynk account, new template "Maker Nano RP2040 IoT" (hardware Arduino, connection WiFi), add a device from the template, copy its Template ID / Device Name / Auth Token into the sketch
+- Pins used by the lesson code: LED D2; buzzer pin 22; push button pin 20; potentiometer A0 (Getting Started) or A3 (Blynk); LDR A0; NeoPixels pin 11; DC motor PWM pin 2 through a 2N2222; Blynk-controlled LED 7; Knight Rider pins 16, 19, 17, 9, 8, 7, 6, 5, 4, 3
+- Grove WiFi connection: Maker Port (code comment "Maker port [0, 1]"), Serial1 at 115200 baud
+- Warranty: [NOT STATED]
+- Dimensions, weight: [NOT STATED]
+
+## Interfaces and compatibility
+- Software: Arduino IDE with the arduino-pico board package (board "Cytron Maker Nano RP2040"); hold BOOT while plugging in for the first upload
+- Libraries: Blynk by Volodymyr Shymanskyy 1.1.0, BlynkESP8266 (ESP8266_Lib.h, BlynkSimpleShieldEsp8266.h), Adafruit_NeoPixel, WS2812FX, pitches.h
+- IoT platform: Blynk web dashboard and Blynk mobile app
+- Grove WiFi 8266 plugs into a Maker Port through the JST-SH to Grove conversion cable
+- Power: USB Micro B cable; no battery in the component lists
+- Product page links: Maker Nano RP2040 datasheet, GitHub MAKER-NANO-RP2040, 3D CAD, tutorials (Blynk IoT, Grove gas sensor MQ9B, Maker Line)
+
+## Use cases
+- Getting started with Maker Nano RP2040 in the Arduino IDE (LED, buzzer, button, analog input, LDR, temperature, DC motor, NeoPixel)
+- Getting started with Maker Nano RP2040 and Blynk IoT (LED control, push button, analog input, temperature chart, NeoPixel colour, motor speed, mobile dashboard)
+- Classic projects: Knight Rider, Interactive Traffic Light, Temperature Alarm, Light Theremin
+
+## Known limitations
+- If communication with the Grove WiFi fails, the 3.3V supply is not enough to power the ESP8266; the doc says to connect its power to 5V instead
+- Blynk code comment: do not send more than 10 values per second
+- The Blynk doc's Chapter 3 Projects is empty
+- The Getting Started doc's project objectives cite wrong lesson numbers, and its Light Theremin code calls noTone(8) while the buzzer is on pin 22
+- The Blynk doc's NeoPixel lesson declares 30 pixels although the board has 2
+- Wi-Fi credentials and the Blynk Template ID / Auth Token in the sketches must be replaced with your own
+- Exact packing list per variant is not stated in the page text read
+
+## Positioning (kept apart from specs)
+- "Maker Nano RP2040 is created to simplify digital making and troubleshooting" (Getting Started doc)
+
+## Price band
+RM58.00–RM88.52 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-maker-nano-rp2040-getting-started-kits
+
+## Datasheet
+https://docs.google.com/document/d/1yqR88btul39hZ77OgUMRrg-d0Z-e3xlgVlNHLoHSLzY/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1T3FAROtD-uECHmBquAbhmKK9bxdzDWIQn_PhV93oKSo/edit
+
+# Product fact sheets
+
+## Product name
+DIY Fire Detection and Suppression with Raspberry Pi Pico
+
+## Aliases
+PR-DIY-FIRE-PICO, DIY Fire Detection and Suppression with Raspberry Pi Pico, DIY Fire Detection Pico, Fire Detection and Suppression Pico Kit, Pico Fire Detection Kit
+
+## What it is
+A beginner project kit for building a fire detection and suppression system with a Raspberry Pi Pico, a flame sensor and a water pump, programmed in CircuitPython with the Thonny editor. When the flame sensor detects fire, the code runs the water pump for 5 seconds and then switches it off.
+
+## Specs and functions
+- Product code: PR-DIY-FIRE-PICO
+- Controller: Raspberry Pi Pico
+- Sensor: flame sensor (model: [NOT STATED])
+- Actuator: water pump (model and voltage: [NOT STATED])
+- Firmware: CircuitPython, written and uploaded with Thonny
+- Behaviour: endless loop reading the flame sensor; on fire detected the water pump runs for 5 seconds, then switches off
+- Flame sensor connection: GP3
+- Water pump connection: motor terminal 1
+- Full component list and quantities: [NOT STATED] (product cards did not render in the text read)
+- CircuitPython libraries: [NOT STATED]
+- Code listing: [NOT STATED] (video tutorial)
+- Warranty: [NOT STATED]
+- Dimensions, weight: [NOT STATED]
+
+## Interfaces and compatibility
+- Raspberry Pi Pico (product page links the Pico datasheet)
+- Flame sensor on GP3
+- Water pump on motor terminal 1 (a motor-driver terminal, not a Pico GPIO; board not named in the text read)
+- Software: Thonny editor with CircuitPython; a video on getting started with Thonny is linked
+- Guide: Cytron tutorial "DIY Fire Detection and Suppression with Raspberry Pi Pico" (Abdulrahman Alhamed, 08 Nov 2023)
+
+## Use cases
+- Build a fire detection and suppression system using a Raspberry Pi Pico, a flame sensor, and a water pump (quick video tutorial)
+- Keep your surroundings safe from fire hazards (tutorial framing)
+
+## Known limitations
+- The pump runs for a fixed 5 seconds per detection
+- Only two wiring facts are stated: flame sensor to GP3 and water pump to motor terminal 1
+- The parts list, code and libraries are in the video and product cards, not in the text read
+- Out of stock on my.cytron.io on 2026-10-19
+
+## Positioning (kept apart from specs)
+- "Quick and easy video tutorial" for a DIY fire detection and suppression system (tutorial excerpt)
+
+## Price band
+RM103.08 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-diy-fire-detection-suppression-raspberry-pi-pico
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/tutorial/diy-fire-detection-and-suppression-with-raspberry-pi-pico
+
+# Product fact sheets
+
+## Product name
 MOTION:BIT
 
 ## Aliases
@@ -2423,6 +2856,662 @@ https://docs.google.com/document/d/1ub3WuRrp1F8QijoHCDjOez6SC1mtG5pQglhiPdeB12k/
 # Product fact sheets
 
 ## Product name
+REKA:BIT RBT Project Kit
+
+## Aliases
+REKA:BIT RBT Project Kit, REKA:BIT RBT Project Kits, REKABIT RBT Project Kit, REKA:BIT RBT Project Bundle, RBT Project Kit, Kit Projek RBT REKA:BIT, V-KIT-REKABIT-RBT, KIT-REKABIT-RBT, KIT-REKABIT-RBT-NB
+
+## What it is
+A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built on the REKA:BIT expansion board with a servo, RGB stick, two Big LED modules, a Maker Soil Moisture Sensor, a submersible water pump, an ultrasonic sensor and two DC motors with wheels. It comes with a printed Quick Start Guide covering 5 projects and 7 components, programmed in MakeCode with the REKA:BIT RBT Project Kit extension.
+
+## Specs and functions
+- Product code: V-KIT-REKABIT-RBT (product page); kit codes KIT-REKABIT-RBT (with micro:bit V2) and KIT-REKABIT-RBT-NB (without micro:bit)
+- Purchase options: with micro:bit V2 included; without micro:bit
+- Controller board: REKA:BIT (see the REKA:BIT entry for board specs)
+- Kit contents (with micro:bit): 1x micro:bit v2, 1x REKA:BIT expansion board, 1x USB power and data cable, 1x quick start guide book, 1x Maker Soil Moisture Sensor, 1x RGB LED Stick, 1x Ultrasonic sensor, 2x 10mm LED module, 2x DC motor with wheel, 1x Micro servo motor, 1x Submersible Water Pump, 4x Grove to female header cable, 1x 4xAA battery holder with DC plug, 4x AA battery, 1x Castor, 1x Mini screwdriver, double-sided tapes
+- Without-micro:bit option: same contents minus the micro:bit
+- Guide book list: REKA:BIT (with or without micro:bit), micro servo motor, RGB board, soil moisture sensor, Big LED module x2, water pump, ultrasonic sensor, USB cable (power & data), Grove cable x4, AA battery x4, battery holder, ball caster, DC motor with wheels x2, mini screwdriver, adhesive tape x5
+- Guide book: Quick Start Guide, 5 projects + 7 components; softcopies in English, Malay, Chinese (Spanish on the resource hub)
+- Projects: 1 Boom Barrier Gate; 2 Interactive Robot; 3 Auto Plant Watering Robot (two code versions, 3a and 3b); 4 Coin-Eating Robot; 5 Mobile Robot Car
+- RGB stick: 8 LEDs labelled 0 to 7; brightness 0 to 255
+- Servo: channels S1 to S4; angle 0 to 180 degrees; disable-servo block stops jitter
+- Water pump: motor channel M1 or M2; speed 0 to 255; works in either direction
+- DC motor: channel M1 or M2; speed 0 to 255 (relative value)
+- Ultrasonic block: 1 to 300 cm; returns 300 when out of range or no echo
+- Soil moisture block: 0 to 1023; reading rises as the soil dries
+- Battery: 4x AA in a battery holder with DC plug
+- Power switch: slide OFF then ON to restart
+- Age: 10+; Syllabus: RBT Y5&Y6; Platform: micro:bit
+- Warranty: 12 months (manufacturing defects; wear and tear and misuse excluded)
+
+## Interfaces and compatibility
+- MakeCode extension: pxt-rekabit-rbt-project-kit (search "rekabit rbt project") — https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit ; it loads the REKA:BIT extension (pxt-rekabit) with it
+- Block categories: RGB Stick, Big LED, Soil Moisture, Ultrasonic (plus REKA:BIT motor and servo blocks)
+- RGB stick and Big LED pin choices: P0, P1, P2, P13, P15 (README examples: RGB stick P0, Big LED P13)
+- Soil moisture pin choices: P0, P1, P2 (README example P2; Project 3 uses port P2:P12)
+- Ultrasonic Trig/Echo pairs: P0/P1, P1/P9, P2/P12, P13/P14, P15/P16 (README example Trig P2, Echo P12)
+- Water pump: MOTOR terminal (Project 3: motor terminal 2)
+- Mobile Robot Car: left wheel MOTOR 1, right wheel MOTOR 2
+- Servo: REKA:BIT servo terminal S1 to S4 (wire labels s = signal, +, -)
+- micro:bit V1 and V2 (V1 has no built-in buzzer; add a Grove Buzzer module)
+- MakeCode Blocks, JavaScript and Python modes; MakeCode Offline App supported
+- WebUSB download needs the latest Edge or Chrome; otherwise drag the .hex file to the MICROBIT drive
+- Resource hub: https://rekabit-rbt-hub.cytron.io/ (project videos, sample code, printable A4 templates)
+
+## Use cases
+- Boom Barrier Gate (servo + RGB stick)
+- Interactive Robot (two Big LEDs + servo)
+- Auto Plant Watering Robot (soil moisture sensor + water pump)
+- Coin-Eating Robot (servo + ultrasonic sensor)
+- Mobile Robot Car (two DC motors, ultrasonic sensor, LED headlights, RGB stick)
+- RBT Year 5 and Year 6 classroom projects
+
+## Known limitations
+- The micro:bit is not included in the "without micro:bit" option
+- micro:bit V1 has no built-in piezo buzzer; a Grove Buzzer module is needed for sound
+- The pin set in a block must match the REKA:BIT port the module is plugged into
+- RGB Stick and Ultrasonic blocks need their init block at the start of every program
+- Ultrasonic block returns 300 when nothing is detected
+- The soil moisture threshold (README example 550) is an example, not a calibrated value
+- Disable an unused servo to prevent jitter
+- The pump and DC motor pages in the guide carry a warning symbol
+- All electrical limits are the REKA:BIT board's (3.6 to 6 V input; 1 A continuous / 1.5 A peak per motor; 300 mA Grove 3V3; over 7 V cuts motor and servo power)
+- Cardboard, hot glue, Blu Tack, plastic container and steel hanger used in the projects are not included
+- New MakeCode extensions may need an internet connection to compile even in the offline app
+- The guide's per-project wiring is shown in diagrams; port labels for the RGB stick, Big LEDs, ultrasonic sensor and servo in each project are not stated in text
+
+## Positioning (kept apart from specs)
+- "with the aim to lower the learning curve for beginners who wants to build STEAM (and RBT) projects with micro:bit"
+- Hardcopy Quick Start Guide plus online resources with example code and a step-by-step building video per project
+- For RBT Y5 and Y6 (Reka Bentuk dan Teknologi Tahun 5 & 6)
+
+## Price band
+RM219.00 to RM295.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-rekabit-rbt-project-kits
+
+## Datasheet
+https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+
+# Product fact sheets
+
+## Product name
+Auto Plant Watering Kit for micro:bit
+
+## Aliases
+Auto Plant Watering Kit for micro:bit, Auto Plant Watering Kit, RBT Auto Plant Watering Kit, RBT Automatic Plant Watering Kit, APW Kit, RBT APW, V-KIT-RBT-APW, KIT-RBT-APW
+
+## What it is
+A micro:bit lesson kit that builds an automatic plant-watering system: a Maker Soil Moisture Sensor reads the soil, a REKA:BIT runs a submersible pump when the soil is dry, and a micro servo aims the water pipe. It comes with a printed five-lesson guide; an IoT option adds a Grove WiFi 8266 and follows a separate Cytron Blynk IoT tutorial.
+
+## Specs and functions
+- Product code: V-KIT-RBT-APW
+- Purchase options: standard / IoT version, each with micro:bit or without micro:bit
+- Controller board: REKA:BIT (see the REKA:BIT entry for board specs)
+- Kit contents (with micro:bit): 1x Lesson guide (English), 1x Maker Soil Moisture Sensor, 1x REKA:BIT (with micro:bit V2), 1x Micro Submersible Water Pump DC 3V-5V with Pipe, 1x Analog Micro Servo 9g (3V-6V) with horns and screws, 1x Grove 4 Pin Buckled 50cm Cable, 1x Servo Male-Female Extension Cable 30cm, 1x 4xAA battery holder with DC plug, 4x PKCELL Heavy Duty AA Battery, 1x Tiny Phillips Screwdriver, 2x Popsicle stick, 3x Cable Ties, 2x Double Sided Tapes
+- IoT version: adds 1x Grove WiFi 8266
+- Without-micro:bit options: REKA:BIT without micro:bit
+- Lesson guide: "Auto Plant Watering Kit for micro:bit", April 2022, by Goh Hao Zhen & Cheryl Ng; softcopies in English, Malay, Chinese, Thai
+- Lessons: 1 Hello! (micro:bit + MakeCode); 2 What's the Soil Moisture Level?; 3 Dry? Moist? Or Wet?; 4 Water the Plant (pump when dry); 5 Servo Motor, Direct the Pipe!; Additional Activity 1 visualise soil moisture on the LED matrix; Additional Activity 2 melodies
+- Soil moisture reading: higher when the probe is dry, lower in water; the threshold is calculated by the student from three recorded readings (no fixed number)
+- Lesson 4: pump runs for 5 seconds when the reading is higher than the threshold
+- Lesson 5: servo sweeps 30 to 150 degrees while the pump runs
+- Lesson 3 indication: REKA:BIT RGB LEDs green = moist, red = dry; micro:bit shows a smiley or sad face
+- Water pump: DC 3V-5V, with pipe
+- Servo: analog micro servo 9g, 3V-6V
+- Battery: 4x AA in a holder with DC plug, into the REKA:BIT power jack
+- Warranty: 12 months
+
+## Interfaces and compatibility
+- Maker Soil Moisture Sensor: REKA:BIT Grove port P2:P12 (50 cm Grove cable); read on analog pin P2; probe inserted up to the white line
+- Water pump: MOTOR 2 terminal, black wire to M2B, red wire to M2A
+- Servo: servo port S1 via the 30 cm extension cable (port pins White = S signal, Red = +, Black = -; servo lead to extension Orange-White, Red-Red, Brown-Black)
+- Battery holder: REKA:BIT power jack
+- Grove buzzer for micro:bit V1: port P0:P1
+- MakeCode extension: rekabit (adds REKA:BIT and Neopixel drawers)
+- MakeCode editor: https://makecode.microbit.org ; WebUSB one-click download needs the new Edge or Chrome and the latest micro:bit firmware
+- micro:bit V1 and V2 (V2 has the built-in speaker used in Additional Activity 2)
+- IoT version: Cytron tutorial "RBT Automatic Plant Watering IoT Project Using Blynk IoT" — https://my.cytron.io/tutorial/rbt-automatic-plant-watering-iot-project-using-blynk-iot
+- Sample code: https://link.cytron.io/auto-plant-wateringproject-code ; project ideas: https://link.cytron.io/apw-projects
+
+## Use cases
+- Display soil moisture level on the micro:bit
+- Classify soil as dry, moist or wet
+- Water the plant automatically when the soil is dry
+- Direct the water pipe with a servo motor
+- Visualise soil moisture as a bar graph on the LED matrix
+- Play melodies and sound notifications
+- IoT monitoring with Blynk IoT (IoT version)
+
+## Known limitations
+- The micro:bit is not included in the "without micro:bit" options
+- The step-by-step guide for the IoT project is not included in the booklet
+- A higher sensor reading means drier soil; the pump trigger is reading higher than threshold
+- No fixed dry/moist/wet values are given; each plant needs its own threshold
+- Do not wet the Maker Soil Moisture Sensor's exposed part or the REKA:BIT; it risks damaging electronic components on the board
+- micro:bit V1 has no built-in speaker; a Grove buzzer on P0:P1 is needed for sound
+- Pins taken: P2 (P2:P12 port), MOTOR 2, S1, and P0:P1 if a buzzer is added
+- When clamping the pump wires, clamp the exposed wire lead, not the insulator
+- Electrical limits are the REKA:BIT board's (3.6 to 6 V input; motor and servo rails equal the battery voltage; over 7 V cuts motor and servo power)
+- The booklet gives no battery voltage figure
+- Plant, pot and water container are not included
+
+## Positioning (kept apart from specs)
+- Lesson Guide offered as a free PDF in English, Malay, Chinese and Thai
+- Standard and IoT versions, each with or without the micro:bit
+- Same sensor, pump and servo combination as Project 3 of the REKA:BIT RBT Project Kit
+
+## Price band
+RM108.00 to RM214.62 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-auto-plant-watering-kit-for-microbit
+
+## Datasheet
+https://static.cytron.io/download/KIT-RBT-APW/RBT_APW_KIT_Booklet_English_v1.pdf
+
+## Source type
+Datasheet
+
+## Source link
+https://static.cytron.io/download/KIT-RBT-APW/RBT_APW_KIT_Booklet_English_v1.pdf
+
+# Product fact sheets
+
+## Product name
+BEETLE:BIT Gripper Robot Car Kit for micro:bit
+
+## Aliases
+BEETLE:BIT, BEETLEBIT, BEETLE BIT, V-BEETLEBIT, BeetleBit, BEETLE:BIT Gripper Robot Car Kit, BEETLE:BIT Gripper Robot
+
+## What it is
+An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BIT expansion board with two TT motors, a front servo gripper, an ultrasonic sensor and a Maker Line sensor. It comes with a 7-chapter booklet, a printed line track and an online Resource Hub with chapter code.
+
+## Specs and functions
+- Product code: V-BEETLEBIT
+- Purchase options: with micro:bit / without micro:bit / Accessories Kit only, each with battery or without battery
+- Microcontroller: BBC micro:bit (V2 in the "with micro:bit" option)
+- Controller board: REKA:BIT (see the REKA:BIT fact sheet; not re-documented here)
+- Motors: 2x DC gear motors with wheels (2x TT motor with 15cm wires and wheel kit)
+- Gripper: non-copper PCB gripper (Robo Grip PCB with accessories, called "Robo Grip Mini" on the Resource Hub) driven by 1x TS90A micro servo
+- Sensors: infrared line tracking (Maker Line), ultrasonic obstacle avoidance (Ultrasonic 3V3)
+- Power: 4x AA batteries in a 4xAA battery holder with DC jack
+- Control: Autonomous Mode or micro:bit RC Mode (additional micro:bit not included)
+- Chassis: non-copper PCB (2x Robo Base, PCB only); no soldering
+- Programming: MakeCode
+- Packing list (with micro:bit, with battery): 1x BBC micro:bit V2, 1x REKA:BIT, 1x Dual Output Cable USB-A to 2.1mm DC barrel & Micro USB, 1x 4xAA battery holder with DC jack, 1x Ultrasonic 3V3, 1x Maker Line, 4x AA battery, 2x TT motor with 15cm wires and wheel kit, 1x TS90A micro servo, 1x BEETLE:BIT Booklet, 1x BEETLE:BIT Track, 1x Accessories Kit
+- Accessories Kit: bracket for ultrasonic HC-SR04, W420 steel ball castor, 2x TT motor bracket, 2x Robo Base (PCB only), 3x Grove 4-pin buckled to female cable, M3 PCB stands 40/20/10/5mm, 14x M3 nut, 14x M3x6 screw, Velcro set, 4x M3x10 bolt, 1x Robo Grip PCB with accessories, 1x ping pong ball
+- Booklet: "202602 BEETLEBIT Quick Start Guide.pdf" (English), 7 chapters plus a Setup Guide and Bonus activities
+- Chapters: Setup Guide (build BEETLE:BIT); 1 The Beetle's Brain (micro:bit Basics); 2 How the Beetle Moves (TT Motors); 3 The Beetle's Claw (Servo Gripper); 4 The Beetle's Eyes (Ultrasonic Sensor); 5 The Beetle Senses (Line Following); 6 Teaching the Beetle to Decide; 7 Coordinated Actions (Line + Grab); Bonus 1 Control BeetleBit Using a Controller; Bonus 2 BEETLE:BIT Input–Output Challenge
+- Gripper angles in Cytron's chapter code: Chapter 3 toggles 0 and 180; Chapters 6 and 7 use 120 = open, 0 = closed, then disable the servo after a pause
+- Drive speeds in Cytron's chapter code: 128 for move/turn; obstacle thresholds: ultrasonic < 10 = stop, < 20 = slow
+- Bonus 1 RC mode: micro:bit radio group 1; numbers 0–5 = forward, backward, turn left, turn right, toggle gripper, brake; remote is a second micro:bit
+- Warranty: 12 months (1 year for manufacturing defects; wear and tear, misuse, abuse or improper maintenance not covered; troubleshooting, repair and testing take 7 working days from receipt)
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Age range: [NOT STATED]
+
+## Interfaces and compatibility
+- Left drive motor: REKA:BIT M1; right drive motor: REKA:BIT M2
+- Gripper servo: REKA:BIT servo port S1
+- Maker Line sensor: micro:bit P1 (analog)
+- Ultrasonic sensor: trigger P2, echo P12
+- RGB LEDs on REKA:BIT: P8 (not used by the chapter code)
+- Motors and servo are driven over I2C by the REKA:BIT co-processor (address 0x08)
+- Grove port labels used for the sensor cables: [NOT STATED]
+- MakeCode extension: pxt-zoombit v0.1.1 (https://github.com/cytrontechnologies/pxt-zoombit), which loads pxt-rekabit; the product page names the extension as pxt-rekabit "BEETLE:BIT (ZOOM:BIT) Extension"
+- MakeCode blocks, JavaScript and Python modes; MakeCode Offline App available
+- micro:bit V2 is included in the "with micro:bit" option; RC mode needs a second micro:bit
+- Related Cytron tutorials: colour detection bot using HuskyLens; line following robot car using motionbit; colour detection robot using TCS3200; Chapter 1: Setting Up Beetle:Bit with Huskylens 2
+- MicroPython library: [NOT STATED]
+
+## Use cases
+- Display text and animation on the LED matrix and download a program
+- Control BEETLE:BIT to move around with the TT motors
+- Open and close the gripper with the servo
+- Detect obstacles using an ultrasonic sensor
+- Follow a line using the Maker Line sensor
+- Make decisions and perform a complete task on its own
+- Perform several actions in sequence (line following plus grabbing)
+- Control BeetleBit using a controller (second micro:bit over radio)
+- Input–output challenge
+- Stepping stone for learners who have mastered ZOOM:BIT, Pikabot, BocoBot or OjanBot
+
+## Known limitations
+- The micro:bit is not included in the "without micro:bit" and "Accessories Kit only" options
+- RC mode needs an additional micro:bit, which is not included
+- Batteries are not included in the "without battery" options
+- No kit datasheet; the booklet PDF is image-only (223 MB) and its text could not be read; chapter facts come from the Resource Hub and published code
+- Pins used by the kit: P1 (Maker Line), P2 and P12 (ultrasonic), P8 (RGB LEDs), I2C to the REKA:BIT co-processor; servo on S1; motors on M1/M2
+- Controller limits apply from REKA:BIT: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor, 300 mA total on Grove +3V3, motor and servo power cut above 7 V
+- All Bonus 1 programs use radio group 1, so two kits in the same room interfere unless the group is changed
+- Chapter 3 Challenge uses the microphone (micro:bit V2 only)
+- Ultrasonic block returns 255 when nothing is detected or the distance is over 255 cm
+- No Cytron GitHub extension named "beetlebit" exists; use zoombit
+- Battery chemistry, run time, dimensions, weight and age range are not stated
+
+## Positioning (kept apart from specs)
+- "Hands-on educational robotics kit"
+- "Stepping stone... for those who have mastered ZOOM:BIT, Pikabot, BocoBot, or OjanBot"
+- "Mobile manipulator: configurable chassis, dual TT motors, front-mounted servo gripper, ultrasonic distance sensor, line-following sensor"
+- Resource Hub: a learning site for beginners in basic robotics covering building, coding and experimenting with a mobile manipulation robot
+
+## Price band
+RM99.80–RM326.45 across the options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-beetlebit-gripper-robot-car-kit-for-microbit
+
+## Datasheet
+https://drive.google.com/file/d/18ZOwcWVUn0xsEVdcUNOMDvZKf5haVmz5/view
+
+## Source type
+Website
+
+## Source link
+https://beetlebit-hub.cytron.io/
+
+# Product fact sheets
+
+## Product name
+STRIKER:BIT Soccer Competition Kit
+
+## Aliases
+STRIKER:BIT, STRIKERBIT, STRIKER BIT, V-STRIKERBIT, StrikerBit, STRIKER:BIT Soccer Kit, PM-GAME-STRIKER
+
+## What it is
+A classroom robot-soccer competition kit for the BBC micro:bit: four 2-wheel-drive robots built on Robobase Mini PCB chassis with a MOTION:BIT, a servo shooter and Joystick:bit remote control, plus a game field, barrier, goal posts, props and scoring sheets. A Basic Kit option contains one robot set.
+
+## Specs and functions
+- Product code: V-STRIKERBIT (scoring sheet game code: PM-GAME-STRIKER)
+- Purchase options: Complete Kit / Basic Kit, each with battery or without battery
+- Microcontroller: BBC micro:bit (micro:bit Junior Kit V2)
+- Controller board: MOTION:BIT (see the MOTION:BIT fact sheet; not re-documented here)
+- Motors: 2x DC gear motors with wheels per robot
+- Shooter mechanism: non-copper PCB + 3D printed part with servo (Robo Grip Mini Basic Bundle; 8x 3D printed grippers in the Complete Kit)
+- Power: 1x 3.7V 2200mAh 18650 Li-Ion with button top per robot
+- Control: micro:bit Joystick:bit (Joystick:bit V2 Kit)
+- Chassis: non-copper PCB (Robobase Mini kit for 2WD Robot); no soldering
+- Programming: MakeCode
+- Learning guide: 7-chapter learning guidebook (STRIKER:BIT booklet, "20260606 STRIKERBIT Booklet (MAIN).pdf"); 4-step workflow
+- Packing list (Complete Kit, with batteries): 4x Robo Grip Mini Basic Bundle, 4x Robobase Mini kit for 2WD Robot, 4x micro:bit Junior Kit (V2), 4x micro servos, 4x motion:bit, 4x USB Micro B cables, 8x 3D printed grippers, 4x ping pong balls, 4x STRIKER:BIT booklet, 4x Joystick:bit V2 Kit, Velcro sets, whistle, 12x 3/4" PVC conduit pipe (34 cm), 4x elbow joints, 8x sockets, 2x goal post stickers, yellow card, red card, gameplay instruction & scoring sheet, 2x pizza box packing 315x220x70mm (goal post), gamefield map, 4x AAA battery sets, 4x 18650 battery
+- Packing list (Basic Kit): 1 robot set: 1x Robo Grip Mini Basic Bundle, 1x Robobase Mini 2WD, 2x micro:bit Junior Kit V2, 1x micro servo (rest of the list not stated)
+- Scoring sheet ("STRIKER:BIT SOCCER MATCH SCORE SHEET", 11 June 2026): fields for Competition / Event / Round, Date, Team A and Team B names; goals ticked per goal; yellow cards max 2 per robot; red cards max 2 per team; final score = total number of goals; signatures of Team A captain, Team B captain and Head of Referee
+- Warranty: 12 months
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Field size: [NOT STATED]
+- Age range: [NOT STATED]
+
+## Interfaces and compatibility
+- Robot: micro:bit on MOTION:BIT; 2 DC motors on MOTION:BIT motor terminals; 1 micro servo on a MOTION:BIT servo port
+- MOTION:BIT motor channel and servo port numbers used: [NOT STATED]
+- Remote: Joystick:bit V2 Kit with its own micro:bit; the Basic Kit lists 2x micro:bit Junior Kit V2 per robot set
+- Radio scheme / radio groups: [NOT STATED]
+- Robot battery: 18650 3.7V 2200mAh button top in the MOTION:BIT holder
+- Controller batteries: 4x AAA battery sets (Complete Kit)
+- MakeCode; MOTION:BIT extension pxt-motionbit for the robot
+- MicroPython library: [NOT STATED]
+
+## Use cases
+- Classroom-scale robot soccer competition ("4 Robots in One Package")
+- Build and program a 2WD micro:bit soccer robot with a servo shooter
+- Remote-control a robot with a micro:bit Joystick:bit
+- Run and score matches with the game field, goal posts, cards, whistle and official score sheets
+
+## Known limitations
+- The booklet PDF is image-only (237 MB) and its chapter text, wiring and code could not be read; the chapter-code Drive folder could not be opened
+- MOTION:BIT port assignments and the radio control scheme are not stated by any readable source
+- "without battery" options ship without the 18650 cells; the robot needs a 3.7V button-top 18650
+- The product page is inconsistent on micro:bit count: 4x micro:bit Junior Kit (V2) in the Complete Kit for 4 robots plus 4 Joystick:bit V2 Kits, but 2x per robot set in the Basic Kit
+- Basic Kit packing list is truncated on the product page
+- Card limits: max 2 yellow cards per robot, max 2 red cards per team (score sheet)
+- Controller limits apply from MOTION:BIT: 3.6–6 V input, 1 A continuous / 1.5 A peak motor current, 5 V output 300 mA, 3V3 output 200 mA
+- Joystick:bit V2 is not a Cytron product; its details are not stated by Cytron sources
+- Field size, match rules beyond the score sheet, robot dimensions, weight and age range are not stated
+
+## Positioning (kept apart from specs)
+- "Classroom-scale soccer competition kit"
+- "4 Robots in One Package"
+- "4-step workflow"
+- "7-chapter learning guidebook"
+
+## Price band
+RM370.00–RM1,675.65 across the options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-strikerbit-soccer-competition-kit
+
+## Datasheet
+https://drive.google.com/file/d/12FMdIQBJSj9FZLkH8i9N7iAjfZcL4TMG/view
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-strikerbit-soccer-competition-kit
+
+# Product fact sheets
+
+## Product name
+SUMO:BIT Robot Kits - 1kg Sumo Robot for micro:bit
+
+## Aliases
+V-KIT-SUMOBIT, SUMO:BIT Robot Kit, SUMO:BIT Robot Kits, SUMOBIT Robot Kit, SUMO:BIT 1kg Sumo Robot Kit, 1kg Sumo Robot for micro:bit
+
+## What it is
+A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT board with two MD13S motor drivers, five Maker Object opponent sensors, two Maker Reflect edge sensors, two 12 V DC motors, a 3S LiPo battery and a 3D-printed body with a steel blade. It runs autonomously from MakeCode or under remote control.
+
+## Specs and functions
+- Product code: V-KIT-SUMOBIT
+- Competition class: 1 kg sumo robot
+- Purchase options: Complete Kit (with body) / Basic Kit (without body) / 3D Printed Body only, each with or without micro:bit
+- Controller: SUMO:BIT board with 2x MD13S attached (board specs: see the SUMO:BIT fact sheet)
+- Drive motors: 2x 12 V 580 rpm DC motor with wires (Assembly guide and Checking guide); product page says "12V brushed DC motor" without rpm
+- Motor torque: [NOT STATED]
+- Wheels: 2x aluminium rim + silicone tyre wheel set, each rim fixed with two screws on the motor shaft flat
+- Battery: LiPo 11.1 V 1300 mAh (3-cell); product page packing list 1x, Assembly guide item list 2x
+- Charger: not included; "2-3 cell LiPo balance charger" offered as an accessory; guide says use a LiPo balance charger or USB LiPo charger
+- 3-cell LiPo full charge up to 12.6 V; do not let the battery drop below 11 V
+- Opponent sensors: 5x Maker Object
+- Edge sensors: 2x Maker Reflect; "For best result, use with the latest (11 Dec 2024 onwards) Maker Reflect"
+- Robot weight without extra weight: "around ±860g"
+- Robot dimensions: [NOT STATED]
+- Body: 1x 3D-printed main body, 1x right motor bracket, 1x left motor bracket, 2x copper base, 1x 6" stainless steel blade, 1x PCB plate (training), back cover (new step 13); free STL files on the Cytron-SUMOBIT GitHub
+- Extra weight: not included; maximum 4 pieces in a row beside the battery compartment, covered to prevent short circuits
+- Complete Kit packing list (with micro:bit, product page): 1x SUMO:BIT with 2x MD13S attached, small flat screwdriver, Phillips screwdriver, Dean T male connector 18 AWG 15 cm, 5x Maker Object, 2x Maker Reflect, 7x GVS F-F extension cable 10 cm, 2x 12 V brushed DC motor with wires, 2x wheel set, M2 Allen key, 1x LiPo 11.1 V 1300 mAh, 3S LiPo charger cable extension 10 cm, 2x copper base for mini sumo robot, 4x M3 nylon lock nut, 4x M3 bolt 20 mm, 10x M3x6 self-tapping screw, 1x PCB Plate for Blade (training), 1x 6" stainless steel blade, 1x 3D-printed chassis with motor brackets, 1x micro:bit Junior Kit, 1x BBC micro:bit V2, USB Micro B cable, sticker set
+- Assembly guide item list: 1x SUMO:BIT board, 1x micro:bit Junior Kit, 5x Maker Object, 2x Maker Reflect, 2x 12 V 580 rpm DC motor with wires, 2x aluminium silicone wheel set, 2x LiPo battery 11.1 V 1300 mAh, 1x 3D-printed main body, 1x right motor bracket, 1x left motor bracket, 2x copper base, 1x steel blade, 1x PCB plate, 7x 10 cm GVS female-to-female cables, 1x Dean T male connector with cable, 1x 10 cm 3S LiPo charger cable extension, 1x small flat screwdriver, 1x Phillips screwdriver, 10x M3 tapping screws (6 mm), 4x M3 bolt and nut (20 mm)
+- Basic Kit and Body-only contents: [NOT STATED]
+- Dohyo used in the guides: 1 m diameter
+- A typical sumo round lasts around 10 seconds or less; more than 1 minute continuous running may overheat the motors
+- Guides: Assembly (V1) 2 Dec 2024, Checking 2 Dec 2024, Maintenance 2 Dec 2024, Autonomous 9 Dec 2024, RC (Remote Control) 10 Dec 2024 (Google Slides)
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- Wiring: EDGE-L = left Maker Reflect, EDGE-R = right Maker Reflect, OPP-L = left Maker Object, OPP-FL = front-left, OPP-FC = front-centre, OPP-FR = front-right, OPP-R = right Maker Object, all on 10 cm GVS F-F cables; motors on the LEFT MOTOR / RIGHT MOTOR terminals; battery on the battery terminal through the Dean T cable
+- Maker Reflect cable pins OUT, VCC, GND; Maker Object cable pins GND, VCC, OUT (as the guide lists them)
+- Assembly: 13 steps (edge sensors, copper bases, motors and brackets, opponent sensors, optional weights, motor and battery connection, motor direction check with the alignment button, sensor connections, board mounting, rims and tyres, micro:bit, PCB plate or blade, optional robot holder, back cover)
+- micro:bit inserted with buttons and LED matrix facing up; only required for autonomous mode
+- Programming: Microsoft MakeCode with the "sumobit" extension (https://github.com/CytronTechnologies/pxt-sumobit); flash by USB from a computer or wirelessly from an iPad/iPhone/Android app (press the micro:bit reset button three times for Bluetooth mode)
+- Autonomous sample programs: edge sensor and battery readout, navigation, move around the dohyo, detect obstacle, basic sumo robot with 5 s countdown, community DIP-strategy programs started by button or by IR Sumo Start
+- RC mode 1 — wireless USB joystick: remove the micro:bit, plug the receiver into the USB-A port, RGB LEDs stay yellow when ready; only the Cytron USB Joystick model is supported; half speed by default, hold R2 for full speed
+- RC mode 2 — hobby RC receiver on the SERVO/RC port: port 1 = speed (forward/reverse), port 2 = steering; turn on the transmitter first; RGB LEDs stay orange when ready; example mappings FlySky FS-iA6B CH2/CH4, Hot RC F-06A CH2/CH1, Dumborc X6F CH2/CH1 to RC port 1/2
+- RC mode 3 — a second micro:bit as joystick (Joystick:bit V2 used in the guide): code on both ends, semi-auto possible; press B on the joystick to set the edge threshold before a run
+- Firmware update: .uf2 from the SUMO:BIT GitHub page, hold the boot button while connecting USB-C, copy to the RPI-RP2 drive
+- Accessories offered: USB Joystick, 2-3 cell LiPo balance charger
+- Support: Telegram SUMO:BIT Support Group (https://t.me/sumobit_support)
+
+## Use cases
+- Start your sumo journey: build and compete with a 1 kg sumo robot
+- Autonomous sumo robot programmed in MakeCode (edge detection, opponent detection, attack and search)
+- Remote-controlled sumo robot via wireless USB joystick, hobby RC transmitter, or a second micro:bit as joystick
+- DIP-switch strategy selection for competitions, started by button or IR Sumo Start
+- Practice with the PCB plate; tournaments with the steel blade
+
+## Known limitations
+- Charger not included; extra weights, robot holder tape, Joystick:bit and a second micro:bit are not included
+- "Without micro:bit" options omit the micro:bit; the micro:bit is removed for USB-joystick and RC-receiver modes
+- USB joystick mode only supports the Cytron USB Joystick model
+- Do not discharge the 3S LiPo below 11 V; full charge is 12.6 V
+- Motors are high-current and heat quickly; rest the robot if the motor bracket feels warm; more than 1 minute continuous running is too long
+- Run only on a dohyo (or a clean flat surface for RC testing); avoid tiles, uneven or dusty floors and carpet
+- Check battery polarity at the board before connecting
+- The blade is sharp; use the PCB plate for practice
+- Screws loosen after impacts and need regular tightening
+- Best edge-sensor results need Maker Reflect units from 11 Dec 2024 onwards
+- Robot dimensions, motor torque and the Basic Kit / Body-only contents are not stated
+- Product page lists 1 battery while the Assembly guide lists 2
+
+## Positioning (kept apart from specs)
+- "Start your sumo journey with the SUMO:BIT Robot Kit!"
+- "Whether you're a beginner or looking to sharpen your skills, this kit has everything you need to start your journey."
+- "SUMO:BIT board, MD13S Motor Driver, Essential accessories, Free STL file for robot body"
+
+## Price band
+RM80.00–RM1,047.70 across options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-sumobit-robot-kits-1kg-sumo-robot-for-microbit
+
+## Datasheet
+https://docs.google.com/presentation/d/15mmPIKEZlVMuslrhgAz_jTQuCI3Ud2Z0r1F7EQjnnpk/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/presentation/d/15mmPIKEZlVMuslrhgAz_jTQuCI3Ud2Z0r1F7EQjnnpk/edit
+
+# Product fact sheets
+
+## Product name
+Robot Battle (500g) - SUMO:BIT
+
+## Aliases
+V-BATTLE-SMB, Robot Battle (500g) - SUMO:BIT, Robot Battle 500g, SUMO:BIT Robot Battle Kit, 500g Battle Robot SUMO:BIT
+
+## What it is
+A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S as the controller, 12 V 980 rpm GM25 geared motors, a 3S 2000 mAh LiPo and a 3D-printed chassis. It ships without a remote controller and without sensors, so it is driven through the SUMO:BIT's RC modes.
+
+## Specs and functions
+- Product code: V-BATTLE-SMB
+- Competition class: Robot Battle (500 g); "Suitable for the Robot Battle Challenge"
+- Purchase options: Complete / Basic / 3D Printed Body only, each with or without micro:bit
+- Controller: SUMO:BIT with 2x MD13S (board specs: see the SUMO:BIT fact sheet)
+- Motors: 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor; packing list prints "1 x" (quantity unconfirmed)
+- Wheels: 1x G25T1 silicone wheel set (1 pair)
+- Battery: 1x Mini LiPo 3S 11.1 V 2000 mAh
+- Charger: 1x 3S LiPo USB balance charger included, plus 3S charger cable extension
+- Battery lead: Dean T connector 18 AWG 15 cm; 10 cm JST SM 2-pin male connector
+- Chassis: robust 3D-printed chassis set (body + left/right motor brackets)
+- Dimension: 15 cm x 15 cm x 4 cm
+- Actual weight: 495 g
+- Hardware: 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, screwdrivers
+- With-micro:bit options add: micro:bit Junior Kit, micro:bit V2, USB Micro B cable
+- Complete packing list (with micro:bit): 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector 18 AWG 15 cm, 1x 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor (as printed), 1x G25T1 silicone wheel set (1 pair), 1x Mini LiPo 3S 11.1 V 2000 mAh, 1x 3S LiPo USB balance charger, 3S charger cable extension, 10 cm JST SM 2-pin male connector, 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, 3D-printed chassis set, micro:bit Junior Kit, micro:bit V2, USB Micro B cable
+- Basic and Body-only contents: [NOT STATED]
+- Remote controller: not included ("This Battle Robot Kit does not come with a controller")
+- Opponent / edge sensors: none listed
+- Warranty: "There is NO warranty for Battle Robot."
+
+## Interfaces and compatibility
+- Motors on the SUMO:BIT LEFT MOTOR / RIGHT MOTOR terminals (one MD13S per channel); battery on the battery terminal via the Dean T cable
+- RC mode with a hobby receiver on the SUMO:BIT SERVO/RC port: port 1 = speed (forward/reverse), port 2 = steering; Hot RC F-06A example mapping CH2 to RC port 1, CH1 to RC port 2; transmitter on first; RGB LEDs orange when ready; micro:bit removed (SUMO:BIT Robot Kit RC guide, 10 Dec 2024)
+- RC mode with the Cytron USB Joystick on the USB-A port (only supported USB joystick model); RGB LEDs yellow when ready; micro:bit removed
+- A second micro:bit (e.g. Joystick:bit V2) as joystick needs code on both ends
+- Programming for micro:bit-coded control: MakeCode "sumobit" extension (https://github.com/CytronTechnologies/pxt-sumobit)
+- Tutorials on the page: 2 Wheel Robot Battle with SUMO:BIT; SUMO:BIT RC Mode with HOT RC
+- Support: Telegram SUMO:BIT Support Group
+
+## Use cases
+- Robot Battle Challenge (500 g class) competition robot
+- 2-wheel robot battle with SUMO:BIT
+- SUMO:BIT RC mode with a Hot RC transmitter
+
+## Known limitations
+- No warranty for the Battle Robot
+- No remote controller in the box; a hobby RC set, Cytron USB Joystick, or Joystick:bit with a second micro:bit is bought separately
+- No opponent or edge sensors in the kit
+- Actual weight 495 g leaves about 5 g inside the 500 g class
+- Packing list prints "1 x" motor; the true quantity is unconfirmed
+- Basic and 3D Printed Body only contents not stated
+- "Without micro:bit" options omit the micro:bit; the micro:bit is removed for RC-receiver and USB-joystick modes
+- Supported micro:bit version not stated by any source
+
+## Positioning (kept apart from specs)
+- "Suitable for the Robot Battle Challenge"
+- "Robust 3D printed chassis"
+
+## Price band
+RM69.00–RM716.40 across options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-robot-battle-500g-sumo-bit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-robot-battle-500g-sumo-bit
+
+# Product fact sheets
+
+## Product name
+4 Wheel SOCCER:BIT Robot Bundles
+
+## Aliases
+V-SCRBIT-4WD, SOCCER:BIT, SOCCERBIT, SOCCER BIT, SOCCER:BIT Robot Kit, 4 Wheel SOCCER:BIT Robot Bundle, 4WD SOCCER:BIT
+
+## What it is
+A four-wheel-drive soccer robot bundle for the BBC micro:bit using the SUMO:BIT board with two MD13S as the controller, four 12 V 980 rpm GM25 geared motors, 42 x 30 mm silicone wheels, a 3S 1300 mAh LiPo and a 20 x 20 cm PLA 3D-printed body. It comes in loose parts for self-assembly and is programmed in MakeCode.
+
+## Specs and functions
+- Product code: V-SCRBIT-4WD
+- Purchase options: Complete / Basic / 3D Printed Body only, each with or without micro:bit
+- Microcontroller: SUMO:BIT with 2x MD13S (board specs: see the SUMO:BIT fact sheet)
+- Programming: MakeCode
+- Motors: 4x 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor
+- Speed: 980 rpm; Torque: 2.3 kgf·cm
+- Wheels: 4x high-grade silicone wheels 42 mm x 30 mm
+- Body: PLA 3D-printed, 20 cm x 20 cm
+- Weight: 1 kg
+- Battery: 1x LiPo 11.1 V 1300 mAh
+- Charger: [NOT STATED]
+- Motor wiring: 2x Easy Clip wire splitter (2 in, 4 out), 18 AWG wires, Dean T connector
+- Hardware and tools: M3 hardware, M2 Allen key, screwdrivers
+- Control: RC Controller – Joystick:bit V2 Kit for micro:bit [optional], not included
+- Complete packing list: 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector, 4x 12 V 980 rpm 2.3 kgf·cm GM25 motors, 4x silicone wheels 42 x 30 mm, 1x LiPo 11.1 V 1300 mAh, 2x Easy Clip wire splitter (2 in 4 out), 18 AWG wires, M3 hardware, M2 Allen key, 3D-printed body, micro:bit items per option
+- Basic and Body-only contents: [NOT STATED]
+- "The Soccer Robot comes in loose parts. You will have to assemble them yourself."
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- SUMO:BIT has two motor channels (one MD13S each); the four motors connect through the two "2 in 4 out" splitters, two motors per channel
+- Motors on the SUMO:BIT LEFT MOTOR / RIGHT MOTOR terminals; battery on the battery terminal via the Dean T cable
+- RC control with Joystick:bit V2: a micro:bit in the Joystick:bit and a micro:bit in the SUMO:BIT, both programmed in MakeCode with the "sumobit" extension (SUMO:BIT Robot Kit RC guide, 10 Dec 2024)
+- Other SUMO:BIT RC modes: Cytron USB Joystick on the USB-A port; hobby RC receiver on the SERVO/RC port (port 1 speed, port 2 steering)
+- The page's "user manual" link opens the MD13S User's Manual V1.1 (June 2018), a motor-driver manual
+- Tutorial on the page: Soccer Robot using SUMO:BIT
+- Support: Telegram SUMO:BIT Support Group
+
+## Use cases
+- 4-wheel soccer robot using SUMO:BIT
+- Remote-controlled soccer robot with Joystick:bit V2
+- MakeCode-programmed micro:bit robotics
+
+## Known limitations
+- Comes in loose parts; self-assembly required
+- Joystick:bit V2 controller is optional and not included; a second micro:bit is needed for Joystick:bit control
+- Charger not listed in the packing list
+- Four motors share two MD13S channels (13 A continuous / 30 A for 10 s max per channel)
+- "Without micro:bit" options omit the micro:bit
+- Basic and 3D Printed Body only contents not stated
+- No SOCCER:BIT manual: the "user manual" link is the MD13S manual
+- Supported micro:bit version not stated by any source
+- Warranty not stated
+
+## Positioning (kept apart from specs)
+- "High grade silicon" wheels
+- "4 Wheel SOCCER:BIT Robot Bundles"
+
+## Price band
+RM90.00–RM1,134.52 across options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-soccerbit-robot-kits
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-soccerbit-robot-kits
+
+# Product fact sheets
+
+## Product name
+DIY RC Boat Using micro:bit
+
+## Aliases
+DIY RC Boat Using micro:bit, PR-DIY-BOAT-MBIT, DIY RC Boat, micro:bit RC Boat, RC Boat micro:bit, DIY Boat micro:bit
+
+## What it is
+A do-it-yourself remote-controlled boat project for the BBC micro:bit: one micro:bit on the boat plugged into a MOTION:BIT drives two DC motors with propellers and a 9 g servo rudder fin, and a second micro:bit is the radio remote. The product page is the build guide and the hull is 3D-printed from Cytron's STL files or made from foam or plastic.
+
+## Specs and functions
+- Product code: PR-DIY-BOAT-MBIT
+- Project kit; the product page is itself the build guide (6 build steps: gather components, assemble hull, ...)
+- Controller board: MOTION:BIT (see the MOTION:BIT fact sheet; not re-documented here)
+- Components listed: BBC micro:bit x2; MOTION:BIT; 2x DC motors with propellers; 9g servo (fin); 3.7V LiPo battery pack; boat hull 3D-printed (STL provided) or foam/plastic; waterproof enclosure optional
+- Propulsion: 2x DC motors with propellers
+- Steering: 9 g servo moving a fin; fin positions used by Cytron's remote code: 130 degrees, 50 degrees, 90 degrees (centre)
+- Power: 3.7V LiPo battery pack
+- Software: MakeCode blocks with the MOTIONBIT extension; Code #1 on the boat micro:bit, Code #2 on the remote micro:bit
+- Remote controls: Shake = start the motors; Button A = fin to 130 degrees; Button B = fin to 50 degrees; Buttons A+B = fin back to 90 degrees; touch the micro:bit logo = stop the motors
+- Hull: 3D-printed (STL files provided; Cytron printed it on an Artillery Hornet) or foam/plastic
+- Packing list / what is in the box: [NOT STATED]
+- Warranty: [NOT STATED]
+- Dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+
+## Interfaces and compatibility
+- Boat: micro:bit on MOTION:BIT; 2 DC motors on MOTION:BIT motor terminals; 9 g servo on a MOTION:BIT servo port
+- MOTION:BIT motor channels and servo port used: [NOT STATED]
+- Remote: second micro:bit over micro:bit radio; radio group: [NOT STATED]
+- Battery: 3.7V LiPo battery pack (which MOTION:BIT input it uses: [NOT STATED])
+- MakeCode blocks; MOTIONBIT extension https://github.com/CytronTechnologies/pxt-motionbit
+- Linked resources: Getting Started with MOTION:BIT & Projects Guide tutorial; MOTION:BIT datasheet; pxt-motionbit; MOTION:BIT 3D CAD
+- Tutorial with video: Build an RC Boat Using micro:bit (https://my.cytron.io/tutorial/build-an-rc-boat-using-micro-bit)
+- micro:bit version required: [NOT STATED] (the remote uses the touch logo)
+
+## Use cases
+- Build a remote-control boat with a micro:bit
+- Control the boat's motors and rudder fin from a second micro:bit using shake, buttons and the touch logo
+- 3D-print a boat hull from the provided STL files
+
+## Known limitations
+- No datasheet, booklet or packing list; the product page and tutorial are the only guides
+- Whether the hull, LiPo pack, propellers and the two micro:bits are included in the package is not stated in the text read
+- MOTION:BIT motor channels, servo port and the radio group are not stated in text (shown only in code-block images)
+- The hull must be 3D-printed from the STL files or made from foam or plastic
+- Waterproof enclosure is optional and not described; the micro:bit, MOTION:BIT and LiPo are not waterproof
+- MOTION:BIT limits apply: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor channel
+- The remote's touch-logo stop command needs a micro:bit with a touch logo
+- Motor model, propeller size, servo model, LiPo capacity, run time and warranty are not stated
+
+## Positioning (kept apart from specs)
+- Remote-control boat built with a micro:bit, with a video tutorial available
+
+## Price band
+RM297.55 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-diy-boat-mbit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/tutorial/build-an-rc-boat-using-micro-bit
+
+# Product fact sheets
+
+## Product name
 Maker Mini Sumo Controller
 
 ## Aliases
@@ -2697,6 +3786,290 @@ Datasheet
 
 ## Source link
 [NOT STATED]
+
+# Product fact sheets
+
+## Product name
+Ikedo Mini Sumo Robot V2
+
+## Aliases
+KIT-IKEDO-MSV2-S, Ikedo Mini Sumo Robot V2, Ikedo Mini Sumo Robot V2 Starter, Ikedo Mini Sumo Robot Starter Kit V2, Ikedo Bot Starter Kit V2, Ikedo Bot V2, Ikedo V2
+
+## What it is
+A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Controller, with 5 Maker Object opponent sensors, 2 edge sensors, two 6 V micro metal gearmotors, a 7.4 V 450 mAh LiPo and a black 3D-printed PLA chassis. It is the upgraded version of the Ikedo Mini Sumo Robot Starter Kit, with an upgraded chassis design and more sensors.
+
+## Specs and functions
+- Product code: KIT-IKEDO-MSV2-S
+- Size: 10 cm x 10 cm (product page)
+- Weight: ~200 g (product page)
+- Chassis: black PLA, 3D printed; parts: Main chassis, Top Cover, Motor Bracket
+- Controller: Maker Mini Sumo Controller ("Arduino Nano/Uno compatible (ATmega328P)", USB-serial CH340C per the product page)
+- Battery: 1 x 7.4V 450mAh LiPo, connected with a JST LiPo battery wire extension (VB+ = red, VB- = black)
+- Opponent sensors: 5 x Maker Object Sensor; product page: "range 50cm adjustable"
+- Edge sensors: 2 x, mounted underneath; product page: "Maker Reflect S"; Getting Started guide: "Maker Reflectance Sensor" (linked to the MAKER-REFLECT page)
+- Motors: 2 x 600RPM 6V DC Micro Metal Gearmotor; product page: "6V DC motors (600rpm, 0.065kg.cm)"
+- Wheels: 2 x High Grade Silicon Wheels Set (32mm x 22mm); blue from 17 Jul 2025
+- Control: auto and manual control mode; RC transmitter/receiver sold separately
+- Programming: through the Micro USB-B port on the right side of the assembled robot
+- Getting Started components list: 1 x Maker Mini Sumo Controller, 5 x Maker Object Sensor (opponent), 2 x Maker Reflectance Sensor (edge), 2 x 600RPM 6V DC Micro Metal Gearmotor, 2 x High Grade Silicon Wheels Set (32mm x 22mm), 1 x 7.4V 450mAh LiPo Battery, 1 x Mini Sumo Robot Chassis (Top Cover), 1 x Mini Sumo Robot Chassis (Main), 1 x Mini Sumo Robot Chassis (Motor Bracket), 1 x JST LiPo Battery Wire Extension, 1 x 2561 3Ways Connector Extension Wire, 4 x M3x6 Self-Tapping Screw (Black), 6 x M2.5x20 Bolt, 1 x Tiny Phillips Screwdriver (3mm), 1 x Tiny Flat Head Screwdriver (2mm), 1 x USB Cable (FREE)
+- Product page packing list (truncated on the page): 1 x Maker Mini Sumo Controller, 5 x Maker Object Sensor (opponent), 2 x Maker Reflect S (edge), 2 x 600RPM 6V DC micro metal gearmotor, 2 x silicon wheels 32mm x 22mm, 1 x 7.4V 450mAh LiPo, 3D printed parts (chassis, top cover, motor bracket), JST LiPo battery wire extension, ...
+- Not included: RC transmitter/receiver; no LiPo charger in either packing list
+- Assembly (Getting Started guide): edge sensor wires S = white, + = red, - = black (sensor side OUT = white, VCC = red, GND = black) to the "Front Left and Front Right" edge terminals; edge sensors fixed with 2 x M3x6 self-tapping screws; controller fixed with 2 x M3x6 self-tapping screws; motor bracket with 4 x M3x20 bolts, leaving a 1 mm gap; left motor MLA = red, MLB = black; right motor MRA = black, MRB = red; top cover with 2 x M2.5x20 bolts
+- Warranty: "There is NO warranty for Sumo Robot."
+- Age/syllabus: Getting Started guide says "suitable for primary and secondary school"
+
+## Interfaces and compatibility
+- Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO)
+- Opponent sensor: Maker Object (MAKER-OBJECT); edge sensor: Maker Reflect S (product page) / Maker Reflectance Sensor (Getting Started guide)
+- Software: Arduino IDE with the Cytron Maker Sumo Library v1.2.3 (architectures=avr, depends=Servo); examples AutoSumo, RcSumo, CalibrateEdgeSensors, TestInputs, TestOutputs
+- RC (manual) mode: 2-channel RC receiver, forward/reverse channel to GPIO1 and left/right channel to GPIO2 (RcSumo example); invert the channel in the transmitter settings if the direction is reversed
+- Start: onboard START button on the controller (AutoSumo waits for press-and-release; pressing START again stops the motors)
+- Cytron tutorials linked from the product page: Maker Mini Sumo with Bluetooth controller; with PS2 controller; RC sumo using Maker Mini Sumo Controller
+- Sibling: Ikedo Mini Sumo Robot Pro Bundle (KIT-IKEDO-MSUMO-P); predecessor: Ikedo Mini Sumo Robot Starter Kit
+
+## Use cases
+- Getting started in Sumo Robot competitions (primary and secondary school students)
+- Learning robotics programming and computational skills
+- Autonomous sumo robot (auto mode, AutoSumo example)
+- Radio-controlled sumo robot (manual mode with a separately bought RC transmitter/receiver)
+
+## Known limitations
+- No warranty for the Sumo Robot
+- RC transmitter/receiver not included; LiPo charger not listed in the kit
+- Kit must be assembled; the guide says sliding the controller into the chassis "might be a little tricky"
+- Motor bracket bolts must leave a 1 mm gap or "the body may bend"
+- Edge sensor name differs between the product page (Maker Reflect S) and the Getting Started guide (Maker Reflectance Sensor)
+- Getting Started guide lists 5 Maker Object sensors but one assembly step says "4x"
+- Getting Started guide bolt sizes are inconsistent (6 x M2.5x20 in the list; 4 x M3x20 + 2 x M2.5x20 in the steps)
+- Controller limits apply: 3.0 A continuous / 6.0 A peak per motor channel, Vin 7.0-18.0 V (see MAKER-MSUMO)
+- Pre-loaded code: [NOT STATED]
+- Arduino board selection: [NOT STATED]
+- Competition weight class on the kit page: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "very beginner-friendly, and suitable for primary and secondary school"
+- "a reliable choice for your kids to get started in Sumo Robot Competitions"
+- Developed with the team manager of Ikedo Kogeki to "bring down the barrier for students who want to learn how to build a Sumo Robot"
+
+## Price band
+- RM418.95 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-ikedo-mini-sumo-robot-v2-starter
+
+## Datasheet
+https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit
+
+# Product fact sheets
+
+## Product name
+Ikedo Mini Sumo Robot Pro Bundle
+
+## Aliases
+KIT-IKEDO-MSUMO-P, Ikedo Mini Sumo Robot Pro Bundle, Ikedo Mini Sumo Robot Pro Kit, Ikedo Mini Sumo Robot Pro, Ikedo Pro Bundle, Ikedo Pro
+
+## What it is
+The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controller, 5 Maker Object opponent sensors, 2 Maker Reflect S edge sensors, a 7.4 V 450 mAh LiPo and a 10 cm x 10 cm black PLA chassis, with 800 RPM 3.1 kg.cm motors, a laser-cut stainless steel shield, a 4" stainless steel razor blade and a copper weight base. It supports auto and manual (RC) mode; the RC transmitter/receiver is sold separately.
+
+## Specs and functions
+- Product code: KIT-IKEDO-MSUMO-P
+- Size: 10 cm x 10 cm
+- Weight: 350 g
+- Chassis: black PLA; packing list: 1 x chassis (main), 1 x 3D printed motor bracket
+- Controller: Maker Mini Sumo Controller (ATmega328P; USB-serial CH340C per the product page)
+- Battery: 1 x 7.4V 450mAh LiPo, JST LiPo wire extension
+- Opponent sensors: 5 x Maker Object; product page: "range 50cm adjustable"
+- Edge sensors: 2 x Maker Reflect S (product page links "Datasheet for Edge Sensor (MAKER-REFLECT-S)")
+- Motors: 2 x 800RPM 6V DC micro metal gearmotor; "6V DC motors (800rpm, 3.1kg.cm)"
+- Wheels: 2 x silicon wheels 32x22mm; blue from July 2025
+- Armour: 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base
+- Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low)
+- USB cable: free, included from 25 Aug 2024
+- Packing list (truncated on the product page): 1 x Maker Mini Sumo Controller, 5 x Maker Object, 2 x Maker Reflect S, 2 x 800RPM 6V DC micro metal gearmotor, 1 x 3D printed motor bracket, 2 x silicon wheels 32x22mm, 1 x 7.4V 450mAh LiPo, 1 x chassis (main), 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base, JST LiPo wire extension, 2561 3-way connector extension wire, ...
+- Not included: RC transmitter/receiver; no LiPo charger in the visible packing list
+- Differences from the Ikedo Mini Sumo Robot V2 (KIT-IKEDO-MSV2-S): 800 RPM 3.1 kg.cm motors instead of 600 RPM "0.065kg.cm"; 350 g instead of ~200 g; adds steel shield, 4" razor blade and copper weight base; RM693.00 instead of RM418.95
+- Warranty: "NO warranty for Sumo Robot."
+
+## Interfaces and compatibility
+- Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO); opponent sensor Maker Object (MAKER-OBJECT); edge sensor Maker Reflect S (MAKER-REFLECT-S)
+- Software: Arduino IDE with the Cytron Maker Sumo Library v1.2.3 (architectures=avr, depends=Servo), linked from the product page; examples AutoSumo, RcSumo, CalibrateEdgeSensors, TestInputs, TestOutputs
+- RC (manual) mode: 2-channel RC receiver, forward/reverse channel to GPIO1 and left/right channel to GPIO2 (RcSumo example); robot stops when no pulse is received
+- Battery wiring: VB+ = red, VB- = black at the controller's Battery Terminal (shared with the V2 Getting Started guide); Cytron's Pro guide uses a 2-cell LiPo
+- Edge sensor wiring: S/OUT = white, +/VCC = red, -/GND = black, using the 2561 3-way wire cut in two (shared with the V2 Getting Started guide)
+- Motor wiring: Cytron's Pro guide wires red to MRA and black to MRB, then checks direction with the motor test buttons and swaps if reversed
+- Programming: Micro USB-B on the controller; Windows uses the WCH CH341SER driver (CH340 COM port)
+- Cytron tutorials linked from the product page include SumoRobot1KG
+
+## Use cases
+- Competition mini sumo robot builds ("Pro" bundle with shield, blade and weight base)
+- Autonomous sumo robot (auto mode, AutoSumo example)
+- Radio-controlled sumo robot (manual mode with a separately bought RC transmitter/receiver)
+- One robot entering both RC and autonomous categories (RC receiver on GPIO1/GPIO2 leaves the sensor ports free)
+
+## Known limitations
+- No warranty for the Sumo Robot
+- RC transmitter/receiver not included; LiPo charger not in the visible packing list
+- Product page specifications and packing list are truncated; top cover, screws and screwdrivers are not confirmed
+- No Pro-specific assembly document; the Ikedo Bot V2 Getting Started Instruction covers the V2 Starter only
+- Controller limits apply: 3.0 A continuous / 6.0 A peak (< 5 s) per motor channel; motors over 3 A are not covered by the controller's warranty (see MAKER-MSUMO)
+- 800 RPM motor current rating: [NOT STATED]
+- Whether 350 g includes battery, shield, blade and copper base: [NOT STATED]
+- Pre-loaded code and Arduino board selection: [NOT STATED]
+- Competition weight class on the kit page: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "Pro" bundle of the Ikedo mini sumo line, with armour and weight base added over the V2 Starter
+- Controller positioned by Cytron for beginners through professional builders in international Sumo robot competitions (Maker Mini Sumo product page)
+
+## Price band
+- RM693.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-ikedo-mini-sumo-robot-pro-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-ikedo-mini-sumo-robot-pro-kit
+
+# Product fact sheets
+
+## Product name
+1KG Sumo Robot Bundles - Radio Controlled (RC)
+
+## Aliases
+V-SUMO-1KG-RC, 1KG Sumo Robot Bundles - Radio Controlled (RC), 1KG RC Sumo Robot Bundle, 1KG RC Sumo Robot Kit, RC 1KG Sumo Robot Bundle, 1KG RC Sumo Robot Starter Kit, Radio Controlled 1KG Sumo Robot
+
+## What it is
+A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C motor driver, with two 12 V 580 RPM 3.5 kgf.cm geared motors, 42 x 30 mm silicon wheels, an 11.1 V 1300 mAh LiPo, metal base plates, a 6" stainless steel blade and a 3D-printed PLA body, driven directly from an RC receiver. It is sold as Complete (with body), Basic (without body) or 3D Printed Body only.
+
+## Specs and functions
+- Product code: V-SUMO-1KG-RC
+- Options: Complete (with body) / Basic (without body) / 3D Printed Body only
+- Controller: product page says "Microcontroller: MDDRC10"; the MDDRC10 is an R/C motor driver with no programmable MCU (MDDRC10 datasheet)
+- Programming: "plug and play, no coding"
+- Motors: 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor; Speed 580RPM; Torque 3.5kgfcm
+- Body: PLA (3D printed), 15cm x 15cm; STL files in the Cytron Drive folder "KIT-SUMO-RC-3DP"
+- Actual weight: 856 g
+- Battery: 11.1V 1300mAh LiPo
+- Wheels: 2 x silicon wheels 42mm x 30mm
+- Blade: 1 x 6" stainless steel blade
+- Base: 2 x metal base for mini sumo robot
+- Battery lead: Dean T LiPo wire extension
+- Control: RC controller
+- Packing list, Complete (truncated on the product page): 1 x MDDRC10, 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor, 2 x silicon wheels 42x30mm, 1 x LiPo 11.1V 1300mAh, 2 x metal base for mini sumo robot, Dean T LiPo wire extension, 1 x 6" stainless steel blade, ...
+- Assembly: "comes in loose parts"
+- Warranty: "NO warranty"
+
+## Interfaces and compatibility
+- Motor driver: MDDRC10 (see the MDDRC10 fact sheet) — battery to the Power Input Terminal VB+/VB- via the Dean T lead; two bidirectional motor channels; RC receiver on RC1/RC2 with +5V (500 mA max, not for servos) and GND
+- MDDRC10 modes: Mixed Mode (RC1 = forward/backward, RC2 = left/right, preferred for differential-drive robots) or Independent Mode (RC1 = left motor, RC2 = right motor), selected by the onboard mode switch; neutral points auto-calibrated at every power-up
+- MDDRC10 has no reverse-polarity protection: a reversed battery damages it instantaneously
+- No start button, sensors or programmable controller: RC control only
+- 3D body STL folder: https://drive.google.com/drive/folders/1ah8zN67osF_GZj4KbN-Ox7QSPSIbz36X
+- Cytron tutorials linked from the product page: "1KG RC Sumo Robot Starter Kit User Guide using MDDRC10"; "1KG RC Sumo Robot using MDDRC10"
+- Training blade substitute: PCB Plate for Sumo Robot, 15 cm (recommended for 1 kg sumo robots)
+
+## Use cases
+- Radio-controlled 1 kg sumo robot for competitions
+- Plug-and-play sumo robot build with no coding
+
+## Known limitations
+- No warranty
+- Comes in loose parts; self-assembly required
+- RC only: no autonomous mode, no sensors, no code
+- MDDRC10 has no reverse-polarity protection; its +5V output (500 mA) is for the receiver only
+- Product page packing list is truncated after the blade; Basic and Body-only contents are not listed in the extract
+- RC transmitter/receiver inclusion: [NOT STATED]
+- LiPo charger: not in the visible packing list
+- Whether 856 g includes battery and blade: [NOT STATED]
+- Motor current ratings: [NOT STATED]
+- MDDRC10 mode used by the Cytron user guide: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "plug and play, no coding"
+
+## Price band
+- RM99.90 - RM633.84 across the three options (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-radio-controlled-rc-1kg-sumo-robot-kits
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-radio-controlled-rc-1kg-sumo-robot-kits
+
+# Product fact sheets
+
+## Product name
+PCB Plate for Sumo Robot
+
+## Aliases
+V-PCB-SUMO-PLATE, PCB Plate for Sumo Robot, PCB Sumo Plate, Sumo PCB Plate, PCB Plate for Blade, Sumo Training Plate
+
+## What it is
+A flat plate made of PCB material that stands in for a steel blade on a sumo robot during training and education; it is not intended for official competitions. It comes in a 15 cm size for 1 kg sumo robots and a 10 cm size for 500 g robots.
+
+## Specs and functions
+- Product code: V-PCB-SUMO-PLATE
+- Options: 15cm / 10cm
+- 15CM: 15 cm x 2.3 cm x 0.2 cm; weight 10.6 g; recommended for 1 kg sumo robots
+- 10CM: 10 cm x 1.8 cm x 0.1 cm; weight 3.5 g; recommended for 500 g sumo robots
+- Material: lightweight PCB material
+- Intended use: training/educational blade substitute; "not intended for official competitions"
+- Packing list: 1 x plate
+- Warranty: 12 months
+- Mounting holes and fixing hardware: [NOT STATED]
+
+## Interfaces and compatibility
+- Passive mechanical part; no electrical interface
+- 1 kg robots: 1KG Sumo Robot Bundles - RC (V-SUMO-1KG-RC); the SUMO:BIT Robot Kit Complete packing list includes "1x PCB Plate for Blade (training)"
+- 500 g robots: Ikedo Mini Sumo Robot V2 (KIT-IKEDO-MSV2-S) and Ikedo Mini Sumo Robot Pro Bundle (KIT-IKEDO-MSUMO-P) by size recommendation; chassis mounting compatibility: [NOT STATED]
+
+## Use cases
+- Training and educational sumo robot practice in place of a steel blade
+- 15 cm plate on 1 kg sumo robots
+- 10 cm plate on 500 g sumo robots
+
+## Known limitations
+- Not intended for official competitions
+- Packing list is the plate only; no screws or bracket
+- Mounting hole pattern and compatible chassis: [NOT STATED]
+- PCB material grade and copper layer: [NOT STATED]
+- Which price applies to which size: [NOT STATED] (only the range is given)
+
+## Positioning (kept apart from specs)
+- Training/educational blade substitute
+
+## Price band
+- RM5.00 - RM8.00 across the two sizes (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-v-pcb-sumo-plate
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-v-pcb-sumo-plate
 
 # Product fact sheets
 
@@ -3492,6 +4865,195 @@ Datasheet
 
 ## Source link
 https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-39/pdf/cytron-simple-rotary-encoder-kit-users-manual.pdf
+
+# Product fact sheets
+
+## Product name
+STEM Robot Building Base Bundles
+
+## Aliases
+V-HD-STEM, STEM Robot Building Base, STEM Robot Building Base Bundles, STEM Robot Building Base Kit, STEM RBB Kit, Robot Building Base Bundle
+
+## What it is
+A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brackets, two TT DC motors with wheels, a steel ball castor, screws, spacers and a screwdriver. The controller or motor driver board is fixed to the base with screws or cable ties; no electronics are included.
+
+## Specs and functions
+- Product code: V-HD-STEM
+- Options: Blue base or Green base; motor brackets are always blue
+- Base material: plastic ("durable lightweight plastic chassis")
+- Drive layout: 2-wheeled robot car (2 TT motors, 2 wheels, 1 castor)
+- TT motors: 2, with 15 cm wires
+- Wheels: 2, rubber
+- Castor: 1, steel ball castor
+- Screws: 25x M2.2 x 6 mm self-tapping; 3x M2.3 x 8 mm self-tapping (for Maker Line)
+- Spacers: 4
+- Tool: 1 tiny Phillips screwdriver
+- Packing list: 2x Robot Building Base, 2x Motor Bracket (blue), 25x M2.2x6mm self-tapping screw, 3x M2.3x8mm self-tapping screw for Maker Line, 4x spacer, 2x TT motor with 15cm wires, 2x wheels, 1x steel ball castor, 1x tiny Phillips screwdriver
+- Dimensions: [NOT STATED] (drawing image only on the product page)
+- Weight: [NOT STATED]
+- TT motor voltage, gear ratio, RPM: [NOT STATED]
+- Wheel diameter: [NOT STATED]
+- Warranty: [NOT STATED] (field blank on the product page)
+
+## Interfaces and compatibility
+- Mechanical product only; no electrical interface
+- Controller / motor driver board is secured with screws or cable ties (cable ties not included)
+- Boards shown on the product page: REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico (Boco Bot kit) — none included
+- Maker Line sensor mounting: 3x M2.3 x 8 mm screws supplied for Maker Line (sensor not included)
+- Mounting-hole pattern: [NOT STATED]
+- Guide: Cytron tutorial "STEM Robot Building Base Kit Step-by-Step Installation Guide" (Hao Zhen Goh, 25 Jul 2023)
+
+## Use cases
+- Build your robot car base by using the STEM Robot Building Base Kit (installation guide)
+- 2-wheeled robot car chassis for a micro:bit or RP2040 controller board (REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico)
+
+## Known limitations
+- No controller board, motor driver, battery, battery holder, sensors or cable ties are included
+- Motor brackets are blue on both the Blue and the Green option
+- Only 3 of the screws (M2.3 x 8 mm) are intended for the Maker Line
+- Dimensions are given as an image only; no size is stated in text
+- Warranty is not stated on the product page
+
+## Positioning (kept apart from specs)
+- "Durable lightweight plastic chassis" with a step-by-step guide for building a 2-wheeled robot car (product page)
+
+## Price band
+RM35.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-stem-robot-building-base-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-stem-robot-building-base-kit
+
+# Product fact sheets
+
+## Product name
+Cytron Reconfigurable Line Following Track
+
+## Aliases
+V-RE-TRACKS, Cytron Reconfigurable Line Following Track, Reconfigurable Line Following Track, Line Following Track Tiles, Line Following Combo Tiles, Line Following Add On Tiles, EVA Line Following Track
+
+## What it is
+A set of square EVA-foam floor tiles printed with black line patterns on a white non-reflective surface, laid out in different arrangements to make a line-following course. Six tile types exist (Cross, Curve, Station, Straight, Blank, T-Junction), sold as Combo sets of 8 or 16 tiles or Add On packs of 4.
+
+## Specs and functions
+- Product code: V-RE-TRACKS
+- Material: EVA foam, no lamination layer
+- Surface: white, non-reflective, with black line patterns
+- Hardness: 40 degree (±5)
+- Tile size: 315mm x 315mm
+- Thickness: 10mm
+- Black line width: 18mm
+- Tile types: 6 — Cross, Curve, Station, Straight, Blank, T-Junction
+- Variants: Combo Tiles / Add On Tiles; patterns: 16 Combo, 8 Combo, 4 Cross, 4 Curve, 4 Station, 4 Straight, 4 Blank, 4 T-Junction
+- Combo 8: 1 cross, 4 curve, 3 straight
+- Combo 16: 2 cross, 8 curve, 6 straight
+- Add On 1: 4 cross; Add On 2: 4 curve; Add On 3: 4 station; Add On 4: 4 straight; Add On 5: 4 blank; Add On 6: 4 T-junction
+- Each set includes an info sheet of track designs
+- Warranty: 12 months
+- Weight: [NOT STATED]
+- Hardness scale: [NOT STATED]
+- Tile joining method: [NOT STATED]
+
+## Interfaces and compatibility
+- Passive floor track; no electronics
+- For line-following robots with IR line sensors (no specific sensor named on the product page)
+- Referenced by the Cytron tutorial "Learn Robotics with Bocobot Car Kit and Robo Pico"
+
+## Use cases
+- Build a reconfigurable line-following course for robot cars
+- Line following in the Bocobot Car Kit with Robo Pico tutorial
+
+## Known limitations
+- Combo 8 and Combo 16 contain only Cross, Curve and Straight tiles; Station, Blank and T-Junction tiles come only in Add On packs
+- The surface is non-reflective EVA foam with no lamination layer
+- Price per individual option is not stated in the page text read (range only)
+
+## Positioning (kept apart from specs)
+- "Reconfigurable" line following track: tiles can be rearranged into different course designs (product page)
+
+## Price band
+RM44.00–RM176.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-cytron-reconfigurable-line-following-track
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-cytron-reconfigurable-line-following-track
+
+# Product fact sheets
+
+## Product name
+Robo Bracket for Micro Servo Motor
+
+## Aliases
+ROBO-BK-SG90, Robo Bracket for Micro Servo Motor, Robo Bracket, Robo Bracket SG90, Robo Micro Servo Bracket, Micro Servo Bracket for Robo Base
+
+## What it is
+A black powder-coated aluminium-alloy bracket that holds a 9 g-class micro servo (SG90, MG90S, TS90A, EF90D, FS90R or any servo of 23.0 x 12.2 x 29.0 mm) and is designed to bolt to Cytron's Robo Base and Robo Base Mini chassis.
+
+## Specs and functions
+- Product code: ROBO-BK-SG90
+- Material: aluminium alloy
+- Thickness: 1.5mm
+- Finish: powder coating
+- Colour: black
+- Fits micro servos: SG90, MG90S, TS90A, EF90D, FS90R and same-dimension servos (23.0x12.2x29.0mm)
+- Designed to fit Robo Base and Robo Base Mini
+- Packing list: 1x bracket, 4x M2*6 screw, 4x M3*6 screw
+- Overall dimensions: [NOT STATED] (dimension drawing image only)
+- Hole pattern and hole sizes: [NOT STATED]
+- Weight: [NOT STATED]
+- Warranty: [NOT STATED] (field blank on the product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Servos: SG90, MG90S, TS90A, EF90D, FS90R and same-dimension (23.0x12.2x29.0mm) servos
+- Chassis: Robo Base, Robo Base Mini
+- Which screws go to the servo and which to the base: [NOT STATED]
+- Linked Cytron project: "ZOOM:BIT with Robo Grip Mini" (Ng Zhi Tian, 18 Mar 2026)
+
+## Use cases
+- Mount a micro servo on a Robo Base or Robo Base Mini robot chassis
+- Combine a gripper with a ZOOM:BIT robot (linked project)
+
+## Known limitations
+- Only servos of 23.0 x 12.2 x 29.0 mm are stated to fit; larger servos are not covered
+- No servo, servo horn or nuts are included; only 4x M2*6 and 4x M3*6 screws
+- Fit is stated only for Robo Base and Robo Base Mini
+- Dimensions are an image only; no size is stated in text
+- Warranty is not stated on the product page
+
+## Positioning (kept apart from specs)
+- Aluminium-alloy, powder-coated bracket for Cytron's Robo Base family (product page)
+
+## Price band
+RM9.90 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-robo-bracket-for-microservo-motor
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-robo-bracket-for-microservo-motor
 
 # Product fact sheets
 
@@ -6537,3 +8099,829 @@ Datasheet
 
 ## Source link
 https://docs.google.com/document/d/1G8XOqDg5tSYu-hFeNG1x2qfTjAIdBlXN-yGC49WR2nQ/edit
+
+# Product fact sheets
+
+## Product name
+27W PD 5V 5A USB-C Universal Power Adapter for Raspberry Pi
+
+## Aliases
+V-AD-27W-PD, AD-27W-PD-X, 27W PD USB-C Power Adapter, 27W 5V 5A USB-C Universal Power Adapter, Cytron 27W PD PSU, 27W USB-C PSU for Raspberry Pi 5, HD-PD27W
+
+## What it is
+A 27 W AC-to-DC power supply with a captive USB Type-C cable and USB Power Delivery (5.1V 5A up to 15V 1.8A), designed to power the Raspberry Pi 5 and other compatible development boards. It accepts 100–240 VAC 50–60 Hz and uses interchangeable AC plug heads.
+
+## Specs and functions
+- Rated power, continuous: 27 W (datasheet)
+- Typical output voltage: 5.1 VDC (datasheet)
+- Rated output voltage, no load: 5V / 9V / 12V / 15V (datasheet)
+- Full-load PD profiles: 5V 5A; 9V 3A; 12V 2.25A; 15V 1.8A (datasheet); 5.1V 5.0A / 9.0V 3.0A / 12.0V 2.25A / 15.0V 1.8A (product page)
+- Nominal load current: 5 A (datasheet)
+- Ripple and noise at full load: < 200 mV (p-p) (datasheet)
+- Protection: Overcurrent Protection; Short Circuit Protection (datasheet)
+- Efficiency (average): 84.25 % (5V); 86.62 % (9V/12V/15V) (datasheet); ~82% (product page)
+- Electrostatic discharge: direct ± 4 kV; air ± 8 kV (datasheet)
+- Rated input voltage: 100 – 240 VAC (datasheet)
+- Rated input frequency: 50 – 60 Hz (datasheet)
+- Maximum AC current: < 0.6 A (datasheet)
+- Maximum inrush current, cold start: < 80 A (datasheet)
+- Standby power at 115 or 230 VAC: < 0.1 W (datasheet)
+- Output cable length: 1200 ± 50 mm (datasheet); 1.5 m (product page)
+- Output cable type: UL 2464, 18AWG (datasheet)
+- After-binding length: 80 ± 20 mm (datasheet)
+- Output connector: USB Type-C (datasheet)
+- Cable colour: black; housing: black (datasheet)
+- Operating temperature: 0 ~ 40 °C (datasheet)
+- Storage temperature: -25 ~ 70 °C (datasheet)
+- Compliance UKCA: EN 55032:2015/A1:2020; EN 55035:2017/A11:2020; EN IEC 61000-3-2:2019/A1:2021; EN 61000-3-3:2013/A2:2021; BS EN 55032:2015/A1:2020; BS EN 55035:2017/A11:2020; BS EN IEC 61000-3-2:2019/A1:2021; BS EN 61000-3-3:2013/A2:2021 (datasheet)
+- Compliance CE: EN 55032:2015/A1:2020; EN 55035:2017/A11:2020; EN IEC 61000-3-2:2019/A1:2020; EN 61000-3-3:2013/A2:2021; EN IEC 62368-1:2020+A11:2020 (datasheet)
+- Certifications based on MPN: HD-PD27W-wwz (datasheet)
+- AC plug options: UK (Type G) / EU (Type C) / US (Type A); only one included (product page); datasheet says three interchangeable AC plugs are included
+- Adapter dimensions and weight: [NOT STATED] (drawings only)
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Output: one captive cable with USB Type-C plug; no other output connector
+- Input: interchangeable AC plug head (EU / UK / US drawings in datasheet)
+- Designed for Raspberry Pi 5 and other compatible development boards (datasheet); Raspberry Pi 4 Model B and Raspberry Pi 5 (product page)
+- USB Power Delivery: the device selects a 5V/9V/12V/15V profile; "can be used to charge many types of devices" (datasheet)
+- PD version, PPS, E-marker: [NOT STATED]
+
+## Use cases
+- Powering the Raspberry Pi 5 (5.1V 5A profile)
+- Powering the Raspberry Pi 4 Model B (product page)
+- Powering other compatible development boards and charging USB-C PD devices within the stated profiles
+
+## Known limitations
+- Operating temperature range 0 ~ 40 °C
+- Only overcurrent and short-circuit protection are stated; over-voltage and over-temperature protection are not stated
+- Captive cable: cannot be replaced or extended by swapping the cable
+- Only one AC plug head is included per the product page (UK, EU or US chosen at purchase); the datasheet Rev 1.0 says three — confirm with the shipment
+- Cable length stated differently: 1200 ± 50 mm (datasheet) vs 1.5 m (product page)
+- Efficiency stated differently: 84.25 % / 86.62 % (datasheet) vs ~82% (product page)
+- "Appearance details are subject to the actual samples" (datasheet)
+
+## Positioning (kept apart from specs)
+- "Specifically designed to provide power to the latest Raspberry Pi 5 and other compatible development boards" (datasheet)
+- "Suitable for use around the world" thanks to 100–240 VAC input and interchangeable plugs; "versatile" PD support; "sleek black color" (datasheet)
+
+## Price band
+RM50.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-27w-pd-5v-5a-usb-c-universal-power-adapter
+
+## Datasheet
+https://docs.google.com/document/d/1pLMnoGWQFCbzt7I2AX8-qhGa6N6ljDat5eaFH6eBu-4/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1pLMnoGWQFCbzt7I2AX8-qhGa6N6ljDat5eaFH6eBu-4/edit
+
+# Product fact sheets
+
+## Product name
+17.5W 5V 3.5A USB-C Power Adapter for Raspberry Pi
+
+## Aliases
+V-AD-5V3P5A, AD-5V3P5-3P, 17.5W 5V 3.5A USB-C Power Adapter, 17.5W USB-C PSU for Raspberry Pi, 5V 3.5A USB-C Power Adapter, Cytron 17.5W USB-C PSU, HT24A-0503500BS
+
+## What it is
+A 17.5 W fixed 5 V, 3.5 A AC-to-DC power supply with a captive USB Type-C cable, designed to power the Raspberry Pi 4 Model B and other compatible development boards. It accepts 100–240 VAC 50–60 Hz and ships with one interchangeable AC plug (UK by default).
+
+## Specs and functions
+- Rated power, continuous: 17.5 W (datasheet)
+- Nominal load current: 3.5 A (datasheet)
+- Typical output voltage: 5.1 VDC (datasheet)
+- Rated output voltage, no load: 4.75 – 5.4 VDC (datasheet)
+- Rated output voltage, full load Iout = 3.5 A: 4.75 – 5.4 VDC (datasheet)
+- Ripple and noise at full load: < 200 mV (p-p) (datasheet)
+- Protection: Overcurrent Protection; Short Circuit Protection (datasheet)
+- Efficiency (average): 82.32 % (datasheet)
+- Electrostatic discharge: direct ± 4 kV; air ± 8 kV (datasheet)
+- Rated input voltage: 100 – 240 VAC (datasheet)
+- Absolute min/max input voltage: 90 – 264 VAC (datasheet)
+- Rated input frequency: 50 – 60 Hz (datasheet)
+- Maximum AC current: < 0.6 A (datasheet)
+- Maximum inrush current, cold start: < 60 A (datasheet)
+- Standby power at 115 or 230 VAC: < 0.1 W (datasheet)
+- Output cable length: 1500 ± 50 mm (datasheet)
+- Output cable type: UL 2464, 20AWG (datasheet)
+- Output connector: USB Type-C (datasheet)
+- Cable colour: black; housing: black (datasheet)
+- Operating temperature: 0 ~ 40 °C (datasheet)
+- Storage temperature: -25 ~ 70 °C (datasheet)
+- Mean Time Between Failures (MTBF): 30000 hours (datasheet)
+- Compliance UKCA: BS EN 62368-1:2014+A11:2017; EN 62378-1:2014+A11:2017 (as printed) (datasheet)
+- Compliance UL: IEC 62368-1:2014 (datasheet)
+- Compliance CE: EN 55032:2015/A11:2020; EN 55035:2017; EN IEC 61000-3-2:2019; EN 61000-3-3:2013/A1:2019 (datasheet)
+- Compliance RoHS: IEC 62321-1:2013; IEC 62321-2:2021; IEC 62321-3-1:2013; IEC 62321-4:2013+A1:2017; IEC 62321-5:2013; IEC 62321-6:2015; IEC 62321-7-1:2015; IEC 62321-7-2:2017; IEC 62321-8:2017 (datasheet)
+- Certifications based on MPN: HT24A-0503500BS (datasheet)
+- AC plug: ONE interchangeable AC plug included, default UK; PSU shipped from 23 October 2024 onwards comes with UK plug only (datasheet); plug options UK / EU (product page)
+- Adapter dimensions and weight: [NOT STATED] (drawings only)
+- Warranty: [NOT STATED]
+
+## Interfaces and compatibility
+- Output: one captive cable with USB Type-C plug; single fixed 5 V output; no USB Power Delivery profiles
+- Input: interchangeable AC plug head (UK default)
+- Designed for Raspberry Pi 4 Model B and other compatible development boards (datasheet)
+- Recommended for Raspberry Pi 4 Model B, Raspberry Pi 400 and CM4 carrier boards with USB-C; "suitable for 24-hour operation" (product page)
+- Product page compatibility list also includes Raspberry Pi 5 (8/4/2GB), Pi 4 B (1–8GB), Pi 400, many CM4 carriers, Jetson Nano developer kit, VisionFive 2 (product page)
+- Linked Cytron tutorial: "Can 3A/3.5A PSU power Raspberry Pi 5" https://my.cytron.io/tutorial/can-3a-3.5a-psu-power-raspberry-pi-5
+
+## Use cases
+- Powering the Raspberry Pi 4 Model B
+- Powering the Raspberry Pi 400 and CM4 carrier boards with USB-C input (product page)
+- Powering other compatible 5 V USB-C development boards within 3.5 A
+
+## Known limitations
+- 5 V 3.5 A / 17.5 W only; no USB Power Delivery and no 5 A profile
+- Designed for Raspberry Pi 4 Model B (datasheet); Raspberry Pi 5 appears only on the product page compatibility list
+- Operating temperature range 0 ~ 40 °C
+- Only overcurrent and short-circuit protection are stated
+- Captive cable (20AWG, 1.5 m) cannot be replaced
+- Only one AC plug is included; units shipped from 23 October 2024 come with the UK plug only (datasheet), although the product page lists UK / EU options
+- Output voltage window is 4.75 – 5.4 VDC, not a fixed 5.1 V
+
+## Positioning (kept apart from specs)
+- "Specifically designed to provide power to the latest Raspberry Pi 4 Model B and other compatible development boards" (datasheet)
+- "Suitable for use around the world"; "sleek black color" (datasheet)
+- "Suitable for 24-hour operation" (product page)
+
+## Price band
+RM32.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-5v-3p5a-usb-c-universal-power-adapter
+
+## Datasheet
+https://docs.google.com/document/d/1xhmvk4w7S_FsKjmb7wwx1S1RvuXo-jRydAW7l1R8mxY/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1xhmvk4w7S_FsKjmb7wwx1S1RvuXo-jRydAW7l1R8mxY/edit
+
+# Product fact sheets
+
+## Product name
+3.7V 2200mAh 18650 Li-Ion Battery with Button Top
+
+## Aliases
+LI-18650-3.7-2200, 18650 2200mAh Li-Ion Battery, 3.7V 2200mAh 18650 Li-Ion Battery with Button Top, 18650 Button Top Li-Ion Cell, ICR18650 2200mAh, PKCELL ICR18650 2200mAh 3.7V, Cytron 18650 Battery
+
+## What it is
+A single cylindrical 18650-size lithium-ion cell, nominal 3.7 V (4.2 V full), 2200 mAh, with a button-top positive terminal and flat negative terminal. It has no built-in protection circuit and must be charged with a proper Li-ion charger with balancer.
+
+## Specs and functions
+- Chemistry / size: Li-ion, cylindrical 18650 (product page; vendor spec)
+- Vendor model: ICR18650 2200mAh 3.7V, Shenzhen PKCELL (vendor spec)
+- Nominal voltage: 3.7 V; 4.2 V when fully charged (product page)
+- Capacity: 2200 mAh (product page); typical 2200 mAh, minimum 2090 mAh (vendor spec)
+- Minimum discharge voltage / discharge cut-off: 3.0 V (product page; vendor spec)
+- Charging voltage: 4.2 V ± 0.05 V (product page); charging cut-off 4.2 V (vendor spec)
+- Rapid charge: 0.5C, ~1.1 A (product page)
+- Standard charge: 0.2C, ~440 mA (product page)
+- Vendor standard charge: CC 0.5C, CV 4.2 V, 0.01C cut-off, approx 4.0 h (vendor spec)
+- Maximum constant charging current: 2200 mA (1.0C) (vendor spec)
+- Maximum discharge: 1C, ~2.2 A (product page); maximum continuous discharge 3300 mA (1.5C) (vendor spec)
+- Standard discharge: 0.2C, ~440 mA (product page)
+- Operating temperature: charge 0 ~ 45 °C; discharge -20 ~ 60 °C (vendor spec)
+- Storage temperature: -20 ~ 45 °C for 1 month; -10 ~ 35 °C for 6 months (vendor spec)
+- Storage voltage: 3.7 – 3.85 V (vendor spec)
+- Cycle life at 25 °C: ≥ 300 cycles to 80 % of rated capacity (vendor spec)
+- Capacity retention after 28 days at 20 °C: ≥ 1760 mAh (vendor spec)
+- Cell open-circuit voltage before delivery: ≥ 3.75 V (vendor spec)
+- Protection circuit: NO built-in protection circuit (product page)
+- Terminals: button top (medium) positive; flat negative (product page)
+- Size: 2 cm x 6.5 cm x 2 cm (product page)
+- Weight: [NOT STATED]
+- Environmental: RoHS (vendor spec)
+- Battery warranty: 1 week (product page); vendor warranty 1 year from leaving the manufacturer (vendor spec)
+- Shipping: cannot ship to Sabah, Sarawak, or overseas (product page)
+
+## Interfaces and compatibility
+- Two bare terminals (button-top positive, flat negative); no tabs, wires, connector or protection PCB
+- Requires a proper Li-ion charger with balancer (product page); charger not included and not named
+- Used as the robot power in the STRIKER:BIT Soccer Competition Kit ("1x 3.7V 2200mAh 18650 Li-Ion with button top", STRIKER:BIT product page)
+- Compatible holders: [NOT STATED]
+
+## Use cases
+- Power source for small robots and projects that need a single 3.7 V Li-ion cell (STRIKER:BIT robot power)
+- Rechargeable cell for devices designed for 18650 button-top cells
+
+## Known limitations
+- NO built-in protection circuit — over-charge, over-discharge and short-circuit protection must be provided externally
+- NOT an A/AA/AAA battery; does not fit AA holders
+- Maximum discharge 1C (~2.2 A) per the product page (vendor spec states 1.5C / 3300 mA; product page value applies)
+- Rapid charge limited to 0.5C (~1.1 A) per the product page (vendor spec allows up to 1.0C / 2200 mA; product page value applies)
+- Do not discharge below 3.0 V or charge above 4.2 V ± 0.05 V
+- Charge only between 0 and 45 °C; discharge between -20 and 60 °C (vendor spec)
+- Battery warranty is 1 week only
+- Cannot be shipped to Sabah, Sarawak, or overseas
+- Vendor warnings: use a specified charger; do not throw into fire or heat; do not short-circuit, disassemble, reverse polarity, connect to a mains outlet, solder directly to the cell, pierce, strike or immerse in water; keep away from metal objects; remove a cell that smells, heats, discolours or deforms; tape terminals before disposal
+- Vendor dimension drawing and internal impedance value not available in the extracted document
+
+## Positioning (kept apart from specs)
+- [NOT STATED]
+
+## Price band
+RM10.80; 5+ RM9.72; 20+ RM8.64 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-3.7v-2200mah-18650-li-ion-battery
+
+## Datasheet
+https://drive.google.com/file/d/1p_FfaVllULPQLdflNAwP4zIYq6_gvUbb/view
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-3.7v-2200mah-18650-li-ion-battery
+
+# Product fact sheets
+
+## Product name
+Cooling Fan for RPi with Screws (30mm x 30mm)
+
+## Aliases
+FAN-0305-3008, Cooling Fan for RPi with Screws (30mm x 30mm), 3V-5V 0.2A Cooling Fan for RPi, 30mm Raspberry Pi Cooling Fan, RPi 30mm Fan, Raspberry Pi GPIO Cooling Fan 30mm, Cytron RPi Cooling Fan
+
+## What it is
+A black 30 mm x 30 mm x 8 mm DC cooling fan for Raspberry Pi boards, supplied with four screws and nuts. Its two-wire connector plugs onto the Raspberry Pi 40-pin GPIO header and runs at one of two speeds depending on whether it is fed 3.3 V or 5 V.
+
+## Specs and functions
+- Operating voltage: 3 V to 5 V DC (product page)
+- Rated current: 0.2 A (product page title)
+- Dual speed: 3.3 V or 5 V DC from the Raspberry Pi 40-pin GPIO header; 5 V recommended (product page)
+- Connector: two-wire connector for the 40-pin GPIO header (product page)
+- Cable: "longer cable"; length [NOT STATED]
+- Colour: black (product page)
+- Dimensions: 30 mm x 30 mm x 8 mm (product page)
+- Packing list: 1 x fan, 4 x screws and nuts (product page)
+- Airflow, noise, RPM, bearing type, weight, wire gauge, operating temperature: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Power: Raspberry Pi 40-pin GPIO header, 3.3 V pin (low speed) or 5 V pin (high speed)
+- Two wires only: no PWM wire, no tachometer wire
+- Fits the RetroFlag SuperPi 4 case (product page)
+- Shown fitted in the official Raspberry Pi 4 Model B case in a Jeff Geerling video (product page)
+- Exact GPIO header pin numbers: [NOT STATED]
+- Raspberry Pi 5 fan-header compatibility: [NOT STATED]
+
+## Use cases
+- Cooling a Raspberry Pi board powered from the GPIO header
+- Fan upgrade for the RetroFlag SuperPi 4 case or the official Raspberry Pi 4 B case
+
+## Known limitations
+- Two-wire fan: no PWM speed control and no tachometer; speed is set only by choosing the 3.3 V or 5 V header pin
+- No datasheet; airflow, noise and RPM figures are not published
+- Cable length, wire colours and connector type are not stated
+- Not stated for the Raspberry Pi 5 dedicated fan connector
+- Draws up to 0.2 A from the Raspberry Pi header rail it is connected to
+
+## Positioning (kept apart from specs)
+- Fan "with screws" and a "longer cable" for Raspberry Pi; dual speed from the GPIO header (product page)
+
+## Price band
+RM8.00; 10+ RM7.36; 30+ RM6.40 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws
+
+# Product fact sheets
+
+## Product name
+NVMe 2242 M-Key MakerDisk SSD (Preloaded with RPi OS)
+
+## Aliases
+V-MMR-NV2242, MMR-NV2242, MakerDisk NVMe 2242, MakerDisk M.2 2242 NVMe SSD, MakerDisk 2242, NVMe 2242 MakerDisk SSD
+
+## What it is
+A Cytron-branded M.2 2242 NVMe (PCIe) solid-state drive that ships with Raspberry Pi OS already written to it, so a Raspberry Pi can boot from it without imaging. Three capacities: 128GB (B+M-Key, PCIe Gen3 x2), 256GB and 512GB (M-Key, PCIe Gen3 x4).
+
+## Specs and functions
+- Model: MMR-NV2242-XXX (datasheet); store code V-MMR-NV2242 with capacity option (product page)
+- Interface: M.2 M-Key (B+M Key on 128GB SSD)
+- Dimensions: M.2 2242, L42.00mm x W22.0mm x H2.7mm, error ±0.5mm
+- Capacity: 128GB / 256GB / 512GB
+- Protocol: 128GB = PCIe Gen3 x 2 Lane, NVMe 1.3; 256GB and 512GB = PCIe Gen3 x 4 Lane, NVMe 1.3
+- NAND Flash: 3D TLC
+- Sequential Read (MB/s): 128GB 1700; 256GB 2250; 512GB 2300
+- Sequential Write (MB/s): 128GB 600; 256GB 1300; 512GB 1850
+- 4K Random Read (IOPS): 128GB 70K (Max); 256GB 85K (Max); 512GB 145K (Max)
+- 4K Random Write (IOPS): 128GB 130K (Max); 256GB 280K (Max); 512GB 400K (Max)
+- Test conditions for the speed figures: [NOT STATED]
+- Input Voltage: DC 3.3V ±5%
+- Power Consumption (Idle): 0.60W (Max)
+- Power Consumption (Active): 3.65W (Max)
+- MTBF: 1.5 million hours
+- ECC: LDPC Error Correction of Hardware / Bad Block Management
+- Features: Power management / TRIM / S.M.A.R.T. / NCQ / Wear-leveling
+- Operating Temperature: 0℃ – 70℃
+- Storage Temperature: −40℃ – 85℃
+- Operating Humidity: 5 – 90%
+- Certificates: FCC, CE, RoHS, REACH
+- Made in: Taiwan
+- Preloaded OS: Raspberry Pi OS 64-bit Bookworm on units shipped from January 2024 (product page)
+- Controller, TBW, weight, warranty, packing list: [NOT STATED]
+
+## Interfaces and compatibility
+- Bus: NVMe over PCIe Gen3 — it is NOT a SATA drive
+- Boots on Raspberry Pi 5 with the latest bootloader and a PCIe-to-M.2 HAT+ (product page)
+- Boots on Raspberry Pi 4 Model B with the latest bootloader via a USB-NVMe adapter (product page)
+- Boots on Raspberry Pi 400 (product page)
+- Boots on Compute Module 4 on an NVMe carrier, e.g. CM4 Maker Board (product page)
+- HAT+, USB-NVMe adapter and CM4 carrier are requirements, not included
+- Needs an M.2 slot with a 2242 mounting position; the M-Key (256GB/512GB) units do not fit B-Key sockets
+- Cytron tutorials linked: Raspberry Pi Imager updating bootloader; Clone Raspberry Pi OS into SSD; CM4 Maker Board getting started
+
+## Use cases
+- Boot drive for Raspberry Pi 5 (via PCIe-to-M.2 HAT+)
+- Boot drive for Raspberry Pi 4 Model B / Raspberry Pi 400 (via USB-NVMe adapter)
+- Boot drive for Compute Module 4 on an NVMe carrier such as the CM4 Maker Board
+
+## Known limitations
+- DO NOT format it if it is meant to boot a Raspberry Pi — formatting removes the preloaded Raspberry Pi OS
+- NVMe (PCIe) only; not usable in M.2 SATA slots or SATA adapters
+- 128GB is B+M-Key and PCIe Gen3 x2; 256GB/512GB are M-Key and PCIe Gen3 x4 — speeds and keys differ by capacity
+- Raspberry Pi 5 needs the latest bootloader and a PCIe-to-M.2 HAT+; Raspberry Pi 4 B needs the latest bootloader and a USB-NVMe adapter
+- Datasheet speed figures have no stated test conditions and are not Raspberry Pi measurements
+- OS image on units shipped before January 2024: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Product page: Jeff Geerling verified the drive on Raspberry Pi 5
+- Ready-to-boot storage for Raspberry Pi — plug in and boot, no imaging needed (product page framing)
+
+## Price band
+RM369.00 – RM739.00 depending on capacity (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-nvme-2242-b-plus-m-key-makerdisk-ssd-preloaded-rpi-os
+
+## Datasheet
+https://docs.google.com/document/d/14tFhPy47Aa8ugKsBqsc8-0nyJH_La1EbLZbW4Ooeg_w/edit
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/14tFhPy47Aa8ugKsBqsc8-0nyJH_La1EbLZbW4Ooeg_w/edit
+
+# Product fact sheets
+
+## Product name
+NVMe 2280 M-Key MakerDisk SSD (Raspberry Pi OS Ready)
+
+## Aliases
+V-MMR-NV2280, MakerDisk NVMe 2280, MakerDisk 2280 RPi OS, NVMe 2280 MakerDisk SSD Raspberry Pi OS Ready, MakerDisk M.2 2280 NVMe SSD
+
+## What it is
+A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Raspberry Pi OS 64-bit Bookworm already written to it, so a Raspberry Pi 5, Pi 4 Model B, Pi 400 or Compute Module 4 (on an NVMe carrier) can boot from it. Offered in 1TB, 512GB, 256GB and 128GB.
+
+## Specs and functions
+- Product code: V-MMR-NV2280
+- Form factor: M.2 2280
+- Key: M-Key
+- Interface: NVMe (PCIe) — NOT SATA
+- Capacities: 1TB / 512GB / 256GB / 128GB
+- Preloaded OS: Raspberry Pi OS 64-bit Bookworm, on units shipped from 22 November 2023
+- Speed test (128GB unit, Raspberry Pi Diagnostics): sequential write 385505 KB/s; random write 25680 IOPS
+- Speed test host board and random read figure: [NOT STATED]
+- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
+- Power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
+- Warranty, packing list: [NOT STATED]
+- Datasheet: none published
+
+## Interfaces and compatibility
+- Boots on Raspberry Pi 5, Raspberry Pi 4 Model B, Raspberry Pi 400
+- Boots on Compute Module 4 with an NVMe carrier — carriers named: Piunora, Mini Base (A)
+- Host needs an M.2 M-Key slot with a 2280 mounting position
+- Does not fit the CM4 Maker Board M.2 slot (that slot takes NVMe 2230/2242 only)
+- Not usable in M.2 SATA slots or SATA adapters
+- Cytron tutorial linked: home NAS with Raspberry Pi 5
+
+## Use cases
+- Boot drive for Raspberry Pi 5
+- Boot drive for Raspberry Pi 4 Model B / Raspberry Pi 400
+- Boot drive for Compute Module 4 on an NVMe carrier (Piunora, Mini Base (A))
+- Storage for a home NAS built on Raspberry Pi 5 (linked tutorial)
+
+## Known limitations
+- DO NOT format it if it is meant to boot a Raspberry Pi — formatting removes the preloaded OS
+- NVMe only; it is NOT SATA
+- 2280 length; will not fit 2230/2242-only M.2 slots
+- The only Cytron speed figures are Raspberry Pi Diagnostics results on the 128GB unit; they do not describe the other capacities
+- HAT/adapter/carrier for the host board is not included
+- OS image on units shipped before 22 November 2023: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- "Raspberry Pi OS Ready" — plug in and boot (product page framing)
+
+## Price band
+RM1,099.00 shown for the 1TB option; other capacities not captured (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-nvme-2280-m-key-makerdisk-preloaded-with-rpi-os
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-nvme-2280-m-key-makerdisk-preloaded-with-rpi-os
+
+# Product fact sheets
+
+## Product name
+NVMe 2280 MakerDisk SSD - JetPack for Jetson Orin Nano Super
+
+## Aliases
+V-MMR-NV2280-JP, MakerDisk NVMe 2280 JetPack, MakerDisk JetPack SSD, NVMe 2280 MakerDisk SSD JetPack, MakerDisk 2280 JetPack, JetPack MakerDisk
+
+## What it is
+A Cytron-branded M.2 2280 NVMe solid-state drive that ships with NVIDIA JetPack 6.2 and its SDK components already installed, for the NVIDIA Jetson Orin Nano Super Developer Kit (8GB) only. It fits the NVMe slot on the back of the carrier board and boots the kit without SDK Manager flashing of the OS.
+
+## Specs and functions
+- Product code: V-MMR-NV2280-JP
+- Form factor: M.2 2280
+- Interface: NVMe (PCIe)
+- Capacities: 512GB / 256GB
+- Preloaded software: NVIDIA JetPack 6.2 with SDK components, on units shipped from 6 February 2025
+- Target device: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) ONLY
+- Firmware requirement: the Orin Nano firmware must be 36.0 or newer; cannot be used on firmware below 36.0 (JetPack 5.x)
+- Login: pre-configured username and password; default login printed on the product page
+- Installation: insert into the NVMe slot on the back of the carrier board at 45°, then screw down
+- Linked references: NVIDIA Jetson Linux r36.4.3 release notes; "Nvbuf_utils to NVUtils" migration file
+- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
+- Read/write speed, power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
+- Warranty, packing list: [NOT STATED]
+- Datasheet: none published
+
+## Interfaces and compatibility
+- Compatible: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) with firmware 36.0 or newer
+- Not compatible: Jetson Orin Nano on firmware below 36.0 (JetPack 5.x) until the firmware is upgraded
+- Related Cytron service: Flash JetPack / Orin Nano Upgrade Service SEV-JN-ORNN (JetPack 5.x to 6.x, software only)
+- Cytron tutorials linked: Upgrade Jetson Orin Nano to Super using NVIDIA SDK Manager; JetPack 7.2 install; F5-TTS; Jetson device skills
+- Sibling product: NVMe 2280 M-Key MakerDisk SSD (Raspberry Pi OS Ready), V-MMR-NV2280 — same form factor, different preloaded OS, not interchangeable
+
+## Use cases
+- Ready-to-boot JetPack 6.2 system drive for the Jetson Orin Nano Super Developer Kit (8GB)
+- Storage for the Jetson Orin Nano AI Fundamentals workshop kit (the kit includes a 512GB JetPack MakerDisk)
+
+## Known limitations
+- Jetson Orin Nano Super Developer Kit (8GB) ONLY
+- Cannot be used on an Orin Nano with firmware below 36.0 (JetPack 5.x); upgrade the firmware first
+- DO NOT format it — formatting removes the preloaded JetPack 6.2
+- Ships with a pre-configured login; the credentials are on the product page and must not be copied into content
+- Drive hardware specs (speed, lanes, NAND, power, temperature) are not published
+- JetPack build on units shipped before 6 February 2025: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Skip the SDK Manager OS flash: JetPack 6.2 and SDK components come preloaded, plug in and boot (product page framing)
+
+## Price band
+RM469.00 – RM739.00 depending on capacity (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-nvme-2280-m-key-makerdisk-ssd-preloaded-with-jetpack
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-nvme-2280-m-key-makerdisk-ssd-preloaded-with-jetpack
+
+# Product fact sheets
+
+## Product name
+120GB 2.5-inch MakerDisk SATA III SSD with RPi OS
+
+## Aliases
+MMR-2P5-MD-120, MakerDisk SATA 120GB, MakerDisk 2.5-inch SATA SSD, 120GB MakerDisk SATA III SSD, MakerDisk SATA SSD with RPi OS
+
+## What it is
+A Cytron-branded 120GB 2.5-inch SATA III solid-state drive that ships with Raspberry Pi OS 64-bit Bookworm already written to it. It connects to a Raspberry Pi 5, Pi 4 Model B or Pi 400 through a SATA-to-USB bridge and boots over USB.
+
+## Specs and functions
+- Product code: MMR-2P5-MD-120
+- Form factor: 2.5-inch
+- Interface: SATA III (6.0 Gbps)
+- Capacity: 120GB
+- Preloaded OS: Raspberry Pi OS 64-bit Bookworm, on units shipped from 1 November 2023
+- Max sequential read: up to 550MB/s
+- Max sequential write: up to 460MB/s
+- Test conditions for the max figures: [NOT STATED]
+- Raspberry Pi Diagnostics via USB3-SATA: sequential write 224438 KB/s; random write 23744 IOPS; random read 17102 IOPS
+- Raspberry Pi Diagnostics host board: [NOT STATED]
+- NAND type, controller, power consumption, operating temperature, MTBF, TBW: [NOT STATED]
+- Dimensions, weight, warranty, packing list: [NOT STATED]
+- Datasheet: none published
+
+## Interfaces and compatibility
+- Boots on Raspberry Pi 5, Raspberry Pi 4 Model B and Raspberry Pi 400 with the latest bootloader (USB boot)
+- Connects through a SATA-to-USB bridge: SSD shield or USB 3.0-to-SATA adapter (not included)
+- Not usable in M.2 slots, PCIe HATs or CM4 NVMe carriers — it is a 2.5-inch SATA drive
+- Compute Module 4 and other Raspberry Pi models: [NOT STATED]
+
+## Use cases
+- USB boot drive for Raspberry Pi 5
+- USB boot drive for Raspberry Pi 4 Model B / Raspberry Pi 400
+
+## Known limitations
+- DO NOT format it if it is meant to boot a Raspberry Pi — formatting removes the preloaded OS
+- SATA, not NVMe; needs a USB-SATA bridge on every Raspberry Pi
+- Requires the latest bootloader with USB boot on the Pi
+- Pi-measured throughput via USB3-SATA (224438 KB/s sequential write) is far below the drive's 550MB/s / 460MB/s SATA maxima
+- OS image on units shipped before 1 November 2023: [NOT STATED]
+
+## Positioning (kept apart from specs)
+- Ready-to-boot Raspberry Pi OS SSD for USB boot (product page framing)
+
+## Price band
+RM118.80 special offer, was RM158.40 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-120gb-2p5-inch-makerdisk-sata-3-ssd-with-raspberry-pi-os
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-120gb-2p5-inch-makerdisk-sata-3-ssd-with-raspberry-pi-os
+
+# Product fact sheets
+
+## Product name
+AI Agent Workshop for RPI 5
+
+## Aliases
+V-AI-AGT-RPI, AI Agent Workshop for RPI 5, AgentBox AI Agent Workshop, AgentBox Workshop, AI Agent Workshop for Raspberry Pi 5
+
+## What it is
+A two-day hands-on training workshop at Cytron HQ, sold together with an AgentBox kit, that teaches participants to build AI agents on AgentBox, a Raspberry Pi 5-powered local AI agent hub. Participants connect to cloud LLMs through OpenRouter or local models through an Ollama server and build, test and deploy their own task-oriented AI agent.
+
+## Specs and functions
+- Programme title: AgentBox AI Agent Workshop (course outline)
+- Duration: 2 days (course outline, product page)
+- Venue: Cytron HQ ("Training at HQ") (product page)
+- Dates offered as of 2026-10-19: 10 & 11 Sep 2026; 15 & 16 Oct 2026; 19 & 20 Nov 2026 (product page)
+- Option: "Kit + 2 Day Training at HQ", date chosen as the variant (product page)
+- Availability: 10 (product page, 2026-10-19)
+- Warranty shown on page: 12 months (product page)
+- Platform: AgentBox, a Raspberry Pi 5-powered local AI agent hub with a browser-based visual workflow builder connecting inputs, LLMs, knowledge bases, tools and outputs (product page)
+- Model providers: cloud models via OpenRouter; local models via an Ollama server (course outline, product page)
+- Training methodology: instructor-led presentations, live demonstrations, guided hands-on activities, individual practical activities, real-world use case demonstrations, project-based learning, interactive Q&A (course outline)
+- Learning outcomes: understand AI agent and LLM fundamentals; navigate and operate AgentBox; design effective prompts and agent workflows; develop an AI agent for a specific real-world task (course outline)
+- Module 1 – Introduction to AI Agents and AgentBox: Generative AI, LLMs, cloud vs local models, AI agent fundamentals and use cases; AgentBox hardware overview, system architecture, interface tour, connecting to model providers (course outline)
+- Module 2 – Configuring AgentBox: initial system configuration, connecting to OpenRouter, connecting to a local Ollama server, managing models, model selection; creating a first agent, agent settings, prompt engineering, agent instructions, testing and troubleshooting (course outline)
+- Module 3 – Building Practical AI Agents: task-specific agents, agent workflows, context and memory, improving response quality, practical exercises; managing multiple agents, testing different models, performance and cost considerations, best practices (course outline)
+- Module 4 – Hands-on Project: plan, design, configure, build and test an agent for a real-world use case; final demonstration, peer review, troubleshooting and optimisation, future enhancements, wrap-up and Q&A (course outline)
+- Prerequisites: no prior AI development experience required (course outline)
+- Kit contents: [NOT STATED]
+- Participant limit: [NOT STATED]
+- Certification: [NOT STATED]
+- Refund / cancellation terms: [NOT STATED]
+
+## Interfaces and compatibility
+- Host hardware: Raspberry Pi 5 (AgentBox is Raspberry Pi 5-powered) (course outline, product page)
+- AgentBox is browser-based (product page)
+- LLM connections: OpenRouter (cloud) and Ollama server (local) (course outline, product page)
+- Laptop or other participant-supplied equipment: [NOT STATED]
+
+## Use cases
+- Automating tasks, interacting with information and improving productivity with AI agents (course outline)
+- Building, testing and deploying a task-oriented AI agent that can be customised after the workshop (course outline)
+- Training for IT professionals, software developers, AI/ML enthusiasts, makers and Raspberry Pi users, technical educators and trainers, and university students in Computer Science, Engineering or IT (course outline)
+
+## Known limitations
+- Two of the three listed dates (Sep and Oct 2026) had passed by 2026-10-19; only 19 & 20 Nov 2026 remained
+- Kit contents, participant limit, certificate, meals and refund terms are not stated in the sources read
+- Course outline carries no version or date
+
+## Positioning (kept apart from specs)
+- "No prior AI development experience is required, making this workshop suitable for beginners while still providing valuable insights for technical users" (course outline)
+- For beginners, makers, developers and educators (product page)
+
+## Price band
+RM1,930.50–RM3,861.00, with a 50% offer shown (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-ai-agent-workshop-for-rpi-5
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+https://docs.google.com/document/d/1e8Z1nlHWOvaEaraC6Fm3W8f-05Oz4c9S/edit
+
+# Product fact sheets
+
+## Product name
+Jetson Orin Nano AI Fundamentals: Hands-On Workshop with NVIDIA Certification
+
+## Aliases
+V-TW-JNORNN-NVIDIA, Jetson Orin Nano AI Fundamentals Workshop, Jetson Orin Nano Workshop with NVIDIA Certification, Jetson Orin Nano Hands-On Workshop, Cytron Jetson Orin Nano Workshop
+
+## What it is
+A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at the Cytron Technologies office in Penang, with an official NVIDIA AI certification on completion. It is sold as a kit-plus-training bundle or as a workshop-only seat for owners of the Jetson Orin Nano Training Kit V2.
+
+## Specs and functions
+- Duration: 1 day, timetable 9:00 AM to 5:00 PM (product page, workshop tentative)
+- Venue: Cytron Technologies office, Penang ("Training at HQ") (product page)
+- Dates offered as of 2026-10-19: 30 Sep 2026; 21 Oct 2026; 18 Nov 2026 (product page)
+- Options: Kit + 1 Day Training at HQ (date chosen as variant); Workshop ONLY for owners of the Jetson Orin Nano Training Kit V2, loan units on request (product page)
+- Availability: 10 (product page, 2026-10-19)
+- Warranty shown on page: 12 months (product page)
+- Certification: official NVIDIA AI certification on completion (product page)
+- Topics: setup, architecture, real-time object detection, image classification, image regression, edge inference (product page)
+- Tentative Day 1 timetable: Ice Breaking 9:00–9:15 AM; Theory about AI/ML/DL 9:15–9:45 AM; Breakfast 9:45–10:15 AM; Theory about Jetson Orin Nano 10:15–10:45 AM; Theory about CUDA 10:45–11:15 AM; Hands On with Jetson Orin Nano 11:15 AM–12:15 PM; Create NVIDIA Account 12:15–1:00 PM; Lunch 1:00–2:00 PM; Image Classification/Test 2:00–3:00 PM; Image Regression/Test 3:00–4:00 PM; Tea Break 4:00–4:30 PM; Q&A / Summary 4:30–5:00 PM (workshop tentative)
+- Kit option contents as far as stated: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) preassembled in an aluminium alloy case with external antennas; 19V 45W power supply; NVMe 2280 MakerDisk SSD 512GB preloaded with JetPack; remaining items not stated (product page)
+- Participant limit: [NOT STATED]
+- Prerequisites: [NOT STATED]
+- Refund / cancellation terms: [NOT STATED]
+- Meals included: [NOT STATED]
+
+## Interfaces and compatibility
+- Hardware platform: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) (product page)
+- Storage: NVMe 2280 MakerDisk SSD 512GB with JetPack preloaded (product page)
+- Power: 19V 45W power supply (product page)
+- Workshop ONLY requires the participant's own Jetson Orin Nano Training Kit V2 or a loan unit requested in advance (product page)
+- An NVIDIA account is created during the workshop (workshop tentative)
+
+## Use cases
+- Learning Jetson Orin Nano setup and architecture (product page)
+- Hands-on real-time object detection, image classification and image regression (product page, workshop tentative)
+- Edge inference on Jetson Orin Nano (product page)
+- Earning an official NVIDIA AI certification (product page)
+
+## Known limitations
+- The 30 Sep 2026 date had passed by 2026-10-19
+- Workshop ONLY option is for owners of the Jetson Orin Nano Training Kit V2; others need a loan unit on request
+- The timetable is titled "Tentative"; the PDF prints two "11:15PM" times that are typographical errors for 11:15 AM
+- The tentative timetable shows only image classification and image regression hands-on slots, while the page also lists real-time object detection
+- Full kit list, JetPack version, participant limit, prerequisites, meals and refund terms are not stated in the sources read
+
+## Positioning (kept apart from specs)
+- Hands-on AI fundamentals workshop with NVIDIA certification (product page)
+
+## Price band
+RM1,200.00–RM5,073.36, offer shown (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-jetson-orin-nano-ai-fundamentals-hands-on-workshop-with-nvidia-certification-v
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+https://drive.google.com/file/d/1W4ZJX9gzJETGO6qNpKIIxZXKXTTGLwMZ/view
+
+# Product fact sheets
+
+## Product name
+Cytron Raspbot Workshop (Introduction to AI)
+
+## Aliases
+V-TRAINING-AI, Cytron Raspbot Workshop, Raspbot Workshop (Introduction to AI), Raspbot Workshop, Raspbot Edge AI Workshop, Raspbot AI Training
+
+## What it is
+A one-day Edge AI workshop at Cytron HQ in Bukit Mertajam, Penang, built around the Raspbot, a Raspberry Pi 5 mobile robot with a camera. The price includes the Raspbot kit, food and a certificate, with a maximum of 5 participants per workshop.
+
+## Specs and functions
+- Duration: one day, 9.00 am to 5.00 pm (product page, workshop tentative)
+- Venue: Cytron HQ, Bukit Mertajam, Penang; can be conducted at the customer's location on request (product page)
+- Dates offered as of 2026-10-19: 15 Oct 2026; 12 Nov 2026; 10 Dec 2026 (product page)
+- Maximum 5 participants per workshop (product page)
+- Food included (product page)
+- Certificate provided (product page)
+- Availability: 15 (product page, 2026-10-19)
+- Warranty shown on page: 12 months (product page)
+- Kit: Raspberry Pi 5 (8GB); 32GB microSD with Raspbot OS; car expansion board; camera platform PCB; PTZ component; 4x mecanum wheels; 4x motor fixing frames; 4-channel tracking module; 4x motor; battery + velcro; 40-pin cable; camera; ultrasonic sensor; remote control; screwdriver; micro HDMI cable; 12.6V charger (EU) + UK adapter; screw pack; manual (product page)
+- Tentative timetable: Ice Breaking 9:00–9:15 AM; Introduction to Python 9:15–10:00 AM; Breakfast 10:00–10:30 AM; Factory Tour 10:30–11:00 AM; Introduction to OpenCV 11:00–11:30 AM; Introduction to AI 11:30 AM–12:30 PM; Introduction to ROS2 12:30–1:00 PM; Lunch 1:00–2:00 PM; Assembling Raspbot 2:00–2:30 PM; Testing Raspbot App 2:30–3:00 PM; Raspbot Programming 3:00–4:30 PM; Tea Break 4:30–4:45 PM; Q&A / Summary 4:45–5:00 PM (workshop tentative)
+- Prerequisites: [NOT STATED]
+- Refund / cancellation terms: [NOT STATED]
+
+## Interfaces and compatibility
+- Robot computer: Raspberry Pi 5 (8GB) with Raspbot OS on 32GB microSD (product page)
+- Laptop requirement for participants: [NOT STATED]
+
+## Use cases
+- Introduction to AI with a Raspberry Pi mobile robot and camera (product page)
+- Python, OpenCV, AI and ROS2 fundamentals in one day (workshop tentative)
+- Assembling, testing and programming the Raspbot (workshop tentative)
+
+## Known limitations
+- Maximum 5 participants per workshop (product page)
+- The 15 Oct 2026 date had passed by 2026-10-19
+- Battery chemistry and capacity are not stated; only "battery + velcro" and a 12.6V charger (EU) with UK adapter are listed
+- Prerequisites, laptop requirement and refund terms are not stated in the sources read
+- The timetable is titled "Tentative"
+
+## Positioning (kept apart from specs)
+- Introduction to AI workshop with a hands-on mobile robot, food and certificate included (product page)
+
+## Price band
+RM1,800.00 offer, was RM2,100.00 (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-ai-training-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+https://drive.google.com/file/d/1UqgaUC4sCqkGij_CYugQJBWlGZO8z-C6/view
+
+# Product fact sheets
+
+## Product name
+Flash Jetpack Service / Orin Nano Upgrade Service
+
+## Aliases
+SEV-JN-ORNN, Flash Jetpack Service, Orin Nano Upgrade Service, Jetson Orin Nano Upgrade Service, JetPack 5.x to 6.x Upgrade Service, Jetson Orin Nano JetPack Flash Service
+
+## What it is
+A software-only service in which Cytron upgrades a customer's NVIDIA Jetson Orin Nano from JetPack 5.x to JetPack 6.x. No hardware is included; it is priced at RM150.00 and ordered by enquiry.
+
+## Specs and functions
+- Type: software-only service, no hardware included (product page)
+- Target device: NVIDIA Jetson Orin Nano (product page)
+- Upgrade path: JetPack 5.x to JetPack 6.x (product page)
+- Delivers: latest CUDA, TensorRT, cuDNN and DeepStream (product page)
+- Enables the new 25W power mode, the "Super" performance mode (product page)
+- Up to 70% more generative AI performance, as stated by NVIDIA (product page)
+- Availability: enquiry ("Inquire Now") (product page, 2026-10-19)
+- Exact JetPack 6.x release flashed: [NOT STATED]
+- Turnaround time: [NOT STATED]
+- Delivery method (send-in / on-site): [NOT STATED]
+- Data preservation: [NOT STATED]
+- Warranty on the service: [NOT STATED]
+
+## Interfaces and compatibility
+- Applies to the NVIDIA Jetson Orin Nano (product page)
+- A Jetson Orin Nano on firmware below 36.0 (JetPack 5.x) cannot use Cytron's MakerDisk NVMe 2280 SSD preloaded with JetPack 6.2; this service moves the board to JetPack 6.x (MakerDisk JetPack product page)
+- Linked documents: NVIDIA Jetson Orin Nano Series datasheet; Jetson Orin Nano Training Kit Getting Started Guide (product page)
+- The Getting Started Guide covers the Orin Nano Developer Kit tour, peripherals, login and software updates, the jetson-inference Docker container, image classification, object detection and semantic segmentation (Getting Started Guide)
+- Coverage of Orin Nano 4GB, Orin NX or third-party carriers: [NOT STATED]
+
+## Use cases
+- Upgrading a Jetson Orin Nano from JetPack 5.x to JetPack 6.x for the latest CUDA, TensorRT, cuDNN and DeepStream (product page)
+- Unlocking the 25W "Super" power mode for more generative AI performance (product page)
+- Preparing a JetPack 5.x board to boot a JetPack 6.2 MakerDisk SSD (MakerDisk JetPack product page)
+
+## Known limitations
+- Software-only; no hardware included (product page)
+- Ordered by enquiry, not stocked (product page)
+- Exact JetPack 6.x release, turnaround, delivery method, data handling and warranty are not stated in the sources read
+- The Getting Started Guide's Appendix D lists Developer Kit module power as 7W to 15W, which predates the 25W mode enabled by JetPack 6.x
+- The Getting Started Guide carries no version or date and does not state which JetPack it targets
+
+## Positioning (kept apart from specs)
+- "Super" performance: new 25W power mode with up to 70% more generative AI performance per NVIDIA (product page)
+
+## Price band
+RM150.00, by enquiry (Cytron product page, read 2026-10-19)
+
+## Product page
+https://my.cytron.io/p-jetson-orin-nano-upgrade-service-jetpack-5.x-to-jetpack-6.x
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/p-jetson-orin-nano-upgrade-service-jetpack-5.x-to-jetpack-6.x
