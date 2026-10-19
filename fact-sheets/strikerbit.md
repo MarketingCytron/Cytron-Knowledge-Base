@@ -36,7 +36,7 @@ A classroom robot-soccer competition kit for the BBC micro:bit: four 2-wheel-dri
 - Remote: Joystick:bit V2 Kit with its own micro:bit; the Basic Kit lists 2x micro:bit Junior Kit V2 per robot set
 - Radio scheme / radio groups: [NOT STATED]
 - Robot battery: 18650 3.7V 2200mAh button top in the MOTION:BIT holder
-- Controller batteries: 4x AAA battery sets (Complete Kit)
+- Controller batteries: 4 × PKCELL AAA battery sets, one per Joystick:bit V2 (Complete Kit with batteries)
 - MakeCode; MOTION:BIT extension pxt-motionbit for the robot
 - MicroPython library: [NOT STATED]
 
@@ -49,7 +49,7 @@ A classroom robot-soccer competition kit for the BBC micro:bit: four 2-wheel-dri
 ## Known limitations
 - The booklet PDF is image-only (237 MB) and its chapter text, wiring and code could not be read; the chapter-code Drive folder could not be opened
 - MOTION:BIT port assignments and the radio control scheme are not stated by any readable source
-- "without battery" options ship without the 18650 cells; the robot needs a 3.7V button-top 18650
+- "without battery" options ship without the 18650 cells and the AAA sets; the robot needs a 3.7V button-top 18650
 - The product page is inconsistent on micro:bit count: 4x micro:bit Junior Kit (V2) in the Complete Kit for 4 robots plus 4 Joystick:bit V2 Kits, but 2x per robot set in the Basic Kit
 - Basic Kit packing list is truncated on the product page
 - Card limits: max 2 yellow cards per robot, max 2 red cards per team (score sheet)

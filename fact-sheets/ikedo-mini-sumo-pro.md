@@ -21,10 +21,11 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 - Motors: 2 x 800RPM 6V DC micro metal gearmotor; "6V DC motors (800rpm, 3.1kg.cm)"
 - Wheels: 2 x silicon wheels 32x22mm; blue from July 2025
 - Armour: 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base
-- Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low)
+- Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low) and a port for an external start module (not included)
+- Controller user features: LEDs, DIP switch, potentiometer, buzzer, servo port
 - USB cable: free, included from 25 Aug 2024
-- Packing list (truncated on the product page): 1 x Maker Mini Sumo Controller, 5 x Maker Object, 2 x Maker Reflect S, 2 x 800RPM 6V DC micro metal gearmotor, 1 x 3D printed motor bracket, 2 x silicon wheels 32x22mm, 1 x 7.4V 450mAh LiPo, 1 x chassis (main), 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base, JST LiPo wire extension, 2561 3-way connector extension wire, ...
-- Not included: RC transmitter/receiver; no LiPo charger in the visible packing list
+- Packing list: 1 x Maker Mini Sumo Controller, 5 x Maker Object, 2 x Maker Reflect S, 2 x 800RPM 6V DC micro metal gearmotor, 1 x 3D printed motor bracket, 2 x silicon wheels 32x22mm, 1 x 7.4V 450mAh LiPo, 1 x chassis (main), 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base, JST LiPo wire extension, 1 x 2561 3-way connector extension wire, 8 x M3x6 screws, 4 x M3x18 screws, 4 x nuts, 2 x tiny screwdrivers, free USB cable
+- Not included: RC transmitter/receiver, external start module, LiPo charger
 - Differences from the Ikedo Mini Sumo Robot V2 (KIT-IKEDO-MSV2-S): 800 RPM 3.1 kg.cm motors instead of 600 RPM "0.065kg.cm"; 350 g instead of ~200 g; adds steel shield, 4" razor blade and copper weight base; RM693.00 instead of RM418.95
 - Warranty: "NO warranty for Sumo Robot."
 
@@ -46,8 +47,7 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 
 ## Known limitations
 - No warranty for the Sumo Robot
-- RC transmitter/receiver not included; LiPo charger not in the visible packing list
-- Product page specifications and packing list are truncated; top cover, screws and screwdrivers are not confirmed
+- RC transmitter/receiver, external start module and LiPo charger are not included
 - No Pro-specific assembly document; the Ikedo Bot V2 Getting Started Instruction covers the V2 Starter only
 - Controller limits apply: 3.0 A continuous / 6.0 A peak (< 5 s) per motor channel; motors over 3 A are not covered by the controller's warranty (see MAKER-MSUMO)
 - 800 RPM motor current rating: [NOT STATED]

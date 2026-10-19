@@ -6,10 +6,11 @@
 | Family | Arduino shields (non-motor) |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: product photo read (silkscreen "Cytron Technologies Proto Shield, Cytron.com.my", RESET button and LED at the board edge, stackable female headers). The resources folder holds "ARDUINO-PROTO2 Schematic Prints rev1.0.1.pdf" and "ARDUINO-PROTO2 Final Artwork Prints rev1.0.1.pdf", but opening either asks for a Google sign-in, so the LED/ISP circuit is still unread. No datasheet exists; stays Medium-low |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: untagged facts are from the product page as read by the coordinator on 2026-10-19 [PP]. The schematic/PCB prints and Fritzing files were not opened.
+Tag notes: untagged facts are from the product page as read by the coordinator on 2026-10-19 [PP]. [PP: photo] = the product photo. The resources folder "Arduino-Proto2" lists two files — "ARDUINO-PROTO2 Schematic Prints rev1.0.1.pdf" and "ARDUINO-PROTO2 Final Artwork Prints rev1.0.1.pdf" — which could not be opened without a Google sign-in (2026-10-19).
 
 ## What it is
 An Arduino prototyping shield, "revised to be UNO R3 and Leonardo compatible", with "the pads for ISP" prepared [PP]. It solves the 0.1-inch offset between the Arduino header and a standard protoboard by giving a standard 0.1" x 0.1" prototyping area within the Arduino dimensions, with stackable headers, a reset button, one LED, GND and +5V rails, and every pin extended out to two sides of the headers [PP]. It is delivered assembled [PP].
@@ -34,6 +35,8 @@ Every row of the product page Features list, plus the description facts.
 | Dimension | 68.58mm x 58.42mm | [PP] |
 | Packing list | 1x shield | [PP] |
 | Warranty | 12 months | [PP] |
+| Board revision | rev1.0.1 (file names of the schematic and artwork prints) | [PP: resources] |
+| Silkscreen | "Cytron Technologies — Proto Shield — Cytron.com.my"; RESET label at the button; LED label beside the LED | [PP: photo] |
 | Hole count, rail layout, weight, header type for ISP | Not stated | [PP] |
 
 ## Interfaces, terminals and pin mapping
@@ -78,12 +81,11 @@ Every row of the product page Features list, plus the description facts.
 | Dimension / Features | [PP] 68.58mm x 58.42mm; 0.1" grid, stackable headers, reset, one LED, GND and +5V rails | [3P] RobotShop: same values | No conflict |
 
 ## Needs verification
-- LED circuit (always-on power LED vs user LED) and which pads it connects to.
-- Whether ISP pads accept a 2x3 header and connect to the Arduino ICSP pins.
+- LED circuit (always-on power LED vs user LED) and which pads it connects to — Cytron confirms there is **no public schematic** (19 Oct 2026), so describe the LED only as "one LED for power or output indicator" (product page wording).
+- Whether ISP pads accept a 2x3 header and connect to the Arduino ICSP pins (no public schematic — state only "pads for ISP").
 - Prototyping-area hole count and whether any holes are strip-connected.
 - Which component is counted twice in "4 SMD components — LED, push-button and resistor".
-- Weight and PCB revision marking.
-- Whether the schematic/PCB prints folder matches the current revision (page says "given as is").
+- Weight.
 
 ## Sources
 - [PP] Cytron product page, read by the coordinator 2026-10-19 (price RM14.70, availability 273, warranty 12 months, description, Features list, packing list) — https://my.cytron.io/p-cytron-prototyping-shield

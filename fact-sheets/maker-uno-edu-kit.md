@@ -23,7 +23,7 @@ A classroom kit built around the Maker UNO (an Arduino UNO-compatible board with
 - Light Theremin: LDR + 10 kΩ on A0, piezo buzzer pin 8 via tone(), LED 13 shows calibration, calibration for the first 5 s after power-up
 - Teacher Guidebook: 4 units, 10 hours total — Unit 1 Microcontroller Theory (2 h), Unit 2 Output (3 h), Unit 3 Input (2 h), Unit 4 Combination of Input and Output (3 h); learning standards 2.4.1–2.4.8; assessment Tier 1–6; Appendix 1 programming from Android (USB OTG Checker, ArduinoDroid)
 - Software: Arduino IDE (module written for 1.8.x); CH340/CH341 USB driver for Windows and macOS
-- Packing list: [NOT STATED] (product page list is an image; not in the module or Teacher Guidebook)
+- Packing list per set: Maker UNO ×1; USB Micro B cable ×1; LED 5 mm red ×3, yellow ×3, green ×3; breadboard (small) ×1; 40-way male-to-male jumper wire ×1; resistor 0.25 W 5% 220 Ω ×10, 1 kΩ ×5, 10 kΩ ×5; LDR (small) ×1; transistor 2N2222 ×1; finger-adjust preset 10 kΩ ×1; 3 V miniature brush motor without gear ×1; DIY 4-blade 56 mm motor propeller ×1; Maker Box ×1 (product page image)
 - Warranty: [NOT STATED] (blank on product page)
 - Dimensions and weight: [NOT STATED]
 
@@ -52,7 +52,8 @@ A classroom kit built around the Maker UNO (an Arduino UNO-compatible board with
 - Pin-label stickers must be applied by the user
 - Teacher Guidebook units 2.4, 3.4 and 4.3 need internet access; each student needs a Maker UNO; some topics need laptops or phones
 - The Getting Started Module has no printed version or date
-- Packing list and warranty are not stated in any Cytron text read
+- Warranty is not stated for the kit
+- No flyback diode is listed for the motor lesson
 
 ## Positioning (kept apart from specs)
 - "Many students lack basic electronics knowledge and struggle with circuit diagrams, often spending much of a lesson wiring and troubleshooting."

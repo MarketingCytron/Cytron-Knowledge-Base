@@ -5,12 +5,13 @@
 | Product code | `KIT-IKEDO-MSUMO-P` [PP] (RobotShop lists the same manufacturer number [3P]) |
 | Family | Sumo robot kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: live product page re-read in full — the two truncated passages are now complete: specs (on-board start button + port for an external start module, LEDs, DIP switch, potentiometer, buzzer, servo port) and packing list (2561 wire, 8 × M3×6, 4 × M3×18, 4 nuts, 2 screwdrivers, USB cable; no top cover, no charger). Robot kit — the controller follows its datasheet (`maker-mini-sumo.md`); kit parts follow the product page (no Pro guide book exists) |
 | Primary source | **Cytron product page** (read by the coordinator 2026-10-19) [PP] — https://my.cytron.io/p-ikedo-mini-sumo-robot-pro-kit. No kit datasheet, manual or Getting Started doc covers the Pro: the "Ikedo Bot V2 Getting Started Instruction" states "Product Included: Ikedo Mini Sumo Robot Starter Kit V2" only [UM-V2]. |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [PP] = product page extract (two passages truncated: the specs list after "on-board start button and …" and the packing list after "2561 3-way connector extension wire, …"). [UM-V2] = the V2 Getting Started Google Doc, used only for facts shared with the V2 kit (same controller, sensors, battery) and clearly labelled. [GH] = CytronMakerSumo library (read 2026-10-19). [PP: Hackster Pro] = Cytron's own "Ikedo Mini Sumo Robot Pro" Hackster guide (15 Jan 2020) — **not readable here** (fetch blocked); the facts quoted from it are those already recorded in `maker-mini-sumo.md`. The tutorial https://my.cytron.io/tutorial/SumoRobot1KG linked from the page could not be fetched. The board datasheets linked from the page (Maker Mini Sumo, Maker Object, "Datasheet for Edge Sensor (MAKER-REFLECT-S)") are documented in their own KB files.
+Tag notes: [PP] = product page, re-read in full 2026-10-19 (specs list and packing list complete). [UM-V2] = the V2 Getting Started Google Doc, used only for facts shared with the V2 kit (same controller, sensors, battery) and clearly labelled. [GH] = CytronMakerSumo library (read 2026-10-19). [PP: Hackster Pro] = Cytron's own "Ikedo Mini Sumo Robot Pro" Hackster guide (15 Jan 2020) — **not readable here** (fetch blocked); the facts quoted from it are those already recorded in `maker-mini-sumo.md`. The tutorial https://my.cytron.io/tutorial/SumoRobot1KG linked from the page could not be fetched. The board datasheets linked from the page (Maker Mini Sumo, Maker Object, "Datasheet for Edge Sensor (MAKER-REFLECT-S)") are documented in their own KB files.
 
 **Kit rule:** boards are not re-documented here — see `maker-mini-sumo.md`, `maker-object.md`, `maker-reflect-s.md`.
 
@@ -33,13 +34,15 @@ No datasheet spec table exists; rows are the product page "Specifications" block
 | Motors | 2 × 800 RPM 6 V DC micro metal gearmotor; "6V DC motors (800rpm, 3.1kg.cm)" | [PP] |
 | Wheels | 2 × silicon wheels 32 mm × 22 mm; blue from July 2025 | [PP] |
 | Armour / blade | 1 × laser-cut stainless steel shield; 1 × 4" stainless steel razor blade; 1 × copper weight base | [PP] |
-| Control modes | "auto and manual mode"; RC sold separately; "on-board start button and …" (truncated) | [PP] |
+| Control modes | "auto and manual mode"; RC sold separately | [PP] |
+| Start | On-board start button **and a port for an external start module** (start module not included) | [PP] |
+| On-board user features (controller) | LEDs, DIP switch, potentiometer, buzzer, servo port — see `maker-mini-sumo.md` | [PP] |
 | USB cable | Free, included from 25 Aug 2024 | [PP] |
 | Warranty | "NO warranty for Sumo Robot." | [PP] |
 | Price | RM693.00 (Cytron product page, read 2026-10-19) | [PP] |
 
-**Packing list [PP]** (truncated on the page after the 2561 wire): 1 × Maker Mini Sumo Controller, 5 × Maker Object, 2 × Maker Reflect S, 2 × 800RPM 6V DC micro metal gearmotor, 1 × 3D printed motor bracket, 2 × silicon wheels 32x22mm, 1 × 7.4V 450mAh LiPo, 1 × chassis (main), 1 × laser-cut stainless steel shield, 1 × 4" stainless steel razor blade, 1 × copper weight base, JST LiPo wire extension, 2561 3-way connector extension wire, …
-**Not included:** RC transmitter/receiver [PP]. A LiPo charger is not in the visible packing list [PP]. Whether a top cover, screws or screwdrivers are included falls in the truncated part — not stated.
+**Packing list [PP]:** 1 × Maker Mini Sumo Controller, 5 × Maker Object, 2 × Maker Reflect S, 2 × 800RPM 6V DC micro metal gearmotor, 1 × 3D printed motor bracket, 2 × silicon wheels 32x22mm, 1 × 7.4V 450mAh LiPo, 1 × chassis (main), 1 × laser-cut stainless steel shield, 1 × 4" stainless steel razor blade, 1 × copper weight base, JST LiPo wire extension, 1 × 2561 3-way connector extension wire, 8 × M3×6 screws, 4 × M3×18 screws, 4 × nuts, 2 × tiny screwdrivers, free USB cable.
+**Not included:** RC transmitter/receiver; external start module; LiPo charger; no separate top cover is listed [PP].
 
 ### Differences from the V2 Starter (`ikedo-mini-sumo-v2.md`) [PP]
 | Item | V2 Starter (`KIT-IKEDO-MSV2-S`) | Pro Bundle (`KIT-IKEDO-MSUMO-P`) |
@@ -106,12 +109,12 @@ No Pro-specific assembly document was readable. Facts that carry over because th
 | Kit coverage of the Getting Started doc | Task brief: "same Getting Started doc if it covers the Pro" | [UM-V2]: "Product Included: Ikedo Mini Sumo Robot Starter Kit V2" | The doc does not cover the Pro; no Pro assembly document found |
 
 ## Needs verification
-- Rest of the specifications line ("on-board start button and …") and of the packing list (after the 2561 wire): top cover, screws, screwdrivers, charger? [PP]
 - Stall/rated current of the 800 RPM 6 V micro metal gearmotor vs the controller's 3 A continuous limit — no source.
 - Whether 350 g is with battery, shield, blade and copper base fitted.
 - Dimensions/thickness of the stainless steel shield, razor blade and copper weight base.
-- Content of the Cytron Hackster "Ikedo Mini Sumo Robot Pro" guide (15 Jan 2020) and the SumoRobot1KG tutorial — not readable here.
-- Competition class (500 g) — stated for the controller, not in the kit-page extract.
+- Which external start module the port is meant for (e.g. Cytron's IR sumo start module — `ir-sumo-start.md`) — not named on the page.
+- Content of the Cytron Hackster "Ikedo Mini Sumo Robot Pro" guide (15 Jan 2020) and the SumoRobot1KG tutorial — not read.
+- Competition class (500 g) — stated for the controller, not on the kit page.
 - Pre-loaded firmware and Arduino board selection.
 - [3P] RobotShop SKU RB-Cyt-276, USD 172.90 — cross-check only.
 

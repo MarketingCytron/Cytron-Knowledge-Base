@@ -17,10 +17,15 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - Capacities: 1TB / 512GB / 256GB / 128GB
 - Preloaded OS: Raspberry Pi OS 64-bit Bookworm, on units shipped from 22 November 2023
 - Speed test (128GB unit, Raspberry Pi Diagnostics): sequential write 385505 KB/s; random write 25680 IOPS
-- Speed test host board and random read figure: [NOT STATED]
-- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
-- Power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
-- Warranty, packing list: [NOT STATED]
+- Speed test random read (128GB unit): 22351 IOPS (product page image)
+- Drive label 128GB: PCIe Gen 3 x4, NVMe 1.3, read up to 1800 MB/s, write up to 560 MB/s (product page image)
+- Drive label 256GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1000 MB/s (product page image)
+- Drive label 512GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1700 MB/s (product page image)
+- Drive label 1TB: PCIe Gen 4 x4, NVMe 1.4, read 5100 MB/s, write 4800 MB/s (product page image)
+- All labels: SMART & TRIM supported, Advanced Flash Management, Made in Taiwan, RoHS/FC/CE (product page image)
+- Size: 22 × 80 mm (M.2 2280) (product page image)
+- Warranty: 1 year limited, printed on the label; void if label removed (product page image)
+- NAND type, controller, power, operating temperature, MTBF, TBW, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
@@ -29,7 +34,7 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - Host needs an M.2 M-Key slot with a 2280 mounting position
 - Does not fit the CM4 Maker Board M.2 slot (that slot takes NVMe 2230/2242 only)
 - Not usable in M.2 SATA slots or SATA adapters
-- Cytron tutorial linked: home NAS with Raspberry Pi 5
+- Cytron tutorial linked: How to build a home NAS with Raspberry Pi 5
 
 ## Use cases
 - Boot drive for Raspberry Pi 5
@@ -41,7 +46,8 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - DO NOT format it if it is meant to boot a Raspberry Pi — formatting removes the preloaded OS
 - NVMe only; it is NOT SATA
 - 2280 length; will not fit 2230/2242-only M.2 slots
-- The only Cytron speed figures are Raspberry Pi Diagnostics results on the 128GB unit; they do not describe the other capacities
+- Rated speeds differ by capacity (labels); the Raspberry Pi Diagnostics results are for the 128GB unit only
+- Label ratings are drive maximums; Raspberry Pi Diagnostics results on a Pi are much lower
 - HAT/adapter/carrier for the host board is not included
 - OS image on units shipped before 22 November 2023: [NOT STATED]
 

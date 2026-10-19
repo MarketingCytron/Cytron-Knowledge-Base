@@ -5,11 +5,12 @@
 | Product code | `V-STRIKERBIT` [PP]. The scoring sheet carries the internal game code "PM-GAME-STRIKER" [UM] |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: live product page re-read — Complete-with-batteries list confirmed (4 × PKCELL AAA sets for the Joystick:bits, 4 × 18650 2200 mAh, 5 Velcro sets); "without batteries" omits both the AAA sets and the 18650 cells; Basic photo = one robot set + one game handle. The STRIKER:BIT booklet (guide book, main source under KB rule 7) is still unread — 237 MB image-only PDF; confidence stays Medium-low until it is read |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Notes on tags: [UM] = STRIKER:BIT Scoring Sheet (read in full) and the Booklet (metadata only); [PP] = my.cytron.io product page (coordinator read, 2026-10-19). The "Chapter codes" Drive folder is titled "STRIKERRBIT CODE (MAIN)" (created 2026-06-09) but its files could not be listed or read. KIT RULE: MOTION:BIT (`motion-bit.md`) is **not** re-documented here; only kit-level facts are stated. Joystick:bit V2 is a non-Cytron controller and has no KB file.
+Notes on tags: [UM] = STRIKER:BIT Scoring Sheet (read in full) and the Booklet (metadata only — Cytron confirms the booklet is the **only** guide, 19 Oct 2026; Google Drive says it is too large to preview); [PP] = my.cytron.io product page (coordinator read, 2026-10-19). The "Chapter codes" Drive folder is titled "STRIKERRBIT CODE (MAIN)" (created 2026-06-09) but its files could not be listed or read. KIT RULE: MOTION:BIT (`motion-bit.md`) is **not** re-documented here; only kit-level facts are stated. Joystick:bit V2 is a non-Cytron controller and has no KB file.
 
 ## What it is
 - "STRIKER:BIT Soccer Competition Kit" — a classroom-scale robot-soccer competition kit: "4 Robots in One Package" with a 4-step workflow, a 7-chapter learning guidebook, a game field, barrier, goal posts, props and scoring sheets [PP].
@@ -47,19 +48,19 @@ The booklet's wiring pages could not be read, and the chapter code folder could 
 | Shooter | 1x micro servo on a MOTION:BIT servo port | port number not stated | [PP] |
 | Robot power | 1x 18650 3.7 V 2200 mAh button-top Li-Ion in the MOTION:BIT holder | MOTION:BIT input range and charging: see `motion-bit.md` | [PP] |
 | Remote control | Joystick:bit V2 Kit with its own micro:bit, over micro:bit radio | the Basic Kit lists 2x micro:bit Junior Kit V2 per robot set (one for the robot, one for the joystick) | [PP] |
-| Joystick power | "4x AAA battery sets" in the Complete Kit | which device they power is not stated in the page text | [PP] |
+| Joystick power | 4 × PKCELL AAA battery sets in the Complete Kit with batteries — one set per Joystick:bit V2 | the 18650 powers the robot, so the AAA sets are for the joysticks | [PP] |
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - **Two micro:bits per robot:** the robot (on MOTION:BIT) and the Joystick:bit remote each need a micro:bit [PP]. See *Conflicts* for the micro:bit count in the Complete Kit.
 - **Scoring rules printed on the official score sheet** [UM]: goals are ticked one per goal; **yellow cards: max 2 per robot**; **red cards: max 2 per team**; **final score = total number of goals**; the sheet is signed by the Team A captain and Team B captain ("Verify scores are accurate") and by the Head of Referee ("Final official match validation"). It has fields for Competition / Event / Round, Date and both team names.
 - **Shooter, not gripper:** the kit reuses the Robo Grip Mini PCB with a 3D-printed striker part driven by a servo; the product page calls it a "shooter mechanism" [PP]. Don't describe it as a ball-carrying gripper.
-- **Battery option:** "without battery" kits ship without the 18650 cells (and presumably the AAA sets — not stated); the robot needs a 3.7 V button-top 18650 [PP]. The 18650 KB note applies: unprotected cells need a proper Li-ion charger (see the 18650 battery entry when added).
+- **Battery option:** "without battery" kits ship without **both** the 18650 cells and the AAA sets [PP]; the robot needs a 3.7 V button-top 18650 and each Joystick:bit needs AAA cells. The 18650 KB note applies: unprotected cells need a proper Li-ion charger (see the 18650 battery entry when added).
 - **Programming is MakeCode** with the MOTION:BIT extension (pxt-motionbit) for the robot [PP]; the extension and radio-group handling for the Joystick:bit side are not stated by any Cytron source read — do not invent block names.
 - **Field build:** barrier from 12 pieces of 34 cm 3/4" PVC conduit with 4 elbows and 8 sockets; goals are the two 315 x 220 x 70 mm pizza boxes with goal-post stickers; a printed gamefield map is included [PP]. Field dimensions are not stated.
 
 ## Power and electrical limits
 - Robot: 1x 3.7 V 2200 mAh 18650 Li-Ion with button top per robot [PP]; charged/used through MOTION:BIT (limits in `motion-bit.md`: 3.6–6 V input, 1 A / 1.5 A motor, 5 V 300 mA, 3V3 200 mA).
-- Controllers: 4x AAA battery sets listed in the Complete Kit [PP]; chemistry and count per set not stated.
+- Controllers: 4 × PKCELL AAA battery sets in the Complete Kit with batteries, for the four Joystick:bit V2 [PP]; cells per set not stated.
 - No run time, current draw or charging instruction is stated by any source read.
 
 ## Software support
@@ -90,8 +91,7 @@ The booklet's wiring pages could not be read, and the chapter code folder could 
 - **Booklet contents**: chapter titles, the 4-step workflow, assembly steps, which MOTION:BIT motor channels and servo port the drive motors and shooter use, the Joystick:bit radio scheme and extension, servo angles — the 237 MB image-only PDF could not be downloaded or OCR'd.
 - **Chapter codes**: the Drive folder exists but its files were not visible to this account.
 - **Game rules** beyond the score sheet (match length, field size, fouls that earn cards, what a red card does): "gameplay instruction" is a separate printed sheet not read.
-- Exact Basic Kit packing list (page text truncated after "1x micro servo, ...").
-- Whether "without battery" also omits the AAA sets.
+- Exact Basic Kit packing list (page text truncated after "1x micro servo, ..."; the Basic photo shows one robot set and one game handle).
 - Joystick:bit V2 Kit details (maker, power, extension) — no Cytron source read states them; treat as a third-party controller.
 - Dimensions/weight of a robot, field size, age range, assembly time — not stated anywhere read.
 - Availability on 2026-10-19 was 15 units [PP]; options may sell out separately.

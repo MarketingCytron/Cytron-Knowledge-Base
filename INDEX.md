@@ -19,6 +19,8 @@ This is the public edition. Internal working notes (internal document links, pri
    - **Education kits** (e.g. EDU:BIT, Maker UNO Learning Box): the Cytron **guide book** is the main source. Students and teachers follow the book, so a datasheet is **not required** and its absence does not lower confidence. Electrical limits the book does not give stay "not stated"; for power, say "use the supplied cable / power source".
    - **Mechanical hardware with no electronics** (e.g. Robo Base, Robo Base Mini, brackets, chassis plates, wheels): the Cytron **guide tutorial** and the product page (including its spec images) are the main source. A datasheet is not required.
    - **Robot and project kits** (e.g. SUMO:BIT Robot Kit, Robot Battle, SOCCER:BIT, Ikedo kits): the **board inside follows its own datasheet** — link to the board's KB file, never re-document it. The **kit accessories, assembly and lessons** use the Cytron **guide book or guide tutorial** as the main source; no accessory datasheet is required.
+   - **Workshops and services** (e.g. Jetson Orin Nano workshop, AI Agent workshop, JetPack flash service): the **product page plus the Cytron course outline or timetable** is the main source. No datasheet is required.
+   - **What ships in the box** (items, quantities, screw sizes): the **product page packing list comes first**, the guide tutorial second (decided 19 Oct 2026). Where a tutorial names a different part, quote the packing list and note the tutorial difference under *Conflicts*.
 
 ## How the KB is arranged (two layers)
 
@@ -88,7 +90,7 @@ Shield notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Maker UNO Edu Kit | [`maker-uno-edu-kit.md`](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Maker UNO + components kit for classes (School Package 10+1) | Getting Started Module PDF + Teacher Guidebook (no version/date) | **Medium-low** |
+| Maker UNO Edu Kit | [`maker-uno-edu-kit.md`](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Maker UNO + components kit for classes (School Package 10+1) | Getting Started Module PDF + Teacher Guidebook (no version/date) | **Medium-high** |
 | Maker UNO Learning Box | [`maker-uno-learning-box.md`](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Maker UNO + parts for 17 projects / 7 lessons | Product page (Beginner Guide PDF host blocked) | **Medium** |
 | PikaBot | [`pikabot.md`](pikabot.md) | `V-KIT-PIKABOT` | Maker UNO + Maker Drive smart-car kit, Arduino IDE or mBlock booklet | PikaBot booklet (image-only) + Cytron PikaBot Resources doc with code | **Medium** |
 | Maker Uno X Learning Guide (book) | [`maker-uno-x-learning-guide.md`](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Printed 17-project guide for the Maker UNO X Learning Box | Guide v1.5, Feb 2023 (read to Lesson 6) | **Medium** |
@@ -153,9 +155,9 @@ micro:bit notes for every agent:
 | BEETLE:BIT | [`beetlebit.md`](beetlebit.md) | `V-BEETLEBIT` | REKA:BIT gripper robot car, 7 chapters | Resource hub + MakeCode chapter programs (booklet PDF is image-only) | **Medium** |
 | STRIKER:BIT | [`strikerbit.md`](strikerbit.md) | `V-STRIKERBIT` | 4-robot classroom soccer kit on MOTION:BIT + Robo Base Mini | Scoring sheet + product page (booklet PDF image-only) | **Medium-low** |
 | SUMO:BIT Robot Kit (1 kg) | [`sumobit-robot-kit.md`](sumobit-robot-kit.md) | `V-KIT-SUMOBIT` | 1 kg sumo robot on SUMO:BIT + 2× MD13S | Google Slides guides (Assembly/Checking/Maintenance/Autonomous/RC, Dec 2024) | **Medium-high** |
-| Robot Battle (500g) SUMO:BIT | [`robot-battle-500g-sumobit.md`](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | 500 g battle robot on SUMO:BIT, no controller, no warranty | Product page only | **Medium-low** |
-| SOCCER:BIT (4 wheel) | [`soccerbit-robot-kit.md`](soccerbit-robot-kit.md) | `V-SCRBIT-4WD` | 4-motor soccer robot on SUMO:BIT | Product page only (its "user manual" link is the MD13S manual) | **Medium-low** |
-| DIY RC Boat Using micro:bit | [`diy-rc-boat-microbit.md`](diy-rc-boat-microbit.md) | `PR-DIY-BOAT-MBIT` | Project kit: 2 micro:bits + MOTION:BIT boat | Product page + tutorial (partial) | **Medium-low** |
+| Robot Battle (500g) SUMO:BIT | [`robot-battle-500g-sumobit.md`](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | 500 g battle robot on SUMO:BIT, no controller, no warranty | Product page only | **Medium** |
+| SOCCER:BIT (4 wheel) | [`soccerbit-robot-kit.md`](soccerbit-robot-kit.md) | `V-SCRBIT-4WD` | 4-motor soccer robot on SUMO:BIT | Product page only (its "user manual" link is the MD13S manual) | **Medium** |
+| DIY RC Boat Using micro:bit | [`diy-rc-boat-microbit.md`](diy-rc-boat-microbit.md) | `PR-DIY-BOAT-MBIT` | Project kit: 2 micro:bits + MOTION:BIT boat | Product page + tutorial (partial) | **Medium** |
 
 micro:bit kit notes for every agent:
 - **Soil moisture reading rises as soil dries** — the APW trigger is `reading > threshold`; there is no fixed threshold in the booklet. APW wiring: sensor P2:P12 (read P2), pump MOTOR 2, servo S1; servo sweeps 30–150°.
@@ -180,17 +182,16 @@ micro:bit kit notes for every agent:
 | RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Product page + distributor copy of the connection diagram (Cytron link returns "not found") | **Medium-low** |
 | UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
-| URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + TI MAX232 [VEN] | **Medium-low** |
+| URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + TI MAX232 [VEN] | **Medium** |
 | Breakout Board PS2 Connector | [`bb-psc.md`](bb-psc.md) | `BB-PSC` | Female PS2 connector broken out to 0.1" | Product page + Maker Mini Sumo PS2 tutorial | **Medium** |
-| Breakoutboard for SPG10 | [`bb-spg10.md`](bb-spg10.md) | `BB-SPG10` | Rear-mount cable breakout for SPG10 motor, JST socket + cable | Product page ("no user's manual") | **Medium-low** |
 
 ### Sumo robot kits and parts
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Ikedo Mini Sumo Robot V2 | [`ikedo-mini-sumo-v2.md`](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Maker Mini Sumo + 5 Maker Object + 2 edge sensors, 600 rpm, ~200 g | Ikedo Bot V2 Getting Started Instruction | **Medium** |
-| Ikedo Mini Sumo Robot Pro Bundle | [`ikedo-mini-sumo-pro.md`](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Pro: 800 rpm 3.1 kg·cm, steel shield, razor blade, 350 g | Product page | **Medium-low** |
-| 1KG Sumo Robot Bundles (RC) | [`sumo-1kg-rc-bundle.md`](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | MDDRC10 RC sumo, no code, 580 rpm 3.5 kgf·cm, 856 g | Product page (user-guide tutorials blocked) | **Medium-low** |
+| Ikedo Mini Sumo Robot Pro Bundle | [`ikedo-mini-sumo-pro.md`](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Pro: 800 rpm 3.1 kg·cm, steel shield, razor blade, 350 g | Product page | **Medium** |
+| 1KG Sumo Robot Bundles (RC) | [`sumo-1kg-rc-bundle.md`](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | MDDRC10 RC sumo, no code, 580 rpm 3.5 kgf·cm, 856 g | Product page (user-guide tutorials blocked) | **Medium** |
 | PCB Plate for Sumo Robot | [`pcb-sumo-plate.md`](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Training blade substitute, 15 cm (1 kg) / 10 cm (500 g) | Product page | **Medium-high** |
 
 - **1KG RC bundle has no microcontroller** — the page's "Microcontroller: MDDRC10" is a motor driver; no sensors, no autonomous mode. **No warranty** on all three robot bundles. Kit pages say opponent range "50cm adjustable" — the Maker Object datasheet says 40–140 cm (white) / 15–60 cm (black).
@@ -209,7 +210,7 @@ micro:bit kit notes for every agent:
 | RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium** |
 | 50A Current Sensor | [`bb-acs756.md`](bb-acs756.md) | `BB-ACS756` | Allegro ACS756 ±50 A breakout, 40 mV/A, 5 V | Product page + Cytron schematic + Allegro [VEN] | **Medium** |
 | RGB LED Stick | [`rgb-led-stick.md`](rgb-led-stick.md) | `BCY-NEO-STICK-8` | 8× SK6812 (WS2812B-compatible) chainable stick | Product page + tutorial | **Medium** |
-| 3-Axis Accelerometer | [`sn-adxl335-cy.md`](sn-adxl335-cy.md) | `SN-ADXL335-CY` | ADXL335 ±3 g breakout, 2.5–6 V (on-board 3.3 V reg), 50 Hz | Product page + ADI [VEN] | **Medium-low** |
+| 3-Axis Accelerometer | [`sn-adxl335-cy.md`](sn-adxl335-cy.md) | `SN-ADXL335-CY` | ADXL335 ±3 g breakout, 2.5–6 V (on-board 3.3 V reg), 50 Hz | Product page + ADI [VEN] | **Medium** |
 
 Sensor notes for every agent:
 - **Maker Line:** digital outputs go HIGH when the line is detected; which colour counts as the line is set by the Light/Dark switch. Analog below 0.1×Vcc = line not found, above 0.9×Vcc = cross detected (not "far left / far right"). 4–40 mm sensing height is stated only at VCC = 5 V, black line on white. Calibrate: hold button >2 s, sweep across the line, press again.
@@ -224,11 +225,11 @@ Sensor notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium-low** |
+| STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium** |
 | Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
 | Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
 | Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images | **Medium-high** |
-| Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-low** |
+| Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-high** |
 | Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Product page + Installation Guide tutorial | **Medium** |
 
 - **STEM base includes no electronics, battery or cable ties**; motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
@@ -307,9 +308,9 @@ Raspberry Pi board notes for every agent:
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
 | MakerDisk NVMe 2242 | [`makerdisk-nvme-2242.md`](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | M.2 2242 NVMe 128/256/512 GB, RPi OS Bookworm preloaded | Datasheet Rev 1.0, Apr 2024 | **Medium-high** |
-| MakerDisk NVMe 2280 (RPi OS) | [`makerdisk-nvme-2280.md`](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | M.2 2280 NVMe 128 GB–1 TB, RPi OS preloaded | Product page | **Medium-low** |
-| MakerDisk NVMe 2280 (JetPack) | [`makerdisk-nvme-2280-jetpack.md`](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | 256/512 GB, JetPack 6.2 for Jetson Orin Nano Super 8GB only | Product page | **Medium-low** |
-| MakerDisk 2.5" SATA 120 GB | [`makerdisk-sata-120gb.md`](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | SATA III SSD, RPi OS preloaded, USB-SATA boot | Product page | **Medium-low** |
+| MakerDisk NVMe 2280 (RPi OS) | [`makerdisk-nvme-2280.md`](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | M.2 2280 NVMe 128 GB–1 TB, RPi OS preloaded | Product page | **Medium** |
+| MakerDisk NVMe 2280 (JetPack) | [`makerdisk-nvme-2280-jetpack.md`](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | 256/512 GB, JetPack 6.2 for Jetson Orin Nano Super 8GB only | Product page | **Medium** |
+| MakerDisk 2.5" SATA 120 GB | [`makerdisk-sata-120gb.md`](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | SATA III SSD, RPi OS preloaded, USB-SATA boot | Product page | **Medium** |
 
 ### IRIV industrial series
 
@@ -321,7 +322,7 @@ Raspberry Pi board notes for every agent:
 | IRIV IOC MQTT Gateway | [`iriv-ioc-mqtt-gateway.md`](iriv-ioc-mqtt-gateway.md) | `IRIV-IOC-MQTT` | Same hardware as IO Controller + factory MQTT firmware | Datasheet Rev 1.0, Jun 2026 | **Medium** |
 | IRIV SmartHub CM5 | [`iriv-smarthub-cm5.md`](iriv-smarthub-cm5.md) | `IRIV-SH5` | Raspberry Pi CM5 (BCM2712) | User Manual Rev 1.3, Dec 2025 | **Medium-high** |
 | IRIV EdgeAI CM5 | [`iriv-edgeai-cm5.md`](iriv-edgeai-cm5.md) | `IRIV-EDGEAI-CM5` | Raspberry Pi CM5 (BCM2712) + AI HAT+ | Datasheet Rev 1.0, Jul 2025 | **Medium-high** |
-| IRIV EdgeAI Safety Box Kit | [`iriv-edgeai-safety-box-kit.md`](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV EdgeAI CM5 (8GB/32GB) + Hailo-8 26 TOPS | **No kit datasheet exists.** Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 | **Medium-low** |
+| IRIV EdgeAI Safety Box Kit | [`iriv-edgeai-safety-box-kit.md`](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV EdgeAI CM5 (8GB/32GB) + Hailo-8 26 TOPS | **No kit datasheet exists.** Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 | **Medium** |
 
 **Source rule for IRIV (16 Oct 2026): the datasheet is the main source.** User manuals rank second ([UM]); where a newer manual disagrees, the datasheet still wins in the text and the conflict is listed for engineering.
 
@@ -338,10 +339,10 @@ IRIV notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| AI Agent Workshop for RPI 5 | [`ai-agent-workshop-rpi5.md`](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | 2-day AgentBox (Pi 5 local AI agent hub) workshop + kit | Course outline (no date) + product page | **Medium-low** |
-| Jetson Orin Nano AI Fundamentals Workshop | [`jetson-orin-nano-workshop.md`](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | 1-day workshop, NVIDIA certification; kit = Orin Nano Super 8GB + 512 GB JetPack SSD | Tentative timetable + product page | **Medium-low** |
+| AI Agent Workshop for RPI 5 | [`ai-agent-workshop-rpi5.md`](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | 2-day AgentBox (Pi 5 local AI agent hub) workshop + kit | Course outline (no date) + product page | **Medium** |
+| Jetson Orin Nano AI Fundamentals Workshop | [`jetson-orin-nano-workshop.md`](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | 1-day workshop, NVIDIA certification; kit = Orin Nano Super 8GB + 512 GB JetPack SSD | Tentative timetable + product page | **Medium** |
 | Cytron Raspbot Workshop | [`raspbot-workshop.md`](raspbot-workshop.md) | `V-TRAINING-AI` | 1-day Edge AI workshop with Raspbot (Pi 5), max 5 pax, HQ Penang | Workshop tentative + product page | **Medium** |
-| Flash JetPack / Orin Nano Upgrade Service | [`jetpack-flash-service.md`](jetpack-flash-service.md) | `SEV-JN-ORNN` | Software-only JetPack 5.x → 6.x flash, RM150 by enquiry | Product page | **Medium-low** |
+| Flash JetPack / Orin Nano Upgrade Service | [`jetpack-flash-service.md`](jetpack-flash-service.md) | `SEV-JN-ORNN` | Software-only JetPack 5.x → 6.x flash, RM150 by enquiry | Product page | **Medium** |
 
 - **Workshop dates are purchase variants and expire** — re-check the page before quoting one; several listed dates had passed on 2026-10-19. Only the Raspbot workshop states a participant cap, meals and a certificate.
 ## Quick cross-product facts (ESP32 family)

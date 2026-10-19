@@ -20,12 +20,14 @@ A four-wheel-drive soccer robot bundle for the BBC micro:bit using the SUMO:BIT 
 - Body: PLA 3D-printed, 20 cm x 20 cm
 - Weight: 1 kg
 - Battery: 1x LiPo 11.1 V 1300 mAh
-- Charger: [NOT STATED]
+- Charger: LiPo balance charger and LiPo voltage indicator included in Complete (product page)
 - Motor wiring: 2x Easy Clip wire splitter (2 in, 4 out), 18 AWG wires, Dean T connector
 - Hardware and tools: M3 hardware, M2 Allen key, screwdrivers
-- Control: RC Controller – Joystick:bit V2 Kit for micro:bit [optional], not included
-- Complete packing list: 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector, 4x 12 V 980 rpm 2.3 kgf·cm GM25 motors, 4x silicone wheels 42 x 30 mm, 1x LiPo 11.1 V 1300 mAh, 2x Easy Clip wire splitter (2 in 4 out), 18 AWG wires, M3 hardware, M2 Allen key, 3D-printed body, micro:bit items per option
-- Basic and Body-only contents: [NOT STATED]
+- Control: Joystick:bit V2 with 4 × AAA batteries, included in Complete (product page); radio channel set with A/B, confirmed with A+B (Cytron tutorial)
+- Complete packing list: 1× SUMO:BIT with 2× MD13S; 4× 12 V 980 rpm 2.3 kgf·cm GM25 motors; 4× silicone wheel sets 42 × 30 mm; 1× LiPo 11.1 V 1300 mAh; 2× Easy Clip wire splitter (2 in, 4 out); wires; 8× M3×20 screws with nylon lock nuts; 4× M3×20 screws with nuts; M2 Allen key; 3D-printed body + front weapon + 4 motor brackets; 1× Joystick:bit V2; 4× AAA batteries (for the Joystick:bit); 1× LiPo balance charger; 1× LiPo voltage indicator; with-micro:bit options add 2× micro:bit Junior Kit V2
+- With-micro:bit options: 2 × micro:bit Junior Kit V2
+- Basic: no Joystick:bit V2 and no LiPo charger (Cytron team)
+- Full Basic and Body-only item lists: [NOT STATED]
 - "The Soccer Robot comes in loose parts. You will have to assemble them yourself."
 - Warranty: [NOT STATED]
 
@@ -45,8 +47,7 @@ A four-wheel-drive soccer robot bundle for the BBC micro:bit using the SUMO:BIT 
 
 ## Known limitations
 - Comes in loose parts; self-assembly required
-- Joystick:bit V2 controller is optional and not included; a second micro:bit is needed for Joystick:bit control
-- Charger not listed in the packing list
+- Joystick:bit control needs a second micro:bit (included in the with-micro:bit options)
 - Four motors share two MD13S channels (13 A continuous / 30 A for 10 s max per channel)
 - "Without micro:bit" options omit the micro:bit
 - Basic and 3D Printed Body only contents not stated

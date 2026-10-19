@@ -5,7 +5,8 @@
 | Product code | `V-KIT-MUNO-EDU` (my.cytron.io product page [PP]; RobotShop "Manufacturer #" agrees [3P]). Cytron's older www.cytron.com.my page shows `KIT-MAKER-UNO-EDU` [PP: cytron.com.my] — see *Conflicts* |
 | Family | Arduino kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: read the product page's "Each set comes with" image (16-item packing list, Cytron image KIT-MAKER-UNO-EDU-e.jpg) and the kit photo. Packing list and the 2N2222 transistor are now Cytron-stated. Education kit — the Getting Started Module is the main source and no datasheet is required (KB rule 7) |
 | Primary source | No datasheet exists for the kit. **Getting Started doc: "Maker UNO Edu Kit Getting Started Module" (PDF, `Maker_Uno_Edu_Kit_Module.pdf`, Cytron Technologies Sdn Bhd; sections Introduction / Lessons / Projects; editors Atifah Suad Anwar and Idris Zainal Abidin; no version or date printed)** [UM]. Second [UM]: "Teacher Guidebook, Maker-UNO / Arduino" (`MakerUNO_Teacher_Guide.pdf`, no version or date printed). The board in the kit is documented in `maker-uno.md` (MAKER-UNO User's Manual Rev 1.0, Dec 2017) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -26,7 +27,7 @@ No kit-level spec table exists in any source. Kit-level items from the sources r
 |---|---|---|
 | Controller board | Maker UNO (ATmega328P, CH340 USB-serial, Micro USB, no DC jack) — details in `maker-uno.md` | [PP][UM] |
 | On-board I/O used by the lessons | "12x LEDs, 1x piezo buzzer and 1x programmable button" | [PP] |
-| Kit packing list | **Not stated in any Cytron text read.** The product page's "Each set comes with" list is an image that did not extract; the module and the Teacher Guidebook contain no packing list. Reseller lists exist — see *Needs verification* | — |
+| Kit packing list (per set) | Maker UNO ×1; USB Micro B cable ×1; LED 5 mm red ×3, yellow ×3, green ×3; breadboard (small) ×1; 40-way male-to-male jumper wire ×1; resistor 0.25 W 5% 220 Ω ×10, 1 kΩ ×5, 10 kΩ ×5; LDR (small) ×1; transistor 2N2222 ×1; finger-adjust preset 10 kΩ ×1; 3 V miniature brush motor without gear ×1; DIY 4-blade 56 mm motor propeller ×1; Maker Box ×1 | [PP: img] |
 | Lessons in the Getting Started Module | 10 lessons + 2 projects (table below) | [UM] |
 | Teacher Guidebook | 4 units, 10 hours total (2 + 3 + 2 + 3 h), learning standards 2.4.1–2.4.8, assessment Tier 1–6 | [UM] |
 | Software | Arduino IDE 1.8.x (module screenshots); CH340 driver from the product page Attachment tab | [UM] |
@@ -47,7 +48,7 @@ No kit-level spec table exists in any source. Kit-level items from the sources r
 | 7 | Tone Melody | File > Examples > 02.Digital > toneMelody, `pitches.h` | Buzzer pin not named in the lesson text (on-board buzzer is pin 8 per the Components section) |
 | 8 | Potentiometer as Analog Input | `analogRead()` | 10 kΩ potentiometer on **A0**; LED on pin 13 blinks at a rate set by the pot |
 | 9 | LDR as Analog Input | `analogRead()`, `if`/`else` | LDR with 10 kΩ resistor on A0; LED on pin 13 turns on when the reading exceeds 600 |
-| 10 | Controlling Motor | `analogWrite()` speed steps 255, 123, 50, 0 (1 s each) | Drive signal on **pin 6** through a 220 Ω resistor to a transistor (schematic labels e/b/c; transistor part number not named in the extracted text); no diode mentioned |
+| 10 | Controlling Motor | `analogWrite()` speed steps 255, 123, 50, 0 (1 s each) | Drive signal on **pin 6** through a 220 Ω resistor to a transistor (schematic labels e/b/c) — the kit's only transistor is a **2N2222** [PP: img]; motor = the kit's 3 V miniature brush motor with the 56 mm propeller; no diode mentioned |
 | P1 | Interactive Traffic Light | Combined outputs + button | Vehicle: green pin 5, yellow pin 6, red pin 7; pedestrian: green pin 3, red pin 4; button pin 2 (`INPUT_PULLUP`); 5 × 220 Ω. Sequence: yellow 2 s, red, pedestrian green 5 s, vehicle green again. Ingredients: Maker UNO ×1, breadboard ×1, red LED ×2, green LED ×2, yellow LED ×1, 220 Ω ×5, jumper wires |
 | P2 | Light Theremin | Analog input to `tone()` | LDR + 10 kΩ on A0; piezo buzzer pin 8 via `tone()`; LED 13 shows calibration; calibration runs for the first 5 s after power-up. Ingredients: Maker UNO ×1, breadboard ×1, 10 kΩ ×1, LDR ×1, jumper wires |
 
@@ -107,7 +108,7 @@ Pins the Edu Kit lessons occupy on the Maker UNO (board pinout in `maker-uno.md`
 - Buzzer silent → buzzer slide switch off; D8 device misbehaves → switch on [UM] (details in `maker-uno.md`).
 - LED on a non-"~" pin won't fade → `analogWrite()` only works on PWM pins [UM].
 - Random LEDs glowing after upload → floating inputs, normal (see `maker-uno.md`).
-- Describing the kit's parts: do not quote a packing list as Cytron fact until the product-page image list is confirmed (see *Needs verification*).
+- Describing the kit's parts: use the 16-item list from the product-page image [PP: img]. The pin-label stickers mentioned in the page text are not an item in that list — describe them as "pin-label stickers for the board" only.
 
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
@@ -115,11 +116,10 @@ Pins the Edu Kit lessons occupy on the Maker UNO (board pinout in `maker-uno.md`
 | Product code | [PP] my.cytron.io (2026-10-19): `V-KIT-MUNO-EDU`; RobotShop agrees [3P] | [PP] www.cytron.com.my page: `KIT-MAKER-UNO-EDU` | Use `V-KIT-MUNO-EDU` (current store). `KIT-MAKER-UNO-EDU` is the older code; keep as alias |
 | Driver name | [UM] module: "CH340 driver" | [PP] links: "CH341" driver files | Same WCH CH34x driver family; say "CH340/CH341 (CH34x) driver" |
 | Warranty | [PP] blank on the product page | Maker UNO User's Manual: 6 months (board) | Not stated for the kit — do not quote a kit warranty |
-| Kit packing list | [PP] image only, not extracted; [UM] none | [3P] The Pi Hut and Kubii lists (below) | No Cytron text — list goes to *Needs verification* |
+| Kit packing list | [PP: img] Cytron "Each set comes with" image: 16 items | [3P] The Pi Hut and Kubii lists | Same items; Cytron image wins. Resellers say "40× jumper wires" where Cytron says "40 Ways Male to Male Jumper Wire ×1" (one 40-way ribbon), and call the 10 kΩ preset a "potentiometer". |
 
 ## Needs verification
-- **Packing list.** Two resellers [3P] give the same list: 1× Maker UNO, 1× Micro USB cable, 3× red / 3× yellow / 3× green 5 mm LEDs, 1× breadboard, 40× male-to-male jumper wires, 10× 220 Ω, 5× 1 kΩ, 5× 10 kΩ resistors, 1× LDR, 1× 2N2222 transistor, 1× 10 kΩ preset potentiometer, 1× 3 V miniature brush motor, 1× 4-blade propeller, plastic box (The Pi Hut adds "pin-label stickers"; Kubii lists resistors as 0.25 W 5%). It matches the module's lessons (LDR, pot, motor, transistor) but no Cytron text states it. Confirm against the product-page image or packing SOP before quoting.
-- Transistor part number and whether a flyback diode is used in Lesson 10 (module schematic labels garbled in extraction).
+- Whether Lesson 10 uses a flyback diode (module schematic labels garbled in extraction; no diode in the packing list).
 - Version, revision date and page count of the Getting Started Module (page numbers run to 55) and of the Teacher Guidebook.
 - Whether the School Package 10+1 ships 11 identical single-kit boxes.
 - Kit warranty term (page blank).

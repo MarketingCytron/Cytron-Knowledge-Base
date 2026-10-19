@@ -21,7 +21,8 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Spacers: 4
 - Tool: 1 tiny Phillips screwdriver
 - Packing list: 2x Robot Building Base, 2x Motor Bracket (blue), 25x M2.2x6mm self-tapping screw, 3x M2.3x8mm self-tapping screw for Maker Line, 4x spacer, 2x TT motor with 15cm wires, 2x wheels, 1x steel ball castor, 1x tiny Phillips screwdriver
-- Dimensions: [NOT STATED] (drawing image only on the product page)
+- Dimensions: base plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high (product page image)
+- Assembly (installation guide, 8 steps): brackets on lower plate → TT motors with wires facing inward → 4 spacers → upper plate → steel ball castor underneath → wheels
 - Weight: [NOT STATED]
 - TT motor voltage, gear ratio, RPM: [NOT STATED]
 - Wheel diameter: [NOT STATED]
@@ -43,7 +44,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - No controller board, motor driver, battery, battery holder, sensors or cable ties are included
 - Motor brackets are blue on both the Blue and the Green option
 - Only 3 of the screws (M2.3 x 8 mm) are intended for the Maker Line
-- Dimensions are given as an image only; no size is stated in text
+- Mounting-hole pattern is not stated
 - Warranty is not stated on the product page
 
 ## Positioning (kept apart from specs)

@@ -5,7 +5,8 @@
 | Product code | `V-HD-STEM` [PP] |
 | Family | Robot parts and project bundles |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: read the Cytron installation tutorial in full (Hao Zhen Goh, 25 Jul 2023, 8 steps) and the product page's dimension image (plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high). Mechanical hardware — guide tutorial + product-page images are the main source (KB rule 7) |
 | Primary source | No datasheet or user manual exists for this product. Primary source = **Cytron product page "STEM Robot Building Base Bundles"** (https://my.cytron.io/p-stem-robot-building-base-kit), read by the coordinator on 2026-10-19 [PP]. The only Cytron guide is the tutorial **"STEM Robot Building Base Kit Step-by-Step Installation Guide"** (Hao Zhen Goh, 25 Jul 2023, level Beginner, about 120 words of text plus photos) — its page could **not** be fetched here (my.cytron.io and www.cytron.io blocked for this agent); only its title, author, date, excerpt and tags were read from Cytron Marketing's tutorial index  |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -31,7 +32,8 @@ There is no datasheet and no spec table. Every stated physical fact is below.
 | TT motor leads | 15 cm wires | [PP] |
 | Castor | Steel ball castor | [PP] |
 | Wheels | "rubber wheels" (diameter not stated) | [PP] |
-| Dimensions | **Not stated in text** — the page gives a dimension drawing as an image only | [PP] |
+| Dimensions — base plate | 12 × 8.5 cm | [PP: img] |
+| Dimensions — assembled robot | 13.5 cm long × 6.5 cm high (with wheels) | [PP: img] |
 | Weight | Not stated | — |
 | Price | RM35.00 | [PP] |
 | Stock (2026-10-19) | 136 units | [PP] |
@@ -53,7 +55,7 @@ There is no datasheet and no spec table. Every stated physical fact is below.
 ## Interfaces, terminals and pin mapping
 - Mechanical product only: no electrical interface, no pins [PP].
 - The TT motors have 15 cm bare wire leads [PP]; how they terminate (bare, JST, etc.) is not stated.
-- Mounting: the controller / motor driver board is "secured with screws or cable ties" [PP]. No hole pattern, hole diameter or screw pattern is stated in text (the drawing is an image only).
+- Mounting: the controller / motor driver board is "secured with screws or cable ties" [PP]. No hole pattern or hole diameter is stated (the dimension image gives only outer sizes) [PP: img].
 - Maker Line sensor mounting: 3x M2.3 x 8 mm self-tapping screws are supplied "for Maker Line" [PP] — i.e. the base is designed to take a Maker Line sensor (see `maker-line.md`); the exact position/holes are not stated in text.
 
 ## Rules and gotchas (for code, wiring and tutorials)
@@ -61,13 +63,16 @@ There is no datasheet and no spec table. Every stated physical fact is below.
 - **Two screw sizes, two jobs:** 25x M2.2 x 6 mm (general: brackets/boards) and 3x M2.3 x 8 mm reserved for the Maker Line [PP]. Do not use up the M2.3 screws elsewhere.
 - **Cable ties are an alternative fixing** named on the page [PP] but they are **not in the packing list** — tell readers to supply their own if the board's holes don't match.
 - **TT motor polarity / direction** is not stated; the motor driver board's own KB file governs wiring direction.
-- **Chassis dimensions are a drawing only** [PP]; don't quote a size in text until read from the image (see *Needs verification*).
+- **Size:** base plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high [PP: img].
+- **Assembly order (Cytron installation guide, 8 steps)** [PP: tutorial]: (1) fit the two blue motor brackets to the lower plate; (2) mount the TT motors in the brackets on the lower plate with the **motor wires facing inward**; (3) screw the 4 spacers onto the lower plate; (4) fit the upper plate on the spacers; (5) fit the steel ball castor underneath; (6) push the wheels onto the motor shafts. The guide uses the supplied M2.2 × 6 mm self-tapping screws and the tiny screwdriver throughout.
+- **Spacers join the two plates** (they are not for the castor or the board) [PP: tutorial].
 
 ## Power and electrical limits
 - None stated — no electronics in the bundle [PP]. The TT motors' voltage and current ratings are **not stated** on the page; use the limits in the motor driver board's KB file when writing power advice.
 
 ## Software support
 - None (mechanical kit) [PP]. Code depends on the controller board chosen (REKA:BIT → `reka-bit.md`; MOTION:BIT → `motion-bit.md`; Maker Pi RP2040 → `maker-pi-rp2040.md`; Robo Pico → `robo-pico.md`).
+- Guide: Cytron tutorial "STEM Robot Building Base Kit Step-by-Step Installation Guide", Hao Zhen Goh, 25 Jul 2023, Beginner [PP: tutorial] — read in full on 2026-10-19 (8 photo steps; summary under *Rules and gotchas*).
 
 ## Compatibility and accessories
 - Boards shown on the page: REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico ("Boco Bot kit") [PP] — see `reka-bit.md`, `motion-bit.md`, `maker-pi-rp2040.md`, `robo-pico.md`. None is included.
@@ -80,6 +85,7 @@ There is no datasheet and no spec table. Every stated physical fact is below.
 - **Ran out of screws for the Maker Line** → the 3x M2.3 x 8 mm screws are the Maker Line screws; the 25x M2.2 x 6 mm are for everything else [PP].
 - **Motor brackets are blue on a green base** → that is as sold ("motor brackets always blue") [PP], not a packing error.
 - **Expecting a battery holder or battery** → not in the packing list [PP].
+- **Motor wires snag on the wheels** → the guide routes the motor wires inward, toward the centre of the base [PP: tutorial].
 
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
@@ -90,17 +96,15 @@ There is no datasheet and no spec table. Every stated physical fact is below.
 No other source disagreement found (only one Cytron source states facts).
 
 ## Needs verification
-- **Chassis dimensions and mounting-hole pattern** — image only on the product page; read the drawing or 3D file before quoting any size.
-- **Which boards' hole patterns match the base without cable ties** (REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico) — not stated in text.
-- **Installation steps** — the tutorial body was not read; its 120-word text plus photos should be checked before describing the assembly order.
+- **Mounting-hole pattern** and which boards fit without cable ties (REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico) — not stated.
 - **TT motor rating** (voltage, gear ratio, no-load RPM), **wheel diameter/width**, **castor size** — not stated by Cytron.
 - **Motor lead termination** (bare wire vs connector) — "15 cm wires" only.
 - **Weight** — not stated.
-- **Whether the 4 spacers are for the controller board or the castor** — not stated.
+- Where the Maker Line fixes with the 3 × M2.3 × 8 mm screws — the installation guide does not cover it.
 - Whether this bundle is identical to the chassis supplied inside the BocoBot (Robo Pico) kit — implied by the page's "Boco Bot kit" photo and the [3P] review, not stated.
 
 ## Sources
 - [PP] https://my.cytron.io/p-stem-robot-building-base-kit — read by the coordinator 2026-10-19 (RM35.00; Blue / Green; stock 136; warranty blank; packing list; features; dimension image)
-- [PP: tutorial] https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide — **not readable here** (403 / provenance block on my.cytron.io and www.cytron.io)
+- [PP: tutorial] https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide — read in full through the browser, 2026-10-19
 - [3P] https://www.cnx-software.com/2023/07/30/robo-pico-review-raspberry-pi-pico-w-motor-sensor-control-board-bocobot-robotic-kit/ (cross-check only)
 - KB cross-references: `reka-bit.md`, `motion-bit.md`, `maker-pi-rp2040.md`, `robo-pico.md`, `maker-line.md`

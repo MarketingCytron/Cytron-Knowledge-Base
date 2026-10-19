@@ -19,9 +19,14 @@ A Cytron-branded 120GB 2.5-inch SATA III solid-state drive that ships with Raspb
 - Max sequential write: up to 460MB/s
 - Test conditions for the max figures: [NOT STATED]
 - Raspberry Pi Diagnostics via USB3-SATA: sequential write 224438 KB/s; random write 23744 IOPS; random read 17102 IOPS
-- Raspberry Pi Diagnostics host board: [NOT STATED]
-- NAND type, controller, power consumption, operating temperature, MTBF, TBW: [NOT STATED]
-- Dimensions, weight, warranty, packing list: [NOT STATED]
+- Raspberry Pi Diagnostics host board: Raspberry Pi 4 Model B through a USB 3.0-to-SATA adapter (product page photo)
+- Shock: 1500G/0.5ms (drive label)
+- Operating temperature: 0 °C to 70 °C, commercial (drive label)
+- SMART & TRIM supported (drive label)
+- Compatible with Windows, Linux, Raspberry Pi (drive label)
+- Warranty: 1 year limited, void if label removed or case opened (drive label)
+- Made in Taiwan (drive label)
+- NAND type, controller, power consumption, MTBF, TBW, exact dimensions, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
@@ -39,6 +44,7 @@ A Cytron-branded 120GB 2.5-inch SATA III solid-state drive that ships with Raspb
 - SATA, not NVMe; needs a USB-SATA bridge on every Raspberry Pi
 - Requires the latest bootloader with USB boot on the Pi
 - Pi-measured throughput via USB3-SATA (224438 KB/s sequential write) is far below the drive's 550MB/s / 460MB/s SATA maxima
+- Commercial temperature range only (0–70 °C)
 - OS image on units shipped before 1 November 2023: [NOT STATED]
 
 ## Positioning (kept apart from specs)

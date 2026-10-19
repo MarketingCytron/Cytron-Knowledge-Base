@@ -37,7 +37,10 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Cooling: 24V DC exhaust fan with 2x intake/exhaust dust filters
 - Enclosure: IP67 ABS industrial enclosure, 250 × 350 × 160mm
 - Controller dimensions: 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
-- Controller: same controller as the IRIV EdgeAI CM5 (Cytron team, 2026-10-19); operating temperature −20 to 60 ℃; kit operating temperature [NOT STATED]
+- Controller: same controller as the IRIV EdgeAI CM5 (Cytron team, 2026-10-19); operating temperature −20 to 60 ℃
+- Assembled box operating temperature: −20 to 60 ℃ (Cytron team, 2026-10-19)
+- Licence: one-time purchase, no licence or subscription fee (Cytron team)
+- Accuracy: no figure published — depends on lighting and camera angle (Cytron team)
 - First run: connect the box to the local network (wired LAN recommended), read its IP address on the front OLED, open it in a web browser, sign in with the factory account from the Quick Start Guide; the box forces a new password (at least 8 characters) on first sign-in
 - Setup wizard: Secure account → Add camera → Ready; camera discovery, shared-credential pairing or manual RTSP URL; re-run from Settings → Setup wizard
 - Runs without internet: inference is on the device and video does not leave the site
@@ -48,7 +51,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Cameras: IP cameras with RTSP streaming support (required); ONVIF for automatic discovery; manual add by RTSP URL
 - Camera streams: H.264/H.265, 640x360 sub-stream
 - Network: 2x RJ45 Gigabit Ethernet (10/100/1000M) on the controller; 2x female-to-female RJ45 extension ports on the enclosure for external network access
-- Outputs: DO0 (GPIO23) and DO1 (GPIO24), dry contact; DO1 can be driven by zone presence
+- Outputs: DO0 = PPE alarm, DO1 = Zones alarm (web UI); dry contact; each can be switched on/off and set to Hold or Pulse with a pulse duration in seconds
 - Integrations: MQTT, Telegram, Email
 - Controller ports: 2x USB 3.0, 1x USB-C (boot and debug), 2x MIPI CSI, 1x HDMI 2.0, 1x isolated RS485, 2x isolated DI
 - Expansion: 1x M.2 Key-M (holds the 128GB NVMe SSD), 1x PCIe (Raspberry Pi AI HAT+), 1x mPCIe (USB 2.0 only)
@@ -80,7 +83,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - IP cameras are not included in the packing list
 - Digital outputs are dry contacts (max 50 V, 500 mA); the alarm device needs its own supply
 - mPCIe expansion uses USB 2.0, not PCIe
-- Kit operating temperature, detection distance and accuracy: [NOT STATED]
+- Detection distance is not stated; no accuracy figure is published
 
 ## Positioning (kept apart from specs)
 - Product page name: "IRIV EdgeAI - Safety Box: PPE and Zone Monitoring"; landing-page headline: "AI Vision for Workplace Safety."
@@ -90,7 +93,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Aligned with Malaysia's OSHMP30 framework
 
 ## Price band
-RM7,999.00 (Cytron product page, availability "Enquiry", read 2026-10-19)
+RM7,999.00 one-time, no subscription (Cytron product page, availability "Enquiry", read 2026-10-19; Cytron team)
 
 ## Product page
 https://my.cytron.io/p-iriv-edgeai-safety-box-kit

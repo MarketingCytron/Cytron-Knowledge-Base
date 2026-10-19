@@ -5,7 +5,8 @@
 | Product code | V-MMR-NV2280-JP (product page, both capacities) [PP] |
 | Family | Storage (MakerDisk) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: read the product-page images — 512GB and 256GB drive labels (same labels as the Raspberry Pi OS MakerDisk: PCIe Gen 3 x4, NVMe 1.3, 1-year warranty), the 128GB drive fitted in an Orin Nano carrier, the SDK Manager component list for JetPack 6.2, and the UEFI firmware screen. Login screenshots deliberately not transcribed |
 | Primary source | Cytron product page "NVMe 2280 MakerDisk SSD - JetPack for Jetson Orin Nano Super", read 2026-10-19 [PP] — no Cytron datasheet is linked and none was found in Google Drive; the linked tutorial (upgrade Jetson Orin Nano to Super using NVIDIA SDK Manager) could not be fetched in this session |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -28,7 +29,13 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 | Firmware requirement | Cannot be used on an Orin Nano whose firmware is below 36.0 (i.e. still on JetPack 5.x firmware) | [PP] |
 | Installation | Insert into the NVMe slot on the back of the carrier board at 45°, then screw down | [PP] |
 | Linked NVIDIA document | NVIDIA Jetson Linux r36.4.3 release notes | [PP] |
-| PCIe generation / lane count, NVMe version, NAND, controller, speed, power, temperature, MTBF, TBW, weight, warranty, packing list | Not stated in any Cytron source read | — |
+| Label — 512GB | NVMe 2280 M-Key M.2 MakerDisk SSD; PCIe Gen 3 x4, PCI Express Base 3.1, NVMe 1.3; read up to 2050 MB/s, write up to 1700 MB/s | [PP: img] |
+| Label — 256GB | PCIe Gen 3 x4, PCI Express Base 3.1, NVMe 1.3; read up to 2050 MB/s, write up to 1000 MB/s | [PP: img] |
+| Label — both | SMART & TRIM supported; Advanced Flash Management; RoHS, FC, CE; Made in Taiwan; warranty void if removed | [PP: img] |
+| Warranty | 1 Year Limited Warranty (printed on the drive label) | [PP: img] |
+| Size | M.2 2280 = 22 × 80 mm | [PP: img, size chart on sibling page] |
+| SDK Manager screen shown | "JetPack 6.2 Linux for Jetson Orin Nano [8GB Developer Kit version]": Jetson Linux image; Runtime — CUDA Runtime, CUDA-X AI Runtime, Computer Vision Runtime, NVIDIA Container Runtime, Multimedia; SDK — CUDA, CUDA-X AI, Computer Vision, Developer Tools, DeepStream, GXF; Jetson Platform Services | [PP: img] |
+| NAND, controller, power, temperature, MTBF, TBW, weight, packing list | Not stated in any Cytron source read | — |
 | Price | RM469.00 – RM739.00 across the two capacities (Cytron product page, read 2026-10-19) | [PP] |
 | Stock | Availability 4 (2026-10-19) | [PP] |
 
@@ -48,7 +55,7 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 - Not stated in any Cytron source read. The drive draws power from the carrier board's M.2 slot.
 
 ## Software support
-- Preloaded: NVIDIA JetPack 6.2 with SDK components (CUDA, TensorRT, cuDNN, DeepStream etc. are JetPack 6.x components per the Cytron upgrade-service page; the exact list preloaded on the drive is not stated) [PP].
+- Preloaded: NVIDIA JetPack 6.2 with SDK components [PP]. The page's SDK Manager screenshot shows the JetPack 6.2 selection for the Orin Nano 8GB Developer Kit: Jetson Linux image; runtime components (CUDA Runtime, CUDA-X AI Runtime, Computer Vision Runtime, NVIDIA Container Runtime, Multimedia); SDK components (CUDA, CUDA-X AI, Computer Vision, Developer Tools, DeepStream, GXF); Jetson Platform Services [PP: img].
 - Pre-configured user account; default login printed on the product page [PP].
 - Related Cytron tutorials linked from the page [PP]: "Upgrade Jetson Orin Nano to Super using NVIDIA SDK Manager" (https://my.cytron.io/tutorial/upgrade-jetson-orin-nano-to-super-using-nvidia-sdk-manager), JetPack 7.2 install, F5-TTS, Jetson device skills — none readable in this session.
 - NVIDIA references linked: Jetson Linux r36.4.3 release notes [PP].
@@ -69,15 +76,16 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| None found — only one Cytron source (the product page) was readable. | — | — | — |
+| Hardware vs the Raspberry Pi OS MakerDisk | Not stated in page text [PP] | 512GB and 256GB labels are identical to the V-MMR-NV2280 labels [PP: img] | Treat the drive hardware as the same NVMe 2280 MakerDisk; only the preloaded OS differs. |
 
 ## Needs verification
-- Hardware specs of the drive (PCIe gen/lanes, NVMe version, NAND, controller, read/write speed, power, temperature, MTBF, TBW, weight): no Cytron source; whether the hardware is identical to V-MMR-NV2280 is not stated.
-- Exact list of preloaded SDK components and the JetPack build on units shipped before 6 February 2025.
+- NAND, controller, power, temperature, MTBF, TBW and weight: no Cytron source.
+- JetPack build on units shipped before 6 February 2025.
 - Mapping "JetPack 6.2 = Jetson Linux r36.4.3": [VEN] NVIDIA numbering; confirm against the linked release notes before quoting.
 - Whether the drive boots on the original (non-Super) Jetson Orin Nano Developer Kit after its firmware is upgraded to 36.x: the page says Super Dev Kit (8GB) ONLY; the upgrade service implies the upgraded original kit becomes "Super" — ask the product team before stating either.
-- Tutorial "Upgrade Jetson Orin Nano to Super using NVIDIA SDK Manager": title, author, date and steps not verified (my.cytron.io, www.cytron.io and web.archive.org fetches blocked in this session).
-- Warranty and packing list: not stated.
+- Tutorial "Upgrade Jetson Orin Nano to Super using NVIDIA SDK Manager": author, date and steps not read.
+- What the page's UEFI firmware screenshot (Jetson UEFI firmware 3.0, built 2023-02-21) is meant to illustrate — most likely an old (JetPack 5.x) firmware that must be upgraded; confirm before quoting.
+- Packing list: not stated (assume drive only).
 
 ## Sources
 - [PP] Product page "NVMe 2280 MakerDisk SSD - JetPack for Jetson Orin Nano Super" — https://my.cytron.io/p-nvme-2280-m-key-makerdisk-ssd-preloaded-with-jetpack (read by the coordinator 2026-10-19; text in the coordinator's product-page extract)

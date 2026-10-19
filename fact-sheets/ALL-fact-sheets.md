@@ -1463,6 +1463,7 @@ An Arduino prototyping shield with a standard 0.1" x 0.1" prototyping area, stac
 - Delivered assembled (product page)
 - Packing list: 1x shield (product page)
 - Warranty: 12 months (product page)
+- Board revision: rev1.0.1 (schematic and artwork file names)
 - LED circuit details: [NOT STATED]
 - Rail current rating: [NOT STATED]
 
@@ -1528,7 +1529,7 @@ A classroom kit built around the Maker UNO (an Arduino UNO-compatible board with
 - Light Theremin: LDR + 10 kΩ on A0, piezo buzzer pin 8 via tone(), LED 13 shows calibration, calibration for the first 5 s after power-up
 - Teacher Guidebook: 4 units, 10 hours total — Unit 1 Microcontroller Theory (2 h), Unit 2 Output (3 h), Unit 3 Input (2 h), Unit 4 Combination of Input and Output (3 h); learning standards 2.4.1–2.4.8; assessment Tier 1–6; Appendix 1 programming from Android (USB OTG Checker, ArduinoDroid)
 - Software: Arduino IDE (module written for 1.8.x); CH340/CH341 USB driver for Windows and macOS
-- Packing list: [NOT STATED] (product page list is an image; not in the module or Teacher Guidebook)
+- Packing list per set: Maker UNO ×1; USB Micro B cable ×1; LED 5 mm red ×3, yellow ×3, green ×3; breadboard (small) ×1; 40-way male-to-male jumper wire ×1; resistor 0.25 W 5% 220 Ω ×10, 1 kΩ ×5, 10 kΩ ×5; LDR (small) ×1; transistor 2N2222 ×1; finger-adjust preset 10 kΩ ×1; 3 V miniature brush motor without gear ×1; DIY 4-blade 56 mm motor propeller ×1; Maker Box ×1 (product page image)
 - Warranty: [NOT STATED] (blank on product page)
 - Dimensions and weight: [NOT STATED]
 
@@ -1557,7 +1558,8 @@ A classroom kit built around the Maker UNO (an Arduino UNO-compatible board with
 - Pin-label stickers must be applied by the user
 - Teacher Guidebook units 2.4, 3.4 and 4.3 need internet access; each student needs a Maker UNO; some topics need laptops or phones
 - The Getting Started Module has no printed version or date
-- Packing list and warranty are not stated in any Cytron text read
+- Warranty is not stated for the kit
+- No flyback diode is listed for the motor lesson
 
 ## Positioning (kept apart from specs)
 - "Many students lack basic electronics knowledge and struggle with circuit diagrams, often spending much of a lesson wiring and troubleshooting."
@@ -3347,7 +3349,7 @@ A classroom robot-soccer competition kit for the BBC micro:bit: four 2-wheel-dri
 - Remote: Joystick:bit V2 Kit with its own micro:bit; the Basic Kit lists 2x micro:bit Junior Kit V2 per robot set
 - Radio scheme / radio groups: [NOT STATED]
 - Robot battery: 18650 3.7V 2200mAh button top in the MOTION:BIT holder
-- Controller batteries: 4x AAA battery sets (Complete Kit)
+- Controller batteries: 4 × PKCELL AAA battery sets, one per Joystick:bit V2 (Complete Kit with batteries)
 - MakeCode; MOTION:BIT extension pxt-motionbit for the robot
 - MicroPython library: [NOT STATED]
 
@@ -3360,7 +3362,7 @@ A classroom robot-soccer competition kit for the BBC micro:bit: four 2-wheel-dri
 ## Known limitations
 - The booklet PDF is image-only (237 MB) and its chapter text, wiring and code could not be read; the chapter-code Drive folder could not be opened
 - MOTION:BIT port assignments and the radio control scheme are not stated by any readable source
-- "without battery" options ship without the 18650 cells; the robot needs a 3.7V button-top 18650
+- "without battery" options ship without the 18650 cells and the AAA sets; the robot needs a 3.7V button-top 18650
 - The product page is inconsistent on micro:bit count: 4x micro:bit Junior Kit (V2) in the Complete Kit for 4 robots plus 4 Joystick:bit V2 Kits, but 2x per robot set in the Basic Kit
 - Basic Kit packing list is truncated on the product page
 - Card limits: max 2 yellow cards per robot, max 2 red cards per team (score sheet)
@@ -3496,7 +3498,7 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 - Competition class: Robot Battle (500 g); "Suitable for the Robot Battle Challenge"
 - Purchase options: Complete / Basic / 3D Printed Body only, each with or without micro:bit
 - Controller: SUMO:BIT with 2x MD13S (board specs: see the SUMO:BIT fact sheet)
-- Motors: 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor; packing list prints "1 x" (quantity unconfirmed)
+- Motors: 2 × 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor (product photo and Cytron guide; the packing list wrongly prints "1 x")
 - Wheels: 1x G25T1 silicone wheel set (1 pair)
 - Battery: 1x Mini LiPo 3S 11.1 V 2000 mAh
 - Charger: 1x 3S LiPo USB balance charger included, plus 3S charger cable extension
@@ -3507,7 +3509,9 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 - Hardware: 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, screwdrivers
 - With-micro:bit options add: micro:bit Junior Kit, micro:bit V2, USB Micro B cable
 - Complete packing list (with micro:bit): 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector 18 AWG 15 cm, 1x 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor (as printed), 1x G25T1 silicone wheel set (1 pair), 1x Mini LiPo 3S 11.1 V 2000 mAh, 1x 3S LiPo USB balance charger, 3S charger cable extension, 10 cm JST SM 2-pin male connector, 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, 3D-printed chassis set, micro:bit Junior Kit, micro:bit V2, USB Micro B cable
-- Basic and Body-only contents: [NOT STATED]
+- 3D Printed Body only: printed chassis + 2 motor brackets
+- Basic contents: [NOT STATED]
+- Built for Karnival STEM 2025; game: push the opponent or knock their cone tower out (Cytron guide)
 - Remote controller: not included ("This Battle Robot Kit does not come with a controller")
 - Opponent / edge sensors: none listed
 - Warranty: "There is NO warranty for Battle Robot."
@@ -3528,10 +3532,11 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 
 ## Known limitations
 - No warranty for the Battle Robot
-- No remote controller in the box; a hobby RC set, Cytron USB Joystick, or Joystick:bit with a second micro:bit is bought separately
+- No remote controller in the box; the Cytron guide uses a Joystick:bit or Mini micro:bit Game Handle (sold separately); a hobby RC set or the Cytron USB Joystick also works
 - No opponent or edge sensors in the kit
 - Actual weight 495 g leaves about 5 g inside the 500 g class
-- Packing list prints "1 x" motor; the true quantity is unconfirmed
+- Packing list prints "1 x" motor — a page error; the robot uses two
+- LiPo is held with double-sided tape (no strap supplied)
 - Basic and 3D Printed Body only contents not stated
 - "Without micro:bit" options omit the micro:bit; the micro:bit is removed for RC-receiver and USB-joystick modes
 - Supported micro:bit version not stated by any source
@@ -3577,12 +3582,14 @@ A four-wheel-drive soccer robot bundle for the BBC micro:bit using the SUMO:BIT 
 - Body: PLA 3D-printed, 20 cm x 20 cm
 - Weight: 1 kg
 - Battery: 1x LiPo 11.1 V 1300 mAh
-- Charger: [NOT STATED]
+- Charger: LiPo balance charger and LiPo voltage indicator included in Complete (product page)
 - Motor wiring: 2x Easy Clip wire splitter (2 in, 4 out), 18 AWG wires, Dean T connector
 - Hardware and tools: M3 hardware, M2 Allen key, screwdrivers
-- Control: RC Controller – Joystick:bit V2 Kit for micro:bit [optional], not included
-- Complete packing list: 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector, 4x 12 V 980 rpm 2.3 kgf·cm GM25 motors, 4x silicone wheels 42 x 30 mm, 1x LiPo 11.1 V 1300 mAh, 2x Easy Clip wire splitter (2 in 4 out), 18 AWG wires, M3 hardware, M2 Allen key, 3D-printed body, micro:bit items per option
-- Basic and Body-only contents: [NOT STATED]
+- Control: Joystick:bit V2 with 4 × AAA batteries, included in Complete (product page); radio channel set with A/B, confirmed with A+B (Cytron tutorial)
+- Complete packing list: 1× SUMO:BIT with 2× MD13S; 4× 12 V 980 rpm 2.3 kgf·cm GM25 motors; 4× silicone wheel sets 42 × 30 mm; 1× LiPo 11.1 V 1300 mAh; 2× Easy Clip wire splitter (2 in, 4 out); wires; 8× M3×20 screws with nylon lock nuts; 4× M3×20 screws with nuts; M2 Allen key; 3D-printed body + front weapon + 4 motor brackets; 1× Joystick:bit V2; 4× AAA batteries (for the Joystick:bit); 1× LiPo balance charger; 1× LiPo voltage indicator; with-micro:bit options add 2× micro:bit Junior Kit V2
+- With-micro:bit options: 2 × micro:bit Junior Kit V2
+- Basic: no Joystick:bit V2 and no LiPo charger (Cytron team)
+- Full Basic and Body-only item lists: [NOT STATED]
 - "The Soccer Robot comes in loose parts. You will have to assemble them yourself."
 - Warranty: [NOT STATED]
 
@@ -3602,8 +3609,7 @@ A four-wheel-drive soccer robot bundle for the BBC micro:bit using the SUMO:BIT 
 
 ## Known limitations
 - Comes in loose parts; self-assembly required
-- Joystick:bit V2 controller is optional and not included; a second micro:bit is needed for Joystick:bit control
-- Charger not listed in the packing list
+- Joystick:bit control needs a second micro:bit (included in the with-micro:bit options)
 - Four motors share two MD13S channels (13 A continuous / 30 A for 10 s max per channel)
 - "Without micro:bit" options omit the micro:bit
 - Basic and 3D Printed Body only contents not stated
@@ -3648,24 +3654,24 @@ A do-it-yourself remote-controlled boat project for the BBC micro:bit: one micro
 - Components listed: BBC micro:bit x2; MOTION:BIT; 2x DC motors with propellers; 9g servo (fin); 3.7V LiPo battery pack; boat hull 3D-printed (STL provided) or foam/plastic; waterproof enclosure optional
 - Propulsion: 2x DC motors with propellers
 - Steering: 9 g servo moving a fin; fin positions used by Cytron's remote code: 130 degrees, 50 degrees, 90 degrees (centre)
-- Power: 3.7V LiPo battery pack
+- Power: 18650 cell in the MOTION:BIT holder, supplied with the MOTION:BIT bundle (page text calls it a "3.7V LiPo battery pack")
 - Software: MakeCode blocks with the MOTIONBIT extension; Code #1 on the boat micro:bit, Code #2 on the remote micro:bit
 - Remote controls: Shake = start the motors; Button A = fin to 130 degrees; Button B = fin to 50 degrees; Buttons A+B = fin back to 90 degrees; touch the micro:bit logo = stop the motors
 - Hull: 3D-printed (STL files provided; Cytron printed it on an Artillery Hornet) or foam/plastic
-- Packing list / what is in the box: [NOT STATED]
+- Packing list (product page image): 2 × 56 mm 4-blade propellers; 1 × SG90 micro servo; 2 × 3 V miniature brushed DC motors with leads; 1 × MOTION:BIT bundle with micro:bit Junior Kit and 18650; 1 × micro:bit V2 Go Bundle. No hull
 - Warranty: [NOT STATED]
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 
 ## Interfaces and compatibility
 - Boat: micro:bit on MOTION:BIT; 2 DC motors on MOTION:BIT motor terminals; 9 g servo on a MOTION:BIT servo port
-- MOTION:BIT motor channels and servo port used: [NOT STATED]
+- Motors on MOTION:BIT M1 and M2; servo on a right-side servo header, port number not readable (product page image)
 - Remote: second micro:bit over micro:bit radio; radio group: [NOT STATED]
-- Battery: 3.7V LiPo battery pack (which MOTION:BIT input it uses: [NOT STATED])
+- Battery: 18650 in the MOTION:BIT holder
 - MakeCode blocks; MOTIONBIT extension https://github.com/CytronTechnologies/pxt-motionbit
 - Linked resources: Getting Started with MOTION:BIT & Projects Guide tutorial; MOTION:BIT datasheet; pxt-motionbit; MOTION:BIT 3D CAD
 - Tutorial with video: Build an RC Boat Using micro:bit (https://my.cytron.io/tutorial/build-an-rc-boat-using-micro-bit)
-- micro:bit version required: [NOT STATED] (the remote uses the touch logo)
+- micro:bit: remote is the micro:bit V2 Go Bundle (touch logo needs V2); boat micro:bit comes in the micro:bit Junior Kit
 
 ## Use cases
 - Build a remote-control boat with a micro:bit
@@ -3674,13 +3680,13 @@ A do-it-yourself remote-controlled boat project for the BBC micro:bit: one micro
 
 ## Known limitations
 - No datasheet, booklet or packing list; the product page and tutorial are the only guides
-- Whether the hull, LiPo pack, propellers and the two micro:bits are included in the package is not stated in the text read
+- The hull is not included
 - MOTION:BIT motor channels, servo port and the radio group are not stated in text (shown only in code-block images)
 - The hull must be 3D-printed from the STL files or made from foam or plastic
 - Waterproof enclosure is optional and not described; the micro:bit, MOTION:BIT and LiPo are not waterproof
 - MOTION:BIT limits apply: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor channel
 - The remote's touch-logo stop command needs a micro:bit with a touch logo
-- Motor model, propeller size, servo model, LiPo capacity, run time and warranty are not stated
+- Motor current, run time and warranty are not stated
 
 ## Positioning (kept apart from specs)
 - Remote-control boat built with a micro:bit, with a video tutorial available
@@ -4080,10 +4086,11 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 - Motors: 2 x 800RPM 6V DC micro metal gearmotor; "6V DC motors (800rpm, 3.1kg.cm)"
 - Wheels: 2 x silicon wheels 32x22mm; blue from July 2025
 - Armour: 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base
-- Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low)
+- Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low) and a port for an external start module (not included)
+- Controller user features: LEDs, DIP switch, potentiometer, buzzer, servo port
 - USB cable: free, included from 25 Aug 2024
-- Packing list (truncated on the product page): 1 x Maker Mini Sumo Controller, 5 x Maker Object, 2 x Maker Reflect S, 2 x 800RPM 6V DC micro metal gearmotor, 1 x 3D printed motor bracket, 2 x silicon wheels 32x22mm, 1 x 7.4V 450mAh LiPo, 1 x chassis (main), 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base, JST LiPo wire extension, 2561 3-way connector extension wire, ...
-- Not included: RC transmitter/receiver; no LiPo charger in the visible packing list
+- Packing list: 1 x Maker Mini Sumo Controller, 5 x Maker Object, 2 x Maker Reflect S, 2 x 800RPM 6V DC micro metal gearmotor, 1 x 3D printed motor bracket, 2 x silicon wheels 32x22mm, 1 x 7.4V 450mAh LiPo, 1 x chassis (main), 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base, JST LiPo wire extension, 1 x 2561 3-way connector extension wire, 8 x M3x6 screws, 4 x M3x18 screws, 4 x nuts, 2 x tiny screwdrivers, free USB cable
+- Not included: RC transmitter/receiver, external start module, LiPo charger
 - Differences from the Ikedo Mini Sumo Robot V2 (KIT-IKEDO-MSV2-S): 800 RPM 3.1 kg.cm motors instead of 600 RPM "0.065kg.cm"; 350 g instead of ~200 g; adds steel shield, 4" razor blade and copper weight base; RM693.00 instead of RM418.95
 - Warranty: "NO warranty for Sumo Robot."
 
@@ -4105,8 +4112,7 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 
 ## Known limitations
 - No warranty for the Sumo Robot
-- RC transmitter/receiver not included; LiPo charger not in the visible packing list
-- Product page specifications and packing list are truncated; top cover, screws and screwdrivers are not confirmed
+- RC transmitter/receiver, external start module and LiPo charger are not included
 - No Pro-specific assembly document; the Ikedo Bot V2 Getting Started Instruction covers the V2 Starter only
 - Controller limits apply: 3.0 A continuous / 6.0 A peak (< 5 s) per motor channel; motors over 3 A are not covered by the controller's warranty (see MAKER-MSUMO)
 - 800 RPM motor current rating: [NOT STATED]
@@ -4158,7 +4164,7 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 - Base: 2 x metal base for mini sumo robot
 - Battery lead: Dean T LiPo wire extension
 - Control: RC controller
-- Packing list, Complete (truncated on the product page): 1 x MDDRC10, 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor, 2 x silicon wheels 42x30mm, 1 x LiPo 11.1V 1300mAh, 2 x metal base for mini sumo robot, Dean T LiPo wire extension, 1 x 6" stainless steel blade, ...
+- Packing list, Complete: 1 x MDDRC10, 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor, 2 x silicon wheels 42x30mm, 1 x LiPo 11.1V 1300mAh, 2 x metal base for mini sumo robot, Dean T LiPo wire extension, 1 x 6" stainless steel blade, 16 x M3x6 screws, 4 x M3x20 screws, 4 x nuts, 2 x screwdrivers, 1 x M2 Allen key, 3D-printed body (chassis, base, top cover, 2 x motor brackets)
 - Assembly: "comes in loose parts"
 - Warranty: "NO warranty"
 
@@ -4180,12 +4186,13 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 - Comes in loose parts; self-assembly required
 - RC only: no autonomous mode, no sensors, no code
 - MDDRC10 has no reverse-polarity protection; its +5V output (500 mA) is for the receiver only
-- Product page packing list is truncated after the blade; Basic and Body-only contents are not listed in the extract
-- RC transmitter/receiver inclusion: [NOT STATED]
-- LiPo charger: not in the visible packing list
+- Basic and Body-only contents are not itemised on the product page
+- RC transmitter/receiver: not included in any option (product page packing list)
+- LiPo charger: not included
+- Wiring (Cytron tutorial "1KG RC Sumo Robot Using MDDRC10"): motors to the Left/Right terminals; battery red to +, black to −; receiver CH1 to RC1, CH2 to RC2
 - Whether 856 g includes battery and blade: [NOT STATED]
 - Motor current ratings: [NOT STATED]
-- MDDRC10 mode used by the Cytron user guide: [NOT STATED]
+- MDDRC10 mode (Mixed/Independent) named in the Cytron guide: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 - "plug and play, no coding"
@@ -4561,13 +4568,15 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 - Signals supported: Tx, Rx, CTS and RTS (product page)
 - Assembly: pre-soldered male DB9 connector, MAX232 and capacitors (product page)
 - Warranty: 12 months (product page)
-- Supply voltage: [NOT STATED]
-- TTL logic level (3.3V/5V): [NOT STATED]
+- Supply voltage: +5 V only, no on-board regulator (Cytron schematic)
+- TTL logic level: 5 V (MAX232 outputs); 3.3 V support not stated
 - Baud rate range: [NOT STATED]
 - Dimensions: [NOT STATED]
 
 ## Interfaces and compatibility
-- Microcontroller side: TTL UART with Tx, Rx, CTS and RTS (product page); connector type and pin order [NOT STATED]
+- Microcontroller side: 4-way header (RX_TTL, TX_TTL, +5V, GND) and 6-way header (+5V, GND, CTS_TTL, RX_TTL, TX_TTL, RTS_TTL) (Cytron schematic)
+- Wiring: MCU TX to RX_TTL, MCU RX to TX_TTL, MCU RTS to RTS_TTL, MCU CTS to CTS_TTL — RX_TTL/RTS_TTL are board inputs (Cytron schematic)
+- DB9 pin 5 = GND (Cytron schematic)
 - Device side: DB9-Male (PC side) RS232 connector (product page)
 - Works with Cytron UC00A or UC00C to make a USB-to-RS232 converter (product page)
 - UC00C's 6-way socket has no RTS pin, so RTS handshake is not available from UC00C as documented (UC00C user manual, via KB)
@@ -4579,7 +4588,7 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 
 ## Known limitations
 - No Cytron datasheet or user manual; the product page is the only Cytron text source
-- Supply voltage, logic level and TTL-side pinout are not stated
+- 5 V board: outputs are 5 V level; use a level shifter for 3.3 V-only UARTs
 - The schematic linked from the product page could not be read for this fact sheet
 - The DB9 is male (PC side), the same gender as a PC serial port
 - The product page's "Serial Loopback Test" tutorial link returns 404
@@ -4657,64 +4666,6 @@ Website
 
 ## Source link
 https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller
-
-# Product fact sheets
-
-## Product name
-Breakoutboard for SPG10 (BB-SPG10)
-
-## Aliases
-BB-SPG10, Breakoutboard for SPG10, Breakout Board for SPG10, SPG10 Breakout Board, Cytron BB-SPG10
-
-## What it is
-A small breakout board that mounts to the rear of the SPG10 DC brush motor to give it a secure power cable. It needs two-point soldering and comes with a 2-way cable with the proper jack.
-
-## Specs and functions
-- Designed to fit SPG10 DC brushed motor (product page)
-- Tiny, compact (product page)
-- Requires two-point soldering, about 1 minute (product page)
-- Mounts to the back/rear of the SPG10 motor (product page)
-- Centre hole allows rear shaft access (product page)
-- Ready with JST socket and cable/wire; 2-way cable included with the proper jack (product page)
-- Additional terminal pads for soldering if a cable is not preferred (product page)
-- User manual: none ("quite self explanatory") (product page)
-- Dimensions: [NOT STATED]
-- JST series, pitch and cable length: [NOT STATED]
-- Current and voltage rating: [NOT STATED]
-- Warranty: [NOT STATED]
-
-## Interfaces and compatibility
-- Motor side: two solder points to the SPG10 motor (product page)
-- Output: JST socket with 2-way cable, or additional terminal pads (product page)
-- Compatible motor: SPG10 DC brushed motor (product page); other motors [NOT STATED]
-- Software: none
-
-## Use cases
-- Giving an SPG10 DC brush motor a secure power cable with a ready jack instead of wires soldered straight to the motor terminals
-
-## Known limitations
-- No user manual or datasheet exists (product page)
-- Soldering is required
-- Dimensions, connector series, cable length and electrical ratings are not stated
-- Fit is stated only for the SPG10 DC brushed motor
-
-## Positioning (kept apart from specs)
-- Product page: tiny, compact; about 1 minute of soldering; "quite self explanatory"
-
-## Price band
-RM3.15 special offer, was RM6.30 (Cytron product page, read 2026-10-19)
-
-## Product page
-https://my.cytron.io/p-breakoutboard-for-spg10
-
-## Datasheet
-[NOT STATED]
-
-## Source type
-Website
-
-## Source link
-https://my.cytron.io/p-breakoutboard-for-spg10
 
 # Product fact sheets
 
@@ -5432,7 +5383,7 @@ A breakout board for the Analog Devices ADXL335 ±3 g 3-axis analog acceleromete
 - Sensor IC: Analog Devices ADXL335 (product page)
 - Axes: 3 (product page)
 - Range: ±3g (product page)
-- Regulator: on-board 3.3V regulator (product page)
+- Regulator: on-board 3.3V regulator, MCP1825S-3302E/DB, fed from the 5V pin (product page, Cytron schematic)
 - Operating voltage: 2.5V–6.0V (product page)
 - Typical current: 300 µA (product page features); the page description says "only 320uA" (product page)
 - Bandwidth: adjustable with one capacitor per axis; the included 0.1 µF capacitors set each axis to 50 Hz (product page)
@@ -5441,14 +5392,15 @@ A breakout board for the Analog Devices ADXL335 ±3 g 3-axis analog acceleromete
 - Chip sensitivity: 300 mV/g typ at VS = 3 V, ratiometric to supply (ADXL335 vendor datasheet, chip-level)
 - Chip 0 g output: nominally VS/2 (ADXL335 vendor datasheet, chip-level)
 - Chip operating temperature: −40 °C to +85 °C (ADXL335 vendor datasheet, chip-level)
-- Board pinout: [NOT STATED]
+- Board pinout (7-way): 3V3, 5V, GND, X, Y, Z, ST (Cytron schematic Rev 1, product photo)
+- Power LED: green (Cytron schematic)
 - Weight: [NOT STATED]
 - Warranty: 12 months (product page)
 
 ## Interfaces and compatibility
 - Outputs: analog voltage per axis (X, Y, Z) (ADXL335 vendor datasheet); needs three ADC inputs
-- Board pin labels and order: [NOT STATED]
-- Self-test pin on the board: [NOT STATED]
+- Power options: up to 6 V on the 5V pin (through the regulator), or regulated 3.3 V on the 3V3 pin (bypasses the regulator; 3.6 V chip maximum) (Cytron schematic)
+- Self-test: ST broken out on pin 7 (Cytron schematic)
 - Library / sample code: [NOT STATED]
 
 ## Use cases
@@ -5503,7 +5455,8 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Spacers: 4
 - Tool: 1 tiny Phillips screwdriver
 - Packing list: 2x Robot Building Base, 2x Motor Bracket (blue), 25x M2.2x6mm self-tapping screw, 3x M2.3x8mm self-tapping screw for Maker Line, 4x spacer, 2x TT motor with 15cm wires, 2x wheels, 1x steel ball castor, 1x tiny Phillips screwdriver
-- Dimensions: [NOT STATED] (drawing image only on the product page)
+- Dimensions: base plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high (product page image)
+- Assembly (installation guide, 8 steps): brackets on lower plate → TT motors with wires facing inward → 4 spacers → upper plate → steel ball castor underneath → wheels
 - Weight: [NOT STATED]
 - TT motor voltage, gear ratio, RPM: [NOT STATED]
 - Wheel diameter: [NOT STATED]
@@ -5525,7 +5478,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - No controller board, motor driver, battery, battery holder, sensors or cable ties are included
 - Motor brackets are blue on both the Blue and the Green option
 - Only 3 of the screws (M2.3 x 8 mm) are intended for the Maker Line
-- Dimensions are given as an image only; no size is stated in text
+- Mounting-hole pattern is not stated
 - Warranty is not stated on the product page
 
 ## Positioning (kept apart from specs)
@@ -5765,12 +5718,16 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 - Single Base Only: 1x Robo Base Mini
 - Standoffs: 25mm and 10mm M3 (Robo Base uses 30mm instead of 25mm)
 - Warranty: 12 months
+- Assembly order: Motor > Castor > Sensor > Servo > Battery > Boards (Getting Started with Robo Base Mini)
+- Maker Line mounts on 2 × 10 mm standoffs (Getting Started with Robo Base Mini)
+- Battery: between the two plates, or a 4 × AA holder underneath when the TT motors are on top (Getting Started with Robo Base Mini)
 
 ## Interfaces and compatibility
 - Mechanical part; no electrical interface
 - Controller boards with compatible mounting holes (Robo Base series list): REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
 - Attachments covered by the Getting Started with Robo Base Mini tutorial: DC motor and castors, Maker Line, ultrasonic sensor, micro servo, battery
-- Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Micro servo: no dedicated holes; fix with the servo's own M2 screw, or use the Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Board fixings: M3 10 mm standoffs for REKA:BIT, MOTION:BIT and Robo Pico; M2.5 for Raspberry Pi and Jetson (Getting Started with Robo Base Mini)
 - Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
 - Used in STRIKER:BIT ("Robobase Mini kit for 2WD Robot")
 
@@ -5783,6 +5740,7 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
+- Raspberry Pi and Jetson need M2.5 fixings, which no Mini kit includes
 - Single Base Only is the plate only, with no screws or standoffs
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - The ⌀37mm 12V DC motor mounting is covered for Robo Base, not for Robo Base Mini
@@ -8549,7 +8507,10 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Cooling: 24V DC exhaust fan with 2x intake/exhaust dust filters
 - Enclosure: IP67 ABS industrial enclosure, 250 × 350 × 160mm
 - Controller dimensions: 139mm × 88mm × 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
-- Controller: same controller as the IRIV EdgeAI CM5 (Cytron team, 2026-10-19); operating temperature −20 to 60 ℃; kit operating temperature [NOT STATED]
+- Controller: same controller as the IRIV EdgeAI CM5 (Cytron team, 2026-10-19); operating temperature −20 to 60 ℃
+- Assembled box operating temperature: −20 to 60 ℃ (Cytron team, 2026-10-19)
+- Licence: one-time purchase, no licence or subscription fee (Cytron team)
+- Accuracy: no figure published — depends on lighting and camera angle (Cytron team)
 - First run: connect the box to the local network (wired LAN recommended), read its IP address on the front OLED, open it in a web browser, sign in with the factory account from the Quick Start Guide; the box forces a new password (at least 8 characters) on first sign-in
 - Setup wizard: Secure account → Add camera → Ready; camera discovery, shared-credential pairing or manual RTSP URL; re-run from Settings → Setup wizard
 - Runs without internet: inference is on the device and video does not leave the site
@@ -8560,7 +8521,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Cameras: IP cameras with RTSP streaming support (required); ONVIF for automatic discovery; manual add by RTSP URL
 - Camera streams: H.264/H.265, 640x360 sub-stream
 - Network: 2x RJ45 Gigabit Ethernet (10/100/1000M) on the controller; 2x female-to-female RJ45 extension ports on the enclosure for external network access
-- Outputs: DO0 (GPIO23) and DO1 (GPIO24), dry contact; DO1 can be driven by zone presence
+- Outputs: DO0 = PPE alarm, DO1 = Zones alarm (web UI); dry contact; each can be switched on/off and set to Hold or Pulse with a pulse duration in seconds
 - Integrations: MQTT, Telegram, Email
 - Controller ports: 2x USB 3.0, 1x USB-C (boot and debug), 2x MIPI CSI, 1x HDMI 2.0, 1x isolated RS485, 2x isolated DI
 - Expansion: 1x M.2 Key-M (holds the 128GB NVMe SSD), 1x PCIe (Raspberry Pi AI HAT+), 1x mPCIe (USB 2.0 only)
@@ -8592,7 +8553,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - IP cameras are not included in the packing list
 - Digital outputs are dry contacts (max 50 V, 500 mA); the alarm device needs its own supply
 - mPCIe expansion uses USB 2.0, not PCIe
-- Kit operating temperature, detection distance and accuracy: [NOT STATED]
+- Detection distance is not stated; no accuracy figure is published
 
 ## Positioning (kept apart from specs)
 - Product page name: "IRIV EdgeAI - Safety Box: PPE and Zone Monitoring"; landing-page headline: "AI Vision for Workplace Safety."
@@ -8602,7 +8563,7 @@ A packaged on-premise AI vision appliance: an IRIV EdgeAI CM5 controller with a 
 - Aligned with Malaysia's OSHMP30 framework
 
 ## Price band
-RM7,999.00 (Cytron product page, availability "Enquiry", read 2026-10-19)
+RM7,999.00 one-time, no subscription (Cytron product page, availability "Enquiry", read 2026-10-19; Cytron team)
 
 ## Product page
 https://my.cytron.io/p-iriv-edgeai-safety-box-kit
@@ -9332,10 +9293,15 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - Capacities: 1TB / 512GB / 256GB / 128GB
 - Preloaded OS: Raspberry Pi OS 64-bit Bookworm, on units shipped from 22 November 2023
 - Speed test (128GB unit, Raspberry Pi Diagnostics): sequential write 385505 KB/s; random write 25680 IOPS
-- Speed test host board and random read figure: [NOT STATED]
-- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
-- Power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
-- Warranty, packing list: [NOT STATED]
+- Speed test random read (128GB unit): 22351 IOPS (product page image)
+- Drive label 128GB: PCIe Gen 3 x4, NVMe 1.3, read up to 1800 MB/s, write up to 560 MB/s (product page image)
+- Drive label 256GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1000 MB/s (product page image)
+- Drive label 512GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1700 MB/s (product page image)
+- Drive label 1TB: PCIe Gen 4 x4, NVMe 1.4, read 5100 MB/s, write 4800 MB/s (product page image)
+- All labels: SMART & TRIM supported, Advanced Flash Management, Made in Taiwan, RoHS/FC/CE (product page image)
+- Size: 22 × 80 mm (M.2 2280) (product page image)
+- Warranty: 1 year limited, printed on the label; void if label removed (product page image)
+- NAND type, controller, power, operating temperature, MTBF, TBW, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
@@ -9344,7 +9310,7 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - Host needs an M.2 M-Key slot with a 2280 mounting position
 - Does not fit the CM4 Maker Board M.2 slot (that slot takes NVMe 2230/2242 only)
 - Not usable in M.2 SATA slots or SATA adapters
-- Cytron tutorial linked: home NAS with Raspberry Pi 5
+- Cytron tutorial linked: How to build a home NAS with Raspberry Pi 5
 
 ## Use cases
 - Boot drive for Raspberry Pi 5
@@ -9356,7 +9322,8 @@ A Cytron-branded M.2 2280 M-Key NVMe (PCIe) solid-state drive that ships with Ra
 - DO NOT format it if it is meant to boot a Raspberry Pi — formatting removes the preloaded OS
 - NVMe only; it is NOT SATA
 - 2280 length; will not fit 2230/2242-only M.2 slots
-- The only Cytron speed figures are Raspberry Pi Diagnostics results on the 128GB unit; they do not describe the other capacities
+- Rated speeds differ by capacity (labels); the Raspberry Pi Diagnostics results are for the 128GB unit only
+- Label ratings are drive maximums; Raspberry Pi Diagnostics results on a Pi are much lower
 - HAT/adapter/carrier for the host board is not included
 - OS image on units shipped before 22 November 2023: [NOT STATED]
 
@@ -9400,9 +9367,12 @@ A Cytron-branded M.2 2280 NVMe solid-state drive that ships with NVIDIA JetPack 
 - Login: pre-configured username and password; default login printed on the product page
 - Installation: insert into the NVMe slot on the back of the carrier board at 45°, then screw down
 - Linked references: NVIDIA Jetson Linux r36.4.3 release notes; "Nvbuf_utils to NVUtils" migration file
-- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
-- Read/write speed, power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
-- Warranty, packing list: [NOT STATED]
+- Drive label 512GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1700 MB/s (product page image)
+- Drive label 256GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1000 MB/s (product page image)
+- SMART & TRIM supported, Made in Taiwan (product page image)
+- Warranty: 1 year limited, printed on the label (product page image)
+- Preloaded components shown (SDK Manager, JetPack 6.2): Jetson Linux; CUDA, CUDA-X AI, Computer Vision, NVIDIA Container Runtime, Multimedia, Developer Tools, DeepStream, GXF, Jetson Platform Services (product page image)
+- NAND type, controller, power, operating temperature, MTBF, TBW, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
@@ -9463,9 +9433,14 @@ A Cytron-branded 120GB 2.5-inch SATA III solid-state drive that ships with Raspb
 - Max sequential write: up to 460MB/s
 - Test conditions for the max figures: [NOT STATED]
 - Raspberry Pi Diagnostics via USB3-SATA: sequential write 224438 KB/s; random write 23744 IOPS; random read 17102 IOPS
-- Raspberry Pi Diagnostics host board: [NOT STATED]
-- NAND type, controller, power consumption, operating temperature, MTBF, TBW: [NOT STATED]
-- Dimensions, weight, warranty, packing list: [NOT STATED]
+- Raspberry Pi Diagnostics host board: Raspberry Pi 4 Model B through a USB 3.0-to-SATA adapter (product page photo)
+- Shock: 1500G/0.5ms (drive label)
+- Operating temperature: 0 °C to 70 °C, commercial (drive label)
+- SMART & TRIM supported (drive label)
+- Compatible with Windows, Linux, Raspberry Pi (drive label)
+- Warranty: 1 year limited, void if label removed or case opened (drive label)
+- Made in Taiwan (drive label)
+- NAND type, controller, power consumption, MTBF, TBW, exact dimensions, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
@@ -9483,6 +9458,7 @@ A Cytron-branded 120GB 2.5-inch SATA III solid-state drive that ships with Raspb
 - SATA, not NVMe; needs a USB-SATA bridge on every Raspberry Pi
 - Requires the latest bootloader with USB boot on the Pi
 - Pi-measured throughput via USB3-SATA (224438 KB/s sequential write) is far below the drive's 550MB/s / 460MB/s SATA maxima
+- Commercial temperature range only (0–70 °C)
 - OS image on units shipped before 1 November 2023: [NOT STATED]
 
 ## Positioning (kept apart from specs)
@@ -9530,14 +9506,16 @@ A two-day hands-on training workshop at Cytron HQ, sold together with an AgentBo
 - Module 2 – Configuring AgentBox: initial system configuration, connecting to OpenRouter, connecting to a local Ollama server, managing models, model selection; creating a first agent, agent settings, prompt engineering, agent instructions, testing and troubleshooting (course outline)
 - Module 3 – Building Practical AI Agents: task-specific agents, agent workflows, context and memory, improving response quality, practical exercises; managing multiple agents, testing different models, performance and cost considerations, best practices (course outline)
 - Module 4 – Hands-on Project: plan, design, configure, build and test an agent for a real-world use case; final demonstration, peer review, troubleshooting and optimisation, future enhancements, wrap-up and Q&A (course outline)
-- Prerequisites: no prior AI development experience required (course outline)
-- Kit contents: [NOT STATED]
+- Prerequisites: no prior AI development experience required (course outline); no Linux or AI experience required (product page)
+- Packing list: 1 × AgentBox Starter Kit — Raspberry Pi 5 8GB; 256GB NVMe 2242 MakerDisk preloaded with AgentBox OS; Argon NEO 5 case with M.2 base; 27W USB-C PD (5V/5A) power supply, UK plug — plus 1 × Cytron Workshop Certificate (product page)
 - Participant limit: [NOT STATED]
-- Certification: [NOT STATED]
+- Certificate: 1 × Cytron Workshop Certificate (product page packing list)
 - Refund / cancellation terms: [NOT STATED]
 
 ## Interfaces and compatibility
-- Host hardware: Raspberry Pi 5 (AgentBox is Raspberry Pi 5-powered) (course outline, product page)
+- Host hardware: Raspberry Pi 5 8GB in Argon NEO 5 case with M.2 base (product page)
+- Storage: 256GB NVMe 2242 MakerDisk preloaded with AgentBox OS (product page)
+- Power: 27W USB-C PD 5V/5A supply, UK plug (product page)
 - AgentBox is browser-based (product page)
 - LLM connections: OpenRouter (cloud) and Ollama server (local) (course outline, product page)
 - Laptop or other participant-supplied equipment: [NOT STATED]
@@ -9549,7 +9527,8 @@ A two-day hands-on training workshop at Cytron HQ, sold together with an AgentBo
 
 ## Known limitations
 - Two of the three listed dates (Sep and Oct 2026) had passed by 2026-10-19; only 19 & 20 Nov 2026 remained
-- Kit contents, participant limit, certificate, meals and refund terms are not stated in the sources read
+- Participant limit, meals and refund terms are not stated in the sources read
+- Power supply is UK plug
 - Course outline carries no version or date
 
 ## Positioning (kept apart from specs)
@@ -9586,13 +9565,13 @@ A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at th
 - Duration: 1 day, timetable 9:00 AM to 5:00 PM (product page, workshop tentative)
 - Venue: Cytron Technologies office, Penang ("Training at HQ") (product page)
 - Dates offered as of 2026-10-19: 30 Sep 2026; 21 Oct 2026; 18 Nov 2026 (product page)
-- Options: Kit + 1 Day Training at HQ (date chosen as variant); Workshop ONLY for owners of the Jetson Orin Nano Training Kit V2, loan units on request (product page)
+- Options: Kit + 1 Day Training at HQ (date chosen as variant); Workshop ONLY for owners of the Jetson Orin Nano Training Kit V2, loan training-kit units on request subject to availability (product page)
 - Availability: 10 (product page, 2026-10-19)
 - Warranty shown on page: 12 months (product page)
-- Certification: official NVIDIA AI certification on completion (product page)
+- Certification: official NVIDIA AI certification on completion; Certificate of Completion from NVIDIA and Cytron (product page)
 - Topics: setup, architecture, real-time object detection, image classification, image regression, edge inference (product page)
 - Tentative Day 1 timetable: Ice Breaking 9:00–9:15 AM; Theory about AI/ML/DL 9:15–9:45 AM; Breakfast 9:45–10:15 AM; Theory about Jetson Orin Nano 10:15–10:45 AM; Theory about CUDA 10:45–11:15 AM; Hands On with Jetson Orin Nano 11:15 AM–12:15 PM; Create NVIDIA Account 12:15–1:00 PM; Lunch 1:00–2:00 PM; Image Classification/Test 2:00–3:00 PM; Image Regression/Test 3:00–4:00 PM; Tea Break 4:00–4:30 PM; Q&A / Summary 4:30–5:00 PM (workshop tentative)
-- Kit option contents as far as stated: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) preassembled in an aluminium alloy case with external antennas; 19V 45W power supply; NVMe 2280 MakerDisk SSD 512GB preloaded with JetPack; remaining items not stated (product page)
+- Kit option contents: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) preassembled in an aluminium alloy case with external antennas; 19V 45W power supply; NVMe 2280 MakerDisk SSD 512GB preloaded with JetPack; case with camera holder; USB camera with housing; extendable camera stand; DP-to-HDMI adapter; HDMI cable (product page)
 - Participant limit: [NOT STATED]
 - Prerequisites: [NOT STATED]
 - Refund / cancellation terms: [NOT STATED]
@@ -9602,6 +9581,8 @@ A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at th
 - Hardware platform: NVIDIA Jetson Orin Nano Super Developer Kit (8GB) (product page)
 - Storage: NVMe 2280 MakerDisk SSD 512GB with JetPack preloaded (product page)
 - Power: 19V 45W power supply (product page)
+- Camera: USB camera with housing, extendable stand, case camera holder (product page)
+- Display: DP-to-HDMI adapter and HDMI cable included (product page)
 - Workshop ONLY requires the participant's own Jetson Orin Nano Training Kit V2 or a loan unit requested in advance (product page)
 - An NVIDIA account is created during the workshop (workshop tentative)
 
@@ -9616,13 +9597,13 @@ A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at th
 - Workshop ONLY option is for owners of the Jetson Orin Nano Training Kit V2; others need a loan unit on request
 - The timetable is titled "Tentative"; the PDF prints two "11:15PM" times that are typographical errors for 11:15 AM
 - The tentative timetable shows only image classification and image regression hands-on slots, while the page also lists real-time object detection
-- Full kit list, JetPack version, participant limit, prerequisites, meals and refund terms are not stated in the sources read
+- JetPack version, participant limit, prerequisites, meals and refund terms are not stated in the sources read
 
 ## Positioning (kept apart from specs)
 - Hands-on AI fundamentals workshop with NVIDIA certification (product page)
 
 ## Price band
-RM1,200.00–RM5,073.36, offer shown (Cytron product page, read 2026-10-19)
+RM1,200.00–RM5,073.36 offer, list RM1,550.00–RM5,323.36 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-jetson-orin-nano-ai-fundamentals-hands-on-workshop-with-nvidia-certification-v
@@ -9715,8 +9696,9 @@ A software-only service in which Cytron upgrades a customer's NVIDIA Jetson Orin
 - Up to 70% more generative AI performance, as stated by NVIDIA (product page)
 - Availability: enquiry ("Inquire Now") (product page, 2026-10-19)
 - Exact JetPack 6.x release flashed: [NOT STATED]
+- Delivery: Send-in service: the customer ships the device to Cytron HQ (1, Lorong Industri Impian 1, 14000 Bukit Mertajam, Pulau Pinang); Cytron upgrades it, tests it and ships it back (product page)
+- What to send: Jetson Orin Nano module; carrier board (if third-party); power supply (optional); the original MakerDisk SSD; protective packaging; a printed copy of the order confirmation; a note with contact details (product page)
 - Turnaround time: [NOT STATED]
-- Delivery method (send-in / on-site): [NOT STATED]
 - Data preservation: [NOT STATED]
 - Warranty on the service: [NOT STATED]
 
@@ -9735,7 +9717,8 @@ A software-only service in which Cytron upgrades a customer's NVIDIA Jetson Orin
 ## Known limitations
 - Software-only; no hardware included (product page)
 - Ordered by enquiry, not stocked (product page)
-- Exact JetPack 6.x release, turnaround, delivery method, data handling and warranty are not stated in the sources read
+- Send-in only: the device must be posted to Cytron HQ, Penang (product page)
+- Exact JetPack 6.x release, turnaround, data handling and warranty are not stated in the sources read
 - The Getting Started Guide's Appendix D lists Developer Kit module power as 7W to 15W, which predates the 25W mode enabled by JetPack 6.x
 - The Getting Started Guide carries no version or date and does not state which JetPack it targets
 

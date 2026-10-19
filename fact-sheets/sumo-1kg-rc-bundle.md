@@ -23,7 +23,7 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 - Base: 2 x metal base for mini sumo robot
 - Battery lead: Dean T LiPo wire extension
 - Control: RC controller
-- Packing list, Complete (truncated on the product page): 1 x MDDRC10, 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor, 2 x silicon wheels 42x30mm, 1 x LiPo 11.1V 1300mAh, 2 x metal base for mini sumo robot, Dean T LiPo wire extension, 1 x 6" stainless steel blade, ...
+- Packing list, Complete: 1 x MDDRC10, 2 x 12V 580RPM 3.5kgfcm high power brushed DC geared motor, 2 x silicon wheels 42x30mm, 1 x LiPo 11.1V 1300mAh, 2 x metal base for mini sumo robot, Dean T LiPo wire extension, 1 x 6" stainless steel blade, 16 x M3x6 screws, 4 x M3x20 screws, 4 x nuts, 2 x screwdrivers, 1 x M2 Allen key, 3D-printed body (chassis, base, top cover, 2 x motor brackets)
 - Assembly: "comes in loose parts"
 - Warranty: "NO warranty"
 
@@ -45,12 +45,13 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 - Comes in loose parts; self-assembly required
 - RC only: no autonomous mode, no sensors, no code
 - MDDRC10 has no reverse-polarity protection; its +5V output (500 mA) is for the receiver only
-- Product page packing list is truncated after the blade; Basic and Body-only contents are not listed in the extract
-- RC transmitter/receiver inclusion: [NOT STATED]
-- LiPo charger: not in the visible packing list
+- Basic and Body-only contents are not itemised on the product page
+- RC transmitter/receiver: not included in any option (product page packing list)
+- LiPo charger: not included
+- Wiring (Cytron tutorial "1KG RC Sumo Robot Using MDDRC10"): motors to the Left/Right terminals; battery red to +, black to −; receiver CH1 to RC1, CH2 to RC2
 - Whether 856 g includes battery and blade: [NOT STATED]
 - Motor current ratings: [NOT STATED]
-- MDDRC10 mode used by the Cytron user guide: [NOT STATED]
+- MDDRC10 mode (Mixed/Independent) named in the Cytron guide: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 - "plug and play, no coding"

@@ -5,7 +5,8 @@
 | Product code | `SEV-JN-ORNN` [PP] |
 | Family | Workshops and services |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 (product page facts read 2026-10-19) |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: live product page re-read in full (browser). Delivery method (send-in to Cytron HQ, returned tested) and the "what to include in the package" list added. Service — product page is the main source (KB rule 7, workshops and services) |
 | Primary source | **No datasheet exists (this is a service).** Highest source read is the Cytron Getting Started doc linked from the page: "Getting Started Guide - Computer Vision AI Training Kit with NVidia Jetson Orin Nano" (Google Doc, no version or date printed) [UM], which describes the training-kit software the service relates to but does not describe the flashing itself; the service terms come from the product page https://my.cytron.io/p-jetson-orin-nano-upgrade-service-jetpack-5.x-to-jetpack-6.x [PP] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -30,7 +31,9 @@ Service / logistics table.
 | Price | RM150.00 | [PP] |
 | Availability | Enquiry ("Inquire Now") | [PP] |
 | Exact JetPack 6.x point release flashed | Not stated on this page | — |
-| Turnaround, shipping, data backup, warranty on the service | Not stated in any source read | — |
+| Delivery | Send-in service: the customer ships the device to Cytron HQ (1, Lorong Industri Impian 1, 14000 Bukit Mertajam, Pulau Pinang); Cytron upgrades it, tests it and ships it back | [PP] |
+| What to send | Jetson Orin Nano module; carrier board (if third-party); power supply (optional); the original MakerDisk SSD; protective packaging; a printed copy of the order confirmation; a note with contact details | [PP] |
+| Turnaround, return-shipping cost, data backup, warranty on the service | Not stated in any source read | — |
 | Linked documents | NVIDIA Jetson Orin Nano Series datasheet (Drive) [VEN]; Jetson Orin Nano Training Kit Getting Started Guide (Google Doc) [UM] | [PP] |
 
 ## Interfaces, terminals and pin mapping
@@ -44,6 +47,7 @@ Not applicable (service). Relevant software facts: the service changes the JetPa
 - The linked Getting Started Guide [UM] describes the Cytron "Computer Vision AI Training Kit with NVidia Jetson Orin Nano": chapters on AI/DL concepts, the Orin Nano Developer Kit tour, connecting peripherals, login and updates, the jetson-inference Docker container, image classification, object detection and semantic segmentation. It does not state which JetPack it was written for, and it does not describe the flashing procedure. Do not cite it as the source of the service's JetPack version.
 - Never copy the default login printed in the Getting Started Guide into any content.
 - Price is RM150.00 but the item is enquiry-only [PP]; content should say "RM150, by enquiry" rather than "add to cart".
+- It is a **send-in** service: the customer posts the module (plus third-party carrier if used, optional PSU and the original MakerDisk SSD) to Cytron HQ in Bukit Mertajam, Penang, with a printed order confirmation and a contact note; Cytron returns the device tested [PP]. Do not describe it as on-site or remote.
 
 ## Power and electrical limits
 Not applicable (service). JetPack 6.x enables a 25W power mode on the Jetson Orin Nano [PP]. For the Developer Kit hardware, the Getting Started Guide's Appendix D lists module power as 7W to 15W and a 19V DC barrel jack input [UM]; that appendix predates the 25W "Super" mode and should not be quoted as the post-upgrade limit (see Conflicts).
@@ -59,7 +63,8 @@ Not applicable (service). JetPack 6.x enables a 25W power mode on the Jetson Ori
 - Related Cytron products: MakerDisk NVMe 2280 SSD preloaded with JetPack 6.2 (V-MMR-NV2280-JP) [PP-MD]; Jetson Orin Nano Training Kit (the Getting Started Guide's subject) [UM].
 
 ## Common mistakes / troubleshooting
-- Describing the service as including a new SSD or new JetPack media: it is software-only, no hardware [PP].
+- Describing the service as including a new SSD or new JetPack media: it is software-only, no hardware [PP]. The customer's own MakerDisk SSD goes in the package [PP].
+- Forgetting the printed order confirmation and contact note in the parcel [PP].
 - Stating the exact JetPack 6.x version, turnaround time or warranty: none is stated.
 - Quoting the 70% figure as Cytron's own measurement: it is NVIDIA's figure [PP].
 - Assuming a JetPack-6.2 SSD will fix a JetPack 5.x board without this (or an equivalent) firmware upgrade [PP-MD].
@@ -72,9 +77,9 @@ Not applicable (service). JetPack 6.x enables a 25W power mode on the Jetson Ori
 
 ## Needs verification
 - Exact JetPack 6.x release flashed at the time of service, and whether the customer can choose.
-- How the service is delivered: send-in to Cytron, drop-off, or on-site; turnaround time; return shipping cost.
-- Whether customer data on the board/SSD is preserved or wiped, and whether an NVMe SSD or microSD is flashed as well as the QSPI firmware.
-- Whether the service covers the Orin Nano 4GB module, the Orin NX, or only the 8GB Developer Kit.
+- Turnaround time and return-shipping cost.
+- Whether customer data on the board/SSD is preserved or wiped (the page asks for the original MakerDisk SSD to be sent, which suggests the SSD is re-flashed — confirm).
+- Whether the service covers the Orin Nano 4GB module, the Orin NX, or only the 8GB Developer Kit (the page's "carrier board (if third-party)" line suggests third-party carriers are accepted — confirm).
 - Any warranty or support period on the service.
 - Version/date of the Getting Started Guide (none printed), and which JetPack it targets.
 - Content of the linked NVIDIA Jetson Orin Nano Series datasheet (not read).

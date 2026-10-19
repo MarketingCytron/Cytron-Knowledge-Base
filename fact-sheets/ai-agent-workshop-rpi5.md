@@ -25,14 +25,16 @@ A two-day hands-on training workshop at Cytron HQ, sold together with an AgentBo
 - Module 2 – Configuring AgentBox: initial system configuration, connecting to OpenRouter, connecting to a local Ollama server, managing models, model selection; creating a first agent, agent settings, prompt engineering, agent instructions, testing and troubleshooting (course outline)
 - Module 3 – Building Practical AI Agents: task-specific agents, agent workflows, context and memory, improving response quality, practical exercises; managing multiple agents, testing different models, performance and cost considerations, best practices (course outline)
 - Module 4 – Hands-on Project: plan, design, configure, build and test an agent for a real-world use case; final demonstration, peer review, troubleshooting and optimisation, future enhancements, wrap-up and Q&A (course outline)
-- Prerequisites: no prior AI development experience required (course outline)
-- Kit contents: [NOT STATED]
+- Prerequisites: no prior AI development experience required (course outline); no Linux or AI experience required (product page)
+- Packing list: 1 × AgentBox Starter Kit — Raspberry Pi 5 8GB; 256GB NVMe 2242 MakerDisk preloaded with AgentBox OS; Argon NEO 5 case with M.2 base; 27W USB-C PD (5V/5A) power supply, UK plug — plus 1 × Cytron Workshop Certificate (product page)
 - Participant limit: [NOT STATED]
-- Certification: [NOT STATED]
+- Certificate: 1 × Cytron Workshop Certificate (product page packing list)
 - Refund / cancellation terms: [NOT STATED]
 
 ## Interfaces and compatibility
-- Host hardware: Raspberry Pi 5 (AgentBox is Raspberry Pi 5-powered) (course outline, product page)
+- Host hardware: Raspberry Pi 5 8GB in Argon NEO 5 case with M.2 base (product page)
+- Storage: 256GB NVMe 2242 MakerDisk preloaded with AgentBox OS (product page)
+- Power: 27W USB-C PD 5V/5A supply, UK plug (product page)
 - AgentBox is browser-based (product page)
 - LLM connections: OpenRouter (cloud) and Ollama server (local) (course outline, product page)
 - Laptop or other participant-supplied equipment: [NOT STATED]
@@ -44,7 +46,8 @@ A two-day hands-on training workshop at Cytron HQ, sold together with an AgentBo
 
 ## Known limitations
 - Two of the three listed dates (Sep and Oct 2026) had passed by 2026-10-19; only 19 & 20 Nov 2026 remained
-- Kit contents, participant limit, certificate, meals and refund terms are not stated in the sources read
+- Participant limit, meals and refund terms are not stated in the sources read
+- Power supply is UK plug
 - Course outline carries no version or date
 
 ## Positioning (kept apart from specs)

@@ -18,8 +18,9 @@ A software-only service in which Cytron upgrades a customer's NVIDIA Jetson Orin
 - Up to 70% more generative AI performance, as stated by NVIDIA (product page)
 - Availability: enquiry ("Inquire Now") (product page, 2026-10-19)
 - Exact JetPack 6.x release flashed: [NOT STATED]
+- Delivery: Send-in service: the customer ships the device to Cytron HQ (1, Lorong Industri Impian 1, 14000 Bukit Mertajam, Pulau Pinang); Cytron upgrades it, tests it and ships it back (product page)
+- What to send: Jetson Orin Nano module; carrier board (if third-party); power supply (optional); the original MakerDisk SSD; protective packaging; a printed copy of the order confirmation; a note with contact details (product page)
 - Turnaround time: [NOT STATED]
-- Delivery method (send-in / on-site): [NOT STATED]
 - Data preservation: [NOT STATED]
 - Warranty on the service: [NOT STATED]
 
@@ -38,7 +39,8 @@ A software-only service in which Cytron upgrades a customer's NVIDIA Jetson Orin
 ## Known limitations
 - Software-only; no hardware included (product page)
 - Ordered by enquiry, not stocked (product page)
-- Exact JetPack 6.x release, turnaround, delivery method, data handling and warranty are not stated in the sources read
+- Send-in only: the device must be posted to Cytron HQ, Penang (product page)
+- Exact JetPack 6.x release, turnaround, data handling and warranty are not stated in the sources read
 - The Getting Started Guide's Appendix D lists Developer Kit module power as 7W to 15W, which predates the 25W mode enabled by JetPack 6.x
 - The Getting Started Guide carries no version or date and does not state which JetPack it targets
 

@@ -23,12 +23,16 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 - Single Base Only: 1x Robo Base Mini
 - Standoffs: 25mm and 10mm M3 (Robo Base uses 30mm instead of 25mm)
 - Warranty: 12 months
+- Assembly order: Motor > Castor > Sensor > Servo > Battery > Boards (Getting Started with Robo Base Mini)
+- Maker Line mounts on 2 × 10 mm standoffs (Getting Started with Robo Base Mini)
+- Battery: between the two plates, or a 4 × AA holder underneath when the TT motors are on top (Getting Started with Robo Base Mini)
 
 ## Interfaces and compatibility
 - Mechanical part; no electrical interface
 - Controller boards with compatible mounting holes (Robo Base series list): REKA:BIT, MOTION:BIT, MOTION:BIT Pro, MOTION 2350 Pro, Robo Pico, Maker Pi RP2040, Maker UNO or Arduino UNO form factor, Maker UNO + Maker Drive, Raspberry Pi 4 or 5, Jetson series
 - Attachments covered by the Getting Started with Robo Base Mini tutorial: DC motor and castors, Maker Line, ultrasonic sensor, micro servo, battery
-- Servo bracket: Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Micro servo: no dedicated holes; fix with the servo's own M2 screw, or use the Robo Bracket for Micro Servo Motor (ROBO-BK-SG90), designed to fit Robo Base and Robo Base Mini
+- Board fixings: M3 10 mm standoffs for REKA:BIT, MOTION:BIT and Robo Pico; M2.5 for Raspberry Pi and Jetson (Getting Started with Robo Base Mini)
 - Gripper: Robo Grip Mini, mounting holes compatible with the Robo Base Series
 - Used in STRIKER:BIT ("Robobase Mini kit for 2WD Robot")
 
@@ -41,6 +45,7 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
+- Raspberry Pi and Jetson need M2.5 fixings, which no Mini kit includes
 - Single Base Only is the plate only, with no screws or standoffs
 - The 2WD option is named "Rubber Wheels" but its packing list says "2x plastic wheels" (both on the Cytron product page)
 - The ⌀37mm 12V DC motor mounting is covered for Robo Base, not for Robo Base Mini

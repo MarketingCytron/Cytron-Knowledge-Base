@@ -6,6 +6,7 @@
 | Family | Robot platforms and parts |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: all 16 parts of the "Getting Started with Robo Base Mini" tutorial series read (Hao Zhen Goh, 26 Feb – 5 Mar 2025): assembly order, standoff use, Maker Line on 10 mm standoffs, servo fixing without dedicated holes, battery positions, per-board mounting (M3 vs M2.5 for Pi/Jetson). Hardware part — guide tutorial is the main source (KB rule 7); no datasheet required |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -44,11 +45,20 @@ No datasheet spec table exists. Facts stated in text:
 ## Interfaces, terminals and pin mapping
 - Mechanical part only; no electrical connections [PP].
 - Positions covered by the Getting Started tutorial [PP: tutorial GS-RBM]: Double Base 2WD and 4WD assembly; DC Motor & Castors; Maker Line; Ultrasonic; Micro Servo; **Battery**; Mounting main controller boards & sample codes.
+- **Recommended assembly order:** Motor > Castor > Sensor > Servo > Battery > Boards [PP: tutorial GS-RBM].
+- **Double layer:** the two plates are joined with the 25 mm M3 standoffs [PP: tutorial GS-RBM].
+- **Maker Line:** mounted under the plate on 2 × 10 mm standoffs [PP: tutorial GS-RBM].
+- **Micro servo:** the Mini has no dedicated servo holes; the servo is fixed with an M2 screw from the servo's own accessory pack (or use the Robo Bracket for Micro Servo) [PP: tutorial GS-RBM][PP: img].
+- **Battery:** either between the two plates, or a 4 × AA holder underneath when the TT motors are mounted on top [PP: tutorial GS-RBM]. No battery or holder is supplied [PP].
+- **Controller boards:** REKA:BIT, MOTION:BIT and Robo Pico on M3 10 mm standoffs; Raspberry Pi and Jetson use **M2.5** fixings; on Jetson one standoff is fitted from the nut side and tightened with 3 nuts; Maker UNO is bolted flat, with a shield on top or Maker Drive beside it on standoffs [PP: tutorial GS-RBM].
 - Hole sizes, pitch and slot positions are not stated in text (images only) [PP].
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - **Standoffs are 25 mm (+10 mm)** — not the 30 mm used by Robo Base [PP].
-- **No controller, battery, sensors or servo in any kit** [PP packing lists]. The tutorial has a Battery mounting section, but no battery is supplied.
+- **No controller, battery, sensors or servo in any kit** [PP packing lists]. The tutorial's Battery section shows positions only; no battery is supplied.
+- **Follow the build order** Motor > Castor > Sensor > Servo > Battery > Boards — boards last, or the lower fixings become unreachable [PP: tutorial GS-RBM].
+- **Pi and Jetson need M2.5 standoffs/screws, not the kit's M3** [PP: tutorial GS-RBM]; M2.5 hardware is not in any Mini kit [PP].
+- **No servo holes on the Mini** — use the servo's own M2 screw, or the Robo Bracket for Micro Servo [PP: tutorial GS-RBM].
 - **⌀37mm 12V DC motor** is a Robo Base tutorial section, not a Robo Base Mini one — don't claim it for the Mini.
 - **4WD = 4 TT motors + mecanum wheels; 2WD = 2 TT motors + 2 wheels + W420 castor** [PP].
 - **"Rubber Wheels" vs "plastic wheels":** option name vs packing list on the same page [PP] — quote the packing list.
@@ -59,7 +69,7 @@ No datasheet spec table exists. Facts stated in text:
 - None (mechanical part). Motor, servo and battery limits belong to the controller board's KB file (e.g. `motion-bit.md`, `reka-bit.md`, `maker-drive.md`, `robo-pico.md`).
 
 ## Software support
-- None needed for the chassis. The Getting Started tutorial's last section includes "sample codes" for the mounted boards [PP: tutorial GS-RBM] (not read).
+- None needed for the chassis. The tutorial's board-mounting part links sample codes for the mounted boards [PP: tutorial GS-RBM]; code belongs to each board's KB file.
 - Cytron projects on Robo Base Mini : "Robo Base Mini Line Following Robot with Maker UNO and Maker Drive" (Khye Yen Ang, 19 Sep 2025); "Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive" (12 Sep 2025); "Line Following Robo Base Mini" (ESP32 + Cytron motor driver + Maker Line, Azfar Rosdi, 11 Jul 2025) [PP]. Bodies not read.
 
 ## Compatibility and accessories
@@ -72,7 +82,8 @@ No datasheet spec table exists. Facts stated in text:
 ## Common mistakes / troubleshooting
 - **Robot won't move** → no controller, motor driver or battery is included; add a supported board and power source [PP].
 - **Standoffs don't match a Robo Base build** → Mini kits use 25 mm stands; Robo Base kits 30 mm [PP].
-- **Board holes don't line up** → only the listed boards are stated to fit [PP]; follow the tutorial's mounting section.
+- **Board holes don't line up** → only the listed boards are stated to fit [PP]; Pi/Jetson need M2.5 fixings, others M3 10 mm standoffs [PP: tutorial GS-RBM].
+- **Battery won't fit between plates with TT motors on top** → use a 4 × AA holder underneath instead [PP: tutorial GS-RBM].
 
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
@@ -82,18 +93,17 @@ No datasheet spec table exists. Facts stated in text:
 | Plate thickness | [PP: img] 1.6 mm | [3P] The Pi Hut: "1.6 mm non-copper PCB" | Consistent; Cytron image confirms 1.6 mm |
 
 ## Needs verification
-- **Weight** — not stated. (Dimensions and thickness now from Cytron's comparison image, reviewed 19 Oct 2026.)
+- **Weight** — not stated.
 - **TT motor bracket count in the 4WD kit** (2 per Cytron page vs 4 per Switch Science) — see Conflicts.
 - **"2x 48mm Mecanum left and right wheel set"** — whether this means 4 wheels in total.
 - **Wheel/tyre material** for 2WD (rubber vs plastic).
-- **Whether Raspberry Pi 4/5 and Jetson boards physically fit the Mini plate** — stated on the shared series page and tutorial list, not shown in text for the Mini alone.
-- **Battery type/holder** the tutorial's Battery section uses — not read.
 - **What "Robo Base Mini Basic Bundle" (RM19.80) contains**; per-option prices.
-- Reseller codes `CYTRON-CK-ROBO-BASE-MINI-2WD` / `-4WD` [3P Switch Science]; Switch Science links Cytron tutorials "getting-started-with-rbm-double-base-2wd/-4wd" (not read).
+- Hole diameters and pitch (drawings only, no dimensioned hole map).
+- Reseller codes `CYTRON-CK-ROBO-BASE-MINI-2WD` / `-4WD` [3P Switch Science].
 
 ## Sources
 - [PP] https://my.cytron.io/p-robo-base-mini-and-kits — Robo Base Series page, read by the coordinator 2026-10-19 (options, Mini packing lists with 25 mm stands, compatible boards, RM9.00–RM112.00, availability 333, warranty 12 months)
-- [PP: tutorial GS-RBM] https://my.cytron.io/tutorial/getting-started-with-robo-base-mini — "Getting Started with Robo Base Mini", Hao Zhen Goh, 05 Mar 2025 (section list only)
+- [PP: tutorial GS-RBM] https://my.cytron.io/tutorial/getting-started-with-robo-base-mini — "Getting Started with Robo Base Mini", Hao Zhen Goh, 05 Mar 2025, and its 16 linked parts (26 Feb – 3 Mar 2025), all read 2026-10-19
 - [PP] https://my.cytron.io/p-robo-bracket-for-microservo-motor and https://my.cytron.io/p-robo-grip-mini-kits (fit statements)
 - [3P] https://www.switch-science.com/products/10530 (Mini 2WD), https://www.switch-science.com/products/10531 (Mini 4WD), https://thepihut.com/products/robo-base-mini
 - Drive (marketing only, no specs): "Website Banner Robo Base Mini .png" (Cytron document — link not public) ; "IV ROBO BASE MINI LATEST VERSION.mp4" (Cytron document — link not public)

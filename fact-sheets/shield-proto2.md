@@ -23,6 +23,7 @@ An Arduino prototyping shield with a standard 0.1" x 0.1" prototyping area, stac
 - Delivered assembled (product page)
 - Packing list: 1x shield (product page)
 - Warranty: 12 months (product page)
+- Board revision: rev1.0.1 (schematic and artwork file names)
 - LED circuit details: [NOT STATED]
 - Rail current rating: [NOT STATED]
 

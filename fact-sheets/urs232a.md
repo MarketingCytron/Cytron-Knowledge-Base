@@ -15,13 +15,15 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 - Signals supported: Tx, Rx, CTS and RTS (product page)
 - Assembly: pre-soldered male DB9 connector, MAX232 and capacitors (product page)
 - Warranty: 12 months (product page)
-- Supply voltage: [NOT STATED]
-- TTL logic level (3.3V/5V): [NOT STATED]
+- Supply voltage: +5 V only, no on-board regulator (Cytron schematic)
+- TTL logic level: 5 V (MAX232 outputs); 3.3 V support not stated
 - Baud rate range: [NOT STATED]
 - Dimensions: [NOT STATED]
 
 ## Interfaces and compatibility
-- Microcontroller side: TTL UART with Tx, Rx, CTS and RTS (product page); connector type and pin order [NOT STATED]
+- Microcontroller side: 4-way header (RX_TTL, TX_TTL, +5V, GND) and 6-way header (+5V, GND, CTS_TTL, RX_TTL, TX_TTL, RTS_TTL) (Cytron schematic)
+- Wiring: MCU TX to RX_TTL, MCU RX to TX_TTL, MCU RTS to RTS_TTL, MCU CTS to CTS_TTL — RX_TTL/RTS_TTL are board inputs (Cytron schematic)
+- DB9 pin 5 = GND (Cytron schematic)
 - Device side: DB9-Male (PC side) RS232 connector (product page)
 - Works with Cytron UC00A or UC00C to make a USB-to-RS232 converter (product page)
 - UC00C's 6-way socket has no RTS pin, so RTS handshake is not available from UC00C as documented (UC00C user manual, via KB)
@@ -33,7 +35,7 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 
 ## Known limitations
 - No Cytron datasheet or user manual; the product page is the only Cytron text source
-- Supply voltage, logic level and TTL-side pinout are not stated
+- 5 V board: outputs are 5 V level; use a level shifter for 3.3 V-only UARTs
 - The schematic linked from the product page could not be read for this fact sheet
 - The DB9 is male (PC side), the same gender as a PC serial port
 - The product page's "Serial Loopback Test" tutorial link returns 404

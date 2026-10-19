@@ -5,7 +5,8 @@
 | Product code | MMR-2P5-MD-120 [PP] |
 | Family | Storage (MakerDisk) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review: read the product-page images — the Cytron drive label (shock 1500G/0.5ms, 0–70 °C commercial, SMART & TRIM, 1-year warranty, Made in Taiwan), the Raspberry Pi Diagnostics screenshot, the test-setup photo (Raspberry Pi 4 Model B + USB3-SATA adapter) and the microSD vs MakerDisk table. Reseller-only facts now confirmed by the label |
 | Primary source | Cytron product page "120GB 2.5-inch MakerDisk SATA III SSD with RPi OS", read 2026-10-19 [PP] — the page links no documents; no datasheet was found in Cytron's Google Drive (searches for "MakerDisk", "SATA", "SSD", "MMR-2P5") |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -29,8 +30,14 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 | Raspberry Pi Diagnostics — sequential write | 224438 KB/s (connected via USB3-SATA) | [PP] |
 | Raspberry Pi Diagnostics — random write | 23744 IOPS (via USB3-SATA) | [PP] |
 | Raspberry Pi Diagnostics — random read | 17102 IOPS (via USB3-SATA) | [PP] |
-| Raspberry Pi Diagnostics host board | Not stated in the text read | [PP] |
-| NAND type, controller, DRAM, power, temperature, shock, MTBF, TBW, dimensions, weight, warranty, packing list | Not stated in any Cytron source read | — |
+| Raspberry Pi Diagnostics run | Version 0.13, 23 Oct 2023, Test PASS (targets: 10000 KB/s seq. write, 500 IOPS random write, 1500 IOPS random read) | [PP: img] |
+| Raspberry Pi Diagnostics host board | Raspberry Pi 4 Model B, drive on a USB 3.0-to-SATA adapter in a blue USB 3.0 port (test-setup photo) | [PP: photo] |
+| Comparison table (Cytron) | Phidisk 128GB microSD ≈27 MB/s seq. write, ≈1000 / ≈2300 IOPS; MakerDisk 120GB 2.5" SSD ≈224 MB/s, ≈24000 / ≈17000 IOPS | [PP: img] |
+| Label — headline | MakerDisk SSD 120GB; 2.5" SATA Solid State Drive; SATA III 6Gbps | [PP: img] |
+| Label — specs | Read speed up to 550MB/s; write speed up to 460MB/s; host interface SATA III; SMART & TRIM support; shock 1500G/0.5ms; compatible with Windows, Linux, Raspberry Pi; operation temp 0 °C–70 °C (commercial) | [PP: img] |
+| Label — marks | RoHS, FC, CE; Made in Taiwan; ESD warning; "1GB = 1,000,000,000 bytes. Actual usable capacity may be less" | [PP: img] |
+| Warranty | 1 Year Limited Warranty; void if label removed or case opened (printed on the label) | [PP: img] |
+| NAND type, controller, DRAM, power, MTBF, TBW, exact dimensions, weight, packing list | Not stated in any Cytron source read | — |
 | Price | RM118.80 special offer, was RM158.40 (Cytron product page, read 2026-10-19) | [PP] |
 | Stock | Availability 17 (2026-10-19) | [PP] |
 
@@ -45,6 +52,8 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 - **Boot path is USB boot.** Raspberry Pi 5, Pi 4 Model B and Pi 400 need the latest bootloader (USB boot enabled) [PP]. The page text read does not mention Compute Module 4 or earlier Pi models.
 - **Speed claims:** "up to 550MB/s / 460MB/s" are the drive's SATA maxima [PP]; the Pi-measured figures via USB3-SATA are 224438 KB/s sequential write, 23744 IOPS random write, 17102 IOPS random read [PP]. Quote the Pi figures for Pi content, and name the USB3-SATA path.
 - **Price:** RM118.80 is a special-offer price (was RM158.40) [PP] — re-check before quoting.
+- **Do not open the case or peel the label:** the label says the warranty is void if the label is removed or the case is opened [PP: img].
+- Operating temperature is **commercial 0–70 °C** [PP: img] — not for outdoor or industrial enclosures without checking.
 - An older reseller listing describes the preloaded OS as Bullseye and names only Pi 4 B / Pi 400 [3P]; the current Cytron page says Bookworm from 1 November 2023 and adds Pi 5 [PP]. Use the Cytron page.
 
 ## Power and electrical limits
@@ -73,12 +82,11 @@ No Cytron datasheet exists for this product; every row below comes from the prod
 |---|---|---|---|
 | Preloaded OS version | Cytron page: Raspberry Pi OS 64-bit Bookworm from 1 Nov 2023 [PP] | Opencircuit reseller copy: "latest Raspberry Pi OS - Bullseye" [3P] | Cytron page wins; the reseller text is an older copy. Pre-Nov-2023 units may be Bullseye (unverified). |
 | Boards that boot from it | Cytron page: Pi 5, Pi 4 B, Pi 400 [PP] | Opencircuit: Pi 4 B (latest bootloader) or Pi 400 [3P] | Cytron page wins (newer, includes Pi 5). |
+| Shock / temperature / SMART & TRIM | Previously reseller-only [3P] | Cytron drive label: 1500G/0.5ms, 0–70 °C commercial, SMART & TRIM [PP: img] | Now confirmed by Cytron's own label; stated as spec. |
 
 ## Needs verification
-- Reseller (Opencircuit) lists: shock 1500G/0.5ms, operating temperature 0°C to 70°C, SMART and TRIM support, "up to 20X faster than a typical hard disk drive", package = one SSD with no adapter [3P]. None of these are in a Cytron source; do not publish as specs.
-- Raspberry Pi Diagnostics host board and OS used for the 224438 KB/s / 23744 IOPS / 17102 IOPS figures: not stated.
-- NAND type, controller, power draw, dimensions, weight, warranty, packing list: not stated.
-- Compute Module 4 / Pi 3 / Pi Zero compatibility: not stated by Cytron (not listed on the page).
+- NAND type, controller, DRAM, power draw, exact dimensions, weight, packing list: not stated.
+- Compute Module 4 / Pi 3 / Pi Zero compatibility: not stated by Cytron (the label says only "Raspberry Pi").
 - Which Cytron "SSD shield" the page refers to (product name/code): not captured in the text read.
 - OS image on units shipped before 1 November 2023: unverified (reseller copy says Bullseye [3P]).
 

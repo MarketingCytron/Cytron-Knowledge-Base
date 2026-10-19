@@ -14,7 +14,7 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 - Competition class: Robot Battle (500 g); "Suitable for the Robot Battle Challenge"
 - Purchase options: Complete / Basic / 3D Printed Body only, each with or without micro:bit
 - Controller: SUMO:BIT with 2x MD13S (board specs: see the SUMO:BIT fact sheet)
-- Motors: 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor; packing list prints "1 x" (quantity unconfirmed)
+- Motors: 2 × 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor (product photo and Cytron guide; the packing list wrongly prints "1 x")
 - Wheels: 1x G25T1 silicone wheel set (1 pair)
 - Battery: 1x Mini LiPo 3S 11.1 V 2000 mAh
 - Charger: 1x 3S LiPo USB balance charger included, plus 3S charger cable extension
@@ -25,7 +25,9 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 - Hardware: 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, screwdrivers
 - With-micro:bit options add: micro:bit Junior Kit, micro:bit V2, USB Micro B cable
 - Complete packing list (with micro:bit): 1x SUMO:BIT with 2x MD13S, screwdrivers, Dean T connector 18 AWG 15 cm, 1x 12 V 980 rpm 2.3 kgf·cm GM25 brushed DC geared motor (as printed), 1x G25T1 silicone wheel set (1 pair), 1x Mini LiPo 3S 11.1 V 2000 mAh, 1x 3S LiPo USB balance charger, 3S charger cable extension, 10 cm JST SM 2-pin male connector, 4x M3*20 screw, 4x M3 nut, 4x M3*6 self-tapping screw, 3D-printed chassis set, micro:bit Junior Kit, micro:bit V2, USB Micro B cable
-- Basic and Body-only contents: [NOT STATED]
+- 3D Printed Body only: printed chassis + 2 motor brackets
+- Basic contents: [NOT STATED]
+- Built for Karnival STEM 2025; game: push the opponent or knock their cone tower out (Cytron guide)
 - Remote controller: not included ("This Battle Robot Kit does not come with a controller")
 - Opponent / edge sensors: none listed
 - Warranty: "There is NO warranty for Battle Robot."
@@ -46,10 +48,11 @@ A 500 g-class two-wheel battle robot kit using the SUMO:BIT board with two MD13S
 
 ## Known limitations
 - No warranty for the Battle Robot
-- No remote controller in the box; a hobby RC set, Cytron USB Joystick, or Joystick:bit with a second micro:bit is bought separately
+- No remote controller in the box; the Cytron guide uses a Joystick:bit or Mini micro:bit Game Handle (sold separately); a hobby RC set or the Cytron USB Joystick also works
 - No opponent or edge sensors in the kit
 - Actual weight 495 g leaves about 5 g inside the 500 g class
-- Packing list prints "1 x" motor; the true quantity is unconfirmed
+- Packing list prints "1 x" motor — a page error; the robot uses two
+- LiPo is held with double-sided tape (no strap supplied)
 - Basic and 3D Printed Body only contents not stated
 - "Without micro:bit" options omit the micro:bit; the micro:bit is removed for RC-receiver and USB-joystick modes
 - Supported micro:bit version not stated by any source

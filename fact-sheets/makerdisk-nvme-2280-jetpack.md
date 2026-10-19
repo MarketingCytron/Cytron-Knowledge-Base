@@ -20,9 +20,12 @@ A Cytron-branded M.2 2280 NVMe solid-state drive that ships with NVIDIA JetPack 
 - Login: pre-configured username and password; default login printed on the product page
 - Installation: insert into the NVMe slot on the back of the carrier board at 45°, then screw down
 - Linked references: NVIDIA Jetson Linux r36.4.3 release notes; "Nvbuf_utils to NVUtils" migration file
-- PCIe generation, lane count, NVMe version, NAND type, controller: [NOT STATED]
-- Read/write speed, power consumption, operating temperature, MTBF, TBW, weight: [NOT STATED]
-- Warranty, packing list: [NOT STATED]
+- Drive label 512GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1700 MB/s (product page image)
+- Drive label 256GB: PCIe Gen 3 x4, NVMe 1.3, read up to 2050 MB/s, write up to 1000 MB/s (product page image)
+- SMART & TRIM supported, Made in Taiwan (product page image)
+- Warranty: 1 year limited, printed on the label (product page image)
+- Preloaded components shown (SDK Manager, JetPack 6.2): Jetson Linux; CUDA, CUDA-X AI, Computer Vision, NVIDIA Container Runtime, Multimedia, Developer Tools, DeepStream, GXF, Jetson Platform Services (product page image)
+- NAND type, controller, power, operating temperature, MTBF, TBW, weight, packing list: [NOT STATED]
 - Datasheet: none published
 
 ## Interfaces and compatibility
