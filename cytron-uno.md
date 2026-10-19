@@ -140,7 +140,7 @@ There are no onboard buttons other than Reset, and no buzzer — the only user-c
 
 ## Needs verification
 - Schematic contents (CT-UNO Schematic.pdf, Dec 2014) — could not be read here; confirm the exact MCU part (ATmega328P vs ATmega328), regulator parts and auto power-selection circuit.
-- Board dimensions, weight and mounting holes (drawing only in the manual).
+- Board dimensions, weight and mounting holes (drawing only in the manual). The CT-UNO-SE product page (SE = "exactly the same as CT-UNO, with the special side connectors") has a dimension drawing: 68.58 × 55.88 mm, 4 × Ø3 mm holes — likely the same for CT-UNO; confirm before quoting for CT-UNO.
 - Whether any current CT-UNO production revision has changed the USB-serial chip (manual is V1.0, 2014; no newer revision found).
 - 5V output current at Vin other than 12 V, and from USB power.
 - Per-pin LED colours other than PWR (green) and pin 13 (orange) — TX/RX LED colours not stated.

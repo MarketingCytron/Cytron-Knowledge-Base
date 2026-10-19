@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 1 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (123 products), in review-queue order. Reviewed: 2 of 123. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -10,7 +10,7 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 | Queue | KB # | Product | Code | Family | Sales status | Confidence | Priority | Open checks | Conflicts | Gaps | Review | Primary source |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2 | 107 | [IRIV EdgeAI Safety Box Kit](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV industrial | Inquiry | Medium-low | High | 13 | 14 | 3 | Waiting on team (2026-10-19) | No kit datasheet exists. Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 |
-| 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Low | High | 4 | 2 | 7 | Not started | Shares the CT-UNO manual, which never mentions SE |
+| 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 3 | 4 | Done (2026-10-19) | Product page (CT-UNO + side connectors) + CT-UNO manual |
 | 4 | 8 | [Maker Nano](maker-nano.md) | `MAKER-NANO` | Arduino-compatible boards | Sold | Medium-low | High | 11 | 1 | 6 | Not started | Datasheet Rev 1.0, Jun 2020 |
 | 5 | 37 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium-low | High | 11 | 4 | 6 | Not started | Product page + course overview + pxt-edubit v1.15.0 (no datasheet readable) |
 | 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium-low | High | 10 | 2 | 4 | Not started | Getting Started Guide V1.0, Jan 2015 |
@@ -134,3 +134,4 @@ One row per product in the Cytron Product Knowledge Base (123 products), in revi
 
 ## Review log
 
+- **Cytron UNO Special Edition** (2026-10-19): Full product page read: SE is "exactly the same as CT-UNO, with the special side connectors" for stacking on top of or under a shield, so the CT-UNO manual applies. Added dimension drawing (68.58 × 55.88 mm, 4 × Ø3 mm holes), SRAM/EEPROM. Confidence Low → Medium-high. Open: side-connector type and packing list (photo only).
