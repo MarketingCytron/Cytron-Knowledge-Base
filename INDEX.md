@@ -78,7 +78,7 @@ Arduino-board notes for every agent:
 | LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
 | 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium-high** |
 | Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 + product photos | **Medium** |
-| Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Product page only | **Medium-low** |
+| Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Schematic + artwork prints Rev 1.0.1 (read 20 Oct 2026) + product page | **Medium-high** |
 
 Shield notes for every agent:
 - **PS2 Shield:** button reads are 0 = pressed, 1 = released; `begin()` baud must match the jumper and the shield must be reset after moving it; A1 is the shield reset line; default D2 RX / D3 TX; on Mega only D10 can be SoftwareSerial RX.
