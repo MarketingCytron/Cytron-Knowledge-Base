@@ -9,6 +9,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 
 | Queue | KB # | Product | Code | Family | Sales status | Confidence | Priority | Open checks | Conflicts | Gaps | Review | Primary source |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 53 | [RCSwitch10](rcswitch10.md) | `RCS10A` | Servo, RC and interface | Sold | Medium-high | Low | 4 | 4 | 4 | Done (2026-10-20) | Cytron Connection Diagram (read 20 Oct 2026) + product page |
 | 2 | 105 | [IRIV EdgeAI Safety Box Kit](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV industrial | Inquiry | Medium | Medium | 12 | 14 | 1 | Done (2026-10-19) | No kit datasheet exists. Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 |
 | 3 | 11 | [Cytron UNO Special Edition](cytron-uno-se.md) | `CT-UNO-SE` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 3 | 4 | Done (2026-10-19) | Product page (CT-UNO + side connectors) + CT-UNO manual |
 | 4 | 8 | [Maker Nano](maker-nano.md) | `MAKER-NANO` | Arduino-compatible boards | Sold | Medium-high | Low | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images |
@@ -132,6 +133,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 
 ## Review log
 
+- **RCSwitch10** (2026-10-20): Cytron Connection Diagram read (screw terminals, 4V-6V, ON<1.2ms/OFF>1.8ms, undetermined between); Medium-low → Medium-high
 - **IRIV EdgeAI Safety Box Kit** (2026-10-19): Team answers in (19 Oct 2026): one-time RM7,999, no licence or subscription; no accuracy figure published (lighting and camera angle vary); assembled box −20 to 60 ℃; PPE alarm = DO0, Zone alarm = DO1, each On/Off with Hold or Pulse (web UI). Controller = IRIV EdgeAI CM5 datasheet. Confidence Medium-low → Medium. Still open: IP rating with fan, internal wiring, software version; 3 live-page errors to fix.
 - **Cytron UNO Special Edition** (2026-10-19): Full product page read: SE is "exactly the same as CT-UNO, with the special side connectors" for stacking on top of or under a shield, so the CT-UNO manual applies. Added dimension drawing (68.58 × 55.88 mm, 4 × Ø3 mm holes), SRAM/EEPROM. Confidence Low → Medium-high. Open: side-connector type and packing list (photo only).
 - **Maker Nano** (2026-10-19): Read Cytron product-page images (Arduino Nano vs Maker Nano table, pinout, layout, dimension drawing): ATmega328P, CH340C, 45.80 × 21.09 mm, A6/A7 analog-only, full pin functions; CH34X driver links; packing list 1 x Maker Nano; IDE board "Arduino Nano" (Cytron tutorial). Confidence Medium-low → Medium-high. Open: processor/bootloader option, button pull-up, USB+Vin behaviour.
