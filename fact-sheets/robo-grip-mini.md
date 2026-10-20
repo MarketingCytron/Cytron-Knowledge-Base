@@ -54,7 +54,7 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Easy snap-and-play assembly with standard screws, nuts and standoffs (product page)
 
 ## Price band
-RM34.90–RM94.19 across the three options (Cytron product page, read 2026-10-19)
+RM34.90–RM94.19 across 3 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-grip-mini-kits

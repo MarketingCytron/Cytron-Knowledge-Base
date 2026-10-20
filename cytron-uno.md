@@ -5,7 +5,8 @@
 | Product code | `CT-UNO` (user manual cover "CT-UNO"; my.cytron.io product-page image paths use CT-UNO [PP]) |
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. The product page states "SMD ATmega328P", FT231X, 7–15 V, 5 V 1 A and 3.3 V 500 mA, and links the schematic |
 | Primary source | **CT-UNO "CT UNO (Arduino Uno Compatible)" User's Manual, V1.0, Nov 2014** (Cytron Technologies Sdn Bhd), Google Doc linked from the product page; Drive metadata: created 2014-10-31, last modified 2025-09-16, cover still reads V1.0 Nov 2014 [UM]. No separate datasheet exists in any source found — the user manual is the top source |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -52,6 +53,10 @@ User's Manual section 1 feature list — every item:
 | Price | RM61.74 (Cytron product page, read 2026-10-16) | [PP] |
 | Dimensions | Drawing only (section 4); no values in the text | [UM] |
 | SRAM / EEPROM | Not stated by Cytron. ATmega328P: 2 KB SRAM, 1 KB EEPROM | [VEN] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** **SMD ATmega328P** with Optiboot (UNO R3) bootloader; FTDI FT231X USB; input 7–15 V DC; 5 V regulator 1 A max; 3.3 V regulator 500 mA max; 0–5 V outputs, 3.3 V-compatible inputs; 14 digital I/O (6 PWM); 6 analog inputs; ISP header; 32 KB flash, 2 KB SRAM, 1 KB EEPROM; 16 MHz; R3 shield compatible; TX, RX, power and pin-13 LEDs at the board edge; USB micro-B; white PCB [PP].
+- **Description:** select "Arduino UNO" in the IDE; USB micro-B cable sold separately [PP].
+- **Packing list:** 1x CT-UNO [PP]. **Resources:** user's manual, 3D CAD, FTDI drivers, **schematic (Google Drive)**, Fritzing, Arduino IDE [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (User's Manual section 5) [UM]:
@@ -133,7 +138,7 @@ There are no onboard buttons other than Reset, and no buzzer — the only user-c
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| MCU name | [UM] feature list: "SMD ATmega328" | [UM] sections 3 and 6.2: "ATmega328p" | Same document; write "ATmega328P" only where the manual does, otherwise "ATmega328 (ATmega328P per the spec section)". Schematic not read to confirm |
+| MCU name | [UM] feature list: "SMD ATmega328" | [UM] sections 3 and 6.2 and [PP] features (read 2026-10-20): "ATmega328P" | **ATmega328P** [PP][UM] |
 | Product name | [PP] my.cytron.io: "Cytron UNO - Arduino UNO Compatible" | [UM]: "CT-UNO", "CT UNO (Arduino Uno Compatible)" | Same product (code CT-UNO); use either |
 | Manual date vs Drive edit | [UM] cover: V1.0, Nov 2014 | Drive metadata: last modified 2025-09-16 | Content still V1.0; links inside point to old cytron.com.my URLs |
 | Warranty | [UM] 12 months | [PP] 12 months | Agree |

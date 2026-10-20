@@ -32,6 +32,8 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - Under-voltage protection: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Terminal type and wire size: [NOT STATED]
+- In stock on my.cytron.io (read 2026-10-19); the my.cytron.io page carries the same specs as the Tindie listing
+- Packing: 1 × Maker Drive board (product page)
 
 ## Interfaces and compatibility
 - Pins: VB+, VB- (power input terminal); motor output terminals; M1A, M1B, M2A, M2B (PWM inputs); 5VO; GND
@@ -72,10 +74,10 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - "Regenerative Braking"
 
 ## Price band
-- USD 3.80 on Cytron's Tindie store ("Sold out since Nov 17, 2022"), checked 16 Oct 2026
+RM18.90 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-maker-drive
+https://my.cytron.io/p-maker-drive-simplifying-h-bridge-motor-driver-for-beginner
 
 ## Datasheet
 https://docs.google.com/document/d/1XakJWz9DAtrMc_Jf75FnDXs4gwT_osCSj3Rbx1OU7bM/edit

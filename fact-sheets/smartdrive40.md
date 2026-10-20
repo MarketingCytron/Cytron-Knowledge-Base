@@ -90,10 +90,10 @@ A single-channel brushed DC motor driver for medium to high power motors, runnin
 - User's Manual: makes driving a robot with differential drive "a truly plug and play experience"
 
 ## Price band
-$62.50 ex tax (www.cytron.io, read 2026-10-16); 5 or more $57.50; 10 or more $50.00
+RM346.50 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-40amp-10v-45v-smartdrive-dc-motor-driver
+https://my.cytron.io/p-40amp-10v-45v-smartdrive-dc-motor-driver
 
 ## Datasheet
 https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit

@@ -31,6 +31,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 - Header (silkscreen GP numbers): D2 – D9 = GP2 – GP9, D10 = GP17, D11 = GP19, D12 = GP16, D13 = GP18, A4 – A7 = GP12 – GP15; AREF position is NC; GP0 and GP1 sit at the Nano TX/RX positions
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - USB VID 0x2E8A, PID 0x100F (CircuitPython & Arduino Core)
+- Flash 2 MB, RAM 264 KB (product page)
+- Maker Port 0 = GP0/GP1; Maker Port 1 = GP26/GP27 (Cytron pinout image)
+- GP19 has a status LED; 14 status LEDs in total (product page, pinout image)
+- Packing: board + 2 Grove-to-JST-SH cables (product page)
 
 ## Interfaces and compatibility
 - Pin header: "Compatible with original Arduino Nano"
@@ -63,10 +67,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 - GitHub README: "a small but powerful MCU for your project"
 
 ## Price band
-[NOT STATED]
+RM41.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-maker-nano-rp2040
+https://my.cytron.io/p-maker-nano-rp2040
 
 ## Datasheet
 https://docs.google.com/document/d/15IMxlESQE43sP7brZpqlfHVTAdX1N_XenzpvfP8cT_8/edit

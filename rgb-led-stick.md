@@ -6,6 +6,7 @@
 | Family | Sensors and modules |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page matches the KB (built from this page); the 3.3 V supply question stays open, so it stays Medium |
 | Primary source | **No Cytron datasheet or user manual exists.** Main source: Cytron product page https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron (read by the coordinator 2026-10-19) [PP]; Cytron tutorial "Controlling RGB LED Stick with Maker Pi Pico" (Abdulrahman Alhamed, 14 May 2023) [PP: tutorial RGB Stick with Maker Pi Pico]; REKA:BIT RBT Project Kit guide and MakeCode extension as recorded in rekabit-rbt-project-kit.md [UM][GH] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,6 +39,8 @@ Tag notes: [PP] = coordinator's browser read, 2026-10-19 (my.cytron.io not fetch
 | Packing list | 1x RGB LED Stick | [PP] |
 | Price | RM9.35 (10+ RM8.88, 50+ RM8.41) (Cytron product page, read 2026-10-19) | [PP] |
 | Warranty | 12 months | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read: 8 SK6812-based 5050 RGB LEDs (WS2812B-compatible), ~18 mA constant-current drive per LED, 5 VDC (4–7 V works), chainable DI→DO, pre-soldered header pins on the input pins, 120° viewing angle, 51.10 × 10.22 × 3.19 mm, 2.57 g; packing 1x stick; resources: NeoPixel Überguide, 3D CAD, a WS2812B tutorial [PP]. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 | Pin | Function | Src |

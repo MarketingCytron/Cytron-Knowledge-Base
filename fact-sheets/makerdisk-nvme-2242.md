@@ -63,7 +63,7 @@ A Cytron-branded M.2 2242 NVMe (PCIe) solid-state drive that ships with Raspberr
 - Ready-to-boot storage for Raspberry Pi — plug in and boot, no imaging needed (product page framing)
 
 ## Price band
-RM369.00 – RM739.00 depending on capacity (Cytron product page, read 2026-10-19)
+RM739.00 shown for the default option (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-nvme-2242-b-plus-m-key-makerdisk-ssd-preloaded-rpi-os

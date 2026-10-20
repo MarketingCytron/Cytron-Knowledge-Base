@@ -5,7 +5,8 @@
 | Product code | `MAKER-PI-RP2040` |
 | Family | RP2040 / RP2350 boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Packing list, size, mounting holes and a public schematic link are now read from the live page |
 | Primary source | MAKER-PI-RP2040 Datasheet, "MAKER PI RP2040 – Simplifying Robotics with Raspberry Pi® RP2040", Rev 1.2, January 2022 (public Google Doc linked from Cytron GitHub) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -42,6 +43,11 @@ Datasheet Table 2 is titled "MAKER-PI-RP2040 **Absolute Maximum Ratings**". Ever
 
 Table footnotes [DS]: "Voltage for the DC motor and servo is equal to power input voltage." "It's not recommended to connect both LiPo and VIN at the same time. Although it's perfectly safe to do so."
 Other product-page figures [PP]: dimensions "88mm(L) x 64mm(W) x 13mm(H)"; "4x 4.8mm mounting hole (LEGO® pin compatible)", "6x M3 screw hole". The datasheet dimension figure (Figure 2) could not be read as text.
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** RP2040, 264 KB RAM, 2 MB flash; 4 servo ports; 2 DC motors with quick-test buttons; automatic power selection USB 5 V / 1-cell LiPo / Vin 3.6–6 V; LiPo charger with over-charge/over-discharge protection; power switch; 13 GPIO status LEDs; piezo buzzer with mute switch; 2 push buttons; 2 RGB LEDs (Neopixel compatible); 7 Grove ports; CircuitPython preloaded; **4x 4.8 mm mounting holes (LEGO pin compatible), 6x M3 screw holes**; **88 (L) × 64 (W) × 13 (H) mm** [PP].
+- **Description:** motor driver drives 2 brushed DC motors or 1 bipolar/unipolar stepper, 3.6–6 V, up to 1 A per channel continuous; Vmotor for DC and servo follows the input supply; one power source runs board and motors [PP].
+- **Packing list:** 1x Maker Pi RP2040, 4x Grove-to-female header cable, 1x mini screwdriver, 1x silicone rubber feet (4) [PP].
+- **Resources:** GitHub getting started and examples, datasheet, **schematic (Google Drive)**, Maker Pi RP2040 vs Maker Pi Pico table, circuitpython.org page, 3D CAD (cdn.cytron.io), RP2040 documents, Spanish book [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -141,9 +147,7 @@ The Grove table was flattened in the text export but rebuilt unambiguously; the 
 - Whether the buttons have hardware pull-ups (examples rely on the internal pull-up).
 - Motor driver IC part number and LiPo charge current — not stated in any Cytron source read.
 - Battery connector type and VIN terminal type — not stated in text.
-- Package contents — [PP] "Packing List" heading was empty when read; Pimoroni [3P] lists 1x board, 4x Grove to female header cables, 1x mini screwdriver, 1x pack of 4 silicone rubber feet.
 - Arduino board-package details (which core, board name) — only the [DS] VID/PID row and a [PP] pointer to Arduino news; Zephyr also lists a `cytron/maker_pi_rp2040` board [3P].
-- Whether a 3D model / schematic is public (no link found on [PP] text).
 
 ## Sources
 - [DS] MAKER-PI-RP2040 Datasheet, Rev 1.2, January 2022 (public Google Doc, linked from the Cytron GitHub README): https://docs.google.com/document/d/1DJASwxgbattM37V4AIlJVR4pxukq0up25LppA8-z_AY/edit

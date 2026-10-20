@@ -5,7 +5,8 @@
 | Product code | `ROBO-PICO` |
 | Family | Robo series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, packing lists, resources) plus Cytron pinout and dimension images. Pico 2 support, package contents, dimensions, mounting holes and the WS2812 LED part are now Cytron-stated |
 | Primary source | Robo Pico Board Datasheet, "ROBO PICO – Simplifying Robotics with Raspberry Pi Pico / Pico W", Rev 1.0, April 2023 (Google Doc last modified 2025-03-11, still labelled Rev 1.0) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,6 +41,14 @@ Datasheet Table 2 is titled "ROBO-PICO **Absolute Maximum Ratings**" — every r
 | Operating temperature | -20 to 85 ℃ | [DS] |
 
 Table footnotes [DS]: "Voltage for the DC motor and servo is equal to power input voltage." "It's not recommended to connect both LiPo and VIN at the same time. Although it's perfectly safe to do so."
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Host boards:** "Works with Raspberry Pi Pico 2, Pico and Pico W" [PP]. Purchase options: Robo Pico ONLY; + Raspberry Pi Pico 2 SH (pre-soldered headers, by Cytron); + Raspberry Pi Pico H; + Raspberry Pi Pico 2 WH [PP].
+- **Packing (Robo Pico ONLY):** 1x Robo Pico, 4x Grove to female header cable, 1x transparent Phillips screwdriver, 1x silicone rubber feet (pack of 4). Bundles add the Pico board with pre-soldered headers and a 1 m USB micro B cable [PP].
+- **Power:** automatic selection USB 5 V / 1-cell LiPo / Vin 3.6–6 V; built-in 1-cell LiPo/Li-ion charger with over-charge and over-discharge protection; power switch with status LED [PP].
+- **On board:** reset button; 7 Grove ports (digital, analog, I2C, SPI, UART); 1 Maker Port (JST-SH 4-way, Qwiic/STEMMA QT compatible [PP: img]); GPIO breakout (female headers); 13 GPIO status LEDs; 2 RGB LEDs, Neopixel-compatible — the pinout image names them **WS2812** [PP: img]; 2 programmable buttons (GP20, GP21); piezo buzzer (GP22) with mute switch; 2 DC motor terminals with 2 status LEDs and 2 test buttons each; 4 servo ports (GP12–GP15) [PP][PP: img].
+- **Size:** 88 × 72 mm; 4x Ø4.8 mm holes (82 mm apart) and 4x Ø3 mm (M3) holes (80 × 48 mm pattern) [PP: img dimension].
+- Pinout image confirms Grove 7 = GP7 + GP28 (labels GP28, GP7, 3V3, GND) [PP: img].
+- Resources: datasheet (Google Doc), Getting Started Guide using CircuitPython (tutorial + GitHub), 3D CAD, BocoBot 5-in-1 robot set [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -109,7 +118,7 @@ The datasheet Grove table was mangled when read as text. The mapping above was r
 - Servo calibration in examples: CircuitPython `min_pulse=580, max_pulse=2700`; MicroPython duty_u16 2200–8300 at 50 Hz [GH].
 
 ## Compatibility and accessories
-- **Host boards:** Raspberry Pi Pico and Pico W [DS, GH]. Pico 2 / Pico 2 W are not mentioned in any Cytron source read (see *Needs verification*).
+- **Host boards:** Raspberry Pi Pico 2, Pico and Pico W [PP] (datasheet and GitHub mention Pico / Pico W only [DS, GH]). Bundles ship with Pico 2 SH, Pico H or Pico 2 WH [PP].
 - **Grove modules** on 7 Grove ports, 3.3 V supply [DS]. **QWIIC / STEMMA QT** on the Maker Port; Grove via conversion cable [DS].
 - **4 RC servos**, **2 brushed DC motors** [DS].
 - Related Cytron projects: "Build BocoBot Car with Robo Pico", "Build an RC robot car using Pi Pico W and Robo Pico" [PP tutorial page]. Example sensors in [GH]: Maker Line / Maker Soil (analog on Grove 6, GP27).
@@ -130,25 +139,20 @@ The datasheet Grove table was mangled when read as text. The mapping above was r
 | What `throttle = 0` / `None` does | [GH] demo code: 0 = "Brake motors", None = "spin freely" | [DS] truth table: HIGH/HIGH = coast, LOW/LOW = brake; `adafruit_motor` source: 0 → both HIGH, None → both LOW | [DS] wins: on Robo Pico, `throttle = 0` coasts and `None` brakes |
 | MicroPython "Forwards" direction | [GH] MicroPython DC_Motor: "Forwards" = A low, B PWM | [DS]: A Low / B High = Backward | [DS] naming wins |
 | VIN range | [3P] Tom's Hardware: "VIN terminals 3-6V" | [DS]: 3.6–6 V | [DS] wins: 3.6–6 V |
-| Supported Pico boards | [3P] Core Electronics: "Compatible with the Raspberry Pi Pico 2, Pico and Pico W" | [DS] and [GH]: Pico / Pico W only | [DS] wins; Pico 2 is unverified |
+| Supported Pico boards | [PP] and [3P] Core Electronics: "Works with Raspberry Pi Pico 2, Pico and Pico W" | [DS] and [GH]: Pico / Pico W only | Cytron product page adds Pico 2 (newer than the datasheet); state Pico 2 support from [PP] |
 | Datasheet revision | Google Doc modified 2025-03-11 | Cover still says Rev 1.0, April 2023 | Treat as Rev 1.0; ask whether a 2025 edit changed content |
 
 ## Needs verification
 - **Grove pin table** — the datasheet table was mangled in text extraction. The rebuilt mapping matches [GH] demo pin order, but confirm against the datasheet figure (especially Grove 5 = GP6 + GP26 and Grove 7 = GP7 + GP28).
 - Which GPIO is on Grove wire 1 (yellow) and wire 2 (white) for each port; the datasheet lists pins in order but doesn't name wire colours.
-- **Pico 2 / Pico 2 W compatibility** — only [3P] Core Electronics claims Pico 2. Needs [DT] confirmation (RP2350 pin mapping, CircuitPython/MicroPython examples on Pico 2).
 - Whether the Pico must have soldered male headers (implied by the socket [DS]; Tom's Hardware [3P] says headers must be soldered). Pico H fit not confirmed.
 - Motor driver IC: MX1515H per Tom's Hardware [3P] only.
-- Dimensions 88 x 72 mm and mounting holes (4x 4.8 mm + 4x M3 per Core Electronics; "3mm mounting holes" per Tom's Hardware) — [3P] only; datasheet has a dimension figure that could not be read.
 - Battery connector type ("JST" per Core Electronics [3P]) and VIN terminal type ("terminal block" per CNX [3P]).
-- Package contents — [3P] (Core Electronics, RobotShop) list 1x Robo Pico, 4x Grove to Female Header Cable, 1x Transparent Phillips Head Screwdriver, 1x Silicone Rubber Feet (pack of 4). No Cytron source read.
 - Stepper motor support (one bipolar/unipolar stepper per RobotShop / Core Electronics [3P]).
-- NeoPixel part (WS2812B per Tom's Hardware [3P]); count of 2 is from [GH] code only.
 - Where the Grove 3V3 comes from (Pico 3V3 regulator or onboard), and the LiPo charge current — power-tree figure not readable.
 - Whether muting the buzzer frees GP22 for other use.
 - Whether the buttons have on-board pull-ups (examples rely on the RP2040 internal pull-up).
-- Price — only [3P] figures found (Tom's Hardware "$14" / "from $15").
-- Current product page content and status (my.cytron.io and cytron.io product pages could not be fetched).
+- Pico 2 software: which CircuitPython/MicroPython build and examples Cytron tests on Pico 2 (page says it works; no Pico 2 example code read).
 
 ## Sources
 - [GH] https://github.com/CytronTechnologies/Cytron-ROBO-PICO — README, `Demo_Code/circuitpython/code.py`, `Getting_Started_Guide/CircuitPython/*/code.py`, `Getting_Started_Guide/MicroPython/*/main.py`, `Getting_Started_Guide/Arduino/*/*.ino` (read via raw.githubusercontent.com)

@@ -5,7 +5,8 @@
 | Product code | `SHIELD-2AMOTOR` (manual: "SHIELD-2AMOTOR Cytron 2A Motor Driver Shield" [UM]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page independently confirms the manual (L298P, 0.8 A / 2 A, pins 4–7, sign-magnitude or locked anti-phase by jumper) and states the power-source jumper and the VIN vs external voltage ranges |
 | Primary source | "SHIELD-2AMOTOR Cytron 2A Motor Driver Shield User's Manual" — **V1.1, Feb 2015** — public Google Doc: https://docs.google.com/document/d/1EiQAE_9VpDDm4rjZrySAoGjQldJnTk6rJIsUkqCT37w/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -47,6 +48,11 @@ Manual section 3 "Product Specification and Limitations", table **"Absolute Maxi
 | Operating temperature | Not stated | — |
 | Warranty | 12 months; manufacturing defect only; misuse and two-way freight not covered | [UM] |
 | Packing list | 1 x SHIELD-2AMOTOR; 5 x mini jumper | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** L298P; two 5–26 V brushed DC motors at 0.8 A continuous per channel; stacks on UNO, Duemilanove, Leonardo, Mega and CIKU (PIC18F4550); motor-power polarity protection; test buttons per channel; LSS05 socket; PWM on pins 5 and 6, enable on pins 4 and 7 (sign-magnitude); locked anti-phase configurable by jumpers and program; **the shield can be powered from the Arduino or an external source (jumper selects); external supply strongly encouraged** [PP].
+- **Spec list:** logic 5 V from the Arduino; polarity protection on the external motor input; 2 test buttons and 2 LEDs per channel; motor voltage **6.5–12 VDC from VIN**, **5.0–26 VDC from an external source**; 0.8 A continuous (2 A peak) per channel; pins 4, 5, 6, 7 used [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User's Manual (Google Doc), CytronMotorDriver library, tutorials (serial control, LM35 temperature-controlled motor, CIKU + LSS05 line follower, Arduino Edubot, sign-magnitude vs locked anti-phase, stepper motor with this shield), 3D CAD, Fritzing [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM]: A reset button for Arduino main board; B motor connectors; C external power (PWRIN) connector; D PWR LED; E power source selection; F external power (PWRIN) reverse polarity protection circuit; G L298P driver motor IC; H motor control mode selection; I test switch; J LSS05 connector; K Arduino pinout.
@@ -112,10 +118,10 @@ Terminals [UM]: MOTOR1 and MOTOR2 terminal blocks; PWRIN terminal for external p
 
 ## Needs verification
 1. That the 10 s footnote applies to IPEAK (asterisk missing in the table).
-2. Which jumper selects the power source (5 jumpers supplied, 4 used for mode — the 5th presumably for VIN/PWRIN, not stated).
-3. Whether PWRIN also feeds Arduino Vin.
-4. Over-current / thermal protection, dimensions, operating temperature, wire size.
-5. Whether the product currently shipping matches manual V1.1 (Feb 2015); no newer revision found.
+2. Whether PWRIN also feeds Arduino Vin.
+3. Over-current / thermal protection, dimensions, operating temperature, wire size.
+4. Whether the product currently shipping matches manual V1.1 (Feb 2015); no newer revision found.
+5. Which of the 5 mini jumpers selects the power source (page: Arduino VIN or external, "jumper to select"; manual uses 4 for mode).
 
 ## Sources
 - [UM] SHIELD-2AMOTOR Cytron 2A Motor Driver Shield User's Manual, V1.1, Feb 2015 (Google Doc "SHIELD-2AMOTOR User's_Manual"): https://docs.google.com/document/d/1EiQAE_9VpDDm4rjZrySAoGjQldJnTk6rJIsUkqCT37w/view

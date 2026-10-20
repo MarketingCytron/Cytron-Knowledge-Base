@@ -40,21 +40,21 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 | Product | File | Code | Chip | Status | Confidence |
 |---|---|---|---|---|---|
 | Maker ESP32 | [`maker-esp32.md`](maker-esp32.md) | `MAKER-ESP32` | ESP32 (WROOM-32E-N8) | Active, launched Sep 2026 | **High** |
-| Robo ESP32 | [`robo-esp32.md`](robo-esp32.md) | `ROBO-ESP32` | None onboard — hosts a 30-pin NodeMCU ESP32 / Maker ESP32 | Active (Datasheet Rev 1.1, Feb 2026) | **Medium** |
+| Robo ESP32 | [`robo-esp32.md`](robo-esp32.md) | `ROBO-ESP32` | None onboard — hosts a 30-pin NodeMCU ESP32 / Maker ESP32 | Active (Datasheet Rev 1.1, Feb 2026) | **Medium-high** |
 | Maker Feather AIoT S3 | [`maker-feather-aiot-s3.md`](maker-feather-aiot-s3.md) | `MAKER-FEATHER-AIOT-S3` (+`-H`) | ESP32-S3 (WROOM-1-N8R8) | Active | **Medium-high** |
 
 ### Arduino-compatible boards
 
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium** |
-| Maker UNO Plus | [`maker-uno-plus.md`](maker-uno-plus.md) | `MAKER-UNO-PLUS` | ATmega328P + **FT231X** (not CH340) | User's Manual Rev 1.0, Oct 2018 (no datasheet) | **Medium** |
+| Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium-high** |
+| Maker UNO Plus | [`maker-uno-plus.md`](maker-uno-plus.md) | `MAKER-UNO-PLUS` | ATmega328P + **FT231X** (not CH340) | User's Manual Rev 1.0, Oct 2018 (no datasheet) | **Medium-high** |
 | Maker UNO X | [`maker-uno-x.md`](maker-uno-x.md) | `MAKER-UNO-X` | ATmega328P + CH340-family USB chip (page: "CH9340") | Guide book v1.5, Feb 2023 + product page (no datasheet) | **Medium** |
 | Maker Nano | [`maker-nano.md`](maker-nano.md) | `MAKER-NANO` | ATmega328P + **CH340C** | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images | **Medium-high** |
 | Cytron UNO | [`cytron-uno.md`](cytron-uno.md) | `CT-UNO` | ATmega328P + **FT231X** | User's Manual V1.0, Nov 2014 (no datasheet) | **Medium-high** |
 | Cytron UNO Special Edition | [`cytron-uno-se.md`](cytron-uno-se.md) | `CT-UNO-SE` | ATmega328P + **FT231X** (same as CT-UNO) | Product page (CT-UNO + side connectors) + CT-UNO manual | **Medium-high** |
 | Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
-| Maker Nano RP2040 | [`maker-nano-rp2040.md`](maker-nano-rp2040.md) | `MAKER-NANO-RP2040` | RP2040 | Datasheet Rev 1.1, Jul 2024 | **Medium** |
+| Maker Nano RP2040 | [`maker-nano-rp2040.md`](maker-nano-rp2040.md) | `MAKER-NANO-RP2040` | RP2040 | Datasheet Rev 1.1, Jul 2024 | **Medium-high** |
 | Robo Uno Shield | [`robo-uno-shield.md`](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | None — shield for UNO-form-factor boards | Datasheet Rev 1.0, Feb 2025 | **Medium** |
 
 Arduino-board notes for every agent:
@@ -71,10 +71,10 @@ Arduino-board notes for every agent:
 
 | Product | File | Code | Function | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Cytron PS2 Shield | [`shield-ps2.md`](shield-ps2.md) | `SHIELD-PS2` | PS2 controller interface over UART | User's Manual V1.0, Sep 2013 (no datasheet) | **Medium** |
-| Cytron ESP8266 WiFi Shield | [`shield-esp-wifi.md`](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` (Rev 2.0) | ESP-WROOM-02 Wi-Fi over UART + microSD | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) | **Medium** |
+| Cytron PS2 Shield | [`shield-ps2.md`](shield-ps2.md) | `SHIELD-PS2` | PS2 controller interface over UART | User's Manual V1.0, Sep 2013 (no datasheet) | **Medium-high** |
+| Cytron ESP8266 WiFi Shield | [`shield-esp-wifi.md`](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` (Rev 2.0) | ESP-WROOM-02 Wi-Fi over UART + microSD | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) | **Medium-high** |
 | LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
-| 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium** |
+| 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium-high** |
 | Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 + product photos | **Medium** |
 | Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Product page only | **Medium-low** |
 
@@ -104,12 +104,12 @@ Arduino-kit notes for every agent:
 
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Robo Pico | [`robo-pico.md`](robo-pico.md) | `ROBO-PICO` | None onboard — hosts a Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Apr 2023 | **Medium** |
+| Robo Pico | [`robo-pico.md`](robo-pico.md) | `ROBO-PICO` | None onboard — hosts a Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Apr 2023 | **Medium-high** |
 | EDU PICO V2 | [`edu-pico-v2.md`](edu-pico-v2.md) | `EDU-PICO2` (`EDU-PICO2-NB` = no Pico) | Raspberry Pi Pico 2 W | Datasheet Rev 1.1, Jun 2026 | **Medium** |
 | Maker Pi RP2040 | [`maker-pi-rp2040.md`](maker-pi-rp2040.md) | `MAKER-PI-RP2040` | RP2040 soldered on (no Pico socket) | Datasheet Rev 1.2, Jan 2022 | **Medium-high** |
 | Maker Pi Pico | [`maker-pi-pico.md`](maker-pi-pico.md) | `MAKER-PI-PICO` (`MAKER-PI-PICO-NB` = Maker Pi Pico Base, no Pico) | Raspberry Pi Pico soldered on | Datasheet Rev 1.2, Mar 2021 | **Medium-high** |
 | Maker Pi Pico Mini | [`maker-pi-pico-mini.md`](maker-pi-pico-mini.md) | `MAKER-PI-PICO-MINI` (`-NB` = socket, no Pico) | Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Jun 2022 | **Medium-high** |
-| MOTION 2350 Pro | [`motion-2350-pro.md`](motion-2350-pro.md) | Not stated (mirrors use `MOTION-2350-PRO`) | RP2350 | Datasheet **Rev 2.0, Sep 2025** | **Medium** |
+| MOTION 2350 Pro | [`motion-2350-pro.md`](motion-2350-pro.md) | Not stated (mirrors use `MOTION-2350-PRO`) | RP2350 | Datasheet **Rev 2.0, Sep 2025** | **Medium-high** |
 
 Pico / RP2040 / RP2350 notes for every agent:
 - **MOTION 2350 Pro Rev 2.0 motors are 5 A continuous / 10 A peak per channel**, with over-current, 150 ℃ thermal and >18 V input shutdown. 3 A (and "no over-current protection") is the Rev 1.0 board — don't use 3 A for the current board. Motors GP8–GP15, servos GP0–GP7, buttons GP20/GP21, buzzer GP22, 2 RGB LEDs GP23; Arduino `LED_BUILTIN` = GP2 (a servo pin). Never publish the datasheet's "VIN = VADC / 6.1" until the design team confirms it.
@@ -121,7 +121,7 @@ Pico / RP2040 / RP2350 notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | Board + parts bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium** |
+| Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | Board + parts bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium-high** |
 
 - **Maker Nano RP2040 + Grove WiFi 8266:** power the Grove WiFi from 5 V, not 3.3 V (the Blynk doc says 3.3 V is not enough). The Blynk doc's sample code carries a template ID — never copy it. Board facts live in `maker-nano-rp2040.md`.
 
@@ -129,10 +129,10 @@ Pico / RP2040 / RP2350 notes for every agent:
 
 | Product | File | Code | Role | Primary source | Confidence |
 |---|---|---|---|---|---|
-| MOTION:BIT | [`motion-bit.md`](motion-bit.md) | `MOTION-BIT` | Motor + servo expansion board, 3.6–6 V | Datasheet Rev 1.0, Feb 2023 | **Medium** |
-| MOTION:BIT Pro | [`motion-bit-pro.md`](motion-bit-pro.md) | `MOTION-BIT-PRO` | Motor + servo expansion board, 7–12 V | Datasheet Rev 1.0, Apr 2024 | **Medium** |
-| SUMO:BIT | [`sumo-bit.md`](sumo-bit.md) | Not stated | Sumo robot controller; needs 2× MD13S | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) | **Medium** |
-| REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium** |
+| MOTION:BIT | [`motion-bit.md`](motion-bit.md) | `MOTION-BIT` | Motor + servo expansion board, 3.6–6 V | Datasheet Rev 1.0, Feb 2023 | **Medium-high** |
+| MOTION:BIT Pro | [`motion-bit-pro.md`](motion-bit-pro.md) | `MOTION-BIT-PRO` | Motor + servo expansion board, 7–12 V | Datasheet Rev 1.0, Apr 2024 | **Medium-high** |
+| SUMO:BIT | [`sumo-bit.md`](sumo-bit.md) | Not stated | Sumo robot controller; needs 2× MD13S | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) | **Medium-high** |
+| REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium-high** |
 | ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
 | Grove WiFi 8266 | [`grove-wifi-8266.md`](grove-wifi-8266.md) | `GRV-WIFI-8266` | ESP8266 Wi-Fi Grove module (ESP-AT), 3.3 V logic | Datasheet Rev 1.0, Aug 2021 | **Medium-high** |
 | EDU:BIT | [`edu-bit.md`](edu-bit.md) | `V-EDUBIT` (board `EDUBIT`) | micro:bit training board with break-off modules, 3 servo + 2 DC motor ports, 10+1 game lessons | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no electrical datasheet) | **Medium** |
@@ -171,7 +171,7 @@ micro:bit kit notes for every agent:
 | Product | File | Code | Chip | Status | Confidence |
 |---|---|---|---|---|---|
 | Maker Mini Sumo Controller | [`maker-mini-sumo.md`](maker-mini-sumo.md) | `MAKER-MSUMO` | ATmega328P | Active (Datasheet Rev 1.0, Nov 2019) | **Medium-high** |
-| URC10 ("Sumo Robot Controller R1.1" on my.cytron.io) | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium** |
+| URC10 ("Sumo Robot Controller R1.1" on my.cytron.io) | [`urc10.md`](urc10.md) | `URC10` | Not stated by Cytron | Datasheet Rev 1.0, Mar 2019 + User's Manual V1.2, Apr 2019 | **Medium-high** |
 | IR Sumo Start | [`ir-sumo-start.md`](ir-sumo-start.md) | `IR-SUMO-START` | — (IR start module) | Datasheet Rev 1.0, Apr 2025 | **Medium-high** |
 
 ### Servo, RC, interface and breakout boards
@@ -189,7 +189,7 @@ micro:bit kit notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| Ikedo Mini Sumo Robot V2 | [`ikedo-mini-sumo-v2.md`](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Maker Mini Sumo + 5 Maker Object + 2 edge sensors, 600 rpm, ~200 g | Ikedo Bot V2 Getting Started Instruction | **Medium** |
+| Ikedo Mini Sumo Robot V2 | [`ikedo-mini-sumo-v2.md`](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Maker Mini Sumo + 5 Maker Object + 2 edge sensors, 600 rpm, ~200 g | Ikedo Bot V2 Getting Started Instruction | **Medium-high** |
 | Ikedo Mini Sumo Robot Pro Bundle | [`ikedo-mini-sumo-pro.md`](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Pro: 800 rpm 3.1 kg·cm, steel shield, razor blade, 350 g | Product page | **Medium** |
 | 1KG Sumo Robot Bundles (RC) | [`sumo-1kg-rc-bundle.md`](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | MDDRC10 RC sumo, no code, 580 rpm 3.5 kgf·cm, 856 g | Product page (user-guide tutorials blocked) | **Medium** |
 | PCB Plate for Sumo Robot | [`pcb-sumo-plate.md`](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Training blade substitute, 15 cm (1 kg) / 10 cm (500 g) | Product page | **Medium-high** |
@@ -203,11 +203,11 @@ micro:bit kit notes for every agent:
 | Maker Line | [`maker-line.md`](maker-line.md) | `MAKER-LINE` | 5 digital (high = line) + 1 analog; 3.0–5.5 V | Datasheet Rev 1.0, Jul 2019 | **Medium-high** |
 | Maker Object | [`maker-object.md`](maker-object.md) | `MAKER-OBJECT` | IR object sensor, digital **active LOW**; 4.5–5.5 V | Datasheet Rev 1.0, Dec 2019 | **Medium-high** |
 | Maker Reflect | [`maker-reflect.md`](maker-reflect.md) | `MAKER-REFLECT` (page variant `V-MAKER-REFLECT`) | Analog IR reflectance, 3.0–5.5 V, 1–40 mm | Datasheet Rev 1.0, Nov 2019 | **Medium-high** |
-| Maker Reflect S | [`maker-reflect-s.md`](maker-reflect-s.md) | `MAKER-REFLECT-S` | IR reflectance, **5 V only**, 25 mA, optimal 3 mm | Datasheet Rev 1.0, Feb 2026 | **Medium** |
+| Maker Reflect S | [`maker-reflect-s.md`](maker-reflect-s.md) | `MAKER-REFLECT-S` | IR reflectance, **5 V only**, 25 mA, optimal 3 mm | Datasheet Rev 1.0, Feb 2026 | **Medium-high** |
 | Maker Soil Moisture Sensor | [`maker-soil-moisture.md`](maker-soil-moisture.md) | `MAKER-SOIL-MOISTURE` | Capacitive soil moisture, analog OUT 1.0–5.2 V + DIS pin | Datasheet Rev 1.0, Jan 2022 | **Medium-high** |
 | MCP9700 Temperature Sensor | [`mcp9700-temperature-sensor.md`](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Analog temperature, 10 mV/°C with 500 mV offset at 0 °C | Datasheet Rev 1.0, Aug 2023 | **Medium-high** |
 | LSA08 Line Sensor | [`lsa08.md`](lsa08.md) | `LSA08` | 8-sensor auto-calibrating line sensor bar; analog / digital / UART | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) | **Medium-high** |
-| RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium** |
+| RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium-high** |
 | 50A Current Sensor | [`bb-acs756.md`](bb-acs756.md) | `BB-ACS756` | Allegro ACS756 ±50 A breakout, 40 mV/A, 5 V | Product page + Cytron schematic + Allegro [VEN] | **Medium** |
 | RGB LED Stick | [`rgb-led-stick.md`](rgb-led-stick.md) | `BCY-NEO-STICK-8` | 8× SK6812 (WS2812B-compatible) chainable stick | Product page + tutorial | **Medium** |
 | 3-Axis Accelerometer | [`sn-adxl335-cy.md`](sn-adxl335-cy.md) | `SN-ADXL335-CY` | ADXL335 ±3 g breakout, 2.5–6 V (on-board 3.3 V reg), 50 Hz | Product page + ADI [VEN] | **Medium** |
@@ -240,27 +240,27 @@ Sensor notes for every agent:
 | Product | File | Code | Rating (per datasheet) | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Maker Drive | [`maker-drive.md`](maker-drive.md) | `MAKER-DRIVE` | 2 ch, 2.5–9.5 V, 1 A cont / 1.5 A peak (<5 s) | Datasheet Rev 1.0, Feb 2019 | **Medium-high** |
-| MDD3A | [`mdd3a.md`](mdd3a.md) | `MDD3A` | 2 ch, 4–16 V, 3 A cont / 5 A peak (<5 s) | Datasheet Rev 1.0, Mar 2019 | **Medium** |
+| MDD3A | [`mdd3a.md`](mdd3a.md) | `MDD3A` | 2 ch, 4–16 V, 3 A cont / 5 A peak (<5 s) | Datasheet Rev 1.0, Mar 2019 | **Medium-high** |
 | MD10C | [`md10c.md`](md10c.md) | `MD10C` (Rev 3.0) | 1 ch, 5–30 V, 13 A cont / 30 A peak (≤10 s) | User's Manual Rev3.0 V1.0, Aug 2018 (no datasheet) | **Medium** |
-| MD13S | [`md13s.md`](md13s.md) | `MD13S` | 1 ch, 13 A, current limit 30 A; logic ≤5.5 V | User's Manual V1.1, Jun 2018 (no datasheet) | **Medium** |
+| MD13S | [`md13s.md`](md13s.md) | `MD13S` | 1 ch, 13 A, current limit 30 A; logic ≤5.5 V | User's Manual V1.1, Jun 2018 (no datasheet) | **Medium-high** |
 | MD20A | [`md20a.md`](md20a.md) | `MD20A` | 1 ch, 6–30 V, 20 A cont / 60 A peak (current-limited, no duration); logic 1.5–15 V | Datasheet Rev 1.0, Feb 2019 | **Medium-high** |
 | MDD10A | [`mdd10a.md`](mdd10a.md) | `MDD10A` (Rev 2.0) | 2 ch, 5–30 V, 10 A cont / 30 A peak (≤10 s) per ch | User's Manual V2.0, Jun 2017 (no datasheet) | **Medium-high** |
 | MDD20A | [`mdd20a.md`](mdd20a.md) | `MDD20A` | 2 ch, 6–30 V, 20 A cont / 60 A peak (current-limited) per ch | Datasheet Rev 1.0, Jul 2020 | **Medium-high** |
 | MD25HV | [`md25hv.md`](md25hv.md) | `MD25HV` | 1 ch, 7–58 V, 25 A cont / 60 A peak (current-limited); no locked-antiphase | Datasheet Rev 1.0, Jan 2019 | **Medium-high** |
-| MDDS10 SmartDriveDuo-10 | [`mdds10.md`](mdds10.md) | `MDDS10` | 2 ch, 10 A cont / 30 A peak (≤1 s) | User's Manual V1.0, Jun 2015 (no datasheet) | **Medium** |
+| MDDS10 SmartDriveDuo-10 | [`mdds10.md`](mdds10.md) | `MDDS10` | 2 ch, 10 A cont / 30 A peak (≤1 s) | User's Manual V1.0, Jun 2015 (no datasheet) | **Medium-high** |
 | MDDS30 SmartDriveDuo-30 | [`mdds30.md`](mdds30.md) | `MDDS30` | 2 ch, 7–35 V, 30 A cont / 80 A peak (≤1 s) per ch | User's Manual Rev 1.2, Sep 2023 (no datasheet) | **Medium-high** |
-| MDDS60 SmartDriveDuo-60 | [`mdds60.md`](mdds60.md) | `MDDS60` | 2 ch, 10–45 V, 60 A cont / 100 A peak (≤1 s) per ch | User's Manual Rev 1.1, Jul 2019 (no datasheet) | **Medium** |
+| MDDS60 SmartDriveDuo-60 | [`mdds60.md`](mdds60.md) | `MDDS60` | 2 ch, 10–45 V, 60 A cont / 100 A peak (≤1 s) per ch | User's Manual Rev 1.1, Jul 2019 (no datasheet) | **Medium-high** |
 | Enhanced SmartDrive40 | [`smartdrive40.md`](smartdrive40.md) | `MDS40B` | **1 ch**, 40 A cont / 80 A peak (≤1 s) | User's Manual Rev 1.1, Jul 2023 (no datasheet) | **Medium-high** |
 | MDDRC5 | [`mddrc5.md`](mddrc5.md) | `MDDRC5` | 2 ch R/C, 7–30 V, 5 A cont / 20 A peak (<1 s) per ch | Datasheet Rev 1.0, Mar 2026 | **Medium-high** |
 | MDDRC10 | [`mddrc10.md`](mddrc10.md) | `MDDRC10` | 2 ch R/C, 7–30 V, 10 A cont / 30 A peak (current-limited) per ch | Datasheet Rev 1.0, Aug 2020 | **Medium-high** |
 | iMD16 | [`imd16.md`](imd16.md) | `IMD16` | 1 ch, 16 A cont / 30 A peak (<10 s), no current limit | Datasheet Rev 1.0, Apr 2026 | **Medium-high** |
-| SHIELD-2AMOTOR | [`shield-2amotor.md`](shield-2amotor.md) | `SHIELD-2AMOTOR` | 2 ch Arduino shield, 5–26 V, **0.8 A cont** / 2 A peak | User's Manual V1.1, Feb 2015 | **Medium** |
-| SHIELD-3AMOTOR | [`shield-3amotor.md`](shield-3amotor.md) | `SHIELD-3AMOTOR` | 2 ch Arduino shield, 7–30 V, **1.2 A cont** / 3 A peak (≤1 s) | User's Manual Rev 1.0, Apr 2017 | **Medium** |
+| SHIELD-2AMOTOR | [`shield-2amotor.md`](shield-2amotor.md) | `SHIELD-2AMOTOR` | 2 ch Arduino shield, 5–26 V, **0.8 A cont** / 2 A peak | User's Manual V1.1, Feb 2015 | **Medium-high** |
+| SHIELD-3AMOTOR | [`shield-3amotor.md`](shield-3amotor.md) | `SHIELD-3AMOTOR` | 2 ch Arduino shield, 7–30 V, **1.2 A cont** / 3 A peak (≤1 s) | User's Manual Rev 1.0, Apr 2017 | **Medium-high** |
 | FD04A | [`fd04a.md`](fd04a.md) | `FD04A` (Rev 2.0) | **4 ch**, 7–15 V, 1.5 A cont / 2.5 A peak, L298P | User's Manual V1.2, Jun 2025 | **Medium** |
-| MD10-POT | [`md10-pot.md`](md10-pot.md) | `MD10-POT` | 1 ch, 7–30 V, 10 A / 30 A peak (<10 s); pot + switch or PWM/DIR | Datasheet Rev 1.0, Oct 2018 | **Medium** |
+| MD10-POT | [`md10-pot.md`](md10-pot.md) | `MD10-POT` | 1 ch, 7–30 V, 10 A / 30 A peak (<10 s); pot + switch or PWM/DIR | Datasheet Rev 1.0, Oct 2018 | **Medium-high** |
 | SHIELD-MD10 | [`shield-md10.md`](shield-md10.md) | `SHIELD-MD10` (Rev 2.0, "R2") | 1 ch Arduino shield, 7–30 V (abs-max table says 25 V), 15 A peak (10 s) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 | **Medium** |
 | SHIELD-MDD10 | [`shield-mdd10.md`](shield-mdd10.md) | `SHIELD-MDD10` | 2 ch Arduino shield, 7–30 V, 10 A / 30 A over-current limit (temperature-dependent) | Datasheet Rev 1.0, May 2019 | **Medium** |
-| HAT-MDD10 | [`hat-mdd10.md`](hat-mdd10.md) | `HAT-MDD10` | 2 ch Raspberry Pi HAT, 6–24 V, 10 A / 30 A (10 s) | User's Manual V1.0, Mar 2017 | **Medium** |
+| HAT-MDD10 | [`hat-mdd10.md`](hat-mdd10.md) | `HAT-MDD10` | 2 ch Raspberry Pi HAT, 6–24 V, 10 A / 30 A (10 s) | User's Manual V1.0, Mar 2017 | **Medium-high** |
 | MD30C | [`md30c.md`](md30c.md) | `MD30C` (Rev 2.0) | 1 ch, 5–30 V, 30 A cont / 80 A peak (≤1 s) | User's Manual V1.4, Dec 2017 (no datasheet) | **Medium-high** |
 | MDS160A SmartDrive160 | [`mds160a.md`](mds160a.md) | `MDS160A` | 1 ch, 8–28 V, 160 A cont / 175 A (2 min) / 190 A (1 min) | User's Manual V1.0, Aug 2014 (no datasheet) | **Medium-high** |
 
@@ -283,7 +283,7 @@ Motor-driver notes for every agent:
 | Product | File | Code | For | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Industrial IO HAT+ | [`industrial-io-hat-plus.md`](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi 5 only | Datasheet Rev 1.0, Sep 2025 | **Medium-high** |
-| Maker pHAT | [`maker-phat.md`](maker-phat.md) | `HAT-MAKER` | Raspberry Pi 3B/3B+, Zero/W/WH (manual) | User's Manual Rev 1.10, Feb 2019 (no datasheet) | **Medium** |
+| Maker pHAT | [`maker-phat.md`](maker-phat.md) | `HAT-MAKER` | Raspberry Pi 3B/3B+, Zero/W/WH (manual) | User's Manual Rev 1.10, Feb 2019 (no datasheet) | **Medium-high** |
 | Maker Hat Base | [`maker-hat-base.md`](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi 400 (page also shows Pi 3/4) | Datasheet Rev 1.0, Sep 2021 | **Medium-high** |
 | CM4 Maker Board | [`cm4-maker-board.md`](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi CM4 (product page title now says CM4/CM5) | Datasheet Rev 1.2, Oct 2023 | **Medium** |
 
@@ -298,7 +298,7 @@ Raspberry Pi board notes for every agent:
 |---|---|---|---|---|---|
 | 27W PD USB-C PSU | [`usbc-psu-27w-pd.md`](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | PD adapter 5.1 V 5 A / 9 V 3 A / 12 V 2.25 A / 15 V 1.8 A; UK/EU/US plug | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
 | 17.5W USB-C PSU | [`usbc-psu-17w5.md`](usbc-psu-17w5.md) | `V-AD-5V3P5A` | 5 V 3.5 A fixed, no PD; 20 AWG 1.5 m cable | Datasheet Rev 2.0, Oct 2024 | **Medium-high** |
-| 18650 Li-Ion 2200 mAh | [`li-ion-18650-2200.md`](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Button-top cell, no protection circuit, 1-week warranty | Product page + PKCELL vendor sheet (2019) | **Medium** |
+| 18650 Li-Ion 2200 mAh | [`li-ion-18650-2200.md`](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Button-top cell, no protection circuit, 1-week warranty | Product page + PKCELL vendor sheet (2019) | **Medium-high** |
 | Cooling Fan for RPi 30 mm | [`rpi-cooling-fan-30mm.md`](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | 3–5 V 0.2 A two-wire fan, 30×30×8 mm | Product page | **Medium** |
 
 - **PSU notes:** the 27W unit's 5 V profile is 5 A (5.1 V typ.); the 17.5W unit has no PD and was designed for Pi 4 B (Pi 5 appears only on the page list). **18650:** max discharge 1C ≈ 2.2 A per Cytron (vendor says 1.5C); cannot ship to Sabah/Sarawak/overseas; never treat it as an AA.
@@ -318,8 +318,8 @@ Raspberry Pi board notes for every agent:
 |---|---|---|---|---|---|
 | IRIV PiControl CM4 | [`iriv-picontrol-cm4.md`](iriv-picontrol-cm4.md) | `IRIV-PICL` | Raspberry Pi CM4 (BCM2711) | **Datasheet Rev 1.2, Nov 2025** (CM4/CM5) + User Manual Rev 1.3, Nov 2025 | **Medium-high** |
 | IRIV PiControl CM5 | [`iriv-picontrol-cm5.md`](iriv-picontrol-cm5.md) | `IRIV-PICL5` | Raspberry Pi CM5 (BCM2712) | **Datasheet Rev 1.2, Nov 2025** (CM4/CM5) + User Manual Rev 1.5, Jan 2026 | **Medium** |
-| IRIV IO Controller | [`iriv-io-controller.md`](iriv-io-controller.md) | `IRIV-IOC` | Raspberry Pi RP2350A (microcontroller, no Linux) | Datasheet Rev 1.0, Jul 2024 | **Medium** |
-| IRIV IOC MQTT Gateway | [`iriv-ioc-mqtt-gateway.md`](iriv-ioc-mqtt-gateway.md) | `IRIV-IOC-MQTT` | Same hardware as IO Controller + factory MQTT firmware | Datasheet Rev 1.0, Jun 2026 | **Medium** |
+| IRIV IO Controller | [`iriv-io-controller.md`](iriv-io-controller.md) | `IRIV-IOC` | Raspberry Pi RP2350A (microcontroller, no Linux) | Datasheet Rev 1.0, Jul 2024 | **Medium-high** |
+| IRIV IOC MQTT Gateway | [`iriv-ioc-mqtt-gateway.md`](iriv-ioc-mqtt-gateway.md) | `IRIV-IOC-MQTT` | Same hardware as IO Controller + factory MQTT firmware | Datasheet Rev 1.0, Jun 2026 | **Medium-high** |
 | IRIV SmartHub CM5 | [`iriv-smarthub-cm5.md`](iriv-smarthub-cm5.md) | `IRIV-SH5` | Raspberry Pi CM5 (BCM2712) | User Manual Rev 1.3, Dec 2025 | **Medium-high** |
 | IRIV EdgeAI CM5 | [`iriv-edgeai-cm5.md`](iriv-edgeai-cm5.md) | `IRIV-EDGEAI-CM5` | Raspberry Pi CM5 (BCM2712) + AI HAT+ | Datasheet Rev 1.0, Jul 2025 | **Medium-high** |
 | IRIV EdgeAI Safety Box Kit | [`iriv-edgeai-safety-box-kit.md`](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV EdgeAI CM5 (8GB/32GB) + Hailo-8 26 TOPS | **No kit datasheet exists.** Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 | **Medium** |
@@ -341,7 +341,7 @@ IRIV notes for every agent:
 |---|---|---|---|---|---|
 | AI Agent Workshop for RPI 5 | [`ai-agent-workshop-rpi5.md`](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | 2-day AgentBox (Pi 5 local AI agent hub) workshop + kit | Course outline (no date) + product page | **Medium** |
 | Jetson Orin Nano AI Fundamentals Workshop | [`jetson-orin-nano-workshop.md`](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | 1-day workshop, NVIDIA certification; kit = Orin Nano Super 8GB + 512 GB JetPack SSD | Tentative timetable + product page | **Medium** |
-| Cytron Raspbot Workshop | [`raspbot-workshop.md`](raspbot-workshop.md) | `V-TRAINING-AI` | 1-day Edge AI workshop with Raspbot (Pi 5), max 5 pax, HQ Penang | Workshop tentative + product page | **Medium** |
+| Cytron Raspbot Workshop | [`raspbot-workshop.md`](raspbot-workshop.md) | `V-TRAINING-AI` | 1-day Edge AI workshop with Raspbot (Pi 5), max 5 pax, HQ Penang | Workshop tentative + product page | **Medium-high** |
 | Flash JetPack / Orin Nano Upgrade Service | [`jetpack-flash-service.md`](jetpack-flash-service.md) | `SEV-JN-ORNN` | Software-only JetPack 5.x → 6.x flash, RM150 by enquiry | Product page | **Medium** |
 
 - **Workshop dates are purchase variants and expire** — re-check the page before quoting one; several listed dates had passed on 2026-10-19. Only the Raspbot workshop states a participant cap, meals and a certificate.

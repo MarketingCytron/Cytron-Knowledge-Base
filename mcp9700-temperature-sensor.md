@@ -5,7 +5,8 @@
 | Product code | `BCY-TEMP-MCP9700` (datasheet title [DS]; product page [PP]; Switch Science lists "CYTRON-BCY-TEMP-MCP9700" [3P]) |
 | Family | Sensors and modules |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page read directly; header type and 3.3/5 V host compatibility (incl. micro:bit) are now Cytron-stated |
 | Primary source | **BCY-TEMP-MCP9700 Linear Temperature Sensor Datasheet, Rev 1.0, August 2023** (public Google Doc linked from the product page): https://docs.google.com/document/d/1Yg4krOVZN__Q0NPKvb4om0IJVZMJksBEIjuhJPlcBTM/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -37,6 +38,10 @@ Every row of the datasheet "2. SPECIFICATIONS" table (Table 2, which the datashe
 | Dimensions | Datasheet section "4. DIMENSION" is a drawing only (Figure 3); no values in the text | [DS] |
 | Operating temperature of the board | Not stated separately from the sensing range | [DS] |
 | Weight | Not stated | [DS] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Description:** designed and manufactured by Cytron; MCP9700 IC; works with 3.3 V and 5 V systems — NodeMCU, ESP32, micro:bit, Raspberry Pi, Arduino; −40 to 150 °C; 2.3–5.5 V; any system that reads an analog voltage [PP].
+- **Features list:** **3-pin male header** (breadboard / jumper friendly); linear sensor with analog output; 10 mV/°C; 2.3–5.5 V; −40 to 150 °C; 6 µA typical [PP].
+- **Packing list:** 1x sensor [PP]. **Resources:** datasheet, Cytron GitHub examples, 3D CAD [PP]. Pinout and dimension images on the page — not read.
 
 ## Interfaces, terminals and pin mapping
 - **Pins (Table 1)** [DS]:
@@ -103,9 +108,7 @@ No numeric disagreement was found between the datasheet, the product page facts 
 - **Dimensions.** Datasheet Figure 3 is a drawing only; no values readable as text. Confirm from the drawing or the 3D CAD folder.
 - **Pin order** (GND / VCC / OUT left-to-right) and **connector type** ("3 pin headers" [3P] Switch Science; whether supplied soldered) — only in the datasheet figures.
 - **Reverse-polarity protection** and any on-board decoupling capacitor — not stated.
-- **Price elsewhere.** Switch Science ¥341 incl. tax and "MSRP USD 1.85" [3P]; Cytron price RM7.77 [PP].
-- **micro:bit / MakeCode support** — not stated by any Cytron source.
-- Product page text beyond the facts the coordinator supplied (page not read here).
+- micro:bit use: the page lists micro:bit as compatible (analog read); no MakeCode extension or example is linked.
 
 ## Sources
 - [DS] BCY-TEMP-MCP9700 Linear Temperature Sensor Datasheet, Rev 1.0, August 2023 (public Google Doc) — https://docs.google.com/document/d/1Yg4krOVZN__Q0NPKvb4om0IJVZMJksBEIjuhJPlcBTM/edit

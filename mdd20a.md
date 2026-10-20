@@ -5,7 +5,8 @@
 | Product code | `MDD20A` (datasheet title [DS]; quick start guide "PM-QS-MDD20A" ; GitHub library list [GH]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Page matches the datasheet and the earlier www.cytron.io read; price, stock and the reverse-voltage warning confirmed |
 | Primary source | "MDD20A 20Amp 6V-30V DC Motor Driver (2 Channels) Datasheet" — **Rev 1.0, July 2020** — public PDF mirror of the Cytron document: https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -46,6 +47,8 @@ Datasheet section 2, **"Table 2: Absolute Maximum Ratings"** (columns No / Param
 | Heatsink / fan | Not stated | — |
 | Warranty | 12 months | [PP] |
 | Packing list | 1 x 20Amp 6V-30V DC Motor Driver (2 Channels); 4 x PCB Spacer | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: discrete NMOS H-bridge, 20 A per channel without heatsink (Cytron thermal-camera tested rating); 6–30 V; 20 A continuous, 60 A peak; 1.8/3.3/5/12 V logic; PWM up to 20 kHz; sign-magnitude and locked-antiphase; overcurrent limiting, temperature protection, undervoltage shutdown; weight 89 g; "Power input does not have reverse-voltage protection"; packing 1x MDD20A, 4x PCB spacer; resources datasheet, sample code, CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 Datasheet "Table 1: Board Functions" [DS]:
@@ -132,7 +135,6 @@ Truth table, "Table 3", each channel x [DS] (identical in quick start guide R123
 7. Behaviour with switching power supplies / regenerative current (not covered by MDD20A sources; the MD25HV datasheet does cover it, but that is a different product).
 8. Operating temperature range, heatsink/fan requirement, terminal wire size.
 9. Hardware revisions after Rev 1.0 (July 2020) — none documented.
-11. Single-unit price: [PP] shows only volume tiers ($33.25 at 5+, $31.50 at 20+, $29.75 at 50+); currency shown only as "$".
 
 ## Sources
 - [DS] MDD20A Datasheet Rev 1.0, July 2020 (public Cytron PDF mirror): https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf

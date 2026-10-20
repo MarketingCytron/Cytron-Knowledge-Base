@@ -28,6 +28,8 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - Warranty: 6 months (Rev3.0 user manual, Dec 2018); 12 months (product page, 2026-10-16)
 - Revision history: Rev1.0 (2008) USB-A plug, 5 V only, 4-way 2510 pin header, 5V max 200 mA; Rev2.0 (2012) Mini USB, Vsel solder jumper, 4-way 2510 connector plus 6-way socket, 5V max 250 mA, 3.3V max 50 mA, 3.9 cm x 2 cm; Rev3.0 (current) Micro-B, slide switch, 6-way socket plus JP4/JP6, no 2510 connector
 - Baud rate range, VCC output current (Rev3.0), supply current, operating temperature: [NOT STATED]
+- Rev3.0 since June 2016; 3.3 V regulator 500 mA max (product page)
+- Size 45.2 × 21.3 × 4.2 mm (product page)
 
 ## Interfaces and compatibility
 - Host: PC USB port (Micro-B cable)
@@ -60,7 +62,7 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - "USB plug and play, direct interface with microcontroller and it provides 5V power supply from USB port" (user manual)
 
 ## Price band
-RM43.05 (Cytron product page, read 2026-10-16)
+RM43.05 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-uc00a-ftdi-usb-to-uart-converter

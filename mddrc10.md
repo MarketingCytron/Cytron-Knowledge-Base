@@ -5,7 +5,8 @@
 | Product code | `MDDRC10` (datasheet title page [DS], product page "Product Code" [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. In stock on my.cytron.io; the discrete NMOS H-bridge, 5 V/500 mA BEC, auto-calibration and the public datasheet link are now Cytron-stated |
 | Primary source | MDDRC10 Datasheet — "10Amp 7V-30V DC Motor Driver for R/C (2 Channels)" — **Rev 1.0, August 2020** (Cytron PDF, public mirror): https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -36,11 +37,16 @@ Datasheet Table 2 is titled **"MDDRC10 Absolute Maximum Ratings"** [DS].
 | Dimensions | Figure 2 only (not readable); product page "Dimensions" also image-only | [DS][PP] |
 | Packing list | 1 × 10Amp 7V-30V DC Motor Driver for R/C (2 Channels); 2 × 2561 3-way connector extension wire; 4 × PCB Spacer | [PP] |
 | Warranty | 12 months | [PP] |
-| Price (product page) | $39.00 ex tax; 5 or more $37.05; 20 or more $35.10; 50 or more $31.20 (www.cytron.io, read 2026-10-16, Out of Stock) | [PP] |
+| Price (product page) | RM180.18, availability 193 (my.cytron.io, read 2026-10-19); www.cytron.io: $39.00 ex tax, Out of Stock on 2026-10-16 | [PP] |
 | Operating temperature | Not stated | — |
 | Weight | Not stated | — |
 | Terminal type / wire size | Not stated | — |
 | Neutral (centre) pulse width | Not stated — captured automatically at power-up | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** plug-and-play from an RC receiver, no coding; mixed mode for differential drive from throttle + steering; onboard 5 V switching regulator powers the receiver (no separate BEC); **discrete NMOS H-bridge**, 10 A per channel without heatsink; test buttons and LEDs; overcurrent limiting with temperature-dependent threshold; "Power input does not have reverse-voltage protection"; applications: RC lawn mower, combat robot, sumo robot, RC toy [PP].
+- **Features:** **auto calibration upon power up**; selectable mixed or independent mode; 7–30 V; 10 A continuous, 30 A peak; **5 V regulator 500 mA max**; 20 kHz motor PWM; overcurrent protection, temperature protection, undervoltage shutdown [PP].
+- **Packing list:** 1x MDDRC10, 2x 2561 3-way extension wire, 4x PCB spacer [PP].
+- **Resources:** datasheet (public Google Doc), CAD [PP]. Dimension image only.
 
 ## Interfaces, terminals and pin mapping
 Board functions (datasheet Table 1) [DS]:
@@ -143,9 +149,8 @@ No numeric conflicts were found between the datasheet and the product page.
 - Brake vs coast at neutral; regenerative braking.
 - Numeric undervoltage and overvoltage thresholds.
 - Operating temperature, weight, terminal type and wire size.
-- "Discrete NMOS H-Bridge design" — stated only by a reseller (Robokits India) [3P].
-- Location of the original Cytron Google Doc datasheet and whether a newer revision exists.
 - Exact column placement of the 20 KHz PWM value in Table 2 (text extraction ambiguous).
+- What "auto calibration upon power up" calibrates (neutral point?) and whether the sticks must be centred at power-up.
 
 ## Sources
 - [DS] MDDRC10 Datasheet, "10Amp 7V-30V DC Motor Driver for R/C (2 Channels)", Rev 1.0, August 2020 — public mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf

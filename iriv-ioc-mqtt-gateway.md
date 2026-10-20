@@ -4,7 +4,8 @@
 |---|---|
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read and the six-part Cytron tutorial series (Asri Ruslan, 16–23 Jun 2026) read in full. On-sale status, setup over USB, topic structure, QoS/retain, DO control, Modbus master features and the firmware-update method are now Cytron-stated. Default login printed in the tutorials is deliberately not copied |
 | Primary source | *IRIV IOC MQTT Gateway — IR4.0 Industrial I/O Controller, Datasheet*, **Rev 1.0, June 2026** (Google Doc, last modified 2026-08-03), Cytron Technologies Sdn Bhd |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -70,6 +71,20 @@ All electrical specifications, pin mapping, terminals and dimensions are identic
 | Enclosure | Metal enclosure, fanless design, DIN rail mountable | [DS] |
 | Dimension | (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors) | [DS] |
 | Drawing extras | DIN bracket adds 8mm; pluggable terminals stick out 15.5mm | [DS §6 drawing] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page note:** if the unit is not recognised over USB on Windows 11 after Windows Update KB5124008, update to the latest firmware (tutorial) [PP].
+- Page specs match [DS]: RP2350; 520 KB SRAM; 2 MB flash; 10–30 V surge-protected; W5500 Ethernet; isolated RS485 (Modbus RTU); 11 DI; 4 DO; 2 AI 0–10.56 V / 0–42.58 mA; USB-C configuration port; PCF85063A RTC — **"Not utilized by the MQTT Gateway firmware"**; 140 × 60 × 36 mm; standard MQTT port 1883 with **no TLS/SSL** (route through a local secure broker for encryption) [PP].
+- **Packing:** 1x IRIV IOC MQTT Gateway Controller (pre-loaded firmware), 1x mini flat screwdriver [PP].
+- **Resources:** Getting Started Guide (tutorial series), datasheet, 3D CAD, latest firmware folder (MQTT Gateway only) [PP].
+
+### Setup and configuration (Cytron tutorial series, Jun 2026) [PP: tutorial]
+- **Digital inputs DI0–DI10:** enable per channel, rename, publish mode On Change / Periodic / Both, period ≥ 1 s, topic, QoS 0/1/2, Retain.
+- **Digital outputs DO0–DO3:** enable, rename, startup state ON/OFF, **Cmd Topic** (publish `1`/`ON` or `0`/`OFF`), **State Topic** (gateway publishes on change), QoS, Retain.
+- **Analog inputs AI0–AI1:** 4–20 mA or 0–10 V sensors; periodic only, period ≥ 1 s.
+- **RS485 = Modbus RTU master:** baud 1200–115200; parity none/even/odd; stop bits; response timeout (500 ms typical); "Penalty Box" fault isolation; up to **32 poll jobs** (slave 1–247; FC1/FC2/FC3/FC4; data type Raw/Int16/UInt16/Int32/Float32; byte order ABCD/CDAB/BADC/DCBA; Final = Raw × Scale + Offset; unit; decimals); **write jobs** FC5/FC6/FC16 via a subscribe topic, with a confirm topic and reverse scaling/safety guardrails.
+- **Default topic pattern** (prefixed by the Base Topic, e.g. `iriv/CB62/`): `di/…`, `do/…/state`, `do/…/cmd`, `ai/…`, `mbpoll/…`, `mbwrite/…`, `mbwrite/…/confirm`.
+- **Factory reset:** hold the User button while powering on (or press Reset while holding User) until the buzzer beeps; clears broker, I/O, poll and write jobs — back up first.
+- **Firmware update:** (1) web UI, System → Firmware Update, upload the Cytron `.uf2`; (2) recovery: hold BOOT, connect USB-C PROG, copy the `.uf2` to the "RP2350" drive.
 
 ## Interfaces, terminals and pin mapping
 **RP2350A pin mapping** [DS §5.1]. The firmware owns these pins; they are listed for wiring reference and hardware understanding.
@@ -152,8 +167,12 @@ Other LEDs: PWR on when powered; 485 on when there is RS485 activity; DOUT 0-3 o
 
 ## Needs verification
 - Whether isolated I/O works on USB-C power only. Warranty, certifications, and whether the CR2032 is included.
+- JSON payload field names for each message type (the tutorials show topics, not payload bodies).
+- Whether the firmware supports MODBUS TCP or HTTP, and static IP (the dashboard shows an assigned LAN IP; static IP not described).
+- Whether isolated I/O works on USB-C power only; certifications; whether a CR2032 is included (RTC unused by this firmware).
 
 ## Sources
 - [DS] IRIV IOC MQTT Gateway Datasheet, Rev 1.0, June 2026 (Google Doc, modified 2026-08-03; read in full, including the PDF export figures): (Cytron document — link not public)
 - Comparison base: local KB file /home/claude/kb/iriv-io-controller.md (IRIV IO Controller Datasheet Rev 1.0, July 2024)
-- [PP] Product page: not found and not read (cytron.io blocked).
+- [PP] Product page (read 2026-10-19): https://my.cytron.io/p-iriv-io-controller-mqtt-ir4.0-industrial-i-o-controller-with-mqtt-ready
+- [PP: tutorial] Asri Ruslan, 16–23 Jun 2026: https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway · configuring-the-mqtt-broker-connection · configuring-io-channels · field-bus-rs485modbus-rtu · diagnostic--system-settings · factory-reset-and-firmware-update-iriv-ioc-mqtt-gateway

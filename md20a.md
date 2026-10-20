@@ -5,7 +5,8 @@
 | Product code | `MD20A` (datasheet title [DS]; "Product Code MD20A" on product page [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Page matches the datasheet and the earlier www.cytron.io read; price, stock and the reverse-voltage warning confirmed |
 | Primary source | "MD20A 20Amp 6V-30V DC Motor Driver Datasheet" — **Rev 1.0, Feb 2019** (Cytron Technologies, 5 pages) — public PDF mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -44,6 +45,8 @@ Datasheet section 2 "Specifications", **"Table 2: MD20A Absolute Maximum Ratings
 | Operating temperature | Not stated (only the 25 - 30 °C reference for peak current) | — |
 | Warranty | 12 months | [PP] |
 | Packing list | 1 x 20Amp 6V-30V DC Motor Driver; 4 x PCB Spacer | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: discrete NMOS H-bridge, 20 A without heatsink; 6–30 V; 20 A continuous, 60 A peak; 1.8/3.3/5/12 V logic; PWM up to 20 kHz; sign-magnitude and locked-antiphase; overcurrent limiting, temperature protection, undervoltage shutdown; "Power input does not have reverse-voltage protection"; packing 1x MD20A, 4x PCB spacer; resources datasheet, sample code, CAD [PP]. Dimension image only.
 
 ## Interfaces, terminals and pin mapping
 **"Table 1: MD20A Board Functions"** [DS]:
@@ -128,7 +131,6 @@ Datasheet section 2 "Specifications", **"Table 2: MD20A Absolute Maximum Ratings
 6. Battery vs SMPS / regenerative current guidance beyond "Connect to battery." — confirm with [DT].
 7. Operating temperature range, H-bridge type, heatsink requirement — not stated.
 9. Board revisions — only datasheet Rev 1.0 (Feb 2019) found; no newer datasheet or user manual located.
-10. Price currency on www.cytron.io shown only as "$".
 
 ## Sources
 - [DS] MD20A 20Amp 6V-30V DC Motor Driver Datasheet, Rev 1.0, Feb 2019 (Cytron), public PDF mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf (linked from https://jp.robotshop.com/en/products/cytron-20a-6-30v-single-dc-motor-controller)

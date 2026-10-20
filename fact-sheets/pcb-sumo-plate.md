@@ -41,7 +41,7 @@ A flat plate made of PCB material that stands in for a steel blade on a sumo rob
 - Training/educational blade substitute
 
 ## Price band
-- RM5.00 - RM8.00 across the two sizes (Cytron product page, read 2026-10-19)
+RM5.00–RM8.00 across 2 sizes (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-v-pcb-sumo-plate

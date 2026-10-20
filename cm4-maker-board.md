@@ -5,7 +5,8 @@
 | Product code | `MAKER-CM4` [DS Figure/Table captions]; product page variant path `V-MAKER-CM4` [PP] |
 | Family | RP2040 / RP2350 boards and Raspberry Pi boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Back in stock; Cytron now states CM5 compatibility on the page and the bundle module is defined (CM4, 2GB RAM, 16GB eMMC, no wireless). What works on CM5 is still undocumented, so it stays Medium |
 | Primary source | "CM4 Maker Board — Maker's Carrier Board for Raspberry Pi CM4" Datasheet, Rev 1.2, October 2023 (public Google Doc linked from the product page; Drive last modified 2023-10-20) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -39,6 +40,12 @@ The datasheet has no ratings table; rows below are every numeric/functional spec
 | Mounting holes | 4, Ø 3.2 mm, 104 mm × 104 mm spacing | [DS Figure 2] |
 
 Not stated: operating temperature, power-supply current rating, 5V/3V3 current available to GPIO/Grove, board height.
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **CM5 note:** "The CM4 Maker Board is compatible with the newly launched Raspberry Pi CM5" — the page points to a Tom's Hardware CM5 review for details [PP]. No Cytron CM5 setup steps.
+- **What's on the board (page list):** 10x GPIO LED; microSD slot; CSI camera port; DSI display port; 5x Grove ports — 2x GPIO (GPIO 5, 6 and 23, 24), PWM (GPIO 12, 13), UART (GPIO 14, 15), I2C (GPIO 2, 3); Maker Port (JST-SH 4-way); 3 user buttons; analog audio out; piezo buzzer with mute switch; 2 power buttons; RTC battery holder; PCF85063A RTC; external power-button header; boot switch; M.2 connector with 2 mounting holes; USB-C; HDMI; 4x USB 2.0 host; Gigabit Ethernet; CM4 socket; GPIO breakout; DC power jack; 4 status LEDs [PP].
+- **Gotcha:** "DSI & CSI are prohibited when using RTC" (the RTC sits on the CSI/DSI I2C bus) [PP].
+- **Options and packing:** "CM4 Maker Board ONLY" = 1x CM4 Maker Board, 4x silicone bumper; "CM4 Maker Board + CM4NW216 + Accessories" = the same plus 1x Raspberry Pi Compute Module 4 **2GB RAM, 16GB eMMC, no wireless**, 1x Cytron USB-C power adapter, 1x USB-C to Type-A cable (1 m), 1x high-speed HDMI cable 1.5 m [PP]. The page says "4 options" but describes these two.
+- **Resources:** Getting Started Guide (Cytron tutorial), datasheet (Google Doc), CAD, Raspberry Pi CM4 brief, datasheet and CAD [PP]. Pinout and dimension images on the page — not read.
 
 ## Interfaces, terminals and pin mapping
 | Function | Pins / connection | Notes | Src |
@@ -115,7 +122,7 @@ Not stated: operating temperature, power-supply current rating, 5V/3V3 current a
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Supported Compute Module | [DS] Rev 1.2 (Oct 2023): "Maker's Carrier Board for Raspberry Pi CM4"; all setup steps are CM4-specific | [PP] title (read 2026-10-16): "for Raspberry Pi CM4/CM5" | [DS] wins in text: CM4. CM5 support unconfirmed — needs [DT] and an updated datasheet |
+| Supported Compute Module | [DS] Rev 1.2 (Oct 2023): "Maker's Carrier Board for Raspberry Pi CM4"; all setup steps are CM4-specific | [PP] (read 2026-10-19): title "for Raspberry Pi CM4/CM5" and note "The CM4 Maker Board is compatible with the newly launched Raspberry Pi CM5" | Cytron states CM5 compatibility [PP]; CM5 setup is undocumented — write CM4 steps only and flag CM5 differences for [DT] |
 | Audio channel order | [DS] text and silkscreen: Left = GPIO 19, Right = GPIO 18 | [3P] Tom's Hardware: "GPIO 18 and 19" (no order) | Not contradictory; use [DS] |
 
 ## Needs verification
@@ -124,8 +131,8 @@ Not stated: operating temperature, power-supply current rating, 5V/3V3 current a
 - Whether CM4 wireless variants need an external antenna (none listed on the carrier).
 - Active level of user buttons (GPIO 17, 22, 27) and whether they have hardware pull-ups — schematic not available.
 - DC jack barrel size/polarity, supply current rating, operating temperature.
-- What "CM4NW216" in the bundle name denotes (not defined in any source read).
 - [3P] Tom's Hardware: board height 17.3 mm; HDMI "4K60"; the CM4 "can be inserted upside down"; price $56 — not used as specs.
+- The page mentions "4 options" but describes two (board only; board + CM4NW216 + accessories) — confirm the other two.
 
 ## Sources
 - [DS] CM4 Maker Board Datasheet, Rev 1.2, October 2023 (public Google Doc; read as text and exported to PDF for Figures 1 and 2): https://docs.google.com/document/d/1XmZSR81IN70pndZ2odBmlZgAufiIBawVdKZ71C7101Y/edit

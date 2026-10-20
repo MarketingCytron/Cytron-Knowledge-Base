@@ -5,7 +5,8 @@
 | Product code | `SHIELD-SERVO` [PP]; document title "SHIELD-Servo" / "Shield-Servo" [UM] |
 | Family | Servo and RC controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Product page agrees with the user manual (4 A continuous / 5 A peak, 7–25 V, 0.5–2.5 ms, 0.25 µs, 9600 default) and adds the board size |
 | Primary source | "SHIELD-Servo — Servo Controller Shield — User's Manual", **V1.1, April 2018** (Cytron Google Doc) [UM] — no separate datasheet exists; the user manual is the top-ranked source for this product |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -34,7 +35,7 @@ The manual has an "Absolute Maximum Rating" table (two rows) plus feature statem
 | Servo signal outputs S1–S8 | TTL/CMOS logic (5 V and 0 V) | [UM] |
 | Arduino UART pins (DIP-switch selectable) | Shield TX → D0, D2, D10 or D12; shield RX ← D1, D3, D11 or D13 | [UM] |
 | Alternative UART port | 6-pin UC00A/UC00C header (DTR, TX, RX, VSEL, CTS, GND) | [UM] |
-| Dimension | 7.4 cm × 6.6 cm | [UM] |
+| Dimension | 7.4 cm × 6.6 cm | [UM][PP] |
 | Position reporting | optional; host requests the position of an individual servo | [UM] |
 | Start-up position | independent starting-position command per channel, applied at next start-up | [UM] |
 | Reverse-polarity protection on VM | "Shield-Servo provides protection against wrong polarity for this input" (type not stated) | [UM] |
@@ -42,6 +43,12 @@ The manual has an "Absolute Maximum Rating" table (two rows) plus feature statem
 | Price | RM79.80 (Cytron product page, read 2026-10-16) | [PP] |
 | Pulse refresh rate / frame period | Not stated for the shield (general servo text says "approximately fifty times per second") | — |
 | Operating temperature, weight, quiescent current, regulator part number | Not stated | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** first servo shield for Arduino with a built-in 5 V, 5 A (peak) switching regulator; supply 7–25 V; 8 independent RC servos; pulses 0.5–2.5 ms; UART interface to an Arduino-compatible board (UNO, Mega, CT-UNO, CT-ARM) or a 6-pin UART header for UC00A/UC00B/UC00C or another MCU [PP].
+- **Features list:** activate each servo independently; position and speed control per servo; sample code for Arduino and VB.net; **5 A peak and 4 A continuous total**; 7–25 V input with built-in 5 V switching regulator; optional position reporting; 5 V logic-level inputs; independent starting position per channel; pulse range 0.5–2.5 ms; **pulse resolution 0.25 µs**; baud rate saved in non-volatile memory (factory default 9600) [PP].
+- **Dimension:** 7.4 cm × 6.6 cm [PP].
+- **Packing list:** 1x Servo Shield [PP].
+- **Resources:** User's Manual (Google Doc) and example code (GitHub `Cytron_Servo_Shield`) [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels (manual chapter 4) [UM]:
@@ -149,7 +156,7 @@ UART protocol (manual 7.2) — first byte = 3 mode bits + 5-bit channel; channel
 
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Regulator current | [UM] V1.1: 4 A continuous, 5 A peak (total) | [PP]: "5V at 5A (peak)" (no continuous figure) | Manual wins: write **4 A continuous / 5 A peak** |
+| Regulator current | [UM] V1.1: 4 A continuous, 5 A peak (total) | [PP] description: "5V at 5A (peak)"; [PP] features list (read 2026-10-19): "5A (peak) and 4A (continuous) of total current" | Agree: write **4 A continuous / 5 A peak** total |
 | Warranty | [UM] chapter 8: 6 months | [PP]: 12 months | Product page is the current commercial term (read 2026-10-16); manual (2018) is older. Record both; do not state warranty as a spec |
 | Activate-command 1st byte range | [UM] table: "193–200 / C1–C8" | [UM] text: channel 0 (= all) is valid, i.e. 0xC0 = 192 | Printed range omits channel 0; the bit pattern `110xxxxx` with channel 0–8 (0xC0–0xC8) is authoritative |
 | Position/speed 1st byte range | [UM] table: decimal "224–232" | [UM] same table: hex "E1–E8" (= 225–232) | 224 = 0xE0 is channel 0 (all); use 0xE0–0xE8 |
@@ -169,7 +176,6 @@ UART protocol (manual 7.2) — first byte = 3 mode bits + 5-bit channel; channel
 - Example sketch names in the library `examples/` folder (directory listing blocked); whether the example opens the serial port at 9600.
 - Whether two shields can be stacked on one Arduino using different DIP-switch pin pairs — not described.
 - The external switch wiring of manual 5.3 (figure not readable).
-- Product-page body text beyond the coordinator's summary (page not read here).
 
 ## Sources
 - [UM] "SHIELD-Servo — Servo Controller Shield — User's Manual", V1.1, April 2018 (Cytron Google Doc, linked from the product page) — https://docs.google.com/document/d/191P6FwTgJ_dWhAhB3eWfP0YMSbI4_7Kehgzw3pYy-AY/view

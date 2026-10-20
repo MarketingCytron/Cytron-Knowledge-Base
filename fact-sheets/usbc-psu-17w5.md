@@ -40,6 +40,8 @@ A 17.5 W fixed 5 V, 3.5 A AC-to-DC power supply with a captive USB Type-C cable,
 - AC plug: ONE interchangeable AC plug included, default UK; PSU shipped from 23 October 2024 onwards comes with UK plug only (datasheet); plug options UK / EU (product page)
 - Adapter dimensions and weight: [NOT STATED] (drawings only)
 - Warranty: [NOT STATED]
+- Size 47.8 × 89.8 × 65.95 mm with plug; short-circuit and over-current protection (product page)
+- Raspberry Pi 5: boots, but warns "not capable of supplying 5A" and limits USB 3 ports to 600 mA (Cytron tutorial)
 
 ## Interfaces and compatibility
 - Output: one captive cable with USB Type-C plug; single fixed 5 V output; no USB Power Delivery profiles
@@ -69,7 +71,7 @@ A 17.5 W fixed 5 V, 3.5 A AC-to-DC power supply with a captive USB Type-C cable,
 - "Suitable for 24-hour operation" (product page)
 
 ## Price band
-RM32.00 (Cytron product page, read 2026-10-19)
+RM32.00 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-5v-3p5a-usb-c-universal-power-adapter

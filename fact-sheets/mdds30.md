@@ -40,6 +40,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - User's Manual: Rev 1.2, September 2023
+- Size 81.28 × 101.60 × 42 mm (product page)
+- Latest board revision Rev 1.3 (RC-mode jerk fix); RC header vertical since Rev 1.2 (product page)
+- Default configuration: RC, Mixed mode (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC transmitter/receiver, analog joystick, microcontroller (Analog, PWM, UART)
@@ -77,10 +80,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
 
 ## Price band
-[NOT STATED]
+RM364.98 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-mdds30
+https://my.cytron.io/p-30amp-7v-35v-smartdrive-dc-motor-driver-2-channels
 
 ## Datasheet
 https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view

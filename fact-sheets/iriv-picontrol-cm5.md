@@ -35,6 +35,11 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Enclosure: metal, fanless, DIN rail mountable; 141.2mm x 83.5mm x 39.5mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - DIN bracket can be moved; four mounting options (without DIN rail socket, DIN positions 1 (default), 2 and 3)
 - DI and DO GPIO numbers: [NOT STATED]
+- Sold on my.cytron.io as CM5 Wireless 16GB/64GB and 8GB/64GB (product page shared with CM4)
+- GPU: 800 MHz VideoCore VII, OpenGL ES 3.1 (product page)
+- Wireless: 2.4/5 GHz Wi-Fi 802.11ac, Bluetooth 5.0, BLE (product page)
+- Dimension: 141.2 × 83.5 × 39.5 mm, enclosure only (product page)
+- Packing: controller with CM5, dual-band antenna, flat and Phillips screwdrivers, 4 silicone bumpers; no NVMe SSD or mini PCIe card (product page)
 
 ## Interfaces and compatibility
 - 1x full-size HDMI 2.0 (up to 4K@60Hz), Type-A
@@ -81,10 +86,10 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Sibling product IRIV PiControl CM4 (IRIV-PICL); keep CM4 and CM5 specs apart
 
 ## Price band
-[NOT STATED]
+RM1,489.00–RM2,899.00 across CM4/CM5 variants (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller
 
 ## Datasheet
 [NOT STATED]

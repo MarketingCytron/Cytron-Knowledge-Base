@@ -31,6 +31,8 @@ A small digital infrared object sensor. It sends modulated IR light and pulls it
 - Supply current: [NOT STATED]
 - IR LED / IR receiver part numbers: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Reverse polarity protection; 90° pin header, breadboard friendly (product page)
+- Packing: 1 × sensor (product page)
 
 ## Interfaces and compatibility
 - 3-pin connector: 5V (power input), GND (ground), OUT (NPN output with internal pull-up, active low)
@@ -59,7 +61,7 @@ A small digital infrared object sensor. It sends modulated IR light and pulls it
 - Datasheet subtitle: "Simplifying Object Sensor for Beginner"
 
 ## Price band
-[NOT STATED]
+RM54.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-object-simplifying-object-sensor-for-beginner

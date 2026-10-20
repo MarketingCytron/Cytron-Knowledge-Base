@@ -33,6 +33,9 @@ An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module prel
 - 3.3 V regulator and output current: [NOT STATED]
 - Shield power input range: [NOT STATED] (powered from the Arduino's 5 V)
 - Rev1.0 vs Rev2.0 differences stated: Rev2.0 manual names the ESP-WROOM-02 module and adds a Firmware Installation chapter; pins, jumpers, LEDs, buttons and defaults are identical in both manuals
+- 3.3 V regulator for the module: 500 mA max (product page)
+- Shipped with Cytron_ESP_AT V2.2.0 since mid-October 2021; Rev2.0 since April 2016; Rev1.0 used an ESP8266-12 module (product page)
+- UART jumper options: USB (flash the ESP8266 through the Arduino), D0/D1, or software serial on D2, D3, D8–D13 (product page)
 
 ## Interfaces and compatibility
 - Compatible boards: Arduino Uno, Arduino Duemilanove, Arduino Mega2560, Arduino Leonardo and possibly other pin-compatible main boards; CT-UNO and CIKU also named
@@ -71,7 +74,7 @@ An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module prel
 - "easy and stable UART interface for users to communicate with onboard WiFi module"
 
 ## Price band
-- RM52.40 (Cytron product page, read 2026-10-16)
+RM52.40 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-esp8266-wifi-shield

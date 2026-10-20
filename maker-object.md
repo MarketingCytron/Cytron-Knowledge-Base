@@ -5,7 +5,8 @@
 | Product code | `MAKER-OBJECT` (datasheet title [DS]; "Manufacturer #: MAKER-OBJECT" on RobotShop [3P]) |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Sale status, price, reverse-polarity protection, the 90° pin header and packing are now Cytron-stated |
 | Primary source | **MAKER-OBJECT Datasheet, "Simplifying Object Sensor for Beginner", Rev 1.0, December 2019** (public Google Doc): https://docs.google.com/document/d/1SppJcAoTFGFDSaeBXrI4Ocq24quq-5ybFpr2bNsGMOI/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -34,13 +35,18 @@ Every row of the datasheet "2. SPECIFICATIONS" table, exact numbers and units, p
 | Output LED | On when an object is detected | [DS] |
 | Output type | NPN output with internal pull-up; LOW when object detected (active low) | [DS] |
 | Reverse polarity protection | Yes, on the power input | [DS] |
-| Connector | 3 pins: 5V, GND, OUT | [DS] |
+| Connector | 3 pins: 5V, GND, OUT; 90-degree pin header | [DS][PP] |
 | Dimensions | Datasheet section "3. DIMENSION" is a drawing only; no values in the text. See Needs verification | [DS] |
 | IR LED / IR receiver part numbers | Not stated | [DS] |
 | Supply current | Not stated | [DS] |
 | Internal pull-up resistor value | Not stated | [DS] |
 | Operating temperature | Not stated | [DS] |
 | Weight | Not stated | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** tiny digital IR proximity sensor; IR modulated at 38 kHz "makes it immuned to the ambient light"; NPN output with internal pull-up, LOW when an object is detected; range adjusted through a small opening at the front; **90-degree pin header** for PCB or breadboard; maximum sensing 60 cm (black) – 140 cm (white) [PP].
+- **Features:** 4.5–5.5 V; **reverse polarity protection**; breadboard friendly; active-low NPN output with internal pull-up; adjustable range 15–60 cm (black), 40–140 cm (white); applications: sumo robot, obstacle avoidance, auto-gate safety, parking occupancy, entrance sensor [PP].
+- **Packing list:** 1x MAKER-OBJECT [PP].
+- **Resources:** datasheet (Google Doc), 3D CAD [PP]. Layout and dimension images on the page — not read.
 
 ## Interfaces, terminals and pin mapping
 - **Connector (3 pins)** [DS]:
@@ -95,19 +101,16 @@ Every row of the datasheet "2. SPECIFICATIONS" table, exact numbers and units, p
 | White-surface range | [DS] 40–140 cm | [3P] Botland spec section: 4 cm to 140 cm (its own description says 40–140 cm) | [DS] wins: 40–140 cm. Botland figure is a typo |
 | Range in Ikedo V2 kit | [DS] 15–60 cm (black) / 40–140 cm (white), adjustable | [3P] MakerPH kit page: "Range: 50cm adjustable" | [DS] wins; 50 cm is a reseller simplification |
 | Dimensions | [DS] drawing only, no values in text | [3P] Switch Science / Botland: 18.6 x 13.7 x 12.6 mm; Botland table also lists 6 cm × 10 cm × 1.5 cm | Unresolved — see Needs verification. Do not quote dimensions as spec |
-| Ambient light | [DS] 38kHz bandpass filter (no immunity claim) | [3P] The Pi Hut / RobotShop: "immune" / "immunity to ambient light interference" | Use the [DS] wording: built-in 38kHz bandpass filter |
+| Ambient light | [DS] 38kHz bandpass filter (no immunity claim) | [PP] (read 2026-10-19): "modulated at 38kHz makes it immuned to the ambient light"; [3P] The Pi Hut / RobotShop: "immune" | Cytron page claims immunity; in specs keep the [DS] wording (38 kHz bandpass filter) |
 
 ## Needs verification
 - **Dimensions.** [3P] Switch Science and Botland give 18.6 x 13.7 x 12.6 mm; the datasheet drawing is not readable as text. Confirm from the datasheet drawing or 3D CAD.
 - **Connector pin order** (5V / GND / OUT left-to-right) — only in the datasheet figure.
-- **Connector type.** [3P] The Pi Hut and Robu say a 90-degree pin header, breadboard friendly; not in the datasheet text.
 - **Supply current**, output sink current and internal pull-up value — not stated.
 - **3.3V-logic boards.** Is OUT safe on a 3.3V-only GPIO (pull-up value and whether a divider/level shifter is needed)? Ask the design team before writing a Pico/ESP32 tutorial.
 - **IR LED and IR receiver part numbers** — not stated (response time quotes "IR sensor's datasheet").
 - **Trimmer procedure context.** The datasheet does not say whether a target object should be placed in front while setting maximum/minimum distance.
-- **Price.** [3P] RobotShop USD 13.00; The Pi Hut £13.80 incl. VAT. No Cytron price read.
 - **Weight** — [3P] Botland 0.004 kg only.
-- Current stock / status on my.cytron.io (page not read).
 - Whether The Pi Hut's mirrored PDF (https://cdn.shopify.com/s/files/1/0176/3274/files/MAKER-OBJECT_Datasheet.pdf?v=1610043705) is the same Rev 1.0 — could not be downloaded (proxy 403).
 
 ## Sources

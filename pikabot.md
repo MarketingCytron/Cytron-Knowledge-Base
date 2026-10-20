@@ -5,7 +5,8 @@
 | Product code | `V-KIT-PIKABOT` (my.cytron.io product page [PP]). Opencircuit lists `KIT-PIKABOT` as the model [3P] — see *Conflicts* |
 | Family | Arduino kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Full packing list, the push button's role (start button), box size and warranty are now Cytron-stated; the booklet is image-only, so it stays Medium |
 | Primary source | No datasheet exists. **Guide book: "PikaBot Booklet" (Arduino IDE edition, English, PDF on Google Drive, Feb 2020 upload; image-only PDF — OCR fragments only, body text NOT readable)** [UM]. Readable Cytron companion: **"PikaBot Resources" Google Doc** (Cytron Team, Jan–Feb 2020) with the code of every project and challenge in the booklet [PP: sample code]. The mBlock edition "Buku Panduan Pengaturcaraan PikaBot menggunakan Aplikasi mBlock v1.1" (Malay, static.cytron.io) could not be fetched. Boards in the kit: **Maker UNO → `maker-uno.md`**, **Maker Drive → `maker-drive.md`** |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs [PP: sample code] > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -36,7 +37,7 @@ No spec table exists. Kit-level facts:
 | Example code | Open-source Arduino sample code (Drive folder "PikaBot Coding") and Resources doc; mBlock extension "PikaBot" | [PP][PP: sample code][PP: tutorial mBlock] |
 | Arduino IDE / library shown in the booklet | Arduino 1.8.10 download page; CH341SER driver; "Cytron Motor Drivers Library" 1.0.1 in Library Manager | [UM, OCR fragments] |
 | Price | RM128.00 (either booklet option) | [PP] |
-| Warranty | Not stated in the page capture | — |
+| Warranty | 12 months | [PP] |
 
 ### Booklet projects (Arduino IDE edition) [PP: sample code]
 | Project | Steps | What it teaches / code |
@@ -49,6 +50,12 @@ No spec table exists. Kit-level facts:
 | 3 Challenge | Both HIGH (black or nothing) stop; both LOW forward; one HIGH turn toward it | Stop at a full black line |
 | 4 Music On | 4-1 IDE example toneMelody (booklet pp. 96–100 explain notes and durations); 4-2 play a 9-note melody on pin 8 in `setup()`, then spin left in `loop()` | `tone()`, `pitches.h` (how to add it as a new tab) |
 | 4 Challenges | Super Mario, Baby Shark, Birthday Song melodies (toneMelody template) | Arrays, `for` loop |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Options:** PikaBot with Arduino IDE booklet (English) / PikaBot with mBlock booklet (Bahasa Melayu); the lists are the same except the booklet [PP].
+- **Full packing list:** 1x Maker UNO, 1x Maker Drive, 2x 3–6 VDC dual-axis TT gear motor (pre-soldered wires), 2x rubber wheel 63 × 15 mm, 2x IR line tracking module, 1x HC-SR04, 4x AA batteries, 1x 4xAA battery holder, 1x mini breadboard (35 × 42 mm), 1x 40-way male-to-female jumper, 1x 40-way male-to-male jumper, 1x USB Micro-B cable, 1x mBot N20 vacuum steel ball castor, 1x tiny Phillips screwdriver (transparent), 4x bolt M3×25 mm, 4x M3 nut, 1x CH2 quick-wiring terminal (press type), 1x rocker switch with wires, 1x push button with wires, 14x plastic rivet (M3), 2x plastic rivet (M4), 1x PikaBot track, 1x PikaBot booklet, 1x PikaBot paper box [PP].
+- **Features list:** no soldering; Maker UNO + Maker Drive; 4x AA powers controller and motors; IR line sensors; open-source example code; **panel-mount rocker switch = power switch; panel-mount push button = start button**; paper box is the robot body; **box dimension 127 mm × 55 mm × 190 mm (not including motor shafts and wheels)** [PP].
+- **Description:** schematic and part positions are printed inside the box; booklet hardcopy in the kit, softcopies online (Arduino IDE PDF on Drive; mBlock v1.1 PDF on static.cytron.io); assembly video [PP].
+- **FAQ (page):** Arduino IDE (C/C++); line following, obstacle avoidance, light tracking (marketing FAQ) [PP].
 
 ## Interfaces, terminals and pin mapping
 All pins from the Cytron sample code [PP: sample code] (the booklet's wiring pages are images that could not be read):
@@ -112,12 +119,11 @@ All four motor pins (11, 10, 9, 3) are PWM pins on the Maker UNO, as `PWM_PWM` m
 
 ## Needs verification
 - **Booklet body text** (version, date, page count ≥ 100, assembly steps, wiring diagrams, which Maker Drive channel is left/right) — the PDF is image-only; read a printed copy or re-OCR it.
-- **Full packing list.** Opencircuit [3P] adds to the page list: 1× USB Micro-B cable, 1× mBot N20 steel ball castor, 1× mini Phillips screwdriver (85 mm), 4× M3×25 mm bolts, 4× M3 nuts, 14× M3 plastic rivets, 2× M4 plastic rivets, 1× quick-wiring terminal (CH2, press type), 1× rocker switch with wires, 1× push button with wires, 1× PikaBot track, 1× booklet, 1× PikaBot paper box — and "box dimensions 127 mm × 55 mm × 19 mm (excluding motor shafts and wheels)". Confirm with the product page image/packing SOP.
 - How the Maker UNO is powered from the battery (Maker Drive 5 V output to the Maker UNO 5V pin is the usual method but is not stated in readable text).
-- Role of the "push button with wires" (external start button?) versus the on-board D2 button used in the code.
 - mBlock booklet v1.1 contents and the PikaBot mBlock extension's pin defaults for motors and ultrasonic.
-- Warranty term (not in the page capture).
 - Weight, assembly time, age range.
+- Which pin the external start push button connects to (the sample code uses the on-board D2 button).
+- Box height: the page says 127 × 55 × 190 mm; Opencircuit [3P] printed 19 mm — confirm.
 
 ## Sources
 - [UM] PikaBot Booklet (Arduino IDE, English), PDF on Google Drive: https://drive.google.com/file/d/1G9rhCY_9ogJN4ufXdAwFmrgbaEHKP3Cp/view (image-only; OCR fragments read 2026-10-19)

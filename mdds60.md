@@ -5,7 +5,8 @@
 | Product code | `MDDS60` (cover page: "SmartDriveDuo-60", "MDDS60", "User's Manual") [UM] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features). Fan count, reset button, switching regulator and dimensions are now Cytron-stated |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -34,11 +35,19 @@ A dual-channel brushed DC motor driver from Cytron's SmartDriveDuo series for me
 | Test buttons | On-board push buttons, one per motor, "for fast test and manual operation" | [UM] |
 | Polarity protection | **None** ("No polarity protection for V motor") | [UM] |
 | Cooling | Cooling fan: "Once MDDS60 is powered up, this fan will blow the board." | [UM] |
-| Dimension | Heading "Dimension:" present; value only in a drawing, not readable in text | [UM] |
+| Dimension | ~190 × 121 × 45 mm [PP]; UM gives a drawing only | [PP] |
 | Operating temperature | **Not stated** | [UM] |
 | Warranty | 12 months, manufacturing defects only; misuse not covered; freight both ways not covered | [UM] |
 | Packing list | 1 × SmartDriveDuo-60 with top and bottom cover; 2 × 2561 Servo Extension cable | [UM] |
 | Hardware revision | Rev1.10 shipped since January 2019: "component changes on the circuit. The modification does not affect the performance or the interface." | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- "Top cover comes with **two DC brushless fans** to cool the driver" [PP].
+- "On board **reset button** to restart the MCU after changing operation mode" [PP].
+- "On board **switching voltage regulator** for higher power efficiency"; battery low-voltage monitoring mode [PP].
+- 60 A continuous at room temperature; **100 A peak for 1 second**, current limited as temperature rises; 16 kHz switching; temperature feedback for current limit; regenerative braking; modes RC, analog, PWM, simplified and packetized UART; sign-magnitude and locked anti-phase in PWM mode; **no polarity protection** — use proper heavy cable [PP].
+- **Dimension: ~190 × 121 × 45 mm** [PP].
+- Packing-list tab is empty on the page [PP].
+- Resources: 3D CAD, user's manual, Quick Start Guide, CytronMotorDriver library, Fritzing [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM]: A Motor LEFT terminal block; B Power Supply terminal block; C Motor RIGHT terminal block; D Motor LEFT LED indicator; E Motor RIGHT LED indicator; F Power Switch terminal block; G Cooling fan; H Run and Error LED; I Motor LEFT test button; J Motor RIGHT test button; K Mode selection DIP switch; L RC input pin; M Analog/PWM/Serial input terminal block. (Components in blue font in the figure are on the middle board.)
@@ -121,15 +130,12 @@ No UART TX pin is described; the driver only receives [UM].
 | Power-switch rework | UM board-layout text: "cut the PCB track at the bottom layer" | UM section 7: "unsolder it like shown in the figure" | Same step described two ways; figure not viewed |
 
 ## Needs verification
-- Dimensions: only a drawing in the UM. Switch Science [3P]: 121.92 (L) × 190.5 (W) × 48 mm (H); ThingBits [3P]: approx. 190 × 121 × 45 mm.
 - Logic level: Switch Science [3P] says logic voltage "5 V or 3.3 V"; UM gives only VIOH 1.3–5 V.
-- Number of fans: Switch Science [3P] says two brushless fans on the top cover; UM says "this fan".
-- Switch Science [3P] also lists a high-efficiency switching regulator and a reset button "for restarting the MCU when changing control mode"; the UM names the "RST" button only in text.
 - Function of DIP SW7–SW8 (not described; shown as 0 in all examples).
 - Analog/PWM Mixed mode inputs: UM table says RC1/RC2; expected AN1 (speed)/AN2 (direction) as on MDDS30 — confirm on hardware.
 - 6-cell NiMH (nominal 7.2 V) is listed as a recommended source but is below the 10 V minimum; confirm the intended cell range.
 - Maximum PWM input frequency, RC pulse range, operating temperature, fuse rating, terminal wire gauge.
-- Product page specs, price and status (my.cytron.io not reachable).
+- Packing list (page tab empty).
 
 ## Sources
 - SmartDriveDuo-60 MDDS60 User's Manual Rev 1.1, July 2019 (public Google Doc) [UM]: https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view

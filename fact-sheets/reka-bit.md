@@ -29,6 +29,9 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Grove map (Cytron pinout): P0:P1, P1:P9 (P1 shared), P2:P12, P13:P14 (SPI SCK/MISO), P15:P16 (MOSI), I2C P19/P20; Neopixels on P8; GPIO 3.3 V only
+- Under-voltage and over-voltage indicator and protection (product page)
+- Packing: board, USB power/data cable, 4×AA holder, mini screwdriver, 3 Grove-to-female cables, 2 lift arms, 4 friction pins; with or without micro:bit V2 (product page)
 
 ## Interfaces and compatibility
 - Works with micro:bit V1 & V2
@@ -64,10 +67,10 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - With the built-in dual-channel DC motor driver, 4x servo control and dedicated power input, students can build projects with mechanical movements right away
 
 ## Price band
-[NOT STATED]
+RM149.10 with micro:bit V2 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-rekabit-simplifying-robotics-with-microbit
+https://my.cytron.io/p-rekabit
 
 ## Datasheet
 https://docs.google.com/document/d/1axLhH-zaFDheOyz6gbXfYEysigGxpmMnRBC93SW-zR8/edit

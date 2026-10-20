@@ -5,7 +5,8 @@
 | Product code | `LSA08` [PP]; manual title "Advance Line Following Sensor Bar LSA08" [UM] |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. The my.cytron.io page itself says "Refresh rate up to 200Hz" (manual: 100 Hz) — the conflict is now between two Cytron sources |
 | Primary source | **No Cytron datasheet exists for this product.** Highest source is the Cytron user manual: "Advance Line Following Sensor Bar LSA08 — User's Manual **V1.1, June 2012**" [UM] (PDF in Cytron's own GitHub repo, identical title/version to the Drive PDF linked from the product page; the Drive link itself was not readable here). Secondary Cytron document: "Advance Line Following Sensor Bar LSA08 — C Library Manual **V1.1, Jan 2013**" [UM-LIB] (public Google Doc) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -43,6 +44,10 @@ Manual section 3.2 "Electrical Specifications" and "Absolute Maximum Rating" [UM
 | Packing list | 1 x LSA08 PCB, 1 x LSA08 cable connector | [UM] |
 | Price | RM204.75 | [PP] |
 | Warranty | 12 months [PP]; manual (2012) says 6 months [UM] — see Conflicts | [PP][UM] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** 8 sensor pairs, 16 mm spacing; 12 V input power; Mode and Select buttons; 3 output modes (digital, UART, analog); LCD showing 8 analog values with bar chart and line position; auto-calibration; junction pulse (JPULSE); **power polarity protection**; typically 26 mA; works on glossy or reflective surfaces; **"Refresh rate up to 200Hz"** [PP].
+- **Description:** green LED emitters so it works on red, green, blue, white, black, grey surfaces [PP].
+- **Resources:** user's manual (Drive), LSA08 library manual, tutorials — serial mode with PID, digital mode, serial mode with digital output, analog mode [PP].
 
 ## Interfaces, terminals and pin mapping
 Two 10-pin ports; pin 1 is the square solder pad; pin labels are printed on the back of the PCB [UM]. The board can be powered from VIN/GND of either Port A or Port B, and both ports may be used at the same time [UM].
@@ -163,7 +168,7 @@ Worked examples from the manual [UM]: `0x01 0x43 0x00 0x44` = calibrate (address
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Refresh rate | [UM] table: 100 Hz | [PP: Tindie] "Refresh rate up to 200Hz" | [UM] wins: state 100 Hz; flag 200 Hz as unverified |
+| Refresh rate | [UM] table: 100 Hz | [PP] my.cytron.io (read 2026-10-20) and Tindie: "Refresh rate up to 200Hz" | [UM] wins: state 100 Hz; ask [DT] whether newer firmware reaches 200 Hz |
 | Warranty | [UM] (2012) "valid for 6 months"; index says "6 months or 1 year" | [PP] 12 months (2026) | Commercial term: use the current product page's 12 months and cite [PP]; the manual figure is historical |
 | Junction width range | [UM] menu and command J: 3–8 | [UM-LIB] `LSA08_JunctionWidth(1-8)` | [UM] wins: 3–8 |
 | Junction/sensor command letters | [UM] command table: X = 0x50 junction, P = 0x4F line/sensor | [UM] description section: 'P' = 0x50 junction, 'O' = 0x4F line/sensor (same hex values) | Use the hex values (0x50, 0x4F); the ASCII letters are inconsistent inside the manual |
@@ -177,7 +182,6 @@ Worked examples from the manual [UM]: `0x01 0x43 0x00 0x44` = calibrate (address
 - Dimension drawing: "3" (mm) near a corner mounting hole is unlabelled — hole diameter or edge offset. Mounting-hole diameter not stated in text.
 - Port A/B connector type (2x5 box header is implied by the drawing; not stated in text) and the cable connector's length/pinout.
 - Operating temperature range; JPULSE pulse width/polarity timing (figure only shows 0 V→5 V pulse).
-- Whether the product page lists "200 Hz" refresh rate (Tindie does; manual says 100 Hz).
 - Whether current firmware still has the hidden debug mode and the 20 ms packet timeout.
 - Weight, and whether the SK40C/MC40A/IFC sample code is still downloadable from Cytron.
 

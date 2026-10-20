@@ -31,6 +31,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defect only
 - In the box: 1 x SHIELD-2AMOTOR, 5 x mini jumper
+- Power source jumper: from the Arduino (VIN, 6.5–12 V) or an external supply (5–26 V); external supply recommended (product page)
 
 ## Interfaces and compatibility
 - Signed Magnitude: DIR 1 = D4, EN 1 = D5, EN 2 = D6, DIR 2 = D7
@@ -55,7 +56,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM55.44 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-0.8amp-5v-26v-dc-motor-driver-shield-for-arduino-2-channels

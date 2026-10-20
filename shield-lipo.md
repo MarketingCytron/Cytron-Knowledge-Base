@@ -5,7 +5,8 @@
 | Product code | `SHIELD-LIPO` [PP][UM]; manual name "Cytron LiPo Power Shield" [UM] |
 | Family | Arduino shields |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). The figures earlier sourced to Tindie are the Cytron product page text; pins used, board size and boost input range are now Cytron-stated. Output current still differs between the manual and the page, so it stays Medium |
 | Primary source | **No datasheet exists.** Primary = "SHIELD-LIPO — Cytron LiPo Power Shield — User's Manual", **V1.0, January 2016** (public Google Doc) [UM] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -35,10 +36,16 @@ The manual has no numbered spec table; the rows are every quantitative statement
 | ICSP | **Not passed through** ("the battery is in the way") | [UM] |
 | Packing list | 1 x SHIELD-LIPO | [UM] |
 | Warranty | 12 months | [UM][PP] |
-| Dimensions | **Not stated in text** (drawing only) | [UM] |
+| Dimensions | 80 mm × 54 mm (excluding the toggle switch) | [PP] |
 | Boost converter / charger IC | **Not stated** | [UM] |
-| Arduino pins used | **Not stated** (see Needs verification) | [UM] |
+| Arduino pins used | 5V and GND only; battery-voltage monitoring optional via pads to A0–A6 | [PP] |
 | Battery connector type | **Not stated** | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** stacks on Arduino UNO R3 or similar (UNO R3, Maker UNO, CT-UNO, CT-UNO-SE, Mega, Leonardo, Due); **uses only the 5V and GND pins**; battery voltage monitor is optional; digital and analog pins stay free; 5 V boost converter from a standard LiPo (**3.0–4.2 V**); charges through its own micro-USB or from the Arduino's USB when the Arduino is plugged in for programming; any 3.7/4.2 V Li-ion or LiPo cell, 1300 mAh suggested (fits the shield) [PP].
+- **Output:** "at least 1000mA current, and output peak current at 1100mA"; boost has over-current protection; battery under-voltage protection [PP].
+- **Spec list:** start-up maximum continuous current 700 mA; maximum continuous current 1000 mA; over-current cut-off about 1100 mA; on-board LiPo charger max 500 mA; under-voltage cut-off 2.40 V; Charge, Full Charged, battery LOW and power LEDs; power toggle switch; micro-USB charging port; optional battery voltage monitoring to A0–A6 (connection pads on the bottom of the PCB); **dimension 80 mm × 54 mm (excluding the toggle switch)** [PP].
+- **Battery:** sold separately ("the Lipo battery is not included, yet the Lipo battery is under the default added item") [PP].
+- **Resources:** User's Manual (Google Doc); line-following robot tutorials with CT-ARM [PP]. No packing-list tab on the page.
 
 ## Interfaces, terminals and pin mapping
 | Function | Arduino pin(s) / terminal | Src |
@@ -91,19 +98,17 @@ The manual has no numbered spec table; the rows are every quantitative statement
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Output current | [UM] Section 1 text: "at least 500mA current, and peak at 1A" | [UM] Features: "Output current: 1A"; [3P] Tindie: "at least 1000mA", "peak 1100mA", "start up max continuous 700mA", "over current cutoff ~1100mA" | Same document disagrees with itself; state "≥ 500 mA continuous, 1 A peak" as the safe claim and cite both UM lines. Tindie figures go to Needs verification |
+| Output current | [UM] Section 1 text: "at least 500mA current, and peak at 1A"; [UM] Features: "Output current: 1A" | [PP] (read 2026-10-19): "at least 1000mA", "peak current at 1100mA", "Start up maximum continuous current at 700mA", "Over current cutoff: ~1100mA" (the same text appears on Tindie [3P]) | Unresolved between two Cytron sources. Safe claim: "about 1 A"; ask [DT] (*Needs verification*) |
 | Battery included? | [UM] packing list: 1 x SHIELD-LIPO only | [PP] sold with a 1300 mAh LiPo option (Lip-3.7-1300); [3P] Tindie: "battery is not included" / "under the default added item" | Battery is a separate (optional) item; say so |
 | Warranty | [UM] 12 months | [PP] 12 months | Agree |
 
 ## Needs verification
-- **Which Arduino pins the shield uses.** [3P] Tindie: "the shield only uses the power pins which are the 5V and GND" and the digital/analog pins are free; battery monitoring via "A0 - A6 (connection pads at the bottom of PCB)". Not in the UM text — confirm with [DT] which header pin carries the 5 V (5V pin vs VIN) and which analog pin the VBATT jumper lands on.
 - The example sketch (image) — analog pin, divider ratio / voltage formula.
-- Dimensions — [3P] Tindie: "80mm x 54mm (exclude the toggle switch)"; UM drawing not readable.
-- Boost/charger ICs; boost input range — [3P] Tindie: boosts "3.0V to 4.2V" to 5 V.
-- Tindie current figures (1000 mA continuous, 1100 mA peak, 700 mA start-up, ~1100 mA over-current cut-off) versus the UM's 500 mA / 1 A.
 - Battery connector type (JST or soldered) and whether the shield works with other capacities (Tindie: "any Li-ion or LiPo cell of the 3.7/4.2V type"; UM names only 1300 mAh).
 - Whether USB charging also powers the Arduino (pass-through) while the switch is on.
-- [3P] Tindie board list adds CT-UNO-SE, Mega, Leonardo, Due — Due is not in the UM list.
+- Output current: manual (≥ 500 mA continuous, 1 A peak) vs product page (1000 mA continuous, 700 mA at start-up, ~1100 mA cut-off) — ask the design team which applies to the current board.
+- Which analog pin each VBATT pad connects to (page: "A0 - A6 (connection pads at the bottom of PCB)") and the divider ratio.
+- Boost converter and charger IC part numbers.
 
 ## Sources
 - [UM] SHIELD-LIPO — Cytron LiPo Power Shield — User's Manual, V1.0, January 2016 — https://docs.google.com/document/d/1SKOewuQDMKS-EQSgeAn7w-p6xtPRtCQVZl9MHfjzGYo/view (PDF mirror, same text: https://www.electrokit.com/upload/product/41018/41018301/SHIELD-LIPO%20User%20Manual.pdf)

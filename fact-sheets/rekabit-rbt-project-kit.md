@@ -28,6 +28,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Power switch: slide OFF then ON to restart
 - Age: 10+; Syllabus: RBT Y5&Y6; Platform: micro:bit
 - Warranty: 12 months (manufacturing defects; wear and tear and misuse excluded)
+- Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
 - MakeCode extension: pxt-rekabit-rbt-project-kit (search "rekabit rbt project") — https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit ; it loads the REKA:BIT extension (pxt-rekabit) with it
@@ -71,7 +72,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - For RBT Y5 and Y6 (Reka Bentuk dan Teknologi Tahun 5 & 6)
 
 ## Price band
-RM219.00 to RM295.00 (Cytron product page, read 2026-10-19)
+RM219.00–RM295.00 across 2 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-rekabit-rbt-project-kits

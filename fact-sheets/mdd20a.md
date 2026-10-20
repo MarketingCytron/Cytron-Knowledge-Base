@@ -65,10 +65,10 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 6â
 - Product page features: "Buttons for quick testing." "LEDs for motors output state."
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $33.25; 20 or more $31.50; 50 or more $29.75 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM161.70 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver-2-channels
+https://my.cytron.io/p-20amp-6v-30v-dc-motor-driver-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf

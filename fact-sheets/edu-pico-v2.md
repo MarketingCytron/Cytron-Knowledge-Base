@@ -53,6 +53,8 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - Protoboard with Grove port
 - Operating temperature: -20 – 85 ℃
 - In the box: EDU PICO V2 Board ×1; Step-by-step Guidebook (English) ×1; Raspberry Pi Pico 2 W ×1 (not in EDU-PICO2-NB); USB Micro B Cable ×1; Grove 4 Pin Buckled 20cm Cable ×8; Micro Servo with Servo Horns ×1; DC2-6V Miniature Motor with 20cm Wire ×1; Mini Phillips Head Screwdriver ×1; DIY 4 Blades 56mm Motor Propeller (Blue) ×1; USB LED Light Stick (Blue) ×1; Cable Tie 100mm ×5; Self adhesive Round Velcro 10mm (Hook and loop pairs) ×27
+- 12 GPIO status LEDs (product page)
+- Packing (with Pico 2 W): board, English guidebook, Pico 2 W, USB cable, micro servo, 8 Grove cables, 2–6 V motor, screwdriver, 56 mm propeller, Velcro, 2 cable ties, USB LED stick; the other option omits the Pico 2 W (product page)
 
 ## Interfaces and compatibility
 - Hosts: Raspberry Pi Pico 2 W (included except EDU-PICO2-NB); socket text also names Pico 2
@@ -115,7 +117,7 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - "Beginner friendly"; "Perfect for students & educators" (product-page images)
 
 ## Price band
-[NOT STATED]
+RM259.00–RM299.00, without / with Raspberry Pi Pico 2 W (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-edu-pico-2-project-innovation-kit-for-pico-2-w

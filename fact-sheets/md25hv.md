@@ -69,10 +69,10 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 7
 - Product page features: "Buttons for quick testing." "LEDs for motor output state." "Dual Input Mode: PWM/DIR or Potentiometer/Switch Input."
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $56.05; 10 or more $53.10; 30 or more $50.15 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM273.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-25amp-7v-58v-high-voltage-dc-motor-driver
+https://my.cytron.io/p-25amp-7v-58v-high-voltage-dc-motor-driver
 
 ## Datasheet
 https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit

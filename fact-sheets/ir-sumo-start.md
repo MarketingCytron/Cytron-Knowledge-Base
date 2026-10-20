@@ -30,6 +30,9 @@ An infrared receiver module that gives a sumo robot a START/STOP signal from an 
 - Supply current: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - IR receiving range and angle: [NOT STATED]
+- Packing: module, 10 cm GVS female-to-female extension, 3D-printed case; no IR remote (product page)
+- Size 32.4 × 14 × 10 mm, 2 g (product page)
+- Works at 5 V and 3.3 V (product page)
 
 ## Interfaces and compatibility
 - 3-pin header, left to right: − (GND), + (power input, 3.3V or 5V), S (output signal); power is the middle pin
@@ -63,10 +66,10 @@ An infrared receiver module that gives a sumo robot a START/STOP signal from an 
 - "Keselamatan lebih terjamin. Robot boleh dihentikan secara wireless." (safer; the robot can be stopped wirelessly)
 
 ## Price band
-[NOT STATED]
+RM23.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-ir-sumo-start-module
 
 ## Datasheet
 [NOT STATED]

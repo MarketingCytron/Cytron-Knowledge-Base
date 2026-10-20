@@ -32,6 +32,9 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 - Dimensions: [NOT STATED] (drawing only)
 - Protections (reverse polarity, over-current, thermal): [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Power: external Vin 7–12 V terminal block only; no micro USB, no battery holder, no charging (product page, Cytron comparison image)
+- Motors: 4 channels, 3 A continuous, 5 A peak; total 5 V output 3 A; servo power selectable 5 V or Vin; total servo current 3 A (Cytron comparison image)
+- Packing: board, screwdriver, 3 Grove-to-JST-SH cables, 4 bumpers, 4 building-block pins (product page)
 
 ## Interfaces and compatibility
 - micro:bit versions: [NOT STATED]
@@ -69,10 +72,10 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 - Datasheet header: "Simplifying Digital Making"
 
 ## Price band
-[NOT STATED]
+RM166.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-motion-bit-pro-12v-robotics-expansion-board-for-micro-bit
 
 ## Datasheet
 https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view

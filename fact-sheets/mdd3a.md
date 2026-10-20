@@ -33,6 +33,7 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Operating temperature: [NOT STATED]
 - Terminal type and wire size: [NOT STATED]
 - Packing list: 1 x 3Amp 4V-16V DC Motor Driver (2 Channels) (product listing)
+- 3 A per channel continuous, 5 A peak; reverse polarity protection (product page)
 
 ## Interfaces and compatibility
 - Pins: VB+, VB- (power input terminal); motor output terminals; M1A, M1B, M2A, M2B (PWM inputs); 5VO; GND
@@ -69,10 +70,10 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Reverse polarity protection pitched against "a very common mistake done by a lot of makers even for the very experienced one" (datasheet)
 
 ## Price band
-- USD 7.00 on Cytron's Tindie store ("Sold out since Aug 02, 2026"), checked 16 Oct 2026
+- RM39.06 on my.cytron.io, availability 90 (read 2026-10-19); USD 7.00 on Cytron's Tindie store (sold out there since 2 Aug 2026)
 
 ## Product page
-https://www.cytron.io/p-mdd3a
+https://my.cytron.io/p-mdd3a
 
 ## Datasheet
 https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/edit

@@ -5,7 +5,8 @@
 | Product code | UC00C [PP][UM] |
 | Family | USB and serial converters |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). VCC current, LED colours, OS testing, size and packing are now Cytron-stated; the physical pin order is only in a page image (not read), so it stays Medium |
 | Primary source | "UC00C Cytron USB to UART Converter User's Manual", V1.0, July 2016 (Cytron Technologies Sdn Bhd) — no separate Cytron datasheet exists; the user manual is the top Cytron source and is tagged [UM] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,6 +41,14 @@ The user manual has no numeric spec table; the rows below collect every stated f
 | Baud rate range, output current on VCC/5V, supply current, operating temperature, header pitch, weight, DTR polarity | Not stated | [UM] |
 
 Chip-vendor reference (not a Cytron spec, for context only): the WCH CH340 datasheet (V1D) states 50 bps to 2 Mbps, USB 2.0 full-speed device, and TXD/RXD/RTS#/CTS#/DTR#/DSR#/DCD#/RI# modem signals [VEN]. Do not state these as UC00C specs — Cytron has not confirmed which CH340 variant is fitted or which rates the board supports (see Needs verification).
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Voltage switch and current:** slide switch selects 3.3 V or 5 V on VCC and the signal lines. At **5 V** the board sources as much as the USB port provides; at **3.3 V** the maximum current is **500 mA** [PP].
+- **LEDs:** red = TX line, orange = RX line [PP].
+- **OS:** "tested to work well on Windows 7, 8, 8.1 and 10"; "should auto install on most operating systems without the need for additional drivers" [PP].
+- **Features list:** CH340 USB to UART chip; USB powered; selectable 3.3 V / 5 V UART; 6-pin interface DTR, RXD, TXD, VCC, CTS, GND; 6-way header socket for bootloading Arduino-compatible boards (BBFuino, Arduino Pro Mini 328, Arduino Fio); **dimension 39.8 × 21.2 × 5.6 mm** [PP].
+- **Packing list:** 1x UC00C (CH340) USB to UART Converter [PP].
+- **Resources:** UC00C User Manual (Google Doc); CH34X drivers (Windows V3.5, Mac V1.5, Linux V1.5, Mar 2019), older macOS drivers (third-party links), WCH factory driver, CH341 Mac troubleshooting PDF [PP].
+- Pinout image and pin-description image are on the page (`UC00C-Pinout-Image.png`, `UC00C-Pinout-Description.png`) — not read here (image only).
 
 ## Interfaces, terminals and pin mapping
 ### Board layout (user manual section 4.0) [UM]
@@ -121,14 +130,13 @@ The physical left-to-right order on the socket is shown only in the manual's boa
 ## Needs verification
 - Exact CH340 variant fitted (CH340G with external 12 MHz crystal vs CH340C), and whether it has changed across production batches — no Cytron source states it; [VEN] only.
 - Supported baud rate range on UC00C — not stated [UM]; CH340 vendor figure 50 bps–2 Mbps [VEN] not confirmed by Cytron.
-- Maximum current available on VCC / 5V — not stated [UM] ("low current" only).
 - Default position of the voltage switch as shipped — not stated [UM].
 - Physical pin order of the 6-way socket (left-to-right on the board) — the manual's figure did not extract; only the table order is known [UM]. Whether the socket is keyed/colour-marked (GRN/BLK) like UC00A — not stated.
 - Whether DTR is active-low / its polarity — not stated [UM].
 - Windows 11, macOS 11+ and Linux kernel-driver support — not stated [UM]; the Mac troubleshooting PDF on the product page was not readable in this session.
 - Header socket type (female socket vs male pins) and pitch — "header socket" only [UM].
 - Which current Cytron boards it programs — only BBFuino named [UM]; confirm with design team [DT] before naming others.
-- Product page text beyond title/price/stock/documents was not read by this agent (page read by the coordinator) [PP].
+- Physical pin order: read the product page images `UC00C-Pinout-Image.png` / `UC00C-Pinout-Description.png` when the browser can render images.
 
 ## Sources
 - [UM] UC00C Cytron USB to UART Converter User's Manual, V1.0, July 2016 — https://docs.google.com/document/d/1adRsDAq_2xHbCvTTBw_mdcA3iCzYsW2S5WuDaZOizjc/view (Google Doc; figures did not extract as text)

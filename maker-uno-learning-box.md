@@ -5,7 +5,8 @@
 | Product code | `KIT-MAKER-UNO-START` (my.cytron.io product page [PP]; Opencircuit "model" agrees [3P]) |
 | Family | Arduino kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Page agrees with the KB (17 projects in 7 lessons, packing list); the Beginner Guide PDF is still unread, so it stays Medium |
 | Primary source | No datasheet exists. The kit's guide book is **"Arduino Learning Guide for Beginner Using Maker UNO"** (PDF, `Arduino_Learning_Guide_for_Beginner_Using_Maker_UNO.pdf`, Cytron) — **its host (s3-ap-southeast-1.amazonaws.com / cdn.cytron.io) was blocked from this environment, so the guide was NOT read**. Main source used: **Cytron product page "Maker UNO Learning Box - Everything You Need to Start Making"** (my.cytron.io, read by the coordinator 2026-10-19) [PP]. The board in the kit is documented in `maker-uno.md` |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,6 +41,10 @@ No spec table exists. Kit-level facts:
 | 5 Analog Input | P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line |
 | 6 DC Motor | P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton |
 | 7 Ultrasonic Sensor | P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page re-read:** 17 projects covering 7 lessons (digital output, digital input, analog output, melody tone, analog input, DC motor, ultrasonic sensor); packing list unchanged; prices subject to SST from April 2026 [PP].
+- **Parts linked from the packing list:** 3 V miniature brush motor (MO-130SA-2270), 4-blade propeller (HD-PROP-4B), SR04 ultrasonic (SN-HC-SR04), IR line sensor (SN-IRLINE-MOD), 5 mm LEDs (DS-LED-5NR/5NY/5NG), push button (SW-PBM-2N-060601), resistors (RS-025W-220R/1K/10K), 1N4007, 2N2222, finger preset 10K (RS-MP3386-10K), jumper wires (WR-JW-40MM, WR-JW-40MF), USB Micro-B cable (WR-USB-UB), breadboard (BD-BB-0508) [PP: packing-list links].
+- **Resources:** Beginner Guide PDF (cdn.cytron.io), CH34X drivers, Maker UNO default program (GitHub), Arduino IDE [PP].
 
 ## Interfaces, terminals and pin mapping
 The Maker UNO edition of the guide was not read, so **no project wiring is confirmed for this kit**. Board-level pins that the lesson titles rely on (from `maker-uno.md`): on-board button D2 (`INPUT_PULLUP`), on-board piezo buzzer D8 (slide switch), programmable LEDs on the digital pins, analog inputs A0–A5, PWM on ~3, ~5, ~6, ~9, ~10, ~11.

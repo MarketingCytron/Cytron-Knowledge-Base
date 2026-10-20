@@ -5,7 +5,8 @@
 | Product code | `V-TRAINING-AI` [PP] |
 | Family | Workshops and services |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 (product page facts read 2026-10-19) |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources) plus the workshop outline already in the KB. Refund terms and on-site option are now Cytron-stated |
 | Primary source | **No datasheet exists (this is a service).** Highest source is the Cytron workshop schedule: "Raspbot Workshop Tentative.pdf" (Google Drive, no version or date printed) [UM]; product page https://my.cytron.io/p-ai-training-kit [PP]|
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -35,7 +36,8 @@ Service / logistics table (kit contents as listed on the product page).
 | Kit: robot parts | Car expansion board; camera platform PCB; PTZ component; 4x mecanum wheels; 4x motor fixing frames; 4-channel tracking module; 4x motor; battery + velcro; 40-pin cable; camera; ultrasonic sensor; remote control; screw pack | [PP] |
 | Kit: accessories | Screwdriver; micro HDMI cable; 12.6V charger (EU) + UK adapter; manual | [PP] |
 | Prerequisites | Not stated in any source read | — |
-| Refund / cancellation terms | Not stated in any source read | — |
+| Refund / cancellation terms | Full refund for cancellations made 1 week before the training date | [PP] |
+| On-site workshops | Available at the customer's location by enquiry | [PP] |
 
 **Timetable ("Raspbot Workshop Tentative", Day 1)** [UM]:
 | Time | Activity |
@@ -54,6 +56,12 @@ Service / logistics table (kit contents as listed on the product page).
 | 4:30 PM – 4:45 PM | Tea Break |
 | 4:45 PM – 5:00 PM | Q&A / Summary |
 
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Refund:** "Get a full refund for any cancellations made 1 week before your training date" [PP].
+- **On-site:** workshops can also be run at the customer's location — enquire with Cytron (contact on the page) [PP].
+- **Details:** one-day workshop at Cytron HQ, Bukit Mertajam, Penang; 9.00 am–5.00 pm; morning tea, lunch and evening tea included; open to the public; maximum 5 participants per workshop; certificate at the end [PP].
+- **Kit (Raspbot AI Vision Robot, complete set):** Raspberry Pi 5 (8GB), 32GB microSD with Raspbot OS, car expansion board, camera platform PCB, PTZ component, 4 mecanum wheels, 4 motor fixing frames, 4-channel tracking module with 6-pin cable, 4 motors, battery and velcro, 40-pin cable, camera with cable, ultrasonic sensor, remote control, screwdriver, micro-HDMI to HDMI cable, 12.6 V charger (EU plug), UK plug adapter (free), screw pack, manual [PP].
+- **Resources:** Raspbot Workshop Outline (Google Drive) [PP].
 
 ## Interfaces, terminals and pin mapping
 
@@ -88,11 +96,11 @@ Not applicable (service). Kit power items stated: battery + velcro; 12.6V charge
 ## Needs verification
 - Prerequisites and minimum age for the current product (the 2024 internal listing said 15+, but that is historical).
 - Whether participants must bring a laptop.
-- Refund, transfer and cancellation terms; on-site (customer location) pricing.
 - Battery chemistry, voltage and capacity of the kit battery; manufacturer of the Raspbot platform.
 - What the "Raspbot App" is (mobile app vs desktop) and which Raspbot OS version is on the microSD.
 - Whether the 12 Nov 2026 and 10 Dec 2026 dates are still open after 2026-10-19.
 - Version/date of the tentative timetable (none printed).
+- Transfer terms and on-site pricing (refund: full refund for cancellations 1 week before the date [PP]; on-site by enquiry [PP]).
 
 ## Sources
 - [UM] Raspbot Workshop Tentative.pdf — Cytron timetable (Google Drive): https://drive.google.com/file/d/1UqgaUC4sCqkGij_CYugQJBWlGZO8z-C6/view

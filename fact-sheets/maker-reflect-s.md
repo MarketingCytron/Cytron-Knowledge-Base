@@ -29,13 +29,16 @@ The newer "S" variant of the Maker Reflect infrared reflectance sensor (line det
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER-REFLECT-S Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, February 2026
 - Warranty: 12 months (product page)
+- Supply: 5.0 V only; supply current 25 mA (product page comparison table)
+- Output: analog, 0–VCC, higher on darker surfaces; optimal distance 3 mm (product page)
+- Ikedo Mini Sumo Robot V2 uses it as the edge sensor from March 2026 (product page)
 
 ## Interfaces and compatibility
 - Connector: 3 pins — VCC (power input), GND (ground), OUT (output)
 - Readable on a digital input pin (datasheet: "Digital IO Compatible", "No ADC required") or an analog input (datasheet: "Analog output")
 - Compatible boards named in the datasheet: [NOT STATED]
 - Sold as the option "Maker Reflect S" on the Maker Reflect product page (code MAKER-REFLECT-S)
-- The Ikedo Mini Sumo Robot V2 product page lists its edge sensors as "Maker Reflect S"; the Ikedo V2 Getting Started guide calls them "Maker Reflectance Sensor" and links the older Maker Reflect page; neither Reflect datasheet mentions the Ikedo kit
+- The Ikedo Mini Sumo Robot V2 ships with 2 x Maker Reflect S edge sensors from March 2026 (Ikedo V2 product page); its older Getting Started guide links the Maker Reflect page
 - Documents linked from the product page: datasheet only
 
 ## Use cases
@@ -55,7 +58,7 @@ The newer "S" variant of the Maker Reflect infrared reflectance sensor (line det
 - Sold under "Maker Reflect: Simplifying IR Reflectance Sensor for Beginner" as the newer option
 
 ## Price band
-RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+RM8.00–RM9.00 across Maker Reflect / Maker Reflect S (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner

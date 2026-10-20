@@ -29,6 +29,8 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Debugging port breakout
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.62 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Base compatible with Raspberry Pi Pico 2 (product page); bundles with Pico 2 SH, Pico 2 WH or Pico SH, or base only
+- Pin use: buttons GP20–22, RGB GP28, buzzer GP18, audio GP18–19, microSD GP10–15, ESP-01 GP16–17 (product page)
 
 ## Interfaces and compatibility
 - Micro USB (power and programming), 6 Grove ports, 3.5mm stereo audio jack, micro SD card socket, ESP-01 socket, debugging port breakout, two 20-way GPIO pin headers
@@ -67,7 +69,7 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Product page: "Work out-of-the-box. No soldering!"
 
 ## Price band
-RM48.00 (Cytron product page, read 2026-10-16)
+RM50.40 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-pico

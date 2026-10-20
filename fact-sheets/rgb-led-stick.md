@@ -46,7 +46,7 @@ A small PCB stick with 8 addressable 5050 RGB LEDs (SK6812-based, WS2812B-compat
 - "NeoPixel compatible" (product page)
 
 ## Price band
-RM9.35 (10+ RM8.88, 50+ RM8.41) (Cytron product page, read 2026-10-19)
+RM9.35 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron

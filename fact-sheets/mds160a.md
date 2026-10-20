@@ -35,6 +35,8 @@ A single-channel, bi-directional smart driver for one high-power brushed DC moto
 - Reverse polarity protection: [NOT STATED]
 - Length and width: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- No reverse polarity protection for Vmotor (product page)
+- Size 122 × 178 × 75 mm; wire 2–3 × 8 AWG per terminal (product page)
 
 ## Interfaces and compatibility
 - Positive and negative supply terminals; Motor Terminal A and B
@@ -75,7 +77,7 @@ A single-channel, bi-directional smart driver for one high-power brushed DC moto
 - "This make driving a robot with differential drive a truly plug and play experience."
 
 ## Price band
-[NOT STATED]
+RM1,062.60 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-160amp-8v-28v-smartdrive-dc-motor-driver

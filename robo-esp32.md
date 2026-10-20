@@ -5,7 +5,7 @@
 | Product code | `ROBO-ESP32` |
 | Family | Maker ESP32 family (ESP32 ecosystem) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
 | Primary source | Robo ESP32 Rev1.1 Board Datasheet, Rev 1.1, February 2026 (Cytron Google Doc): (Cytron document — link not public) |
 
 **Authority rule:** Datasheet [DS] > Cytron design team [DT] > Cytron product page [PP] > Cytron GitHub [GH] > chip vendor docs [VEN] > third-party [3P].
@@ -13,6 +13,7 @@ Where sources disagree, the higher one wins and the conflict is listed under *Co
 
 ## What it is
 - A carrier board that turns a plug-in NodeMCU-format ESP32 into a robot controller. **There is no ESP32 on the Robo ESP32 itself.** It has an "ESP32 Socket: Socket for NodeMCU ESP32" [DS].
+- It takes a "30-pin straight header NodeMCU ESP32" only [DS]. The NodeMCU ESP32 is sold separately and is not in the box [PP packing list; GH README lists it as a separate requirement]. The product page says the board is "Designed for NodeMCU ESP32 … 30 pins" [PP].
 - Onboard: a 2-channel DC motor driver, 4 servo ports, 7 Grove ports plus a Maker Port, 2 NeoPixels, 2 user buttons, a piezo buzzer, GPIO status LEDs, motor test buttons, and LiPo/VIN/USB power with an on/off switch [DS].
 - Datasheet tagline: Rev 1.0 says "Simplifying Robotics with ESP32", Rev 1.1 says "Simplifying Smart Projects with ESP32" [DS]. The product page title matches Rev 1.1 [PP search listing].
 
@@ -33,6 +34,15 @@ Where sources disagree, the higher one wins and the conflict is listed under *Co
 | Maker Port | Qwiic / STEMMA QT / Grove (with conversion cable). Shares D21/D22 with Grove 2. | [DS] |
 | Logic levels | VIL -0.3–0.8 V, VIH 2.5–3.6 V, VOL 0–0.3 V, VOH 2.6–3.3 V, analog in 0–3.3 V | [DS] |
 | Operating temperature | -20 to 85 °C (Robo ESP32 board only) | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Host:** "Designed for NodeMCU ESP32 — built to work seamlessly with the NodeMCU ESP32 30 pins" [PP]. The page does not mention Maker ESP32.
+- **Software:** description says "Compatible with Arduino IDE, MicroPython, C++, and MicroBlocks"; the section heading says "Supports Arduino IDE and MicroBlocks" [PP].
+- **Features list:** automatic power selection USB 5 V / 1-cell LiPo / Vin 3.6–6 V; built-in 1-cell LiPo/Li-ion charger (over-charge and over-discharge protection); power switch with status LED; 7 Grove ports; 1 Maker Port (JST-SH 4-way); GPIO breakout for NodeMCU ESP32; **10 status indicator LEDs for GPIO pins**; 2 RGB LEDs (Neopixel compatible); 2 programmable buttons; piezo buzzer with mute switch; 2 DC motor terminals, 2 status LEDs and 2 test buttons per terminal; 4 servo ports; 4x 4.8 mm mounting holes and 4x M3 screw holes [PP].
+- **Motors:** 2 DC motors or up to 4 servos at the same time; each motor channel up to **1 A continuous**; motor voltage follows the external supply [PP].
+- **Power:** only one power source is needed to run the board and the motors [PP].
+- **Reset:** "the built-in reset button means quick restarts without unplugging the USB" [PP].
+- **Packing list:** 1x Robo ESP32 board, 1x transparent Phillips screwdriver, 1x silicone rubber feet (pack of 4), 4x Grove to female header cable [PP]. No ESP32 board in the box.
+- **Resources:** datasheet (Google Doc), Getting Started with Robo ESP32 (Cytron tutorial), GitHub, Spanish programming guide and book by Prof José Manuel Ruiz Gutiérrez, 3D CAD [PP]. A dimension image (`robo-esp32-09.png`) is on the page but was not read (image only).
 
 ## Onboard peripherals and pins
 | Function | GPIO / pin | Notes | Src |
@@ -86,7 +96,7 @@ Motor truth table [DS]: A=L, B=L → **Brake**. A=H, B=L → Forward. A=L, B=H �
 
 ## Compatibility and accessories
 - **NodeMCU ESP32 (30-pin, straight header):** the officially stated host [DS]. Boards with 38 pins or angled headers are not supported [DS].
-- **Maker ESP32:** Cytron describes it as compatible (per the brief and the Cytron Maker ESP32 bundle with a Robo ESP32 option in project notes). The Maker ESP32 datasheet does not mention Robo ESP32. Pin compatibility is supported by the Maker ESP32 datasheet:
+- **Maker ESP32:** Cytron states it is compatible — the Maker ESP32 product page says "fully compatible with expansion boards like the Robo ESP32" and sells a Maker ESP32 + Robo ESP32 bundle [PP: Maker ESP32 page, read 2026-10-20]. The Maker ESP32 datasheet does not mention Robo ESP32. Pin compatibility is supported by the Maker ESP32 datasheet:
   - Its 30-pin header is "Compatible with NodeMCU ESP32 form factor" [DS Maker ESP32 Rev 1.1].
   - Its header order matches the DevKit V1 30-pin layout that the Robo ESP32 datasheet uses for its pinout [DS].
 - **Pin clashes when a Maker ESP32 is stacked on the Robo ESP32** (derived from both datasheets):
@@ -114,19 +124,21 @@ Motor truth table [DS]: A=L, B=L → **Brake**. A=H, B=L → Forward. A=L, B=H �
 |---|---|---|---|
 | Grove port for the HC-SR04 example (pins 26/25) | [GH] DigitalRead.ino and  Arduino section: "Grove 2" | [DS]: 26/25 = Grove 3.  MicroBlocks section: Grove 3. | [DS] wins: Grove 3 |
 | Blynk DHT11 pin |  Blynk section: D32 (Grove 3) | [GH] Blynk.ino: GPIO16. [DS]: Grove 3 = 26/25. | Use the [DS] mapping. The tutorial must name one port and pin that agree with [DS]. |
-| Number of Grove status LEDs | [3P] RobotShop: "10 status LEDs" | [GH] Blink.ino drives 8 (16, 17, 21, 22, 25, 26, 32, 33). [DS] gives no count. | Unresolved. Listed under *Needs verification*. |
+| Number of Grove status LEDs | [PP] (read 2026-10-19) and [3P] RobotShop: 10 status LEDs for GPIO pins | [GH] Blink.ino drives 8 (16, 17, 21, 22, 25, 26, 32, 33). [DS] gives no count. | Say **10** [PP]; which two extra pins have LEDs is still open (*Needs verification*) |
+| Software support | [PP] description (read 2026-10-19) and [3P]: Arduino IDE, MicroPython, C++, MicroBlocks | [PP] section heading, [GH] README, element14: Arduino IDE and MicroBlocks | Only Arduino IDE and MicroBlocks have official examples; name those two |
+| Reset button | [PP] (read 2026-10-19): "built-in reset button" | [DS] function table lists no reset button | Unresolved. It may be the plug-in board's EN button |
 
 ## Needs verification
 - How the ESP32 board is powered from LiPo or VIN (boost to 5 V on its VIN pin, or feeding 3V3?), and whether the Grove 3V3 comes from the plug-in board's 3V3 pin. Only the datasheet power-tree figure shows this, and it could not be read. This matters for Maker ESP32, whose VIN is rated 4.6–5.5 V.
 - Charging the LiPo from a Maker ESP32's USB-C. Charge current is not stated.
 - Whether the user buttons on 34/35 have pull-ups on the board, and that they are active-LOW. This is inferred from the example code only.
-- Grove status LED count and which pins have them: 8 per [GH], 10 per [3P]. Do 36 and 39 have LEDs?
 - Which GPIO lands on Grove signal wire 1 (yellow) and which on wire 2 (white) for each port. [GH] AnalogRead implies Grove 7: D39 = DIS, D36 = OUT.
 - Motor driver IC part number. Board dimensions and mounting holes (figure only).
 - Hardware differences between Rev 1.0 and Rev 1.1. The text is identical, but the figures were not compared.
 - MicroPython support: is there any official firmware, library or example?
 - An official Cytron statement that Maker ESP32 is compatible with Robo ESP32 (the Maker ESP32 datasheet doesn't say so). Also check whether GPIO12 (M1A) has any pull-up on the Robo ESP32 that could affect boot.
-- Current product-page status and SKU wording (my.cytron.io could not be fetched).
+- Which 10 GPIOs have status LEDs (the page says 10; the official Blink example drives 8 — 16, 17, 21, 22, 25, 26, 32, 33; are 36 and 39 the other two?).
+- Where the reset button is: the page says "built-in reset button", the datasheet function table lists none — it may be the NodeMCU ESP32 EN button.
 
 ## Sources
 - [DS] Robo ESP32 Rev1.1 Board Datasheet (Rev 1.1, Feb 2026): (Cytron document — link not public)

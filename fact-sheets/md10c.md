@@ -32,6 +32,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Packing list: 1 x MD10C R3.0; 1 x 2510 PCB connector 3-way female; 3 x 2510 terminal pin; 4 x plastic spacer (~7 mm)
 - Warranty: 12 months, manufacturing defects only
 - Operating temperature: [NOT STATED]
+- Packing: MD10C Rev3.0, 2510 3-way connector + 3 pins, 4 plastic spacers (product page)
 
 ## Interfaces and compatibility
 - Green terminal block: pin 1 V motor Power + (5V to 30VDC), pin 2 V motor Power - (ground)
@@ -72,7 +73,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Product page points to MD13S as an SMD version with similar specs at a lower price
 
 ## Price band
-- $11.50 on www.cytron.io (10 or more: $10.63; 50 or more: $9.20), read 16 Oct 2026
+RM64.26 on my.cytron.io (read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-5v-30v-dc-motor-driver

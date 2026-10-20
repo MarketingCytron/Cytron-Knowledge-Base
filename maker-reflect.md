@@ -5,7 +5,8 @@
 | Product code | `MAKER-REFLECT` (datasheet title [DS]; product page code `MAKER-REFLECT`, page variant code `V-MAKER-REFLECT` [PP]) |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. The Reflect vs Reflect S comparison table, the 18.1 × 8.4 × 4.2 mm size and the centred mounting hole are now Cytron-stated |
 | Primary source | **MAKER-REFLECT Datasheet — "Analog Reflectance Sensor (Line Detector)" — Rev 1.0, November 2019** (public Google Doc linked from the product page): https://docs.google.com/document/d/1RdldHYXGyjtmrZmqSi-gXY-nAEqwA7t_kV5X4JFv7qE/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -33,11 +34,15 @@ Datasheet Table 2 is titled **"MAKER-REFLECT Absolute Maximum Ratings"** and has
 | Sensor / IR IC part number | **Not stated** | [DS] |
 | Threshold / calibration | None on board — raw analog output only (no trimmer, switch or calibration is listed in the board-functions table) | [DS] |
 | Indicator LED | **None listed** in the board-functions table | [DS] |
-| Dimensions | **Not stated in text** (Figure 3 drawing only). [3P] 18.1 × 8.4 × 4.2 mm excluding header pin — see Needs verification | [DS] |
+| Dimensions | 18.1 × 8.4 × 4.2 mm, excluding the header pin | [PP] |
 | Operating temperature | **Not stated** | [DS] |
 | Weight | **Not stated** [DS]; [3P] element14 0.01 kg, Botland 0.002 kg | — |
 
 Footnote [DS]: "Sensing distance may reduce if VCC is less than 5V or the line-background contrast is low."
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Comparison table (Maker Reflect column):** operating voltage 3.0–5.5 V; supply current not given ("-"); analog output 0–VCC; digital-IO compatible; no external ADC needed; optimal distance **1–40 mm**; pins VCC, GND, OUT; single-ended analog [PP]. (Maker Reflect S: 5.0 V, 25 mA, 3 mm.)
+- **Description:** analog output, darker surface = higher voltage; "Measuring only (L)18.1mm x (W)8.4mm x (H)4.2mm (Exclude the header pin)"; mounting hole at the centre so the sensor can sit front-most; 3-pin interface [PP]. The page's "optimal sensing distance of approximately 3 mm" sentence sits in a description shared with Reflect S; the table gives 1–40 mm for Maker Reflect [PP].
+- **Applications:** general line following, IR sensor projects [PP]. Packing: 1x sensor (the option chosen) [PP].
 
 ## Interfaces, terminals and pin mapping
 Connector [DS Table 1] (physical pin order is shown in Figure 1 only, not in text):
@@ -92,18 +97,14 @@ Connector [DS Table 1] (physical pin order is shown in Figure 1 only, not in tex
 | Optimal sensing distance | [DS] not stated (only 1–40 mm range) | [3P] element14 "approximately 3 mm" (matches the Maker Reflect S datasheet, not this one) | Do not quote for MAKER-REFLECT; see Needs verification |
 | Weight | [3P] element14 0.01 kg | [3P] Botland 0.002 kg | Neither is a spec; not stated by Cytron |
 | Spec table numbering | [DS] rows numbered 1, 3, 4 | — | Row 2 is missing in the datasheet; not a data error, just note it |
-| Edge sensor in Ikedo V2 kit |  Ikedo V2 guide "Maker Reflectance Sensor" (links the MAKER-REFLECT page per INDEX.md) | [PP] Ikedo V2 page "Maker Reflect S" | Unresolved; neither Reflect datasheet mentions the Ikedo kit |
+| Edge sensor in Ikedo V2 kit |  Ikedo V2 guide "Maker Reflectance Sensor" (links the MAKER-REFLECT page) | [PP] Ikedo V2 page (read 2026-10-19): "From March 2026 onwards … will include Maker Reflect S as the edge sensor" | Resolved: Maker Reflect S from March 2026; older kits may have shipped Maker Reflect |
 
 ## Needs verification
-- **Dimensions**: [3P] The Pi Hut and Botland 18.1 × 8.4 × 4.2 mm (excluding header pin); datasheet Figure 3 not readable as text. Confirm from the drawing.
 - **Supply current** — not stated (the Reflect S datasheet states 25 mA; do not transfer it).
 - **IR emitter / phototransistor part number** — not stated.
 - **Connector pin order** (VCC/GND/OUT left-to-right) and header type (right-angle or straight) — figure only; [3P] 2.54 mm pin header.
-- **Mounting hole** position and size — [3P] The Pi Hut "at the center"; not in text.
 - **Optimal sensing distance ~3 mm** — [3P] element14 only.
-- **Which Reflect variant ships in the Ikedo Mini Sumo Robot V2 kit** — neither datasheet mentions Ikedo; ask the design team.
 - Whether the Farnell PDF mirror (https://www.farnell.com/datasheets/4725988.pdf) is the same Rev 1.0 — not opened.
-- [3P] prices (cross-check only): RobotShop USD 2.00; The Pi Hut £2.20 incl. VAT.
 
 ## Sources
 - [DS] MAKER-REFLECT Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, November 2019 — https://docs.google.com/document/d/1RdldHYXGyjtmrZmqSi-gXY-nAEqwA7t_kV5X4JFv7qE/edit (public; PDF mirror listed by element14, not opened: https://www.farnell.com/datasheets/4725988.pdf)

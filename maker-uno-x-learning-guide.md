@@ -5,7 +5,8 @@
 | Product code | `BOK-MUNOX` (my.cytron.io product page [PP]) |
 | Family | Arduino kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page lists all 17 project titles and the packing list; Projects 15–17 content is still unread, so it stays Medium |
 | Primary source | The product IS the document. **Guide book: "Arduino Learning Guide for Beginners Using Maker UNO X", v1.5, February 2023, published by Cytron Technologies** (Drive PDF `Arduino Learning Guide for Beginners Using Maker UNO X R15 Feb23.pdf`) [UM]. Read as extracted text from the cover to Lesson 6 Project 14 (p. ~80); Projects 15–17 were cut off by the reader. An older edition v1.4 (February 2020) also exists on Drive [UM-v1.4, cover only] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -43,6 +44,10 @@ Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are im
 | 5 Analog Input | P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line | `analogRead()` 0–1023; Serial Monitor; how an IR sensor works; variables |
 | 6 DC Motor | P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton | transistor-driven motor; PWM speed (P15 not read) |
 | 7 Ultrasonic Sensor | P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor | (not read) |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** guidebook designed for the Maker Uno X Learning Box, also usable as a general Arduino beginner reference; written by a non-technical person; "copy, upload, see the result, then learn" approach [PP].
+- **Project list (page):** Lessons 1–7 with Projects 1–17, ending with Project 15 "Controlling A Motor Speed Using A Pushbutton", Project 16 "Setting Up Ultrasonic Sensor", Project 17 "Build A Car's Rear Bumper Sensor" [PP].
+- **Packing list:** 1x Arduino Learning Guide for Beginners with Maker Uno X [PP]. No PDF link on this page (the Maker UNO X board page links the Rev1.5 and Rev1.4 PDFs) [PP].
 
 ## Interfaces, terminals and pin mapping
 Pins and parts each project uses, as the guide states them [UM]:
@@ -110,7 +115,6 @@ Board behaviour the guide relies on [UM]: on-board LEDs on pins 2–13, piezo bu
 - Whether the printed book sold as BOK-MUNOX is v1.5 (the page does not state the edition; "an earlier KB note says v1.5").
 - Which Arduino board name the guide tells readers to select.
 - Breadboard supplied with the Learning Box (the guide says to peel and stick it onto the Maker UNO X board) — kit fact, not book fact.
-- Whether the page links a PDF of this guide (none in the capture).
 
 ## Sources
 - [UM] Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (PDF): (Cytron document — link not public) (read 2026-10-19 as text, cover to p. ~80)

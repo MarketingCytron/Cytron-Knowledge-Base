@@ -5,7 +5,8 @@
 | Product code | `MDS40B` (user manual title page and product page "Product Code") [UM][PP] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. In stock on my.cytron.io; the page matches the earlier www.cytron.io read and links the user manual publicly |
 | Primary source | "Enhanced SmartDrive40 MDS40B User's Manual" — **Rev 1.1, July 2023** (Google Doc): https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -39,11 +40,14 @@ User manual section 3 table is titled **"Absolute Maximum Rating of Enhanced Sma
 | Current / thermal protection | Yes | [UM][PP] |
 | Cooling fan | "No" (optional 5 V fan can be connected) | [PP][UM] |
 | Warranty | 12 months, manufacturing defects only | [UM][PP] |
-| Price (product page) | $62.50 ex tax; 5 or more $57.50; 10 or more $50.00 (www.cytron.io, read 2026-10-16) | [PP] |
+| Price (product page) | RM346.50, availability 113 (my.cytron.io, read 2026-10-19); www.cytron.io $62.50 ex tax (2026-10-16) | [PP] |
 | Packing list | 1 × Enhanced SmartDrive40 with top and bottom cover; 2 × 2561 Servo Extension cable | [UM] |
 | Operating temperature | Not stated | — |
 | Weight | Not stated | — |
 | Terminal wire size | Not stated in [UM] ("use wire with proper thickness to support the expected current"); product page recommends Multicore Wire AWG14 | [UM][PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: Enhanced SmartDrive40 (MDS40B), improved MDS40A; single brushed DC motor; 10–45 V; regenerative braking; 80 A peak reducing to 40 A by temperature; 16 kHz switching; **NO reverse polarity protection**; LiPo low-voltage warning; thermal protection; current limiting by temperature; input modes RC, Analog, PWM, Simplified Serial, Packetized Serial; push button; 105 × 106 × 38 mm board, 125 × 107 × 47 mm with base; over-voltage protection; optional fan; pairs with a second unit for differential drive; AWG14 multicore wire recommended [PP].
+- **Resources:** MDS40B 3D CAD, User's Manual (Google Doc — the same document as the KB's Rev 1.1, linked from the official page), CytronMotorDriver library, Fritzing part [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (UM section 4) [UM]:
@@ -155,7 +159,6 @@ Manual example DIP strings (positions 1–8) [UM]: RC Independent `00000000`; RC
 - Test-button motor speed; function of SW7.
 - Operating temperature range, weight, terminal wire-size rating.
 - Size of current increase from an optional fan; fan current limit on the 5 V output.
-- Whether the Rev 1.1 Google Doc is publicly viewable without sign-in (its link is published on a reseller page; anonymous access not tested). Rev 1.0 PDF mirror is public.
 - Exact contents of the Rev 1.0 PDF beyond the items listed (read via text extraction only).
 
 ## Sources

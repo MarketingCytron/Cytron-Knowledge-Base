@@ -5,7 +5,8 @@
 | Product code | `MAKER-SOIL-MOISTURE` (datasheet figure/table captions [DS]; product page code `MAKER-SOIL-MOISTURE` [PP]) |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Still out of stock. The packing list, "no voltage regulator on board" and the DIS behaviour (HIGH = disabled) are now Cytron-stated |
 | Primary source | **MAKER SOIL MOISTURE SENSOR Datasheet — Rev 1.0, January 2022** (public Google Doc linked from the product page): https://docs.google.com/document/d/1XErDF1j2W9LaeTdB7ySIbm4T83_ov0TZtVC47lmC7Pg/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -46,6 +47,11 @@ Datasheet Table 2 is titled **"MAKER-SOIL-MOISTURE Absolute Ratings"** [DS]. Eve
 | Dimensions | **Not stated in text** (Figure 2 drawing only). [3P] board 100 × 25 mm, probe 65 × 20.5 mm — see Needs verification | [DS] |
 | Maximum insertion depth | "Soil Limit" marker — [3P] only; not in the datasheet text | — |
 | Operating temperature, weight | **Not stated** | [DS] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Description:** capacitive sensing; analog output, higher moisture = lower voltage; works with power only if the LED indicators are enough; LED levels are approximate and may fluctuate with supply "since the sensor does not have a voltage regulator on board"; **disable pin: HIGH disables the sensor** (power saving); qualitative, not quantitative, measurement [PP].
+- **Features list:** 2.5–7.0 V; analog output; Grove port; dry/moist/wet LEDs; "Soil Limit" marking; double-sided capacitive probe (corrosion resistant); disable pin [PP].
+- **Packing list:** 1x Maker Soil Moisture sensor, 1x 50 cm Grove-to-Grove cable [PP].
+- **Resources:** datasheet, 3D CAD, 3D images; tutorials "Battery Powered Maker Soil Moisture Sensor" and "Self Watering Pot Featuring Maker Soil Moisture Sensor" [PP].
 
 ## Interfaces, terminals and pin mapping
 Grove port [DS Table 1] (the physical pin order on the Grove connector is shown in Figure 1 only, not in text):
@@ -109,11 +115,9 @@ Grove port [DS Table 1] (the physical pin order on the Grove connector is shown 
 - **Dimensions** (board, probe length, thickness) and the "Soil Limit" marker position / probe depth scale — [3P] Core Electronics: board 100 × 25 mm, probe 65 × 20.5 mm, "10 to 60 mm depth scale"; datasheet Figure 2 is a drawing only. The 3D CAD zip on Drive could confirm.
 - **Grove pin order** (which Grove pin is DIS vs OUT; whether OUT is on Grove signal pin 1) — figure only. Needed to say which signal pin a board's Grove analog port reads.
 - **DIS default state** (internal pull-down? may it float?) — not stated.
-- **Reverse polarity protection**, **on-board regulator**, **sensor IC / oscillator** — not stated.
-- **Which Grove cable options** the product page offers (lengths/types) — only "Grove cable options" recorded.
-- Packing list from the Cytron page — [3P] only (1 × sensor + 1 × 50 cm Grove-to-Grove cable).
 - The Cytron self-watering-pot tutorial (board, code, DIS usage) — URL not fetchable here.
 - Whether the "Maker Soil Sensor" named in the Maker Uno RP2040 repo is this product — assumed by name only.
+- Reverse polarity protection and sensor IC / oscillator — not stated (no on-board regulator, per the product page).
 
 ## Sources
 - [DS] MAKER SOIL MOISTURE SENSOR Datasheet, Rev 1.0, January 2022 — https://docs.google.com/document/d/1XErDF1j2W9LaeTdB7ySIbm4T83_ov0TZtVC47lmC7Pg/edit (public; PDF mirror, same revision and tables, read: https://cdn.robotshop.com/media/c/cyt/rb-cyt-361/pdf/maker-soil-moisture-sensor-capacitive-datasheet.pdf)

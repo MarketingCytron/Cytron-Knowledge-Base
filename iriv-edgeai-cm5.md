@@ -5,7 +5,8 @@
 | Product code | `IRIV-EDGEAI-CM5` (datasheet page header). Per-variant SKUs: not stated in any source read |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read directly (earlier page facts came from an older internal KB). Configurations, kits, packing lists, the 4-lane CSI wording, 11 W and −20 to 60 °C are now read from the live page |
 | Primary source | *IRIV EdgeAI CM5 — IR4.0 CM5 Edge AI Controller, Datasheet* **Rev 1.0, July 2025**, Cytron Technologies Sdn Bhd (15 pages) |
 
 **Authority rule:** Datasheet/manual [DS] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -27,6 +28,7 @@
 | HDMI | 1x full-size HDMI 2.0 (Type-A), up to 4K@60Hz | [DS] |
 | USB | 2x USB 3.0 host (both share one USB 3.0 hub); 1x USB-C (boot and debug) | [DS] |
 | Camera | 2x 22-way MIPI ports for CSI camera (MIPI0, MIPI1) | [DS] |
+| Camera (PP wording) | "two 4-lane MIPI CSI interfaces" | [PP] (read 2026-10-19) |
 | Ethernet | 2x RJ45 Gigabit (10/100/1000M): eth0 = CM5 native; eth1 = USB 3.0-to-Gigabit Ethernet controller | [DS] |
 | Digital input | 2x isolated bidirectional (PNP or NPN), up to 50V | [DS] |
 | Digital output | 2x isolated bidirectional, dry contact (solid state relay), up to 50V | [DS] |
@@ -62,6 +64,12 @@
 | RS485 onboard termination | 120 Ω | [DS] |
 | Operating temperature | -20 to 60 ℃ | [DS] |
 | Storage temp, humidity, IP rating, weight, certifications | Not stated | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Configurations (pre-installed AI HAT+):** 16GB RAM 64GB eMMC + 26 TOPS; 8GB RAM 32GB eMMC + 26 TOPS; 8GB RAM 32GB eMMC + 13 TOPS [PP]. The page names Hailo-8 as an example accelerator over PCIe; per-configuration chip not stated [PP].
+- **Spec table:** CM5, BCM2712 quad-core Cortex-A76 @ 2.4 GHz; RAM 8/16 GB LPDDR4-4267; eMMC 16/32/64 GB + M.2 NVMe; Wi-Fi 802.11 b/g/n/ac, BT 5.0, BLE; 1x HDMI 2.0; 2x USB 3.0; USB-C (boot and debug); **2x MIPI CSI** (description: "two 4-lane MIPI CSI interfaces"); 2x RJ45 Gigabit; 2 isolated bidirectional DI and 2 isolated DO (≤50 V); 2 LED lighting drivers (output = Vin, 2 A, PWM); isolated RS485; M.2 Key-M; PCIe port for Raspberry Pi AI HAT+; mPCIe for 4G/LoRa (USB 2.0 only); DC 10–30 V surge-protected (to 60 V for 20 ms); ATECC608B; SSD1315 0.96" OLED; power + programmable button; buzzer; 2 LEDs; fanless DIN-rail enclosure **139 × 88 × 38 mm** [PP].
+- **Electrical table:** Vin 10–30 V; USB-C 4.9–5.2 V; power consumption max 11 W (stress-ng, USB load excluded); DI low 0–0.8 V, high 3–50 V, 3750 Vrms; DO dry contact 50 V / 500 mA, 1500 Vrms; LED driver Vin, 2 A, PWM; RS485 500 kbps, 5000 Vrms; **operating temperature −20 to 60 °C** [PP].
+- **Packing — EdgeAI Only:** controller (chosen configuration, wireless), dual-band antenna for CM5, Phillips screwdriver 85 × 3 mm, 4 silicone bumpers. **Basic Kit** adds Meanwell 24 V 24 W DIN-rail PSU, USB 3.0 industrial camera 2 MP with CS lens, industrial dome light 175 mm, VisionPro camera stand. **Complete Kit** adds HDMI cable 1 m and wireless keyboard/mouse [PP]. No CR2032 cell or terminal plugs listed.
+- **Resources:** datasheet (public Google Doc), Getting Started Guide (Cytron tutorial), Bookworm OS image [PP].
 
 ## Interfaces, terminals and pin mapping
 **DS 5.1 Pin & Interface Mapping** [DS]
@@ -162,6 +170,8 @@
 |---|---|---|---|
 | OLED controller | DS features, layout, mapping: SSD1315 | DS block diagram label: SSD1306 | SSD1315 (stated three times in text) |
 | Secure chip | DS features/layout: ATECC608B | DS mapping table & block diagram: ATECC608 | ATECC608B |
+| Product name/subtitle | DS: "IR4.0 CM5 Edge AI Controller" | [PP]: "IR4.0 Industrial AI Controller" | Both are Cytron's; product name "IRIV EdgeAI CM5" is common to both |
+| RAM / eMMC options | DS: 2/4/8/16 GB RAM, 16/32/64 GB eMMC | [PP] (read 2026-10-19): 8GB/32GB (13 or 26 TOPS) and 16GB/64GB (26 TOPS) sold; spec table RAM 8/16 GB | DS = what the design supports; PP = what is sold. State both |
 | USB-C power | DS spec table: 4.9–5.2 VDC; DS layout: PD supply "up to 5V 5A" | WIKI/tutorial: "5V 5A" as the requirement | Not contradictory; quote DS range + "5V 5A PD" |
 | Power-off | DS: double-press = soft shutdown, long-press = force | Tutorial (INT) / WIKI: hold power button 5 s; also hold User Button 5 s to power off | DS wins for the button; the 5 s and User Button behaviour are unverified |
 | Power-on from VIN | DS: single press turns on | WIKI: VIN "auto-starts / boots automatically" | DS wins; auto-boot unverified |
@@ -172,7 +182,6 @@
 | Product page URL | INT: my.cytron.io/p-iriv-edge-ai-cm5 | WIKI: my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-edge-ai-cm5 | Same slug; give the short form |
 
 ## Needs verification
-- Product page not read (my.cytron.io fetch failed 2026-10-16). Price, live variant list, per-variant SKUs and in-box contents (antenna, CR2032, terminal plug) unconfirmed.
 - Which AI HAT+ accelerator chip each configuration uses (13 vs 26 TOPS). Hailo-8 for 26 TOPS is stated only for the Safety Box Kit ; Hailo-8L for 13 TOPS is [VEN] only.
 - Logic sense of DI (does an active input read 1 or 0?), DO (does GPIO high close the contact?), LED0/LED1 and mPCIe power (GPIO6) polarity.
 - Power-off by holding the User Button 5 s, and auto-boot on VIN — likely depends on Cytron's preinstalled image; not in DS.
@@ -181,6 +190,8 @@
 - Whether the onboard 120 Ω RS485 terminator can be disabled.
 - A newer datasheet revision than Rev 1.0 (July 2025).
 - Preinstalled OS image and any Cytron software (OLED status app, Node-RED, AI demos).
+- Per-configuration SKU codes and which AI HAT+ chip (Hailo-8 / Hailo-8L) each TOPS option uses — page names Hailo-8 only as an example.
+- CSI lane count: the page says "two 4-lane MIPI CSI"; the datasheet says "22-way" connectors only — confirm with the design team.
 
 ## Sources
 - [PP] https://my.cytron.io/p-iriv-edge-ai-cm5 (also https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-edge-ai-cm5) — not read; facts via 

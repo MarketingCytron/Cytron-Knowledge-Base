@@ -5,7 +5,8 @@
 | Product code | `MAKER-LINE` (datasheet title [DS]) |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. In stock on my.cytron.io; the page carries the same text the KB had from Cytron's Tindie listing, plus the Hackster tutorial and 3D files |
 | Primary source | MAKER-LINE Datasheet — "Simplifying Line Sensor for Beginner" — **Rev 1.0, July 2019** (public Google Doc): https://docs.google.com/document/d/1wZwWl72CKkajTDIyiMxSQ3bwXbWbqW0eq7rdg2MUPeU/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,6 +41,10 @@ Datasheet Table 2 is titled **"MAKER-LINE Absolute Maximum Ratings"** [DS].
 | Operating temperature | **Not stated** | [DS] |
 
 Footnote [DS]: "Sensing distance may reduce if VCC is less than 5V or the line-background contrast is low."
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: 5 IR sensors; line width 13–30 mm; light or dark line selectable; calibration by holding the button 2 s, sweeping across the line and pressing again (saved in EEPROM); 5 digital outputs + 1 analog line-position output; 3.3 V and 5 V compatible **with reverse polarity protection**; sensing height 4–40 mm (5 V, black line on white); refresh rate 200 Hz; applications: line-following robots, AGVs [PP].
+- **Packing list:** 1x MAKER-LINE, 2x PCB stand 5 mm, 2x PCB stand 10 mm (screw and nut), 2x M3 screw 4 mm, 2x M3 nut [PP].
+- **Resources:** datasheet (Google Doc), "Building A Low-Cost Line Following Robot" (Cytron Hackster tutorial), Maker Line 3D files (IGS and STEP) [PP]. Interface, dimension and sensor-pitch images on the page — not read.
 
 ## Interfaces, terminals and pin mapping
 I/O connector [DS Table 1] (physical pin order is shown in Figure 1 only, not in text):
@@ -128,8 +133,7 @@ Values between Left–Center–Right vary continuously (arrows in the table) [DS
 - Dimensions, mounting-hole spacing and sensor pitch (Figure 2 not readable as text).
 - Supply current consumption.
 - Whether CAL has an internal pull-up (DS only says short to GND).
-- [3P] element14 weight 0.01 kg; Pi Hut links a Hackster tutorial "Building A Low-Cost Line Following Robot" and "Maker Line 3D files" (Google Drive, IGS and STEP) — not opened.
-- Current my.cytron.io availability and RM price.
+- Weight — not stated by Cytron ([3P] element14 0.01 kg).
 
 ## Sources
 - [DS] MAKER-LINE Datasheet Rev 1.0, July 2019 — https://docs.google.com/document/d/1wZwWl72CKkajTDIyiMxSQ3bwXbWbqW0eq7rdg2MUPeU/edit (public; PDF mirror, same revision: https://cdn.robotshop.com/media/c/cyt/rb-cyt-274/pdf/cytron-maker-line-line-sensor-datasheet.pdf; Farnell mirror listed by element14, not opened: https://www.farnell.com/datasheets/4725986.pdf)

@@ -13,7 +13,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - Product code: SHIELD-LIPO
 - Primary source: Cytron LiPo Power Shield User's Manual V1.0, January 2016 (no datasheet exists)
 - Output voltage: 5 V
-- Output current: "Output current: 1A" (Features list); body text: "at least 500mA current, and peak at 1A"
+- Output current: user manual — "Output current: 1A" (Features list) and "at least 500mA current, and peak at 1A"; product page — 1000 mA continuous, 700 mA at start-up, over-current cut-off about 1100 mA (sources differ; see the KB file)
 - Battery: 3.7 V 1300 mAh LiPo (single cell)
 - Integrated charger, charging current: 500 mA
 - Charging input: onboard micro-USB port (USB Micro B cable) or the USB port on the Arduino
@@ -27,10 +27,12 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - ICSP header: not passed through (the battery is in the way)
 - Packing list: 1 x SHIELD-LIPO
 - Warranty: 12 months
-- Dimensions: [NOT STATED]
+- Dimensions: 80 mm × 54 mm, excluding the toggle switch (product page)
 - Boost converter / charger IC: [NOT STATED]
-- Arduino pins used: [NOT STATED]
+- Arduino pins used: 5V and GND only; optional battery-voltage monitoring through pads to A0–A6 (product page)
 - Battery connector type: [NOT STATED]
+- Boost input: 3.0–4.2 V LiPo/Li-ion to 5 V (product page)
+- Works with UNO-layout boards incl. Mega, Leonardo and Due (product page)
 
 ## Interfaces and compatibility
 - Compatible boards: Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo and possibly other pin-compatible main boards; hardware example uses Arduino UNO / CT-UNO
@@ -58,7 +60,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - "You can take your Arduino anywhere you wish with this LiPo Power Shield."
 
 ## Price band
-- RM57.75 (Cytron product page, read 2026-10-16)
+RM57.75, battery sold separately (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-lipo-power-shield

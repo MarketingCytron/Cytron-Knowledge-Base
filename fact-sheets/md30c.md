@@ -33,6 +33,8 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 5
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Over-current, thermal and under-voltage protection: [NOT STATED]
+- Reverse polarity protection for Vin/Vmotor; brakes when PWM is low (product page)
+- Size ~94 × ~79 mm; CE, FCC and RoHS certificates linked (product page)
 
 ## Interfaces and compatibility
 - Input header (2510, 3 pins): pin 1 GND, pin 2 PWM (not RC PWM), pin 3 DIR
@@ -73,7 +75,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 5
 - "Fully NMOS design not only provides faster switching time, it is also more efficient and no heatsink or fan is required."
 
 ## Price band
-[NOT STATED]
+RM161.70 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-30amp-5v-30v-dc-motor-driver

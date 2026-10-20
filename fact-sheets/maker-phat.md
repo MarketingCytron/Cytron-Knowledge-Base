@@ -17,7 +17,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - 3 programmable push buttons: SW1 GPIO 21, SW2 GPIO 16, SW3 GPIO 20; configure as input pull-up (the manual's feature list says "GPIO 21, 19 and 20"; its board layout, section 7.2 and demo code say 21, 16 and 20)
 - Active buzzer on GPIO 26: HIGH = on, LOW = off
 - USB Micro-B socket for 5V input and USB-to-UART communication, connected to the Raspberry Pi UART (TX GPIO 14, RX GPIO 15)
-- USB-serial IC: FT231X (manual board layout); the manual's feature list says CH340
+- USB-serial IC: FT231X on Rev1.1 (shipping since January 2019); CH340 on the earlier Rev1.00 (product page)
 - USB-serial activity indicator LED
 - Labelled breakouts: 5V, 3.3V, GND; I2C SDA GPIO 2, SCL GPIO 3; UART TX GPIO 14, RX GPIO 15; SPI MOSI GPIO 10, MISO GPIO 9, SCK GPIO 11, CE0 GPIO 8, CE1 GPIO 7; GPIO 17, 18, 27, 22, 25, 12, 13, 19
 - Input voltage: USB 5V, from computer, power bank or standard USB adapter
@@ -29,7 +29,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - Dimensions: [NOT STATED]
 
 ## Interfaces and compatibility
-- Raspberry Pi 3B / 3B+ and Raspberry Pi Zero / W / WH
+- Raspberry Pi 3B / 3B+ / 3A+, 4B, 1 A+ and Raspberry Pi Zero / W / WH (product page); **not compatible with Raspberry Pi 5** (tested by Cytron, product page)
 - Stacks directly on Raspberry Pi Zero WH
 - Raspberry Pi 3 Model B / B+ need the 2x20 PC104 stacking header (included)
 - Serial console: add enable_uart=1 to config.txt; terminal speed 115200 (PuTTY on Windows)
@@ -64,7 +64,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - "PURPLE PCB!"
 
 ## Price band
-RM45.78 (Cytron product page, read 2026-10-16)
+RM45.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-phat-simplifying-raspberry-pi-for-education

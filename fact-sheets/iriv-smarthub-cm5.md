@@ -33,6 +33,8 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Enclosure: metal, fanless design
 - Dimensions: 147mm x 94mm x 35.7mm (metal enclosure only, excluding antenna) per datasheet Features table; the datasheet dimension drawing shows 147.00 x 98.00 x 35.00
 - Mounting: 4x M4 VESA mount 75x75mm; flange slots (M4 and M8) per datasheet drawing
+- Variants sold: Wireless 16GB/64GB, 4GB/32GB, 2GB/16GB; options SmartHub Only or Essential Kit (+27 W PD PSU and HDMI cable) (product page)
+- Antenna included; CR2032 RTC cell not listed in the box (product page)
 
 ## Interfaces and compatibility
 - 2x full size HDMI 2.0 (HDMI0, HDMI1), Type-A, up to 4K@60Hz
@@ -86,7 +88,7 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Datasheet tagline: "Simplifying Smart Technology"
 
 ## Price band
-[NOT STATED]
+RM925.00–RM2,396.35 across variants and kits (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-smarthub-cm5

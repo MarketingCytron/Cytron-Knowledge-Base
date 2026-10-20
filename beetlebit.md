@@ -5,7 +5,8 @@
 | Product code | `V-BEETLEBIT` [PP] |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Packing lists for all four kit options and the Accessories Kit are now read; the booklet (image-only PDF) is still unread, so it stays Medium |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -38,6 +39,15 @@ No kit datasheet or spec table exists. The product-page "Specifications" block i
 | Without-battery option | Same minus the 4x AA batteries (inferred from the option name; the page lists only the with-battery packing list) | [PP] |
 | Guide book PDF | "202602 BEETLEBIT Quick Start Guide.pdf", 223,581,856 bytes, PDF, uploaded 2026-02-13 | [UM] metadata |
 | Track PDF | "BEETLEBIT Track.pdf" — printable line paper track with a 50–170 scale | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Options and packing:**
+  - **With micro:bit, with battery:** 1x BBC micro:bit V2, 1x REKA:BIT, 1x Dual Output Cable (USB A to 2.1 mm DC barrel and micro USB), 1x 4xAA battery holder with DC jack, 1x Ultrasonic 3V3, 1x Maker Line, 4x AA battery, 2x TT motor with 15 cm wires and wheel kit, 1x TS90A micro servo, 1x BEETLE:BIT booklet, 1x BEETLE:BIT track, 1x BEETLE:BIT Accessories Kit [PP].
+  - **With micro:bit, without battery:** same list without the 4 AA batteries [PP].
+  - **Without micro:bit, with battery / without battery:** same lists without the micro:bit V2 [PP].
+  - **Accessories Kit:** 1x bracket for ultrasonic HC-SR04, 1x W420 steel ball castor, 2x TT motor bracket, 2x Robo Base (PCB only), 3x Grove 4-pin buckled to female cable, 4x M3 PCB stand 40 mm, 2x 20 mm, 4x 10 mm, 4x 5 mm, 14x M3 nut, 14x screw M3×6 mm, 1x Velcro 10 mm round adhesive set (9 pairs), 4x bolt M3×10 mm, 1x Robo Grip PCB with accessories, 1x ping pong ball [PP].
+- **Spec list:** BBC micro:bit; 2 DC gear motors with wheels; gripper = non-copper PCB with servo motor; sensors = infrared line tracking and ultrasonic obstacle avoidance; power 4x AA; control = autonomous mode or micro:bit RC mode (second micro:bit not included); chassis = non-copper PCB; screw-and-slot assembly, no soldering; programming = Microsoft MakeCode [PP].
+- **Description:** stepping stone after ZOOM:BIT, PikaBot, BocoBot or OjanBot; 7-chapter learning guide [PP].
+- **Resources:** Resource Hub, booklet PDF and track PDF (Google Drive), "BEETLE:BIT (ZOOM:BIT) Extension" link to pxt-rekabit [PP].
 
 ## Interfaces, terminals and pin mapping
 Every chapter program depends on the **pxt-zoombit** MakeCode extension (`github:cytrontechnologies/pxt-zoombit#v0.1.1`), which hard-codes the pins below [PP: hub code], [GH]. The gripper servo channel comes from the chapter code itself.
@@ -116,12 +126,12 @@ Which physical Grove port label each sensor cable plugs into is only shown in th
 - **Booklet contents** (chapter text, wiring diagrams, parts diagram, any revision/date printed inside): the PDF is image-only and 223 MB; it could not be downloaded or OCR'd here. Everything above about chapters comes from the Resource Hub and the published MakeCode projects, which mirror the booklet.
 - **Grove port labels** on REKA:BIT used for the ultrasonic (P2/P12) and Maker Line (P1) cables — shown only in the Setup Guide video/diagram.
 - **Product code** `V-BEETLEBIT` is from the product page URL/SKU as read by the coordinator; codes for the individual options (without micro:bit, Accessories Kit) not stated.
-- Exact packing lists of the "without micro:bit", "without battery" and "Accessories Kit only" options (the page spells out only the full option).
 - Ultrasonic module model: packing list says "Ultrasonic 3V3"; the bracket is "for ultrasonic HC-SR04"; pxt-zoombit's code comment names RCWL-9610. Confirm which module ships.
 - Dimensions, weight, assembly time and age range — not stated anywhere read.
 - Track PDF: line width/length and layout (image only; scale numbers 50–170 visible).
 - Whether the HuskyLens tutorial series uses the I2C Grove port and which HuskyLens mode — tutorial pages returned 403 / blocked.
 - Run time on 4x AA and whether USB power alone drives motors and servo.
+- Codes for the individual options (with/without micro:bit, with/without battery, Accessories Kit) — the page shows names only.
 
 ## Sources
 - [PP] Product page (read by the coordinator 2026-10-19): https://my.cytron.io/p-beetlebit-gripper-robot-car-kit-for-microbit (short link https://my.cytron.io/p-beetlebit)

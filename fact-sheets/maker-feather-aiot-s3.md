@@ -80,7 +80,7 @@ An ESP32-S3 development board in the Adafruit Feather form factor, with GPIO sta
 - Onboard extras aimed at teaching and IoT work
 
 ## Price band
-[NOT STATED]
+RM79.80–RM87.80 across 2 variants (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-v-maker-feather-aiot-s3-simplifying-aiot-with-esp32

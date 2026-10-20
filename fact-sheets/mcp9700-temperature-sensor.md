@@ -25,6 +25,7 @@ A small three-pin breakout board (GND, VCC, OUT) carrying a Microchip MCP9700 an
 - Weight: [NOT STATED]
 - Reverse-polarity protection: [NOT STATED]
 - Datasheet: BCY-TEMP-MCP9700 Linear Temperature Sensor Datasheet, Rev 1.0, August 2023
+- 3-pin male header; works with 3.3 V and 5 V hosts incl. micro:bit, ESP32, Raspberry Pi (via ADC), Arduino (product page)
 
 ## Interfaces and compatibility
 - Pins: GND (ground), VCC (power input, 2.3–5.5 V), OUT (analog output, 10.0 mV/°C) (datasheet)
@@ -50,7 +51,7 @@ A small three-pin breakout board (GND, VCC, OUT) carrying a Microchip MCP9700 an
 - Product page name: "MCP9700 Linear Temperature Sensor (LM35 Compatible)" (product page); the datasheet does not mention the LM35
 
 ## Price band
-RM7.77 (Cytron product page, read 2026-10-16)
+RM7.77 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-mcp9700-linear-temperature-sensor-by-cytron

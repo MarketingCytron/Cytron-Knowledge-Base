@@ -5,7 +5,8 @@
 | Product code | `IRIV-IOC` (datasheet page header "Datasheet - IRIV-IOC") [DS] |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (specification, packing list, resources). Status, price, package, canonical URL, official datasheet link and example-code repo are now Cytron-stated; the page spec matches the datasheet |
 | Primary source | *IRIV IO Controller — IR4.0 Industrial I/O Controller, Datasheet*, **Rev 1.0, July 2024**, Cytron Technologies Sdn Bhd |
 
 **Authority rule:** Datasheet/manual [DS] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -52,6 +53,10 @@ Applications as framed by the staff wiki: "lightweight automation, industrial I/
 | Enclosure | Metal enclosure, fanless design, DIN rail mountable | [DS] |
 | Dimension | (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors) | [DS] |
 | Drawing extras | DIN bracket adds 8mm; pluggable terminals stick out 15.5mm | [DS §6 drawing] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page spec matches [DS]: RP2350 dual Cortex-M33 @ 150 MHz; 520 KB SRAM; 2 MB flash; USB-C (programming and configuration); RJ45 via W5500; isolated RS485; 11 isolated DI (≤50 V); 4 isolated DO (≤50 V); 2× 12-bit AI 0–10.56 V / 0–42.58 mA; DC 10–30 V surge-protected; PCF85063A RTC; reset, boot and programmable buttons; programmable LED; status LEDs (power, RS485, DIN, DOUT); passive buzzer; metal fanless DIN-rail enclosure [PP].
+- **Packing:** 1x IRIV IO Controller, 1x mini flat screwdriver [PP].
+- **Resources (official links):** IRIV IOC datasheet (Google Doc), block diagram and PCBA layout (Google Drawings), 3D CAD, example code — GitHub `CytronTechnologies/Cytron-IRIV-IO-Controller`, tutorial "Getting Started with IRIV IO Controller with CircuitPython", CircuitPython and MicroPython manual pages, Raspberry Pi C/C++ SDK, RP2350 datasheet [PP].
 
 ## Interfaces, terminals and pin mapping
 **RP2350A pin mapping** (DS §5.1; the DS writes both "GP0" and "GPIO0")
@@ -162,15 +167,13 @@ Applications as framed by the staff wiki: "lightweight automation, industrial I/
 No conflict with Drive: the only Drive item is a video subtitle file (see Sources), and it does not contradict the DS.
 
 ## Needs verification
-- **Product page not read**: my.cytron.io / cytron.io return errors to automated fetches. Product status, price, package contents and the canonical URL are unconfirmed.
 - Default firmware "MODBUS RTU IO Expander with counter function" [WIKI only]: confirm with [DT] or [PP], and get the register map.
-- Price: CNX Software reports US$64.90 on Cytron's store (Sept 2024) [3P only].
 - Whether the AN0/AN1 switches set modes independently (the DS drawings say yes; the wiki says no). Also the switch position for "current" (the schematic says ON connects the 250 Ω shunt).
 - Whether isolated DI/DO/RS485 work when the unit is powered from USB-C only. The DS does not say.
 - CircuitPython `board` pin names for DI/DO/AN/RS485, and the example code on GitHub: https://github.com/CytronTechnologies/Cytron-IRIV-IO-Controller (cited by CNX; could not be opened). CNX says it has CircuitPython samples for analog input, Ethernet, Modbus, pulse counter and RTC.
 - MicroPython / C SDK / Arduino support specific to this board [WIKI says "compatible"; no board build confirmed].
 - DIN rail width (35 mm) [WIKI only]. Warranty 12 months [WIKI only]. CR2032 included or not.
-- Official Cytron datasheet download URL (the wiki says "available from the product page"; CNX says it is shared through Google Docs).
+- CR2032 for the RTC: included or not (not in the packing list).
 
 ## Sources
 - [PP] Product page (not read; URL as given by the wiki): https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-io-controller

@@ -33,6 +33,9 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - A typical sumo round lasts around 10 seconds or less; more than 1 minute continuous running may overheat the motors
 - Guides: Assembly (V1) 2 Dec 2024, Checking 2 Dec 2024, Maintenance 2 Dec 2024, Autonomous 9 Dec 2024, RC (Remote Control) 10 Dec 2024 (Google Slides)
 - Warranty: [NOT STATED]
+- Four options: Complete or Basic kit, each with or without micro:bit; Basic kits have no 3D-printed chassis (product page)
+- One 11.1 V 1300 mAh LiPo per kit (product page)
+- Motor: 12 V 580 rpm 3.5 kgf·cm geared motor (product page packing-list link)
 
 ## Interfaces and compatibility
 - Wiring: EDGE-L = left Maker Reflect, EDGE-R = right Maker Reflect, OPP-L = left Maker Object, OPP-FL = front-left, OPP-FC = front-centre, OPP-FR = front-right, OPP-R = right Maker Object, all on 10 cm GVS F-F cables; motors on the LEFT MOTOR / RIGHT MOTOR terminals; battery on the battery terminal through the Dean T cable
@@ -75,7 +78,7 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - "SUMO:BIT board, MD13S Motor Driver, Essential accessories, Free STL file for robot body"
 
 ## Price band
-RM80.00–RM1,047.70 across options (Cytron product page, read 2026-10-19)
+RM80.00–RM1,047.70 across options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-sumobit-robot-kits-1kg-sumo-robot-for-microbit

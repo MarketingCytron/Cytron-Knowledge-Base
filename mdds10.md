@@ -5,7 +5,8 @@
 | Product code | `MDDS10` (cover page: "SmartDriveDuo-10", "MDDS10", "User's Manual") [UM] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, packing list, resources). Dimensions, per-channel rating, regulator, reset button and power LED are now Cytron-stated |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -25,7 +26,7 @@ Spec table ("Absolute Maximum Rating") from the User's Manual, plus the Features
 | VIOH (logic input, high level) | 1.3 V min – 5 V max | [UM] |
 | VIOL (logic input, low level) | 0 V min – 0.7 V max | [UM] |
 | 5V output current | Max 500 mA | [UM] |
-| Dimension | Heading present in the spec section, **no value given** | [UM] |
+| Dimension | 66.8 × 101.09 mm [PP]; the UM spec section has the heading with no value | [PP] |
 | Motor channels | 2 (dual brushed DC; "Bi-directional control for dual brushed DC motor") | [UM] |
 | Switching frequency | 16 KHz ("for quiet operation") | [UM] |
 | Input modes | RC, Analog, PWM, Simplified Serial, Packetized Serial (DIP switch selected) | [UM] |
@@ -38,6 +39,11 @@ Spec table ("Absolute Maximum Rating") from the User's Manual, plus the Features
 | Operating temperature | **Not stated** | [UM] |
 | Warranty | 12 months, manufacturing defects only; misuse not covered; freight not covered | [UM] |
 | Packing list | 1 × SmartDriveDuo-10, 6 × Terminal pin for 2510, 1 × 6-way Connector Housing | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Features (page): 7–35 VDC; single power; dual channel, independent or mixed; RC, analog, PWM, simplified and packetized UART; sign-magnitude and locked-antiphase PWM; 2 test buttons + 2 output LEDs per channel; Power, Error, RUN (L/R) LEDs; on-board **reset button** after changing DIP mode; full MOSFET (no external flyback diodes); regenerative braking; temperature feedback; **"up to 10A continuous each channel"** (description) at 25 °C; 30 A peak for 10 s; 16 kHz; **on-board switching voltage regulator**; battery low-voltage monitoring; **no polarity protection**; **66.8 × 101.09 mm** [PP].
+- **Error LED blink codes (page):** 2 = input error; 3 = under-voltage; 4 = over-voltage (> 35 V, stops); 5 = over-temperature; 6 = shutdown (too hot, stops) [PP].
+- **Packing:** 1x MDDS10, 1x 6-way connector housing, 6x terminal pins [PP].
+- Resources: user's manual, 3D CAD, Fritzing, CytronMotorDriver library; tutorials — Simple Mobile Robot plug-and-play joystick + MDDS10; Arduino + PS2 shield + MDDS10; Improve MDDS10 performance with external fan; PWM from CT-UNO + MDDS10 [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM]: A Motor RIGHT LED indicator; B Motor RIGHT terminal block; C Power Supply terminal block; D Motor LEFT terminal block; E Motor LEFT LED indicator; F Mode selection DIP switch; G Motor LEFT test button; H Analog/PWM/Serial input pin; I RC input pin; J Motor RIGHT test button; K Motor RIGHT Run LED; L Error LED; M Motor LEFT Run LED.
@@ -118,13 +124,9 @@ No UART TX pin is described; the driver only receives [UM]. UART logic level is 
 | Direction pin names | UM: DIG1 / DIG2 | Library: `in1Pin` / `in2Pin` [GH] | Use UM names DIG1/DIG2 in content |
 
 ## Needs verification
-- Board dimensions: UM gives none. RobotShop [3P] lists 66.8 mm × 101.09 mm (not confirmed by Cytron).
-- Whether 10 A continuous / 30 A peak are per channel: the UM table says "Maximum Continuous Motor Current" without "per channel"; RobotShop [3P] says 10 A per channel.
-- RobotShop [3P] also lists an onboard switching regulator, onboard reset button and power LED; not in the UM text read here.
 - Operating temperature, terminal wire size, recommended fuse: not stated anywhere read.
 - Maximum PWM input frequency for PWM mode and the RC pulse-width range/deadband: not stated in the UM.
 - UART logic level for DIG1 Rx (3.3 V UART) not explicitly stated.
-- Current product status, price and product-page specs: my.cytron.io not reachable from here.
 - Figures (board layout photo, wiring and dimension drawings) were not viewed; label letters A–M are from the text.
 
 ## Sources

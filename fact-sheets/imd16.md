@@ -33,6 +33,8 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - IP rating: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Unit weight: [NOT STATED]
+- Packing: iMD16, 10 kΩ potentiometer and 3-way rocker switch with connectors, JST PH PWM/DIR connector, mini screwdriver, Quick Start Guide card (product page)
+- Also sold by co-launch partners in Australia, China, India, Japan and the USA (product page)
 
 ## Interfaces and compatibility
 - Power Input Terminal: 2-way screw terminal, POWER + / −, 7–30 V DC
@@ -81,10 +83,10 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - Target audience: system integrators, existing Cytron MD users, machine makers, industrial engineers / technicians
 
 ## Price band
-[NOT STATED]
+RM163.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://cytron.io/p-16amp-7-30v-industrial-dc-motor-driver
+https://my.cytron.io/p-16amp-7-30v-industrial-dc-motor-driver
 
 ## Datasheet
 [NOT STATED]

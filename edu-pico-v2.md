@@ -2,10 +2,11 @@
 
 | | |
 |---|---|
-| Product code | `EDU-PICO2` (board name used throughout the datasheet); variant `EDU-PICO2-NB` ships without the Raspberry Pi Pico 2 W [DS]. The product page was not read, so the shop SKU is not confirmed. |
+| Product code | `EDU-PICO2` (board name used throughout the datasheet); variant `EDU-PICO2-NB` ships without the Raspberry Pi Pico 2 W [DS]. my.cytron.io sells it as "EDU PICO 2" with two options (with / without Raspberry Pi Pico 2 W) [PP] |
 | Family | Raspberry Pi Pico education kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features list, both packing lists, resources). Status, packing lists, GPIO status-LED count and the resource set are now Cytron-stated. Education kit — the EDU PICO V2 booklet is the main source (KB rule 7) |
 | Primary source | EDU PICO V2 Datasheet, "EDU PICO V2 – EDU Project & Innovation Kit for Pico 2 W", Rev 1.1, June 2026 |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -44,6 +45,11 @@ Datasheet Table 3 is titled "EDU-PICO2 **Absolute Maximum Ratings**" — every r
 | Dimensions | Figure 6 "EDU-PICO2 Dimension (mm)" — drawing only, no numbers in the text | [DS] |
 
 Packing list (Table 1) [DS]: EDU PICO V2 Board ×1; Step-by-step Guidebook (English) ×1; Raspberry Pi Pico 2 W ×1 (not in EDU-PICO2-NB); USB Micro B Cable ×1; Grove 4 Pin Buckled 20cm Cable ×8; Micro Servo with Servo Horns ×1; DC2-6V Miniature Motor with 20cm Wire ×1; Mini Phillips Head Screwdriver ×1; DIY 4 Blades 56mm Motor Propeller (Blue) ×1; USB LED Light Stick (Blue) ×1; Cable Tie 100mm ×5; Self adhesive Round Velcro 10mm (Hook and loop pairs) ×27.
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features list:** Pi Pico socket with GPIO breakout; power LED; on/off switch; LiPo battery connector; charge LED; VIN terminal; USB relay; 2 DC motor terminals; 4 motor test buttons; 4 motor status LEDs; 4 servo ports; micro SD socket; "Log data to Pico's flash" switch; 9 Grove ports; **12 GPIO status LEDs**; reset button; piezo buzzer; stereo audio jack; audio/buzzer switch; potentiometer; PDM microphone; protoboard; SSD1315 OLED; AHT20; OPT4048; PAJ7620; 5 RGB LEDs; 2 push buttons [PP].
+- **Packing (with Raspberry Pi Pico 2 W):** 1x EDU PICO 2 board; 1x step-by-step guidebook (English); 1x Raspberry Pi Pico 2 W; 1x USB micro B cable; 1x micro servo with horns; 8x Grove 4-pin buckled 20 cm cable; 1x DC 2–6 V miniature motor with 20 cm wire; 1x 85 × 3 mm Phillips screwdriver; 1x DIY 4-blade 56 mm propeller (blue); 1x set Velcro 10 mm round adhesives; 2x 100 mm cable ties; 1x USB LED light stick (blue). The "without Pico 2 W" option is the same list minus the Pico 2 W [PP].
+- A product-page image shows the breakable modules ("edu-pico2-breaking-modules") [PP: img].
+- **Resources:** EDU PICO V2 booklet (PDF), out-of-the-box demo code, GitHub Cytron-EDU-PICO2, board datasheet, 3D CAD, EDU PICO resource hub [PP].
 
 ## Interfaces, terminals and pin mapping
 All from datasheet Table 2 "EDU-PICO2 Board Functions" unless tagged otherwise.
@@ -168,12 +174,11 @@ Motor driver truth table (Table 4) [DS]: A Low / B Low → Brake; A High / B Low
 - **Grove 8 I2C labels**: datasheet lists GP20 = SCL0, GP21 = SDA0 (same in V1). Raspberry Pi's RP2350 GPIO function table should be checked [VEN]; not verified here.
 - **Which Grove port (3, 4 or 5) each I2C module sits on**: the datasheet groups ports 3, 4, 5 with four modules.
 - Microphone part MP34DT01 vs MP34DT05-A (see *Conflicts*).
-- GPIO status LED count: circuitpython.org says 12 [3P]; datasheet gives no count.
-- Product page SKU, price and current stock: my.cytron.io page not read (fetch error).
 - Dimensions: drawing only (Figure 6); numbers not in the text.
 - Battery charge current and recommended battery capacity: not stated.
 - MicroPython / Arduino / MicroBlocks support for V2: not stated by any source read.
 - Whether the V1 `boot.py` (Cytron-EDU-PICO repo) linked from the V2 datasheet is the intended file for V2.
+- Shop SKU for the two options (page shows names, not codes).
 
 ## Sources
 - [DS] EDU PICO V2 Datasheet, Rev 1.1, June 2026 — (Cytron document — link not public) (same Rev 1.1 also hosted by Farnell: https://www.farnell.com/datasheets/4795796.pdf)

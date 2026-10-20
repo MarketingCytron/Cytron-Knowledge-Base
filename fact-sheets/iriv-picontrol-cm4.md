@@ -35,6 +35,9 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - Operating temperature: -20 to 60 ℃
 - Enclosure: metal, fanless, DIN rail mountable; 141.2mm x 83.5mm x 39.5mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - DIN bracket can be moved; four mounting options (no DIN socket, DIN positions 1 (default), 2 and 3)
+- Sold on my.cytron.io as CM4 Wireless 8GB/32GB, 4GB/32GB and 2GB/16GB (page shared with CM5)
+- Warranty 12 months (product page)
+- Packing: controller with CM4, dual-band antenna, flat and Phillips screwdrivers, 4 silicone bumpers; no NVMe SSD or mini PCIe card (product page)
 
 ## Interfaces and compatibility
 - 1x full-size HDMI 2.0 (up to 4K@60Hz)
@@ -91,7 +94,7 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - Sibling product IRIV PiControl CM5 (IRIV-PICL5) exists; keep CM4 and CM5 specs apart
 
 ## Price band
-[NOT STATED]
+RM1,489.00–RM2,899.00 across CM4/CM5 variants (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller

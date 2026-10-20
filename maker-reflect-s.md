@@ -5,7 +5,8 @@
 | Product code | `MAKER-REFLECT-S` (datasheet title [DS]; product page option "Maker Reflect S", code `MAKER-REFLECT-S` [PP]) |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources) (Reflect vs Reflect S specification table). Output type (analog), supply (5.0 V), supply current and the Ikedo V2 edge sensor are now Cytron-stated |
 | Primary source | **MAKER-REFLECT-S Datasheet — "Analog Reflectance Sensor (Line Detector)" — Rev 1.0, February 2026** (public Google Doc linked from the product page): https://docs.google.com/document/d/1lRTCSQkuwSsE6LYWHZ6CR2ripHQt-P-qIVuzjREYJ18/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,6 +39,12 @@ Datasheet Table 2 is titled **"MAKER-REFLECT-S features"** (a features list, not
 | Indicator LED | **None listed** in the board-functions table | [DS] |
 | Dimensions | **Not stated in text** (Figure 3 drawing only) | [DS] |
 | Operating temperature, weight | **Not stated** | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Comparison table (Maker Reflect / Maker Reflect S):** operating voltage 3.0–5.5 V / **5.0 V**; supply current — / **25 mA**; output type analog / **analog**; voltage range 0–VCC / **0–VCC**; digital IO compatible yes / yes; external ADC required no / no; sensing method infrared reflectance; optimal distance 1–40 mm / **3 mm**; output response proportional to reflected IR / **higher voltage on darker surface**; pins VCC, GND, OUT; single-ended analog; direct analog input [PP].
+- **Description:** "Both MAKER-REFLECT and MAKER-REFLECT-S provide an analog voltage output"; darker surfaces give a higher voltage; supports software thresholding and calibration; "The new Maker Reflect S comes with a smaller threshold sensing for more stable output" [PP].
+- **Applications:** Maker Reflect S — sumo robot, high-precision line-following robot; Maker Reflect — general line following, IR projects [PP].
+- **Packing list:** 1x sensor (the option chosen) [PP]. Dimension drawings for both are images (not read) [PP].
+- **Kit use:** the Ikedo Mini Sumo Robot V2 ships with 2x Maker Reflect S as edge sensors from March 2026 [PP: Ikedo V2 page].
 
 ## Interfaces, terminals and pin mapping
 Connector [DS Table 1] (physical pin order is shown in Figure 1 only, not in text). The connector text is identical to the MAKER-REFLECT datasheet, including the name "Maker Reflect" in the VCC line:
@@ -86,20 +93,17 @@ Connector [DS Table 1] (physical pin order is shown in Figure 1 only, not in tex
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Output type | [DS] title "Analog Reflectance Sensor"; connector table "OUT : Analog output. Higher voltage = darker surface." | [DS] features table "Digital IO Compatible", "No ADC required" | Both are in the same datasheet. State both wordings; describe OUT as readable on a digital pin or an ADC, dark = high. Ask the design team whether OUT is a thresholded (digital) output |
+| Output type | [DS] title "Analog Reflectance Sensor"; connector table "OUT : Analog output. Higher voltage = darker surface." | [DS] features table "Digital IO Compatible", "No ADC required" | **Resolved by [PP] (read 2026-10-19):** "Both MAKER-REFLECT and MAKER-REFLECT-S provide an analog voltage output" (0–VCC); "Digital IO compatible" means it can also be read on a digital pin |
 | Threshold | [PP] "smaller threshold sensing for more stable output" | [DS] no threshold figure or adjustment listed | Use the [PP] sentence only as positioning; no numeric spec |
-| Edge sensor in Ikedo V2 kit | [PP] Ikedo V2 page "Maker Reflect S" |  Ikedo V2 guide "Maker Reflectance Sensor", linking the MAKER-REFLECT page | Unresolved; neither datasheet mentions Ikedo |
+| Edge sensor in Ikedo V2 kit | [PP] Ikedo V2 page: "From March 2026 onwards … will include Maker Reflect S as the edge sensor" |  Ikedo V2 guide "Maker Reflectance Sensor" (older) | Resolved: Maker Reflect S from March 2026 |
 | Datasheet boilerplate | [DS] VCC line says "Power input for the Maker Reflect." | [DS] title MAKER-REFLECT-S | Copied text; not a data conflict |
 
 ## Needs verification
-- **Whether OUT is a true digital (thresholded) output or an analog voltage** that happens to be readable on a digital pin — the datasheet says both. Ask the design team.
-- **OUT high/low voltage levels** and whether it is safe on a 3.3 V-only GPIO (RP2040, ESP32) — not stated.
-- **Supply voltage min/max** (3.3 V operation?) — only "5VDC" stated.
 - **Sensing range** (min/max) — only the 3 mm optimum is stated.
 - **Dimensions, connector pin order, header type, mounting hole** — Figure 1/3 not readable as text; whether the board is the same size as the original (18.1 × 8.4 × 4.2 mm [3P] for MAKER-REFLECT) is unknown.
 - **What physically differs from MAKER-REFLECT** (sensor part, threshold circuit) — the product page sentence is the only statement.
-- **Which Reflect variant ships in the Ikedo Mini Sumo Robot V2 kit**.
 - Price per option: the product page shows RM8.00–RM9.00 across the two options; which option is RM8.00 and which RM9.00 was not recorded.
+- Is it safe on a 3.3 V-only GPIO? At 5.0 V supply the output swings 0–VCC (up to 5 V) [PP]; a divider or 5 V-tolerant pin is needed — confirm guidance with the design team.
 
 ## Sources
 - [DS] MAKER-REFLECT-S Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, February 2026 — https://docs.google.com/document/d/1lRTCSQkuwSsE6LYWHZ6CR2ripHQt-P-qIVuzjREYJ18/edit (public)

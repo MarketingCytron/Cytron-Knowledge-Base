@@ -37,6 +37,7 @@ A 27 W AC-to-DC power supply with a captive USB Type-C cable and USB Power Deliv
 - AC plug options: UK (Type G) / EU (Type C) / US (Type A); only one included (product page); datasheet says three interchangeable AC plugs are included
 - Adapter dimensions and weight: [NOT STATED] (drawings only)
 - Warranty: 12 months (product page)
+- One plug (UK, EU or US) in the box, as selected (product page packing list)
 
 ## Interfaces and compatibility
 - Output: one captive cable with USB Type-C plug; no other output connector
@@ -64,7 +65,7 @@ A 27 W AC-to-DC power supply with a captive USB Type-C cable and USB Power Deliv
 - "Suitable for use around the world" thanks to 100–240 VAC input and interchangeable plugs; "versatile" PD support; "sleek black color" (datasheet)
 
 ## Price band
-RM50.00 (Cytron product page, read 2026-10-19)
+RM50.00 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-27w-pd-5v-5a-usb-c-universal-power-adapter

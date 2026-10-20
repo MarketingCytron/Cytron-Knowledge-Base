@@ -5,7 +5,8 @@
 | Product code | `SHIELD-MD10` (manual title [UM]; product-page image paths [PP]); Rev 2.0 boards are labelled "SHIELD-MD10 R2" [UM] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page lists 7–25 V for Rev1.0 and 7–30 V for Rev2.0, 10 A / 15 A (10 s), regenerative braking, 10 kHz and the packing list; the Rev2.0 25 V absolute-maximum table is still unexplained, so it stays Medium |
 | Primary source | No datasheet exists. Top source: "SHIELD-MD10 Cytron 10A Motor Driver Shield User's Manual" — **V1.0, June 2015** (the Rev2.0 manual; Drive title "SHIELD-MD10 User's_Manual REV 2") — https://docs.google.com/document/d/1zITY9dHK26-iBkS9AnZ0ZUS3Z8K8NzLu3t709F7r7us/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -41,6 +42,11 @@ Rev2.0 manual, section 3.0 "Product Specification and Limitations", table **"Abs
 | Warranty | 12 months; manufacturing defects only; misuse and two-way freight not covered | [UM] |
 
 \* "or CW/CCW depending on the connection" [UM].
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** single-channel shield for one brushed DC motor up to 10 A continuous; stacks on UNO-form-factor boards (Arduino UNO R3, Mega 2560 R3, Maker UNO / Maker UNO Plus, Leonardo, CT-UNO, CT-ARM); solid-state H-bridge; stackable headers; two mini jumpers select the PWM and DIR pins, so shields can be stacked [PP].
+- **Features list:** 7–25 V (Rev1.0), **7–30 V (Rev2.0)**; 10 A continuous, 15 A peak (10 seconds); 3.3 V and 5 V logic; fully NMOS H-bridge, no heatsink; **regenerative braking**; PWM up to 10 kHz; selectable PWM/DIR pins [PP].
+- **Packing list:** 1x Shield-MD10 (components soldered, two mini jumpers) [PP].
+- **Resources:** User's Manuals for Rev1.0 and Rev2.0, CytronMotorDriver library, Fritzing files, 3D design (GitHub) [PP].
 
 ## Interfaces, terminals and pin mapping
 **Terminal block** — motor and power [UM]:
@@ -114,7 +120,7 @@ A PWM/DIR truth table is **not given** in the SHIELD-MD10 manuals.
 
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Max supply voltage (Rev2.0) | [UM] Rev2.0 feature list: "7V to 30V"; product name [PP] "7V-30V" | [UM] Rev2.0 Absolute Maximum Rating table: Max 25 V | Unresolved inside the same document; text gives both. Likely a table not updated from Rev1.0 — needs [DT] |
+| Max supply voltage (Rev2.0) | [UM] Rev2.0 feature list: "7V to 30V"; [PP] (read 2026-10-19): "7V to 25V (Rev1.0), 7V to 30V (Rev2.0)" | [UM] Rev2.0 Absolute Maximum Rating table: Max 25 V | Feature list and product page agree on 30 V for Rev2.0; the table is probably carried over from Rev1.0 — confirm with [DT] before quoting 30 V as an absolute maximum |
 | Max supply voltage by revision | [UM-R1] (V1.1, Sep 2014): 7–25 V | [UM] Rev2.0 (V1.0, Jun 2015, newer): 7–30 V (feature list) | Rev 2.0 is current; Rev 1.0 = 25 V |
 | Manual version numbers | Rev1.0 manual is "V1.1" (Sep 2014) | Rev2.0 manual is "V1.0" (Jun 2015) | Date, not version, shows which is newer |
 | Example DIR pin | [UM] default DIR = D2 | [GH] PWM_DIR example DIR = D4 | Both valid jumper positions; [UM] default stated in text |
@@ -125,7 +131,6 @@ A PWM/DIR truth table is **not given** in the SHIELD-MD10 manuals.
 3. Board dimensions (drawing only) and Optional External Control header pin-out.
 4. Any protection features (over-current, thermal, under-voltage, reverse polarity) — none stated.
 5. Truth table / brake behaviour when PWM is low — not stated for this shield.
-6. Price — not stated in the [PP] read.
 
 ## Sources
 - [UM] SHIELD-MD10 User's Manual for Rev2.0 (V1.0, June 2015): https://docs.google.com/document/d/1zITY9dHK26-iBkS9AnZ0ZUS3Z8K8NzLu3t709F7r7us/view

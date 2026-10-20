@@ -5,7 +5,8 @@
 | Product code | `MAKER-FEATHER-AIOT-S3` (basic, no headers); `MAKER-FEATHER-AIOT-S3-H` (pre-soldered female headers); parent listing `V-MAKER-FEATHER-AIOT-S3` [PP] |
 | Family | Maker ESP32 family (ESP32 ecosystem) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB (ESP32-S3 WROOM-1 N8R8, 11 GPIO LEDs, buzzer GPIO12, button GPIO3, 3 Maker Ports, packing per variant) |
 | Primary source | MAKER-FEATHER-AIOT-S3 Datasheet, Rev 1.1, January 2023 (Google Doc), plus schematic REV 1.0.0 dated 10/18/2022 — links under *Sources* |
 
 **Authority rule:** Datasheet [DS] > Cytron design team [DT] > Cytron product page [PP] > Cytron GitHub [GH] > chip vendor docs [VEN] > third-party [3P].
@@ -36,6 +37,10 @@ It ships with the UF2 bootloader and CircuitPython preinstalled [DS][GH].
 | Header variants | Basic (no headers) or with pre-soldered female headers | [PP] |
 | Package contents | 1 board + 3 Grove to JST-SH (Qwiic/STEMMA QT) cables (both variants) | [PP] |
 | Warranty | 12 months | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: ESP32-S3-WROOM-1 **N8R8**; Feather form factor; 1-cell LiPo connector with overcharge/over-discharge protection; 11 GPIO status LEDs; piezo buzzer GPIO12; reset button; user button GPIO3; 1 RGB LED; 3 Maker Ports (Qwiic / STEMMA QT / Grove via cable); Arduino, CircuitPython, MicroPython, ESP-IDF; 2 Maker Ports on a switchable Vperipheral rail for sleep [PP].
+- **Packing:** basic — board (no headers) + 3x Grove-to-JST-SH cable; with headers — board (female headers pre-soldered) + 3x Grove-to-JST-SH cable [PP]. Also sold in the Cytron IoT Kit (10 example projects) [PP].
+- **Resources:** datasheet, schematic, pinout diagram, CAD, ESP32-S3-WROOM-1 datasheet, Getting Started with Arduino IDE and with CircuitPython (Cytron tutorials), circuitpython.org board page [PP].
 
 ## Onboard peripherals and pins
 | Function | GPIO / pin | Notes | Src |

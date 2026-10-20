@@ -5,7 +5,8 @@
 | Product code | `URC10` (datasheet title "URC10 Sumo Robot Controller" [DS]; user manual cover "SUMO ROBOT CONTROLLER, CODE: URC10" [UM]) |
 | Family | Cytron sumo robot controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (description, features, pin assignment, resources). Microcontroller, current limiting, PWM modes and regulator ratings are now Cytron-stated [PP] |
 | Primary source | URC10 Sumo Robot Controller Datasheet, **Rev 1.0, March 2019** [DS] (local file `URC10 Datasheet.pdf`) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -44,6 +45,12 @@ Other board facts:
 | Over-current / thermal protection | Not stated in DS or UM | [DS][UM] |
 | Motor PWM frequency | Not stated in DS or UM | [DS][UM] |
 | Operating temperature, weight | Not stated | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **MCU:** description: "URC10 is using **Atmega328P**, which is the same microcontroller used on official Arduino Uno board" — select Arduino/Genuino Uno in the IDE; features: "ATmega328 microcontroller with Optiboot Bootloader" [PP].
+- Designed for sumo robots up to **3 kg**; Vmotor/Vin DC 8–25 V; 10 A continuous, 30 A peak per channel; **current limiting at 30 A per channel**; motor quick-test buttons; output-state LEDs; **sign-magnitude and locked-antiphase PWM; PWM up to 20 kHz**; onboard 5 V regulator 1 A max; 3.3 V regulator 500 mA max [PP].
+- **Pin assignment (page):** D4, D5 Motor 1; D6, D7 Motor 2; D8, D9 Ultrasonic 1; D10, D11 Ultrasonic 2 (or other digital I/O); D2, D3, D12, D13 any digital sensors; A0–A5 analog sensors; 1x I2C port; USB Micro-B + CH340 for uploading; **no reverse polarity protection**; 75.57 × 99.7 mm [PP].
+- **Packing:** 1x URC10 R1.1 [PP].
+- Resources: datasheet, 3D CAD, user manual, sample code (GitHub URC10SumoRobot), URC10 Rev1.10 schematic, tutorial "Building A Sumo Robot" [PP].
 
 ## Interfaces, terminals and pin mapping
 Board functions (DS Table 1 and Figure 1):
@@ -145,16 +152,14 @@ IR Sumo Start (separate product): the pack's Auto Kit notes wire module + to 5V,
 | Brushed motor voltage | [DS]: Vin 8 – 25 VDC | Cytron Tindie listing [3P]: "drive brushed motor from 6V to 24V"; RobotShop [3P]: "8V to 25V brushed motor" | DS wins |
 
 ## Needs verification
-- **Microcontroller part number.** Not in DS or UM.  says ATmega328P ("confirmed" in pack's source audit, no document cited); RobotShop, Cytron's Tindie listing and the 2017 manual [3P] say "SMD ATmega328 … Optiboot (UNO) Bootloader", 16 MHz, 32 KB flash. Confirm with design team before naming the chip.
-- Protections: 2017 manual / Tindie [3P] claim current limiting at 30 A and over-heat/over-current cut-off; not in DS. Do not claim.
-- Motor PWM frequency "up to 20 kHz" and "locked-antiphase and sign-magnitude" operation [3P only].
 - "3.3V compatible inputs" and "LED indicator for each I/O pin" [3P]. DS fig shows LED positions marked PWR, D13, D12, D11, D10, D9, D8, D3, D2, D1, D0, but DS text describes only the Power LED and TX/RX LEDs.
 - Whether the board (logic) runs from USB alone without the battery; whether Power Port **VIN** carries the raw battery voltage (up to 25 V) — matters for shields.
 - Whether I2C SCL/SDA are shared with A5/A4 and whether ISP/SPI is shared with D11–D13, as on an Arduino UNO [VEN inference].
 - Which inputs the "Logic Input Voltage" row applies to.
-- Current product page URL and price on it (library.properties lists `https://www.cytron.com.my/p-urc10`, not read).
 - Edge-sensor output polarity depends on the sensor module used; the sample treats LOW as "edge" [GH].
 - Drive catalogue image `CATALOGUE_URC10.png` returned no text and was not read.
+- Microcontroller wording: description says ATmega328P, feature list says ATmega328 — treat as ATmega328P (description) and confirm on the board marking.
+- Over-heat / over-current cut-off beyond the stated 30 A current limit — not on the product page.
 
 ## Sources
 - [DS] URC10 Sumo Robot Controller Datasheet, Rev 1.0, March 2019 — local file `URC10 Datasheet.pdf` (AI Coding Pack `source-docs/`); no public URL found

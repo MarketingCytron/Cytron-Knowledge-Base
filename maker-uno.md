@@ -5,7 +5,8 @@
 | Product code | `MAKER-UNO` (user manual cover "MAKER-UNO"; packing list "Maker Uno (Code: MAKER-UNO)" [UM]) |
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (description, packing list, resources and attachments). Status, current warranty, price, package and the original User's Manual link are now Cytron-stated |
 | Primary source | MAKER-UNO **User's Manual, Rev 1.0, Dec 2017** (Cytron Technologies Sdn Bhd), section 6.5 "Board Package Updated 21 March 2018" [UM]. No separate datasheet exists in any source found; the public mirror is filed as "datasheet" on RobotShop's CDN but its title page is the User's Manual |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -50,6 +51,11 @@ User's Manual section 1 feature list — every item:
 | Warranty | 6 months, manufacturing defects only; misuse and two-way freight not covered (product page says 12 months — see Conflicts) | [UM] |
 | SRAM / EEPROM | Not stated by Cytron. ATmega328P: 2 KB SRAM, 1 KB EEPROM | [VEN] |
 | Upload limits (board package) | `maximum_size=32256` bytes, `maximum_data_size=2048` bytes, `upload.speed=115200`, bootloader `optiboot_atmega328.hex`, `f_cpu=16000000L` | [GH] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Description: Kickstarter-funded 1825% (17 Apr 2018); built-in 12 LEDs, 1 buzzer, 1 button [PP].
+- **Packing:** 1x Maker UNO, 1x GPIO labeling sticker [PP].
+- **Warranty:** 12 months on the current product page [PP] (manual Rev 1.0 says 6 months — see *Conflicts*).
+- **Resources / attachments:** default program (GitHub MakerUno_DefaultSketch); Arduino IDE; Atmel Studio and Chromebook tutorials; **Maker UNO User's Manual (original Cytron Google Doc `1gJIF-tssdoxk8qAq2aHBmPwVHulFL_lSElOhA17Du64`)**; Edu Kit Getting Started Module; schematic (cdn.cytron.io/makeruno/MAKER-UNO.pdf); Fritzing; 3D IGS/STEP; PCB Eagle file; CH341 drivers for Windows 10 and macOS; teacher and student modules (EN/BM) [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout items (User's Manual section 4) [UM]:
@@ -144,9 +150,7 @@ Pin summary for tutorials:
 - 5V pin maximum output current; whether USB input has a fuse or polarity/over-current protection.
 - Board dimensions, weight and mounting holes (UM drawing not readable as text).
 - Whether the power header has 5V, 3.3V, GND, RESET in the standard UNO order (implied by "Arduino UNO R3-standard female headers", not listed).
-- Current Cytron warranty term (6 vs 12 months), current status and price (no Cytron price source; [3P] notebookcheck reports a US$5 Kickstarter price in 2018).
-- Exact title and URL of the original Cytron Google Doc of the User's Manual (only the RobotShop mirror was found).
-- Original product page my.cytron.io/p-maker-uno… (not read).
+- Price history: only the current RM37.80 is Cytron-stated.
 
 ## Sources
 - [UM] MAKER-UNO User's Manual, Rev 1.0, Dec 2017, Cytron Technologies Sdn Bhd — public mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf (public; read 2026-10-16 as text)

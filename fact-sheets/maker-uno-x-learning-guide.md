@@ -60,7 +60,7 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - "Simplifying Digital Making"
 
 ## Price band
-RM39.00 (5+ RM37.10, 10+ RM35.10) (Cytron product page, read 2026-10-19)
+RM39.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-arduino-learning-guide-for-beginners-with-maker-uno-x

@@ -5,7 +5,8 @@
 | Product code | `HAT-MDD10` (manual title [UM]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page independently confirms the manual (6–24 V, 10 A without heatsink at 25 °C, 30 A peak 10 s, current limiting at 30 A, 20 kHz, 67.5 × 59 mm) |
 | Primary source | No datasheet exists. Top source: "HAT-MDD10 10Amp DC Motor Driver for Raspberry Pi User's Manual" — **V1.0, "Mac 2017"** (sic; March 2017) — https://docs.google.com/document/d/19JLDnzU0y-9FKH4ZXm0lk4xtMJKtaKTDBT5ulGgj8UI/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,6 +39,11 @@ Manual section 4 "Product Specification and Limitations", table **"Absolute Maxi
 | Operating temperature | Not stated (only 25 ℃ / room-temperature test conditions) | — |
 | Packing list | 1 x Hat-MDD10 10A DC Motor Driver; 1 x PC104 Header Pin (2x20) (CN-PH-PC104) | [UM] |
 | Warranty | 12 months; manufacturing defects only; misuse and two-way freight not covered | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** dual-channel 10 A continuous driver for Raspberry Pi; sign-magnitude PWM control; solid-state; "current limiting sensor and auto cut set at 30A peak" [PP].
+- **Features list:** 6–24 VDC; test buttons; LED per output; 10 A continuous (without heatsink at 25 °C), 30 A peak (10 s); current limiting at 30 A; Raspberry Pi connector; NMOS H-bridge, no heatsink; regenerative braking; PWM up to 20 kHz (output = input frequency from the Pi); sign-magnitude PWM; TTL PWM from a microcontroller, not RC-receiver PWM; **dimension 67.5 mm × 59 mm** [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User's Manual (Google Doc), 3D CAD, Raspberry Pi sample code (GitHub `Cytron_MDD10_Hat`) [PP].
 
 ## Interfaces, terminals and pin mapping
 **Terminal block** [UM]:
@@ -124,7 +130,6 @@ LEDs and test switches [UM]: MxA LED on when output A high and B low (current A�
 3. Protection beyond "current limiting at 30A" (thermal, under-voltage, reverse polarity).
 4. Whether the 5-pin input header can be used without a Pi (external controller) — header exists in pin table, use not described.
 5. Operating temperature, terminal wire size; mounting-hole positions (drawing only).
-6. Price — not stated in the [PP] read.
 
 ## Sources
 - [UM] HAT-MDD10 User's Manual, V1.0, "Mac 2017": https://docs.google.com/document/d/19JLDnzU0y-9FKH4ZXm0lk4xtMJKtaKTDBT5ulGgj8UI/view

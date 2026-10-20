@@ -5,7 +5,8 @@
 | Product code | `SC08A` [PP]; document title "SC08A SERVO CONTROLLER" [UM] |
 | Family | Servo and RC controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Board size and the feature list are now Cytron-stated; the manual was only read through a reseller mirror and connector pin orders are still open, so it stays Medium |
 | Primary source | "SC08A SERVO CONTROLLER — User's Manual", **V1.0, June 2011**, Cytron Technologies Sdn. Bhd. [UM] — no separate datasheet exists; the user manual is the top-ranked source |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -37,7 +38,13 @@ The manual has **no specification table and no absolute-maximum-rating table** [
 | Connectors in packing | 1 × 2510H-04 and 1 × 2561-04 connectors (with terminal pins), 1 × mini jumper for JP11 | [UM] |
 | Warranty | 6 months [UM]; 12 months [PP] — see Conflicts | [UM][PP] |
 | Price | RM65.10 (Cytron product page, read 2026-10-16) | [PP] |
-| Dimensions, weight, current draw, servo supply maximum (board), pulse refresh rate | Not stated | — |
+| Dimensions | 49 mm × 46 mm | [PP] |
+| Weight, current draw, servo supply maximum (board), pulse refresh rate | Not stated | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** 8 servo channels driven independently; extendable to 16 channels by linking two controllers over serial; host = PC with a USB-to-UART converter or any MCU with UART; any channel can be deactivated; per-channel start-up position [PP].
+- **Features list:** optional position reporting; servo activation per channel; independent starting position command; optional servo ramping (one of 100 ramp rates per servo); resolution 8000 steps = 0.25 µs; UART 9600 baud; servo pulse range 0.5–2.5 ms; **dimension 49 mm × 46 mm**; free sample GUI (tested on Windows XP and 7, no support) [PP]. Protocol differs from SC16A [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User Manual (Google Drive PDF), Fritzing file, sample code for PIC16F877A, PIC18F4520 and SK40C, VB 2010 GUI project (GitHub), and tutorials (Arduino Due with SC08A/SC16A, XBee wireless servo controller, small robot gripper, GUI project 2) [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (manual chapter 4) [UM]:
@@ -137,12 +144,12 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Servo header pin order (S / + / −) and labelling S1–S8.
 - Board maximum servo-supply voltage and current rating of the terminal block / PCB traces.
 - Whether servo ground and logic ground are common.
-- Board dimensions and weight — not in the manual; reseller pages not used as a spec.
 - Pulse refresh rate (frame period).
 - Whether the baud rate can be changed (only 9600 is stated).
 - Behaviour on UART loss, and whether the stored start-up position moves the servo at power-up before activation.
 - Board revision / hardware revision history — not stated anywhere read.
-- Product-page body text beyond the coordinator's summary (page not read here).
+- Board weight — not stated (size 49 × 46 mm is from the product page).
+- Re-read the user manual from the Cytron Drive PDF (now linked from the product page) to replace the reseller-mirror reading.
 
 ## Sources
 - [UM] "SC08A SERVO CONTROLLER — User's Manual", V1.0, June 2011, Cytron Technologies Sdn. Bhd. — read from the reseller mirror https://www.gotronic.fr/pj2-38783-nt-3349.pdf (Cytron's own copy, linked from the product page, is https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view — not readable here)

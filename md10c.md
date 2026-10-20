@@ -5,7 +5,8 @@
 | Product code | `MD10C` ("Product Code: MD10C" on the product page [PP]; manual title [UM]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, packing list, resources). Status and price confirmed on my.cytron.io; page text agrees with the UM (13 A continuous; "10Amp" title is the known naming trap) |
 | Primary source | "MD10C R3.0 10Amp DC Motor Driver User's Manual Rev3.0" — **V1.0, Aug 2018** — public Google Doc (live version read 16 Oct 2026): https://docs.google.com/document/d/1rgQzn-nWn-qcWNnHjDZvIYqUrdCeBQQxXA-TU3BF0AQ/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -46,6 +47,10 @@ Manual table is titled **"Absolute Maximum Rating"** [UM].
 | PCB material | "standard FR4 material" (Cytron Q&A reply, 20/04/2018) | [PP] |
 | Warranty | 12 months; manufacturing defects only; misuse and two-way freight not covered | [UM][PP] |
 | Packing list | 1 x MD10C R3.0 10A DC Motor Driver; 1 x 2510 PCB Connector – 3 Ways (Female); 3 x 2510 Terminal Pin; 4 x plastic spacer (~7mm) | [UM][PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Features (page): single channel; 5–30 VDC; **no reverse polarity protection at Vmotor**; regenerative braking; 13 A continuous, 30 A peak (10 s); 3.3 V and 5 V logic; NMOS H-bridge, no heatsink; PWM up to 20 kHz; locked-antiphase and sign-magnitude, not RC PWM; single power source, no additional Vin; 75 × 43 mm [PP].
+- **Packing:** 1x MD10C Rev3.0, 1x 2510 3-way female connector, 3x 2510 terminal pins, 4x plastic spacers (~7 mm) [PP].
+- Resources: Rev3.0 user's manual, CytronMotorDriver library, FCC/RoHS/CE certificates, Fritzing, STEP files, tutorials (MD10C fast testing, PSC28A, SK40C projects 10 and 16, Arduino control, motor RPM with hall encoder) [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout letters as in the manual [UM]:
@@ -132,7 +137,6 @@ Mode selection — by wiring, no jumper or switch is stated [UM]:
 5. Rev 1.0 / Rev 2.0 hardware differences beyond voltage (e.g. terminal block layout) — [UM-R2] was only read through a summarising fetch; its terminal layout description was not quoted and is not used.
 6. ESP32 use of the Cytron library: the code calls `ledcWrite(_pin1, …)` with no `ledcAttach` in the constructor [GH]; whether ESP32 users must attach LEDC themselves is not documented.
 7. UL94 flammability rating — Cytron reply: "for now we're not sure about that" [PP].
-8. Product-page price currency is shown only as "$" on www.cytron.io.
 
 ## Sources
 - [UM] MD10C Rev3.0 User's Manual (Google Doc, "MD10C R3.0 10Amp DC Motor Driver User's Manual Rev3.0, V1.0, Aug 2018"): https://docs.google.com/document/d/1rgQzn-nWn-qcWNnHjDZvIYqUrdCeBQQxXA-TU3BF0AQ/view

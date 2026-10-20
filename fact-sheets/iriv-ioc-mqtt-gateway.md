@@ -11,6 +11,7 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 
 ## Specs and functions
 - Datasheet: Rev 1.0, June 2026
+- Status: on sale on my.cytron.io, RM334.95 (read 2026-10-19)
 - Firmware: MQTT Ready Gateway, preloaded from the factory; uses standard MQTT (Port 1883)
 - Factory reset: hold the user button for 10 seconds during boot until the buzzer beeps; configuration is wiped, licence is preserved
 - USR LED network status: Slow Blink = Ethernet down; Solid On = Ethernet up, MQTT disabled; Single Pulse every 1.5s = Ethernet up, MQTT enabled but not reachable; Two Pulses every 3s = Ethernet up, MQTT connected
@@ -35,6 +36,11 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Relative humidity: 10 – 80 % (non-condensing)
 - Enclosure: metal, fanless design, DIN rail mountable
 - Dimension: (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors); DIN bracket adds 8mm, terminals add 15.5mm
+- Setup: USB-C PROG → USB network → web UI 10.0.0.1; change the default password before enabling Ethernet config (Cytron tutorial)
+- Topics: Base Topic + di/, do/…/state, do/…/cmd (1/ON, 0/OFF), ai/, mbpoll/, mbwrite/ and …/confirm; QoS 0–2 and Retain per channel (Cytron tutorial)
+- Modbus RTU master: up to 32 poll jobs, write jobs FC5/FC6/FC16, scaling and byte order (Cytron tutorial)
+- Firmware update via web UI or BOOTSEL (.uf2 to the RP2350 drive); factory reset by holding User button at power-on until beep (Cytron tutorial)
+- RTC is not used by the MQTT firmware (product page)
 
 ## Interfaces and compatibility
 - Differences from the IRIV IO Controller: factory MQTT Gateway firmware that must not be overwritten; the user button does a factory reset; the USR LED shows network/MQTT status; the buzzer beeps on factory reset; the RTC is not used; USB-C is used for configuration
@@ -68,16 +74,16 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Operating temperature -20 to 70 ℃; humidity 10 – 80 % non-condensing
 - 2MB flash, 520KB SRAM
 - RTC backup needs a CR2032 coin cell inserted by the user
-- Not confirmed on sale; product page not confirmed
+- Web UI first reached over USB (10.0.0.1); password change forced before Ethernet configuration; MQTT port 1883, no TLS (Cytron tutorials)
 
 ## Positioning (kept apart from specs)
 - Datasheet subtitle: "IR4.0 Industrial I/O Controller"
 
 ## Price band
-[NOT STATED]
+RM334.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-iriv-io-controller-mqtt-ir4.0-industrial-i-o-controller-with-mqtt-ready
 
 ## Datasheet
 [NOT STATED]

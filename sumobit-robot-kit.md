@@ -5,7 +5,8 @@
 | Product code | V-KIT-SUMOBIT [PP] |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. All four kit options are now itemised (Complete / Basic, with or without micro:bit); one LiPo per kit; the kit motor is the 12 V 580 rpm 3.5 kgf·cm part per the packing-list link |
 | Primary source | Guide book: "SUMO:BIT Robot Kit \| Assembly (V1)" (Google Slides), Last Updated 2 Dec 2024 [UM], with the companion decks "SUMO:BIT Robot Kit \| Checking" (2 Dec 2024), "\| Maintenance" (2 Dec 2024), "\| Autonomous" (9 Dec 2024) and "\| RC (Remote Control)" (10 Dec 2024) [UM]. No kit datasheet exists; the board datasheet is "SUMO:BIT Datasheet, Rev 1.0, December 2024" (Cytron Google Doc) — board facts live in `sumo-bit.md` |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -50,6 +51,13 @@ No kit-level spec table exists in any source; the rows below are the kit-level f
 **Assembly guide "List of items for SUMO:BIT Robot Kit" (2 Dec 2024):** Main items — 1× SUMO:BIT board, 1× micro:bit Junior Kit, 5× Maker Object (opponent sensor), 2× Maker Reflect (edge sensor), 2× 12 V 580 rpm DC motor with wires, 2× aluminium silicone wheel set, 2× LiPo battery 11.1 V 1300 mAh. Robot body — 1× 3D-printed main body, 1× right motor bracket, 1× left motor bracket, 2× copper base, 1× steel blade, 1× PCB plate. Accessories — 7× 10 cm GVS female-to-female cables, 1× Dean T male connector with cable, 1× 10 cm 3S LiPo charger cable extension, 1× small flat screwdriver, 1× Phillips screwdriver, 10× M3 tapping screws (6 mm), 4× M3 bolt and nut (20 mm) [UM].
 
 **Basic Kit (without body) and 3D Printed Body only:** the page offers these options but does not itemise them; by the option names the Basic Kit omits the 3D-printed body and the Body-only option is the chassis alone — exact contents not stated (Needs verification). "Without micro:bit" options omit the micro:bit [PP].
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Complete kit (with micro:bit):** SUMO:BIT with 2x MD13S attached, small flat and Phillips screwdrivers, Dean T male connector 18 AWG 15 cm, 5x Maker Object, 2x Maker Reflect, 7x GVS F-F extension 10 cm, 2x 12 V brushed DC motor with wires, 2x wheel set, M2 Allen key, **1x LiPo 11.1 V 1300 mAh**, 3S LiPo charger cable extension 10 cm, 2x copper base, 4x M3 nylon lock nut, 4x M3 bolt 20 mm, 10x M3×6 self-tapping screw, PCB plate for blade (training), 6" stainless steel blade, **3D printed chassis with motor brackets**, micro:bit Junior Kit (BBC micro:bit V2 + USB micro B cable), free sticker set (early adopters) [PP].
+- **Complete kit (without micro:bit):** the same without the micro:bit Junior Kit [PP].
+- **Basic kit (with / without micro:bit):** the same parts **without the 3D printed chassis**, with a "6\" Blade" (not marked stainless) [PP].
+- **Motor:** packing-list link is the Cytron "12V 580RPM 3.5kgfcm High Power Brushed DC Geared Motor" [PP: link].
+- **Board spec block (page):** LiPo 7–25 V; 20 kHz with MD13S; 13 A continuous, 30 A peak (≤ 10 s) per channel; USB host 5 V 600 mA; servo 5 V; +5 V total 600 mA; MD13S 61 × 33 mm [PP].
+- Prices subject to SST from April 2026 [PP]. Resources: datasheet, MakeCode extension, sample code, CAD, GitHub (UF2, STL), Assemble / Checking / Maintenance / Autonomous / RC slides, body STL [PP].
 
 ## Interfaces, terminals and pin mapping
 Kit wiring as the Assembly guide states it (board port labels; micro:bit pin numbers behind each label are in `sumo-bit.md`) [UM]:
@@ -117,7 +125,7 @@ Assembly sequence (Assembly (V1) deck) [UM]: (1) fit the two Maker Reflect edge 
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Number of LiPo batteries | [PP] packing list: 1× LiPo 11.1 V 1300 mAh | [UM] Assembly item list: "2x LiPo battery 11.1V 1300mAH" | [UM] outranks [PP], but the "2x" looks like a typo (the body has one battery compartment and the page sells one). Record both; confirm with Cytron before stating a quantity |
+| Number of LiPo batteries | [PP] packing lists (all four options, read 2026-10-20): 1× LiPo 11.1 V 1300 mAh | [UM] Assembly item list: "2x LiPo battery 11.1V 1300mAH" | **One** per kit [PP]; the guide's "2x" is a typo |
 | Motor speed | [PP] "12V brushed DC motor" (no rpm) | [UM] "12V 580rpm DC motor" | 580 rpm [UM] |
 | Number of Maker Object sensors | [PP][UM] item list: 5× | [UM] Assembly step 4: "Repeat for all four Maker Object sensors" | 5 sensors wired to OPP-L, OPP-FL, OPP-FC, OPP-FR, OPP-R (step 7 lists all five); "four" is a slide typo |
 | OPP-FC label | [UM] Assembly step 7: OPP-FC = front-centre | [UM] Assembly layout slide labels OPP-FC "Front-right opponent sensor" | Front-centre (layout caption is a copy error) |
@@ -125,15 +133,13 @@ Assembly sequence (Assembly (V1) deck) [UM]: (1) fit the two Maker Reflect edge 
 | Datasheet source | KB `sumo-bit.md` cites a RobotShop mirror, "No Cytron Google Doc found" | Product page links the Cytron Google Doc "SUMO:BIT Datasheet", Rev 1.0, December 2024 | Same revision and date; feature list and Table 4 values match the mirror. The Doc adds the Telegram link https://t.me/sumobit_support |
 
 ## Needs verification
-- Exact contents of the Basic Kit (without body) and the 3D Printed Body only options — the page names them but does not itemise them.
-- Whether one or two LiPo batteries ship (see Conflicts).
-- Motor torque, gear ratio and stall current of the 12 V 580 rpm motor — not stated in any kit source (the 1KG RC Sumo bundle lists a different 580 rpm 3.5 kgf·cm motor; do not copy it across).
 - Robot dimensions (footprint, height) — not stated; "1kg" is the class, the built weight is "around ±860g" before extra weight.
-- What the "micro:bit Junior Kit" contains beyond the micro:bit V2 and USB cable.
 - Contents and version names of the firmware .uf2 and STL files in the Cytron-SUMOBIT repository (listing blocked; only the README was read).
 - Which DIP-switch strategies the community sample programs implement (code is behind MakeCode links, not in text).
 - Warranty terms (page field blank; other Cytron sumo kits state "no warranty").
 - Tutorial "Build a 1kg Sumo Robot with SUMO:BIT" (https://my.cytron.io/tutorial/build-sumo-robot-with-sumobit, linked from the GitHub README) — not readable here.
+- Motor gear ratio and stall current — torque 3.5 kgf·cm comes only from the packing-list product link.
+- Whether a "3D printed body only" option is still sold (the page now lists four kit options only).
 
 ## Sources
 - [PP] https://my.cytron.io/p-sumobit-robot-kits-1kg-sumo-robot-for-microbit — product page facts as read by the coordinator on 2026-10-19 (page not fetched directly).

@@ -40,6 +40,8 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Operating temperature: -20 – 85 ℃
 - USB VID & PID (CircuitPython & Arduino Core): VID 0x2E8A, PID 0x1000
 - Product page: dimensions 88mm(L) x 64mm(W) x 13mm(H); 4x 4.8mm mounting hole (LEGO® pin compatible); 6x M3 screw hole
+- Packing: board, 4 Grove-to-female cables, mini screwdriver, 4 rubber feet (product page)
+- Size 88 × 64 × 13 mm; 4 × 4.8 mm LEGO-pin holes and 6 × M3 holes (product page)
 
 ## Interfaces and compatibility
 - Micro USB (upload programs and power), LiPo battery connector, VIN terminal, 2 DC motor terminals, 4 servo ports, 7 Grove ports, debug port
@@ -79,7 +81,7 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Cytron internal: "very well received among the users", launched in Jun 2021
 
 ## Price band
-RM48.00 (Cytron product page, read 2026-10-16)
+RM50.40 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-rp2040-simplifying-robotics-with-raspberry-pi-rp2040

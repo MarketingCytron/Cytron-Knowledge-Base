@@ -5,7 +5,8 @@
 | Product code | `KIT-IKEDO-MSV2-S` [PP] |
 | Family | Sumo robot kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). The full page now reads: from March 2026 the kit ships with Maker Reflect S edge sensors; full packing list and 500 g class are Cytron-stated |
 | Primary source | Getting Started doc: **"Ikedo Bot V2 Getting Started Instruction"** (Google Doc, heading "Ikedo Bot Starter Kit V2 Getting Started Instruction"; no revision number or date printed; Drive metadata: created 7 Dec 2023, last modified 20 Jan 2026) [UM] — https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit. No kit datasheet exists. |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -29,7 +30,7 @@ No datasheet spec table exists; rows are the product page "Specifications" block
 | Controller | Maker Mini Sumo Controller — "Arduino Nano/Uno compatible (ATmega328P)"; USB-serial "CH340C" | [PP] — see `maker-mini-sumo.md` |
 | Battery | 7.4 V 450 mAh LiPo (1 ×) | [PP][UM] |
 | Opponent sensors | 5 × Maker Object Sensor; page: "range 50cm adjustable" | [PP][UM] — see `maker-object.md` (conflict below) |
-| Edge sensors | 2 ×, mounted underneath; page: "Maker Reflect S"; guide: "Maker Reflectance Sensor" | [PP][UM] — see Conflicts |
+| Edge sensors | 2 × Maker Reflect S, mounted underneath — "From March 2026 onwards, Ikedo Mini Sumo Robot V2 will include Maker Reflect S as the edge sensor"; the older guide calls them "Maker Reflectance Sensor" | [PP][UM] |
 | Motors | 2 × 600 RPM 6 V DC micro metal gearmotor; page: "6V DC motors (600rpm, 0.065kg.cm)" | [PP][UM] |
 | Wheels | 2 × high grade silicon wheel set 32 mm × 22 mm; blue from 17 Jul 2025 | [PP][UM] |
 | Control modes | "auto and manual control mode"; RC transmitter/receiver sold separately | [PP] |
@@ -38,8 +39,15 @@ No datasheet spec table exists; rows are the product page "Specifications" block
 | Price | RM418.95 (Cytron product page, read 2026-10-19) | [PP] |
 
 **Kit contents — Getting Started components list [UM]:** 1 × Maker Mini Sumo Controller; 5 × Maker Object Sensor (opponent); 2 × Maker Reflectance Sensor (edge) [link → MAKER-REFLECT page]; 2 × 600RPM 6V DC Micro Metal Gearmotor; 2 × High Grade Silicon Wheels Set (32mm x 22mm); 1 × 7.4V 450mAh LiPo Battery; 1 × Mini Sumo Robot Chassis (Top Cover); 1 × Mini Sumo Robot Chassis (Main); 1 × Mini Sumo Robot Chassis (Motor Bracket); 1 × JST LiPo Battery Wire Extension; 1 × 2561 3Ways Connector Extension Wire; 4 × M3x6 Self-Tapping Screw (Black); 6 × M2.5x20 Bolt; 1 × Tiny Phillips Screwdriver (3mm); 1 × Tiny Flat Head Screwdriver (2mm); 1 × USB Cable (FREE).
-**Product page packing list [PP]** (truncated after "25…", presumably the 2561 wire): 1 × Maker Mini Sumo Controller, 5 × Maker Object Sensor (opponent), 2 × Maker Reflect S (edge), 2 × 600RPM 6V DC micro metal gearmotor, 2 × silicon wheels 32mm × 22mm, 1 × 7.4V 450mAh LiPo, 3D printed parts (chassis, top cover, motor bracket), JST LiPo battery wire extension, …
+**Product page packing list [PP]** (full list read 2026-10-19): see *Product page facts* below.
 **Not included:** RC transmitter/receiver [PP]; a LiPo charger appears in neither list [UM][PP] (the V1 Hackster guide states "a LiPo balance charger is not included" [PP: Hackster V1]).
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page notes:** prices subject to SST from April 2026; "There is NO warranty for Sumo Robot. Please avoid extensive use to prevent damaging the motor"; blue silicone wheels from 17 Jul 2025; **"From March 2026 onwards, Ikedo Mini Sumo Robot V2 will include Maker Reflect S as the edge sensor"** [PP].
+- **Class:** "The 10cm x 10cm robot size is designed for 500g Mini Sumo Robot competitions"; compliant with international game standards [PP].
+- **Assembly notes:** motor mounting is modular (normal micro metal gearmotor or the high-speed Novamax); leave a 1 mm gap when fitting the motor bracket so it can lever-lock the motor, otherwise the body may bend; keep the PLA chassis out of direct sun and hot cars [PP].
+- **Spec list:** 10 × 10 cm; ~200 g; black PLA 3D-printed chassis; 7.4 V 450 mAh LiPo; 5 opponent sensors ("Range: 50cm adjustable"); 2 edge sensors underneath; 2 × 6 V DC motors (600 rpm, "0.065kg.cm"); ATmega328P, Arduino Nano/Uno compatible; CH340C USB-serial; auto and manual (RC, transmitter/receiver not included) modes; start button and external start-module port (module not included); status LEDs; programmable LED, 3-way DIP switch, potentiometer, piezo buzzer; RC servo port; Arduino IDE [PP].
+- **Full packing list:** 1x Maker Mini Sumo Controller, 5x Maker Object Sensor (opponent), 2x Maker Reflect S (edge), 2x 600RPM 6V DC micro metal gearmotor, 2x high-grade silicone wheel set (32 × 22 mm), 1x 7.4V 450mAh LiPo, 3D printed parts (chassis, top cover, motor bracket), 1x JST LiPo battery wire extension, 1x 2561 3-way connector extension wire, 4x M3×6 self-tapping screw (black), 6x M2.5×20 bolt, 1x tiny Phillips screwdriver (3 mm), 1x tiny flat-head screwdriver (2 mm), 1x USB cable (free) [PP].
+- **Resources:** Ikedo Bot V2 Getting Started Instruction (Google Doc), software set-up (Cytron Hackster guide), STL files (Thingiverse 6719505) [PP].
 
 ## Interfaces, terminals and pin mapping
 Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin numbers from `maker-mini-sumo.md` [DS] in brackets):
@@ -61,7 +69,7 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 - Edge thresholds: `AutoSumo` uses fixed 720 (L) / 638 (R) and treats a reading **below** threshold as the white edge; use `CalibrateEdgeSensors` (hold START at power-up, sweep sensors over white edge and black ring, press START) to store thresholds in EEPROM [GH].
 - Opponent sensors read LOW when an object is detected; `AutoSumo` searches when all five read HIGH [GH].
 - Do not use `tone()` on this controller (it breaks motor PWM on D3/D11) — see `maker-mini-sumo.md`.
-- Edge-sensor identity is contested (Reflect S vs Reflect) — both run from the port's +5 V, but do not quote either sensor's range or supply figures as kit facts until confirmed (see Conflicts).
+- Edge sensor: Maker Reflect S on kits from March 2026 [PP]. It runs at 5.0 V only (Maker Reflect S spec [PP]), which the controller's edge port supplies.
 - The page's "range 50cm adjustable" for the opponent sensors is a kit-page figure; the Maker Object datasheet states 40–140 cm on white / 15–60 cm on black (`maker-object.md`). Quote with source.
 
 ## Power and electrical limits
@@ -97,22 +105,20 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Edge sensor identity | [PP] packing list and specs: "2x Maker Reflect S (edge)" | [UM] components list: "2 x Maker Reflectance Sensor (edge)", hyperlinked to the **MAKER-REFLECT** product page (p-maker-reflect-simplifying-ir-reflectance-sensor-for-beginner) | **Open.** Neither is a datasheet. The page (read 2026-10-19) is newer than the guide text (Drive modified 20 Jan 2026) and the page's March 2026 note is truncated. Write "edge sensor (Maker Reflect S per the product page)" and ask the design team |
+| Edge sensor identity | [PP] packing list, specs and page note: "From March 2026 onwards … Maker Reflect S as the edge sensor" | [UM] components list: "2 x Maker Reflectance Sensor (edge)", linked to the MAKER-REFLECT page | **Resolved:** Maker Reflect S from March 2026 [PP]; the guide text predates the change |
 | Number of Maker Object sensors fitted | [UM] components list: 5 ×; [PP]: 5 × | [UM] assembly step: "Attach **4x** Maker Object sensors as shown in the figure" | Treat as a guide typo; kit has 5 (controller has 5 OPP ports). Flag to doc owner |
 | Bolt sizes | [UM] list: "6 x M2.5x20 Bolt" | [UM] steps: "4x M3x20 Bolt" (motor bracket) + "2x M2.5x20 Bolt" (top cover) | Count matches (6); thread size inconsistent in the guide. Don't quote a bolt size |
 | Opponent sensor range | [PP] kit page: "range 50cm adjustable" | Maker Object datasheet: 40–140 cm (white), 15–60 cm (black) (`maker-object.md` [DS]) | Datasheet wins for the sensor; the kit page's 50 cm is a page figure |
-| USB cable | [UM]: "1 x USB Cable (FREE)" | [PP] packing list truncated; Pro page says a free USB cable from 25 Aug 2024 | State "USB cable included (free)" per [UM] |
+| USB cable | [UM]: "1 x USB Cable (FREE)" | [PP] full packing list: "1 x USB Cable (FREE)" | Agree: free USB cable included |
 | Motor wiring colours | [UM] V2: left MLA=red/MLB=black, right MRA=black/MRB=red | [PP: Hackster V1]: "Red typically goes to MRA… black to MRB", then test and swap | Kit-specific; rule = test with motor buttons |
 
 ## Needs verification
-- Which edge sensor actually ships (Maker Reflect S vs Maker Reflect) and what the truncated "from March 2026 the kit includes Make…" note says [PP].
-- Full product-page packing list (truncated after "25…") [PP].
 - Motor torque "0.065kg.cm" for the 600 RPM motor [PP] — unusually low next to the Pro's 3.1 kg.cm; the motor's own product page was not readable. Confirm before quoting.
-- Competition class (500 g mini sumo) is stated for the controller and in the V1 Hackster title, not in the kit-page extract.
 - Whether the kit ships with any firmware/example pre-loaded, and which Arduino board to select.
 - Weight "~200 g": with or without battery not stated.
 - Contents and wiring of the three linked Cytron tutorials (RC, PS2, Bluetooth) — pages not readable here.
 - Age/syllabus tags on the page (none in the extract).
+- Edge sensor on kits sold before March 2026: the Getting Started guide links Maker Reflect (MAKER-REFLECT); confirm whether older stock shipped Maker Reflect.
 
 ## Sources
 - [UM] Ikedo Bot V2 Getting Started Instruction (Google Doc; Drive: created 2023-12-07, modified 2026-01-20) — https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit

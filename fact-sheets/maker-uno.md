@@ -36,6 +36,8 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - Warranty: 6 months, manufacturing defects only (user manual Rev 1.0); product page: 12 months
 - Dimensions: [NOT STATED]
 - User's Manual: Rev 1.0, Dec 2017; board package section updated 21 March 2018
+- Packing: Maker UNO + GPIO labeling sticker (product page)
+- Warranty: 12 months (current product page; manual Rev 1.0 says 6 months)
 
 ## Interfaces and compatibility
 - Arduino UNO R3-standard female headers; R3 shield compatible
@@ -71,10 +73,10 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - User manual: "PURPLE PCB !"; three extra features that make it "more suitable for beginner"
 
 ## Price band
-[NOT STATED]
+RM37.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.com.my/p-maker-uno-simplifying-arduino-for-education
+https://my.cytron.io/p-maker-uno-simplifying-arduino-for-education
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf

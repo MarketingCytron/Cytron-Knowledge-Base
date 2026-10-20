@@ -46,7 +46,7 @@ A set of square EVA-foam floor tiles printed with black line patterns on a white
 - "Reconfigurable" line following track: tiles can be rearranged into different course designs (product page)
 
 ## Price band
-RM44.00–RM176.00 (Cytron product page, read 2026-10-19)
+RM44.00–RM176.00 across 8 options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-cytron-reconfigurable-line-following-track

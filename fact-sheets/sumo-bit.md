@@ -33,6 +33,9 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Packing: SUMO:BIT with 2 × MD13S attached, flat and Phillips screwdrivers, Dean T male connector 15 cm, sticker set; Jr Kit option adds micro:bit V2 and USB cable (product page)
+- Size: 125 × 80 mm; 4 × Ø3.2 mm holes (product page image)
+- Firmware (UF2) and STL files on GitHub Cytron-SUMOBIT (product page)
 
 ## Interfaces and compatibility
 - micro:bit plugs into a vertical edge-connector socket with the LED matrix facing up
@@ -68,10 +71,10 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - "Start your sumo journey with the SUMO:BIT Robot Kit!"
 
 ## Price band
-[NOT STATED]
+RM198.45 board only (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-sumo-bit
+https://my.cytron.io/p-sumo-bit
 
 ## Datasheet
 https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf

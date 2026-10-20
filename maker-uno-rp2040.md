@@ -5,7 +5,8 @@
 | Product code | `MAKER-UNO-RP2040` (the datasheet's figure and table captions use this code) |
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Sale status, 2 MB flash, 2 RGB LEDs, 16 status LEDs, variants and packing lists are now Cytron-stated on the live page; a public schematic PDF is linked |
 | Primary source | Maker Uno RP2040 Datasheet, Rev 1.0, February 2024, Cytron Technologies Sdn Bhd. It is a public Google Doc, linked from circuitpython.org and from reseller pages, and mirrored as a PDF at electrokit.com and robu.in. |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -59,6 +60,13 @@ Other specifications (not in Table 4):
 | Servo ports | 4 | [DS] |
 | RGB LEDs | WS2812B on GP25. **2 LEDs**: [GH] features image "2X RGB LED",  schematic shows two WS2812B. The datasheet says "RGB LEDs" in the heading and "LED" in the text | [DS] pin; count [GH]/ |
 | GPIO status LEDs | 16: L0–L13 and L20, L21, for GP0–GP13, GP20, GP21. They light when the GPIO is high | [DS] function; [GH] pinout/features image;  |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features list:** Uno form factor; RP2040 dual-core Cortex-M0+, 264 KB RAM, **2 MB flash**; single-cell LiPo connector with overcharge/over-discharge protection, charged via USB; 6 Grove ports; 1 Maker Port (Qwiic / STEMMA QT / Grove via cable); 4 servo ports; **16 status LEDs**; piezo buzzer with mute switch; user button; reset button; boot button; **2x RGB LEDs (WS2812)**; Arduino IDE, CircuitPython, MicroPython [PP].
+- **Power:** USB-C 5 V or 1-cell LiPo/Li-ion with automatic selection; servo voltage depends on the connected power source [PP].
+- **Variants and packing:** (1) **Edu Bundle with BM guide (softcopy)** — board, 4 Grove-to-female cables, rubber feet (4), USB-C cable 1 m, 40-way M-M jumpers 20 cm, 10x 220 Ω, 5x 1 kΩ, 5x 10 kΩ, LDR, 2N2222, 10 kΩ preset, 300C 1.5–6 V motor with wires, 56 mm propeller, 3 each red/yellow/green 5 mm LEDs, 400-hole breadboard, CH-2 quick wiring terminal; (2) **board only** — board, 4 Grove-to-female cables, rubber feet (4) [PP].
+- **Edu kit note:** based on the "Panduan Guru Maker UNO RP2040" (Teacher's Guide, Bahasa Malaysia, RBT syllabus) [PP].
+- **Resources:** Teacher's Guide (BM), datasheet (Google Doc), 3D CAD, **schematic PDF**, full pinout diagram, Getting Started tutorial, CircuitPython firmware, GitHub [PP]. Layout, dimension and pinout images on the page — not read.
+- Prices subject to SST from April 2026 [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -176,6 +184,7 @@ Other specifications (not in Table 4):
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
+| RGB LED count | [DS]: heading "RGB LEDs (WS2812)", text "User programmable WS2812B RGB LED" (singular) | [PP] (read 2026-10-19): "2x RGB LEDs (WS2812)"; [GH] features image "2X RGB LED WS2812B"; [3P] arduino-pico NUM_NEOPIXEL 2 | **2 LEDs** on GP25 [PP][GH] |
 | GP5/GP21 PWM channel | [DS] Table 3: PWM2-A | [DS] Table 1 Grove table and [GH] pinout: PWM2-B | PWM2-B. Table 3 is a typo, and GPIO5 is PWM2 B per RP2040 [VEN]. |
 | Shared PWM pairs | [DS] Table 3 lists 4 pairs (GP0/16, GP1/17, GP4/20, GP5/21) | [GH] pinout also shows GP10/26, GP11/27, GP12/28, GP13/29, GP9/25 | Both are correct. Table 3 is incomplete; use the full list. |
 | Grove 3 pins | [DS]: GP6, GP26 | [3P] ThePiHut copy: "GP6/GP25" | DS wins: GP6, GP26. |
@@ -195,7 +204,8 @@ Other specifications (not in Table 4):
 - **Other platforms:** Zephyr lists a board target `maker_uno_rp2040` [3P]. micropython.org (checked 2026-10-16) has no Maker Uno RP2040 build [3P].
 - **Charge current** and LiPo charge voltage (MCP73831 variant) are not stated.
 - **Servo current limit** is not stated.
-- **Exact current product-page wording:** the product page could not be read.
+- Which variant the RM62.58 price is (page shows one price; two variants listed).
+- Read the public schematic PDF linked on the product page to confirm IOREF, the "~5V out" source and the UNO position mapping.
 
 ## Sources
 - [DS] Maker Uno RP2040 Datasheet, Rev 1.0, February 2024 (public Google Doc): https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/edit

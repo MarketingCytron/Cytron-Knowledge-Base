@@ -5,7 +5,8 @@
 | Product code | `GRV-WIFI-8266` (datasheet figure/table captions [DS]; product page [PP]) |
 | Family | Sensors and modules |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Flash size (32 Mbit), RF standard, packing list and on-board switches are now Cytron-stated |
 | Primary source | **GROVE WIFI 8266 Datasheet, Rev 1.0, August 2021** (public Google Doc linked from the product page): https://docs.google.com/document/d/1ub3WuRrp1F8QijoHCDjOez6SC1mtG5pQglhiPdeB12k/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,6 +39,11 @@ Every row of the datasheet "2. SPECIFICATIONS" table (Table 2), exact numbers an
 | UART baud used by Cytron software | 115200 (MakeCode example `BaudRate115200`; CircuitPython `ESP_ATcontrol(uart, 115200)`) | [GH] |
 | Dimensions | Datasheet section "3. DIMENSION" is a drawing only (Figure 2); no values in the text | [DS] |
 | Flash size, RF (802.11 b/g/n, 2.4 GHz), antenna, weight, current draw | Not stated by the datasheet; see Needs verification for [3P] figures | [DS] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** ESP-12F (ESP8266); UART 115200 bps; ESP-AT firmware v2.2.0; Grove 4-pin (Rx, Tx, Vcc, Gnd); on-board Reset and Boot switches; power LED; all ESP-12F pins broken out on labelled 2.54 mm pads; 3–6 V supply; **32 Mbit SPI flash**; **802.11 b/g/n, 2.4 GHz**; MakeCode extension; CircuitPython libraries [PP].
+- **Description:** REKA:BIT's external power input "ensures sufficient power for the WiFi module"; CircuitPython libraries for Raspberry Pi Pico and RP2040 boards, plugs into any Maker Pi RP2040 Grove port; ThingSpeak, Blynk and Telegram examples [PP].
+- **Packing list:** 1x Grove WiFi 8266 module, 1x Grove cable [PP].
+- **Resources:** datasheet, micro:bit getting-started tutorial, pxt-esp8266 MakeCode extension, CircuitPython IoT examples (MAKER-PI-PICO repo), Cytron ESP-AT binaries and "How to update the firmware" (GitHub README), Espressif ESP-AT guide, CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 - **Grove port (4 pins)** [DS]: GND · VCC (3–6 V) · RX (ESP8266 serial in — to host TX) · TX (ESP8266 serial out — to host RX). Physical pin order on the connector is in the datasheet figure only — see Needs verification.
@@ -99,14 +105,10 @@ No numeric disagreement was found: supply 3–6 V matches between [DS] and [3P];
 - **Dimensions and weight.** Datasheet Figure 2 is a drawing only. Confirm from the drawing or the CAD folder.
 - **Grove pin order** (GND/VCC/RX/TX left-to-right) and **which Grove signal pins map to which micro:bit / Pico pins through EDU:BIT or Maker Pi Pico Grove ports** — the datasheet only gives the four signal names.
 - **Supply / peak current** — not stated by any Cytron source; the ESP8266 transmit peak is a [VEN] figure not read here. Needed before saying "powered from micro:bit 3V pin".
-- **Flash size.** [3P] The Pi Hut: 32 Mbit SPI flash; [GH] says the firmware is for "flash size 2MB or above" and the Flash Download Tool setting for the WiFi Shield is 32 Mbit — not stated for the Grove module.
-- **RF spec.** [3P] 802.11 b/g/n, 2.4 GHz — not stated by Cytron; antenna type not stated.
 - **micro:bit V1 vs V2 support.** [GH] only says PXT target "microbit"; [3P] The Pi Hut says V1 and V2.
 - **Raspberry Pi Pico W / Pico 2 / Pico 2 W** — [3P] The Pi Hut lists Pico W and Pico 2; no Cytron source read says so.
 - **Firmware-update procedure for this module** (USB-UART adapter wiring, Flash Download Tool "FLASH SIZE" setting) — [GH] README only documents ESP-01S and the WiFi Shield.
 - **Whether the Grove RX input is 5 V tolerant** — the datasheet limit (3.6 V) says no; confirm with the design team before any 5 V-host tutorial.
-- **Prices elsewhere.** [3P] RobotShop USD 6.60; The Pi Hut £7.10 incl. VAT (sale). Cytron RM27.72 [PP].
-- Product page text beyond the facts the coordinator supplied (page not read here).
 - The RobotShop PDF mirror of the datasheet (https://cdn.robotshop.com/media/c/cyt/rb-cyt-321/pdf/grove-wifi-8266-iot-microbit--beyond-datasheet.pdf) could not be downloaded (proxy refused), so its revision was not compared.
 
 ## Sources

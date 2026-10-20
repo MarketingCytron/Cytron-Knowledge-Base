@@ -5,7 +5,8 @@
 | Product code | `MD30C` (manual title [UM]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Approximate size, reverse-polarity protection, brake-on-PWM-low and the CE/FCC/RoHS certificates are now Cytron-stated |
 | Primary source | "MD30C 30A DC Motor Driver User's Manual" — **V1.4, December 2017** — public Google Doc: https://docs.google.com/document/d/178uDa3dmoG0ZX859rWUOS2Xyafkd8hSsSET5-ZLXMYQ/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,11 +41,15 @@ Manual section 3.0 "Product Specification and Limitations", table **"Absolute Ma
 | Over-current / thermal / under-voltage protection | Not stated | — |
 | Test buttons | 2 (Test Button A, Test Button B); external switches can be connected | [UM] |
 | LEDs | Red LED A, Red LED B, Green Power LED | [UM] |
-| Dimensions | Not stated in text — section 5.0 "Dimension" is a figure only (not readable here) | [UM] |
+| Dimensions | ~94 mm × ~79 mm (approximate); hole positions in the manual figure only | [PP] |
 | Operating temperature | Not stated | — |
 | Warranty | "Product warranty is valid for 6 months." Manufacturing defects only; misuse and two-way freight not covered | [UM] |
 | Packing list | 1 x MD30C 30A DC Motor Driver; 2 x Mini Jumper; 1 x 2510 PCB Connector - 3 Ways (Female); 3 x 2510 Terminal Pin | [UM] |
 | Certificates | CE, FCC and RoHS certificates are linked on the product page (not opened) | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Description:** Revision 2.0 since January 2016; successor of MD30B; 80 A peak (1 s), 30 A continuous; full NMOS, no heatsink or fan for 30 A at room temperature; **reverse polarity protection for Vin/Vmotor**; onboard PWM generator for standalone use with onboard or external switches and potentiometer [PP].
+- **Features list:** 1 brushed DC motor; 5–30 V; 3.3 V and 5 V logic (Arduino UNO, Maker UNO, CT-UNO, Mega 2560, Arduino Zero, Raspberry Pi 3B/3B+/3A+/Zero/W/WH); regenerative braking; **brakes when PWM pin is low**; PWM up to 20 kHz (external PWM: output = input); locked-antiphase and sign-magnitude for external PWM (not RC PWM); **dimension ~94 × ~79 mm** [PP].
+- **Resources:** user's manual (Dec 2017), 3D CAD, CytronMotorDriver library, **CE, FCC and RoHS certificates**, "Using MD30C without MCU" tutorial [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout items as numbered in the manual [UM]:
@@ -134,15 +139,14 @@ Truth table (JP6 = EXT PWM) [UM]:
 | No other conflicts found | — | — | Product page facts read were stock, prices and links only |
 
 ## Needs verification
-1. Board dimensions and mounting holes — section 5.0 is a figure only; not readable as text.
-2. Internal PWM generator frequency — not stated (MD10-POT's 9–11 kHz must not be assumed).
-3. How to wire locked-antiphase on MD30C — supported per feature list, wiring not described.
-4. Over-current, thermal, under-voltage protection — not stated; confirm with [DT] none exists.
-5. Terminal block wire size and current rating — not stated.
-6. Operating temperature range — not stated.
-7. What changed in hardware Revision 2.0 (January 2016) vs earlier — not documented (only voltage 25 V → 30 V implied).
-8. Warranty: manual V1.4 says 6 months; current Cytron warranty policy may differ — confirm.
-9. Single-unit price: [PP] shows only quantity-tier prices (from RM148.76 at 20+).
+1. Internal PWM generator frequency — not stated (MD10-POT's 9–11 kHz must not be assumed).
+2. How to wire locked-antiphase on MD30C — supported per feature list, wiring not described.
+3. Terminal block wire size and current rating — not stated.
+4. Operating temperature range — not stated.
+5. What changed in hardware Revision 2.0 (January 2016) vs earlier — not documented (only voltage 25 V → 30 V implied).
+6. Warranty: manual V1.4 says 6 months; current Cytron warranty policy may differ — confirm.
+7. Mounting-hole positions (size ~94 × ~79 mm on the product page).
+8. Over-current, thermal, under-voltage protection — not stated (reverse polarity protection is stated [PP]).
 
 ## Sources
 - [UM] MD30C User's Manual (Google Doc, "MD30C 30A DC Motor Driver User's Manual, V1.4, December 2017"): https://docs.google.com/document/d/178uDa3dmoG0ZX859rWUOS2Xyafkd8hSsSET5-ZLXMYQ/view

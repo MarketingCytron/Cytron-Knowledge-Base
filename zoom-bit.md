@@ -5,7 +5,8 @@
 | Product code | No Cytron source read states a code. `ZOOMBIT-NB` appears only as RobotShop's "Manufacturer #" for the without-micro:bit option [3P] (see *Needs verification*) |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Packing lists for all five options, the ultrasonic module, the battery pack and the HuskyLens AI option are now Cytron-stated; guidebook wiring figures still not read, so it stays Medium |
 | Primary source | No ZOOM:BIT datasheet exists in any source found. The kit's user manual is the **ZOOM:BIT Quick Start Guidebook** (Cytron / rero EDUteam), English PDF `ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf`. No revision or date is printed inside it; "v1.1, 2022" comes from the file name only. The controller board in the kit is REKA:BIT. Its electrical limits come from the **REKA:BIT Datasheet, "Simplifying Robotics with micro:bit", Rev 1.0, April 2021** (Cytron) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -33,6 +34,12 @@ There is no ZOOM:BIT spec table. The table below is every row of the REKA:BIT da
 | Maker Line sensor | 5 IR sensors (S1–S5), each with an LED indicator; calibration button; line-colour switch ("DARK" for a black line) | [UM] |
 | Supported micro:bit | V1 and V2 (V1 needs a Grove buzzer for sound) | [UM], [PP] |
 | Warranty | 12 months | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Options and packing (with micro:bit V2):** 1x micro:bit V2, 1x REKA:BIT expansion board, 1x USB power and data cable, 1x "9+1 lessons" quick start guide book, 1x Zoom track, 1x Maker Line sensor, 1x ultrasonic sensor, 2x 10 mm LED module, 2x DC motor with wheel, 1x micro servo motor, 4x Grove to female header cable, 1x 4xAA battery holder with DC plug, 4x AA battery, 1x castor, 1x mini screwdriver, rivets, double-sided tapes [PP]. "Without micro:bit" is the same list minus the micro:bit; Classroom Pack = 10x the V2 kit [PP].
+- **AI version (HuskyLens):** adds 1x set of HuskyLens and 1x Grove to Gravity cable to the same list (with or without micro:bit V2) [PP]. Page note: HuskyLens draws a lot of current, so rechargeable AA batteries are advised [PP]. Cytron tutorials: introduction/hardware set-up, face recognition, object tracking, colour recognition, tag recognition (YouTube) [PP].
+- **Parts linked from the packing list:** ultrasonic sensor = Cytron "3V-5.5V SR04P Ultrasonic Ranging Module" (HC-SR04P; 3.0–5.5 V supply, about 2–450 cm at 5 V / 400 cm at 3 V, best 10–250 cm per that page) [PP: linked page]; micro servo = "Analog Micro Servo 9g 3V-6V"; AA batteries = PKCELL Heavy Duty AA (4 pcs); USB cable = Dual Output Cable USB A to 2.1 mm DC barrel and micro USB; castor = W420 steel ball castor [PP: packing-list links].
+- **Guide books:** English v1.2 (2022), Malay, Chinese, Thai and Vietnamese PDFs on static.cytron.io; MakeCode extension pxt-rekabit; Resource Hub; Telegram support group [PP].
+- **FAQ (page):** MakeCode for beginners and MicroPython for advanced users (marketing FAQ; no ZOOM:BIT MicroPython library named) [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | micro:bit pin / channel | Notes | Src |
@@ -111,12 +118,11 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 - Whether the Grove buzzer port "P0:P1" [UM] and the Maker Line on P1 [GH] can be used together. The buzzer on V1 (MakeCode music default pin P0) has not been confirmed.
 - **Which REKA:BIT servo port** (S1–S4) the head servo uses.
 - Whether the kit runs from USB power alone (motors and servos), or needs the AA pack.
-- Battery chemistry and voltage (the guidebook says "AA Battery x4" only).
 - Guidebook v1.2 (`ZOOMBIT-Quick-Start-Guide-Book-EN-v1.2-2022.pdf`) exists on static.cytron.io but could not be read. Check whether its contents differ from v1.1.
-- Which ultrasonic module ships in the kit (RCWL-9610 is named only in a code comment [GH]), and its range spec.
 - How headlights "automatically turn ON when the surrounding is dark" [UM] senses light (presumably the micro:bit light-level block — not stated).
-- RobotShop [3P] claims "Explore AI projects with Huskylens option" and "multilingual guide". Confirm whether a HuskyLens bundle or option is sold by Cytron.
-- Price currency and the variant the "$62.50" refers to [PP].
+- Which ultrasonic module ships: the packing list links the SR04P (HC-SR04P) page, while a pxt-zoombit code comment names RCWL-9610 timing [GH]; confirm the part with the EDU team.
+- AA battery type: the packing list links PKCELL Heavy Duty AA cells; voltage under motor load and run time are not stated.
+- Per-option prices (the page shows "from RM262.50" for the default option).
 
 ## Sources
 - [UM] ZOOM:BIT Quick Start Guidebook, English, v1.1 (file name), public: https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf

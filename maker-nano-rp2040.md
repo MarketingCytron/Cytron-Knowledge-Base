@@ -5,7 +5,8 @@
 | Product code | `MAKER-NANO-RP2040` (the name used throughout the datasheet) |
 | Family | RP2040 / RP2350 boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, packing list, resources) plus the Cytron pinout image. Flash/RAM, Maker Port pins, GP19 LED, package and status are now Cytron-stated |
 | Primary source | Datasheet "MAKER-NANO-RP2040 – Simplifying Projects with Raspberry Pi RP2040", **Rev 1.1, July 2024** (public Google Doc, last modified 2024-08-13) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -34,6 +35,12 @@ Datasheet Table 3 is titled "MAKER-NANO-RP2040 **Absolute Maximum Ratings**" (un
 | DC +3V3 max current (including onboard usage), power from USB | 500 mA | [DS] |
 | Digital IO each LED current draw | max 85 µA | [DS] |
 | USB VID & PID (CircuitPython & Arduino Core) | VID 0x2E8A, PID 0x100F | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features:** Arduino Nano form factor; RP2040 dual-core Arm Cortex-M0+; **264 KB RAM; 2 MB flash** ("the exact same specifications with Raspberry Pi Pico"); 14 GPIO status LEDs; piezo buzzer with mute switch; 1 push button; 2 RGB LEDs; 2 Maker Ports (Qwiic, STEMMA QT, Grove via conversion cable); Arduino IDE, CircuitPython and MicroPython [PP].
+- **Packing:** 1x Maker Nano RP2040, 2x Grove to JST-SH (Qwiic/STEMMA QT) cable [PP].
+- **Pinout image (Cytron):** Maker Port 0 = **GP0 + GP1** (UART0 TX/RX, I2C0) + 3V3 + GND; Maker Port 1 = **GP26 + GP27** (A0/A1, I2C1) + 3V3 + GND [PP: img].
+- Pinout image header order matches the map above: one row GP16, GP19, GP17, GP9…GP2, GND, RST, GP1, GP0; the other row GP18, 3V3, GP26–GP29, GP12–GP15, 5V, RST, GND, VIN. **GP19 has a status LED**; GP10 and GP21 are not on the headers; user button GP20, buzzer GP22, RGB LEDs GP11 [PP: img].
+- Resources: pinout diagram (published Google Drawing), datasheet, GitHub MAKER-NANO-RP2040 (getting started & examples), CircuitPython page, 3D CAD, Grove LoRa-E5 tutorial [PP].
 
 ## Interfaces, terminals and pin mapping
 Onboard functions [DS]:
@@ -50,8 +57,8 @@ Onboard functions [DS]:
 | Reset button | Hardware | Resets the RP2040 | [DS] |
 | Micro USB port | — | Program upload and power | [DS] |
 | 5V and 3.3V power LEDs | Hardware | 5V LED "Turn on when powered up" | [DS] |
-| Maker Port 0 (JST-SH 4-way) | Pins not stated in text | "GPIO, I2C, UART". Qwiic, STEMMA QT, Grove (via conversion cable) | [DS] |
-| Maker Port 1 (JST-SH 4-way) | Pins not stated in text | "GPIO, I2C, Analog In" | [DS] |
+| Maker Port 0 (JST-SH 4-way) | GP0 + GP1, 3V3, GND (Cytron pinout image) | "GPIO, I2C, UART". Qwiic, STEMMA QT, Grove (via conversion cable) | [DS][PP: img] |
+| Maker Port 1 (JST-SH 4-way) | GP26 + GP27, 3V3, GND (Cytron pinout image) | "GPIO, I2C, Analog In" | [DS][PP: img] |
 | Pin header | — | "Compatible with original Arduino Nano" | [DS] |
 
 **Header map** (GP numbers are printed on the silkscreen, read from Cytron's product photo [GH]; Arduino Nano positions given for comparison):
@@ -108,17 +115,12 @@ RP2040 pin functions on the Nano positions [VEN]:
 | Digital IO LED pins / count | [DS] Table 1: "GP0 - GP9, GP16 - GP18" (13 pins) | [DS] jumper section: "85 µA x 14 LEDs". [GH] README: "14 status indicator LEDs". [GH] photo shows an LED by GP19 | Count = 14. The pin list in Table 1 probably omits GP19; see *Needs verification* |
 | Mute switch wording | [DS]: mute "if pin D8 is used for other purposes" | [DS]: buzzer on GP22. [GH] silkscreen: the D8 position is GP8 | Buzzer pin = GP22. The "D8" wording is unexplained |
 | D0/D1 positions | [GH] silkscreen: GP0 at the Nano TX/D1 position, GP1 at RX/D0 | [3P] Zephyr: D0 = GP0, D1 = GP1 | Use GP numbers. Position-to-D mapping to confirm |
-| Product status | [3P] Pimoroni: no longer stocked there | Product page not read | Unknown |
+| Product status | [3P] Pimoroni: no longer stocked there | [PP] my.cytron.io: sold, availability 175 (19 Oct 2026) | On sale from Cytron |
 
 ## Needs verification
-- **Maker Port pin assignments:** not in the datasheet text. Firmware defaults suggest Port 0 = GP0/GP1 and Port 1 = GP26/GP27 [VEN, 3P], but this is unconfirmed.
-- **Flash size:** 2 MB per [3P] (Pimoroni, Core Electronics, CNX, circuitpython.org page) and firmware definitions (W25Q16JV, arduino-pico 2 MB menu) [VEN]. Not in a Cytron datasheet.
-- RAM 264 KB and dual-core Cortex-M0+ (RP2040 facts, [3P]-quoted).
 - The full GP-to-header map (the datasheet pinout figure was not readable). The map above was read from a product photo, and the left-row order needs confirming against the datasheet figure.
-- Whether GP19 has a status LED (see *Conflicts*), and whether GP10 and GP21 reach the header.
-- Package contents: [3P] Pimoroni lists 1x Maker Nano RP2040 and 2x Grove to JST-SH (Qwiic/STEMMA QT) cables.
 - Price (only [3P] CNX "$7.12" at launch), dimensions (figure not readable), regulator type and protections.
-- Current product page content and lifecycle status.
+- Dimensions in mm (dimension image exists on the page but was not readable here); regulator type and protections.
 
 ## Sources
 - [DS-R10] MAKER-NANO-RP2040 Datasheet, Rev 1.0, December 2021 (DigiKey mirror): https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6147/MAKER-NANO-RP2040.pdf

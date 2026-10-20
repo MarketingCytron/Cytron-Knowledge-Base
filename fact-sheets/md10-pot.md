@@ -24,11 +24,13 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - Test buttons to test the functionality of the motor / driver
 - Power LED; Motor Status LEDs (turn on when the motor is running)
 - 3D printable case STL file linked on the product page
-- Dimensions: [NOT STATED]
+- Dimensions: 81.28 mm × 48.26 mm (product page)
 - Operating temperature: [NOT STATED]
-- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
-- Packing list: [NOT STATED]
-- Warranty: [NOT STATED]
+- Protections: no reverse polarity protection (product page); over-current, thermal, under-voltage: [NOT STATED]
+- Packing list: MD10-POT, 10 kΩ potentiometer with connector, 3-way rocker switch with connector, Quick Start Guide card (product page)
+- Warranty: 12 months (product page)
+- Regenerative braking (product page)
+- No reverse polarity protection (product page)
 
 ## Interfaces and compatibility
 - Power Input Terminal: connect to battery
@@ -38,7 +40,7 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - PWM/DIR Input: PWM signal for speed, DIR pin for direction
 - Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, pwmPin, dirPin)`
 - Connector pin order: [NOT STATED]
-- Locked-antiphase PWM: [NOT STATED]
+- Sign-magnitude and locked-antiphase PWM: supported (product page)
 - RC, analog voltage or serial input: [NOT STATED]
 - Wire size: [NOT STATED]
 
@@ -54,14 +56,14 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - PWM Low brakes the motor regardless of DIR
 - Single channel, brushed DC motor
 - Forward/reverse depends on motor wiring
-- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
+- Protections: no reverse polarity protection (product page); over-current, thermal, under-voltage: [NOT STATED]
 - Switching power supply / regenerative current guidance: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM55.65 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10-amp-7v-30v-potentiometer-and-switch-control-dc-motor-driver

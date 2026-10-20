@@ -67,7 +67,7 @@ An 8-sensor line-following sensor bar with sensors spaced 16 mm apart, an on-boa
 - Low current consumption and polarity protection (user manual)
 
 ## Price band
-RM204.75 (Cytron product page, read 2026-10-16)
+RM204.75 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-advanced-auto-calibrating-line-sensor

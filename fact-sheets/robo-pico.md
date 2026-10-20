@@ -39,6 +39,11 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - GPIO breakout: female pin headers for the Pico / Pico W GPIO pins
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Works with Raspberry Pi Pico 2, Pico and Pico W (product page)
+- Packing (board only): Robo Pico, 4 Grove-to-female cables, screwdriver, 4 rubber feet; bundles add a Pico 2 SH / Pico H / Pico 2 WH and USB cable (product page)
+- Power: USB 5 V, 1-cell LiPo or Vin 3.6–6 V, auto-selected; LiPo charger with over-charge/over-discharge protection (product page)
+- RGB LEDs: 2 × WS2812 (Neopixel) (product page pinout image)
+- Size: 88 × 72 mm; 4 × Ø4.8 mm + 4 × Ø3 mm holes (product page dimension image)
 
 ## Interfaces and compatibility
 - Hosts: Raspberry Pi Pico and Raspberry Pi Pico W
@@ -82,7 +87,7 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - Part of Cytron's Robo series
 
 ## Price band
-[NOT STATED]
+RM59.60–RM109.97 across 4 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-pico-simplifying-robotics-with-raspberry-pi-pico

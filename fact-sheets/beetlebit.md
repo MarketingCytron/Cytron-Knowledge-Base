@@ -32,6 +32,9 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Age range: [NOT STATED]
+- Four kit options: with or without micro:bit V2, each with or without 4 AA batteries (product page)
+- Accessories Kit: ultrasonic bracket, castor, 2 TT motor brackets, 2 Robo Base PCBs, 3 Grove-to-female cables, M3 stands/nuts/screws/bolts, Velcro set, Robo Grip PCB, ping pong ball (product page)
+- RC mode needs a second micro:bit (not included) (product page)
 
 ## Interfaces and compatibility
 - Left drive motor: REKA:BIT M1; right drive motor: REKA:BIT M2
@@ -79,7 +82,7 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Resource Hub: a learning site for beginners in basic robotics covering building, coding and experimenting with a mobile manipulation robot
 
 ## Price band
-RM99.80–RM326.45 across the options (Cytron product page, read 2026-10-19)
+RM99.80–RM326.45 across options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-beetlebit-gripper-robot-car-kit-for-microbit

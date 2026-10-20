@@ -5,7 +5,8 @@
 | Product code | V-AD-5V3P5A [PP]; datasheet model name AD-5V3P5-3P [DS] |
 | Family | Power and accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Size, warranty and protections are now Cytron-stated; the Cytron Pi 5 tutorial was read (works, with a reduced-current warning) |
 | Primary source | "17.5W 5V 3.5A Universal USB-C PSU Datasheet" (17.5W 5V 3.5A USB-C Universal Power Adapter, AD-5V3P5-3P, Datasheet), Rev 2.0, October 2024, Cytron Technologies Sdn Bhd [DS] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -61,7 +62,12 @@ All rows are from the datasheet spec tables unless marked [PP].
 | Adapter dimensions / weight | Drawing "With UK Plug" and cable drawing only (values did not extract as text) | [DS] |
 | Duty | "suitable for 24-hour operation" | [PP] |
 | Price | RM32.00 | [PP] |
-| Warranty | Not stated on product page extract | [PP] |
+| Warranty | 12 months | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** 17.5 W; 5.1 V, 3.5 A; 1.5 m 20 AWG captive cable (spec: 1500 ± 50 mm UL2464 20 AWG); **short-circuit and over-current protection**; 100–240 V AC, 50/60 Hz, 0.6 A max; no-load 0.1 W max; ~82 % efficiency; ripple 200 mVp-p at 3.5 A; one interchangeable plug — UK (Type G) or EU (Type C) as selected; **47.8 × 89.8 × 65.95 mm with plug**; UKCA, UL, CE, RoHS [PP].
+- **Compatibility list (page):** Raspberry Pi 5 (2/4/8 GB), Pi 4 B (1/2/4/8 GB), Pi 400, CM4 carrier boards, several Pi 4 cases [PP].
+- **Packing list:** adapter main module + 1 interchangeable plug (UK or EU, as selected) [PP].
+- **Cytron tutorial "Can 3A/3.5A PSU power Raspberry Pi 5?" (12 Oct 2023):** yes, a 3 A / 3.5 A PSU boots a Pi 5; the Pi shows "This power supply is not capable of supplying 5A. Power to peripherals will be restricted", and USB 3 ports are limited to 600 mA (1.6 A with the official 5 A PSU) [PP: tutorial].
 
 ## Interfaces, terminals and pin mapping
 - Output: one captive cable ending in a USB Type-C plug; single fixed 5 V output [DS].
@@ -110,14 +116,11 @@ All rows are from the datasheet spec tables unless marked [PP].
 | UKCA standard name | [DS] "BS EN 62368-1:2014+A11:2017" | [DS] "EN 62378-1:2014+A11:2017" (same list) | Likely typo for EN 62368-1 within the datasheet; reproduce as printed, flagged |
 
 ## Needs verification
-- Adapter body dimensions and weight — datasheet section 3 has drawings only; numbers did not extract.
 - Whether the EU plug option on the product page is still shipped after 23 Oct 2024 [DS] vs [PP].
-- Warranty period — not present in the product page extract; not stated in the datasheet.
-- Contents and conclusions of the Cytron tutorial "Can 3A/3.5A PSU power Raspberry Pi 5" (https://my.cytron.io/tutorial/can-3a-3.5a-psu-power-raspberry-pi-5) — fetch blocked (my.cytron.io and www.cytron.io both refused); do not cite its results until read.
-- Raspberry Pi 5 behaviour on this 3.5 A supply (USB current limit, under-voltage warnings) — no Cytron measurement read.
 - Over-voltage / over-temperature protection — not stated.
 - Correct standard number behind the datasheet's "EN 62378-1:2014+A11:2017".
 - The "3P" suffix meaning in AD-5V3P5-3P — not stated.
+- Adapter weight — not stated.
 
 ## Sources
 - [DS] "17.5W 5V 3.5A Universal USB-C PSU Datasheet" — AD-5V3P5-3P, Rev 2.0, October 2024 — https://docs.google.com/document/d/1xhmvk4w7S_FsKjmb7wwx1S1RvuXo-jRydAW7l1R8mxY/edit (Google Doc; dimension drawings did not extract)

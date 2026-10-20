@@ -5,7 +5,8 @@
 | Product code | `SHIELD-3AMOTOR` (manual: "Cytron 3A Motor Driver Shield (Code: SHIELD-3AMOTOR)" [UM]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page independently confirms the manual: DRV8871, 7–30 V, 1.2 A continuous / 3 A peak, current-limit protection, DIP-selectable sign-magnitude / locked-antiphase, no motor-supply polarity protection, LSS05 connector |
 | Primary source | "Cytron 3A Motor Driver Shield SHIELD-3AMOTOR User's Manual" — **Rev 1.0, April 2017** — public Google Doc: https://docs.google.com/document/d/1gzOZmvPOlycLE2lz935gsNGHn9SZdbbSCnHCQyKssi8/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -46,6 +47,11 @@ Manual section 3 "Product Specifications", table **"Absolute Maximum Rating of S
 | Operating temperature | Not stated | — |
 | Warranty | 12 months; manufacturing defect only; misuse and two-way freight not covered; **cutting any trace voids warranty** | [UM] |
 | Packing list | 1 x Cytron 3A Motor Driver (Code: SHIELD-3AMOTOR) | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** dual channel, 3 A peak and 1.2 A continuous per channel; works with Arduino/Genuino UNO, Mega, Leonardo, Zero, 101; **DRV8871** IC; sign-magnitude and locked anti-phase; auto current-limit protection [PP].
+- **Features list:** bi-directional control of two brushed DC motors; 7–30 VDC; 3 A peak, 1.2 A continuous per channel; current-limit protection; 3.3 V and 5 V logic inputs; stackable headers; DIP switch for sign-magnitude / locked anti-phase; quick-test switch for both channels; LSS05 line-sensor connector; "NO POLARITY PROTECTION FOR V MOTOR" [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User's Manual (Google Doc), CytronMotorDriver library, "Getting Started with 3A Motor Driver Shield with Arduino Uno" tutorial [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM]: A LSS05 connector; B Motor 2 terminal block; C Motor 1 terminal block; D power supply terminal block ("Connect to battery power source … NO POLARITY PROTECTION"); E Motor 2 LED indicator; F Motor 1 LED indicator; G power LED; H reset button; I Arduino stackable header pin; J mode selection DIP switch; K Motor 2 test button; L Motor 1 test button; M motor connection pads; N DIP switch setting example (silkscreen); O LSS05 connection pads; P PWRIN–VIN connection pad.

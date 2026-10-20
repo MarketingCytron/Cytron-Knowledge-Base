@@ -40,6 +40,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - User's Manual: Rev 1.1, July 2019
+- Two DC brushless fans on the top cover (product page)
+- Dimension ~190 × 121 × 45 mm (product page)
+- Peak 100 A for 1 s; no polarity protection (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC transmitter/receiver, joystick or foot pedal with potentiometer, Cytron Breakout board with Joystick soldered, microcontroller (PWM, UART)
@@ -75,10 +78,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
 
 ## Price band
-[NOT STATED]
+RM831.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-mdds60
 
 ## Datasheet
 https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view

@@ -28,7 +28,9 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - IR logic in code: LOW = white surface, HIGH = black line
 - Ultrasonic distance in code: pulseIn(ECHO, HIGH) x 0.017 cm; lessons stop at 15 cm and avoid at 20 cm
 - Warranty: [NOT STATED]
-- Dimensions and weight: [NOT STATED]
+- Box dimension: 127 mm × 55 mm × 190 mm, not including motor shafts and wheels (product page); weight: [NOT STATED]
+- Rocker switch = power switch; push button = start button (product page)
+- Booklet options: Arduino IDE (English) or mBlock (Bahasa Melayu) (product page)
 
 ## Interfaces and compatibility
 - Maker UNO: USB Micro-B for programming; no DC jack or Vin pin

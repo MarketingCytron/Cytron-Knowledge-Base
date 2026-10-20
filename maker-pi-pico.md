@@ -5,7 +5,8 @@
 | Product code | `MAKER-PI-PICO` |
 | Family | RP2040 / RP2350 boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Pico 2 compatibility is now Cytron-stated (base + Pico 2 SH / Pico 2 WH bundles); five variants with packing lists; Rev1.2.0 schematic linked |
 | Primary source | Maker Pi Pico Datasheet, "MAKER PI PICO – Simplifying Raspberry Pi Pico for Beginner" (covers MAKER-PI-PICO and MAKER-PI-PICO-NB), Rev 1.2, March 2021 (public Google Doc linked from Cytron GitHub) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -31,6 +32,11 @@ Datasheet Table 2 is titled "MAKER-PI-PICO **Absolute Maximum Ratings**" — eve
 | Operating temperature | -20 to 85 ℃ | [DS] |
 
 Dimensions: datasheet Figures 4–5 could not be read as text. No dimension figure in [PP] text.
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Page note:** "Maker Pi Pico Base is compatible with the latest Raspberry Pi Pico 2, of course, please choose the version with pre-soldered headers" [PP].
+- **Variants:** Maker Pi Pico (Pico pre-soldered, CircuitPython loaded, + pinout card); Base + Raspberry Pi Pico 2 SH (headers by Cytron) + USB micro-B cable; Base + Pico 2 WH + cable; Base + Pico SH + cable; Base only + pinout card [PP].
+- **Features list:** no soldering; all Pico / Pico W pins on two 20-way headers; **LED indicators on all GPIO pins**; 3 buttons GP20–22; RGB LED GP28; piezo GP18; 3.5 mm stereo jack GP18–19; microSD GP10–15; ESP-01 socket GP16–17; 6 Grove ports; reset button; pinout printed on the bottom layer [PP].
+- **Resources:** datasheet, **Rev1.2.0 schematic** (Google Drive), demo and example code (GitHub), 3D CAD, Pico / Pico 2 / Pico W documents [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -116,7 +122,7 @@ Each Grove port: GPIO, GPIO, 3V3, GND [GH silkscreen].
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Firmware preloaded | [PP] description and packing list: CircuitPython loaded | [PP] Q&A (2021): "It comes not preloaded" | Newer [PP] packing list says CircuitPython loaded; confirm with [DT] for current stock |
+| Firmware preloaded | [PP] description and packing list (read 2026-10-20): "Raspberry Pi Pico soldered onboard, with CircuitPython loaded" | [PP] Q&A (2021): "It comes not preloaded" | Current packing list wins: CircuitPython loaded on the pre-soldered version |
 | What the audio jack drives | [PP]: "dual channel speakers" | [DS]: "Non amplified audio output … earphone or amplified speaker" | [DS] wins: earphones or amplified speakers |
 | Tagline wording | [DS]: "for Beginner" | [PP]: "for Beginners" | Use [PP] wording for marketing titles; both refer to the same product |
 | Button pull-ups | [DS] Rev1.0.0–1.1.0: software pull-up | [DS] Rev1.2.0: hardware pull-up + debounce capacitor | Both true by PCB revision; enable the internal pull-up in code for all boards |
@@ -125,12 +131,12 @@ Each Grove port: GPIO, GPIO, 3V3, GND [GH silkscreen].
 ## Needs verification
 - **Grove pin mapping** and **ESP-01 TX/RX** come from the [GH] pinout image ("PCB Rev1.2.0 & above") and [PP], not the datasheet. Confirm for PCB Rev1.0.0–1.1.0.
 - Exact number of GPIO LEDs and which pins have them (Cytron demo drives GP0–17, GP19–22, GP26–28 plus GP25 [GH]).
-- Pico W / Pico 2 / Pico 2 W compatibility (relevant to MAKER-PI-PICO-NB socket; GP23–GP25 and GP29 differ on Pico W) — needs [DT].
 - Board dimensions and mounting holes — datasheet figures not readable as text.
 - 3V3 current available to Grove, ESP-01 and microSD.
 - Whether the ESP-01 socket is 3.3 V-only (implied by ESP-01, not stated).
 - Whether GP19 (right audio) has any other onboard load.
-- Schematic links (Rev1.0.0–1.1.0 and Rev1.2.0) — referenced on [PP] but no URL in the page text.
+- Pico 2 W pin differences on the Base (GP23–GP25, GP29) — the page sells a Base + Pico 2 WH bundle but does not discuss them.
+- Rev1.0.0–1.1.0 schematic — only the Rev1.2.0 schematic is linked.
 
 ## Sources
 - [DS] Maker Pi Pico Datasheet, Rev 1.2, March 2021 (public Google Doc, linked from the Cytron GitHub README): https://docs.google.com/document/d/1JoHsZk5IipQPCLXWbZYpDKjGlnkyACOJ1taUrKVsRg8/edit

@@ -4,7 +4,8 @@
 |---|---|
 | Family | Raspberry Pi accessories (industrial) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Sale status, price, packing list and the public datasheet link are now Cytron-stated; pinout and dimensions are images only |
 | Primary source | *Industrial IO HAT+ — IR4.0 Industrial I/O HAT+, Datasheet*, **Rev 1.0, Sep 2025** (Google Doc last modified 2025-10-29), Cytron Technologies Sdn Bhd |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -44,6 +45,11 @@ Datasheet section 1 (Features) and section 2 (Specifications), every row:
 | Dimensions | Not readable (datasheet section 6 is an image) — see *Needs verification* | — |
 
 Note: the datasheet spec table is slightly mangled in the text export (merged cells), but each value above maps to one row of the original table without ambiguity.
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page notes:** designed to be used with the Argon40 Industria Case; supports a TPM module (LetsTrust TPM for Raspberry Pi is linked) [PP].
+- **Packing list:** 1x Industrial IO HAT+, 1x 20-pin pluggable terminal block, 3x M2.5 × 21 mm PCB stand, 1x pinout sticker [PP].
+- **Resources:** datasheet (public Google Doc), 3D CAD [PP]. Feature, pinout and dimension images are on the page (`hat-ind-ag-pinout.png`, `hat-ind-ag-dimension.png`) — not read.
+- Page image paths use the code **HAT-IND-AG** [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (datasheet section 3) [DS]:
@@ -140,8 +146,7 @@ IO terminal: power input, RS485 (A, B, GND), RS232, 6 DI with a **common pin DIC
 - HAT+ EEPROM contents (vendor/product strings, `current_supply` value, any auto-loaded overlay) — not in sources.
 - Whether the Pi 5 may also be powered from its own USB-C while the HAT supplies 5V — not stated.
 - DI max input frequency, DI input current, total DOC common current — not stated.
-- Reseller price £31.70 incl. VAT, The Pi Hut SKU 106896 [3P only].
-- Cytron product page and the my.cytron.io assembly tutorial "Assembling Your Raspberry Pi 5 Industrial Kit" were found by search but could not be read (blocked).
+- Read the product page pinout and dimension images (`hat-ind-ag-pinout.png`, `hat-ind-ag-dimension.png`).
 
 ## Sources
 - [DS] Industrial IO HAT+ Datasheet, Rev 1.0, Sep 2025 (Google Doc, modified 2025-10-29): https://docs.google.com/document/d/1G8XOqDg5tSYu-hFeNG1x2qfTjAIdBlXN-yGC49WR2nQ/edit

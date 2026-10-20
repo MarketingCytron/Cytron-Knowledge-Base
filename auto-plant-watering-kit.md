@@ -5,7 +5,8 @@
 | Product code | `V-KIT-RBT-APW` (product page, variant parent) [PP]. The Cytron CDN path for the kit's files is `KIT-RBT-APW` [PP: CDN path]; `KIT-RBT-APW-NB` appears only in a CDN video file name — see Needs verification |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB; the IoT guide is still a separate Cytron tutorial (now also linked as a YouTube video) |
 | Primary source | No datasheet exists for the kit. Lesson guide: **"Auto Plant Watering Kit for micro:bit"** booklet, English, **April 2022**, "Copyright @ 2022 Cytron Technologies", written by Goh Hao Zhen & Cheryl Ng, illustrated by Suhana Oazmi; file `RBT_APW_KIT_Booklet_English_v1.pdf` (static.cytron.io; "v1" from the file name only) [UM] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -35,6 +36,10 @@ No spec table exists for the kit. Kit-level items only.
 | Booklet length | contents table ends at page 52; last printed page number 53 | [UM] |
 | Warranty | 12 months | [PP] |
 | Price | RM108.00–RM214.62 (Cytron product page, read 2026-10-19) | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: four options — standard with micro:bit V2, standard without micro:bit, IoT version with micro:bit V2, IoT version without micro:bit; IoT versions add a Grove WiFi 8266; "The step-by-step guide for IoT project is not included in the booklet" (Cytron tutorial page) [PP].
+- Standard packing (with micro:bit): lesson guide (English), Maker Soil Moisture Sensor, REKA:BIT with micro:bit V2, micro submersible pump DC 3–5 V with pipe, analog micro servo 9 g (3–6 V) with horns and screws, Grove 4-pin 50 cm cable, servo extension 30 cm, 4xAA holder with DC plug, 4x PKCELL Heavy Duty AA, transparent Phillips screwdriver, 2 popsicle sticks, 3 cable ties, 2 double-sided tapes [PP].
+- Lesson guides in English, Malay, Chinese and Thai (link.cytron.io); YouTube "RBT Automatic Plant Watering IoT Project Using Blynk IoT"; extra projects tag on the tutorial site; REKA:BIT extension and datasheet [PP]. Prices subject to SST from April 2026 [PP].
 
 ## Interfaces, terminals and pin mapping
 All from the booklet's hardware-setup text [UM]:

@@ -65,7 +65,7 @@ A Cytron version of the Arduino UNO built on an SMD ATmega328 with the Optiboot 
 - cytron.com.my product page recommends Maker UNO for beginners and students
 
 ## Price band
-RM61.74 (Cytron product page, read 2026-10-16)
+RM61.74 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-cytron-uno-arduino-uno-compatible

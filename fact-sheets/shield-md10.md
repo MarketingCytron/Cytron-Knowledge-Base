@@ -28,6 +28,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Warranty: 12 months, manufacturing defects only
 - Over-current, thermal, under-voltage, reverse-polarity protection: [NOT STATED]
 - Dimensions: [NOT STATED]
+- Product page: 7–25 V (Rev1.0), 7–30 V (Rev2.0); 10 A continuous, 15 A peak for 10 s; regenerative braking; PWM up to 10 kHz
 
 ## Interfaces and compatibility
 - PWM pin selectable: D3, D5, D6, D9, D10 or D11 (default D3)
@@ -57,7 +58,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
 
 ## Price band
-[NOT STATED]
+RM67.20 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino

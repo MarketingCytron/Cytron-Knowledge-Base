@@ -5,7 +5,8 @@
 | Product code | FAN-0305-3008 [PP] |
 | Family | Power and accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources) directly (earlier facts came from the coordinator's read). Page matches the KB; no current, airflow or cable data, so it stays Medium |
 | Primary source | No datasheet, manual or tutorial exists ("No documents" on the product page). Primary source = Cytron product page "Cooling Fan for RPi with Screws (30mm x 30mm)", read by the coordinator 2026-10-19 [PP] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*. Every fact below is [PP]; nothing else was readable.
@@ -28,6 +29,8 @@ A small black 30 mm x 30 mm x 8 mm DC cooling fan for Raspberry Pi boards, suppl
 | Airflow, noise, RPM, bearing type, wire gauge, connector pitch, PWM/tach wire, weight, operating temperature | Not stated | [PP] |
 | Warranty | 12 months | [PP] |
 | Price | RM8.00 (10+ RM7.36; 30+ RM6.40) | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read: dual-speed two-wire connector (3.3 V or 5 V DC from the 40-pin GPIO), "Recommended connecting to 5V"; for Raspberry Pi Model A and B boards with the 40-pin GPIO; longer power cable; fits the official Pi 4B case (Jeff Geerling video) and the RetroFlag SuperPi 4 case; 3–5 V; black; 30 × 30 × 8 mm; packing 1x fan, 4x screws and nuts [PP]. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 - Two wires only: positive and ground (no PWM control wire, no tachometer wire stated) [PP].
@@ -77,7 +80,6 @@ A small black 30 mm x 30 mm x 8 mm DC cooling fan for Raspberry Pi boards, suppl
 - Airflow (CFM), noise (dBA), speed (RPM), bearing type, weight, operating temperature, start-up voltage — not stated anywhere [PP].
 - Mounting hole spacing and screw size (M2.5 is typical for 30 mm fans but not stated) [PP].
 - Whether the fan can be used with the Raspberry Pi 5 (via GPIO header power) — not stated [PP].
-- Product page text was read by the coordinator; this agent could not fetch my.cytron.io.
 
 ## Sources
 - [PP] Product page https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws (read by coordinator 2026-10-19: RM8.00, 10+ RM7.36, 30+ RM6.40, in stock 567, warranty 12 months, "No documents")

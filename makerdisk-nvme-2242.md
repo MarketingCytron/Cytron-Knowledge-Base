@@ -5,7 +5,8 @@
 | Product code | V-MMR-NV2242 (product page, all capacities) [PP]; datasheet model number MMR-NV2242-XXX, "XXX" = capacity [DS] |
 | Family | Storage (MakerDisk) |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Warranty and packing list are now Cytron-stated; the page matches the KB on interface and performance |
 | Primary source | "MakerDisk M.2 2242 NVMe SSD Datasheet", Rev 1.0, April 2024 (Cytron Technologies Sdn Bhd, Google Doc) [DS] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -47,6 +48,9 @@ Every row of the datasheet table (Rev 1.0, April 2024). The datasheet numbers it
 | Price | RM369.00 – RM739.00 across the three capacities (Cytron product page, read 2026-10-19) | [PP] |
 | Stock | Availability 164 (2026-10-19) | [PP] |
 | Controller, TBW / endurance, weight, warranty, packing list | Not stated in the datasheet or in the product-page text read | — |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: 128 / 256 / 512 GB (128 GB is B+M key); preloaded Raspberry Pi OS (Bookworm 64-bit on units shipped from January 2024); boots on Pi 5 (latest bootloader + PCIe to M.2 HAT+), Pi 4 B (latest bootloader, USB-NVMe), Pi 400, CM4 NVMe carriers; "Please DO NOT format it"; PCIe Gen 3 x2; NVMe 1.3 (128/512 GB), 1.4 (256 GB); read up to 1700 MB/s, write up to 600 MB/s; shock 1500 G / 0.5 ms; 0–70 °C; SMART and TRIM [PP].
+- **Packing list:** 1x NVMe 2242 MakerDisk SSD of the selected capacity [PP]. **Warranty:** 12 months [PP].
 
 ## Interfaces, terminals and pin mapping
 - Connector: M.2 edge connector, M-Key on 256GB and 512GB; B+M-Key on 128GB [DS]. The two mechanical drawings in the datasheet are titled "MakerDisk M.2 2242 NVMe SSD - B+M Key - 128GB" and "MakerDisk M.2 2242 NVMe SSD - M Key - 256GB & 512GB" (top, bottom and side views) [DS]; the drawings are images and their dimension call-outs could not be read as text.
@@ -102,12 +106,13 @@ Every row of the datasheet table (Rev 1.0, April 2024). The datasheet numbers it
 
 ## Needs verification
 - Datasheet mechanical drawings (top/bottom/side views for both key variants): images only; dimension call-outs beyond 42.00 × 22.0 × 2.7 mm ±0.5 mm not readable — confirm with the design team if a drawing is needed.
-- Controller chip, DRAM/HMB, TBW endurance, weight, warranty period and packing list: not stated in either source.
 - Whether the Raspberry Pi 400 path is the same USB-NVMe adapter as the Pi 4 B: implied by the page's grouping, not stated.
 - OS image on units shipped before January 2024: not stated.
 - Raspberry Pi-measured throughput (any board): no Cytron figure for this product.
 - Cytron tutorials "Raspberry Pi Imager: updating bootloader", "Clone Raspberry Pi OS into SSD" and "CM4 Maker Board getting started": not readable in this session — their titles, authors, dates and steps are unverified.
 - Third-party reviews (cnx-software, April 2024) tested MakerDisk NVMe drives on Pi 5 with Geekworm/Waveshare HATs [3P]; not used for any spec.
+- Controller chip, DRAM/HMB, TBW endurance, weight — not stated (warranty 12 months and packing list are on the product page).
+- Per-capacity prices (the page shows one price, RM739.00, for the default option).
 
 ## Sources
 - [DS] "MakerDisk M.2 2242 NVMe SSD Datasheet", Rev 1.0, April 2024, Cytron Technologies Sdn Bhd — https://docs.google.com/document/d/14tFhPy47Aa8ugKsBqsc8-0nyJH_La1EbLZbW4Ooeg_w/edit

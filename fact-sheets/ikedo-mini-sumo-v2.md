@@ -17,7 +17,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Controller: Maker Mini Sumo Controller ("Arduino Nano/Uno compatible (ATmega328P)", USB-serial CH340C per the product page)
 - Battery: 1 x 7.4V 450mAh LiPo, connected with a JST LiPo battery wire extension (VB+ = red, VB- = black)
 - Opponent sensors: 5 x Maker Object Sensor; product page: "range 50cm adjustable"
-- Edge sensors: 2 x, mounted underneath; product page: "Maker Reflect S"; Getting Started guide: "Maker Reflectance Sensor" (linked to the MAKER-REFLECT page)
+- Edge sensors: 2 x Maker Reflect S, mounted underneath (product page: "From March 2026 onwards … will include Maker Reflect S as the edge sensor"); the older Getting Started guide links Maker Reflect
 - Motors: 2 x 600RPM 6V DC Micro Metal Gearmotor; product page: "6V DC motors (600rpm, 0.065kg.cm)"
 - Wheels: 2 x High Grade Silicon Wheels Set (32mm x 22mm); blue from 17 Jul 2025
 - Control: auto and manual control mode; RC transmitter/receiver sold separately
@@ -28,6 +28,9 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Assembly (Getting Started guide): edge sensor wires S = white, + = red, - = black (sensor side OUT = white, VCC = red, GND = black) to the "Front Left and Front Right" edge terminals; edge sensors fixed with 2 x M3x6 self-tapping screws; controller fixed with 2 x M3x6 self-tapping screws; motor bracket with 4 x M3x20 bolts, leaving a 1 mm gap; left motor MLA = red, MLB = black; right motor MRA = black, MRB = red; top cover with 2 x M2.5x20 bolts
 - Warranty: "There is NO warranty for Sumo Robot."
 - Age/syllabus: Getting Started guide says "suitable for primary and secondary school"
+- Designed for 500 g Mini Sumo competitions, 10 × 10 cm (product page)
+- No warranty on the sumo robot (product page)
+- Full packing list adds a 2561 3-way extension wire, 4 M3×6 self-tapping screws, 6 M2.5×20 bolts, 3 mm Phillips and 2 mm flat screwdrivers and a free USB cable (product page)
 
 ## Interfaces and compatibility
 - Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO)
@@ -49,7 +52,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - RC transmitter/receiver not included; LiPo charger not listed in the kit
 - Kit must be assembled; the guide says sliding the controller into the chassis "might be a little tricky"
 - Motor bracket bolts must leave a 1 mm gap or "the body may bend"
-- Edge sensor name differs between the product page (Maker Reflect S) and the Getting Started guide (Maker Reflectance Sensor)
+- Kits from March 2026 use Maker Reflect S edge sensors; the Getting Started guide still links Maker Reflect
 - Getting Started guide lists 5 Maker Object sensors but one assembly step says "4x"
 - Getting Started guide bolt sizes are inconsistent (6 x M2.5x20 in the list; 4 x M3x20 + 2 x M2.5x20 in the steps)
 - Controller limits apply: 3.0 A continuous / 6.0 A peak per motor channel, Vin 7.0-18.0 V (see MAKER-MSUMO)
@@ -63,7 +66,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Developed with the team manager of Ikedo Kogeki to "bring down the barrier for students who want to learn how to build a Sumo Robot"
 
 ## Price band
-- RM418.95 (Cytron product page, read 2026-10-19)
+RM418.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-ikedo-mini-sumo-robot-v2-starter

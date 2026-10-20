@@ -5,7 +5,8 @@
 | Product code | `MD25HV` (datasheet title [DS]; product page packing list "1 x MD25HV" [PP]; GitHub library list [GH]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Page matches the datasheet except the logic range (page 1.8–30 V vs datasheet minimum high 3 V) |
 | Primary source | "MD25HV High Voltage 7V-58V 25Amp DC Motor Driver Datasheet" — **Rev 1.0, Jan 2019** — public Google Doc: https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -50,6 +51,8 @@ Datasheet section 2, **"Table 2: MD25HV Absolute Maximum Ratings"** (columns No 
 | Heatsink / fan | Not stated | — |
 | Warranty | 12 months | [PP] |
 | Packing list | 1 x MD25HV; 1 x Potentiometer with connector; 1 x Rocker switch with connector; 4 x Nylon PCB Standoffs/Spacers | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: discrete NMOS H-bridge, 25 A without heatsink; 7–58 V; 25 A continuous, 60 A peak; 5 V output for the host (250 mA max); test buttons; LEDs; dual input mode — PWM/DIR or potentiometer/switch; "input logic voltage ranging from 1.8V to 30V" and "compatible with 1.8V, 3.3V, 5V, 12V and 24V logic"; PWM up to 40 kHz, output fixed at 16 kHz; overcurrent limiting, temperature protection, undervoltage shutdown; "Power input does not have reverse-voltage protection"; packing 1x MD25HV, potentiometer with connector, rocker switch with connector, 4 nylon standoffs; resources datasheet, 3D CAD, sample code [PP].
 
 ## Interfaces, terminals and pin mapping
 Datasheet "Table 1: MD25HV Board Functions" [DS]:
@@ -143,7 +146,6 @@ Error LED blink codes, "Table 4" [DS]:
 5. Whether overvoltage shuts the output down or only flags the error.
 6. Operating temperature range; heatsink/fan requirement.
 7. Hardware revisions after Rev 1.0 (Jan 2019) — none documented.
-8. Single-unit price: [PP] shows only volume tiers ($56.05 at 5+, $53.10 at 10+, $50.15 at 30+); currency shown only as "$".
 
 ## Sources
 - [DS] MD25HV Datasheet Rev 1.0, Jan 2019 (public Google Doc): https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit

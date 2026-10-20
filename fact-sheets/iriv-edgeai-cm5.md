@@ -43,6 +43,8 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Operating temperature: -20 to 60 ℃
 - Enclosure: metal, fanless, DIN rail mountable (bracket can move to the bottom)
 - Dimension: 139mm x 88mm x 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
+- Configurations: 16GB/64GB + 26 TOPS, 8GB/32GB + 26 TOPS, 8GB/32GB + 13 TOPS AI HAT+; options EdgeAI Only, Basic Kit (PSU, camera, dome light, stand), Complete Kit (+HDMI cable, keyboard/mouse) (product page)
+- Operating temperature −20 to 60 °C; power max 11 W (product page)
 
 ## Interfaces and compatibility
 - Terminal (pluggable): VIN, GND, RS485 A/B/G, S/S, DI0, DI1, DO0, DO1, L0 +/−, L1 +/−
@@ -94,7 +96,7 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Local edge processing to avoid depending on the cloud for AI inference and to reduce latency and bandwidth in IIoT deployments
 
 ## Price band
-[NOT STATED]
+RM2,487.00–RM5,152.50 across configurations and kits (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-edge-ai-cm5

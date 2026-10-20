@@ -26,7 +26,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Flash, SRAM, EEPROM: 32KB, 2KB, 1KB
 - Clock speed: 16MHz
 - ISP 6-pin (2x3) header, for AVR programmer; also usable for SPI
-- LED array for 5V, 3.3V, TX, RX and the digital pins; programmable indicator LEDs at pins 2 – 13 (user manual introduction says D0 to D13); standard LED on pin 13
+- LED array for 5V, 3.3V, TX, RX and the digital pins; 12 programmable indicator LEDs at pins 2 – 13 (product page: "12x LED"); standard LED on pin 13
 - Pin LEDs driven through a series of MOSFETs, so each LED can be controlled as an output or act as an input indicator, even for input pull-up
 - USB-serial LED shows upload and Serial Monitor data
 - Programmable push button: pin 2 to GND, configure as INPUT_PULLUP
@@ -35,8 +35,9 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - FCC, CE, RoHS: Yes
 - PCB colour: purple
 - Packing list: 1 × Maker Uno Plus (Code: MAKER-UNO-PLUS), 1 × Micro USB cable, 1 × Pin Header Sticker
-- Warranty: user manual 6 months, manufacturing defects only; product page 12 months
+- Warranty: 12 months (product page, current); the 2018 user manual said 6 months
 - Dimensions: [NOT STATED]
+- USB-serial confirmed FT231X by the product page ("upgraded to FT231X from CH340")
 
 ## Interfaces and compatibility
 - Arduino UNO R3-standard female headers; R3 shield compatible; SDA, SCL and IOREF broken out as on UNO R3
@@ -59,7 +60,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Pin 8 is shared with the buzzer: slide the switch off to use pin 8 for other purposes
 - Pin 2 is used by the onboard button
 - Use only 1 power source at a time
-- User manual (Oct 2018) and product page disagree on warranty: 6 months vs 12 months
+- Warranty: use the product page's 12 months (the 2018 manual's 6 months is out of date)
 
 ## Positioning (kept apart from specs)
 - "Simplifying Arduino for Education"
@@ -68,7 +69,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Redesign of CT-UNO with ARUS and rero, "more affordable, and more beginner friendly"
 
 ## Price band
-RM75.60 (Cytron product page, read 2026-10-16)
+RM75.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-uno-plus-simplifying-arduino-for-education

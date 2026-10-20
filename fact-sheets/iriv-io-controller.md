@@ -35,6 +35,8 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Relative humidity: 10 – 80 % (non-condensing)
 - Enclosure: metal, fanless design, DIN rail mountable
 - Dimension: (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors); DIN bracket adds 8mm, terminals add 15.5mm
+- Packing: controller + mini flat screwdriver (product page)
+- Example code: github.com/CytronTechnologies/Cytron-IRIV-IO-Controller; CircuitPython getting-started tutorial (product page)
 
 ## Interfaces and compatibility
 - Terminal 1 (pluggable): V-, V+ (10-30V), DGND, S/S0..4, DI0–DI4, RS485 A / B / G, AGND ×2, AN0, AN1
@@ -80,10 +82,10 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Cytron video framing: counts pulses reliably, with debouncing, and runs continuously without needing a PLC. Running totals sit in Modbus registers. You do not need a full PLC just to count pulses, and setup time and cost are lower
 
 ## Price band
-[NOT STATED]
+RM303.45 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-io-controller
+https://my.cytron.io/p-iriv-io-controller
 
 ## Datasheet
 [NOT STATED]

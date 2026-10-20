@@ -36,6 +36,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Operating temperature: [NOT STATED]
 - Over-current protection: [NOT STATED]
 - User's Manual: V1.0, June 2015
+- 10 A continuous per channel at 25 °C, 30 A peak for 10 s (product page)
+- Dimension 66.8 × 101.09 mm (product page)
+- Error LED codes: 2 input error, 3 under-voltage, 4 over-voltage, 5 over-temperature, 6 shutdown (product page)
+- Packing: board, 6-way connector housing, 6 terminal pins (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC receiver, potentiometer, joystick, foot pedal, PWM, microcontroller UART
@@ -70,10 +74,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Manual: designed mainly for differential drive robots controlled by an RC receiver
 
 ## Price band
-[NOT STATED]
+RM254.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-10amp-7v-35v-smartdrive-dc-motor-driver-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-165/pdf/mdds10_users_manual.pdf

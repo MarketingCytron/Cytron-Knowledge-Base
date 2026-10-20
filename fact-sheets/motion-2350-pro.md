@@ -38,6 +38,10 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Debug header: SWDIO, GND, SWCLK; BOOT and RST buttons
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 5.5 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Flash: 2 MB (product page)
+- Board size: 95.2 × 57.2 × 8 mm (product page)
+- Rev 2.0 adds overvoltage and overcurrent protection (product page)
+- Packing: board, STEMMA QT/Qwiic cable 150 mm, 2 Grove-to-JST-SH cables 200 mm, silicone bumpers, 4 friction pins, mini screwdriver (product page)
 
 ## Interfaces and compatibility
 - Maker Ports: compatible with Qwiic, STEMMA QT and Grove (via conversion cable)
@@ -46,7 +50,7 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - CircuitPython: preloaded with a demo program; firmware is board "cytron_motion_2350_pro" on circuitpython.org (board.M1A – board.M4B, NEOPIXEL, VOLTAGE_MONITOR; NeoPixel, Motor and SimpleIO libraries built in)
 - MicroPython: official board CYTRON_MOTION_2350_PRO (pin names M1A – M4B, BTN1, BTN2, NEOPIXEL)
 - C/C++: listed on the product page
-- Arduino: product page says "Arduino IDE (coming soon)"; the arduino-pico (Earle Philhower) core includes the board "Cytron Motion 2350 Pro"
+- Arduino: supported — the product page lists Arduino and links a Cytron "Getting Started with MOTION 2350 Pro using Arduino IDE" tutorial; the arduino-pico (Earle Philhower) core includes the board "Cytron Motion 2350 Pro"
 - Product page: compatible with the existing Raspberry Pi Pico ecosystem
 
 ## Use cases
@@ -56,7 +60,7 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 
 ## Known limitations
 - Rev 2.0 ratings (5 A continuous / 10 A peak) apply to Rev 2.0 only; Rev 1.0 is rated 3 A continuous / 5 A peak and has no motor overcurrent protection
-- Product page and Cytron's GitHub pinout image still state 3 A per channel (Rev 1 figures)
+- my.cytron.io now states the Rev 2.0 figures (5 A continuous / 10 A peak); Cytron's GitHub pinout image still shows 3 A per channel (Rev 1 figures)
 - Thermal shutdown may occur even if current is below the rated value; a heatsink or better airflow helps
 - Spec values are absolute maximum ratings
 - Connecting USB and VIN at the same time is not recommended (the datasheet says it is safe)
@@ -76,10 +80,10 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Product page: "Maker" features such as silkscreen GPIO references, colored headers, quick test buttons and motor output LEDs
 
 ## Price band
-[NOT STATED]
+RM131.15 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-motion-2350-pro
+https://my.cytron.io/p-motion-2350-pro
 
 ## Datasheet
 https://www.farnell.com/datasheets/4726021.pdf

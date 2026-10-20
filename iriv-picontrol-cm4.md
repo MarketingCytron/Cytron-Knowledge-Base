@@ -5,7 +5,8 @@
 | Product code | `IRIV-PICL` (document code in the user manual header) [UM]; the datasheet does not state a code. Per-variant SKUs (RAM / eMMC / wireless) not confirmed — see *Needs verification* |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read (CM4 column of the spec table, CM4 packing lists, resources). Sale status, variants sold, warranty and the public user-manual link are now Cytron-stated |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -53,6 +54,13 @@ An industrial controller built around the Raspberry Pi Compute Module 4 (CM4), i
 | Isolated RS232 | max baud rate 120 kbps; isolation 3000 Vrms; /dev/ttyACM1 | [DS][UM] |
 | Operating temperature | -20 – 60 ℃ | [DS][UM] |
 | Power-input fuse | 4 Amp replaceable fuse | [DS][UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **CM4 column (spec table):** Broadcom BCM2711 quad-core Cortex-A72 @ 1.5 GHz; GPU 700 MHz VideoCore VI, OpenGL ES 3.0; RAM 8/4/2/1 GB; eMMC 32/16/8 GB, expandable via M.2 NVMe SSD [PP].
+- **Shared spec rows:** 2.4/5 GHz Wi-Fi 802.11 b/g/n/ac, Bluetooth 5.0, BLE; 1x HDMI 2.0; 2x USB 2.0; USB-C for boot and debug; RJ45 Gigabit + RJ45 10/100; 4 isolated DI (≤50 V); 4 isolated DO (≤50 V); 4 isolated AI (0–5 V / 0–10 V / 0–20 mA, common GND); isolated RS232 and RS485; M.2 Key-M NVMe (optional); mini PCIe (USB 2.0 and SPI only, no PCIe); DC 10–30 V surge-protected; PCF85063A RTC; ATECC608B; SSD1306 0.96" OLED; reset + programmable button; 2 programmable LEDs; active buzzer; metal fanless DIN-rail enclosure; 141.2 × 83.5 × 39.5 mm (enclosure only) [PP]. "Optional" items are add-ons by enquiry [PP].
+- **Variants sold (CM4):** Wireless 8GB/32GB, 4GB/32GB, 2GB/16GB [PP]. No non-wireless or Lite variant is offered.
+- **Packing (each CM4 variant):** 1x IRIV PiControl with the CM4 module (no NVMe SSD, no mini PCIe card), 1x dual-band antenna for CM4, 1x transparent flat-head screwdriver 85 × 3 mm, 1x transparent Phillips screwdriver 85 × 3 mm, 4x silicone bumpers 8 × 3 mm [PP].
+- **Resources:** IRIV PiControl CM4 User Manual (public Google Doc), CM5 User Manual, 3D CAD, Node-RED hands-on tutorial, Quick Start Guide with built-in dashboard, Bookworm and Bullseye OS images, brochure [PP]. The page links the user manual, not a datasheet.
+- The page lists no SIM socket, 4G antenna hole or 4G LEDs; the mini PCIe row says only USB 2.0 and SPI are connected [PP].
 
 ## Interfaces, terminals and pin mapping
 **Terminal 1 (pluggable, 2 rows x 8)** — front-panel labels from UM Fig. 3.1 [UM] (the datasheet confirms "Pluggable terminal 1" [DS]; its figures are images and were not readable in the text export)
@@ -171,10 +179,7 @@ The panel prints **AN0–AN3**; the manual text and block diagram call them **AI
 | AI input impedance column | [DS][UM]: "input impedance is 25kΩ for voltage mode and 250Ω for current mode" (single values) | [WIKI] terminal-2 puts them under "Maximum" | [DS]: single nominal values |
 
 ## Needs verification
-- Product page not read (my.cytron.io and www.cytron.io returned fetch errors). Candidate URLs: https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller [WIKI], https://www.cytron.io/p-iriv-picontrol-cm4-industrial-controller [3P].
 - Per-variant SKUs. A reseller URL suggests `IRIV-PICL-W216` (wireless, 2GB, 16GB) [3P]. Which RAM/eMMC/wireless combinations are sold: [3P] lists wireless 2GB/16GB and 4GB/32GB. Whether a "no CM4" unit is sold.
-- Price: [3P] CNX (Dec 2023) USD 279–299; RobotShop USD 293.18. Not from Cytron.
-- Warranty 12 months — [WIKI] and [3P] only.
 - Optional MeanWell 24W DIN-rail PSU accessory — [3P] only.
 - Which DIP position maps to which AI channel; whether modes can be set per channel (UM figure implies yes; DS text does not say).
 - User button polarity (wiki: active LOW) and mini PCIe power polarity (wiki: HIGH = on) — [WIKI] only.
@@ -186,6 +191,7 @@ The panel prints **AN0–AN3**; the manual text and block diagram call them **AI
 - DI/DO GPIO numbers, GLOBAL_EN reset, dual-UART chip, terminal pinouts and §7 dimensions are from [UM] only — the DS figures/block diagram could not be read from the Google Doc text export; check them against the DS drawings.
 - CM4 Lite (no eMMC) support — not stated.
 - Whether Adafruit's legacy `Adafruit_ADS1x15` package is still the recommended library (DS and UM recommend it).
+- Per-variant SKU codes — the page shows variant names only (Wireless 8GB/32GB, 4GB/32GB, 2GB/16GB).
 
 ## Sources
 - [PP] not read — https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller

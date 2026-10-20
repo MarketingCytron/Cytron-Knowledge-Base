@@ -5,7 +5,8 @@
 | Product code | `V-RE-TRACKS` [PP] |
 | Family | Robot parts and project bundles |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB (EVA foam, 315 × 315 × 10 mm tiles, 18 mm line, 8 options); no new facts |
 | Primary source | No datasheet, user manual or guide exists ("No documents" on the page). Primary source = **Cytron product page "Cytron Reconfigurable Line Following Track"** (https://my.cytron.io/p-cytron-reconfigurable-line-following-track), read by the coordinator on 2026-10-19 [PP]. The Cytron tutorial "Learn Robotics with Bocobot Car Kit and Robo Pico" (Abdul Salam A Haris, 27 Jun 2023, 6-part series) mentions the track but could not be fetched here |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -46,6 +47,8 @@ Tag notes: [PP] = product page facts saved by the coordinator (jkl-pp.md, 2026-1
 | Add On 6 — 4 T-Junction | 4 | 4 T-Junction |
 
 The page's pattern list names the options as "16 Combo, 8 Combo, 4 Cross, 4 Curve, 4 Station, 4 Straight, 4 Blank, 4 T-Junction" [PP]. The price of each individual option is not stated in the saved page text (range only).
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: 6 tile types on white non-reflective EVA foam (no lamination); hardness "40 degree (+/- 5)"; 315 × 315 mm, 10 mm thick; black line 18 mm; options Combo 8 (1 cross, 4 curve, 3 straight), Combo 16 (2, 8, 6), Add On 1–6 (4 tiles each of cross, curve, T-junction, straight, blank, station); info sheet with track designs in each set [PP]. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 - Not applicable — a passive floor track with no electronics [PP].

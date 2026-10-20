@@ -32,6 +32,10 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Motors and servos are controlled by the REKA:BIT co-processor over I2C (address 0x08)
 - Power switch: slide OFF then ON to reset
 - Warranty: 12 months
+- Options: with micro:bit V2, without micro:bit, Classroom Pack (10 kits), AI version with HuskyLens (with or without micro:bit V2) (product page)
+- Packing (V2 kit): micro:bit V2, REKA:BIT, USB power/data cable, 9+1 lesson guide book, Zoom track, Maker Line, ultrasonic sensor, 2 × 10 mm LED modules, 2 × DC motors with wheels, micro servo, 4 Grove-to-female cables, 4xAA holder with DC plug, 4 AA batteries, castor, screwdriver, rivets, double-sided tape (product page)
+- Ultrasonic sensor linked on the packing list: Cytron 3V-5.5V SR04P (HC-SR04P) module (product page)
+- AI version adds a HuskyLens and a Grove-to-Gravity cable; rechargeable AA cells advised (product page)
 
 ## Interfaces and compatibility
 - micro:bit V1 and V2; V1 has no built-in speaker, so sound needs a Grove buzzer on Port P0:P1
@@ -79,10 +83,10 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Classroom Pack: "Save more with this Classroom Pack!"
 
 ## Price band
-Cytron product page (www.cytron.io, read 2026-10-16): $62.50 offer price (12% off); currency and variant not stated on the page
+From RM262.50 (default option; Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-zoombit-robot-car-kit-for-microbit
+https://my.cytron.io/p-zoombit-robot-car-kit-for-microbit
 
 ## Datasheet
 https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf

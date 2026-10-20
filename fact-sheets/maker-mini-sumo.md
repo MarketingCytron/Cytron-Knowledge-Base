@@ -89,7 +89,7 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - Designed with Team Ikedo Kogeki, "the winner of multiple Sumo robot competitions locally and internationally"
 
 ## Price band
-- RM114.45 on the product page (RM108.73 each for 10 or more), 16 Oct 2026
+RM114.45 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-mini-sumo-controller-simplifying-sumo-robot-for-beginner

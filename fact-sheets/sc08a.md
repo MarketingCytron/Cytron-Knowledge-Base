@@ -29,6 +29,8 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Connectors: two 4-way UART/expansion headers (U_1, U_2) (User's Manual V1.0)
 - Packing list: 1 × SC08A main board, 1 × 2510H-04 connector with terminal pins, 1 × 2561-04 connector with terminal pins, 1 × mini jumper for JP11 (User's Manual V1.0)
 - Warranty: 6 months (User's Manual V1.0); 12 months (product page, read 2026-10-16)
+- Size: 49 mm × 46 mm (product page)
+- Ramping: one of 100 ramp rates per servo; resolution 0.25 µs (8000 steps); UART 9600 baud (product page)
 
 ## Interfaces and compatibility
 - PC: UC00A USB-to-UART converter plugged into the 4-way UART connector; driver creates a virtual COM port; SC08A takes its 5 V from the UC00A (User's Manual V1.0)
@@ -65,7 +67,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - User's Manual: 8-channel servo controller, extendable to 16 channels, with position reporting, per-channel activation, start-up position and ramping, for RC servo robotics (humanoid, biologically inspired robots, robotic arms)
 
 ## Price band
-RM65.10 (Cytron product page, read 2026-10-16)
+RM65.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-8-channel-servo-controller

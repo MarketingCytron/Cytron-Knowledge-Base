@@ -5,7 +5,8 @@
 | Product code | V-AD-27W-PD [PP]; datasheet model name AD-27W-PD-X [DS] |
 | Family | Power and accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. One plug per option is confirmed by the packing list; the page itself lists both 1.5 m and 1200 mm for the cable |
 | Primary source | "AD-27W-PD-X Universal PSU Datasheet" (27W 5V 5A USB-C Universal Power Adapter, Datasheet), Rev 1.0, February 2024, Cytron Technologies Sdn Bhd [DS] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -63,6 +64,10 @@ All rows are from the datasheet spec tables unless marked [PP]. Rows the datashe
 | Price | RM50.00 | [PP] |
 | Warranty | 12 months | [PP] |
 | Appearance note | "Appearance details are subject to the actual samples." | [DS] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** 27 W PD; 5.1 V 5 A, 9 V 3 A, 12 V 2.25 A, 15 V 1.8 A; "1.5-meter 18 AWG captive cable" and, in the spec block, "Output cable: 1200±50mm UL2464 18AWG"; short-circuit and over-current protection; 100–240 V AC; ~82 % efficiency; one of three plugs (UK / EU / US) included as selected; UKCA, UL, CE, RoHS [PP].
+- **Packing list:** UK, EU or US option — 1x adapter + 1x interchangeable plug of that type [PP].
+- **Compatibility list (page):** Raspberry Pi 5 (4/8 GB), Pi 4 B, Pi 400, CM4 carriers [PP].
 
 ## Interfaces, terminals and pin mapping
 - Output: one captive (non-detachable) cable ending in a USB Type-C plug [DS]. No other output connector, no DC barrel, no detachable cable [DS].
@@ -107,7 +112,7 @@ All rows are from the datasheet spec tables unless marked [PP]. Rows the datashe
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Output cable length | [DS] 1200 ± 50 mm | [PP] 1.5 m | [DS] wins: 1.2 m. Flag to Cytron; page may describe a different cable batch |
+| Output cable length | [DS] 1200 ± 50 mm; [PP] spec block 1200 ± 50 mm | [PP] features list "1.5-meter" | [DS] wins: 1.2 m. The page contradicts itself |
 | Efficiency | [DS] 84.25 % (5V) / 86.62 % (9V/12V/15V) | [PP] "~82%" | [DS] wins |
 | AC plugs included | [DS] "includes three interchangeable AC plugs" | [PP] plug option UK/EU/US, "only one included" | [DS] formally wins, but the page describes current selling practice; state "one plug as selected; datasheet Rev 1.0 lists three" and verify |
 | Target boards | [DS] Raspberry Pi 5 and other compatible boards | [PP] Raspberry Pi 4 Model B and Raspberry Pi 5 | No contradiction; Pi 4 B is an addition on the page |
@@ -116,12 +121,11 @@ All rows are from the datasheet spec tables unless marked [PP]. Rows the datashe
 
 ## Needs verification
 - Adapter body dimensions and weight — datasheet section 3 has drawings only; numbers did not extract.
-- Whether one or three plug heads ship in the box today (datasheet Rev 1.0 vs product page).
-- Cable length: 1.2 m [DS] vs 1.5 m [PP].
 - PD version (2.0/3.0), PPS support, E-marker presence, over-voltage / over-temperature protection — not stated.
 - Meaning of the "-X" suffix in AD-27W-PD-X and the "wwz" suffix in MPN HD-PD27W-wwz — not stated.
 - Whether the Raspberry Pi 5 negotiates the 5 A profile and clears the low-current USB limit with this exact unit — stated only as design intent [DS]; no Cytron test record read.
 - Noise/coil whine, hold-up time, line/load regulation — not stated.
+- Cable length: the product page gives both 1.5 m (features) and 1200 ± 50 mm (spec block); the datasheet says 1200 ± 50 mm — ask Cytron to fix the page.
 
 ## Sources
 - [DS] "AD-27W-PD-X Universal PSU Datasheet" — 27W 5V 5A USB-C Universal Power Adapter, Rev 1.0, February 2024 — https://docs.google.com/document/d/1pLMnoGWQFCbzt7I2AX8-qhGa6N6ljDat5eaFH6eBu-4/edit (Google Doc; dimension drawings did not extract)

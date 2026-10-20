@@ -31,6 +31,8 @@ An Arduino shield that controls up to 8 RC servo motors over a UART command prot
 - Arduino library "Cytron Servo Shield" version 2.0.0 (Arduino Library Manager / GitHub); functions init, setChannel, position, angle, getPosition, getAngle, setStartPosition, setStartAngle, registerErrorCallback (GitHub)
 - Library angle() maps 0–180° to positions 156–7260; getPosition() timeout 100 ms; setStartPosition() waits up to 5 s for 0x04 (GitHub)
 - PC GUI "Shield-Servo GUI" written in VB.net (Visual Studio Community 2015), source on the repository's visual-basic branch (User's Manual V1.1, GitHub)
+- Pulse resolution 0.25 µs; 5 A peak / 4 A continuous total (product page features list)
+- Packing: 1 × servo shield (product page)
 
 ## Interfaces and compatibility
 - Arduino-compatible hosts named: Arduino/Genuino UNO, Mega, CT-UNO, CT-ARM (User's Manual V1.1)
@@ -68,7 +70,7 @@ An Arduino shield that controls up to 8 RC servo motors over a UART command prot
 - User's Manual: "reliable yet user friendly RC Servo motor controller to hobbyist and students"; "the enhanced version from SC08A" with on-board regulator and UC00A/UC00C interface; UART "present a flexible, fast and easy to use feature"
 
 ## Price band
-RM79.80 (Cytron product page, read 2026-10-16)
+RM79.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-8-channels-rc-servo-controller-shield-for-arduino

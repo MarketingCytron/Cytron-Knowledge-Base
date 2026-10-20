@@ -27,6 +27,7 @@ A Raspberry Pi HAT that drives two brushed DC motors at up to 10 A continuous ea
 - Packing list: 1 x Hat-MDD10, 1 x PC104 Header Pin (2x20) (CN-PH-PC104)
 - Warranty: 12 months, manufacturing defects only
 - Thermal, under-voltage, reverse-polarity protection: [NOT STATED]
+- Product page confirms 6–24 V, 10 A continuous / 30 A peak (10 s), current limiting at 30 A, 20 kHz, 67.5 × 59 mm
 
 ## Interfaces and compatibility
 - PWM1 = GPIO12, DIR1 = GPIO26, PWM2 = GPIO13, DIR2 = GPIO24 (BCM numbering)
@@ -50,7 +51,7 @@ A Raspberry Pi HAT that drives two brushed DC motors at up to 10 A continuous ea
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
 
 ## Price band
-[NOT STATED]
+RM129.36 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-6v-24v-dc-motor-driver-hat-for-rpi-2-channels

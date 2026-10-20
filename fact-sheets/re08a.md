@@ -23,6 +23,8 @@ A single-channel optical rotary encoder kit made of a sensor board with a slotte
 - Truth table: beam unblocked (slot) = LED ON, Sig 0 V; beam blocked = LED OFF, Sig 5 V (user manual)
 - Packing list: 1 x RE08A sensor board, 1 x 8-slot disc (user manual)
 - Ready to use without further soldering (user manual)
+- Product page confirms: 5 VDC, 8 PPR, digital output with internal pull-up, up to 1 kHz, 35 mm disc; output 5 V when blocked, 0 V when unblocked
+- PCB 15 mm × 34 mm (product page; the manual says 35 × 15 mm)
 
 ## Interfaces and compatibility
 - 3-pin header: +5 (5 V supply), Gnd (supply negative), Sig (pulse output) (user manual)
@@ -46,7 +48,7 @@ A single-channel optical rotary encoder kit made of a sensor board with a slotte
 - Simple 3-pin interface and on-board LED indicator; ready to use without soldering (user manual)
 
 ## Price band
-RM38.85 (Cytron product page, read 2026-10-16)
+RM38.85 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-rotary-encoder-kit

@@ -37,6 +37,11 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Motor driver IC: [NOT STATED]
 - Dimensions: [NOT STATED]
 - Charging current: [NOT STATED]
+- VCC follows the host board's reset-pin voltage (product page)
+- Power: VIN 3.6–6 V, 1-cell LiPo or micro USB 5 V, auto-selected; charger with over-charge/over-discharge protection (product page)
+- Motors: 2.5–6 V, 1.0 A continuous, 1.5 A peak < 5 s (product page)
+- Size: 60.96 × 68.58 mm (product page image)
+- Packing: shield, small Phillips screwdriver, 4 Grove-to-female cables (product page)
 
 ## Interfaces and compatibility
 - DC motor pins: datasheet Table 1 lists M1A D4, M1B D5, M2A D6, M2B D7; Cytron's example code uses Motor 1 PWM = D5, DIR = D4 and Motor 2 PWM = D6, DIR = D7 (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`)
@@ -74,10 +79,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Part of Cytron's Robo series (alongside Robo Pico)
 
 ## Price band
-[NOT STATED]
+RM61.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-robo-uno-shield
 
 ## Datasheet
 https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit

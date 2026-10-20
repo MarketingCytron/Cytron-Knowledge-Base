@@ -5,7 +5,8 @@
 | Product code | `IRIV-PICL5` (document code in the CM5 user manual header) [UM]. The shared datasheet header code is `IRIV-PICONTROL`, which covers both CM4 and CM5 [DS], so do not use it for CM5 alone. Per-variant codes are not in DS/UM (a reseller lists `IRIV-PICL5-W832`; see *Needs verification*) |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (CM4/CM5 spec table, CM5 packing list, resources, FAQ, interface image). GPU, Wi-Fi/BT, dimensions and sold variants are now Cytron-stated |
 | Primary source | *IRIV PiControl — IR4.0 CM4 / CM5 Industrial Controller, Datasheet*, **Rev 1.2, Nov 2025** (Cytron Technologies Sdn Bhd; Google Doc last modified 2025-11-12). Covers CM4 and CM5 together. Secondary: *IRIV PiControl CM5 — IR4.0 CM5 Industrial Controller, User Manual*, **Rev 1.5, Jan 2026** (newer than the DS) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -53,6 +54,15 @@ An industrial controller built around the Raspberry Pi Compute Module 5 (CM5), i
 | Isolated RS232 | Maximum Baud Rate 120 kbps; Isolation Voltage 3000 Vrms | [DS] |
 | Operating Temperature | -20 – 60 ℃ | [DS] |
 | Power-input fuse | 4 Amp replaceable fuse | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Variants sold:** CM5 Wireless 16GB/64GB and CM5 Wireless 8GB/64GB (plus CM4 Wireless 8GB/32GB, 4GB/32GB, 2GB/16GB) [PP]. The spec table lists CM5 RAM 16/8/4/2 GB and eMMC 64/32/16/8 GB, but only the two Wireless 64GB variants are offered [PP].
+- **CM5 column:** BCM2712 quad-core Cortex-A76 @ 2.4 GHz; GPU 800 MHz VideoCore VII, OpenGL ES 3.1 [PP].
+- **Shared:** Wi-Fi 2.4/5 GHz 802.11 b/g/n/ac, Bluetooth 5.0, BLE; 1x HDMI 2.0 (4K60); 2x USB 2.0; 1x USB-C (boot and debug); RJ45 Gigabit + RJ45 10/100; 4 isolated DI (≤50 V); 4 isolated DO (≤50 V); 4 isolated AI (0–5 V / 0–10 V / 0–20 mA, common GND); isolated RS232 and RS485; M.2 Key-M NVMe socket (optional); mini PCIe socket (USB 2.0 and SPI only — no PCIe); DC 10–30 V surge-protected; PCF85063A RTC; ATECC608B; SSD1306 0.96" OLED; reset + programmable button; 2 programmable LEDs; active buzzer; metal fanless DIN-rail enclosure; **141.2 × 83.5 × 39.5 mm** (enclosure only) [PP].
+- "Optional" features are add-ons by enquiry [PP].
+- **Packing (CM5 variants):** 1x IRIV PiControl with the CM5 module (no NVMe SSD, no mini PCIe card), 1x dual-band antenna (for CM4 and CM5), 1x transparent flat-head screwdriver 85 × 3 mm, 1x transparent Phillips screwdriver 85 × 3 mm, 4x silicone bumpers 8 × 3 mm [PP].
+- **Terminals (interface image):** Terminal 1 = Vin, isolated RS485, RS232, digital outputs; Terminal 2 = isolated digital inputs and analog inputs; analog input mode switch; boot/debug switch; M.2 SSD activity LED [PP: img]. Pin order is still per the UM figures.
+- **Resources:** CM4 UM and CM5 UM (Google Docs), 3D CAD, Node-RED hands-on tutorial, Quick Start Guide with built-in dashboard (pre-loaded on stock shipped from 1 Jan 2024), Bookworm and Bullseye OS images, brochure [PP].
+- **FAQ:** Cytron supplies hardware only; partner system integrators can help; ships overseas; CodeSys and Ignition (paid) also usable [PP].
 
 ## Interfaces, terminals and pin mapping
 **Terminals (pluggable)** [DS]: **Terminal 1** = power supply input, isolated RS485, isolated RS232 and isolated digital outputs. **Terminal 2** = isolated digital inputs and isolated analog inputs. Signal names in the DS text: RS485 **A-B** + **GND**, analog **AGND**. The DS gives the terminal position order only in figures, which do not come through in the text export (see *Needs verification*).
@@ -156,16 +166,15 @@ An industrial controller built around the Raspberry Pi Compute Module 5 (CM5), i
 ## Needs verification
 - **DI0–DI3 and DO0–DO3 GPIO numbers on CM5** (text export has no block diagram; CM4 = GPIO13/17/22/27 and GPIO23/24/25/26).
 - **Terminal 1 / Terminal 2 pin order and labels:** only in figures, which are not readable in the text export.
-- Product page: my.cytron.io fetch failed; CM5 product URL not confirmed.
 - Per-variant SKUs: [3P] RobotShop lists manufacturer # `IRIV-PICL5-W832` (Wireless 8GB/32GB), which suggests `IRIV-PICL5-W<RAM><eMMC>`; not confirmed by Cytron.
-- [3P] RobotShop lists "800 MHz VideoCore VII, OpenGL ES 3.1" GPU, which is not in DS/UM.
 - Whether `dtoverlay=dwc2,dr_mode=host` / `#otg_mode=1` is needed or correct on CM5. The UM text is a CM4 copy, and on CM5 the USB is normally provided by the RP1 chip [VEN, not checked].
 - RAM/eMMC option conflict and 4G/SIM hardware on CM5 (see *Conflicts*).
 - Whether the per-channel AI mode can be mixed, and which DIP position maps to which channel (not stated in text).
 - Whether the Wireless Disable jumper is one jumper for both WiFi and BT.
-- Whether a non-wireless (Lite/no-WiFi) CM5 unit is sold (DS says wireless optional; UM lists only Wireless variants).
 - Whether the legacy `Adafruit_ADS1x15` library is still recommended. On Bookworm, a system-wide pip install is blocked [VEN].
 - Official public download URL for the DS and UM (none given in either document).
+- Per-variant SKUs for the two CM5 variants (page shows names, not codes); [3P] RobotShop uses `IRIV-PICL5-W832`.
+- Whether the CM5 Lite / smaller RAM-eMMC options in the spec table can be ordered (only two CM5 variants are on the page).
 
 ## Sources
 - [PP] not read (fetch error); URL not confirmed

@@ -5,7 +5,8 @@
 | Product code | `MD13S` (manual title [UM]; "Product Code: MD13S" on product page [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, three purchase options and packing lists, resources). Back in stock; option list and terminal-colour wording re-read |
 | Primary source | "MD13S 13Amp DC Motor Driver User's Manual" — **V1.1, June 2018** (Cytron Technologies; title page "Product User's Manual – MD13S") — public PDF mirror: https://www.electrokit.com/upload/product/41018/41018267/MD13S%20User's%20Manual.pdf |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -48,6 +49,11 @@ Manual section 4 "Product Specification", table **"Absolute Maximum Rating"** (c
 | Compliance | "RoHS, FCC and CE compliance" | [PP] |
 | Warranty | 12 months; manufacturing defects only; misuse and two-way freight not covered | [UM][PP] |
 | Packing list | 1 x MD13S 13A DC Motor Driver; 2 x Terminal socket, "Black for power and Green for Motor"; Grove connector with cable | [UM] (see *Conflicts* for colours) |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Options & packing:** (1) MD13S with pre-soldered terminal blocks — board with 1 green + 1 black 2-way terminal block, 1 Grove-to-Grove cable; (2) non-soldered terminal blocks — board, 1 green + 1 black 2-way terminal block (loose), 1 Grove-to-Grove cable; (3) **pre-soldered pin headers (for SUMO:BIT)** — board only [PP].
+- Page note: "The terminal block, normally Black is for Motor, and Green is for Power" [PP] (manual says the opposite — see *Conflicts*).
+- Features: 1 brushed motor; 6–30 VDC; 13 A continuous, 30 A peak (10 s); GROVE compatible; 3.3 V and 5 V logic; NMOS H-bridge, no heatsink; regenerative braking; PWM up to 20 kHz; locked-antiphase and sign-magnitude, not RC PWM; SMD compatible; RoHS, FCC and CE; 61 × 33 mm [PP].
+- Resources: user's manual, CytronMotorDriver library, MD10C tutorial (MD10C and MD13S are compatible), EAGLE footprint, Fritzing, RoHS/FCC/CE certificates, CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 **Board labels (manual section 3 "Board Layout")** [UM]: A terminal block; B MA LED; C MB LED; D MA test switch; E MB test switch; F input pins; G power LED; H OC LED; I ERR LED; J SMD compatible.

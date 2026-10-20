@@ -38,6 +38,11 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Logic levels: VIL -0.3–0.8 V, VIH 2.5–3.6 V, VOL 0–0.3 V, VOH 2.6–3.3 V, analog in 0–3.3 V
 - Operating temperature: -20 to 85 °C (Robo ESP32 board only)
 - USB-UART: none on the Robo ESP32; it is on the plug-in board
+- Reset button: product page states a "built-in reset button"; the datasheet function table lists none (it may be the plug-in board's EN button)
+- Only one power source is needed for the board and the motors (product page)
+- Package contents: 1× Robo ESP32, 1× transparent Phillips screwdriver, 1× silicone rubber feet (pack of 4), 4× Grove-to-female-header cables (product page); no ESP32 board included
+- GPIO status LEDs: 10 (product page)
+- Each motor channel up to 1 A continuous (product page)
 
 ## Interfaces and compatibility
 - Socket for a 30-pin, straight-header NodeMCU ESP32
@@ -47,7 +52,8 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Official Arduino examples: Blink, RGB, UserButton, Buzzer, DCMotor, Servo, AnalogRead, DigitalRead, OLED (SSD1315 on 21/22)
 - MicroBlocks: flash via Settings → "update firmware on board" → ESP32
 - FreeRTOS examples (dual-core, task control) in the Cytron Getting Started guide
-- Maker ESP32: Cytron describes it as compatible (30-pin NodeMCU ESP32 form factor)
+- Software support: product page states Arduino IDE, MicroPython, C++ and MicroBlocks; official examples exist only for Arduino IDE and MicroBlocks
+- Maker ESP32: the Maker ESP32 product page says it is "fully compatible with expansion boards like the Robo ESP32" and sells a Maker ESP32 + Robo ESP32 bundle; the Robo ESP32 page names only the NodeMCU ESP32
 
 ## Use cases
 - Robotics with ESP32 (basic movement, obstacle avoidance, line following, servo gripper)
@@ -81,7 +87,7 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Datasheet Rev 1.1 tagline: "Simplifying Smart Projects with ESP32" (the product page title matches Rev 1.1)
 
 ## Price band
-[NOT STATED]
+RM62.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-esp32

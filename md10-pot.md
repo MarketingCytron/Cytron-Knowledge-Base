@@ -5,7 +5,8 @@
 | Product code | `MD10-POT` (datasheet title [DS]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Packing list, board size, locked-antiphase support, regenerative braking and the lack of reverse-polarity protection are now Cytron-stated |
 | Primary source | "MD10-POT Potentiometer and Switch Control 10Amp DC Motor Driver Datasheet" — **Rev 1.0, Oct 2018** — public Google Doc: https://docs.google.com/document/d/1U_dn6OCEw76pqJaIzZYuWqWoU1C9APwpNp8qztaJ1uA/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -36,10 +37,16 @@ Datasheet section 2, **"Table 3: MD10-POT Absolute Maximum Ratings"** [DS].
 | Protections (reverse polarity, over-current, thermal, under-voltage) | Not stated | — |
 | Test buttons | "Test Buttons — Press to test the functionality of the motor / driver." (count not stated in text) | [DS] |
 | LEDs | Power LED ("Turn on when power up"); Motor Status LEDs ("Turn on when the motor is running") | [DS] |
-| Dimensions | Not stated in text — "Figure 2: MD10-POT Dimension" is a figure only (not readable here) | [DS] |
+| Dimensions | 81.28 mm × 48.26 mm | [PP] |
 | Operating temperature | Not stated | — |
-| Packing list / warranty | Not stated | — |
+| Packing list | 1x MD10-POT, 1x 10 kΩ potentiometer with connector, 1x 3-way rocker switch with connector, 1x Quick Start Guide card | [PP] |
+| Warranty | 12 months | [PP] |
 | 3D printable case | STL file linked on the product page | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features list:** bidirectional control of one brushed DC motor; run/brake and direction with a **3-way rocker switch (included)**; speed with a **potentiometer (included)**; 7–30 V; **10 A continuous, 30 A peak**; test buttons; motor output LEDs; PWM and DIR inputs; **compatible with sign-magnitude and locked-antiphase PWM**; **regenerative braking**; **no reverse polarity protection**; **dimension 81.28 mm × 48.26 mm** [PP].
+- **Description:** no microcontroller or programming needed; switch = activation and direction, potentiometer = speed [PP].
+- **Packing list:** 1x MD10-POT, 1x 10 kΩ potentiometer with connector, 1x 3-way rocker switch with connector, 1x Quick Start Guide card [PP].
+- **Resources:** datasheet (Google Doc), sample code (CytronMotorDriver library), 3D CAD, 3D-printable case STL and CAD [PP]. A wiring image is on the page (not read).
 
 ## Interfaces, terminals and pin mapping
 "Table 1: MD10-POT Board Functions" [DS]:
@@ -107,18 +114,16 @@ Datasheet section 2, **"Table 3: MD10-POT Absolute Maximum Ratings"** [DS].
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
 | Voltage / current in name | [PP] name "10 Amp 7V-30V" | [DS] 7–30 V, 10 A continuous | Agree |
-| No other conflicts found | — | — | Product page facts read were stock and links only |
+| Direction switch | [DS]: "SPDT switch" | [PP]: "3-way rocker switch" for run/brake and direction | Same part described two ways (a centre-off rocker); say "3-way rocker switch (included)" |
 
 ## Needs verification
-1. Board dimensions and mounting holes — Figure 2 only; not readable as text.
-2. Connector pin order (PWM/DIR header, potentiometer, switch) — Figure 1 only.
-3. How the driver chooses between potentiometer/switch and PWM/DIR input (jumper, priority, or automatic) — not stated.
-4. Whether a potentiometer and SPDT switch are included in the box — no packing list.
-5. Number of test buttons and Motor Status LEDs — plural only.
-6. Locked-antiphase support — not stated.
-7. Protections (reverse polarity, over-current, thermal, under-voltage) — not stated; confirm with [DT].
-8. SMPS / regenerative-current guidance, operating temperature, wire size, warranty — not stated.
-9. Price — not given by the coordinator's product-page read.
+1. Connector pin order (PWM/DIR header, potentiometer, switch) — Figure 1 only.
+2. How the driver chooses between potentiometer/switch and PWM/DIR input (jumper, priority, or automatic) — not stated.
+3. Number of test buttons and Motor Status LEDs — plural only.
+4. SMPS / regenerative-current guidance, operating temperature, wire size, warranty — not stated.
+5. Mounting-hole positions (board size 81.28 × 48.26 mm is on the product page).
+6. Over-current, thermal and under-voltage protection — not stated (the page says there is no reverse-polarity protection).
+7. How locked-antiphase mode is wired with the PWM/DIR inputs — the page says it is supported; the datasheet gives no truth table for it.
 
 ## Sources
 - [DS] MD10-POT Datasheet (Google Doc, "MD10-POT Potentiometer and Switch Control 10Amp DC Motor Driver Datasheet, Rev 1.0, Oct 2018"): https://docs.google.com/document/d/1U_dn6OCEw76pqJaIzZYuWqWoU1C9APwpNp8qztaJ1uA/view

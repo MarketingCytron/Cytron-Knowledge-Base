@@ -5,7 +5,8 @@
 | Product code | `MDS160A` (manual title [UM]; product-page image paths [PP]). Manual product name: **SmartDrive160** [UM] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Board size, no reverse-polarity protection and the wiring advice (2–3 × 8 AWG per terminal) are now Cytron-stated |
 | Primary source | "MDS160A SmartDrive160 User's Manual" — **V1.0, Aug 2014** — public Google Doc: https://docs.google.com/document/d/1nkdj8CrZKoc4PHemBqlvpEJkQ2KjUHGqCTI8S5-mba4/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -37,13 +38,17 @@ Manual section 3.0 "Product Specifications" table, plus feature list [UM].
 | Protections | LiPo under-voltage **warning** (no cut-out); overvoltage protection; overcurrent protection (current limited each PWM cycle); over-temperature protection | [UM] |
 | Reverse polarity protection | Not stated | — |
 | Cooling | Cooling fan fitted — "The height is 75mm including the cooling fan." | [UM] |
-| Dimensions | Height 75 mm including the cooling fan; length/width only in a figure (not readable here) | [UM] |
+| Dimensions | 122 × 178 × 75 mm (height includes the fan) | [PP][UM] |
 | Test buttons | 2 (Test Button A, Test Button B) | [UM] |
 | LEDs | LED A, LED B, LED OC, LED ERR, LED STAT, LED PWR | [UM] |
 | On/Off switch | Terminal for external on/off switch, shorted by default with a solder bridge on the bottom layer | [UM] |
 | Operating temperature | Not stated (only the current-limit vs board temperature table) | — |
 | Warranty | "Product warranty is valid for 12 months." Manufacturing defects only; misuse and two-way freight not covered | [UM] |
 | Packing list | 1 x MDS160A SmartDrive160; user's manual downloadable from cytron.com.my | [UM] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Description:** SmartDrive160, 160 A continuous; MOSFETs switched at 16 kHz; MCU for multiple input modes, current limiting and thermal protection; can pair with a second unit for differential drive; "Normal wire cannot survive 160A or even 100A" — Cytron uses 2 to 3 **8 AWG** cables per terminal [PP].
+- **Features:** single brushed DC motor; 8–28 V; 190 A peak (1 min), 175 A (2 min), 160 A continuous; LiPo low-voltage warning; full solid-state, no flyback diodes needed; regenerative braking; **NO reverse polarity protection for Vmotor**; thermal protection; current limit by temperature (below 60 °C 194 A; 60–70 °C 175 A; 70–80 °C 163 A; 80–90 °C 144 A; 90–100 °C 125 A; 100–110 °C 100 A; above 110 °C 50 A); input modes RC, analog, PWM/DIR (3.3/5 V), UART simplified and packetized; push buttons; **122 × 178 × 75 mm** [PP].
+- **Packing list:** 1x MDS160A [PP]. **Resources:** user's manual, CytronMotorDriver library, 3D CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout components (manual numbering is lost in the Google Doc text; order as listed, and the manual refers to the SWITCH terminal as "No. 15") [UM]:
@@ -129,14 +134,12 @@ Mode details [UM]:
 | Voltage in name | [PP] "160Amp 8V-28V" | [UM] 8–28 V, 160 A | Agree |
 
 ## Needs verification
-1. Board length and width, mounting holes — figure only (height 75 mm incl. fan is stated).
-2. Max PWM input frequency in PWM mode — not stated.
-3. Packetized Serial checksum overflow — whether only the lower 8 bits of Header + Address + Command are used is not stated (value range 0–255 implies it).
-4. Reverse polarity protection — not stated; confirm with [DT].
-5. "Watanabe revision" footnote — which units this applies to is not explained.
-6. Operating temperature range, terminal wire size — not stated.
-7. Board-layout item numbers are lost in the Google Doc text; order above follows the list as read and the "No. 15" SWITCH reference.
-8. Single-unit price: [PP] shows only quantity-tier prices (from RM977.59 at 20+).
+1. Max PWM input frequency in PWM mode — not stated.
+2. Packetized Serial checksum overflow — whether only the lower 8 bits of Header + Address + Command are used is not stated (value range 0–255 implies it).
+3. "Watanabe revision" footnote — which units this applies to is not explained.
+4. Operating temperature range, terminal wire size — not stated.
+5. Board-layout item numbers are lost in the Google Doc text; order above follows the list as read and the "No. 15" SWITCH reference.
+6. Mounting-hole positions (size 122 × 178 × 75 mm on the product page).
 
 ## Sources
 - [UM] MDS160A User's Manual (Google Doc, "MDS160A SmartDrive160 User's Manual, V1.0, Aug 2014"): https://docs.google.com/document/d/1nkdj8CrZKoc4PHemBqlvpEJkQ2KjUHGqCTI8S5-mba4/view

@@ -25,6 +25,8 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - 3.3V supply: 3.235 – 3.365 V, max 800 mA
 - GPIO specification: refer to Raspberry Pi
 - Dimensions: [NOT STATED]
+- Status LED on each GPIO; onboard 3.3 V regulator up to 800 mA (product page)
+- Packing: board, mini breadboard, 40-way F-F IDE cable 10 cm, cable clamp, 4 bumpers, PC104 2x20 header (product page)
 
 ## Interfaces and compatibility
 - Designed for the Raspberry Pi 400 (datasheet)
@@ -54,7 +56,7 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - Datasheet subtitle: "HAT & GPIO Extension for Raspberry Pi 400"
 
 ## Price band
-RM45.78 (Cytron product page, read 2026-10-16)
+RM45.78, out of stock (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-hat-base-hat-and-gpio-extension-for-raspberry-pi-400

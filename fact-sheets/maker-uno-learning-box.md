@@ -25,6 +25,7 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 - Warranty: 12 months
 - Dimensions and weight: [NOT STATED]
 - Project wiring (pins per project): [NOT STATED] (guide PDF not read)
+- Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
 - Power and programming over Micro USB only (Maker UNO has no DC jack and no Vin pin)

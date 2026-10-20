@@ -5,7 +5,8 @@
 | Product code | Not stated in the datasheet. Datasheet titles use "SUMO:BIT" and "SUMO-BIT"; Cytron marketing artwork shows "SUMOBIT" [DS]. Cytron SKU not confirmed — see Needs verification |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (features, specifications, packing lists, resources, FAQ) plus the dimension image. Package, MD13S inclusion, size and firmware location are now Cytron-stated |
 | Primary source | SUMO:BIT Datasheet, Rev 1.0, December 2024 (Cytron Technologies Sdn Bhd) — public PDF mirror on RobotShop CDN |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -41,8 +42,15 @@ Datasheet "Table 4: SUMO-BIT Absolute Maximum Ratings" (section 3, Specification
 | Joystick | USB-A port for wireless joystick connection | [DS] |
 | Firmware update | USB-C port + boot button (USB-C "not for programming") | [DS] |
 | Co-processor | RP2040, I2C slave address 0x09 | [GH] code comment; "RP2040" on launch artwork  |
-| Dimensions | Figure 4 "SUMO-BIT Dimension (Top View)" — drawing only; numbers not readable in text extraction | [DS] |
+| Dimensions | 125.00 × 80.00 mm; 4x Ø3.20 mm holes (product-page dimension image); datasheet Figure 4 drawing only | [PP: img] |
 | Weight, operating temperature, quiescent current | Not stated | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Options & packing:** Board ONLY = 1x SUMO:BIT **with 2x MD13S motor drivers attached**, 1x small flat screwdriver, 1x Phillips screwdriver, 1x Dean T male connector with 18AWG wire 15 cm, [free] SUMO:BIT sticker set (early adopters). With micro:bit Junior Kit = the same plus 1x micro:bit Junior Kit (BBC micro:bit V2 + USB micro B cable) [PP].
+- **Features:** co-processed by Raspberry Pi RP2040; detachable MD13S; mode interchangeable without reprogramming; USB host for a wireless USB joystick; onboard motor alignment adjust and calibration; 4-way DIP switch for 16 strategies [PP].
+- **Specifications:** LiPo 7–25 V; PWM 20 kHz with MD13S; 13 A per channel continuous, 30 A peak (≤10 s) with MD13S; USB host 5 V 600 mA; servo 5 V; +5 V total 600 mA [PP] (matches [DS]).
+- **Size:** 125.00 × 80.00 mm; 4x Ø3.20 mm mounting holes, 119.70 mm apart [PP: img dimension].
+- **FAQ (page):** programmable with MakeCode and MicroPython [PP] — no MicroPython library is linked, so treat MicroPython as unconfirmed.
+- **Resources:** datasheet; pxt-sumobit; sample code; 3D CAD; GitHub Cytron-SUMOBIT (firmware UF2, STL files); SUMO:BIT Robot Kit slide guides (Assemble, Checking, Maintenance, Autonomous, RC); Telegram support group [PP].
 
 ## Interfaces, terminals and pin mapping
 Datasheet section 2 "Board Layout and Function" items [DS]:
@@ -136,14 +144,11 @@ Servos, RGB LEDs, motors, mode switch and battery voltage are **not** on micro:b
 
 ## Needs verification
 - Supported micro:bit versions (V1 and/or V2) — no source states it.
-- Cytron product code / SKU (e.g. with and without micro:bit variants) and whether MD13S boards are included.
-- Package contents ([3P] Makers Electronics list above); weight 170 g and size 110 × 150 × 55 mm ([3P] only).
-- Board dimensions and mounting holes (datasheet Figure 4 not readable as text).
 - LiPo cell count recommendation; behaviour at low battery.
 - How the USB joystick and RC-receiver inputs are used in code (no extension blocks).
-- Where to get SUMO:BIT firmware and how to update it.
 - Telegram "SUMO:BIT Support Group" — named in the datasheet, no link.
-- Product page https://www.cytron.io/p-sumo-bit (linked from the GitHub README) — not read (fetch failed).
+- Shop product code for the two options (page shows names only).
+- MicroPython support named in the page FAQ — no library or example linked.
 
 ## Sources
 - [DS] SUMO:BIT Datasheet, Rev 1.0, December 2024, Cytron Technologies Sdn Bhd — public mirror: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf (read as text; figures not read). Also mirrored at https://makerselectronics.com/wp-content/uploads/2025/08/SUMO_BIT-Datasheet.pdf (not opened). No Cytron Google Doc found.

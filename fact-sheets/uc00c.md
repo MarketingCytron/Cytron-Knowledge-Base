@@ -24,7 +24,12 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - Dimension: 3.9 cm x 2 cm
 - Packing list: 1 x UC00C (USB Micro-B cable optional, not included)
 - Warranty: 1 year (user manual); 12 months (product page)
-- Baud rate range, VCC/5V output current, supply current, operating temperature: [NOT STATED]
+- VCC current: 3.3 V setting max 500 mA; 5 V setting = whatever the USB port supplies (product page)
+- Baud rate range, supply current, operating temperature: [NOT STATED]
+- LEDs: red = TX, orange = RX (product page)
+- Size: 39.8 × 21.2 × 5.6 mm (product page)
+- Tested on Windows 7, 8, 8.1 and 10 (product page)
+- Packing: 1 × UC00C (product page)
 
 ## Interfaces and compatibility
 - Host: PC USB port (Micro-B cable)
@@ -51,7 +56,7 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - "USB plug and play, direct interface with microcontroller" (user manual)
 
 ## Price band
-RM15.75 (Cytron product page, read 2026-10-16)
+RM15.75 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-uc00c-ch340-usb-to-uart-converter

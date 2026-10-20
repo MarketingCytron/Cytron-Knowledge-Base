@@ -5,7 +5,8 @@
 | Product code | `SHIELD-ESP-WIFI` [PP][UM]; manual title "ESPWiFi Shield Rev2.0" [UM]; library name "Cytron ESPWiFi Shield" [GH] |
 | Family | Arduino shields |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Revision history, Rev1.0 module (ESP8266-12), the 3.3 V regulator rating (500 mA) and the firmware shipped since Oct 2021 are now Cytron-stated |
 | Primary source | **No datasheet exists.** Primary = "ESPWiFi Shield SHIELD-ESP-WIFI Rev2.0 User's Manual", **V2.1, August 2021** (public Google Doc) [UM]. Older: "ESPWiFi Shield SHIELD-ESP-WIFI User's Manual" V1.0, Nov 2015 (Rev1.0 hardware) [UM-R1] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -39,9 +40,15 @@ The manual has no numbered spec table; the rows below are every quantitative or 
 | Packing list | 1 x ESPWiFi Shield, 2 x mini jumper | [UM] |
 | Warranty | 6 months [UM] / 12 months [PP] — see Conflicts | [UM][PP] |
 | Dimensions | **Not stated in text** (drawing only) | [UM] |
-| 3.3 V regulator part / output current | **Not stated** | [UM] |
+| 3.3 V regulator output current | 500 mA max (regulator part not stated) | [PP] |
 | Shield power input range | **Not stated** (powered from the Arduino's 5 V; Power LED "will turn on when 5V power is supplied") | [UM] |
 | Library | Cytron ESPWiFi Shield v3.0.2 (`CytronWiFiShield.h`) | [GH] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Revision notes:** "This shield is Rev2.0 starting April 2016"; "From mid of October 2021 onwards, Cytron ESP8266 WiFi Shield is uploaded with Cytron_ESP_AT V2.2.0 ESP-AT Firmware" (binaries on GitHub `esp-at-binaries`); "Rev2.0 utilize WROOM-02 instead of ESP8266-12 as the WiFi module" [PP].
+- **Features list:** Arduino R3 layout (Maker UNO, CT-UNO, CT-ARM, Arduino UNO R3, Leonardo and other compatibles); **on-board 3.3 V regulator for the WROOM-02, 500 mA max output**; every board preassembled and tested; UART pins by mini jumper — USB (direct to the Arduino's USB-serial for flashing the ESP8266), D0/D1 (hardware serial on UNO/CT-UNO), D2, D3, D8–D13 (software serial); 802.11 b/g/n; Wi-Fi Direct (P2P), soft-AP; integrated TCP/IP stack; +19.5 dBm in 802.11b mode [PP].
+- **Description:** pre-flashed AT firmware controlled over UART; most ESP8266 I/O broken out, the module can be programmed directly; microSD slot for data logging [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** Rev1.0 schematic and manual (ESP8266-12), Rev2.0 schematic and manual (ESP-WROOM-02), ESP-WROOM-02 datasheet, CytronWiFiShield library (GitHub), ESP-AT firmware (GitHub), tutorials (EasyMP3 with WiFly remote, light dancing, Maker UNO IoT with Blynk in Malay) [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | Arduino pin(s) / terminal | Src |
@@ -119,7 +126,7 @@ The manual has no numbered spec table; the rows below are every quantitative or 
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
 | Warranty | [UM] Rev2.0 V2.1 (Aug 2021) and [UM-R1]: 6 months | [PP] 12 months (read 2026-10-16) | UM is the higher source but older; product page is newer. Quote "12 months per the current product page" and flag |
-| Module naming | [UM] Rev2.0: ESP-WROOM-02 | [UM-R1]: "ESP8266 module" (type not named) | Rev2.0 = ESP-WROOM-02; Rev1.0 module type unconfirmed |
+| Module naming | [UM] Rev2.0: ESP-WROOM-02 | [UM-R1]: "ESP8266 module" (type not named) | [PP]: Rev2.0 uses WROOM-02 "instead of ESP8266-12" — Rev1.0 = ESP8266-12 |
 | Flash size setting | [GH] flash tool "FLASH SIZE: 32Mbit" for the shield | [VEN] ESP-WROOM-02 has 2 MB (16 Mbit) flash | Follow Cytron's tool settings; actual module flash size on the shield — Needs verification |
 | Default baud | [UM] "9600 kbps" | [UM] Serial Monitor "9600 Baud"; [GH] `#define baudRate 9600` | 9600 baud; "kbps" is a typo |
 | Layout numbering of LEDs | [UM] 12 = RX LED, 13 = TX LED | [UM-R1] 12 = TX LED, 13 = RX LED | Cosmetic; both LEDs exist |
@@ -129,10 +136,10 @@ The manual has no numbered spec table; the rows below are every quantitative or 
 ## Needs verification
 - Board dimensions (drawing only); which ESP8266 GPIOs are on the 3.3 V breakout (9 digital + 1 analog, numbers not stated); the 3.3 V regulator part and current rating; whether the shield has level shifting on the UART lines (not stated).
 - Actual flash size of the module fitted (2 MB per [VEN] vs 32 Mbit tool setting per [GH]); whether OTA is supported with the 2 MB build (README says only the 1 MB build "doesn't support OTA").
-- Whether Rev1.0 boards ship/shipped with NONOS-AT and can be upgraded to ESP-AT v2.2.0 with the same procedure (manual Rev2.0 procedure only).
 - Hardware changes between Rev1.0 and Rev2.0 (schematics not read).
 - Which Arduino pins, if any, besides the selected UART pair and D4 are connected (not stated).
 - Library v3.0.2 release date and whether the Library Manager entry is current.
+- Whether Rev1.0 boards (ESP8266-12) can be upgraded to ESP-AT v2.2.0 with the Rev2.0 procedure — boards shipped since mid-Oct 2021 already carry Cytron_ESP_AT V2.2.0 [PP].
 
 ## Sources
 - [UM] ESPWiFi Shield SHIELD-ESP-WIFI Rev2.0 User's Manual, V2.1, August 2021 — https://docs.google.com/document/d/1LFCe6MTNQh_0EBHRgc0f6n_hDLNUG8sFuM53oBJG8eE/view

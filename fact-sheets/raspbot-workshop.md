@@ -22,6 +22,8 @@ A one-day Edge AI workshop at Cytron HQ in Bukit Mertajam, Penang, built around 
 - Tentative timetable: Ice Breaking 9:00–9:15 AM; Introduction to Python 9:15–10:00 AM; Breakfast 10:00–10:30 AM; Factory Tour 10:30–11:00 AM; Introduction to OpenCV 11:00–11:30 AM; Introduction to AI 11:30 AM–12:30 PM; Introduction to ROS2 12:30–1:00 PM; Lunch 1:00–2:00 PM; Assembling Raspbot 2:00–2:30 PM; Testing Raspbot App 2:30–3:00 PM; Raspbot Programming 3:00–4:30 PM; Tea Break 4:30–4:45 PM; Q&A / Summary 4:45–5:00 PM (workshop tentative)
 - Prerequisites: [NOT STATED]
 - Refund / cancellation terms: [NOT STATED]
+- Full refund for cancellations made 1 week before the training date (product page)
+- Can also be run at the customer's location by enquiry (product page)
 
 ## Interfaces and compatibility
 - Robot computer: Raspberry Pi 5 (8GB) with Raspbot OS on 32GB microSD (product page)
@@ -43,7 +45,7 @@ A one-day Edge AI workshop at Cytron HQ in Bukit Mertajam, Penang, built around 
 - Introduction to AI workshop with a hands-on mobile robot, food and certificate included (product page)
 
 ## Price band
-RM1,800.00 offer, was RM2,100.00 (Cytron product page, read 2026-10-19)
+RM1,800.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-ai-training-kit

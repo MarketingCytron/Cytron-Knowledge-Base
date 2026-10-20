@@ -6,6 +6,7 @@
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). No new facts beyond the KB (already built from this page); the C1 output-capacitor question stays open, so it stays Medium |
 | Primary source | **No Cytron datasheet or user manual exists.** Main source: Cytron product page https://my.cytron.io/p-50a-current-sensor (read by the coordinator 2026-10-19) [PP]. Board wiring from the Cytron schematic **`usr_attachment-BB-ACS756_Schematic.pdf`** (1 page, no revision or date printed) in the Cytron GitHub repo [DS-schematic]. Chip facts from **Allegro ACS756 datasheet, ACS756-DS Rev. 6, March 25, 2011** (`usr_attachment-ACS756_Datasheet.pdf`, same repo) [VEN] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -45,6 +46,8 @@ No Cytron spec table exists; rows below are the product page "Features" list plu
 | Included | 1 set Dean-T connector, 1× 3-way right-angle pin header (unsoldered) | [PP] |
 | Price | RM52.50 (10+ RM47.25, 30+ RM42.00) (Cytron product page, read 2026-10-19) | [PP] |
 | Warranty | 12 months | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read: ACS756KCA-050B-PFF-T (±50 A); total output error 0.8% at 25 °C; 130 µΩ conductor; 3 kV RMS isolation; 5.0 V single supply; 3 µs rise time; 40 mV/A; AC or DC; dimension 1.43 × 1.435 inch; one set of Dean-T connector and a 3-way right-angle header, not soldered; resources: Allegro datasheet (GitHub), schematic (GitHub), Fritzing file [PP]. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 From the Cytron schematic [DS-schematic]:

@@ -31,6 +31,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defect only; cutting any trace voids the warranty
 - In the box: 1 x Cytron 3A Motor Driver (Code: SHIELD-3AMOTOR)
+- Product page confirms the manual: DRV8871, 7–30 V, 1.2 A continuous / 3 A peak, current limiting, 3.3/5 V logic, DIP-selectable modes, no motor-supply polarity protection
 
 ## Interfaces and compatibility
 - Sign Magnitude: DIR1 = D4, EN1 = D5, EN2 = D6, DIR2 = D7
@@ -58,7 +59,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - The manual describes it as "an improvement from our previous Cytron 2A Motor Driver Shield" that "can handle higher current up to 3A together with limit current protection"
 
 ## Price band
-RM41.79 on offer (was RM92.40) (Cytron product page, read 2026-10-16)
+RM41.79 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-1.2amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels

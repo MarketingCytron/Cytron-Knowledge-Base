@@ -6,6 +6,7 @@
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). D0/D1 LEDs and the packing list are confirmed; the chip name (CH9340 vs CH340) and dimensions (image only) stay open, so it stays Medium |
 | Primary source | No Cytron datasheet exists for this board (none found on Drive or GitHub). Main source: Cytron guide book **"Arduino Learning Guide For Beginners — MAKER UNO X", v1.5, February 2023**, published by Cytron Technologies (Drive PDF `Arduino Learning Guide for Beginners Using Maker UNO X R15 Feb23.pdf`) [UM], plus the my.cytron.io product page [PP] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -61,6 +62,13 @@ Facts from the guide about the board [UM]:
 | Breadboard | Supplied separately; "remove the adhesive backing and then attach it to the Maker UNO X board" | [UM] |
 | Pin labels | Labelling stickers are peeled off and attached to the pin headers | [UM] |
 | Reset button | Present (pressing it restarts the sketch) | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Packing list:** 1x Maker UNO X board, 1x mini breadboard, 1x Maker UNO pin sticker [PP].
+- **LEDs:** 12x I/O indicator LEDs on D2–D13; the 2 LEDs on D0 and D1 are the UART TX/RX activity indicators [PP].
+- **Spec list (unchanged from earlier read):** ATmega328P, 5 V, 20 digital I/O, 6 PWM, 6 analog inputs (10-bit), 1 UART / 1 SPI / 1 I2C, 32 KB flash, 2 KB SRAM, 1 KB EEPROM, 16 MHz, USB to UART chip "CH9340", button D2, piezo D8, powerbank-friendly, micro-USB [PP].
+- **Driver notice:** the USB-serial driver does not support Windows 7 [PP].
+- **Resources:** Arduino Learning Guide Rev 1.5 (IDE 2.x, Google Drive) and Rev 1.4 (IDE 1.8.x, static.cytron.io); CH34X drivers (Windows V3.5, Mac V1.5, Linux V1.5, Mar 2019) and the WCH factory link; Fritzing file (GitHub); Maker UNO projects [PP].
+- Page images include a specifications image (`maker-uno-x-specs.png`) and a "what's included" photo — not read here (image only).
 
 ## Interfaces, terminals and pin mapping
 | Function | Pin / part | Src |
@@ -145,7 +153,6 @@ Header connectors defined in Cytron's Fritzing part (36 connectors) [GH]: D0/RX,
 - Real USB-serial part number: "CH9340" [PP] vs "CH340C" (Fritzing art) — no schematic read.
 - Whether there is any switch besides Debug (e.g. a separate mute switch); what the "PWRBANK" silkscreen label in the Fritzing art marks (switch, jumper or circuit) and how powerbank-friendliness works.
 - 5V and 3.3V pin current limits, per-pin current, USB input range, protection.
-- Whether D0/D1 have their own I/O LEDs besides the TX/RX LEDs (page says 12 I/O LEDs D2–D13 + 2 TX/RX).
 - What the "20 digital I/O pins" count includes (not explained by the page).
 - Breadboard size (half-size vs mini) and whether the perfboard is a soldering area on the PCB.
 - UNO R3 shield compatibility; presence of a DC jack (none mentioned; Fritzing part has no Vin).
@@ -153,6 +160,7 @@ Header connectors defined in Cytron's Fritzing part (36 connectors) [GH]: D0/RX,
 - Guide Projects 15–17 (pins and parts) — not read.
 - Schematic files in the GitHub `Schematic and PCB/` folder — not listed or read.
 - [3P] The Pi Hut marks the product "Discontinued" on its own store; Cytron's page shows it in stock — no effect on Cytron status.
+- Read the product page images `maker-uno-x-specs.png` and `maker-uno-x-whats-included.jpeg` (dimensions, breadboard size) when the browser can render images.
 
 ## Sources
 - [UM] Arduino Learning Guide For Beginners — MAKER UNO X, v1.5, Feb 2023 (PDF, Drive): (Cytron document — link not public) (read 2026-10-19 as text, cover to p. ~80)

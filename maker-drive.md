@@ -5,12 +5,13 @@
 | Product code | `MAKER-DRIVE` (datasheet title [DS]; Cytron GitHub README link text "MAKER-DRIVE" [GH]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. In stock on my.cytron.io; the page carries the same text the KB had from Cytron's Tindie listing, so those facts are now [PP] my.cytron.io |
 | Primary source | MAKER-DRIVE Datasheet — "Simplifying H-Bridge Motor Driver for Beginner" — **Rev 1.0, Feb 2019** (public Google Doc, last modified 2021-08-20): https://docs.google.com/document/d/1XakJWz9DAtrMc_Jf75FnDXs4gwT_osCSj3Rbx1OU7bM/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: my.cytron.io could not be fetched, so the product page was **not read**. [PP: Tindie] = Cytron Technologies' own store listing on Tindie (seller "Cytron Technologies", written by Cytron, links the same datasheet Google Doc); it stands in for the product page and ranks below [DS]. No user manual exists separately — the datasheet is the only Cytron document. No [DT] confirmation exists for this product yet. The datasheet PDF mirror on electrokit.com is the same Rev 1.0, Feb 2019 text.
+Tag notes: [PP] = my.cytron.io product page, read 2026-10-19 (same text as Cytron's Tindie listing). [PP: Tindie] = Cytron Technologies' own Tindie listing, read 2026-10-16 before the my.cytron.io page was reachable.
 
 ## What it is
 A 2-channel, bi-directional H-bridge motor driver for small brushed DC motors (or one stepper motor), powered from 2.5–9.5 VDC, rated 1 A continuous / 1.5 A peak (< 5 s) per channel [DS]. Each motor is controlled by two PWM inputs (A and B) — there is no separate DIR pin [DS]. It has a 5V output (200 mA max) to power the host microcontroller, a test button and status LED for each motor direction, reverse polarity protection on the power input, and H-bridge IC over-temperature cut-off at 150 °C [DS]. Cytron positions it as a beginner-friendly replacement for the L298N [PP: Tindie].
@@ -38,10 +39,16 @@ Datasheet Table 2 is titled **"MAKER-DRIVE Absolute Maximum Ratings"** — these
 | Temperature protection | H-bridge IC built-in: output to motor cut off when IC internal temperature is over 150 °C | [DS] |
 | Over-current / short-circuit protection | **Not stated** | [DS] |
 | Under-voltage protection | **Not stated** | [DS] |
-| Dimensions | 43 mm (W) × 35 mm (L) × 14 mm (H). Datasheet has a dimension drawing (Figure 2) only, no values in the text | [PP: Tindie] / [DS] figure |
+| Dimensions | 43 mm (W) × 35 mm (L) × 14 mm (H) (my.cytron.io product page). Datasheet has a dimension drawing (Figure 2) only, no values in the text | [PP: Tindie] / [DS] figure |
 | Operating temperature | **Not stated** | [DS] |
 | Driver IC part number | **Not stated** ("H-Bridge IC") | [DS] |
 | Terminal type / wire size | **Not stated** (named "Power Input Terminal", "Motor Output Terminal") | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features list:** dual-channel bi-directional; motor voltage 2.5–9.5 V; 1.0 A continuous, 1.5 A peak (< 5 s); 5 V output 200 mA; inputs compatible with 1.8 V, 3.3 V and 5 V logic; solid-state; regenerative braking; PWM up to 20 kHz (output = input frequency); **43 × 35 × 14 mm** [PP].
+- **Description:** reverse polarity protection on Vin/Vmotor/Vbatt; 4 test buttons and 4 indicator LEDs; buck-boost regulator gives 5 V (200 mA) from 2.5–9.5 V; supports a stepper motor; "Maker Drive is not an Arduino Shield" but works with Maker UNO, Maker UNO Plus, CT-UNO, Arduino UNO R3, Mega 2560, Nano, Pro Mini, Raspberry Pi, micro:bit, BeagleBone, ESP8266, ESP32 [PP].
+- **Suitable motors (page):** 2-terminal brushed DC, 2.5–9.5 V, rated ≤ 1.0 A, peak ≤ 1.5 A — e.g. 6 V 85 RPM micro metal gearmotor, 6 V 225 RPM 0.35 kgf·cm, TT motor kits, Tamiya double / twin-motor gearbox "(Although the stall current is 2.10A)", 3 V toy motor [PP].
+- **Suggested power:** 2/3/4 × AA or AAA, 1 or 2 × 18650, 1 or 2 × 14500 Li-ion with holders [PP].
+- **Packing list:** 1x Maker Drive board [PP]. **Resources:** datasheet, CytronMotorDriver library (PWM_PWM_DUAL example), line-following robot tutorial, Fritzing, 3D files [PP].
 
 ## Interfaces, terminals and pin mapping
 | Terminal / pin | Function | Src |
@@ -115,7 +122,7 @@ Control mode: two-PWM-per-motor (Input A = forward speed, Input B = backward spe
 | Driver IC | [DS] unnamed "H-Bridge IC" | [3P] Botland product title "Cytron Maker Drive MX1508" | Unresolved — don't name the chip. Ask [DT] |
 | Stop behaviour wording | [DS] Low/Low = Brake, High/High = Coast | [PP: Tindie] feature "Regenerative Braking" | Not a contradiction; use [DS] truth table terms in content |
 | Library menu name | [GH] library.properties `Cytron Motor Drivers Library` | [GH] README: File → Examples → "Cytron DC Motors Library" | Search Library Manager for "Cytron Motor Drivers Library" |
-| Price | [PP: Tindie] USD 3.80 (sold out since Nov 17, 2022) | [3P] The Pi Hut £4.80 incl. VAT (2026-10-16) | Quote Cytron prices only, with date |
+| Price | [PP] my.cytron.io (read 2026-10-19): RM18.90, in stock | [PP: Tindie] USD 3.80 (sold out since Nov 17, 2022); [3P] The Pi Hut £4.80 | Quote the my.cytron.io price with date |
 
 ## Needs verification
 - **Driver IC is MX1508?** — [3P] only (Botland title). The task brief also assumes MX1508. Confirm with [DT].
@@ -125,10 +132,9 @@ Control mode: two-PWM-per-motor (Input A = forward speed, Input B = backward spe
 - Stepper type supported (unipolar/bipolar) and any stepper library/example — the datasheet shows a diagram only.
 - Dimension drawing values, mounting holes, terminal type and wire gauge — Figure 2 not readable as text.
 - Operating temperature range.
-- [3P] The Pi Hut lists compatible boards (Maker UNO, Arduino UNO R3/Mega/Nano/Pro Mini, Raspberry Pi, micro:bit, BeagleBone, ESP8266, ESP32), states "Maker Drive is not an Arduino Shield", packing list "1 x Maker Drive board", and motor requirements "Rated Current <= 1.0A, Peak Current <= 1.5A" — likely copied from the Cytron product page but not read here.
 - [3P] The Pi Hut suggests Tamiya gearboxes "Although the stall current is 2.10A" — above the 1.5 A peak rating; confirm Cytron's guidance before repeating.
 - ESP32: library calls `ledcWrite(pin, duty)` without `ledcAttach()` — whether this works on ESP32 Arduino core 3.x unmodified is untested.
-- Current my.cytron.io availability and RM price.
+- Tamiya gearboxes are listed as suitable "although the stall current is 2.10A" (above the 1.5 A peak) — ask Cytron how users should limit stall current.
 
 ## Sources
 - [DS] MAKER-DRIVE Datasheet Rev 1.0, Feb 2019 — https://docs.google.com/document/d/1XakJWz9DAtrMc_Jf75FnDXs4gwT_osCSj3Rbx1OU7bM/edit (PDF mirror, same revision: https://www.electrokit.com/upload/quick/48/3d/70a9_MAKER-DRIVE-Datasheet.pdf)

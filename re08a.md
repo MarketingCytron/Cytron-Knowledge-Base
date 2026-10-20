@@ -5,7 +5,8 @@
 | Product code | `RE08A` [PP]; manual title "RE08A Rotary Encoder Kit" [UM] |
 | Family | Sensors |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). The page independently confirms the manual: 5 V, 8 PPR, digital output pulled up to 5 V, up to 1 kHz, 35 mm disc, output high when the beam is blocked |
 | Primary source | **No Cytron datasheet exists for this product.** Highest source is the Cytron user manual: "RE08A Rotary Encoder Kit — User's Manual **V1.2, September 2008**" [UM], read from the RobotShop PDF mirror of the Cytron document (the Drive PDF linked from the product page was not readable here). The manual's specification table was recovered from text extraction and cross-checked twice; cells that stayed ambiguous are listed under *Needs verification* |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -37,6 +38,11 @@ Manual section 3 "Product Specification" [UM]. The table was read from PDF text 
 | Packing list | 1 x RE08A sensor board; 1 x 8-slot disc | [UM] |
 | Price | RM38.85 | [PP] |
 | Warranty | 12 months [PP]; manual (2008) says 6 months [UM] — see Conflicts | [PP][UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** optical beam sensor (opto switch / phototransistor) and a slotted disc; 3-pin header; needs +5 VDC; output 0 V / 5 V — **5 V when the beam is blocked, 0 V when unblocked**; green LED lights when the beam is uninterrupted [PP].
+- **Spec list:** operating voltage 5 VDC; **8 PPR**; digital output; direct connection to a microcontroller (internal pull-up to 5 V); able to read up to 1 kHz; slotted disc diameter 35 mm; **PCB dimension 15 mm × 34 mm** [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User Manual (Google Drive), opto-interrupter datasheet, velocity measurement with Arduino (third-party tutorial) [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM section 4]:
@@ -96,6 +102,7 @@ Wiring [UM section 5]: connect "+5" and "Gnd" to a 5 V supply and "Sig" to a mic
 |---|---|---|---|
 | Warranty | [UM] (2008) "valid for 6 months" | [PP] 12 months (2026) | Commercial term: use the current product page's 12 months and cite [PP]; the manual figure is historical |
 | Product name | [UM] "RE08A Rotary Encoder Kit" | [PP] "Rotary Encoder Kit (RE08A)"; [3P] RobotShop "Cytron Simple Rotary Encoder Kit" | Use the Cytron name; the RobotShop name is an alias only |
+| Sensor board length | [UM]: 35 mm (12 × 35 × 15 mm) | [PP]: PCB 15 mm × 34 mm | 1 mm difference; [UM] wins, or say "about 35 × 15 mm" |
 
 ## Needs verification
 - Spec-table cells recovered from text extraction with lower confidence: Sig "max 5.3 V"; Gnd row values; whether f has a stated minimum. Confirm against the original PDF page 5.

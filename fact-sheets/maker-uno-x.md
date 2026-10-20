@@ -37,6 +37,8 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - 5V and 3.3V pin output current: [NOT STATED]
 - Per-I/O-pin current: [NOT STATED]
 - Dimensions: [NOT STATED]
+- Packing: Maker UNO X board, mini breadboard, Maker UNO pin sticker (product page)
+- LEDs: 12 I/O LEDs on D2–D13; D0/D1 LEDs are the TX/RX activity LEDs (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO compatible; "fully compatible with Arduino UNO R3 sample code and libraries" (product page)

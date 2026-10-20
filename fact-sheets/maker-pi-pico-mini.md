@@ -28,6 +28,7 @@ A small carrier board for the Raspberry Pi Pico / Pico W with status LEDs, a but
 - 3.3V power LED
 - GPIO breakout for all Pico pins (headers not pre-soldered on the pre-mounted version)
 - Pi Pico socket on MAKER-PI-PICO-MINI-NB only
+- Variants: MAKER-PI-PICO-MINI (Pico), MAKER-PI-PICO-MINI-W (Pico W), MAKER-PI-PICO-MINI-NB (no Pico); Pico variants preloaded with CircuitPython (product page)
 
 ## Interfaces and compatibility
 - Host: Raspberry Pi Pico / Pico W
@@ -57,7 +58,7 @@ A small carrier board for the Raspberry Pi Pico / Pico W with status LEDs, a but
 - Datasheet tagline: "Simplifying Projects with Raspberry Pi Pico / Pico W"
 
 ## Price band
-[NOT STATED]
+RM35.60–RM47.60 across 3 variants (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-pico-mini-simplifying-projects-with-raspberry-pi-pico

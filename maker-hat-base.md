@@ -5,7 +5,8 @@
 | Product code | `MAKER-HAT-BASE` (datasheet title "MAKER-HAT-BASE" [DS]; product-page image paths [PP]) |
 | Family | Raspberry Pi boards and HATs |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Still out of stock. The packing list, the onboard 3.3 V regulator and "status LEDs for each GPIO" are now Cytron-stated (earlier [3P] only) |
 | Primary source | *MAKER-HAT-BASE — HAT & GPIO Extension for Raspberry Pi 400, Datasheet*, **Rev 1.0, September 2021** (Google Doc, last modified 2024-01-23), Cytron Technologies Sdn Bhd |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -39,6 +40,10 @@ Datasheet section 1 (board layout and function) and section 2 (specifications), 
 | Dimensions | Section 3 is a drawing only — not readable | — |
 
 Note: the spec table is slightly mangled in the text export (the 3.3V current row is split from its parent row), but each value maps to one row without ambiguity.
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Features list:** designed for Raspberry Pi 400; compatible with Pi 3 and Pi 4 (via the ribbon cable); extension pins for a HAT; labelled GPIO breakout; **status LEDs for each GPIO**; 1 programmable buzzer; 4 programmable push buttons; 3 Grove ports (GPIO, UART, I2C); **onboard 3.3 V regulator, up to 800 mA extra current** [PP].
+- **Packing list:** 1x Maker Hat Base, 1x mini breadboard (random colour), 1x 40-way female-to-female IDE cable 10 cm, 1x flat cable clamper with adhesive 60 mm, 4x silicone bumpers, 1x PC104 2x20 header pin (shipped after 25 Nov 2021) [PP].
+- **Resources:** datasheet, CAD file, MagPi review link [PP]. Layout and dimension images — not read.
 
 ## Interfaces, terminals and pin mapping
 Pin mapping (datasheet section 1; BCM GPIO numbers) [DS]:
@@ -105,16 +110,14 @@ Pin mapping (datasheet section 1; BCM GPIO numbers) [DS]:
 | 3.3V 800 mA | 3.3V supply, max 800 mA [DS] | "Onboard 3.3V regulator providing up to 800mA of extra current" [3P] | Datasheet value used; "onboard regulator" / "extra" not in [DS] |
 
 ## Needs verification
-- **Which GPIOs have status LEDs** and whether the button GPIOs also have LEDs — not listed in the datasheet.
 - Grove connector wire order and breakout header pin order (images only).
 - Board dimensions and HAT mounting holes (datasheet section 3 is a drawing). A review gives 4.8 x 2.8 inches and M2.5 screw points [3P only].
-- Whether the 3.3V rail comes from an onboard regulator or from the Pi — not stated in [DS].
 - Buzzer drive: active (on/off) or needs PWM; behaviour with gpiozero `Buzzer` vs `TonalBuzzer`.
 - Compatibility with Raspberry Pi 500, Pi 5, Zero 2 W and earlier 40-pin Pis [3P only].
-- Packing list [3P only]: 1x Maker Hat Base, 1x mini breadboard (random colour), 1x 40-way female-to-female IDC cable (10cm), 1x flat cable clamper with adhesive (60mm), 4x silicone bumpers, and (from 25 Nov 2021) 1x PC104 2x20 header.
 - 5V current available to a stacked HAT through the ribbon cable.
 - Python library use: a review tested the buttons and buzzer with GPIO Zero (Python 3) [3P only].
 - Whether the product is discontinued (Pimoroni says it no longer stocks it [3P]); Cytron page shows out of stock only [PP].
+- Whether the four button GPIOs also show on GPIO status LEDs (page: "Status LEDs for each GPIOs").
 
 ## Sources
 - [DS] MAKER-HAT-BASE Datasheet, Rev 1.0, September 2021 (Google Doc, modified 2024-01-23): https://docs.google.com/document/d/12l4vzu-r3VRBCLkCsuM00KOYnMPnQw5HxdfxjA3p5E0/edit

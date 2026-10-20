@@ -5,7 +5,8 @@
 | Product code | Not stated in any source read. The datasheet uses the name "MOTION 2350 Pro"; reseller mirror filenames use `MOTION-2350-PRO` |
 | Family | RP2040 / RP2350 boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). my.cytron.io now carries the Rev 2.0 ratings (5 A / 10 A per channel, overcurrent and overvoltage protection), 2 MB flash, board size, packing list and Arduino IDE support with a Cytron tutorial |
 | Primary source | Datasheet "MOTION 2350 Pro – An Advanced Robotics Controller for Beginners", **Rev 2.0, September 2025**, Cytron Technologies Sdn Bhd (public mirror on Farnell) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -48,6 +49,13 @@ Datasheet Table 2 is titled "MOTION 2350 Pro **Absolute Maximum Ratings**" (unde
 | Operating temperature | -20 to 85 ℃ | [DS] |
 
 Table footnotes [DS]: "It's not recommended to connect both USB and VIN at the same time", adding that doing so is perfectly safe. "The absolute maximum VIN is 18V but the recommended maximum voltage is 16V."
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Revision note:** "Starting from October 2025, the MOTION 2350 Pro will be available in Rev 2.0, offering increased power and enhanced protection" [PP].
+- **Spec list:** RP2350, dual-core Arm Cortex-M33, 520 KB RAM, 150 MHz, **2 MByte flash**; 4x DC motor driver with quick-test buttons; 8 servo ports; 8x 3 V GPIO breakout; VIN terminal 3.6–16 V; USB-C 5 V; **overvoltage protection (Rev 2.0)**; DC motor current per channel **5 A continuous, 10 A peak**; **overcurrent protection (Rev 2.0)**; 24 status LEDs (8 servo, 8 GPIO, 8 motor); 12 push buttons (8 motor quick-test, 2 user, BOOT, RST); 3 Maker Ports; 2 RGB LEDs (Neopixel compatible); 1 USB host; piezo buzzer with mute switch; on/off switch with MOSFET shock-proof circuit; CircuitPython preloaded; languages CircuitPython, MicroPython, C/C++, Arduino [PP].
+- **Board dimension:** 95.2 × 57.2 × 8 (height) mm [PP].
+- **Description:** up to 4 brushed DC motors ("10A Max each channel"), 3.6–16 V; USB host for USB joystick/gamepad; preloaded CircuitPython demo (melody, running LEDs; GP20/GP21 buttons run other demos) [PP].
+- **Packing list:** 1x MOTION 2350 Pro, 1x STEMMA QT / Qwiic JST-SH 4-pin cable with female sockets (150 mm), 2x Grove to JST-SH cable (200 mm), 1x set of silicone bumpers, 4x building-block friction pins, 1x mini screwdriver [PP].
+- **Resources:** Getting Started with CircuitPython and with **Arduino IDE** (Cytron tutorials), datasheets Rev 1.0 and Rev 2.0 (Google Docs), circuitpython.org board page, 3D CAD, RP2350 datasheet [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -140,25 +148,24 @@ Motor PWM slices [GH pinout]: M1 = PWM4 (GP8/GP9), M2 = PWM5 (GP10/GP11), M3 = P
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Motor current per channel | [DS] Rev 2.0 (Sep 2025): 5 A continuous, 10 A peak (< 5 s) | [PP] www.cytron.io and [GH] pinout image: "3A Max each channel" / "3A Continuous, 5A Peak"; [DS-R1] Rev 1.0: 3 A / 5 A; [3P] Adafruit, circuitpython.org: 3 A | [DS] Rev 2.0 wins for the current board. 3 A / 5 A is the Rev 1.0 rating, so the product page and pinout image are out of date |
+| Motor current per channel | [DS] Rev 2.0 (Sep 2025) and my.cytron.io [PP] (read 2026-10-19): 5 A continuous, 10 A peak | Older www.cytron.io text and [GH] pinout image: "3A Max each channel" / "3A Continuous, 5A Peak"; [DS-R1] Rev 1.0: 3 A / 5 A; [3P] Adafruit, circuitpython.org: 3 A | Rev 2.0 (5 A / 10 A) for the current board; 3 A / 5 A is the Rev 1.0 rating |
 | Motor overcurrent protection | [DS] Rev 2.0: has overcurrent + overtemperature protection | [DS-R1] Rev 1.0: "do not have overcurrent protection" | Revision difference. Rev 2.0 has it, Rev 1.0 does not |
 | USB host output current | [DS] Rev 2.0: 100 mA | [DS-R1] Rev 1.0 mirrors disagree: electrokit copy 100 mA, Akizuki copy 500 mA (both "Rev 1.0, July 2024") | 100 mA for Rev 2.0. The Rev 1.0 value is unclear |
-| Arduino support | [PP]: "Arduino IDE (coming soon)" | [VEN] arduino-pico core includes "Cytron Motion 2350 Pro" | Board support exists in arduino-pico; [PP] wording is out of date. Ask [DT] whether Cytron officially supports it |
+| Arduino support | Older [PP] wording: "Arduino IDE (coming soon)" | my.cytron.io [PP] (read 2026-10-19) lists Arduino and links a Cytron Arduino IDE getting-started tutorial; [VEN] arduino-pico core includes "Cytron Motion 2350 Pro" | Supported; "coming soon" is out of date |
 | USB host pin names | [DS]: D+ = GP24, D- = GP25 (arduino-pico agrees: DP 24, DM 25) | [VEN] MicroPython pins.csv: `USBA_DN` = GPIO24, `USBA_UP` = GPIO25 | [DS] wins |
 | Motor driver recovery temperature | [DS] Table 2: thermal hysteresis 60 ℃ (150 - 60 = 90 ℃) | [DS] text: resumes "below a safe temperature (typically 100°C)" | Inside the same datasheet. Quote both as written; see *Needs verification* |
 | RGB LED count | [DS] gives no count | [GH] demo and [VEN] arduino-pico: 2 | 2, sourced from [GH] |
 
 ## Needs verification
 - **VIN formula:** printed as "VIN = VADC / 6.1" [DS, GH]. At a 16 V input, that would put more than 3.3 V on the ADC, so the working formula is probably VIN = VADC × 6.1. Confirm with [DT] before publishing code.
-- **Flash size:** not in any Cytron source. CircuitPython declares W25Q16JV, and arduino-pico 2 MB [VEN]. Confirm with [DT].
 - **RP2350 package and stepping:** CircuitPython and arduino-pico say RP2350A [VEN]. The datasheet doesn't say. Also unconfirmed: whether Rev 2.0 dropped the Errata E9 note because of a newer chip stepping.
 - **5.5 V digital input on ADC pins:** RP2350 ADC-capable pins (GP26–GP29) are generally not 5 V tolerant [VEN, from memory, not re-read]. The datasheet's 5.5 V high-level row doesn't separate them. Confirm before telling users 5 V signals are fine on Maker Ports.
 - Motor driver IC part number, and the brake/coast truth table (not in [DS]).
 - Rev 1.0 USB host current (100 vs 500 mA, see *Conflicts*).
-- Dimensions and mounting holes (datasheet figure not readable).
-- Product code / SKU, package contents, price (Adafruit lists USD 31.25 [3P] only).
-- Whether my.cytron.io carries the same 3 A text (page not readable).
-- Arduino IDE official status ("coming soon" on [PP]).
+- Flash part number (CircuitPython declares W25Q16JV [VEN]); the size, 2 MB, is now Cytron-stated [PP].
+- Mounting-hole positions (board size 95.2 × 57.2 × 8 mm is on the product page).
+- Product code / SKU — not shown on the product page.
+- Overvoltage protection threshold and behaviour (Rev 2.0) — named on the product page, not quantified.
 
 ## Sources
 - [DS] MOTION 2350 Pro Datasheet, Rev 2.0, September 2025, Cytron Technologies Sdn Bhd (public mirror): https://www.farnell.com/datasheets/4726021.pdf

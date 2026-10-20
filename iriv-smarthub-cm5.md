@@ -5,7 +5,8 @@
 | Product code | `IRIV-SH5` [DS]. Per-variant SKU codes not stated in the [DS] — see *Needs verification* |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Sale status, the three variants sold, kit options, packing lists and the < 12 W claim are now read directly |
 
 **Authority rule:** Datasheet/manual [DS] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub & staff wiki [GH]/[WIKI] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -51,6 +52,12 @@ From the [DS] *Features* table (p.3) and *Specifications* table (p.4).
 | Dimension (drawing, p.10) | 147.00 x 98.00 x 35.00 (mm) — disagrees with the Features table, see *Conflicts* | [DS-fig] |
 | Mounting (drawing, p.10) | 4xM4 VESA Mount 75x75mm on the base; mounting flanges with slots dimensioned 66.00 / 30.00 (labelled M4) and 48.00 (labelled M8) | [DS-fig] |
 | Variants (product page, 2026-09-08) | Wireless 2GB RAM 16GB eMMC, Wireless 4GB RAM 32GB eMMC, Wireless 16GB RAM 64GB eMMC |  (quoting [PP]) |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Variants sold:** Wireless 16GB RAM 64GB eMMC; Wireless 4GB RAM 32GB eMMC; Wireless 2GB RAM 16GB eMMC [PP]. The spec table still lists RAM "2GB/4GB" and eMMC "16GB/32GB" only [PP].
+- **Spec table:** BCM2712 quad-core Cortex-A76 @ 2.4 GHz; Wi-Fi 802.11 b/g/n/ac, BT 5.0, BLE; 2x HDMI 2.0; 2x USB 3.0; 2x USB 2.0; USB-C (reflashing and power); RJ45 Gigabit; M.2 Key-M for NVMe SSD "or other compatible M.2 module"; mini PCIe (USB 2.0 only); DC 10–30 V surge-protected; CR2032 holder for RTC; programmable and power buttons; 2 programmable LEDs; active buzzer; fanless metal enclosure; **147 × 94 × 35.7 mm** (enclosure only) [PP].
+- **Description:** low power (< 12 W); single USB-C for power and booting; DC barrel 10–30 V surge-protected; runs 24/7 in hot, dusty conditions (marketing) [PP].
+- **Packing — SmartHub Only:** SmartHub CM5 Wireless (chosen RAM/eMMC), dual-band antenna for CM5, Phillips screwdriver 85 × 3 mm, 4 silicone bumpers [PP]. **Essential Kit:** the same plus Raspberry Pi 27 W USB-C PD PSU (UK, black) and official Raspberry Pi HDMI cable 1 m [PP]. No CR2032 cell is listed.
+- **Resources:** User Manual (Google Doc), CAD, Getting Started tutorial, brochure [PP].
 
 ## Interfaces, terminals and pin mapping
 The [DS] gives no 40-pin header and no field terminals. Its only GPIO mapping is the onboard functions below.
@@ -174,7 +181,8 @@ The [DS] gives no 40-pin header and no field terminals. Its only GPIO mapping is
 | Wireless disable labels | [DS-fig] silkscreen: BT, WLAN | [WIKI]: "labeled WL for WiFi, BT" | [DS-fig] wins: WLAN |
 | Boot switch name | [DS] tables: "Boot/Run Mode Switch"; silkscreen BOOT/RUN | [DS-fig] callout and block diagram: "Boot/Debug" | Same switch. Use "Boot/Run switch" |
 | Manual revision | [DS] file here: Rev 1.3, Dec 2025 | : built from Rev 1.4, Feb 2026 (adds variant list) | Rev 1.4 is newer but not available here; Rev 1.3 facts used. Re-verify against Rev 1.4 |
-| Power consumption | [DS]: max 6 W under stress-ng CPU test, USB load excluded |  quoting [PP]: "< 12W" | Different statements; record both with source. Don't merge |
+| Variants |  manual Rev 1.4: 2/16, 4/32, 8/32, 16/64 GB | [PP] (read 2026-10-19): Wireless 2/16, 4/32, 16/64 GB on sale (no 8/32) | Sold: 2/16, 4/32, 16/64 [PP]; 8/32 is a design option not offered |
+| Power consumption | [DS]: max 6 W under stress-ng CPU test, USB load excluded | [PP] (read 2026-10-19): "low power (< 12W)" | Different statements; record both with source. Don't merge |
 | WiFi standards | [DS]: 802.11 b/g/n/ac, 2.4/5.0GHz | : 802.11b/g/n on 2.4GHz, 802.11a/n/ac on 5.0GHz | Compatible detail; [DS] wording is the spec |
 | M.2 use | [DS]: "for PCIe module", NVMe SSD |  quoting [PP]: "NVMe SSD or other compatible M.2 module" | [DS] wins; only NVMe is stated as supported |
 | Pre-installed OS | [DS]: not stated | [WIKI]: "ships with Raspberry Pi OS pre-installed";  tutorial: units "can have" it | Not a spec; *Needs verification* |
@@ -185,7 +193,6 @@ The [DS] gives no 40-pin header and no field terminals. Its only GPIO mapping is
 - Per-variant product codes / SKUs (only `IRIV-SH5` is stated) — Cytron product team.
 - Manual Rev 1.4 (Feb 2026) contents vs Rev 1.3 — get the file and re-check this page.
 - Enclosure width/height: 94 vs 98 mm, 35.7 vs 35 mm — design team.
-- Whether the 8GB/32GB variant is sold; current price per variant (only [3P] price seen: RobotShop USD 207.25 for 4GB/32GB) — product page.
 - GPIO6 polarity for mini PCIe power (wiki: HIGH = on); user button active level (wiki: LOW when pressed).
 - Whether DC power auto-starts the unit; soft vs forced shutdown on double vs long press.
 - Whether DC jack and USB-C may be connected at the same time.
@@ -194,6 +201,7 @@ The [DS] gives no 40-pin header and no field terminals. Its only GPIO mapping is
 - CM5 Lite (no eMMC) and non-wireless CM5 support.
 - Whether the Boot switch position disconnects the USB 2.0 ports / mini PCIe from the CM5 (block diagram routes them through the same USB switch).
 - Node-RED, Cytron libraries or example code for this product — none found.
+- Spec table lists RAM 2GB/4GB and eMMC 16GB/32GB while a 16GB/64GB variant is on sale — page table not updated?
 
 ## Sources
 - [PP] Product page (not read this pass): https://my.cytron.io/p-iriv-smarthub-cm5 (also linked as https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5)

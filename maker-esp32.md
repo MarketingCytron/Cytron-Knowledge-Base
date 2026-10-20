@@ -5,7 +5,8 @@
 | Product code | `MAKER-ESP32` (tuck box `BOX-MAKER-ESP32`) |
 | Family | Maker ESP32 family (ESP32 ecosystem) — flagship |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the datasheet (700 mA 3V3, 14 GPIO LEDs, 40 mA per pin, 58.0 × 28.4 mm); bundle options and Robo ESP32 compatibility confirmed |
 | Primary source | Maker ESP32 Datasheet **Rev 1.1** (Sept 2026): (Cytron document — link not public) |
 
 Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -33,6 +34,11 @@ An ESP32 development board on the ESP32-WROOM-32E-N8 module, in the NodeMCU ESP3
 | Buttons | BOOT, EN (reset), USER (GPIO4) | [DS] |
 | Indicator LEDs | 3V3 power LED, RX/TX LEDs, 14 GPIO LEDs | [DS] |
 | In the box | Board + Getting Started card with QR code to the tutorial | [PP launch page] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Spec block:** ESP32-WROOM-32E; dual-core LX6 up to 240 MHz; Wi-Fi 802.11 b/g/n 2.4 GHz + Bluetooth 4.2 BLE; 8 MB flash; 520 KB SRAM; input 4.6–5.5 V (USB-C / VIN); 3.3 V regulator 700 mA max; 3.3 V logic; 40 mA max per I/O pin; GPIO LEDs on 14 pins (2, 12, 13, 16, 17, 18, 19, 21, 22, 23, 25, 27, 32, 33); Maker Port (JST-SH, I2C); user button GPIO4; piezo GPIO26 with mute switch; BOOT and RESET buttons; **58.0 × 28.4 mm** [PP].
+- **Compatibility:** "fully compatible with expansion boards like the Robo ESP32 and the NodeMCU ESP32 Expansion Board" [PP].
+- **Options and packing:** Maker ESP32 + Robo ESP32 (Maker ESP32, Robo ESP32, Phillips screwdriver, 4 rubber feet, 4 Grove-to-female cables); Maker ESP32 + Expansion Board; Maker ESP32 only; NodeMCU ESP32 only [PP].
+- **Resources:** datasheet (Google Doc), Getting Started tutorial, Maker ESP32 Resource Hub, GitHub [PP].
 
 ## Onboard peripherals and pins
 | Function | GPIO / pin | Notes | Src |

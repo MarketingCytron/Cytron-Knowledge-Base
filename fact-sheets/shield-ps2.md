@@ -31,7 +31,7 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - Protocol: Arduino sends one command byte (decimal); 0–15 = digital buttons (reply 0 = pressed, 1 = not pressed); 16–19 = joystick X/Y axes (0–255, 128 neutral); 20–27 = joystick up/down/left/right values (0–100); 28 = connection status (1 = detected); 29 + value = motor 1 on/off; 30 + value = motor 2 speed 0–255; 31 = all buttons and joysticks in 6 bytes
 - Packing list: 1 x Shield-PS2, 3 x mini jumper
 - Warranty: 12 months
-- Dimensions: [NOT STATED]
+- Dimensions: 68 mm × 53 mm (product page)
 - Onboard interface IC: [NOT STATED]
 
 ## Interfaces and compatibility
@@ -65,7 +65,7 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - "Reading Joy-stick and button's state of PS2 controller will be as easy as reading UART data"
 
 ## Price band
-- RM65.10 (Cytron product page, read 2026-10-16)
+RM65.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-ps2-shield

@@ -68,10 +68,10 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 5â
 - Solid-state components "result in faster response time and eliminate the wear and tear of the mechanical relay"
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $22.33; 20 or more $21.15; 50 or more $19.98 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM108.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
+https://my.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
 
 ## Datasheet
 https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit

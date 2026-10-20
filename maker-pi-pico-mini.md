@@ -2,10 +2,11 @@
 
 | | |
 |---|---|
-| Product code | `MAKER-PI-PICO-MINI` (Pico / Pico W pre-mounted) and `MAKER-PI-PICO-MINI-NB` (no Pico, with Pi Pico socket) [DS cover]. Product page image paths also show a with-Pico-W variant [PP]; its separate order code is not stated. |
+| Product code | `MAKER-PI-PICO-MINI` (Pico pre-soldered), `MAKER-PI-PICO-MINI-W` (Pico W pre-soldered), `MAKER-PI-PICO-MINI-NB` (no Pico, pin headers) [PP][DS cover] |
 | Family | RP2040 / RP2350 boards and Raspberry Pi boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. The three variant codes (incl. MAKER-PI-PICO-MINI-W), languages and packing lists are now Cytron-stated |
 | Primary source | "MAKER-PI-PICO-MINI — Simplifying Projects with Raspberry Pi Pico / Pico W" Datasheet (covers MAKER-PI-PICO-MINI and MAKER-PI-PICO-MINI-NB), Rev 1.0, June 2022 (public Google Doc linked from the product page; Drive last modified 2022-10-20) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -35,6 +36,11 @@ Datasheet Table 3 is titled "MAKER-PI-PICO-MINI **Absolute Maximum Ratings**" �
 | Battery charger IC / protection IC | MCP73831T-2ACI/OT / CT2105 | [DS-schematic] |
 
 Not stated in any source read: charge current, 3V3 current budget for the Maker Ports, mounting holes, weight, battery connector part/pitch.
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Variants:** `MAKER-PI-PICO-MINI` (pre-soldered Raspberry Pi Pico, CircuitPython preloaded); `MAKER-PI-PICO-MINI-W` (pre-soldered Pico W, CircuitPython preloaded); `MAKER-PI-PICO-MINI-NB` (no Pico; comes with pin headers) [PP].
+- **Features list:** Pico / Pico W; 1-cell LiPo connector with overcharge/over-discharge protection, USB-charged; 6 GPIO status LEDs; passive piezo buzzer; reset button; user button; 1 RGB LED; 3 Maker Ports (I2C, UART, analog, digital; Qwiic / STEMMA QT / Grove via cable); Arduino IDE, CircuitPython, MicroPython; 23.12 × 53.85 mm [PP].
+- **Packing:** MINI — board with Pico + 3x Grove-to-JST-SH cable; MINI-NB — board without Pico, with pin headers, + 3x Grove-to-JST-SH cable [PP]. (W packing not listed separately.)
+- **Resources:** 3D CAD, datasheet, schematic, pinout diagram, Raspberry Pi Pico documents and SDKs [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | GPIO / pin | Notes | Src |
@@ -113,13 +119,11 @@ No conflicting numeric values were found between [DS], [DS-schematic] and [PP] f
 
 ## Needs verification
 - **Pico 2 / Pico 2 W (RP2350) compatibility** — not stated by Cytron; needs [DT].
-- **Order code of the with-Pico-W variant** — product-page image paths show it but no code was given.
 - **Charge current**: schematic R_PROG = 2K on MCP73831 → 500 mA by the [VEN] formula (1000/R_PROG); not stated by Cytron.
 - **Battery connector type and pitch** — not stated in any Cytron source; only "+" / "−" silkscreen marks are visible [DS Figure 4].
 - Digital output high level is 2.6 V min on this board [DS] (the Maker Pi Pico datasheet says 2.62 V — different product; do not copy across).
 - 3V3 current budget for Maker Ports.
 - Whether the -NB socket accepts both header-soldered Pico and Pico W only, or also castellated mounting.
-- Supported languages / Cytron example code (product page text beyond title/stock was not provided).
 - [3P] Pimoroni, The Pi Hut, RobotShop and CNX Software list this board; not used for any spec.
 
 ## Sources

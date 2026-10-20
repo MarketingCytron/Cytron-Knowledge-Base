@@ -35,6 +35,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - Dimensions: [NOT STATED] (drawing only)
 - Protections (reverse polarity, over-current, thermal, battery): [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Size: 95.2 × 57.2 mm; Ø4.8 mm holes, 72 × 48 mm pattern (product page image)
+- Power: micro USB, 18650 or external Vin 3.6–6 V; USB charging and Li-ion protection circuits (Cytron comparison image)
+- Motors: 1 A continuous, 1.5 A peak; total servo current 3 A; total 5 V output 300 mA (Cytron comparison image)
+- Packing: board, screwdriver, 3 Grove-to-JST-SH cables, 4 bumpers; options add micro:bit V2 kit and/or a 3.7 V 2200 mAh 18650 (product page)
 
 ## Interfaces and compatibility
 - micro:bit V1 and V2 (MakeCode extension README)
@@ -75,10 +79,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - "students can build projects with mechanical movements right away" (MakeCode extension README)
 
 ## Price band
-[NOT STATED]
+RM125.00–RM241.80 across 4 options (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-motionbit
+https://my.cytron.io/p-motionbit-board-and-kits
 
 ## Datasheet
 https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit

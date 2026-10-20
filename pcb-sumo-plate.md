@@ -5,7 +5,8 @@
 | Product code | `V-PCB-SUMO-PLATE` [PP] (options 15cm / 10cm; per-option codes not stated) |
 | Family | Sumo robot kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB (training use only; 15 cm for 1 kg robots, 10 cm for 500 g; sizes and weights) |
 | Primary source | **Cytron product page** (read by the coordinator 2026-10-19) [PP] — https://my.cytron.io/p-v-pcb-sumo-plate. The page lists no documents; no datasheet exists. |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -31,6 +32,8 @@ Positioning (marketing, not spec): training/educational blade substitute [PP].
 | Packing list | 1 × plate | [PP] |
 | Warranty | 12 months | [PP] |
 | Price | RM5.00–RM8.00 across the two sizes (Cytron product page, read 2026-10-19) | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: training and education blade substitute, "not intended for official competitions"; 15 cm plate for 1 kg robots (15 × 2.3 × 0.2 cm, 10.6 g); 10 cm plate for 500 g robots (10 × 1.8 × 0.1 cm, 3.5 g); lightweight PCB material; packing 1 plate of the chosen size [PP]. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 - Mechanical part only — no electrical interface [PP].

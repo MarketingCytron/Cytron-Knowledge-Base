@@ -4,7 +4,7 @@
 |---|---|
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
 | Primary source | "iMD16 Datasheet", **Rev 1.0, April 2026** (Google Doc last modified 2026-10-05): (Cytron document — link not public) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -43,6 +43,13 @@ Other facts:
 | Mounting | Two slotted mounting holes marked **M4**, slot centres **93.00 mm** apart, slot length dimension 24.00 mm | [DS] |
 | Operating temperature | Not stated (see *Needs verification* for a lab test result) | [DS] |
 | Unit weight | Not stated | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Spec list:** 7–30 V DC; 16 A continuous; 30 A peak (< 10 s); logic low 0–0.5 V, high 3–30 V (PWM/DIR); internal PWM 9–11 kHz; external PWM DC–20 kHz [PP].
+- **Features:** metal enclosure that doubles as a heatsink (internal thermal pad); dual control — built-in potentiometer and direction switch interface, or PWM/DIR from a microcontroller/PLC; "accepts wide logic levels (up to 30V)" for 24 V PLC outputs; brake when PWM is low; status LEDs for power and motor operation; "panel-mount screw terminals" for power, motor and control signals [PP].
+- **SMPS note (page):** "If an industrial switching power supply is used, please connect it parallelly with the same voltage battery" so the battery absorbs regenerative power [PP].
+- **Description:** pre-wired speed potentiometer and 3-position rocker switch (Forward–OFF–Reverse) with connectors; "Use JST-PH connectors" in one paragraph, and "All critical connections are extended to panel-mount screw terminals … External control (PWM, DIR, GND), Direction switch and potentiometer" in another [PP].
+- **Packing list:** 1x iMD16, 1x 10 kΩ potentiometer with connector, 1x 3-way rocker switch with connector, 1x JST PH connector for signal (PWM/DIR) control, 1x mini Phillips screwdriver, 1x Quick Start Guide card [PP].
+- **Resources:** Getting Started Guide for iMD16, "Conveyor Belt Control without Code using iMD16" (Cytron tutorials), datasheet (Google Drive), 3D CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 Datasheet Table 1 / Figure 1 [DS]:
@@ -107,6 +114,8 @@ PWM/DIR truth table (Table 2) [DS]:
 |---|---|---|---|
 | Direction Switch description | [DS] (2026-10-05): "3-pin JST PH connector for a 3-way rocker switch for motor direction control (Forward, Stop, and Reverse)" | [DS-old] (2026-06-04): "3-pin JST PH connector for a 3-way switch. Selects motor rotation direction" | [DS] newer text used. Both labelled Rev 1.0 April 2026; revision number was not bumped |
 | SMPS / back-EMF caution | [DS] (2026-10-05): caution + recommendation present in section 2 | [DS-old] (2026-06-04): caution absent | [DS] newer text used |
+| Control-signal connectors | [DS]: pot, switch and PWM/DIR are 3-pin JST PH connectors; [PP] packing list ships a JST PH connector for PWM/DIR | [PP] live page (read 2026-10-19): "All critical connections are extended to panel-mount screw terminals" incl. PWM/DIR/GND, switch and pot | [DS] wins: JST PH for control, screw terminals for power and motor only. Ask Cytron to correct the page |
+| SMPS mitigation | [DS]: battery where possible; else large electrolytic bulk capacitors or external TVS/clamping diodes | [PP] live page: "connect it parallelly with the same voltage battery" | [DS] wins (fuller guidance); the page advice is one of the options |
 | Overall height | [DS] Figure 4: 16.60 and 5.00 height dimensions, no overall height | [3P] Switch Science: 102.0 × 52.2 × 24.0 mm (max incl. flange) | [DS] values only; 24.0 mm H goes to *Needs verification* |
 
 ## Needs verification
@@ -119,8 +128,9 @@ PWM/DIR truth table (Table 2) [DS]:
 - Which motor status LED (MA/MB) lights in which direction, and whether they show speed.
 - PLC sinking (NPN) output compatibility; minimum PWM pulse width; input impedance.
 - Whether CytronMotorDriver's PWM_DIR example is officially supported for iMD16 [GH].
-- The Quick Start Guide card text and the live product page (not read).
 - Unit weight.
+- The Quick Start Guide card text (not online).
+- Read the two Cytron iMD16 tutorials (getting started; conveyor belt without code) for wiring of the control connectors.
 
 ## Sources
 - [DS] iMD16 Datasheet, Rev 1.0 April 2026, Google Doc modified 2026-10-05 (PDF export read incl. Figures 1–4): (Cytron document — link not public)

@@ -64,14 +64,14 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Motor direction depends on wiring
 - Battery vs switching power supply guidance: [NOT STATED] in the user's manual
 - Terminal socket colours differ between user's manual (Black for power, Green for Motor) and product page (Normally Black is for Motor, Green is for Power)
-- Listed as Out Of Stock on my.cytron.io (16 Oct 2026)
+- Back in stock on my.cytron.io (availability 73, 19 Oct 2026); three options: pre-soldered terminal blocks, loose terminal blocks, or pin headers for SUMO:BIT
 
 ## Positioning (kept apart from specs)
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay"
 - "Fully NMOS H-Bridge for better efficiency and no heat sink is required"
 
 ## Price band
-- my.cytron.io: 1 unit RM55.60; 5 or more RM52.80; 20 or more RM50.00; 50 or more RM47.20 (read 16 Oct 2026)
+RM64.26 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-13amp-6v-30v-dc-motor-driver

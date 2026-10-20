@@ -43,6 +43,8 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Peripherals: 2x I2C, 2x SPI, 2x UART, 16 PWM (8 slices x 2 outputs)
 - Onboard ICs (schematic): MCP73831T-2ACI/OT charger, MT3608 5 V boost, AP1117E33L 3.3 V regulator, 12 MHz crystal
 - Packing list: 1x Maker Uno RP2040, 1x Silicone Rubber Feet (pack of 4), 4x Grove to female header cable
+- 2 MB flash, 2 × WS2812 RGB LEDs, 16 status LEDs (product page)
+- Variants: Edu Bundle with Bahasa Malaysia teacher's guide (softcopy) and component set, or board only with 4 Grove-to-female cables and rubber feet (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO form factor; use 3.3 V-compatible UNO shields only
@@ -90,7 +92,7 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Follows the move from 5V to 3.3V microcontrollers
 
 ## Price band
-USD 14.90 (Cytron tutorial page hardware list)
+RM62.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-uno-rp2040

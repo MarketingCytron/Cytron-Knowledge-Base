@@ -27,6 +27,8 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Boot switch: RUN or BOOT (BOOT loads the OS image to the CM4 eMMC via USB-C)
 - Status LEDs: M.2, ACT, PWR, 5V
 - Dimensions: 110 mm × 110 mm; 4 mounting holes Ø 3.2 mm at 104 mm × 104 mm
+- Bundle "CM4NW216" = Raspberry Pi CM4 2GB RAM, 16GB eMMC, no wireless, plus USB-C power adapter, USB-C cable and HDMI cable (product page)
+- DSI and CSI cannot be used while the RTC is in use (product page)
 
 ## Interfaces and compatibility
 - Compute Module: Raspberry Pi CM4 (Lite or with eMMC) per datasheet Rev 1.2; product page title says "for Raspberry Pi CM4/CM5"
@@ -54,17 +56,17 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Make sure the CM4 orientation is correct in the socket
 - ESD may disturb normal function; power cycle to recover
 - No fan header, USB 3.0 or PoE listed in the datasheet
-- CM5 support: named in the product page title only; not described in the datasheet
+- CM5 support: the product page states "The CM4 Maker Board is compatible with the newly launched Raspberry Pi CM5"; the datasheet (CM4 only) gives no CM5 setup steps
 - Operating temperature and supply current rating: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 - Datasheet title: "CM4 Maker Board — Maker's Carrier Board for Raspberry Pi CM4"
 - Product page title: "CM4 Maker Board: Maker's Carrier Board for Raspberry Pi CM4/CM5"
 - Product page bundles: "CM4 Maker board ONLY" and "CM4 Maker Board + CM4NW216 + Accessories"
-- Out of stock on my.cytron.io (2026-10-16)
+- Back in stock on my.cytron.io (availability 59, read 2026-10-19)
 
 ## Price band
-[NOT STATED]
+RM224.00–RM651.60 across options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cm4-maker-board-and-kits

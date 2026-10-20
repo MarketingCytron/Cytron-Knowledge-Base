@@ -4,7 +4,8 @@
 |---|---|
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read plus the dimension image. Logic-level behaviour, power options, protections, motor ratings, size and package now Cytron-stated |
 | Primary source | Robo Uno Shield Datasheet — **Rev 1.0, February 2025** (public Google Doc "SHIELD-ROBO-UNO Datasheet"): https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -49,6 +50,13 @@ Datasheet Table 2 is titled **"Robo Uno Shield Absolute Maximum Ratings"** [DS].
 | Charging current, quiescent current | **Not stated** | [DS] |
 
 Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input voltage." "It's not recommended to connect both LiPo and VIN at the same time. Although it's perfectly safe to do so."
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Specifications (page):** automatic power selection — VIN terminal block 3.6–6 V, VBAT LiPo port (1-cell LiPo/Li-ion 3.7 V), VUSB micro USB 5 V; **"VCC voltage automatically follow the microcontroller reset pin voltage"**; built-in 1-cell charger (over-charge and over-discharge protection); description adds over-current, over-voltage and short-circuit protection; power switch with status LED [PP].
+- **Motors:** dual-channel H-bridge; quick-test buttons and LEDs; motor voltage 2.5–6 VDC; 1.0 A continuous, 1.5 A peak (< 5 s); up to 2 DC motors + 4 servos [PP].
+- Grove ports and a Maker Port (Qwiic / STEMMA QT compatible) [PP].
+- **Size:** 60.96 × 68.58 mm [PP: img dimension].
+- **Packing:** 1x Robo Uno Shield, 1x small Phillips screwdriver, 4x Grove to female header cable [PP].
+- Resources: datasheet (Google Doc), Getting Started tutorial, GitHub Demo_Code, 3D CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | Arduino pin(s) / terminal | Src |
@@ -141,12 +149,9 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 ## Needs verification
 - **Motor control scheme** — whether the shield takes PWM+DIR (D5/D4, D6/D7) through on-board logic or raw A/B inputs on D4–D7. If D4 = Input A and D5 = Input B literally, Cytron's `PWM_DIR` code would not give symmetric speed in reverse (derived from [DS] table + [GH] library) — ask [DT].
 - Grove 3 pin assignment (A1, A3 as printed) — confirm against the board silkscreen.
-- **Logic/VCC level on 3.3 V boards** —  idea doc: "Compatible with controller boards of 3.3V and 5V logic. Utilize the Reset pin pull-up voltage"; [3P] Switch Science/Pi Hut: "VCC voltage automatically follows the microcontroller reset pin voltage". DS digital output high is stated as 4.2–5 V only.
 - Whether the shield powers the Arduino board, and whether "USB" in Table 2 means only the shield's micro-USB.
-- Dimensions — [3P] RobotShop: 68.58 x 60.96 mm; DS Figure 4 not readable as text.
 - mBlock extension availability and name.
 - Whether fresh 4xAA alkaline cells stay within the 6 V absolute maximum (DS gives 4xAA as an example).
-- Current sale status (The Pi Hut "Discontinued") and my.cytron.io product page URL.
 
 ## Sources
 - [DS] Robo Uno Shield Datasheet, Rev 1.0, February 2025 — https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit (public; PDF mirror: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-428/pdf/cytron-robo-uno-shield-for-arduino-all-in-1-robotics-shield-datasheet.pdf)

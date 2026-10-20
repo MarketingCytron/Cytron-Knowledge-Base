@@ -5,7 +5,8 @@
 | Product code | `SHIELD-PS2` [PP]; user manual header "Shield-PS2" / "Cytron PS2 Shield" [UM] |
 | Family | Arduino shields |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Page agrees with the manual and library (A1 reset, UART, wired/wireless controllers) and adds the board size |
 | Primary source | **No datasheet exists.** Primary = "Shield-PS2 — Cytron PS2 Shield — User's Manual", **V1.0, September 2013** (public Google Doc linked from the product page) [UM] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -36,8 +37,13 @@ Section 3.0 "Product Specification and Limitations" [UM]:
 | Headers | Stackable analog, power and digital I/O headers (JP4, JP7) | [UM] |
 | Packing list | 1 x Shield-PS2, 3 x mini jumper | [UM] |
 | Warranty | 12 months | [UM][PP] |
-| Dimensions | **Not stated in text** (drawing only) | [UM] |
+| Dimensions | 68 mm × 53 mm | [PP] |
 | Onboard MCU / PS2 interface chip | **Not stated** | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** works with Arduino UNO, Duemilanove, Mega, Leonardo and pin-compatible boards; powered from the Arduino; wired or wireless PS2 controller; stackable headers; hardware or software UART; shield reset on **A1** (pull low to reset); PS2 controller not included [PP].
+- **Features list:** 5 V powered, low current; simple UART protocol; controllable vibration motor; controller automatically in analog mode; status LED; baud-rate jumper **9600 / 57600 / 115200**; jumpers to choose the TX and RX pins; **dimension 68 mm × 53 mm** [PP].
+- No packing-list tab on the page [PP].
+- **Resources:** User's Manual V1.0 Sept 2013 (Google Doc), Arduino library and wiki branch (GitHub), Fritzing files; tutorials: PS2 shield + G15 wheel, Arduino + PS2 shield + MDDS10 robot, Arduino Edubot, "SoftwareSerial Conflicting with Servo Interrupt" [PP].
 
 ## Interfaces, terminals and pin mapping
 | Function | Arduino pin(s) / terminal | Src |
@@ -126,9 +132,9 @@ Byte 1 (group 1) bits 7→0: Left, Down, Right, Up, Start, R-joystick centre, L-
 | Library API names | [GH] header: `readButton`, `readAllButton`, `vibrate`, `reset` | [GH] keywords.txt: `getValue`, `getAll`, `p_select`… | Header/code wins; keywords.txt is stale |
 | Warranty | [UM] 12 months | [PP] 12 months | Agree |
 | A different "SmartElex PS2 Shield" manual (robu.in) lists RX D0/D9/D11, TX D1/D8/D10 and a 74880 default baud | [3P] | [UM] D0/D2/D8/D10, D1/D3/D9/D11, 4800–115200 | Different (derivative) product — never use its pin/baud table for SHIELD-PS2 |
+| Baud-rate options | [UM]: jumper 4800 / 9600 / 57600 / 115200 | [PP] features (read 2026-10-19): 9600, 57600, 115200 | [UM] wins (4 options); the page omits 4800. Use 9600 in examples (library default) |
 
 ## Needs verification
-- Board dimensions (UM "Dimensions" drawing is an image; no numbers in text).
 - The onboard microcontroller / PS2-interface IC and whether the shield's own firmware can be updated.
 - Whether the shield works with 3.3 V-logic hosts (VIOH min 3.5 V suggests not; not stated).
 - Content of the Cytron tutorial "SoftwareSerial Conflicting with Servo Interrupt" (linked on the product page [PP]; not read) — what the conflict is and the recommended workaround.

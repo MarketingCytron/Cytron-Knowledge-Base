@@ -46,6 +46,9 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Failsafe motor behaviour on RC signal loss: [NOT STATED]
 - Calibration procedure for the transmitter: [NOT STATED]
 - Packing list: [NOT STATED]
+- Packing: driver, 2 × 10 cm 3-way extension wires, 4 × 7 mm nylon spacers, 2 mm screwdriver (product page)
+- Battery: 2S to 6S LiPo within 7–30 V (product page)
+- Update to the latest firmware before use — Cytron firmware update guide (product page)
 
 ## Interfaces and compatibility
 - Power input terminal: V+, V-
@@ -87,7 +90,7 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Compact footprint for space-limited competition robots
 
 ## Price band
-[NOT STATED]
+RM126.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-5-amp-7v-30v-dc-motor-driver-for-r-c-2-channels

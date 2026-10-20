@@ -30,6 +30,8 @@ An industrial I/O HAT+ for the Raspberry Pi 5 that adds RS485, RS232, isolated d
 - Operating temperature: -20 to 60 ℃
 - Relative humidity: 10 – 80 % (non-condensing)
 - Dimensions: [NOT STATED]
+- Packing: HAT, 20-pin pluggable terminal block, 3 M2.5 × 21 mm PCB stands, pinout sticker (product page)
+- Designed for the Argon40 Industria Case; LetsTrust TPM supported (product page)
 
 ## Interfaces and compatibility
 - Connects to the Raspberry Pi 5 40-pin GPIO header
@@ -69,7 +71,7 @@ An industrial I/O HAT+ for the Raspberry Pi 5 that adds RS485, RS232, isolated d
 - Cytron tagline: "Simplifying Digital Making"
 
 ## Price band
-[NOT STATED]
+RM138.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-industry-hat-plus-for-raspberry-pi-5

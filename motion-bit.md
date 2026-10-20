@@ -2,10 +2,11 @@
 
 | | |
 |---|---|
-| Product code | `MOTION-BIT` (Cytron datasheet Google Doc file title "MOTION-BIT Datasheet" [DS]; RobotShop "Manufacturer #" MOTION-BIT [3P]). Switch Science lists "CYTRON-MOTION-BIT" [3P]. The Cytron product page was **not read**, so the my.cytron.io SKU is not confirmed |
+| Product code | `MOTION-BIT` (Cytron datasheet Google Doc file title "MOTION-BIT Datasheet" [DS]; RobotShop "Manufacturer #" MOTION-BIT [3P]). my.cytron.io page: p-motionbit-board-and-kits (series page, 4 options; per-option codes not shown) [PP] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read plus Cytron images (board layout, key features, dimension, and the MOTION:BIT vs MOTION:BIT Pro comparison table). Package, size, power sources and several [3P] counts are now Cytron-stated |
 | Primary source | MOTION:BIT — "Simplifying Motion Control with micro:bit" — Datasheet **Rev 1.0, February 2023** (public Google Doc): https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -50,6 +51,13 @@ Datasheet Table 2 is titled **"MOTION:BIT Absolute Maximum Ratings"** — these 
 | Dimensions | Figure 2 drawing only, no values in the text | [DS] |
 | Operating temperature | **Not stated** | [DS] |
 | Protections (reverse polarity, over-current, thermal, battery) | **Not stated** | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Co-developed by makerspace.UTHM and Cytron, with ISOBOT and Elvira Systems [PP].
+- **Features list:** 11 GPIO status LEDs; 11 GPIO breakout; 3 general Maker Ports (JST-SH 4-way) + 1 I2C Maker Port (Qwiic/STEMMA QT compatible [PP: img]); I2C breakout; vertical micro:bit socket; 4 motor terminals; 8 motor test buttons; 8 motor status LEDs; 8 servo ports (colour-coded); 2 RGB LEDs + external RGB LED header; 6x 5V supply pins; 18650 holder; on/off switch + external on/off switch header; micro USB; power input; power/charge LED [PP].
+- **Comparison image (Cytron, MOTION:BIT column):** power from micro USB, 18650 Li-ion or external Vin; external Vin 3.6–6 V; max DC motor current 1 A continuous, 1.5 A peak; USB Li-ion charging circuit: yes; Li-ion battery protection circuit: yes; slide switch with MOSFET shock-proof circuit; total 5 V output 300 mA; servo power directly from Vin only (no selector); total servo output current 3 A; 3 Maker Ports (JST-SH 1 mm) + 11 GVS headers; I2C: 1 Maker Port + 1 4-pin header; official MakeCode extension MOTION:BIT [PP: img].
+- **Key features image:** onboard 18650 rechargeable via USB; external power e.g. 4×AA; servos and DC motors powered directly from the input source [PP: img].
+- **Size:** 95.2 × 57.2 mm; Ø4.8 mm holes on a 72.0 × 48.0 mm pattern [PP: img dimension].
+- **Options & packing:** MOTION:BIT ONLY = 1x MOTION:BIT, 1x tiny Phillips screwdriver, 3x Grove to JST-SH (Qwiic) cable, 4x silicone bumper; + micro:bit Junior Kit (micro:bit V2 + USB micro B cable); + **3.7 V 2200 mAh 18650** with button top; or both [PP].
 
 ## Interfaces, terminals and pin mapping
 | micro:bit pin | Used for | Src |
@@ -128,18 +136,13 @@ Motor and servo channels map to PCA9685 outputs, not to micro:bit pins [GH]:
 | Python support | [DS]/[GH] not stated | [3P] RobotShop/Switch Science: JavaScript or Python mode in MakeCode | Needs verification |
 
 ## Needs verification
-- my.cytron.io product code, price, status and wording (product page not read).
 - Maker Ports pin pairing — datasheet text "P0-P9, P1-P2, P2-P12" lists P2 twice; confirm which pins each of the 3 Maker Ports carries.
 - Whether the 1 A / 1.5 A motor rating is per channel or total.
 - Motor driver IC part number and whether `brake motor` (both outputs 0) brakes or coasts.
-- [3P] Li-ion USB charging circuit and Li-ion battery protection circuit present; slide switch "with MOSFET shock prevention circuit" (Switch Science comparison table).
-- [3P] Servo output current 3 A.
-- [3P] Counts: 8 motor test buttons, 8 motor status LEDs, 11 GPIO status LEDs, 3 general Maker Ports + 1 I2C Maker Port, 6x 5V supply pins, 4 mounting holes for building blocks.
-- [3P] Board size 95.2 x 57.2 mm (RobotShop); datasheet Figure 2 values not readable as text.
-- [3P] Package: 1x MOTION:BIT, 1x tiny Phillips screwdriver, 3x Grove to JST-SH (Qwiic) cable, 4x silicone bumper (The Pi Hut, Switch Science). Battery bundle adds "1x 18650 3.7V 2000mAh Li-Ion Battery" (RobotShop).
 - [3P] MakeCode Python/JavaScript mode; no MicroPython (python.microbit.org) support confirmed.
-- [3P] Prices: The Pi Hut £33.20, RobotShop USD 31.25 (2026-10-16) — not Cytron prices.
 - Battery charge current, charging while running, and behaviour with both battery and external input connected.
+- Whether the 1 A / 1.5 A motor rating is per channel or total (comparison image does not say).
+- Maker Port pin pairing — still only the datasheet text ("P0-P9, P1-P2, P2-P12").
 
 ## Sources
 - [DS] MOTION:BIT Datasheet Rev 1.0, February 2023 — https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit (public). PDF mirror, same revision: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-424/pdf/motionbit-simplifying-motion-control-microbit-jr-kit-18650-li-ion-battery-datasheet.pdf

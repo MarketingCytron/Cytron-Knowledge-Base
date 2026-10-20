@@ -27,6 +27,8 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER SOIL MOISTURE SENSOR Datasheet, Rev 1.0, January 2022
 - Warranty: 12 months (product page)
+- No on-board voltage regulator; DIS HIGH disables the sensor (product page)
+- Packing: sensor and 50 cm Grove-to-Grove cable (product page)
 
 ## Interfaces and compatibility
 - Grove port, 4 pins: GND (ground), VCC (power input), DIS (disable pin, HIGH disables), OUT (analog output)
@@ -54,7 +56,7 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Cytron "Maker" series sensor: a capacitive (not resistive) soil moisture sensor with Grove connection and LED moisture indicators
 
 ## Price band
-RM20.58 (Cytron product page, read 2026-10-16)
+RM20.58, out of stock (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-soil-moisture-sensor

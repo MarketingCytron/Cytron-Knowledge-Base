@@ -64,10 +64,10 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Overcurrent protection "prevents the motor driver from damage when the motor stalls or an oversized motor is hooked up" (datasheet)
 
 ## Price band
-- www.cytron.io: $17.25; 10 or more $15.87; 50 or more $14.66 (read 16 Oct 2026; currency shown only as "$")
+RM97.44 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver
+https://my.cytron.io/p-20amp-6v-30v-dc-motor-driver
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf

@@ -5,7 +5,8 @@
 | Product code | UC00A [PP][UM]; current hardware revision Rev3.0 [UM] |
 | Family | USB and serial converters |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Rev3.0 date (June 2016), the 500 mA 3.3 V regulator, size and OS list are now Cytron-stated |
 | Primary source | "UC00A Rev3.0 Cytron USB to UART Converter User's Manual", V1.1, December 2018 (Cytron Technologies Sdn Bhd) — no separate Cytron datasheet exists; the user manual is the top Cytron source and is tagged [UM]. Older manuals: Rev2.0 UM V1.0 July 2012; Rev1.0 UM V1.0 Oct 2008 (tagged [UM-R2] / [UM-R1], lower precedence for the current product) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -45,6 +46,11 @@ The user manual has no numeric spec table; the rows below collect every stated f
 | Baud rate range, supply current, operating temperature, VCC output current (Rev3.0), header pitch, weight | Not stated | [UM] |
 
 Chip-vendor reference (context only, not a UC00A spec): FT232R datasheet v2.11 states 300 baud to 3 Mbaud at TTL level, USB 2.0 full speed, VCCIO 1.8–5.25 V, 3V3OUT up to 50 mA, royalty-free VCP and D2XX drivers for Windows/Mac/Linux, -40 to 85 °C, SSOP-28 [VEN]. The Rev3.0 schematic feeds the UART side from the Vsel switch output (+5V or +3V3 into VCCIO) [PP, schematic].
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- **Description:** "UC00A is Rev3.0 since June 2016"; Rev3.0 added a **3.3 V voltage regulator (max output current 500 mA)** and a slide switch for 5 V / 3.3 V logic and Vsel; USB micro-B; works with Windows XP, Vista, 7 (32/64-bit), 8, 10 as a virtual COM port [PP].
+- **Features list:** FTDI FT232RL; USB powered; 5 V from USB on Vsel; selectable 3.3 V / 5 V UART; CTS, RTS, DTR, DSR on side pads; 6-way header socket for Arduino-compatible boards (BBFuino, Pro Mini, Fio); **45.2 × 21.3 × 4.2 mm**; Rev3.0 changes: slide switch, micro-B instead of mini-B, 4-way connector removed, 3.3 V regulator 500 mA [PP].
+- **Packing list:** 1x UC00A [PP].
+- **Resources:** user's manuals Rev3.0/2.0/1.0, Rev3.0 schematic, FTDI driver, Windows 7/XP driver guides, tutorials (intro, UART, UC00A as GPIO, wireless UART, BBFuino, loopback test) [PP].
 
 ## Interfaces, terminals and pin mapping
 ### Board layout (Rev3.0, manual section 4.0) [UM]
@@ -146,14 +152,12 @@ The Arduino Pro Mini wiring table in the manual lists the same six pins in the o
 
 ## Needs verification
 - Baud rate range supported on UC00A Rev3.0 — not stated [UM]; FT232R vendor figure 300 baud–3 Mbaud [VEN] not confirmed by Cytron.
-- VCC pin output current at 5 V and at 3.3 V on Rev3.0 — not stated [UM]; Rev2.0's 250 mA / 50 mA may or may not carry over (the 3.3 V rail source on Rev3.0 is the FT232RL 3V3OUT per the schematic, which the vendor rates at 50 mA [VEN] — confirm with design team [DT]).
 - Whether the Rev3.0 warranty is 6 months or 12 months — [UM] vs [PP] conflict.
 - Physical left-to-right order and keying of the 6-way socket — figures did not extract; the table order and GRN/BLK marks are stated [UM].
 - Windows 11 / current macOS / Linux support — manual lists XP to Windows 10 only [UM].
 - Supply current, operating temperature, absolute maximum ratings for Rev3.0 — not stated [UM].
 - Which current Cytron boards it programs — only BBFuino named [UM]; confirm with design team before naming others.
-- Date the Rev3.0 hardware was released — schematic dated 3/14/2016, manual V1.1 December 2018; no release date stated.
-- Product page body text was not read by this agent (page read by the coordinator) [PP].
+- 5 V VCC current on Rev3.0 — the page says only "5V from USB port"; the 3.3 V regulator is rated 500 mA [PP].
 
 ## Sources
 - [UM] UC00A Rev3.0 Cytron USB to UART Converter User's Manual, V1.1, December 2018 — https://docs.google.com/document/d/1pFK7DSRuZB7SeP3aCmjYzWB0i7aT-C_W_D-x25WLops/view (Google Doc; figures did not extract)

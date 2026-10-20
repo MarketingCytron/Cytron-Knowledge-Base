@@ -52,7 +52,7 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - [NOT STATED]
 
 ## Price band
-RM52.50 (10+ RM47.25, 30+ RM42.00) (Cytron product page, read 2026-10-19)
+RM52.50 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-50a-current-sensor

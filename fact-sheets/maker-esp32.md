@@ -86,7 +86,7 @@ An ESP32 development board built around the ESP32-WROOM-32E-N8 module, in the No
 - Launch-page comparison vs NodeMCU ESP32: 8MB vs 4MB flash, USB Type-C vs Micro USB, 14 GPIO LEDs vs 1, plus RX/TX LEDs, passive buzzer, user button and Maker Port
 
 ## Price band
-[NOT STATED]
+RM40.95 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-esp32

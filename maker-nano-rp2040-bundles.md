@@ -5,10 +5,11 @@
 | Product code | `V-MN2040` [PP] |
 | Family | Robot parts and project bundles |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). The packing list for both variants is now read: the Blynk bundle includes the Grove WiFi 8266 and a Grove cable, and neither bundle lists a 10K resistor |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Tag notes: [UM-GS] = "Getting Started With Maker Nano RP2040"; [UM-BL] = "Getting Started With Maker Nano RP2040 And Blynk IoT". Both were read as Google Docs text; all figures (pinout, wiring diagrams, Blynk screenshots) are images and were not read. [PP] = product page as saved by the coordinator 2026-10-19 (the page's packing list did not extract). The Cytron tutorial "Getting Started With Maker Nano RP2040 & Blynk IoT" (Hussien Jawhar Sathik, 07 Feb 2023, 9-part series)  could not be fetched. **Kit rule:** the board is documented in `maker-nano-rp2040.md`; the Grove WiFi 8266 in `grove-wifi-8266.md`. This file holds bundle-level facts only.
+Tag notes: [UM-GS] = "Getting Started With Maker Nano RP2040"; [UM-BL] = "Getting Started With Maker Nano RP2040 And Blynk IoT". Both were read as Google Docs text; all figures (pinout, wiring diagrams, Blynk screenshots) are images and were not read. [PP] = live product page, read 2026-10-19 (packing lists for both variants read). The Cytron tutorial "Getting Started With Maker Nano RP2040 & Blynk IoT" (Hussien Jawhar Sathik, 07 Feb 2023, 9-part series)  could not be fetched. **Kit rule:** the board is documented in `maker-nano-rp2040.md`; the Grove WiFi 8266 in `grove-wifi-8266.md`. This file holds bundle-level facts only.
 
 ## What it is
 - Two beginner bundles built around the Cytron Maker Nano RP2040 board (see `maker-nano-rp2040.md`), each paired with a Getting Started document [PP]:
@@ -51,6 +52,12 @@ No bundle spec table exists. Board specs: see `maker-nano-rp2040.md`. The compon
 
 ### "List of Components Used" — Getting Started With Maker Nano RP2040 And Blynk IoT [UM-BL]
 Same items 1–7 and the propeller, motor, 2N2222, 10x 220R, LDR, 1N4007 and USB Micro B cable (the table is numbered 1–7 then 10–16, i.e. 14 rows). Differences from [UM-GS]: **no 10K resistor row**, and **the Grove WiFi 8266 is not in the table** even though every lesson uses it (see *Conflicts*).
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Packing — Getting Started Bundle:** 1x Maker Nano RP2040 (with 2 Grove to JST-SH cables), 1x breadboard 8.5 × 5.5 cm (400 holes), 1x 40-way 10 cm Dupont jumper wire, 1x finger-adjust preset 10K, 2x each 5 mm LED green / yellow / red, 1x DIY 4-blade 56 mm propeller (blue), 1x DC 2–6 V miniature motor with 20 cm wire, 1x 2N2222 transistor, 10x resistor 0.25 W 5% 220R, 1x LDR (small), 1x USB micro-B cable, 1x 1N4007 diode [PP].
+- **Packing — Getting Started With Blynk IoT:** the same list plus **1x Grove WiFi 8266 module** and **1x Grove cable** [PP].
+- **No 10K resistor** is listed in either variant; the only 10K part is the finger-adjust preset [PP].
+- **Lesson lists on the page:** Getting Started — Lessons 1–8 (LED Blink, Siren, Digital Input, Analog Input, LDR, Temperature Sensor, DC Motor, RGB LED) and Projects 1–4 (Knight Rider, Interactive Traffic Light, Temperature Alarm, Light Theremin); Blynk IoT — Lessons 1–8; the page's list differs from the doc (page: Lessons 5 and 6 both temperature sensor, 8 = RGB LED; doc: 6 = Neopixel Color, 8 = Going Mobile) — follow the doc [PP][UM-BL].
+- **Page note:** from April 2026 prices are subject to SST at checkout [PP].
 
 ## Interfaces, terminals and pin mapping
 Board pins used by the lesson code (board pin facts: `maker-nano-rp2040.md`).
@@ -109,8 +116,8 @@ Board pins used by the lesson code (board pin facts: `maker-nano-rp2040.md`).
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Grove WiFi 8266 in the Blynk bundle | [UM-BL] lessons all require it and the intro describes it | [UM-BL] "List of Components Used" omits it | It is required; list it as a bundle part only after the product page packing list is confirmed (*Needs verification*) |
-| 10K resistor | [UM-GS] row 15: 1x RS-025W-10K | [UM-BL] table has no 10K row | Treat as GS-kit content; confirm per variant |
+| Grove WiFi 8266 in the Blynk bundle | [UM-BL] lessons all require it; [PP] packing list (read 2026-10-19) includes 1x Grove WiFi 8266 module and 1x Grove cable | [UM-BL] "List of Components Used" omits it | Included in the Blynk bundle [PP]; the doc table is incomplete |
+| 10K resistor | [UM-GS] row 15: 1x RS-025W-10K | [UM-BL] table has no 10K row; [PP] packing lists (both variants) have no 10K resistor, only a 10K finger preset | Not in either bundle per [PP]; the [UM-GS] row is a components-used entry, not a packing item |
 | Lesson numbering in project objectives | [UM-GS] P2 cites "Lesson 4: Digital Input"; P3 cites "Lesson 3: Siren" and "Lesson 7: Temperature Sensor"; P4 cites "Lesson 6: Light Dependant Resistor" | [UM-GS] actual numbering: L2 Siren, L3 Digital Input, L5 LDR, L6 Temperature | Doc error; refer to lessons by title |
 | Lesson 3 theory text | [UM-GS] "we would like to see how to control the onboard piezo buzzer" | [UM-GS] L3 code/result: push button controls LED on pin 2 | Copy-paste error in the doc; lesson is Digital Input |
 | ESP-AT firmware version wording | [UM-BL] "ESP-AT firmware v2.20" | [GH] in `grove-wifi-8266.md`: V2.2.0 | Same release; use "V2.2.0" |
@@ -118,14 +125,13 @@ Board pins used by the lesson code (board pin facts: `maker-nano-rp2040.md`).
 | noTone pin | [UM-GS] P4: `noTone(8)` | [UM-GS] P4: `tone(22, …)` | Code error; buzzer is GP22 [DS] |
 
 ## Needs verification
-- **Exact packing list per variant** — the product page packing list did not extract; the [UM] component tables are "components used", not a packing list. Confirm whether the Blynk bundle contains the Grove WiFi 8266 and the Grove conversion cable, and whether the 10K resistor ships in either variant.
-- **Price per variant** (which of RM58.00 / RM88.52 is which) and warranty.
 - **Document versions/dates** — neither Google Doc prints a version or date; only Drive created/modified dates are known.
 - **5 V wiring for the Grove WiFi** — shown only in a figure; which Maker Port pin or header pin carries 5 V in that wiring is not in text.
 - **Maker Port numbering used for the Grove WiFi** — code comment "Maker port [0, 1]" and `Serial1`; the board datasheet gives Maker Port 0 = UART (see `maker-nano-rp2040.md` *Needs verification* on port pins).
 - **Button polarity** (active-high vs active-low) as used by the two docs — inconsistent in code.
 - **Chapter 3 Projects of [UM-BL]** — empty in the doc read; check whether a newer revision adds projects.
 - **Tutorial series body** (9 parts, Feb 2023) — not read.
+- Which variant is RM58.00 and which RM88.52 — the page shows the range only; the warranty line on the page is blank.
 
 ## Sources
 - [PP] https://my.cytron.io/p-maker-nano-rp2040-getting-started-kits — read by the coordinator 2026-10-19 (RM58.00–RM88.52; variants; stock 42; links)

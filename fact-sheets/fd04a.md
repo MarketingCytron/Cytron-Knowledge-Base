@@ -28,10 +28,12 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Power indicator LED and motor status indicator LEDs
 - 3 mm mounting holes for standard PCB stands
 - Over-current, thermal and under-voltage protection: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Dimensions: 10.67 cm × 5.21 cm (product page)
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defects only
 - In the box: 1 x FD04A Rev2.0 board, 1 x 14 way IDE cable connector
+- Packing: FD04A and a 14-way IDE cable (product page)
+- Rev2.0 since 10 April 2015 (product page)
 
 ## Interfaces and compatibility
 - Control pins through a 7 x 2 (14-way) IDE socket or through extra solder pads
@@ -58,7 +60,7 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - The manual describes FD04A Rev2.0 as "an enhanced version of FD04A Rev1.0"
 
 ## Price band
-[NOT STATED]
+RM180.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-1.5amp-7v-25v-dc-motor-driver-4-channels

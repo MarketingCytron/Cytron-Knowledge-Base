@@ -5,7 +5,8 @@
 | Product code | `MAKER-MSUMO` (shown as "Code: MAKER-MSUMO" on the product page [PP]; datasheet title [DS]; library README [GH]) |
 | Family | Cytron sumo robot controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-20 |
+| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB; the Arduino board to select is still not stated |
 | Primary source | MAKER-MSUMO Datasheet **Rev 1.0, November 2019** (Google Doc linked from the product page): https://docs.google.com/document/d/1HrApn-5ldC58r9UOs4APiLVk_vUcJKDNX2-tJEHuHKk/edit |
 
 **Authority rule:** Datasheet [DS] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > chip vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -40,6 +41,8 @@ Positioning (marketing, not spec): page title "Maker Mini Sumo Controller: Simpl
 | In the box | 1 × Maker Mini Sumo Controller (no USB cable listed) | [PP] |
 | Warranty | "Generally, it has a 12-month warranty" with exclusions (see Power) | [PP] |
 | Resources | Datasheet, 3D CAD (Google Drive folder), Arduino Library and Examples (GitHub) | [PP] |
+### Product page facts (my.cytron.io, read 20 Oct 2026)
+- Page re-read: warranty note (12 months generally; not covered: modifications, motors over 3 A, competition use, misuse); ATmega328P, "100% compatible with Arduino Uno/Nano"; motor driver 3 A continuous, 6 A peak, 7–18 V, "discrete MOSFETs H-Bridge design"; reverse polarity protection on Vin; shock-proof on/off switch with MOSFET latching; battery voltage readable in code; switching 5 V regulator; test buttons and motor LEDs; 5 opponent inputs, 2 edge inputs, 2 GPIO, start-module input with start button, servo output, programmable LED, potentiometer, 3-way DIP switch, piezo buzzer; RC mode via the GPIO ports; packing 1x controller; resources datasheet, 3D CAD, CytronMakerSumo library [PP].
 
 ## Onboard peripherals and pins
 All pins are predefined in the library header `CytronMakerSumo.h`; names below are the library constants [DS][GH].
@@ -124,7 +127,7 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 | Switch wording | [DS] "Vibration proof on/off switch" | [PP] "Shockproof on/off switch" | Same feature; either wording OK |
 | Library Manager menu | [GH] Sketch > Include Library > Manage Libraries | [PP: Hackster] Tools > Manage Libraries | Both open the same Library Manager |
 | Kit motor wiring |  Ikedo V2 guide: left MLA=red, MLB=black; right MRA=black, MRB=red | [PP: Hackster] Ikedo Pro: red→MRA, black→MRB, then check with test buttons | Kit-specific; rule = verify with test buttons, swap if reversed |
-| Edge sensor name in V2 kit |  "Maker Reflectance Sensor" | [PP] "Maker Reflect S" | Use the product page name |
+| Edge sensor name in V2 kit |  "Maker Reflectance Sensor" | [PP] Ikedo V2 page: "Maker Reflect S" from March 2026 | Use Maker Reflect S (product page note, read 2026-10-19) |
 
 ## Needs verification
 - **Arduino board to select** (Arduino Uno vs Arduino Nano, and Nano "ATmega328P (Old Bootloader)" or not) — no Cytron source states it. Critical for upload-error troubleshooting. Ask design team.

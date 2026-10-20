@@ -86,7 +86,7 @@ An ESP32 development board built around the ESP32-WROOM-32E-N8 module, in the No
 - Launch-page comparison vs NodeMCU ESP32: 8MB vs 4MB flash, USB Type-C vs Micro USB, 14 GPIO LEDs vs 1, plus RX/TX LEDs, passive buzzer, user button and Maker Port
 
 ## Price band
-[NOT STATED]
+RM40.95 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-esp32
@@ -140,6 +140,11 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Logic levels: VIL -0.3–0.8 V, VIH 2.5–3.6 V, VOL 0–0.3 V, VOH 2.6–3.3 V, analog in 0–3.3 V
 - Operating temperature: -20 to 85 °C (Robo ESP32 board only)
 - USB-UART: none on the Robo ESP32; it is on the plug-in board
+- Reset button: product page states a "built-in reset button"; the datasheet function table lists none (it may be the plug-in board's EN button)
+- Only one power source is needed for the board and the motors (product page)
+- Package contents: 1× Robo ESP32, 1× transparent Phillips screwdriver, 1× silicone rubber feet (pack of 4), 4× Grove-to-female-header cables (product page); no ESP32 board included
+- GPIO status LEDs: 10 (product page)
+- Each motor channel up to 1 A continuous (product page)
 
 ## Interfaces and compatibility
 - Socket for a 30-pin, straight-header NodeMCU ESP32
@@ -149,7 +154,8 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Official Arduino examples: Blink, RGB, UserButton, Buzzer, DCMotor, Servo, AnalogRead, DigitalRead, OLED (SSD1315 on 21/22)
 - MicroBlocks: flash via Settings → "update firmware on board" → ESP32
 - FreeRTOS examples (dual-core, task control) in the Cytron Getting Started guide
-- Maker ESP32: Cytron describes it as compatible (30-pin NodeMCU ESP32 form factor)
+- Software support: product page states Arduino IDE, MicroPython, C++ and MicroBlocks; official examples exist only for Arduino IDE and MicroBlocks
+- Maker ESP32: the Maker ESP32 product page says it is "fully compatible with expansion boards like the Robo ESP32" and sells a Maker ESP32 + Robo ESP32 bundle; the Robo ESP32 page names only the NodeMCU ESP32
 
 ## Use cases
 - Robotics with ESP32 (basic movement, obstacle avoidance, line following, servo gripper)
@@ -183,7 +189,7 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - Datasheet Rev 1.1 tagline: "Simplifying Smart Projects with ESP32" (the product page title matches Rev 1.1)
 
 ## Price band
-[NOT STATED]
+RM62.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-esp32
@@ -279,7 +285,7 @@ An ESP32-S3 development board in the Adafruit Feather form factor, with GPIO sta
 - Onboard extras aimed at teaching and IoT work
 
 ## Price band
-[NOT STATED]
+RM79.80–RM87.80 across 2 variants (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-v-maker-feather-aiot-s3-simplifying-aiot-with-esp32
@@ -331,6 +337,8 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - Warranty: 6 months, manufacturing defects only (user manual Rev 1.0); product page: 12 months
 - Dimensions: [NOT STATED]
 - User's Manual: Rev 1.0, Dec 2017; board package section updated 21 March 2018
+- Packing: Maker UNO + GPIO labeling sticker (product page)
+- Warranty: 12 months (current product page; manual Rev 1.0 says 6 months)
 
 ## Interfaces and compatibility
 - Arduino UNO R3-standard female headers; R3 shield compatible
@@ -366,10 +374,10 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - User manual: "PURPLE PCB !"; three extra features that make it "more suitable for beginner"
 
 ## Price band
-[NOT STATED]
+RM37.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.com.my/p-maker-uno-simplifying-arduino-for-education
+https://my.cytron.io/p-maker-uno-simplifying-arduino-for-education
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf
@@ -408,7 +416,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Flash, SRAM, EEPROM: 32KB, 2KB, 1KB
 - Clock speed: 16MHz
 - ISP 6-pin (2x3) header, for AVR programmer; also usable for SPI
-- LED array for 5V, 3.3V, TX, RX and the digital pins; programmable indicator LEDs at pins 2 – 13 (user manual introduction says D0 to D13); standard LED on pin 13
+- LED array for 5V, 3.3V, TX, RX and the digital pins; 12 programmable indicator LEDs at pins 2 – 13 (product page: "12x LED"); standard LED on pin 13
 - Pin LEDs driven through a series of MOSFETs, so each LED can be controlled as an output or act as an input indicator, even for input pull-up
 - USB-serial LED shows upload and Serial Monitor data
 - Programmable push button: pin 2 to GND, configure as INPUT_PULLUP
@@ -417,8 +425,9 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - FCC, CE, RoHS: Yes
 - PCB colour: purple
 - Packing list: 1 × Maker Uno Plus (Code: MAKER-UNO-PLUS), 1 × Micro USB cable, 1 × Pin Header Sticker
-- Warranty: user manual 6 months, manufacturing defects only; product page 12 months
+- Warranty: 12 months (product page, current); the 2018 user manual said 6 months
 - Dimensions: [NOT STATED]
+- USB-serial confirmed FT231X by the product page ("upgraded to FT231X from CH340")
 
 ## Interfaces and compatibility
 - Arduino UNO R3-standard female headers; R3 shield compatible; SDA, SCL and IOREF broken out as on UNO R3
@@ -441,7 +450,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Pin 8 is shared with the buzzer: slide the switch off to use pin 8 for other purposes
 - Pin 2 is used by the onboard button
 - Use only 1 power source at a time
-- User manual (Oct 2018) and product page disagree on warranty: 6 months vs 12 months
+- Warranty: use the product page's 12 months (the 2018 manual's 6 months is out of date)
 
 ## Positioning (kept apart from specs)
 - "Simplifying Arduino for Education"
@@ -450,7 +459,7 @@ An Arduino UNO R3-compatible board built on the SMD ATmega328P, powered and prog
 - Redesign of CT-UNO with ARUS and rero, "more affordable, and more beginner friendly"
 
 ## Price band
-RM75.60 (Cytron product page, read 2026-10-16)
+RM75.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-uno-plus-simplifying-arduino-for-education
@@ -503,6 +512,8 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - 5V and 3.3V pin output current: [NOT STATED]
 - Per-I/O-pin current: [NOT STATED]
 - Dimensions: [NOT STATED]
+- Packing: Maker UNO X board, mini breadboard, Maker UNO pin sticker (product page)
+- LEDs: 12 I/O LEDs on D2–D13; D0/D1 LEDs are the TX/RX activity LEDs (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO compatible; "fully compatible with Arduino UNO R3 sample code and libraries" (product page)
@@ -600,6 +611,8 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Peripherals: 2x I2C, 2x SPI, 2x UART, 16 PWM (8 slices x 2 outputs)
 - Onboard ICs (schematic): MCP73831T-2ACI/OT charger, MT3608 5 V boost, AP1117E33L 3.3 V regulator, 12 MHz crystal
 - Packing list: 1x Maker Uno RP2040, 1x Silicone Rubber Feet (pack of 4), 4x Grove to female header cable
+- 2 MB flash, 2 × WS2812 RGB LEDs, 16 status LEDs (product page)
+- Variants: Edu Bundle with Bahasa Malaysia teacher's guide (softcopy) and component set, or board only with 4 Grove-to-female cables and rubber feet (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO form factor; use 3.3 V-compatible UNO shields only
@@ -647,7 +660,7 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Follows the move from 5V to 3.3V microcontrollers
 
 ## Price band
-USD 14.90 (Cytron tutorial page hardware list)
+RM62.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-uno-rp2040
@@ -772,6 +785,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 - Header (silkscreen GP numbers): D2 – D9 = GP2 – GP9, D10 = GP17, D11 = GP19, D12 = GP16, D13 = GP18, A4 – A7 = GP12 – GP15; AREF position is NC; GP0 and GP1 sit at the Nano TX/RX positions
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - USB VID 0x2E8A, PID 0x100F (CircuitPython & Arduino Core)
+- Flash 2 MB, RAM 264 KB (product page)
+- Maker Port 0 = GP0/GP1; Maker Port 1 = GP26/GP27 (Cytron pinout image)
+- GP19 has a status LED; 14 status LEDs in total (product page, pinout image)
+- Packing: board + 2 Grove-to-JST-SH cables (product page)
 
 ## Interfaces and compatibility
 - Pin header: "Compatible with original Arduino Nano"
@@ -804,10 +821,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 - GitHub README: "a small but powerful MCU for your project"
 
 ## Price band
-[NOT STATED]
+RM41.58 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-maker-nano-rp2040
+https://my.cytron.io/p-maker-nano-rp2040
 
 ## Datasheet
 https://docs.google.com/document/d/15IMxlESQE43sP7brZpqlfHVTAdX1N_XenzpvfP8cT_8/edit
@@ -885,7 +902,7 @@ A Cytron version of the Arduino UNO built on an SMD ATmega328 with the Optiboot 
 - cytron.com.my product page recommends Maker UNO for beginners and students
 
 ## Price band
-RM61.74 (Cytron product page, read 2026-10-16)
+RM61.74 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-cytron-uno-arduino-uno-compatible
@@ -995,6 +1012,11 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Motor driver IC: [NOT STATED]
 - Dimensions: [NOT STATED]
 - Charging current: [NOT STATED]
+- VCC follows the host board's reset-pin voltage (product page)
+- Power: VIN 3.6–6 V, 1-cell LiPo or micro USB 5 V, auto-selected; charger with over-charge/over-discharge protection (product page)
+- Motors: 2.5–6 V, 1.0 A continuous, 1.5 A peak < 5 s (product page)
+- Size: 60.96 × 68.58 mm (product page image)
+- Packing: shield, small Phillips screwdriver, 4 Grove-to-female cables (product page)
 
 ## Interfaces and compatibility
 - DC motor pins: datasheet Table 1 lists M1A D4, M1B D5, M2A D6, M2B D7; Cytron's example code uses Motor 1 PWM = D5, DIR = D4 and Motor 2 PWM = D6, DIR = D7 (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`)
@@ -1032,10 +1054,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Part of Cytron's Robo series (alongside Robo Pico)
 
 ## Price band
-[NOT STATED]
+RM61.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-robo-uno-shield
 
 ## Datasheet
 https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit
@@ -1079,7 +1101,7 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - Protocol: Arduino sends one command byte (decimal); 0–15 = digital buttons (reply 0 = pressed, 1 = not pressed); 16–19 = joystick X/Y axes (0–255, 128 neutral); 20–27 = joystick up/down/left/right values (0–100); 28 = connection status (1 = detected); 29 + value = motor 1 on/off; 30 + value = motor 2 speed 0–255; 31 = all buttons and joysticks in 6 bytes
 - Packing list: 1 x Shield-PS2, 3 x mini jumper
 - Warranty: 12 months
-- Dimensions: [NOT STATED]
+- Dimensions: 68 mm × 53 mm (product page)
 - Onboard interface IC: [NOT STATED]
 
 ## Interfaces and compatibility
@@ -1113,7 +1135,7 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - "Reading Joy-stick and button's state of PS2 controller will be as easy as reading UART data"
 
 ## Price band
-- RM65.10 (Cytron product page, read 2026-10-16)
+RM65.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-ps2-shield
@@ -1162,6 +1184,9 @@ An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module prel
 - 3.3 V regulator and output current: [NOT STATED]
 - Shield power input range: [NOT STATED] (powered from the Arduino's 5 V)
 - Rev1.0 vs Rev2.0 differences stated: Rev2.0 manual names the ESP-WROOM-02 module and adds a Firmware Installation chapter; pins, jumpers, LEDs, buttons and defaults are identical in both manuals
+- 3.3 V regulator for the module: 500 mA max (product page)
+- Shipped with Cytron_ESP_AT V2.2.0 since mid-October 2021; Rev2.0 since April 2016; Rev1.0 used an ESP8266-12 module (product page)
+- UART jumper options: USB (flash the ESP8266 through the Arduino), D0/D1, or software serial on D2, D3, D8–D13 (product page)
 
 ## Interfaces and compatibility
 - Compatible boards: Arduino Uno, Arduino Duemilanove, Arduino Mega2560, Arduino Leonardo and possibly other pin-compatible main boards; CT-UNO and CIKU also named
@@ -1200,7 +1225,7 @@ An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module prel
 - "easy and stable UART interface for users to communicate with onboard WiFi module"
 
 ## Price band
-- RM52.40 (Cytron product page, read 2026-10-16)
+RM52.40 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-esp8266-wifi-shield
@@ -1229,7 +1254,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - Product code: SHIELD-LIPO
 - Primary source: Cytron LiPo Power Shield User's Manual V1.0, January 2016 (no datasheet exists)
 - Output voltage: 5 V
-- Output current: "Output current: 1A" (Features list); body text: "at least 500mA current, and peak at 1A"
+- Output current: user manual — "Output current: 1A" (Features list) and "at least 500mA current, and peak at 1A"; product page — 1000 mA continuous, 700 mA at start-up, over-current cut-off about 1100 mA (sources differ; see the KB file)
 - Battery: 3.7 V 1300 mAh LiPo (single cell)
 - Integrated charger, charging current: 500 mA
 - Charging input: onboard micro-USB port (USB Micro B cable) or the USB port on the Arduino
@@ -1243,10 +1268,12 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - ICSP header: not passed through (the battery is in the way)
 - Packing list: 1 x SHIELD-LIPO
 - Warranty: 12 months
-- Dimensions: [NOT STATED]
+- Dimensions: 80 mm × 54 mm, excluding the toggle switch (product page)
 - Boost converter / charger IC: [NOT STATED]
-- Arduino pins used: [NOT STATED]
+- Arduino pins used: 5V and GND only; optional battery-voltage monitoring through pads to A0–A6 (product page)
 - Battery connector type: [NOT STATED]
+- Boost input: 3.0–4.2 V LiPo/Li-ion to 5 V (product page)
+- Works with UNO-layout boards incl. Mega, Leonardo and Due (product page)
 
 ## Interfaces and compatibility
 - Compatible boards: Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo and possibly other pin-compatible main boards; hardware example uses Arduino UNO / CT-UNO
@@ -1274,7 +1301,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - "You can take your Arduino anywhere you wish with this LiPo Power Shield."
 
 ## Price band
-- RM57.75 (Cytron product page, read 2026-10-16)
+RM57.75, battery sold separately (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-lipo-power-shield
@@ -1321,6 +1348,8 @@ An Arduino shield that controls up to 8 RC servo motors over a UART command prot
 - Arduino library "Cytron Servo Shield" version 2.0.0 (Arduino Library Manager / GitHub); functions init, setChannel, position, angle, getPosition, getAngle, setStartPosition, setStartAngle, registerErrorCallback (GitHub)
 - Library angle() maps 0–180° to positions 156–7260; getPosition() timeout 100 ms; setStartPosition() waits up to 5 s for 0x04 (GitHub)
 - PC GUI "Shield-Servo GUI" written in VB.net (Visual Studio Community 2015), source on the repository's visual-basic branch (User's Manual V1.1, GitHub)
+- Pulse resolution 0.25 µs; 5 A peak / 4 A continuous total (product page features list)
+- Packing: 1 × servo shield (product page)
 
 ## Interfaces and compatibility
 - Arduino-compatible hosts named: Arduino/Genuino UNO, Mega, CT-UNO, CT-ARM (User's Manual V1.1)
@@ -1358,7 +1387,7 @@ An Arduino shield that controls up to 8 RC servo motors over a UART command prot
 - User's Manual: "reliable yet user friendly RC Servo motor controller to hobbyist and students"; "the enhanced version from SC08A" with on-board regulator and UC00A/UC00C interface; UART "present a flexible, fast and easy to use feature"
 
 ## Price band
-RM79.80 (Cytron product page, read 2026-10-16)
+RM79.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cytron-8-channels-rc-servo-controller-shield-for-arduino
@@ -1609,6 +1638,7 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 - Warranty: 12 months
 - Dimensions and weight: [NOT STATED]
 - Project wiring (pins per project): [NOT STATED] (guide PDF not read)
+- Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
 - Power and programming over Micro USB only (Maker UNO has no DC jack and no Vin pin)
@@ -1718,7 +1748,7 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - "Simplifying Digital Making"
 
 ## Price band
-RM39.00 (5+ RM37.10, 10+ RM35.10) (Cytron product page, read 2026-10-19)
+RM39.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-arduino-learning-guide-for-beginners-with-maker-uno-x
@@ -1762,7 +1792,9 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - IR logic in code: LOW = white surface, HIGH = black line
 - Ultrasonic distance in code: pulseIn(ECHO, HIGH) x 0.017 cm; lessons stop at 15 cm and avoid at 20 cm
 - Warranty: [NOT STATED]
-- Dimensions and weight: [NOT STATED]
+- Box dimension: 127 mm × 55 mm × 190 mm, not including motor shafts and wheels (product page); weight: [NOT STATED]
+- Rocker switch = power switch; push button = start button (product page)
+- Booklet options: Arduino IDE (English) or mBlock (Bahasa Melayu) (product page)
 
 ## Interfaces and compatibility
 - Maker UNO: USB Micro-B for programming; no DC jack or Vin pin
@@ -1851,6 +1883,11 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - GPIO breakout: female pin headers for the Pico / Pico W GPIO pins
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Works with Raspberry Pi Pico 2, Pico and Pico W (product page)
+- Packing (board only): Robo Pico, 4 Grove-to-female cables, screwdriver, 4 rubber feet; bundles add a Pico 2 SH / Pico H / Pico 2 WH and USB cable (product page)
+- Power: USB 5 V, 1-cell LiPo or Vin 3.6–6 V, auto-selected; LiPo charger with over-charge/over-discharge protection (product page)
+- RGB LEDs: 2 × WS2812 (Neopixel) (product page pinout image)
+- Size: 88 × 72 mm; 4 × Ø4.8 mm + 4 × Ø3 mm holes (product page dimension image)
 
 ## Interfaces and compatibility
 - Hosts: Raspberry Pi Pico and Raspberry Pi Pico W
@@ -1894,7 +1931,7 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - Part of Cytron's Robo series
 
 ## Price band
-[NOT STATED]
+RM59.60–RM109.97 across 4 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-pico-simplifying-robotics-with-raspberry-pi-pico
@@ -1963,6 +2000,8 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - Protoboard with Grove port
 - Operating temperature: -20 – 85 ℃
 - In the box: EDU PICO V2 Board ×1; Step-by-step Guidebook (English) ×1; Raspberry Pi Pico 2 W ×1 (not in EDU-PICO2-NB); USB Micro B Cable ×1; Grove 4 Pin Buckled 20cm Cable ×8; Micro Servo with Servo Horns ×1; DC2-6V Miniature Motor with 20cm Wire ×1; Mini Phillips Head Screwdriver ×1; DIY 4 Blades 56mm Motor Propeller (Blue) ×1; USB LED Light Stick (Blue) ×1; Cable Tie 100mm ×5; Self adhesive Round Velcro 10mm (Hook and loop pairs) ×27
+- 12 GPIO status LEDs (product page)
+- Packing (with Pico 2 W): board, English guidebook, Pico 2 W, USB cable, micro servo, 8 Grove cables, 2–6 V motor, screwdriver, 56 mm propeller, Velcro, 2 cable ties, USB LED stick; the other option omits the Pico 2 W (product page)
 
 ## Interfaces and compatibility
 - Hosts: Raspberry Pi Pico 2 W (included except EDU-PICO2-NB); socket text also names Pico 2
@@ -2025,7 +2064,7 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - "Beginner friendly"; "Perfect for students & educators" (product-page images)
 
 ## Price band
-[NOT STATED]
+RM259.00–RM299.00, without / with Raspberry Pi Pico 2 W (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-edu-pico-2-project-innovation-kit-for-pico-2-w
@@ -2081,6 +2120,8 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Operating temperature: -20 – 85 ℃
 - USB VID & PID (CircuitPython & Arduino Core): VID 0x2E8A, PID 0x1000
 - Product page: dimensions 88mm(L) x 64mm(W) x 13mm(H); 4x 4.8mm mounting hole (LEGO® pin compatible); 6x M3 screw hole
+- Packing: board, 4 Grove-to-female cables, mini screwdriver, 4 rubber feet (product page)
+- Size 88 × 64 × 13 mm; 4 × 4.8 mm LEGO-pin holes and 6 × M3 holes (product page)
 
 ## Interfaces and compatibility
 - Micro USB (upload programs and power), LiPo battery connector, VIN terminal, 2 DC motor terminals, 4 servo ports, 7 Grove ports, debug port
@@ -2120,7 +2161,7 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Cytron internal: "very well received among the users", launched in Jun 2021
 
 ## Price band
-RM48.00 (Cytron product page, read 2026-10-16)
+RM50.40 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-rp2040-simplifying-robotics-with-raspberry-pi-rp2040
@@ -2165,6 +2206,8 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Debugging port breakout
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 3.6 V; digital output: low 0 – 0.5 V, high 2.62 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Base compatible with Raspberry Pi Pico 2 (product page); bundles with Pico 2 SH, Pico 2 WH or Pico SH, or base only
+- Pin use: buttons GP20–22, RGB GP28, buzzer GP18, audio GP18–19, microSD GP10–15, ESP-01 GP16–17 (product page)
 
 ## Interfaces and compatibility
 - Micro USB (power and programming), 6 Grove ports, 3.5mm stereo audio jack, micro SD card socket, ESP-01 socket, debugging port breakout, two 20-way GPIO pin headers
@@ -2203,7 +2246,7 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Product page: "Work out-of-the-box. No soldering!"
 
 ## Price band
-RM48.00 (Cytron product page, read 2026-10-16)
+RM50.40 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-pico
@@ -2247,6 +2290,7 @@ A small carrier board for the Raspberry Pi Pico / Pico W with status LEDs, a but
 - 3.3V power LED
 - GPIO breakout for all Pico pins (headers not pre-soldered on the pre-mounted version)
 - Pi Pico socket on MAKER-PI-PICO-MINI-NB only
+- Variants: MAKER-PI-PICO-MINI (Pico), MAKER-PI-PICO-MINI-W (Pico W), MAKER-PI-PICO-MINI-NB (no Pico); Pico variants preloaded with CircuitPython (product page)
 
 ## Interfaces and compatibility
 - Host: Raspberry Pi Pico / Pico W
@@ -2276,7 +2320,7 @@ A small carrier board for the Raspberry Pi Pico / Pico W with status LEDs, a but
 - Datasheet tagline: "Simplifying Projects with Raspberry Pi Pico / Pico W"
 
 ## Price band
-[NOT STATED]
+RM35.60–RM47.60 across 3 variants (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-pi-pico-mini-simplifying-projects-with-raspberry-pi-pico
@@ -2330,6 +2374,10 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Debug header: SWDIO, GND, SWCLK; BOOT and RST buttons
 - Digital input: low -0.3 – 0.8 V, high 2.0 – 5.5 V; digital output: low 0 – 0.5 V, high 2.6 – 3.3 V; analog input 0 – 3.3 V
 - Operating temperature: -20 – 85 ℃
+- Flash: 2 MB (product page)
+- Board size: 95.2 × 57.2 × 8 mm (product page)
+- Rev 2.0 adds overvoltage and overcurrent protection (product page)
+- Packing: board, STEMMA QT/Qwiic cable 150 mm, 2 Grove-to-JST-SH cables 200 mm, silicone bumpers, 4 friction pins, mini screwdriver (product page)
 
 ## Interfaces and compatibility
 - Maker Ports: compatible with Qwiic, STEMMA QT and Grove (via conversion cable)
@@ -2338,7 +2386,7 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - CircuitPython: preloaded with a demo program; firmware is board "cytron_motion_2350_pro" on circuitpython.org (board.M1A – board.M4B, NEOPIXEL, VOLTAGE_MONITOR; NeoPixel, Motor and SimpleIO libraries built in)
 - MicroPython: official board CYTRON_MOTION_2350_PRO (pin names M1A – M4B, BTN1, BTN2, NEOPIXEL)
 - C/C++: listed on the product page
-- Arduino: product page says "Arduino IDE (coming soon)"; the arduino-pico (Earle Philhower) core includes the board "Cytron Motion 2350 Pro"
+- Arduino: supported — the product page lists Arduino and links a Cytron "Getting Started with MOTION 2350 Pro using Arduino IDE" tutorial; the arduino-pico (Earle Philhower) core includes the board "Cytron Motion 2350 Pro"
 - Product page: compatible with the existing Raspberry Pi Pico ecosystem
 
 ## Use cases
@@ -2348,7 +2396,7 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 
 ## Known limitations
 - Rev 2.0 ratings (5 A continuous / 10 A peak) apply to Rev 2.0 only; Rev 1.0 is rated 3 A continuous / 5 A peak and has no motor overcurrent protection
-- Product page and Cytron's GitHub pinout image still state 3 A per channel (Rev 1 figures)
+- my.cytron.io now states the Rev 2.0 figures (5 A continuous / 10 A peak); Cytron's GitHub pinout image still shows 3 A per channel (Rev 1 figures)
 - Thermal shutdown may occur even if current is below the rated value; a heatsink or better airflow helps
 - Spec values are absolute maximum ratings
 - Connecting USB and VIN at the same time is not recommended (the datasheet says it is safe)
@@ -2368,10 +2416,10 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Product page: "Maker" features such as silkscreen GPIO references, colored headers, quick test buttons and motor output LEDs
 
 ## Price band
-[NOT STATED]
+RM131.15 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-motion-2350-pro
+https://my.cytron.io/p-motion-2350-pro
 
 ## Datasheet
 https://www.farnell.com/datasheets/4726021.pdf
@@ -2400,13 +2448,14 @@ Two beginner bundles around the Cytron Maker Nano RP2040 board: a Getting Starte
 - Wi-Fi module (Blynk variant): Grove WiFi 8266, Ai-Thinker ESP-12F module preloaded with Espressif ESP-AT firmware (doc wording "v2.20")
 - Components used in "Getting Started With Maker Nano RP2040": 1x Maker Nano RP2040 (MAKER-NANO-RP2040), 1x Breadboard 8.5x5.5cm 400 holes (BD-BB-0508), 1x 40-Way 10cm Dupont Jumper Wire (WR-JW-4010MM), 1x Finger Adjust Preset 10K (RS-MP3386-10K), 2x LED 5mm Green (DS-LED-5NG), 2x LED 5mm Yellow (DS-LED-5NY), 2x LED 5mm Red (DS-LED-5NR), 1x DIY 4 Blades 56mm Motor Propeller Blue (HD-PROP-4B), 1x 3V Miniature Brush Motor with wire leads (MO-300CA-11440), 1x Transistor 2N2222 (TR-2N-2222), 10x Resistor 0.25W 5% 220R (RS-025W-220R), 1x LDR Small (SN-LDR-S), 1x Diode 1N4007 (DI-1N4007), 1x USB Micro B Cable (WR-USB-UB), 1x Resistor 0.25W 5% 10K (RS-025W-10K)
 - Components used in "Getting Started With Maker Nano RP2040 And Blynk IoT": same list without the 10K resistor; the Grove WiFi 8266 used in every lesson is not in that table
-- Product page packing list per variant: [NOT STATED] (did not extract)
+- Packing (Getting Started): Maker Nano RP2040 with 2 Grove-to-JST-SH cables, 400-hole breadboard, 40-way jumper wires, 10K finger preset, 2 each green/yellow/red LEDs, propeller, 2–6 V motor, 2N2222, 10 × 220R, LDR, USB micro-B cable, 1N4007 (product page)
+- Packing (Blynk IoT): the same plus a Grove WiFi 8266 module and a Grove cable (product page)
 - Getting Started doc lessons: 1 LED Blink, 2 Siren, 3 Digital Input, 4 Analog Input, 5 Light Dependent Resistor, 6 Temperature Sensor, 7 DC Motor, 8 Neopixel; projects: 1 Knight Rider, 2 Interactive Traffic Light, 3 Temperature Alarm, 4 Light Theremin
 - Blynk IoT doc lessons: 1 Getting Connected, 2 Simple LED Control, 3 Push Button As Input, 4 Analog Input, 5 Temperature Sensor, 6 Neopixel Color, 7 Motor Speed Controller, 8 Going Mobile; Chapter 3 Projects has no content
 - Blynk setup in the doc: create a Blynk account, new template "Maker Nano RP2040 IoT" (hardware Arduino, connection WiFi), add a device from the template, copy its Template ID / Device Name / Auth Token into the sketch
 - Pins used by the lesson code: LED D2; buzzer pin 22; push button pin 20; potentiometer A0 (Getting Started) or A3 (Blynk); LDR A0; NeoPixels pin 11; DC motor PWM pin 2 through a 2N2222; Blynk-controlled LED 7; Knight Rider pins 16, 19, 17, 9, 8, 7, 6, 5, 4, 3
 - Grove WiFi connection: Maker Port (code comment "Maker port [0, 1]"), Serial1 at 115200 baud
-- Warranty: [NOT STATED]
+- Warranty: [NOT STATED] (blank on the product page)
 - Dimensions, weight: [NOT STATED]
 
 ## Interfaces and compatibility
@@ -2435,7 +2484,7 @@ Two beginner bundles around the Cytron Maker Nano RP2040 board: a Getting Starte
 - "Maker Nano RP2040 is created to simplify digital making and troubleshooting" (Getting Started doc)
 
 ## Price band
-RM58.00–RM88.52 (Cytron product page, read 2026-10-19)
+RM58.00–RM88.52 across 2 variants (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-nano-rp2040-getting-started-kits
@@ -2486,6 +2535,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - Dimensions: [NOT STATED] (drawing only)
 - Protections (reverse polarity, over-current, thermal, battery): [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Size: 95.2 × 57.2 mm; Ø4.8 mm holes, 72 × 48 mm pattern (product page image)
+- Power: micro USB, 18650 or external Vin 3.6–6 V; USB charging and Li-ion protection circuits (Cytron comparison image)
+- Motors: 1 A continuous, 1.5 A peak; total servo current 3 A; total 5 V output 300 mA (Cytron comparison image)
+- Packing: board, screwdriver, 3 Grove-to-JST-SH cables, 4 bumpers; options add micro:bit V2 kit and/or a 3.7 V 2200 mAh 18650 (product page)
 
 ## Interfaces and compatibility
 - micro:bit V1 and V2 (MakeCode extension README)
@@ -2526,10 +2579,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - "students can build projects with mechanical movements right away" (MakeCode extension README)
 
 ## Price band
-[NOT STATED]
+RM125.00–RM241.80 across 4 options (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-motionbit
+https://my.cytron.io/p-motionbit-board-and-kits
 
 ## Datasheet
 https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit
@@ -2574,6 +2627,9 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 - Dimensions: [NOT STATED] (drawing only)
 - Protections (reverse polarity, over-current, thermal): [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Power: external Vin 7–12 V terminal block only; no micro USB, no battery holder, no charging (product page, Cytron comparison image)
+- Motors: 4 channels, 3 A continuous, 5 A peak; total 5 V output 3 A; servo power selectable 5 V or Vin; total servo current 3 A (Cytron comparison image)
+- Packing: board, screwdriver, 3 Grove-to-JST-SH cables, 4 bumpers, 4 building-block pins (product page)
 
 ## Interfaces and compatibility
 - micro:bit versions: [NOT STATED]
@@ -2611,10 +2667,10 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 - Datasheet header: "Simplifying Digital Making"
 
 ## Price band
-[NOT STATED]
+RM166.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-motion-bit-pro-12v-robotics-expansion-board-for-micro-bit
 
 ## Datasheet
 https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view
@@ -2660,6 +2716,9 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Packing: SUMO:BIT with 2 × MD13S attached, flat and Phillips screwdrivers, Dean T male connector 15 cm, sticker set; Jr Kit option adds micro:bit V2 and USB cable (product page)
+- Size: 125 × 80 mm; 4 × Ø3.2 mm holes (product page image)
+- Firmware (UF2) and STL files on GitHub Cytron-SUMOBIT (product page)
 
 ## Interfaces and compatibility
 - micro:bit plugs into a vertical edge-connector socket with the LED matrix facing up
@@ -2695,10 +2754,10 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - "Start your sumo journey with the SUMO:BIT Robot Kit!"
 
 ## Price band
-[NOT STATED]
+RM198.45 board only (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-sumo-bit
+https://my.cytron.io/p-sumo-bit
 
 ## Datasheet
 https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf
@@ -2740,6 +2799,9 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Grove map (Cytron pinout): P0:P1, P1:P9 (P1 shared), P2:P12, P13:P14 (SPI SCK/MISO), P15:P16 (MOSI), I2C P19/P20; Neopixels on P8; GPIO 3.3 V only
+- Under-voltage and over-voltage indicator and protection (product page)
+- Packing: board, USB power/data cable, 4×AA holder, mini screwdriver, 3 Grove-to-female cables, 2 lift arms, 4 friction pins; with or without micro:bit V2 (product page)
 
 ## Interfaces and compatibility
 - Works with micro:bit V1 & V2
@@ -2775,10 +2837,10 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - With the built-in dual-channel DC motor driver, 4x servo control and dedicated power input, students can build projects with mechanical movements right away
 
 ## Price band
-[NOT STATED]
+RM149.10 with micro:bit V2 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-rekabit-simplifying-robotics-with-microbit
+https://my.cytron.io/p-rekabit
 
 ## Datasheet
 https://docs.google.com/document/d/1axLhH-zaFDheOyz6gbXfYEysigGxpmMnRBC93SW-zR8/edit
@@ -2823,6 +2885,10 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Motors and servos are controlled by the REKA:BIT co-processor over I2C (address 0x08)
 - Power switch: slide OFF then ON to reset
 - Warranty: 12 months
+- Options: with micro:bit V2, without micro:bit, Classroom Pack (10 kits), AI version with HuskyLens (with or without micro:bit V2) (product page)
+- Packing (V2 kit): micro:bit V2, REKA:BIT, USB power/data cable, 9+1 lesson guide book, Zoom track, Maker Line, ultrasonic sensor, 2 × 10 mm LED modules, 2 × DC motors with wheels, micro servo, 4 Grove-to-female cables, 4xAA holder with DC plug, 4 AA batteries, castor, screwdriver, rivets, double-sided tape (product page)
+- Ultrasonic sensor linked on the packing list: Cytron 3V-5.5V SR04P (HC-SR04P) module (product page)
+- AI version adds a HuskyLens and a Grove-to-Gravity cable; rechargeable AA cells advised (product page)
 
 ## Interfaces and compatibility
 - micro:bit V1 and V2; V1 has no built-in speaker, so sound needs a Grove buzzer on Port P0:P1
@@ -2870,10 +2936,10 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Classroom Pack: "Save more with this Classroom Pack!"
 
 ## Price band
-Cytron product page (www.cytron.io, read 2026-10-16): $62.50 offer price (12% off); currency and variant not stated on the page
+From RM262.50 (default option; Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-zoombit-robot-car-kit-for-microbit
+https://my.cytron.io/p-zoombit-robot-car-kit-for-microbit
 
 ## Datasheet
 https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf
@@ -3001,6 +3067,8 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Weight: [NOT STATED]
 - Flash size, RF standard, antenna: [NOT STATED] by Cytron sources
 - Datasheet: GROVE WIFI 8266 Datasheet, Rev 1.0, August 2021
+- 32 Mbit SPI flash; 802.11 b/g/n 2.4 GHz; on-board Reset and Boot switches (product page)
+- Packing: module and a Grove cable (product page)
 
 ## Interfaces and compatibility
 - Grove port, 4 pins: GND (ground); VCC (positive supply, 3 V–6 V); RX (serial Rx of the ESP8266, connect to host's Tx); TX (serial Tx of the ESP8266, connect to host's Rx) (datasheet)
@@ -3032,7 +3100,7 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Product page name: "Grove WiFi 8266 - IoT for micro:bit and beyond" (product page)
 
 ## Price band
-RM27.72 (Cytron product page, read 2026-10-16)
+RM27.72 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond
@@ -3076,6 +3144,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Power switch: slide OFF then ON to restart
 - Age: 10+; Syllabus: RBT Y5&Y6; Platform: micro:bit
 - Warranty: 12 months (manufacturing defects; wear and tear and misuse excluded)
+- Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
 - MakeCode extension: pxt-rekabit-rbt-project-kit (search "rekabit rbt project") — https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit ; it loads the REKA:BIT extension (pxt-rekabit) with it
@@ -3119,7 +3188,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - For RBT Y5 and Y6 (Reka Bentuk dan Teknologi Tahun 5 & 6)
 
 ## Price band
-RM219.00 to RM295.00 (Cytron product page, read 2026-10-19)
+RM219.00–RM295.00 across 2 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-rekabit-rbt-project-kits
@@ -3202,7 +3271,7 @@ A micro:bit lesson kit that builds an automatic plant-watering system: a Maker S
 - Same sensor, pump and servo combination as Project 3 of the REKA:BIT RBT Project Kit
 
 ## Price band
-RM108.00 to RM214.62 (Cytron product page, read 2026-10-19)
+RM108.00–RM214.62 across 4 options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-auto-plant-watering-kit-for-microbit
@@ -3250,6 +3319,9 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
 - Age range: [NOT STATED]
+- Four kit options: with or without micro:bit V2, each with or without 4 AA batteries (product page)
+- Accessories Kit: ultrasonic bracket, castor, 2 TT motor brackets, 2 Robo Base PCBs, 3 Grove-to-female cables, M3 stands/nuts/screws/bolts, Velcro set, Robo Grip PCB, ping pong ball (product page)
+- RC mode needs a second micro:bit (not included) (product page)
 
 ## Interfaces and compatibility
 - Left drive motor: REKA:BIT M1; right drive motor: REKA:BIT M2
@@ -3297,7 +3369,7 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Resource Hub: a learning site for beginners in basic robotics covering building, coding and experimenting with a mobile manipulation robot
 
 ## Price band
-RM99.80–RM326.45 across the options (Cytron product page, read 2026-10-19)
+RM99.80–RM326.45 across options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-beetlebit-gripper-robot-car-kit-for-microbit
@@ -3426,6 +3498,9 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - A typical sumo round lasts around 10 seconds or less; more than 1 minute continuous running may overheat the motors
 - Guides: Assembly (V1) 2 Dec 2024, Checking 2 Dec 2024, Maintenance 2 Dec 2024, Autonomous 9 Dec 2024, RC (Remote Control) 10 Dec 2024 (Google Slides)
 - Warranty: [NOT STATED]
+- Four options: Complete or Basic kit, each with or without micro:bit; Basic kits have no 3D-printed chassis (product page)
+- One 11.1 V 1300 mAh LiPo per kit (product page)
+- Motor: 12 V 580 rpm 3.5 kgf·cm geared motor (product page packing-list link)
 
 ## Interfaces and compatibility
 - Wiring: EDGE-L = left Maker Reflect, EDGE-R = right Maker Reflect, OPP-L = left Maker Object, OPP-FL = front-left, OPP-FC = front-centre, OPP-FR = front-right, OPP-R = right Maker Object, all on 10 cm GVS F-F cables; motors on the LEFT MOTOR / RIGHT MOTOR terminals; battery on the battery terminal through the Dean T cable
@@ -3468,7 +3543,7 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - "SUMO:BIT board, MD13S Motor Driver, Essential accessories, Free STL file for robot body"
 
 ## Price band
-RM80.00–RM1,047.70 across options (Cytron product page, read 2026-10-19)
+RM80.00–RM1,047.70 across options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-sumobit-robot-kits-1kg-sumo-robot-for-microbit
@@ -3797,7 +3872,7 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - Designed with Team Ikedo Kogeki, "the winner of multiple Sumo robot competitions locally and internationally"
 
 ## Price band
-- RM114.45 on the product page (RM108.73 each for 10 or more), 16 Oct 2026
+RM114.45 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-mini-sumo-controller-simplifying-sumo-robot-for-beginner
@@ -3847,6 +3922,10 @@ An Arduino UNO-compatible controller board with an onboard 2-channel brushed DC 
 - Operating temperature: [NOT STATED]
 - Weight: [NOT STATED]
 - Packing list: [NOT STATED]
+- MCU: ATmega328P per product page description (feature list says "ATmega328 with Optiboot")
+- Current limiting at 30 A per channel; sign-magnitude and locked-antiphase PWM up to 20 kHz (product page)
+- Regulators: 5 V 1 A max, 3.3 V 500 mA max (product page)
+- For sumo robots up to 3 kg (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO Standard Female Header: takes compatible Arduino shields, except shields that use D4, D5, D6, D7 (connected to the motor driver internally)
@@ -3937,6 +4016,9 @@ An infrared receiver module that gives a sumo robot a START/STOP signal from an 
 - Supply current: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - IR receiving range and angle: [NOT STATED]
+- Packing: module, 10 cm GVS female-to-female extension, 3D-printed case; no IR remote (product page)
+- Size 32.4 × 14 × 10 mm, 2 g (product page)
+- Works at 5 V and 3.3 V (product page)
 
 ## Interfaces and compatibility
 - 3-pin header, left to right: − (GND), + (power input, 3.3V or 5V), S (output signal); power is the middle pin
@@ -3970,10 +4052,10 @@ An infrared receiver module that gives a sumo robot a START/STOP signal from an 
 - "Keselamatan lebih terjamin. Robot boleh dihentikan secara wireless." (safer; the robot can be stopped wirelessly)
 
 ## Price band
-[NOT STATED]
+RM23.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-ir-sumo-start-module
 
 ## Datasheet
 [NOT STATED]
@@ -4003,7 +4085,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Controller: Maker Mini Sumo Controller ("Arduino Nano/Uno compatible (ATmega328P)", USB-serial CH340C per the product page)
 - Battery: 1 x 7.4V 450mAh LiPo, connected with a JST LiPo battery wire extension (VB+ = red, VB- = black)
 - Opponent sensors: 5 x Maker Object Sensor; product page: "range 50cm adjustable"
-- Edge sensors: 2 x, mounted underneath; product page: "Maker Reflect S"; Getting Started guide: "Maker Reflectance Sensor" (linked to the MAKER-REFLECT page)
+- Edge sensors: 2 x Maker Reflect S, mounted underneath (product page: "From March 2026 onwards … will include Maker Reflect S as the edge sensor"); the older Getting Started guide links Maker Reflect
 - Motors: 2 x 600RPM 6V DC Micro Metal Gearmotor; product page: "6V DC motors (600rpm, 0.065kg.cm)"
 - Wheels: 2 x High Grade Silicon Wheels Set (32mm x 22mm); blue from 17 Jul 2025
 - Control: auto and manual control mode; RC transmitter/receiver sold separately
@@ -4014,6 +4096,9 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Assembly (Getting Started guide): edge sensor wires S = white, + = red, - = black (sensor side OUT = white, VCC = red, GND = black) to the "Front Left and Front Right" edge terminals; edge sensors fixed with 2 x M3x6 self-tapping screws; controller fixed with 2 x M3x6 self-tapping screws; motor bracket with 4 x M3x20 bolts, leaving a 1 mm gap; left motor MLA = red, MLB = black; right motor MRA = black, MRB = red; top cover with 2 x M2.5x20 bolts
 - Warranty: "There is NO warranty for Sumo Robot."
 - Age/syllabus: Getting Started guide says "suitable for primary and secondary school"
+- Designed for 500 g Mini Sumo competitions, 10 × 10 cm (product page)
+- No warranty on the sumo robot (product page)
+- Full packing list adds a 2561 3-way extension wire, 4 M3×6 self-tapping screws, 6 M2.5×20 bolts, 3 mm Phillips and 2 mm flat screwdrivers and a free USB cable (product page)
 
 ## Interfaces and compatibility
 - Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO)
@@ -4035,7 +4120,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - RC transmitter/receiver not included; LiPo charger not listed in the kit
 - Kit must be assembled; the guide says sliding the controller into the chassis "might be a little tricky"
 - Motor bracket bolts must leave a 1 mm gap or "the body may bend"
-- Edge sensor name differs between the product page (Maker Reflect S) and the Getting Started guide (Maker Reflectance Sensor)
+- Kits from March 2026 use Maker Reflect S edge sensors; the Getting Started guide still links Maker Reflect
 - Getting Started guide lists 5 Maker Object sensors but one assembly step says "4x"
 - Getting Started guide bolt sizes are inconsistent (6 x M2.5x20 in the list; 4 x M3x20 + 2 x M2.5x20 in the steps)
 - Controller limits apply: 3.0 A continuous / 6.0 A peak per motor channel, Vin 7.0-18.0 V (see MAKER-MSUMO)
@@ -4049,7 +4134,7 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Developed with the team manager of Ikedo Kogeki to "bring down the barrier for students who want to learn how to build a Sumo Robot"
 
 ## Price band
-- RM418.95 (Cytron product page, read 2026-10-19)
+RM418.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-ikedo-mini-sumo-robot-v2-starter
@@ -4255,7 +4340,7 @@ A flat plate made of PCB material that stands in for a steel blade on a sumo rob
 - Training/educational blade substitute
 
 ## Price band
-- RM5.00 - RM8.00 across the two sizes (Cytron product page, read 2026-10-19)
+RM5.00–RM8.00 across 2 sizes (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-v-pcb-sumo-plate
@@ -4300,6 +4385,8 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Connectors: two 4-way UART/expansion headers (U_1, U_2) (User's Manual V1.0)
 - Packing list: 1 × SC08A main board, 1 × 2510H-04 connector with terminal pins, 1 × 2561-04 connector with terminal pins, 1 × mini jumper for JP11 (User's Manual V1.0)
 - Warranty: 6 months (User's Manual V1.0); 12 months (product page, read 2026-10-16)
+- Size: 49 mm × 46 mm (product page)
+- Ramping: one of 100 ramp rates per servo; resolution 0.25 µs (8000 steps); UART 9600 baud (product page)
 
 ## Interfaces and compatibility
 - PC: UC00A USB-to-UART converter plugged into the 4-way UART connector; driver creates a virtual COM port; SC08A takes its 5 V from the UC00A (User's Manual V1.0)
@@ -4336,7 +4423,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - User's Manual: 8-channel servo controller, extendable to 16 channels, with position reporting, per-channel activation, start-up position and ramping, for RC servo robotics (humanoid, biologically inspired robots, robotic arms)
 
 ## Price band
-RM65.10 (Cytron product page, read 2026-10-16)
+RM65.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-8-channel-servo-controller
@@ -4434,7 +4521,12 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - Dimension: 3.9 cm x 2 cm
 - Packing list: 1 x UC00C (USB Micro-B cable optional, not included)
 - Warranty: 1 year (user manual); 12 months (product page)
-- Baud rate range, VCC/5V output current, supply current, operating temperature: [NOT STATED]
+- VCC current: 3.3 V setting max 500 mA; 5 V setting = whatever the USB port supplies (product page)
+- Baud rate range, supply current, operating temperature: [NOT STATED]
+- LEDs: red = TX, orange = RX (product page)
+- Size: 39.8 × 21.2 × 5.6 mm (product page)
+- Tested on Windows 7, 8, 8.1 and 10 (product page)
+- Packing: 1 × UC00C (product page)
 
 ## Interfaces and compatibility
 - Host: PC USB port (Micro-B cable)
@@ -4461,7 +4553,7 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - "USB plug and play, direct interface with microcontroller" (user manual)
 
 ## Price band
-RM15.75 (Cytron product page, read 2026-10-16)
+RM15.75 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-uc00c-ch340-usb-to-uart-converter
@@ -4505,6 +4597,8 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - Warranty: 6 months (Rev3.0 user manual, Dec 2018); 12 months (product page, 2026-10-16)
 - Revision history: Rev1.0 (2008) USB-A plug, 5 V only, 4-way 2510 pin header, 5V max 200 mA; Rev2.0 (2012) Mini USB, Vsel solder jumper, 4-way 2510 connector plus 6-way socket, 5V max 250 mA, 3.3V max 50 mA, 3.9 cm x 2 cm; Rev3.0 (current) Micro-B, slide switch, 6-way socket plus JP4/JP6, no 2510 connector
 - Baud rate range, VCC output current (Rev3.0), supply current, operating temperature: [NOT STATED]
+- Rev3.0 since June 2016; 3.3 V regulator 500 mA max (product page)
+- Size 45.2 × 21.3 × 4.2 mm (product page)
 
 ## Interfaces and compatibility
 - Host: PC USB port (Micro-B cable)
@@ -4537,7 +4631,7 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - "USB plug and play, direct interface with microcontroller and it provides 5V power supply from USB port" (user manual)
 
 ## Price band
-RM43.05 (Cytron product page, read 2026-10-16)
+RM43.05 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-uc00a-ftdi-usb-to-uart-converter
@@ -4701,6 +4795,7 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Current consumption: [NOT STATED]
 - Sensor spacing: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- In stock on my.cytron.io (read 2026-10-19); the my.cytron.io page carries the same specs as the Tindie listing
 
 ## Interfaces and compatibility
 - I/O connector pins: VCC, GND, AN, CAL, D1, D2, D3, D4, D5
@@ -4730,7 +4825,7 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Product listing: "Analog output also offers higher resolution compared to individual digital outputs"
 
 ## Price band
-- USD 9.90 on Cytron's Tindie store (sold out since Jan 28, 2024), checked 16 Oct 2026
+RM45.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-line-simplifying-line-sensor-for-beginner
@@ -4777,6 +4872,8 @@ A small digital infrared object sensor. It sends modulated IR light and pulls it
 - Supply current: [NOT STATED]
 - IR LED / IR receiver part numbers: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Reverse polarity protection; 90° pin header, breadboard friendly (product page)
+- Packing: 1 × sensor (product page)
 
 ## Interfaces and compatibility
 - 3-pin connector: 5V (power input), GND (ground), OUT (NPN output with internal pull-up, active low)
@@ -4805,7 +4902,7 @@ A small digital infrared object sensor. It sends modulated IR light and pulls it
 - Datasheet subtitle: "Simplifying Object Sensor for Beginner"
 
 ## Price band
-[NOT STATED]
+RM54.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-object-simplifying-object-sensor-for-beginner
@@ -4846,6 +4943,8 @@ A tiny analog infrared reflectance sensor (line detector) with a 3-pin VCC/GND/O
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER-REFLECT Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, November 2019
 - Warranty: 12 months (product page)
+- Size 18.1 × 8.4 × 4.2 mm excluding header pin; mounting hole at the centre (product page)
+- Optimal distance 1–40 mm (product page comparison table)
 
 ## Interfaces and compatibility
 - Connector: 3 pins — VCC (power input), GND (ground), OUT (analog output)
@@ -4872,7 +4971,7 @@ A tiny analog infrared reflectance sensor (line detector) with a 3-pin VCC/GND/O
 - Cytron's beginner-series reflectance sensor; the newer Maker Reflect S is positioned as the more stable-output option on the same page
 
 ## Price band
-RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+RM8.00–RM9.00 across Maker Reflect / Maker Reflect S (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner
@@ -4917,13 +5016,16 @@ The newer "S" variant of the Maker Reflect infrared reflectance sensor (line det
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER-REFLECT-S Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, February 2026
 - Warranty: 12 months (product page)
+- Supply: 5.0 V only; supply current 25 mA (product page comparison table)
+- Output: analog, 0–VCC, higher on darker surfaces; optimal distance 3 mm (product page)
+- Ikedo Mini Sumo Robot V2 uses it as the edge sensor from March 2026 (product page)
 
 ## Interfaces and compatibility
 - Connector: 3 pins — VCC (power input), GND (ground), OUT (output)
 - Readable on a digital input pin (datasheet: "Digital IO Compatible", "No ADC required") or an analog input (datasheet: "Analog output")
 - Compatible boards named in the datasheet: [NOT STATED]
 - Sold as the option "Maker Reflect S" on the Maker Reflect product page (code MAKER-REFLECT-S)
-- The Ikedo Mini Sumo Robot V2 product page lists its edge sensors as "Maker Reflect S"; the Ikedo V2 Getting Started guide calls them "Maker Reflectance Sensor" and links the older Maker Reflect page; neither Reflect datasheet mentions the Ikedo kit
+- The Ikedo Mini Sumo Robot V2 ships with 2 x Maker Reflect S edge sensors from March 2026 (Ikedo V2 product page); its older Getting Started guide links the Maker Reflect page
 - Documents linked from the product page: datasheet only
 
 ## Use cases
@@ -4943,7 +5045,7 @@ The newer "S" variant of the Maker Reflect infrared reflectance sensor (line det
 - Sold under "Maker Reflect: Simplifying IR Reflectance Sensor for Beginner" as the newer option
 
 ## Price band
-RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+RM8.00–RM9.00 across Maker Reflect / Maker Reflect S (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner
@@ -4986,6 +5088,8 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER SOIL MOISTURE SENSOR Datasheet, Rev 1.0, January 2022
 - Warranty: 12 months (product page)
+- No on-board voltage regulator; DIS HIGH disables the sensor (product page)
+- Packing: sensor and 50 cm Grove-to-Grove cable (product page)
 
 ## Interfaces and compatibility
 - Grove port, 4 pins: GND (ground), VCC (power input), DIS (disable pin, HIGH disables), OUT (analog output)
@@ -5013,7 +5117,7 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Cytron "Maker" series sensor: a capacitive (not resistive) soil moisture sensor with Grove connection and LED moisture indicators
 
 ## Price band
-RM20.58 (Cytron product page, read 2026-10-16)
+RM20.58, out of stock (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-soil-moisture-sensor
@@ -5054,6 +5158,7 @@ A small three-pin breakout board (GND, VCC, OUT) carrying a Microchip MCP9700 an
 - Weight: [NOT STATED]
 - Reverse-polarity protection: [NOT STATED]
 - Datasheet: BCY-TEMP-MCP9700 Linear Temperature Sensor Datasheet, Rev 1.0, August 2023
+- 3-pin male header; works with 3.3 V and 5 V hosts incl. micro:bit, ESP32, Raspberry Pi (via ADC), Arduino (product page)
 
 ## Interfaces and compatibility
 - Pins: GND (ground), VCC (power input, 2.3–5.5 V), OUT (analog output, 10.0 mV/°C) (datasheet)
@@ -5079,7 +5184,7 @@ A small three-pin breakout board (GND, VCC, OUT) carrying a Microchip MCP9700 an
 - Product page name: "MCP9700 Linear Temperature Sensor (LM35 Compatible)" (product page); the datasheet does not mention the LM35
 
 ## Price band
-RM7.77 (Cytron product page, read 2026-10-16)
+RM7.77 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-mcp9700-linear-temperature-sensor-by-cytron
@@ -5162,7 +5267,7 @@ An 8-sensor line-following sensor bar with sensors spaced 16 mm apart, an on-boa
 - Low current consumption and polarity protection (user manual)
 
 ## Price band
-RM204.75 (Cytron product page, read 2026-10-16)
+RM204.75 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-advanced-auto-calibrating-line-sensor
@@ -5201,6 +5306,8 @@ A single-channel optical rotary encoder kit made of a sensor board with a slotte
 - Truth table: beam unblocked (slot) = LED ON, Sig 0 V; beam blocked = LED OFF, Sig 5 V (user manual)
 - Packing list: 1 x RE08A sensor board, 1 x 8-slot disc (user manual)
 - Ready to use without further soldering (user manual)
+- Product page confirms: 5 VDC, 8 PPR, digital output with internal pull-up, up to 1 kHz, 35 mm disc; output 5 V when blocked, 0 V when unblocked
+- PCB 15 mm × 34 mm (product page; the manual says 35 × 15 mm)
 
 ## Interfaces and compatibility
 - 3-pin header: +5 (5 V supply), Gnd (supply negative), Sig (pulse output) (user manual)
@@ -5224,7 +5331,7 @@ A single-channel optical rotary encoder kit made of a sensor board with a slotte
 - Simple 3-pin interface and on-board LED indicator; ready to use without soldering (user manual)
 
 ## Price band
-RM38.85 (Cytron product page, read 2026-10-16)
+RM38.85 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-rotary-encoder-kit
@@ -5292,7 +5399,7 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - [NOT STATED]
 
 ## Price band
-RM52.50 (10+ RM47.25, 30+ RM42.00) (Cytron product page, read 2026-10-19)
+RM52.50 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-50a-current-sensor
@@ -5354,7 +5461,7 @@ A small PCB stick with 8 addressable 5050 RGB LEDs (SK6812-based, WS2812B-compat
 - "NeoPixel compatible" (product page)
 
 ## Price band
-RM9.35 (10+ RM8.88, 50+ RM8.41) (Cytron product page, read 2026-10-19)
+RM9.35 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron
@@ -5547,7 +5654,7 @@ A set of square EVA-foam floor tiles printed with black line patterns on a white
 - "Reconfigurable" line following track: tiles can be rearranged into different course designs (product page)
 
 ## Price band
-RM44.00–RM176.00 (Cytron product page, read 2026-10-19)
+RM44.00–RM176.00 across 8 options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-cytron-reconfigurable-line-following-track
@@ -5822,7 +5929,7 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Easy snap-and-play assembly with standard screws, nuts and standoffs (product page)
 
 ## Price band
-RM34.90–RM94.19 across the three options (Cytron product page, read 2026-10-19)
+RM34.90–RM94.19 across 3 options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-robo-grip-mini-kits
@@ -5870,6 +5977,8 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - Under-voltage protection: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Terminal type and wire size: [NOT STATED]
+- In stock on my.cytron.io (read 2026-10-19); the my.cytron.io page carries the same specs as the Tindie listing
+- Packing: 1 × Maker Drive board (product page)
 
 ## Interfaces and compatibility
 - Pins: VB+, VB- (power input terminal); motor output terminals; M1A, M1B, M2A, M2B (PWM inputs); 5VO; GND
@@ -5910,10 +6019,10 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - "Regenerative Braking"
 
 ## Price band
-- USD 3.80 on Cytron's Tindie store ("Sold out since Nov 17, 2022"), checked 16 Oct 2026
+RM18.90 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-maker-drive
+https://my.cytron.io/p-maker-drive-simplifying-h-bridge-motor-driver-for-beginner
 
 ## Datasheet
 https://docs.google.com/document/d/1XakJWz9DAtrMc_Jf75FnDXs4gwT_osCSj3Rbx1OU7bM/edit
@@ -5959,6 +6068,7 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Operating temperature: [NOT STATED]
 - Terminal type and wire size: [NOT STATED]
 - Packing list: 1 x 3Amp 4V-16V DC Motor Driver (2 Channels) (product listing)
+- 3 A per channel continuous, 5 A peak; reverse polarity protection (product page)
 
 ## Interfaces and compatibility
 - Pins: VB+, VB- (power input terminal); motor output terminals; M1A, M1B, M2A, M2B (PWM inputs); 5VO; GND
@@ -5995,10 +6105,10 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Reverse polarity protection pitched against "a very common mistake done by a lot of makers even for the very experienced one" (datasheet)
 
 ## Price band
-- USD 7.00 on Cytron's Tindie store ("Sold out since Aug 02, 2026"), checked 16 Oct 2026
+- RM39.06 on my.cytron.io, availability 90 (read 2026-10-19); USD 7.00 on Cytron's Tindie store (sold out there since 2 Aug 2026)
 
 ## Product page
-https://www.cytron.io/p-mdd3a
+https://my.cytron.io/p-mdd3a
 
 ## Datasheet
 https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/edit
@@ -6042,6 +6152,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defect only
 - In the box: 1 x SHIELD-2AMOTOR, 5 x mini jumper
+- Power source jumper: from the Arduino (VIN, 6.5–12 V) or an external supply (5–26 V); external supply recommended (product page)
 
 ## Interfaces and compatibility
 - Signed Magnitude: DIR 1 = D4, EN 1 = D5, EN 2 = D6, DIR 2 = D7
@@ -6066,7 +6177,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM55.44 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-0.8amp-5v-26v-dc-motor-driver-shield-for-arduino-2-channels
@@ -6113,6 +6224,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defect only; cutting any trace voids the warranty
 - In the box: 1 x Cytron 3A Motor Driver (Code: SHIELD-3AMOTOR)
+- Product page confirms the manual: DRV8871, 7–30 V, 1.2 A continuous / 3 A peak, current limiting, 3.3/5 V logic, DIP-selectable modes, no motor-supply polarity protection
 
 ## Interfaces and compatibility
 - Sign Magnitude: DIR1 = D4, EN1 = D5, EN2 = D6, DIR2 = D7
@@ -6140,7 +6252,7 @@ An Arduino shield that drives two brushed DC motors in both directions using the
 - The manual describes it as "an improvement from our previous Cytron 2A Motor Driver Shield" that "can handle higher current up to 3A together with limit current protection"
 
 ## Price band
-RM41.79 on offer (was RM92.40) (Cytron product page, read 2026-10-16)
+RM41.79 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-1.2amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels
@@ -6184,10 +6296,12 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Power indicator LED and motor status indicator LEDs
 - 3 mm mounting holes for standard PCB stands
 - Over-current, thermal and under-voltage protection: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Dimensions: 10.67 cm × 5.21 cm (product page)
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defects only
 - In the box: 1 x FD04A Rev2.0 board, 1 x 14 way IDE cable connector
+- Packing: FD04A and a 14-way IDE cable (product page)
+- Rev2.0 since 10 April 2015 (product page)
 
 ## Interfaces and compatibility
 - Control pins through a 7 x 2 (14-way) IDE socket or through extra solder pads
@@ -6214,7 +6328,7 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - The manual describes FD04A Rev2.0 as "an enhanced version of FD04A Rev1.0"
 
 ## Price band
-[NOT STATED]
+RM180.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-1.5amp-7v-25v-dc-motor-driver-4-channels
@@ -6262,6 +6376,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Packing list: 1 x MD10C R3.0; 1 x 2510 PCB connector 3-way female; 3 x 2510 terminal pin; 4 x plastic spacer (~7 mm)
 - Warranty: 12 months, manufacturing defects only
 - Operating temperature: [NOT STATED]
+- Packing: MD10C Rev3.0, 2510 3-way connector + 3 pins, 4 plastic spacers (product page)
 
 ## Interfaces and compatibility
 - Green terminal block: pin 1 V motor Power + (5V to 30VDC), pin 2 V motor Power - (ground)
@@ -6302,7 +6417,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Product page points to MD13S as an SMD version with similar specs at a lower price
 
 ## Price band
-- $11.50 on www.cytron.io (10 or more: $10.63; 50 or more: $9.20), read 16 Oct 2026
+RM64.26 on my.cytron.io (read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-5v-30v-dc-motor-driver
@@ -6342,11 +6457,13 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - Test buttons to test the functionality of the motor / driver
 - Power LED; Motor Status LEDs (turn on when the motor is running)
 - 3D printable case STL file linked on the product page
-- Dimensions: [NOT STATED]
+- Dimensions: 81.28 mm × 48.26 mm (product page)
 - Operating temperature: [NOT STATED]
-- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
-- Packing list: [NOT STATED]
-- Warranty: [NOT STATED]
+- Protections: no reverse polarity protection (product page); over-current, thermal, under-voltage: [NOT STATED]
+- Packing list: MD10-POT, 10 kΩ potentiometer with connector, 3-way rocker switch with connector, Quick Start Guide card (product page)
+- Warranty: 12 months (product page)
+- Regenerative braking (product page)
+- No reverse polarity protection (product page)
 
 ## Interfaces and compatibility
 - Power Input Terminal: connect to battery
@@ -6356,7 +6473,7 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - PWM/DIR Input: PWM signal for speed, DIR pin for direction
 - Arduino: Cytron Motor Drivers Library (version 1.0.1), PWM_DIR example, `CytronMD motor(PWM_DIR, pwmPin, dirPin)`
 - Connector pin order: [NOT STATED]
-- Locked-antiphase PWM: [NOT STATED]
+- Sign-magnitude and locked-antiphase PWM: supported (product page)
 - RC, analog voltage or serial input: [NOT STATED]
 - Wire size: [NOT STATED]
 
@@ -6372,14 +6489,14 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - PWM Low brakes the motor regardless of DIR
 - Single channel, brushed DC motor
 - Forward/reverse depends on motor wiring
-- Protections (reverse polarity, over-current, thermal, under-voltage): [NOT STATED]
+- Protections: no reverse polarity protection (product page); over-current, thermal, under-voltage: [NOT STATED]
 - Switching power supply / regenerative current guidance: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM55.65 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10-amp-7v-30v-potentiometer-and-switch-control-dc-motor-driver
@@ -6423,6 +6540,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Warranty: 12 months, manufacturing defects only
 - Over-current, thermal, under-voltage, reverse-polarity protection: [NOT STATED]
 - Dimensions: [NOT STATED]
+- Product page: 7–25 V (Rev1.0), 7–30 V (Rev2.0); 10 A continuous, 15 A peak for 10 s; regenerative braking; PWM up to 10 kHz
 
 ## Interfaces and compatibility
 - PWM pin selectable: D3, D5, D6, D9, D10 or D11 (default D3)
@@ -6452,7 +6570,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
 
 ## Price band
-[NOT STATED]
+RM67.20 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino
@@ -6536,10 +6654,10 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 5�
 - Solid-state components "result in faster response time and eliminate the wear and tear of the mechanical relay"
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $22.33; 20 or more $21.15; 50 or more $19.98 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM108.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
+https://my.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels
 
 ## Datasheet
 https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
@@ -6578,6 +6696,9 @@ An Arduino-shield-format driver for two brushed DC motors, 10 A continuous per c
 - Arduino reset button
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Can drive one bipolar/unipolar stepper motor (product page)
+- 5 V buck output 500 mA max to power the Arduino (product page)
+- Packing: 1 × shield (product page)
 
 ## Interfaces and compatibility
 - Arduino shield form factor: male header (bottom) to the Arduino, female header (top) for stacking other shields
@@ -6604,7 +6725,7 @@ An Arduino-shield-format driver for two brushed DC motors, 10 A continuous per c
 - [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM120.12 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels
@@ -6647,6 +6768,7 @@ A Raspberry Pi HAT that drives two brushed DC motors at up to 10 A continuous ea
 - Packing list: 1 x Hat-MDD10, 1 x PC104 Header Pin (2x20) (CN-PH-PC104)
 - Warranty: 12 months, manufacturing defects only
 - Thermal, under-voltage, reverse-polarity protection: [NOT STATED]
+- Product page confirms 6–24 V, 10 A continuous / 30 A peak (10 s), current limiting at 30 A, 20 kHz, 67.5 × 59 mm
 
 ## Interfaces and compatibility
 - PWM1 = GPIO12, DIR1 = GPIO26, PWM2 = GPIO13, DIR2 = GPIO24 (BCM numbering)
@@ -6670,7 +6792,7 @@ A Raspberry Pi HAT that drives two brushed DC motors at up to 10 A continuous ea
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
 
 ## Price band
-[NOT STATED]
+RM129.36 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-6v-24v-dc-motor-driver-hat-for-rpi-2-channels
@@ -6750,14 +6872,14 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Motor direction depends on wiring
 - Battery vs switching power supply guidance: [NOT STATED] in the user's manual
 - Terminal socket colours differ between user's manual (Black for power, Green for Motor) and product page (Normally Black is for Motor, Green is for Power)
-- Listed as Out Of Stock on my.cytron.io (16 Oct 2026)
+- Back in stock on my.cytron.io (availability 73, 19 Oct 2026); three options: pre-soldered terminal blocks, loose terminal blocks, or pin headers for SUMO:BIT
 
 ## Positioning (kept apart from specs)
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay"
 - "Fully NMOS H-Bridge for better efficiency and no heat sink is required"
 
 ## Price band
-- my.cytron.io: 1 unit RM55.60; 5 or more RM52.80; 20 or more RM50.00; 50 or more RM47.20 (read 16 Oct 2026)
+RM64.26 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-13amp-6v-30v-dc-motor-driver
@@ -6837,10 +6959,10 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Overcurrent protection "prevents the motor driver from damage when the motor stalls or an oversized motor is hooked up" (datasheet)
 
 ## Price band
-- www.cytron.io: $17.25; 10 or more $15.87; 50 or more $14.66 (read 16 Oct 2026; currency shown only as "$")
+RM97.44 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver
+https://my.cytron.io/p-20amp-6v-30v-dc-motor-driver
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-254/pdf/md20a_datasheet.pdf
@@ -6918,10 +7040,10 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 6�
 - Product page features: "Buttons for quick testing." "LEDs for motors output state."
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $33.25; 20 or more $31.50; 50 or more $29.75 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM161.70 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-20amp-6v-30v-dc-motor-driver-2-channels
+https://my.cytron.io/p-20amp-6v-30v-dc-motor-driver-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-287/pdf/cytron-20a-6v-30v-dual-dc-motor-driver-datasheet.pdf
@@ -7003,10 +7125,10 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 7
 - Product page features: "Buttons for quick testing." "LEDs for motor output state." "Dual Input Mode: PWM/DIR or Potentiometer/Switch Input."
 
 ## Price band
-- www.cytron.io volume prices: 5 or more $56.05; 10 or more $53.10; 30 or more $50.15 (read 16 Oct 2026); single-unit price [NOT STATED]
+RM273.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-25amp-7v-58v-high-voltage-dc-motor-driver
+https://my.cytron.io/p-25amp-7v-58v-high-voltage-dc-motor-driver
 
 ## Datasheet
 https://docs.google.com/document/d/1xJHVG2dc3aEtedCHf3L9NzUy5KqpxeWjeS9Lfh9XuqA/edit
@@ -7052,6 +7174,8 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 5
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Over-current, thermal and under-voltage protection: [NOT STATED]
+- Reverse polarity protection for Vin/Vmotor; brakes when PWM is low (product page)
+- Size ~94 × ~79 mm; CE, FCC and RoHS certificates linked (product page)
 
 ## Interfaces and compatibility
 - Input header (2510, 3 pins): pin 1 GND, pin 2 PWM (not RC PWM), pin 3 DIR
@@ -7092,7 +7216,7 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 5
 - "Fully NMOS design not only provides faster switching time, it is also more efficient and no heatsink or fan is required."
 
 ## Price band
-[NOT STATED]
+RM161.70 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-30amp-5v-30v-dc-motor-driver
@@ -7144,6 +7268,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Operating temperature: [NOT STATED]
 - Over-current protection: [NOT STATED]
 - User's Manual: V1.0, June 2015
+- 10 A continuous per channel at 25 °C, 30 A peak for 10 s (product page)
+- Dimension 66.8 × 101.09 mm (product page)
+- Error LED codes: 2 input error, 3 under-voltage, 4 over-voltage, 5 over-temperature, 6 shutdown (product page)
+- Packing: board, 6-way connector housing, 6 terminal pins (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC receiver, potentiometer, joystick, foot pedal, PWM, microcontroller UART
@@ -7178,10 +7306,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Manual: designed mainly for differential drive robots controlled by an RC receiver
 
 ## Price band
-[NOT STATED]
+RM254.10 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-10amp-7v-35v-smartdrive-dc-motor-driver-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-165/pdf/mdds10_users_manual.pdf
@@ -7234,6 +7362,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - User's Manual: Rev 1.2, September 2023
+- Size 81.28 × 101.60 × 42 mm (product page)
+- Latest board revision Rev 1.3 (RC-mode jerk fix); RC header vertical since Rev 1.2 (product page)
+- Default configuration: RC, Mixed mode (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC transmitter/receiver, analog joystick, microcontroller (Analog, PWM, UART)
@@ -7271,10 +7402,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
 
 ## Price band
-[NOT STATED]
+RM364.98 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-mdds30
+https://my.cytron.io/p-30amp-7v-35v-smartdrive-dc-motor-driver-2-channels
 
 ## Datasheet
 https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view
@@ -7327,6 +7458,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - User's Manual: Rev 1.1, July 2019
+- Two DC brushless fans on the top cover (product page)
+- Dimension ~190 × 121 × 45 mm (product page)
+- Peak 100 A for 1 s; no polarity protection (product page)
 
 ## Interfaces and compatibility
 - Signal sources: RC transmitter/receiver, joystick or foot pedal with potentiometer, Cytron Breakout board with Joystick soldered, microcontroller (PWM, UART)
@@ -7362,10 +7496,10 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Manual: one of the latest smart series motor drivers, designed to drive medium power brushed DC motors
 
 ## Price band
-[NOT STATED]
+RM831.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-mdds60
 
 ## Datasheet
 https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view
@@ -7468,10 +7602,10 @@ A single-channel brushed DC motor driver for medium to high power motors, runnin
 - User's Manual: makes driving a robot with differential drive "a truly plug and play experience"
 
 ## Price band
-$62.50 ex tax (www.cytron.io, read 2026-10-16); 5 or more $57.50; 10 or more $50.00
+RM346.50 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-40amp-10v-45v-smartdrive-dc-motor-driver
+https://my.cytron.io/p-40amp-10v-45v-smartdrive-dc-motor-driver
 
 ## Datasheet
 https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit
@@ -7519,6 +7653,8 @@ A single-channel, bi-directional smart driver for one high-power brushed DC moto
 - Reverse polarity protection: [NOT STATED]
 - Length and width: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- No reverse polarity protection for Vmotor (product page)
+- Size 122 × 178 × 75 mm; wire 2–3 × 8 AWG per terminal (product page)
 
 ## Interfaces and compatibility
 - Positive and negative supply terminals; Motor Terminal A and B
@@ -7559,7 +7695,7 @@ A single-channel, bi-directional smart driver for one high-power brushed DC moto
 - "This make driving a robot with differential drive a truly plug and play experience."
 
 ## Price band
-[NOT STATED]
+RM1,062.60 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-160amp-8v-28v-smartdrive-dc-motor-driver
@@ -7621,6 +7757,9 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Failsafe motor behaviour on RC signal loss: [NOT STATED]
 - Calibration procedure for the transmitter: [NOT STATED]
 - Packing list: [NOT STATED]
+- Packing: driver, 2 × 10 cm 3-way extension wires, 4 × 7 mm nylon spacers, 2 mm screwdriver (product page)
+- Battery: 2S to 6S LiPo within 7–30 V (product page)
+- Update to the latest firmware before use — Cytron firmware update guide (product page)
 
 ## Interfaces and compatibility
 - Power input terminal: V+, V-
@@ -7662,7 +7801,7 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Compact footprint for space-limited competition robots
 
 ## Price band
-[NOT STATED]
+RM126.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-5-amp-7v-30v-dc-motor-driver-for-r-c-2-channels
@@ -7719,6 +7858,8 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - Terminal type and wire size: [NOT STATED]
 - Undervoltage / overvoltage thresholds: [NOT STATED]
 - Failsafe motor behaviour on RC signal loss: [NOT STATED]
+- Discrete NMOS H-bridge; 5 V BEC 500 mA; auto calibration at power-up (product page)
+- In stock on my.cytron.io (availability 193, read 2026-10-19)
 
 ## Interfaces and compatibility
 - Power input terminal: VB+, VB-
@@ -7755,10 +7896,10 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - "Plug & play, controlled from RC directly."
 
 ## Price band
-$39.00 ex tax (www.cytron.io, read 2026-10-16; shown Out of Stock); 5 or more $37.05; 20 or more $35.10; 50 or more $31.20
+RM180.18 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
+https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf
@@ -7804,6 +7945,8 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - IP rating: [NOT STATED]
 - Operating temperature: [NOT STATED]
 - Unit weight: [NOT STATED]
+- Packing: iMD16, 10 kΩ potentiometer and 3-way rocker switch with connectors, JST PH PWM/DIR connector, mini screwdriver, Quick Start Guide card (product page)
+- Also sold by co-launch partners in Australia, China, India, Japan and the USA (product page)
 
 ## Interfaces and compatibility
 - Power Input Terminal: 2-way screw terminal, POWER + / −, 7–30 V DC
@@ -7852,10 +7995,10 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - Target audience: system integrators, existing Cytron MD users, machine makers, industrial engineers / technicians
 
 ## Price band
-[NOT STATED]
+RM163.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://cytron.io/p-16amp-7-30v-industrial-dc-motor-driver
+https://my.cytron.io/p-16amp-7-30v-industrial-dc-motor-driver
 
 ## Datasheet
 [NOT STATED]
@@ -7903,6 +8046,9 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - Operating temperature: -20 to 60 ℃
 - Enclosure: metal, fanless, DIN rail mountable; 141.2mm x 83.5mm x 39.5mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - DIN bracket can be moved; four mounting options (no DIN socket, DIN positions 1 (default), 2 and 3)
+- Sold on my.cytron.io as CM4 Wireless 8GB/32GB, 4GB/32GB and 2GB/16GB (page shared with CM5)
+- Warranty 12 months (product page)
+- Packing: controller with CM4, dual-band antenna, flat and Phillips screwdrivers, 4 silicone bumpers; no NVMe SSD or mini PCIe card (product page)
 
 ## Interfaces and compatibility
 - 1x full-size HDMI 2.0 (up to 4K@60Hz)
@@ -7959,7 +8105,7 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - Sibling product IRIV PiControl CM5 (IRIV-PICL5) exists; keep CM4 and CM5 specs apart
 
 ## Price band
-[NOT STATED]
+RM1,489.00–RM2,899.00 across CM4/CM5 variants (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller
@@ -8010,6 +8156,11 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Enclosure: metal, fanless, DIN rail mountable; 141.2mm x 83.5mm x 39.5mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - DIN bracket can be moved; four mounting options (without DIN rail socket, DIN positions 1 (default), 2 and 3)
 - DI and DO GPIO numbers: [NOT STATED]
+- Sold on my.cytron.io as CM5 Wireless 16GB/64GB and 8GB/64GB (product page shared with CM4)
+- GPU: 800 MHz VideoCore VII, OpenGL ES 3.1 (product page)
+- Wireless: 2.4/5 GHz Wi-Fi 802.11ac, Bluetooth 5.0, BLE (product page)
+- Dimension: 141.2 × 83.5 × 39.5 mm, enclosure only (product page)
+- Packing: controller with CM5, dual-band antenna, flat and Phillips screwdrivers, 4 silicone bumpers; no NVMe SSD or mini PCIe card (product page)
 
 ## Interfaces and compatibility
 - 1x full-size HDMI 2.0 (up to 4K@60Hz), Type-A
@@ -8056,10 +8207,10 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Sibling product IRIV PiControl CM4 (IRIV-PICL); keep CM4 and CM5 specs apart
 
 ## Price band
-[NOT STATED]
+RM1,489.00–RM2,899.00 across CM4/CM5 variants (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller
 
 ## Datasheet
 [NOT STATED]
@@ -8107,6 +8258,8 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Relative humidity: 10 – 80 % (non-condensing)
 - Enclosure: metal, fanless design, DIN rail mountable
 - Dimension: (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors); DIN bracket adds 8mm, terminals add 15.5mm
+- Packing: controller + mini flat screwdriver (product page)
+- Example code: github.com/CytronTechnologies/Cytron-IRIV-IO-Controller; CircuitPython getting-started tutorial (product page)
 
 ## Interfaces and compatibility
 - Terminal 1 (pluggable): V-, V+ (10-30V), DGND, S/S0..4, DI0–DI4, RS485 A / B / G, AGND ×2, AN0, AN1
@@ -8152,10 +8305,10 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Cytron video framing: counts pulses reliably, with debouncing, and runs continuously without needing a PLC. Running totals sit in Modbus registers. You do not need a full PLC just to count pulses, and setup time and cost are lower
 
 ## Price band
-[NOT STATED]
+RM303.45 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-io-controller
+https://my.cytron.io/p-iriv-io-controller
 
 ## Datasheet
 [NOT STATED]
@@ -8179,6 +8332,7 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 
 ## Specs and functions
 - Datasheet: Rev 1.0, June 2026
+- Status: on sale on my.cytron.io, RM334.95 (read 2026-10-19)
 - Firmware: MQTT Ready Gateway, preloaded from the factory; uses standard MQTT (Port 1883)
 - Factory reset: hold the user button for 10 seconds during boot until the buzzer beeps; configuration is wiped, licence is preserved
 - USR LED network status: Slow Blink = Ethernet down; Solid On = Ethernet up, MQTT disabled; Single Pulse every 1.5s = Ethernet up, MQTT enabled but not reachable; Two Pulses every 3s = Ethernet up, MQTT connected
@@ -8203,6 +8357,11 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Relative humidity: 10 – 80 % (non-condensing)
 - Enclosure: metal, fanless design, DIN rail mountable
 - Dimension: (L)140mm x (W)60mm x (H)36mm (metal enclosure only, excluding DIN socket & connectors); DIN bracket adds 8mm, terminals add 15.5mm
+- Setup: USB-C PROG → USB network → web UI 10.0.0.1; change the default password before enabling Ethernet config (Cytron tutorial)
+- Topics: Base Topic + di/, do/…/state, do/…/cmd (1/ON, 0/OFF), ai/, mbpoll/, mbwrite/ and …/confirm; QoS 0–2 and Retain per channel (Cytron tutorial)
+- Modbus RTU master: up to 32 poll jobs, write jobs FC5/FC6/FC16, scaling and byte order (Cytron tutorial)
+- Firmware update via web UI or BOOTSEL (.uf2 to the RP2350 drive); factory reset by holding User button at power-on until beep (Cytron tutorial)
+- RTC is not used by the MQTT firmware (product page)
 
 ## Interfaces and compatibility
 - Differences from the IRIV IO Controller: factory MQTT Gateway firmware that must not be overwritten; the user button does a factory reset; the USR LED shows network/MQTT status; the buzzer beeps on factory reset; the RTC is not used; USB-C is used for configuration
@@ -8236,16 +8395,16 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Operating temperature -20 to 70 ℃; humidity 10 – 80 % non-condensing
 - 2MB flash, 520KB SRAM
 - RTC backup needs a CR2032 coin cell inserted by the user
-- Not confirmed on sale; product page not confirmed
+- Web UI first reached over USB (10.0.0.1); password change forced before Ethernet configuration; MQTT port 1883, no TLS (Cytron tutorials)
 
 ## Positioning (kept apart from specs)
 - Datasheet subtitle: "IR4.0 Industrial I/O Controller"
 
 ## Price band
-[NOT STATED]
+RM334.95 (Cytron product page, read 2026-10-19)
 
 ## Product page
-[NOT STATED]
+https://my.cytron.io/p-iriv-io-controller-mqtt-ir4.0-industrial-i-o-controller-with-mqtt-ready
 
 ## Datasheet
 [NOT STATED]
@@ -8291,6 +8450,8 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Enclosure: metal, fanless design
 - Dimensions: 147mm x 94mm x 35.7mm (metal enclosure only, excluding antenna) per datasheet Features table; the datasheet dimension drawing shows 147.00 x 98.00 x 35.00
 - Mounting: 4x M4 VESA mount 75x75mm; flange slots (M4 and M8) per datasheet drawing
+- Variants sold: Wireless 16GB/64GB, 4GB/32GB, 2GB/16GB; options SmartHub Only or Essential Kit (+27 W PD PSU and HDMI cable) (product page)
+- Antenna included; CR2032 RTC cell not listed in the box (product page)
 
 ## Interfaces and compatibility
 - 2x full size HDMI 2.0 (HDMI0, HDMI1), Type-A, up to 4K@60Hz
@@ -8344,7 +8505,7 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Datasheet tagline: "Simplifying Smart Technology"
 
 ## Price band
-[NOT STATED]
+RM925.00–RM2,396.35 across variants and kits (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-smarthub-cm5
@@ -8403,6 +8564,8 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Operating temperature: -20 to 60 ℃
 - Enclosure: metal, fanless, DIN rail mountable (bracket can move to the bottom)
 - Dimension: 139mm x 88mm x 38mm (metal enclosure only, excl. antenna, DIN socket & connectors)
+- Configurations: 16GB/64GB + 26 TOPS, 8GB/32GB + 26 TOPS, 8GB/32GB + 13 TOPS AI HAT+; options EdgeAI Only, Basic Kit (PSU, camera, dome light, stand), Complete Kit (+HDMI cable, keyboard/mouse) (product page)
+- Operating temperature −20 to 60 °C; power max 11 W (product page)
 
 ## Interfaces and compatibility
 - Terminal (pluggable): VIN, GND, RS485 A/B/G, S/S, DI0, DI1, DO0, DO1, L0 +/−, L1 +/−
@@ -8454,7 +8617,7 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Local edge processing to avoid depending on the cloud for AI inference and to reduce latency and bandwidth in IIoT deployments
 
 ## Price band
-[NOT STATED]
+RM2,487.00–RM5,152.50 across configurations and kits (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-iriv-edge-ai-cm5
@@ -8596,7 +8759,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - 3 programmable push buttons: SW1 GPIO 21, SW2 GPIO 16, SW3 GPIO 20; configure as input pull-up (the manual's feature list says "GPIO 21, 19 and 20"; its board layout, section 7.2 and demo code say 21, 16 and 20)
 - Active buzzer on GPIO 26: HIGH = on, LOW = off
 - USB Micro-B socket for 5V input and USB-to-UART communication, connected to the Raspberry Pi UART (TX GPIO 14, RX GPIO 15)
-- USB-serial IC: FT231X (manual board layout); the manual's feature list says CH340
+- USB-serial IC: FT231X on Rev1.1 (shipping since January 2019); CH340 on the earlier Rev1.00 (product page)
 - USB-serial activity indicator LED
 - Labelled breakouts: 5V, 3.3V, GND; I2C SDA GPIO 2, SCL GPIO 3; UART TX GPIO 14, RX GPIO 15; SPI MOSI GPIO 10, MISO GPIO 9, SCK GPIO 11, CE0 GPIO 8, CE1 GPIO 7; GPIO 17, 18, 27, 22, 25, 12, 13, 19
 - Input voltage: USB 5V, from computer, power bank or standard USB adapter
@@ -8608,7 +8771,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - Dimensions: [NOT STATED]
 
 ## Interfaces and compatibility
-- Raspberry Pi 3B / 3B+ and Raspberry Pi Zero / W / WH
+- Raspberry Pi 3B / 3B+ / 3A+, 4B, 1 A+ and Raspberry Pi Zero / W / WH (product page); **not compatible with Raspberry Pi 5** (tested by Cytron, product page)
 - Stacks directly on Raspberry Pi Zero WH
 - Raspberry Pi 3 Model B / B+ need the 2x20 PC104 stacking header (included)
 - Serial console: add enable_uart=1 to config.txt; terminal speed 115200 (PuTTY on Windows)
@@ -8643,7 +8806,7 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - "PURPLE PCB!"
 
 ## Price band
-RM45.78 (Cytron product page, read 2026-10-16)
+RM45.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-phat-simplifying-raspberry-pi-for-education
@@ -8684,6 +8847,8 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - 3.3V supply: 3.235 – 3.365 V, max 800 mA
 - GPIO specification: refer to Raspberry Pi
 - Dimensions: [NOT STATED]
+- Status LED on each GPIO; onboard 3.3 V regulator up to 800 mA (product page)
+- Packing: board, mini breadboard, 40-way F-F IDE cable 10 cm, cable clamp, 4 bumpers, PC104 2x20 header (product page)
 
 ## Interfaces and compatibility
 - Designed for the Raspberry Pi 400 (datasheet)
@@ -8713,7 +8878,7 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - Datasheet subtitle: "HAT & GPIO Extension for Raspberry Pi 400"
 
 ## Price band
-RM45.78 (Cytron product page, read 2026-10-16)
+RM45.78, out of stock (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-hat-base-hat-and-gpio-extension-for-raspberry-pi-400
@@ -8756,6 +8921,8 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Boot switch: RUN or BOOT (BOOT loads the OS image to the CM4 eMMC via USB-C)
 - Status LEDs: M.2, ACT, PWR, 5V
 - Dimensions: 110 mm × 110 mm; 4 mounting holes Ø 3.2 mm at 104 mm × 104 mm
+- Bundle "CM4NW216" = Raspberry Pi CM4 2GB RAM, 16GB eMMC, no wireless, plus USB-C power adapter, USB-C cable and HDMI cable (product page)
+- DSI and CSI cannot be used while the RTC is in use (product page)
 
 ## Interfaces and compatibility
 - Compute Module: Raspberry Pi CM4 (Lite or with eMMC) per datasheet Rev 1.2; product page title says "for Raspberry Pi CM4/CM5"
@@ -8783,17 +8950,17 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Make sure the CM4 orientation is correct in the socket
 - ESD may disturb normal function; power cycle to recover
 - No fan header, USB 3.0 or PoE listed in the datasheet
-- CM5 support: named in the product page title only; not described in the datasheet
+- CM5 support: the product page states "The CM4 Maker Board is compatible with the newly launched Raspberry Pi CM5"; the datasheet (CM4 only) gives no CM5 setup steps
 - Operating temperature and supply current rating: [NOT STATED]
 
 ## Positioning (kept apart from specs)
 - Datasheet title: "CM4 Maker Board — Maker's Carrier Board for Raspberry Pi CM4"
 - Product page title: "CM4 Maker Board: Maker's Carrier Board for Raspberry Pi CM4/CM5"
 - Product page bundles: "CM4 Maker board ONLY" and "CM4 Maker Board + CM4NW216 + Accessories"
-- Out of stock on my.cytron.io (2026-10-16)
+- Back in stock on my.cytron.io (availability 59, read 2026-10-19)
 
 ## Price band
-[NOT STATED]
+RM224.00–RM651.60 across options (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-cm4-maker-board-and-kits
@@ -8839,6 +9006,8 @@ An industrial I/O HAT+ for the Raspberry Pi 5 that adds RS485, RS232, isolated d
 - Operating temperature: -20 to 60 ℃
 - Relative humidity: 10 – 80 % (non-condensing)
 - Dimensions: [NOT STATED]
+- Packing: HAT, 20-pin pluggable terminal block, 3 M2.5 × 21 mm PCB stands, pinout sticker (product page)
+- Designed for the Argon40 Industria Case; LetsTrust TPM supported (product page)
 
 ## Interfaces and compatibility
 - Connects to the Raspberry Pi 5 40-pin GPIO header
@@ -8878,7 +9047,7 @@ An industrial I/O HAT+ for the Raspberry Pi 5 that adds RS485, RS232, isolated d
 - Cytron tagline: "Simplifying Digital Making"
 
 ## Price band
-[NOT STATED]
+RM138.60 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-industry-hat-plus-for-raspberry-pi-5
@@ -8931,6 +9100,7 @@ A 27 W AC-to-DC power supply with a captive USB Type-C cable and USB Power Deliv
 - AC plug options: UK (Type G) / EU (Type C) / US (Type A); only one included (product page); datasheet says three interchangeable AC plugs are included
 - Adapter dimensions and weight: [NOT STATED] (drawings only)
 - Warranty: 12 months (product page)
+- One plug (UK, EU or US) in the box, as selected (product page packing list)
 
 ## Interfaces and compatibility
 - Output: one captive cable with USB Type-C plug; no other output connector
@@ -8958,7 +9128,7 @@ A 27 W AC-to-DC power supply with a captive USB Type-C cable and USB Power Deliv
 - "Suitable for use around the world" thanks to 100–240 VAC input and interchangeable plugs; "versatile" PD support; "sleek black color" (datasheet)
 
 ## Price band
-RM50.00 (Cytron product page, read 2026-10-19)
+RM50.00 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-27w-pd-5v-5a-usb-c-universal-power-adapter
@@ -9014,6 +9184,8 @@ A 17.5 W fixed 5 V, 3.5 A AC-to-DC power supply with a captive USB Type-C cable,
 - AC plug: ONE interchangeable AC plug included, default UK; PSU shipped from 23 October 2024 onwards comes with UK plug only (datasheet); plug options UK / EU (product page)
 - Adapter dimensions and weight: [NOT STATED] (drawings only)
 - Warranty: [NOT STATED]
+- Size 47.8 × 89.8 × 65.95 mm with plug; short-circuit and over-current protection (product page)
+- Raspberry Pi 5: boots, but warns "not capable of supplying 5A" and limits USB 3 ports to 600 mA (Cytron tutorial)
 
 ## Interfaces and compatibility
 - Output: one captive cable with USB Type-C plug; single fixed 5 V output; no USB Power Delivery profiles
@@ -9043,7 +9215,7 @@ A 17.5 W fixed 5 V, 3.5 A AC-to-DC power supply with a captive USB Type-C cable,
 - "Suitable for 24-hour operation" (product page)
 
 ## Price band
-RM32.00 (Cytron product page, read 2026-10-19)
+RM32.00 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-5v-3p5a-usb-c-universal-power-adapter
@@ -9094,12 +9266,15 @@ A single cylindrical 18650-size lithium-ion cell, nominal 3.7 V (4.2 V full), 22
 - Environmental: RoHS (vendor spec)
 - Battery warranty: 1 week (product page); vendor warranty 1 year from leaving the manufacturer (vendor spec)
 - Shipping: cannot ship to Sabah, Sarawak, or overseas (product page)
+- Life cycle: more than 500 cycles under proper charge/discharge (product page)
+- Recommended chargers: N2 Plus Universal Charger, Multifunction LiPo Balance Charger, 1A LiPo Charger Module with Protection (product page)
+- Series use: 2 cells = 7.4 V, 3 cells = 11.1 V nominal (product page)
 
 ## Interfaces and compatibility
 - Two bare terminals (button-top positive, flat negative); no tabs, wires, connector or protection PCB
 - Requires a proper Li-ion charger with balancer (product page); charger not included and not named
 - Used as the robot power in the STRIKER:BIT Soccer Competition Kit ("1x 3.7V 2200mAh 18650 Li-Ion with button top", STRIKER:BIT product page)
-- Compatible holders: [NOT STATED]
+- Compatible holders: Cytron single, two-in-series and three-in-series 18650 holders (CN-BA-18650-01/-02/-03), linked on the product page
 
 ## Use cases
 - Power source for small robots and projects that need a single 3.7 V Li-ion cell (STRIKER:BIT robot power)
@@ -9121,7 +9296,7 @@ A single cylindrical 18650-size lithium-ion cell, nominal 3.7 V (4.2 V full), 22
 - [NOT STATED]
 
 ## Price band
-RM10.80; 5+ RM9.72; 20+ RM8.64 (Cytron product page, read 2026-10-19)
+RM10.80 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-3.7v-2200mah-18650-li-ion-battery
@@ -9181,7 +9356,7 @@ A black 30 mm x 30 mm x 8 mm DC cooling fan for Raspberry Pi boards, supplied wi
 - Fan "with screws" and a "longer cable" for Raspberry Pi; dual speed from the GPIO header (product page)
 
 ## Price band
-RM8.00; 10+ RM7.36; 30+ RM6.40 (Cytron product page, read 2026-10-19)
+RM8.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws
@@ -9260,7 +9435,7 @@ A Cytron-branded M.2 2242 NVMe (PCIe) solid-state drive that ships with Raspberr
 - Ready-to-boot storage for Raspberry Pi — plug in and boot, no imaging needed (product page framing)
 
 ## Price band
-RM369.00 – RM739.00 depending on capacity (Cytron product page, read 2026-10-19)
+RM739.00 shown for the default option (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-nvme-2242-b-plus-m-key-makerdisk-ssd-preloaded-rpi-os
@@ -9641,6 +9816,8 @@ A one-day Edge AI workshop at Cytron HQ in Bukit Mertajam, Penang, built around 
 - Tentative timetable: Ice Breaking 9:00–9:15 AM; Introduction to Python 9:15–10:00 AM; Breakfast 10:00–10:30 AM; Factory Tour 10:30–11:00 AM; Introduction to OpenCV 11:00–11:30 AM; Introduction to AI 11:30 AM–12:30 PM; Introduction to ROS2 12:30–1:00 PM; Lunch 1:00–2:00 PM; Assembling Raspbot 2:00–2:30 PM; Testing Raspbot App 2:30–3:00 PM; Raspbot Programming 3:00–4:30 PM; Tea Break 4:30–4:45 PM; Q&A / Summary 4:45–5:00 PM (workshop tentative)
 - Prerequisites: [NOT STATED]
 - Refund / cancellation terms: [NOT STATED]
+- Full refund for cancellations made 1 week before the training date (product page)
+- Can also be run at the customer's location by enquiry (product page)
 
 ## Interfaces and compatibility
 - Robot computer: Raspberry Pi 5 (8GB) with Raspbot OS on 32GB microSD (product page)
@@ -9662,7 +9839,7 @@ A one-day Edge AI workshop at Cytron HQ in Bukit Mertajam, Penang, built around 
 - Introduction to AI workshop with a hands-on mobile robot, food and certificate included (product page)
 
 ## Price band
-RM1,800.00 offer, was RM2,100.00 (Cytron product page, read 2026-10-19)
+RM1,800.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-ai-training-kit

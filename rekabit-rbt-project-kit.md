@@ -5,7 +5,8 @@
 | Product code | `V-KIT-REKABIT-RBT` (product page, variant parent) [PP]. Kit codes `KIT-REKABIT-RBT` (with micro:bit V2) / `KIT-REKABIT-RBT-NB` (without micro:bit) ; the Cytron CDN image path also uses `KIT-REKABIT-RBT` [PP: resource hub] |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Page agrees with the KB (two options, packing list, guide links, resource hub, MakeCode extension); nothing new on component models or port labels, so it stays Medium |
 | Primary source | No datasheet exists for the kit. Guide book: **"Buku Panduan — Kit Projek RBT REKA:BIT" (REKA:BIT RBT Project Kit Quick Start Guide), Malay edition, file `REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf`** (static.cytron.io), credited "Adam & Anna", "Nota daripada rero EDUteam" [UM]. "v1.0" comes from the file name only; no date is printed in the readable text. The English edition (link.cytron.io/rekabit-project-book-english) could not be fetched here — see Needs verification |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -37,6 +38,11 @@ No spec table exists for the kit. Kit-level items only; board limits are in reka
 | Battery | AA ×4 in a battery holder with DC plug | [UM][PP] |
 | Warranty | 12 months (manufacturing defects; wear/tear and misuse excluded; repair/testing 7 working days after receipt) | [PP][PP: resource hub helpdesk] |
 | Price | RM219.00–RM295.00 (Cytron product page, read 2026-10-19) | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page note:** from April 2026, prices are subject to SST (Malaysian sales and service tax), calculated at checkout [PP].
+- **Packing list (both options)** matches the KB list; the "without micro:bit" option carries two notes: no micro:bit board included, and a Grove Buzzer is needed with micro:bit V1 (no built-in piezo) [PP]. The page spells the stick "RBG LED Stick" (typo for RGB LED Stick) [PP].
+- **Guide books:** English, Malay and Chinese PDFs via link.cytron.io; MakeCode extension `pxt-rekabit-rbt-project-kit`; Resource Hub on Google Sites; datasheets for REKA:BIT, Maker Soil Moisture Sensor and RGB LED Stick [PP].
+- The ultrasonic sensor, servo, pump and LED modules are not linked to product pages on this page, so their models are still unconfirmed [PP].
 
 ## Interfaces, terminals and pin mapping
 The guide tells the reader to "set the pin number to match the port on REKA:BIT you connected the module to" for the RGB board, Big LED, soil moisture sensor and ultrasonic sensor [UM] — i.e. the port is a choice, not fixed. What the sources state in text:

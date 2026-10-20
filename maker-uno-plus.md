@@ -5,7 +5,8 @@
 | Product code | `MAKER-UNO-PLUS` (user manual cover "MAKER-UNO-PLUS"; packing list "Maker Uno Plus (Code: MAKER-UNO-PLUS)" [UM]; product-page image paths [PP]) |
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Product page confirms FT231X, 12 LEDs (pins 2–13), 3.3 V at 500 mA, packing list with USB cable and pin sticker, and 12-month warranty |
 | Primary source | **Maker Uno Plus (MAKER-UNO-PLUS) User's Manual, Rev 1.0, Oct 2018** (Cytron Technologies Sdn Bhd), public Google Doc linked from the product page (file last modified 2018-11-02) [UM]. No separate datasheet exists in any source found |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -55,6 +56,12 @@ User's Manual section 1 feature list and "Maker Uno Plus Comparison Table" (Make
 | Packing list | 1 × Maker Uno Plus (Code: MAKER-UNO-PLUS), 1 × Micro USB cable, 1 × Pin Header Sticker | [UM] |
 | Warranty | UM: 6 months, manufacturing defects only; misuse and two-way freight not covered. PP: 12 months (see Conflicts) | [UM][PP] |
 | Price | RM75.60 (Cytron product page, read 2026-10-16); UM Oct 2018 table: RM60 (~USD15) | [PP][UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **USB-serial:** "The USB to serial converter used at Maker UNO Plus is upgraded to FT231X from CH340 at Maker UNO"; resources link the FTDI driver (Windows, macOS, Linux) [PP].
+- **Versus Arduino Uno:** adds 12x LED, 1x piezo buzzer, 1x programmable push button; 3.3 V current boosted to 500 mA (from 150 mA); no DC jack; USB Micro-B instead of USB-B [PP].
+- **Extras:** pin-header label stickers (user sticks them on); area on the back to write a name; CE, FCC and RoHS compliant [PP].
+- **Packing list:** 1x Maker UNO Plus, 1x Micro USB cable, 1x pin header sticker [PP].
+- **Resources:** User's Manual (Google Doc), Beginner's Guide (PDF, cdn.cytron.io), schematic, Fritzing file, FTDI driver, Maker UNO projects [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (User's Manual section 4) [UM]:
@@ -137,18 +144,14 @@ Pin summary for tutorials:
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Programmable LED range | [UM] intro: "a programmable LED on every digital pin, from pin D0 to D13" | [UM] comparison table and 7.1: "pin 2 - 13"; [PP: LG] LEDs 2–13 | Same document disagrees; use "pins 2–13" (the specific table/section) and note D0/D1 have TX/RX LEDs — confirm |
-| USB-serial chip | [UM] linked public copy (modified 2018-11-02): features "FT231X", table FT231X, layout FT231X |  internal Drive copy (modified 2022-10-13, newer edit, same Rev 1.0 label): features line "facilitated by the CH340" while its table and layout still say FT231X; [3P] The Pi Hut text also mentions both CH340 and FT231X | [UM] wins: FT231X. The newer internal edit may be a copy-paste from the Maker UNO manual or a hardware change — confirm with Cytron |
-| Warranty | [UM] Rev 1.0 (Oct 2018): 6 months | [PP] (2026-10-16): 12 months | [UM] wins under the rule; the product page is newer and is Cytron's current sales term — confirm before quoting |
+| Programmable LED range | [UM] intro: "a programmable LED on every digital pin, from pin D0 to D13" | [UM] comparison table and 7.1: "pin 2 - 13"; [PP] "added with 12x LED" | Pins 2–13 (12 LEDs) [PP][UM]; D0/D1 have the TX/RX LEDs |
+| USB-serial chip | [UM] linked public copy: FT231X (features, table, layout); [PP] (read 2026-10-19): "upgraded to FT231X from CH340 at Maker UNO", FTDI driver linked |  internal Drive copy (2022 edit): features line "facilitated by the CH340" | **FT231X** — the CH340 line is a copy-paste from the Maker UNO manual |
+| Warranty | [UM] Rev 1.0 (Oct 2018): 6 months | [PP] (read 2026-10-19): 12 months | Use the product page (current sales term): 12 months |
 | Price | [UM] (Oct 2018): RM60 (~USD15) | [PP] (2026-10-16): RM75.60 | Use the product page for price (2026) |
-| USB cable | [UM] packing list: 1 × Micro USB cable | [UM] intro: "If you do not have the Micro-B USB cable, please get it as it is sold separately";  copy's packing list: board only | Packing list wins; [3P] The Pi Hut also lists a USB cable — confirm current box contents |
+| USB cable | [UM] packing list: 1 × Micro USB cable; [PP] packing list (read 2026-10-19): Micro USB cable included | [UM] intro: "…sold separately";  copy's packing list: board only | Included [PP][UM] |
 | Digital I/O count | [UM] features: 14 (6 PWM) | [UM] table: 20 (6) | Not a true conflict: 20 counts A0–A5 as digital (same as Arduino Uno row). Use "14 digital I/O (6 PWM) + 6 analog" |
 
 ## Needs verification
-- Current USB-serial chip on boards shipping in 2026 (FT231X vs CH340 — see Conflicts) and the matching driver.
-- Whether D0 and D1 have their own programmable LEDs (D0–D13 vs pins 2–13).
-- Current box contents (USB cable, pin header sticker; [3P] The Pi Hut also lists a storage box).
-- Current warranty term (6 vs 12 months).
 - Board dimensions, mounting holes (drawing not readable); schematic details (PDF has no text layer).
 - 5V pin current limit (only "USB source"); any USB fuse or protection.
 - Physical differences from Maker UNO beyond the UM table (e.g. layout, label areas) — [3P] The Pi Hut mentions a space on the back to write a name.

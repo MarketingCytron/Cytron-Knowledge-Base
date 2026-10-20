@@ -34,6 +34,10 @@ An Arduino UNO-compatible controller board with an onboard 2-channel brushed DC 
 - Operating temperature: [NOT STATED]
 - Weight: [NOT STATED]
 - Packing list: [NOT STATED]
+- MCU: ATmega328P per product page description (feature list says "ATmega328 with Optiboot")
+- Current limiting at 30 A per channel; sign-magnitude and locked-antiphase PWM up to 20 kHz (product page)
+- Regulators: 5 V 1 A max, 3.3 V 500 mA max (product page)
+- For sumo robots up to 3 kg (product page)
 
 ## Interfaces and compatibility
 - Arduino UNO Standard Female Header: takes compatible Arduino shields, except shields that use D4, D5, D6, D7 (connected to the motor driver internally)

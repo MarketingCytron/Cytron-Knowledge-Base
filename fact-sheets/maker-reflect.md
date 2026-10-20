@@ -25,6 +25,8 @@ A tiny analog infrared reflectance sensor (line detector) with a 3-pin VCC/GND/O
 - Operating temperature: [NOT STATED]
 - Datasheet: MAKER-REFLECT Datasheet, "Analog Reflectance Sensor (Line Detector)", Rev 1.0, November 2019
 - Warranty: 12 months (product page)
+- Size 18.1 × 8.4 × 4.2 mm excluding header pin; mounting hole at the centre (product page)
+- Optimal distance 1–40 mm (product page comparison table)
 
 ## Interfaces and compatibility
 - Connector: 3 pins — VCC (power input), GND (ground), OUT (analog output)
@@ -51,7 +53,7 @@ A tiny analog infrared reflectance sensor (line detector) with a 3-pin VCC/GND/O
 - Cytron's beginner-series reflectance sensor; the newer Maker Reflect S is positioned as the more stable-output option on the same page
 
 ## Price band
-RM8.00–RM9.00 depending on option (Cytron product page, read 2026-10-16)
+RM8.00–RM9.00 across Maker Reflect / Maker Reflect S (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-maker-reflect-ir-reflectance-sensor-for-beginner

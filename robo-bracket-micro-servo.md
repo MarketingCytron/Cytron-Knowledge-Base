@@ -5,7 +5,8 @@
 | Product code | `ROBO-BK-SG90` [PP] |
 | Family | Robot parts and project bundles |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Page matches the KB (servo list, aluminium 1.5 mm, powder-coated black, packing list); hole positions are only in the dimension image, so it stays Medium |
 | Primary source | No datasheet, user manual or guide exists. Primary source = **Cytron product page "Robo Bracket for Micro Servo Motor"** (https://my.cytron.io/p-robo-bracket-for-microservo-motor), read by the coordinator on 2026-10-19 [PP]. The Cytron project "ZOOM:BIT with Robo Grip Mini" (Ng Zhi Tian, 18 Mar 2026) is linked from the page but could not be fetched here |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,6 +39,9 @@ Tag notes: [PP] = product page facts saved by the coordinator (jkl-pp.md, 2026-1
 | 1 | Robo Bracket for Micro Servo Motor |
 | 4 | M2 x 6 screw |
 | 4 | M3 x 6 screw |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read: fits SG90, MG90S, TS90A, EF90D, FS90R and servos of the same size (23.0 × 12.2 × 29.0 mm); aluminium alloy, 1.5 mm, black powder coating; fits Robo Base and Robo Base Mini; packing 1x bracket, 4x M2×6 screw, 4x M3×6 screw [PP]. No new facts beyond the KB.
+- Dimension image `robo-bk-sg90-dimensions.png` — not read (image only).
 
 ## Interfaces, terminals and pin mapping
 - Mechanical part; no electrical interface [PP].

@@ -5,7 +5,8 @@
 | Product code | `SHIELD-MDD10` (datasheet title [DS]; product-page image paths [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Page agrees with the datasheet and adds stepper use, packing and warranty; the PWM/DIR jumper options are figure-only, so it stays Medium |
 | Primary source | "SHIELD-MDD10 Datasheet" — **Rev 1.0, May 2019** — public Google Doc: https://docs.google.com/document/d/1QHlQbs6f5fY_BMBs3hJRg1QLFe4yqy4nyH3mBavZ2-0 |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -44,6 +45,11 @@ Datasheet section 2, *Table 3: SHIELD-MDD10 Absolute Maximum Ratings* [DS].
 | Warranty | Not stated in [DS] | — |
 
 \* "Actual motor direction is depending on the motor connection. Swapping the connection (MA & MB) will reverse the direction." [DS]
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Description:** 2-channel shield for two brushed DC motors **or one bipolar/unipolar stepper motor**, 7–30 V; discrete NMOS H-bridge, 10 A per channel continuous without heatsink; test buttons and motor LEDs; 5 V buck regulator to power the Arduino; PWM/DIR Arduino pins selectable by jumper; overcurrent protection with current limiting; temperature-dependent current limit; "Power input does not have reverse-voltage protection" [PP].
+- **Features list:** Arduino shield form factor; 7–30 V; 10 A continuous, 30 A peak; **5 V buck output 500 mA max**; test buttons; motor LEDs; selectable PWM/DIR pins; PWM/DIR inputs compatible with 1.8 V, 3.3 V and 5 V logic; PWM up to 20 kHz (output = input frequency); overcurrent protection with active current limiting; temperature protection; undervoltage shutdown [PP].
+- **Packing list:** 1x SHIELD-MDD10 [PP].
+- **Resources:** datasheet (Google Doc), CytronMotorDriver sample code, 3D CAD [PP]. Interface/truth-table and dimension images on the page — not read.
 
 ## Interfaces, terminals and pin mapping
 Board functions, top (Table 1) [DS]:
@@ -113,17 +119,16 @@ PWM/DIR truth table (Table 4), per channel x [DS]:
 | Logic compatibility wording | [DS]: high level 1.5–5.5 V | [3P] Tindie: "compatible with 1.8V, 3.3V and 5V logic" | Consistent; [DS] numbers used |
 | Peak current | [DS]: 30 A, limited by OC circuit, no duration | [3P] Tindie: "10A continuous, 30A peak" | Same value; [DS] context used |
 
-No conflict between [DS] and [PP] (the [PP] read gave name, code and stock only).
+[PP] (read 2026-10-19) agrees with [DS]: 7–30 V, 10 A / 30 A, 1.8/3.3/5 V logic, 20 kHz, current limiting, temperature protection, undervoltage shutdown, no reverse-voltage protection. The Tindie [3P] lines above repeat the Cytron product page text.
 
 ## Needs verification
 1. **PWM/DIR Input Pin Selector options and defaults** for PWM1, DIR1, PWM2, DIR2 — only in Figure 1 (image). [3P] Tindie says "configurable via jumpers"; no pin list in text.
 2. Board dimensions and mounting holes (Figure 3 image only).
 3. Current limit vs temperature values (Figure 5 image only) and the undervoltage threshold.
 4. Locked-antiphase support — not stated in [DS] (sibling MDD10A/HAT-MDD10 support it).
-5. Stepper motor use — [3P] Tindie: "Control one unipolar/bipolar stepper motor."; not in [DS].
-6. Operating temperature range, terminal wire size, packing list, warranty — not stated.
-7. Battery vs SMPS / regenerative current guidance — not stated in [DS].
-8. Price — not stated in the [PP] read.
+5. Battery vs SMPS / regenerative current guidance — not stated in [DS].
+6. Operating temperature range and terminal wire size — not stated.
+7. How to drive a stepper with the two channels (wiring, library) — the page says it can; no Cytron example read.
 
 ## Sources
 - [DS] SHIELD-MDD10 Datasheet, Rev 1.0, May 2019 (Google Doc): https://docs.google.com/document/d/1QHlQbs6f5fY_BMBs3hJRg1QLFe4yqy4nyH3mBavZ2-0

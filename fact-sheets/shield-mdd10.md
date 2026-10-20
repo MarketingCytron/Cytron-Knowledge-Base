@@ -26,6 +26,9 @@ An Arduino-shield-format driver for two brushed DC motors, 10 A continuous per c
 - Arduino reset button
 - Dimensions: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- Can drive one bipolar/unipolar stepper motor (product page)
+- 5 V buck output 500 mA max to power the Arduino (product page)
+- Packing: 1 × shield (product page)
 
 ## Interfaces and compatibility
 - Arduino shield form factor: male header (bottom) to the Arduino, female header (top) for stacking other shields
@@ -52,7 +55,7 @@ An Arduino-shield-format driver for two brushed DC motors, 10 A continuous per c
 - [NOT STATED]
 
 ## Price band
-[NOT STATED]
+RM120.12 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-shield-for-arduino-2-channels

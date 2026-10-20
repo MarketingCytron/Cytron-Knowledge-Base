@@ -5,7 +5,8 @@
 | Product code | `MDDRC5` (datasheet title [DS]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read directly (earlier page facts were relayed). Sale status, packing list, 69 × 35.5 mm, 2S–6S LiPo and the firmware-update and getting-started tutorials are now read; the < 5 s vs < 1 s peak-duration conflict remains |
 | Primary source | MDDRC5 Datasheet — "5 Amp 7V-30V DC Motor Driver for R/C (2 Channels)" — **Rev 1.0, March 2026** (Google Doc): (Cytron document — link not public) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -39,6 +40,13 @@ Datasheet Table 2 is titled **"MDDRC5 Absolute Maximum Ratings"** — these are 
 | Weight | Not stated | — |
 | Terminal type / wire size | Not stated | — |
 | Neutral (centre) pulse width | Not stated (deadband/fullscale given only as ± values) | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page notes:** "200 units sold out within 1 hour after launch!"; "Please update your MDDRC5 to the latest firmware before use" — Firmware Update Guide (Cytron tutorial `mddrc5-firmware-programming`) [PP].
+- **Story/positioning:** for 500 g RC mini-sumo (All Japan Robot Sumo Tournament opened the 500 g class to international entrants in 2024); smaller version of MDDRC10 [PP].
+- **Key features:** 5 A continuous, 20 A peak per channel; **69 × 35.5 mm**; motor alignment potentiometers (forward/reverse balance); test buttons; USB-C to update firmware or reprogram the onboard controller; Independent / Mixed mode slide switch; 7–30 V, **2S to 6S LiPo**; LEDs for power, motor outputs and errors [PP].
+- **Technical specifications:** 7–30 V; 2 channels; 5 A continuous; **20 A peak (less than 5 seconds)**; RC PWM input; protection: reverse polarity, overcurrent (with LED), thermal shutdown [PP].
+- **Packing list:** 1x MDDRC5, 2x 10 cm 3-way connector extension wire, 4x 7 mm nylon PCB spacer, 1x 2 mm flat-head screwdriver [PP].
+- **Resources:** datasheet (Google Doc), CAD, Getting Started tutorial [PP].
 
 ## Interfaces, terminals and pin mapping
 Board functions (datasheet Table 1) [DS]:
@@ -143,10 +151,10 @@ OC LED, power LED and motor status LED pins are not in the pin map [DS].
 
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Peak current duration | [DS] Rev 1.0 (Mar 2026): 20 A for "less than 1 seconds", limited by OC circuit | [PP] product page: 20 A "less than 5 seconds" | Datasheet wins: **< 1 s**. Product page should be corrected |
+| Peak current duration | [DS] Rev 1.0 (Mar 2026): 20 A for "less than 1 seconds", limited by OC circuit | [PP] (read 2026-10-19): "Peak Current: 20 A (less than 5 seconds)" | Datasheet wins: **< 1 s**. Product page should be corrected |
 | Latest firmware version | [GH] root `README.md`: "v1.0.5 is the highest-numbered firmware"; `SHA256SUMS` lists only v1.0.4 and v1.0.5 | [GH] `firmware/README.md`: v1.0.6 is "Highest-numbered supplied version" (lists v1.0.6 and v1.0.4, omits v1.0.5) | All three files exist on both branches; **v1.0.6** is the highest-numbered file present. v1.0.6 is not covered by `SHA256SUMS` (its SHA-256 is 83720b94…5df3). Which is the recommended release is not confirmed — see Needs verification |
-| Thermal shutdown | [DS]: not listed under Protection Features | [PP]: lists thermal shutdown | Not stated as a datasheet spec; do not claim a threshold |
-| Dimensions | [PP]: 69 × 35.5 mm |  reading of DS Figure 2: 69.115 × 35.635 mm | Consistent (rounded); figure not re-read here |
+| Thermal shutdown | [DS]: not listed under Protection Features | [PP] (read 2026-10-19): "Thermal Shutdown" listed | Not stated as a datasheet spec; do not claim a threshold |
+| Dimensions | [PP] (read 2026-10-19): 69 × 35.5 mm |  reading of DS Figure 2: 69.115 × 35.635 mm | Consistent (rounded); figure not re-read here |
 | Datasheet cross-reference | [DS] Table 1 says error LEDs are in "Chapter 7" | [DS] error LED table is in chapter 6; chapters go 6 → 8 and Table 3 is missing | Internal numbering error in Rev 1.0; content is in chapter 6 |
 
 ## Needs verification
@@ -159,8 +167,8 @@ OC LED, power LED and motor status LED pins are not in the pin map [DS].
 - Motor driver IC part number (pin map shows PWM/Direction/Sleep/Fault per motor; IC not named).
 - Brake vs coast behaviour at zero throttle / in deadband.
 - Whether a microcontroller's servo-style PWM can drive RC1/RC2 (electrically within 1.5–15 V high level, but not stated as supported).
-- Operating temperature, weight, terminal type, packing list, price.
-- Custom-code upload via USB-C (product page claim) — no official guide found.
+- Operating temperature, weight, terminal type — not stated.
+- Read the Cytron "MDDRC5 firmware programming" and "Getting Started with MDDRC5" tutorials (failsafe, neutral calibration, custom code).
 
 ## Sources
 - [DS] MDDRC5 Datasheet, "5 Amp 7V-30V DC Motor Driver for R/C (2 Channels)", Rev 1.0, March 2026 — (Cytron document — link not public)

@@ -67,7 +67,7 @@ A micro:bit lesson kit that builds an automatic plant-watering system: a Maker S
 - Same sensor, pump and servo combination as Project 3 of the REKA:BIT RBT Project Kit
 
 ## Price band
-RM108.00 to RM214.62 (Cytron product page, read 2026-10-19)
+RM108.00–RM214.62 across 4 options (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-auto-plant-watering-kit-for-microbit

@@ -6,6 +6,7 @@
 | Family | Interface boards and breakouts |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page text is one paragraph and matches the KB; pin order is only in the photo, so it stays Medium |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -25,6 +26,8 @@ The product page has no numeric spec table; every stated fact is listed.
 | Signals used in Cytron's tutorial | DATA, CMD, ATT, CLK, +5V, GND | [PP: tutorial Maker Mini Sumo PS2] |
 | Warranty | Not stated (blank on product page) | [PP] |
 | Number of pins broken out, pin order, dimensions, header supplied | Not stated | [PP] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read: breakout for a female PS2 connector, pre-soldered on the PCB; pins broken out to 0.1" for breadboard or donut board; links the PS2 Connector (Female) part [PP]. No features, packing-list or resources tab. Matches the KB.
 
 ## Interfaces, terminals and pin mapping
 The breakout's own pin order is not stated in text. The Cytron tutorial wires these signals from the breakout to the Maker Mini Sumo controller [PP: tutorial Maker Mini Sumo PS2]:

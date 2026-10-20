@@ -41,6 +41,8 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - Terminal type and wire size: [NOT STATED]
 - Undervoltage / overvoltage thresholds: [NOT STATED]
 - Failsafe motor behaviour on RC signal loss: [NOT STATED]
+- Discrete NMOS H-bridge; 5 V BEC 500 mA; auto calibration at power-up (product page)
+- In stock on my.cytron.io (availability 193, read 2026-10-19)
 
 ## Interfaces and compatibility
 - Power input terminal: VB+, VB-
@@ -77,10 +79,10 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - "Plug & play, controlled from RC directly."
 
 ## Price band
-$39.00 ex tax (www.cytron.io, read 2026-10-16; shown Out of Stock); 5 or more $37.05; 20 or more $35.10; 50 or more $31.20
+RM180.18 (Cytron product page, read 2026-10-19)
 
 ## Product page
-https://www.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
+https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
 
 ## Datasheet
 https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf

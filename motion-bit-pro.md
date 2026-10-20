@@ -2,10 +2,11 @@
 
 | | |
 |---|---|
-| Product code | `MOTION-BIT-PRO` (Cytron datasheet PDF file title "MOTION-BIT-PRO Datasheet.pdf" [DS]). Switch Science lists "CYTRON-MOTION-BIT-PRO" [3P]. The Cytron product page was **not found / not read**, so the my.cytron.io SKU is not confirmed |
+| Product code | `MOTION-BIT-PRO` (Cytron datasheet PDF file title "MOTION-BIT-PRO Datasheet.pdf" [DS]). Switch Science lists "CYTRON-MOTION-BIT-PRO" [3P]. my.cytron.io page: p-motion-bit-pro-12v-robotics-expansion-board-for-micro-bit [PP] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read plus Cytron images including the MOTION:BIT vs MOTION:BIT Pro comparison table. Power source (external Vin only — no micro USB, no battery), current ratings, servo power selection, counts and package are now Cytron-stated |
 | Primary source | MOTION:BIT Pro — "Simplifying Motion Control with micro:bit" — Datasheet **Rev 1.0, April 2024** (public PDF on Google Drive): https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -38,7 +39,7 @@ Datasheet Table 2 is titled **"MOTION:BIT Pro Absolute Maximum Ratings"** — ab
 | Maker Port (I2C) | JST-SH 4-way; "for I2C modules only" | [DS] |
 | I2C breakout | "Breakout of micro:bit I2C pins" | [DS] |
 | 5V Supply | 5V output for external sensors/modules | [DS] |
-| Micro USB | Datasheet row: "for charging the battery or power up the Motion:Bit. No data transmission on this port." (see Conflicts) | [DS] |
+| Micro USB | **None on the Pro** — the product-page feature list and Cytron comparison table give external Vin as the only power source [PP][PP: img]. The datasheet row "for charging the battery or power up the Motion:Bit" is copied from MOTION:BIT (see Conflicts) | [PP][DS] |
 | Power / Charge LED | Power: on when powered. Charge: on while charging, off when full (see Conflicts) | [DS] |
 | On/Off switch + Ext. On/Off switch header | External switch works only with onboard switch Off | [DS] |
 | Motor test buttons | Motor runs at full speed | [DS] |
@@ -49,6 +50,12 @@ Datasheet Table 2 is titled **"MOTION:BIT Pro Absolute Maximum Ratings"** — ab
 | Buzzer / speaker | **Not stated** | [DS] |
 | Dimensions | Figure 2 drawing only, no values in the text | [DS] |
 | Protections (reverse polarity, over-current, thermal) | **Not stated** | [DS] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Features list:** 11 GPIO status LEDs; 11 GPIO breakout; 3 Maker Ports (JST-SH 4-way) + 1 I2C Maker Port; I2C breakout; vertical micro:bit socket; 4 motor terminals; 8 motor test buttons; 8 motor status LEDs; 8 servo ports; 2 servo power selectors; 2 RGB LEDs + external RGB LED; **12 V power input terminal block**; 6x 5V supply; on/off switch + external on/off switch; power/charge LED. **No micro USB and no 18650 holder** are listed [PP].
+- **Comparison image (Cytron, Pro column):** power source **external Vin only**; Vin 7–12 V; 4 DC channels; max DC motor current **3 A continuous, 5 A peak**; USB Li-ion charging: no; Li-ion protection circuit: no; slide switch with MOSFET shock-proof circuit; external on/off: yes; 6x 5V pins, **total 5 V output 3 A**; 8 servo channels, **servo power selectable 5 V or Vin**, total servo current 3 A; 2 RGB LEDs + external RGB expansion; 11 GPIO status LEDs; 3 Maker Ports (JST-SH 1 mm) + 11 GVS headers; I2C: 1 Maker Port + 1 4-pin header; official MakeCode extension MOTION:BIT; same form factor as MOTION:BIT [PP: img].
+- Image: "4-channel DC motor driver that controls up to 4x 7V–12V DC motors"; "8x servo motor ports — selectable power between the 5V and VIN … 12V high torque servo motors" [PP: img].
+- **Packing:** 1x MOTION:BIT Pro, 1x tiny Phillips screwdriver, 3x Grove to JST-SH (Qwiic) cable, 4x silicone bumper, 4x building-block pin with friction ridges [PP].
+- Resources: Getting Started with MOTION:BIT Pro (tutorial), datasheet (Drive PDF), pxt-motionbit extension, 3D CAD [PP].
 
 ## Interfaces, terminals and pin mapping
 | micro:bit pin | Used for | Src |
@@ -67,7 +74,7 @@ Extension channel names (from [GH]): motors M1–M4; servos S1–S8 (block "all"
 - **Servo power jumper:** VIN (7–12 V) goes straight to servos on that rail — most hobby servos are not rated for 12 V. Use the 5V setting unless the servo is rated for VIN [DS].
 - Motor full-speed voltage **equals the supply voltage** — choose motors rated for 7–12 V input used [DS].
 - Insert the micro:bit with **LEDs facing out** [DS].
-- Board micro USB (if fitted) has **no data** — program via the micro:bit's own USB [DS].
+- The Pro has **no micro USB and no battery** — power it from the 7–12 V terminal block; program via the micro:bit's own USB [PP][PP: img].
 - External On/Off switch needs the onboard switch **Off** [DS].
 - Motor test buttons run the motor at **full speed** [DS].
 - **P8** is used by the RGB LEDs [DS].
@@ -110,17 +117,11 @@ Extension channel names (from [GH]): motors M1–M4; servos S1–S8 (block "all"
 | Datasheet link label | [DS] Drive PDF is the Pro datasheet | [3P] Switch Science labels the same link "MOTION:BIT" datasheet | Document title is "MOTION:BIT Pro" — use it for Pro |
 
 ## Needs verification
-- Whether the Pro has a micro USB port, and whether it can be powered from it (datasheet row likely copied from MOTION:BIT).
-- Physical number of motor channels (4 per [3P]); whether 3 A / 5 A is per channel.
 - micro:bit V1 & V2 support for Pro ([3P] only).
 - Whether Pro uses the same PCA9685 at I2C 0x40 (assumed from the shared extension).
 - Maker Ports pin pairing ("P0-P9, P1-P2, P2-P12" lists P2 twice).
-- [3P] Servo output current 3 A; servo supports 5 V to 12 V; DC motor 7 V to 12 V (Switch Science).
-- [3P] Counts: 4 motor terminals, 8 motor test buttons, 8 motor status LEDs, 11 GPIO status LEDs, 3 general Maker Ports + 1 I2C, 2 servo power selectors, 2 RGB LEDs, 6x 5V supply pins (The Pi Hut).
-- [3P] "Shock-resistant power switch" (The Pi Hut).
-- [3P] Package: 1x MOTION:BIT Pro, 1x tiny Phillips screwdriver, 3x Grove to JST-SH (Qwiic) cable 20 cm, 4x silicone bumpers, 4x building-block pins (The Pi Hut, Switch Science).
-- [3P] Prices: The Pi Hut £42.10, RobotShop CAD 56.79 (2026-10-16) — not Cytron prices.
-- Cytron product page URL and SKU; dimensions; motor driver IC; protections.
+- Whether 3 A / 5 A is per channel or total (comparison image does not say); dimensions in mm (same form factor as MOTION:BIT, 95.2 × 57.2 mm, implied but not stated for Pro); motor driver IC; protections.
+- Datasheet micro USB row ("for charging the battery or power up") — conflicts with the product page; ask Cytron to correct the datasheet.
 
 ## Sources
 - [DS] MOTION:BIT Pro Datasheet Rev 1.0, April 2024 — https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view (public). PDF mirror, same revision: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-437/pdf/cytron-motionbit-pro-12v-robotics-expansion-board-for-microbit-datasheet.pdf

@@ -27,6 +27,8 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Weight: [NOT STATED]
 - Flash size, RF standard, antenna: [NOT STATED] by Cytron sources
 - Datasheet: GROVE WIFI 8266 Datasheet, Rev 1.0, August 2021
+- 32 Mbit SPI flash; 802.11 b/g/n 2.4 GHz; on-board Reset and Boot switches (product page)
+- Packing: module and a Grove cable (product page)
 
 ## Interfaces and compatibility
 - Grove port, 4 pins: GND (ground); VCC (positive supply, 3 V–6 V); RX (serial Rx of the ESP8266, connect to host's Tx); TX (serial Tx of the ESP8266, connect to host's Rx) (datasheet)
@@ -58,7 +60,7 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Product page name: "Grove WiFi 8266 - IoT for micro:bit and beyond" (product page)
 
 ## Price band
-RM27.72 (Cytron product page, read 2026-10-16)
+RM27.72 (Cytron product page, read 2026-10-20)
 
 ## Product page
 https://my.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond

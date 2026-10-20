@@ -5,12 +5,13 @@
 | Product code | `MDD3A` (datasheet title [DS]; Cytron GitHub README link text [GH]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read (description, features, packing list, resources). The page text matches the Tindie copy already used; "3 Amp per channel" is now [PP] |
 | Primary source | MDD3A Datasheet — "3Amp 4V-16V DC Motor Driver (2 Channels)" — **Rev 1.0, March 2019** (public Google Doc, last modified 2019-03-15): https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: my.cytron.io could not be fetched, so the product page was **not read**. [PP: Tindie] = Cytron Technologies' own store listing on Tindie (seller "Cytron Technologies", written by Cytron, links the same datasheet Google Doc); it stands in for the product page and ranks below [DS]. No separate user manual exists — the datasheet is the only Cytron document. No [DT] confirmation exists yet. The PDF mirrors on electrokit.com and cdn.shopify.com carry the same title (electrokit copy checked: Rev 1.0, March 2019).
+Tag notes: the my.cytron.io product page was read on 2026-10-19 [PP]; its text matches the Tindie copy. [PP: Tindie] = Cytron Technologies' own store listing on Tindie (seller "Cytron Technologies", written by Cytron, links the same datasheet Google Doc); it stands in for the product page and ranks below [DS]. No separate user manual exists — the datasheet is the only Cytron document. No [DT] confirmation exists yet. The PDF mirrors on electrokit.com and cdn.shopify.com carry the same title (electrokit copy checked: Rev 1.0, March 2019).
 
 ## What it is
 A 2-channel, bi-directional motor driver for two brushed DC motors or one stepper motor, powered from 4–16 VDC, with a maximum motor current of 3 A continuous / 5 A peak (< 5 s) [DS]; Cytron states 3 A is per channel, "continuously without any additional heatsink" [PP: Tindie]. Each motor is controlled by two PWM inputs (A and B), there is a 5V output (200 mA max) for the host controller, test buttons and status LEDs for each direction, and reverse polarity protection on the power input [DS]. Built with a "discrete MOSFETs H-Bridge design" [PP: Tindie].
@@ -44,6 +45,11 @@ Datasheet Table 2 is titled **"MDD3A Absolute Maximum Ratings"** — these are a
 | Operating temperature | **Not stated** | [DS] |
 | Terminal type / wire size | **Not stated** (named "Power Input Terminal", "Motor Output Terminal") | [DS] |
 | Packing list | "1 x 3Amp 4V-16V DC Motor Driver (2 Channels)" | [PP: Tindie] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Description: discrete-MOSFET H-bridge, "able to support **3 Amp per channel** continuously without any additional heatsink"; two brushed DC motors or one bipolar/unipolar stepper, 4–16 V [PP].
+- Features: 3 A continuous, 5 A peak; buck-boost regulator 5 V output (200 mA max); test buttons; motor output LEDs; inputs compatible with 1.8 V, 3.3 V, 5 V and 12 V logic; PWM up to 20 kHz (output = input frequency); **reverse polarity protection** [PP].
+- Packing: 1x MDD3A [PP]; a product image shows the packaging doubles as a casing [PP: img name].
+- Resources: datasheet, sample code (CytronMotorDriver), 3D CAD (zip) [PP].
 
 ## Interfaces, terminals and pin mapping
 | Terminal / pin | Function | Src |
@@ -126,7 +132,6 @@ Control mode: two-PWM-per-motor (Input A = forward speed, Input B = backward spe
 - Operating temperature range.
 - Stepper drive method/library — the datasheet shows a connection diagram only.
 - ESP32: library calls `ledcWrite(pin, duty)` without `ledcAttach()` — whether this works on ESP32 Arduino core 3.x unmodified is untested.
-- Current my.cytron.io availability and RM price.
 
 ## Sources
 - [DS] MDD3A Datasheet Rev 1.0, March 2019 — https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/edit (PDF mirrors: https://www.electrokit.com/upload/product/41018/41018266/MDD3A%20Datasheet.pdf — same Rev 1.0, March 2019; https://cdn.shopify.com/s/files/1/0176/3274/files/MDD3A_Datasheet.pdf — not opened)

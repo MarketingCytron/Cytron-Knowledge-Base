@@ -44,7 +44,7 @@ A black 30 mm x 30 mm x 8 mm DC cooling fan for Raspberry Pi boards, supplied wi
 - Fan "with screws" and a "longer cable" for Raspberry Pi; dual speed from the GPIO header (product page)
 
 ## Price band
-RM8.00; 10+ RM7.36; 30+ RM6.40 (Cytron product page, read 2026-10-19)
+RM8.00 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws

@@ -32,6 +32,7 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Current consumption: [NOT STATED]
 - Sensor spacing: [NOT STATED]
 - Operating temperature: [NOT STATED]
+- In stock on my.cytron.io (read 2026-10-19); the my.cytron.io page carries the same specs as the Tindie listing
 
 ## Interfaces and compatibility
 - I/O connector pins: VCC, GND, AN, CAL, D1, D2, D3, D4, D5
@@ -61,7 +62,7 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Product listing: "Analog output also offers higher resolution compared to individual digital outputs"
 
 ## Price band
-- USD 9.90 on Cytron's Tindie store (sold out since Jan 28, 2024), checked 16 Oct 2026
+RM45.78 (Cytron product page, read 2026-10-19)
 
 ## Product page
 https://my.cytron.io/p-maker-line-simplifying-line-sensor-for-beginner

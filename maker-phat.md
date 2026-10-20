@@ -5,7 +5,8 @@
 | Product code | `HAT-MAKER` (user's manual cover and packing list "Maker pHAT (Code: HAT-MAKER)" [UM]; product-page image paths [PP]) |
 | Family | Raspberry Pi boards and HATs |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). The USB-serial chip per revision and the Pi compatibility list (including "not compatible" with Pi 5) are now Cytron-stated |
 | Primary source | *Maker pHAT (HAT-MAKER) User's Manual*, **Rev 1.10, Feb 2019** (Google Doc, last modified 2024-01-23), Cytron Technologies Sdn Bhd. No separate datasheet exists; the user's manual is the main source |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -29,7 +30,7 @@ User's manual section 1 (features) and section 3 (Absolute Maximum Rating), ever
 | Buzzer | Onboard active buzzer, GPIO 26, HIGH = on, LOW = off | [UM] |
 | Labels | Proper label for all GPIOs, including SPI, UART, I2C, 5V, 3.3V and GND | [UM] |
 | USB connector | USB Micro-B socket, for 5V input and USB-to-UART communication | [UM] |
-| USB-serial IC | Board layout (Rev1.10 manual): FT231X. Features list: CH340 — see *Conflicts* | [UM] |
+| USB-serial IC | Rev1.00: CH340; **Rev1.1 / Rev1.10 (from Jan 2019): FT231X** | [PP][UM] |
 | Input voltage (features) | USB 5V, from computer, power bank or standard USB adapter | [UM] |
 | Input voltage via USB connector (abs. max) | min 4.8, max 5.2 V | [UM] |
 | DC current for 5V pin (max continuous) | Max "USB" mA (i.e. limited by the USB source; no number given) | [UM] |
@@ -38,6 +39,12 @@ User's manual section 1 (features) and section 3 (Absolute Maximum Rating), ever
 | Packing list | 1x Maker pHAT (HAT-MAKER); 1x 2x20 Stacking Header (CN-PH-PC104) | [UM] |
 | Warranty | 1 year, manufacturing defects only [UM]; 12 months [PP] | [UM][PP] |
 | Dimensions | Dimension drawing is an image only — not readable | — |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Page notes:** "Maker pHAT is in Rev1.1 (which uses FTDI FT231X as USB to UART chip) starting from Jan 2019"; **"We have tested the Maker pHAT on the Raspberry Pi 5 and it is not compatible"** [PP].
+- **Compatibility (page):** stacks on Pi Zero / W / WH (Zero V1.3 and Zero W need a header soldered); also Pi 1 A+, Pi 3 A+, Pi 3 B, Pi 3 B+ and Pi 4 B (1/2/4 GB) using the included 2x20 stacking header [PP]. Pi Zero 2 W is not listed [PP].
+- **Features list:** Pi Zero size; LED array on GPIO 17, 18, 27, 22, 25, 12, 13, 19; 3 programmable buttons "GPIO 21, 19 and 20, need to configure as input pull up"; active buzzer GPIO 26; labels for all GPIO incl. SPI, UART, I2C, 5V, 3.3V, GND; USB Micro-B for 5 V input and USB-UART; "USB serial facilitated by the CH340, Rev1.10 uses FT231X"; purple PCB [PP].
+- **Packing list:** 1x Maker pHAT, 1x 2x20 stacking header [PP].
+- **Resources:** User's Manual; schematics Rev1.00 and Rev1.10 (PDF); 3D CAD; sample Python code (gist); CH340 drivers (Windows, macOS, Linux pre-installed); FT231X driver for Rev1.10 (FTDI VCP); PuTTY; Malay LED tutorial [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout (manual section 4) [UM]. All GPIO numbers are BCM GPIO numbers, not header pin numbers.
@@ -102,7 +109,7 @@ Onboard function map (manual sections 7 and 8, and demo code) [UM]:
 - Pi Zero WH: stacks directly, no extra parts [UM].
 - Pi 3 Model B / B+: needs the PC104 2x20 header (CN-PH-PC104), which is in the box [UM].
 - Recommended starter set: Maker pHAT, Raspberry Pi Zero WH, 16GB microSD card, USB Micro-B cable [UM].
-- Other models (Pi 4, Pi 5, Zero 2, A+) are not listed in the manual — see *Needs verification*.
+- Product page (read 2026-10-19) adds Pi 1 A+, Pi 3 A+ and Pi 4 B; **Raspberry Pi 5: tested by Cytron and not compatible** [PP]. Pi Zero 2 W is not listed.
 - Price: RM45.78 (Cytron product page, read 2026-10-16) [PP].
 
 ## Common mistakes / troubleshooting
@@ -116,19 +123,19 @@ Onboard function map (manual sections 7 and 8, and demo code) [UM]:
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
 | SW2 GPIO | "GPIO 21, 19 and 20" — manual features list [UM]; same on Core Electronics / The Pi Hut [3P] | GPIO 21, **16**, 20 — manual board layout L, section 7.2 and demo code [UM]; gist [GH] | Use GPIO 16 (stated three times in the manual and in working code; GPIO 19 is LED8). Confirm on schematic |
-| USB-serial chip | "USB serial facilitated by the CH340" — manual features list [UM]; CH341SER driver links [UM] | "USB-SERIAL IC CONVERTER (FT231X)" — manual board layout J [UM]; "Rev1.10 uses FT231X" [3P] | Same document, both [UM]. Likely CH340 on Rev1.00 and FT231X on Rev1.10, but only [3P] says so — verify against the two schematics before naming a chip or driver |
+| USB-serial chip | "USB serial facilitated by the CH340" — manual features list [UM]; CH341SER driver links [UM] | "USB-SERIAL IC CONVERTER (FT231X)" — manual board layout J [UM] | **Resolved by [PP]:** "Maker pHAT is in Rev1.1 (which uses FDTI FT231X as USB to UART chip) starting from Jan 2019"; CH340 = Rev1.00. Use the FT231X (FTDI VCP) driver for current boards |
 | Warranty | 1 year [UM] | 12 months [PP] | Same |
-| Compatible Pi models | 3B/3B+ and Zero/W/WH [UM] | Also Pi 1 A+, 3 A+, 4 B; "Compatible with" 3B, 4B, 5, Zero 2 [3P] | Manual list used in text; others to *Needs verification* |
+| Compatible Pi models | 3B/3B+ and Zero/W/WH [UM] | [PP] adds Pi 1 A+, 3 A+, 4 B and says **Pi 5 is not compatible** (tested); [3P] resellers list Pi 5 and Zero 2 as compatible | [PP] wins over resellers: never claim Pi 5 support |
 
 ## Needs verification
-- **USB-serial chip per PCB revision** (CH340 vs FT231X) and the matching driver — schematics Rev1.00 and Rev1.10 are image-only and were not read.
 - Any other Rev1.00 vs Rev1.10 difference besides the pre-soldered SMD headers on the breakout pads.
 - Board dimensions and mounting holes (dimension drawing is an image only).
-- Pi 4 B, Pi 1 A+, Pi 3 A+, Pi 5 and Pi Zero 2 W compatibility [3P only]. Pi Zero / Zero W (no header) need a 2x20 header soldered first [3P only].
 - Whether it is safe to power the Pi from its own USB/PSU and the pHAT USB at the same time — not stated.
 - 3.3V breakout current limit; total current available on the 5V pin.
 - Steps for current Raspberry Pi OS (no Raspbian Stretch; raspi-config menu numbering; device names such as /dev/serial0) — the manual's 2019 steps were not re-tested.
 - LED drive polarity (LED on = GPIO high is implied by the demo code `LED()` default, not stated).
+- Pi Zero 2 W compatibility — not listed on the product page.
+- Why it is not compatible with Pi 5 (the page states the test result only).
 
 ## Sources
 - [UM] Maker pHAT (HAT-MAKER) User's Manual, Rev 1.10, Feb 2019 (Google Doc, modified 2024-01-23): https://docs.google.com/document/d/1iDYLyoQKOPJRD5m5ivu8Ivv6zyeLIc3IxUtRKOx7n8k/view

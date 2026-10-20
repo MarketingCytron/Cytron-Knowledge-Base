@@ -6,6 +6,7 @@
 | Family | Robot platforms and parts |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). Packing lists re-read; the page now heads them "Robo Grip Mini with 3 Servos / with 2 Servos / with Accessories", and the rivet is printed "3x65mm". Stays Medium |
 | Primary source | No Cytron datasheet or user manual could be found, and the printed "assembly guide" that ships in the box is not on Drive (searches "Robo Grip Mini", "Robo Grip", "ROBO-GRIP", "Gripper" returned only planning sheets). Primary sources = **Cytron product page "Robo Grip Mini Kits"** https://my.cytron.io/p-robo-grip-mini-kits [PP] and the Cytron tutorial **"Robo Grip Mini Installation Guide"** (Norasyiqin Munirah, 23 Feb 2026, Beginner, 4-part series) [PP: tutorial Installation Guide], both read by the coordinator 2026-10-19 |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -41,6 +42,11 @@ No datasheet spec table exists. Facts stated in text:
 
 ### Basic kit list per the Installation Guide [PP: tutorial IG]
 Robo Grip Mini PCB (with 6 label parts) x1, M2 bolt 6mm x6, M2 nut x6, M3 **brass** PCB standoff 40mm x1, M3 nylon standoff 10mm + nut x4, 20mm x4, M3 bolt 6mm x12, M3 bolt 12mm x4, M3 nut x4, M3 lock nut x5, M3 plastic washer 1mm height x6, 3mm height x5, M3 black plastic rivet x2, M2 and M3 screwdrivers, mini cross wrench. Robo Bracket set: bracket, 4x M2 bolt 6mm, 4x M3 bolt 6mm. Micro servo set: servo, 3 horns, 2 self-tapping screws, 1 short horn screw.
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Packing-list headings (current page):** "Robo Grip Mini with 3 Servos", "Robo Grip Mini with 2 Servos", "Robo Grip Mini with Accessories" — same contents as the KB's 2-axis / 1-axis / Gripper-only lists [PP].
+- **Rivet:** printed "2 x M3 black plastic rivet 3x65mm" in all three lists [PP] — most likely 3 × 6.5 mm (a 65 mm rivet would not fit this gripper); confirm.
+- Description: PCB gripper for micro servos (SG90, MG90S, TS90A, EF90D, FS90R and same-size servos); fits Cytron Robo Base series; one-axis or two-axis builds; standard screws, nuts and standoffs; step-by-step installation guide (Cytron tutorial) [PP].
+- Prices subject to SST from April 2026 [PP].
 
 ## Interfaces, terminals and pin mapping
 - Mechanical part; no electrical interface. Servo leads go to the user's controller board servo ports [PP].
@@ -82,7 +88,7 @@ Robo Grip Mini PCB (with 6 label parts) x1, M2 bolt 6mm x6, M2 nut x6, M3 **bras
 |---|---|---|---|
 | Servo count in the full kit | [PP] options max "2-axis Gripper (3 micro servos)"; [PP: tutorial IG] 1, 2 or 3 servos | [3P] Switch Science 11032 sells "with 3 TS90A" but links a Cytron URL `p-robo-grip-mini-kit-with-4pcs-ts90a-micro-servo-motor` ("4pcs") | Cytron page + tutorial win: **max 3 servos**. The "4pcs" slug is a URL only, not a spec |
 | 40 mm standoff material | [PP] "M3 SS PCB stand 40mm" | [PP: tutorial IG] "M3 brass PCB standoff 40mm" ([3P] Switch Science: steel spacer) | Both Cytron; say "M3 40 mm metal standoff"; material in Needs verification |
-| Plastic rivet size | [PP] "M3 black plastic rivet 3x6" | [3P] Switch Science: "65 mm" rivets | [PP] stands (3x6) |
+| Plastic rivet size | [PP] (read 2026-10-19): "M3 black plastic rivet 3x65mm" | [3P] Switch Science: "65 mm" rivets (same string) | Probably 3 × 6.5 mm; do not quote a length until confirmed (*Needs verification*) |
 | Name in kits | [PP: BEETLE:BIT] "Robo Grip PCB with accessories" | [PP: STRIKER:BIT] "Robo Grip Mini Basic Bundle" | Same product family; which option each bundle equals is in Needs verification |
 
 ## Needs verification
@@ -94,6 +100,7 @@ Robo Grip Mini PCB (with 6 label parts) x1, M2 bolt 6mm x6, M2 nut x6, M3 **bras
 - **What the printed assembly guide contains** and whether it matches the online Installation Guide.
 - Warranty — blank on the page.
 - Reseller code `CYTRON-CK-ROBO-GP-MINI-3TS90` [3P Switch Science].
+- Rivet size printed "3x65mm" on the product page — confirm whether it means 3 × 6.5 mm.
 
 ## Sources
 - [PP] https://my.cytron.io/p-robo-grip-mini-kits — Robo Grip Mini Kits, read by the coordinator 2026-10-19 (RM34.90–RM94.19, availability 177, warranty blank, options, packing lists, servo list)

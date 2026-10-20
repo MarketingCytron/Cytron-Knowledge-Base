@@ -5,7 +5,8 @@
 | Product code | `MDDS30` (cover page: "SmartDriveDuo-30", "MDDS30", "User's Manual") [UM] |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read for the first time. Sale status, size, packing list, error-LED codes and the board revision history (Rev 1.2 vertical RC header, Rev 1.3 RC-jerk fix) are now Cytron-stated |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -39,6 +40,13 @@ A dual-channel brushed DC motor driver from Cytron's SmartDriveDuo series, "desi
 | Warranty | 12 months, manufacturing defects only; misuse not covered; freight both ways not covered | [UM] |
 | Packing list | 1 × SmartDriveDuo-30 (MDDS30); 2 × Grove 4 Pin Buckled 20cm Cable (WR-EX-GROVE); 2 × 2561 3 Ways Connector Extension Wire (WR-EX-2561-03) | [UM] |
 | Optional external fan (not included) | 1 × DC5V Brushless Fan 40 x 40 x 20mm (FAN-05-040040020); 4 × PCB Stand (Screw & Screw) 30mm (SD-SS-30); 4 × Bolt M3 x 25mm (HD-PM-M3-25); 4 × M3 Nut (HD-PM-M3-NUT) | [UM] |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- **Revision notes:** "Since Rev 1.2, the 2x3 header pins for RC input has been changed from horizontal to vertical"; "Latest revision is Rev 1.3 and it fixed a potential problem in RC mode. In some cases, motors might jerk when operating in RC mode" — contact Cytron support if seen [PP].
+- **Description:** RC, PWM, analog (pot/joystick) or UART control, set by DIP switch; default configuration **RC, Mixed mode**; 2x3 RC header with 2 RC extension cables included; 7–35 V (two SLA in series, 3S or 6S LiPo); battery low-voltage warning [PP].
+- **Features list:** dual brushed DC; 7–35 V; 80 A peak (1 s), 30 A continuous per channel; MOSFETs switched at 18 kHz; regenerative braking; error LEDs per channel — input error (2 blinks), undervoltage warning (3), overvoltage protection (4), over-temperature protection (5); thermal protection; current-limit protection; 3-pin fan connector; PWM/DIR sign-magnitude and locked-antiphase; serial simplified or packetized; Grove-compatible control connectors; push buttons; LEDs for error, RUN, over-current, motor output per channel; **NO polarity protection for V motor**; **81.28 (W) × 101.60 (L) × 42 (H) mm** [PP].
+- **Suitable motors (page):** 2-terminal brushed DC, 7–35 V, rated ≤ 30 A, peak ≤ 80 A (e.g. SPG50, SPG30/SPG30E, IG45, IG42, IG32, DKM 40 W/120 W, 350/450 W scooter motors, power-window motors) [PP].
+- **Packing list:** 1x MDDS30, 2x Grove 4-pin buckled 20 cm cable, 2x 2561 3-way extension wire [PP].
+- **Resources:** User's Manual (Google Doc), CytronMotorDriver library, 3D CAD, introduction tutorial; examples with analog joystick, Arduino PWM, Pixhawk [PP].
 
 ## Interfaces, terminals and pin mapping
 Board layout labels [UM]: A Motor RIGHT LED indicator; B Motor RIGHT terminal block; C Power Supply terminal block; D Motor LEFT terminal block; E Motor LEFT LED indicator; F Cooling fan connector; G Heat sink ("This area might be hot"); H Right channel LED indicator; I Left channel LED indicator; J Power LED indicator; K Motor LEFT test button; L Motor RIGHT test button; M RC input pin; N Analog/PWM input pin (Grove); O Digital/Serial input pin (Grove); P Mode selection DIP switch; Q Reset button.
@@ -127,14 +135,13 @@ Pin names on MDDS30 are **IN1/IN2** (MDDS10 and MDDS60 use DIG1/DIG2). No UART T
 | Right-motor direction in library | UM: 191 = RIGHT full CW | Library sends 0xC0\|speed (CCW bit) for positive right speed; PWM mode sets IN2 HIGH for positive right [GH] | UM defines bytes; library mirrors the right motor. Check direction on hardware |
 
 ## Needs verification
-- Dimensions: only drawings in the UM. Switch Science [3P] lists 81.28 (L) × 101.60 (W) × 42 mm (H).
 - Logic level: Switch Science [3P] says logic voltage "5 V or 3.3 V" and logic power from the motor supply; UM gives only VIOH 1.3–5 V.
 - Over-current trip level and behaviour (current limit value, latch or auto-recover) not stated.
 - Whether SW7–SW8 battery monitor applies in Analog/PWM/Serial modes (summary table shows it only on the RC row; the table also appears column-shifted in the text export).
 - Fourth Grove pin on each connector: UM text lists only three entries (AN1/AN2/NC, IN1/IN2/NC).
 - Maximum PWM input frequency, RC pulse range (beyond 1–2ms examples), operating temperature, fuse rating, terminal wire gauge.
 - Shutdown temperature for MDDS30 (MDDS10/60 shut down >105°C; MDDS30 table ends at ">100 → 30 A").
-- Product page specs, price and status (my.cytron.io not reachable).
+- Rev 1.3 board changes (RC-mode jerk fix) are not in the Rev 1.2 manual (Sep 2023) — ask whether a newer manual exists.
 
 ## Sources
 - SmartDriveDuo-30 MDDS30 User's Manual Rev 1.2, Sept 2023 (public Google Doc) [UM]: https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view

@@ -5,7 +5,8 @@
 | Product code | `MDD10A` (manual title [UM]; packing list "1 x MDD10A Rev2.0" and page tag [PP]) |
 | Family | Cytron motor drivers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-16 |
+| Last verified | 2026-10-19 |
+| Reviewed | 2026-10-19 — master-table review (High priority — status not confirmed): live my.cytron.io product page read. Page matches the manual (Rev 2.0 since Jan 2017, 5–30 V, 10 A / 30 A peak for 10 s, 84.5 × 62 mm, packing) |
 | Primary source | "MDD10A Dual Channel 10A DC Motor Driver User's Manual" — **V2.0, June 2017** — public Google Doc: https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -45,6 +46,10 @@ Manual section "Product Specification and Limitations", table **"Absolute Maximu
 | Operating temperature | Not stated (only the 25°C test condition) | — |
 | Warranty | 12 months; manufacturing defects only; misuse and two-way freight not covered | [UM][PP] |
 | Packing list | 1 x MDD10A Dual Channel 10A DC Motor Driver; 1 x 2510 PCB Connector – 5 Ways (Female); 5 x 2510 Terminal Pin | [UM] ([PP]: "1 x MDD10A Rev2.0") |
+### Product page facts (my.cytron.io, read 19 Oct 2026)
+- Page re-read on my.cytron.io: "MDD10A shipped after Jan 2017 is in Rev2.0 which Vmotor supports up to 30VDC"; dual-channel version of MD10C; 5–30 V (Rev 2.0); **no reverse polarity protection at Vmotor**; 10 A continuous, **30 A peak (10 seconds)** per channel; 3.3 V and 5 V logic; solid-state, NMOS H-bridge, no heatsink; regenerative braking; PWM up to 20 kHz; locked-antiphase and sign-magnitude ("not RC PWM"); 2 activation buttons per channel; 84.5 × 62 mm; suitable motors 5–30 V, rated ≤ 10 A, peak ≤ 30 A [PP].
+- **Packing list:** 1x MDD10A Rev2.0, 1x 2510 PCB connector 5-way female, 5x 2510 terminal pins [PP].
+- **Resources:** User's manual (Google Doc), CytronMotorDriver library, Fritzing, Rev2.0 CAD, tutorials (MD10C with Arduino, MDD10A with Arduino UNO, MDD10A with CIKU, smartphone-controlled wheel robot) [PP].
 
 ## Interfaces, terminals and pin mapping
 **Input header (5 pins, 2510)** [UM]:
@@ -141,7 +146,6 @@ Mode selection — by wiring, no jumper or switch is stated [UM]:
 3. Operating temperature range and terminal wire size/current — not stated.
 4. Rev 1.0 vs Rev 2.0 differences other than max voltage — none documented.
 5. ESP32 use of the Cytron library: `ledcWrite(_pin1, …)` with no `ledcAttach` in the constructor [GH]; behaviour on ESP32 not documented.
-6. Single-unit price: [PP] shows only volume tiers; currency shown only as "$".
 
 ## Sources
 - [UM] MDD10A User's Manual (Google Doc, "MDD10A Dual Channel 10A DC Motor Driver User's Manual, V2.0, June 2017"): https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
