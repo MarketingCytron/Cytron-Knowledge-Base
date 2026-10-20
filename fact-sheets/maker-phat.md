@@ -43,6 +43,11 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - Learning to interface with sensors and actuators and coding with the onboard LEDs, push buttons and buzzer
 - Prototyping with labelled GPIO, SPI, UART and I2C breakouts
 - Hardware shutdown with push buttons
+- Cytron tutorial: [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi)
+- Cytron tutorial: [How to Display on I2C OLED Using Raspberry Pi](https://my.cytron.io/tutorial/display-i2c-oled-using-raspberry-pi)
+- Cytron tutorial: [Telegram Bot on Raspberry Pi OS Using Raspberry Pi 4 Model B](https://my.cytron.io/tutorial/telegram-bot-on-raspberry-pi-os-using-raspberry-pi-4-model-b)
+- Cytron tutorial: [Getting Started with Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/getting-started-maker-drive-raspberry-pi)
+- Cytron tutorial: [Home Notification using Telegram and Raspberry Pi](https://my.cytron.io/tutorial/home-notification-using-telegram-raspberry-pi)
 
 ## Known limitations
 - Power input is USB 5V only (4.8 – 5.2 V absolute maximum)

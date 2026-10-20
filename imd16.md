@@ -132,6 +132,12 @@ PWM/DIR truth table (Table 2) [DS]:
 - The Quick Start Guide card text (not online).
 - Read the two Cytron iMD16 tutorials (getting started; conveyor belt without code) for wiring of the control connectors.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with iMD16 (No Code Setup)](https://my.cytron.io/tutorial/getting-started-with-imd16) — Tutorial, Beginner, 2026 (series, 2 parts) [PP: tutorial]
+- [Conveyor Belt Control without Code using iMD16](https://my.cytron.io/tutorial/imd16-conveyor-belt-control-without-code) — Tutorial, 2026 [PP: tutorial]
+- [Cytron Brings its First Industrial DC Motor Driver to the Global Stage](https://my.cytron.io/tutorial/cytron-launches-imd16-industrial-dc-motor-driver) — Uncategorized, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] iMD16 Datasheet, Rev 1.0 April 2026, Google Doc modified 2026-10-05 (PDF export read incl. Figures 1–4): (Cytron document — link not public)
 - [DS-old] iMD16 Datasheet, Rev 1.0 April 2026, Google Doc modified 2026-06-04: (Cytron document — link not public)
@@ -139,3 +145,4 @@ PWM/DIR truth table (Table 2) [DS]:
 - [GH] CytronMotorDriver README: https://github.com/CytronTechnologies/CytronMotorDriver
 - [3P] Switch Science listing (cross-check only): https://www.switch-science.com/products/11193
 - Product page: https://cytron.io/p-16amp-7-30v-industrial-dc-motor-driver (not read: blocked)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

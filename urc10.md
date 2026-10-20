@@ -161,6 +161,14 @@ IR Sumo Start (separate product): the pack's Auto Kit notes wire module + to 5V,
 - Microcontroller wording: description says ATmega328P, feature list says ATmega328 — treat as ATmega328P (description) and confirm on the board marking.
 - Over-heat / over-current cut-off beyond the stated 30 A current limit — not on the product page.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [1KG Autonomous Sumo Robot Starter Kit User Guide using URC10](https://my.cytron.io/tutorial/1kg_sumo_robot_urc10) — Tutorial, Beginner, 2024 (series, 4 parts) [PP: tutorial]
+- [1KG Autonomous Sumo Robot using URC10](https://my.cytron.io/tutorial/1-kg-autonomous-sumo-robot-starter-kit-user-guide-using-urc10) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Mastering Wireless Control with URC10](https://my.cytron.io/tutorial/mastering-wireless-control-with-urc10) — Tutorial, Beginner, 2025 (series, 4 parts) [PP: tutorial]
+- [Battle Robot with URC10](https://my.cytron.io/tutorial/battle-robot-with-urc10) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10) — Project, Intermediate, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] URC10 Sumo Robot Controller Datasheet, Rev 1.0, March 2019 — local file `URC10 Datasheet.pdf` (AI Coding Pack `source-docs/`); no public URL found
 - [UM] URC10 Sumo Robot Controller User's Manual V1.2, April 2019 — local file `URC10 Sumo Robot Controller User's Manual.pdf`
@@ -173,3 +181,4 @@ IR Sumo Start (separate product): the pack's Auto Kit notes wire module + to 5V,
 - [3P] https://cdn.robotshop.com/media/c/cyt/rb-cyt-230/pdf/uno-robot-controller-datasheet.pdf (older Cytron manual V1.0, Sep 2017; read via summary only)
 - [3P] https://www.tindie.com/products/Cytron/sumo-robot-controller-arduino-compatible/
 - Product page: not read (my.cytron.io returns 403 here)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

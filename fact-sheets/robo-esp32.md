@@ -61,6 +61,11 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - PS4 controller (Bluepad32) and Bluetooth app control
 - IoT projects: ThingSpeak, Blynk, Telegram
 - Controller for the OjanBot ESP32 kit
+- Cytron tutorial: [Smart Farming with ESP32](https://my.cytron.io/tutorial/farm-automation-system-using-roboesp32)
+- Cytron tutorial: [Smart Dustbin with ESP32](https://my.cytron.io/tutorial/smart-dustbin-with-robo-esp32)
+- Cytron tutorial: [Getting Started with Robo ESP32](https://my.cytron.io/tutorial/getting-started-guide-with-robo-esp32)
+- Cytron tutorial: [Control LED & Servo from Raspberry Pi via I2C with RoboESP32](https://my.cytron.io/tutorial/robo-esp32-raspberry-pi-i2c)
+- Cytron tutorial: [Top ESP32 Projects to Kickstart Your IoT Journey part 3](https://my.cytron.io/tutorial/top-esp32-projects-to-kickstart-your-iot-journey-part-3)
 
 ## Known limitations
 - No ESP32 on the board; a NodeMCU ESP32 must be bought separately

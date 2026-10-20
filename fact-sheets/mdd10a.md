@@ -48,6 +48,8 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 5â
 - Control the motors manually with the onboard test buttons
 - Control two DC motors from Arduino UNO
 - Control two DC motors from SK40C
+- Cytron tutorial: [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - Use a battery when driving an inductive load such as a DC brush motor; most switching power supplies shut down when regenerative current from the motor is detected

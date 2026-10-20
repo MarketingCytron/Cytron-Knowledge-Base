@@ -151,6 +151,10 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Board weight — not stated (size 49 × 46 mm is from the product page).
 - Re-read the user manual from the Cytron Drive PDF (now linked from the product page) to replace the reseller-mirror reading.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller) — Tutorial, Advanced, 2022 [PP: tutorial]
+
 ## Sources
 - [UM] "SC08A SERVO CONTROLLER — User's Manual", V1.0, June 2011, Cytron Technologies Sdn. Bhd. — read from the reseller mirror https://www.gotronic.fr/pj2-38783-nt-3349.pdf (Cytron's own copy, linked from the product page, is https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view — not readable here)
 - [PP] Product page (read by the coordinator 2026-10-16; not fetched here) — https://my.cytron.io/p-8-channel-servo-controller
@@ -158,3 +162,4 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - [GH] PIC18F4520 sample code README — https://raw.githubusercontent.com/CytronTechnologies/SC08A_PIC18F4520/master/README.md
 - [GH] GUI README — https://raw.githubusercontent.com/CytronTechnologies/GUI_SC08A/master/README.md
 - Cross-reference only: SHIELD-SERVO User's Manual V1.1 (same protocol) — https://docs.google.com/document/d/191P6FwTgJ_dWhAhB3eWfP0YMSbI4_7Kehgzw3pYy-AY/view
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

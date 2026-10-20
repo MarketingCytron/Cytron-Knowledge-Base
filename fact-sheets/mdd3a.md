@@ -50,6 +50,7 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Driving a stepper motor (one unipolar/bipolar stepper)
 - Bidirectional control of two brushed DC motors
 - Host controllers such as Arduino, Raspberry Pi or PLC
+- Cytron tutorial: [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino)
 
 ## Known limitations
 - Power input absolute maximum 16 VDC (minimum 4 VDC)

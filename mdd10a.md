@@ -147,9 +147,15 @@ Mode selection — by wiring, no jumper or switch is stated [UM]:
 4. Rev 1.0 vs Rev 2.0 differences other than max voltage — none documented.
 5. ESP32 use of the Cytron library: `ledcWrite(_pin1, …)` with no `ledcAttach` in the constructor [GH]; behaviour on ESP32 not documented.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno) — Tutorial, Beginner, 2015 [PP: tutorial]
+- [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver) — Tutorial, Beginner, 2025 (series, 2 parts) [PP: tutorial]
+
 ## Sources
 - [UM] MDD10A User's Manual (Google Doc, "MDD10A Dual Channel 10A DC Motor Driver User's Manual, V2.0, June 2017"): https://docs.google.com/document/d/1ol8nICCTTw5dAHHE_hju08cCVH2GN5_Y3cGC6B4Gbas/edit
 - PDF mirror of the same manual (cross-check): https://makermotor.com/content/cytron/pn00218-cyt4/MDD10A%20User's%20Manual.pdf
 - [PP] Product page "10Amp 5V-30V DC Motor Driver (2 Channels)": https://www.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels (my.cytron.io copy https://my.cytron.io/p-10amp-5v-30v-dc-motor-driver-2-channels failed to load)
 - [GH] Cytron Motor Drivers Library: https://github.com/CytronTechnologies/CytronMotorDriver
 - Tutorial: https://tutorial.cytron.io/2015/04/05/using-mdd10a-with-arduino-uno/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

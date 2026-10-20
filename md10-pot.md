@@ -125,9 +125,16 @@ Datasheet section 2, **"Table 3: MD10-POT Absolute Maximum Ratings"** [DS].
 6. Over-current, thermal and under-voltage protection — not stated (the page says there is no reverse-polarity protection).
 7. How locked-antiphase mode is wired with the PWM/DIR inputs — the page says it is supported; the datasheet gives no truth table for it.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [MD10-POT: Controlling DC Motor without Writing Code](https://my.cytron.io/tutorial/md10-pot-controlling-dc-motor-without-writing-code) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Make Turntable using MD10-POT Motor Driver](https://my.cytron.io/tutorial/turntable-md10pot) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [MD10-POT Conveyor Belt Control without Code](https://my.cytron.io/tutorial/MD10-POT_Conveyor_Belt_Control_without_Code) — Tutorial, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] MD10-POT Datasheet (Google Doc, "MD10-POT Potentiometer and Switch Control 10Amp DC Motor Driver Datasheet, Rev 1.0, Oct 2018"): https://docs.google.com/document/d/1U_dn6OCEw76pqJaIzZYuWqWoU1C9APwpNp8qztaJ1uA/view
 - PDF mirror of the same datasheet (cross-check only): https://www.farnell.com/datasheets/4726001.pdf
 - [PP] Product page "10 Amp 7V-30V Potentiometer & Switch Control DC Motor Driver": https://my.cytron.io/p-10-amp-7v-30v-potentiometer-and-switch-control-dc-motor-driver (read by coordinator 2026-10-16)
 - [PP] 3D printable case STL (linked from product page, not opened): https://drive.google.com/file/d/1-sOq8sI3cUeYis4u52VVhTNf2r8fR8o3/view
 - [GH] Cytron Motor Drivers Library: https://github.com/CytronTechnologies/CytronMotorDriver
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

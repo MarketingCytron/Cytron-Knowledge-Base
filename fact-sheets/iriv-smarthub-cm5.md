@@ -64,6 +64,11 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Basic machine vision with a UVC USB webcam
 - Inspection stations
 - Offline video monitoring
+- Cytron tutorial: [Digital Signage With IRIV SmartHub CM5](https://my.cytron.io/tutorial/iriv-smarthub-digital-signage)
+- Cytron tutorial: [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started)
+- Cytron tutorial: [Inventory Management System with IRIV SmartHub CM5](https://my.cytron.io/tutorial/inventory-management-system-with-smarthub)
+- Cytron tutorial: [Milesight-BeaverIoT Quick Start Guide](https://my.cytron.io/tutorial/milesight-beaveriot-quick-start-guide-smarthub)
+- Cytron tutorial: [IRIV SmartHub CM5: 84 Days of Continuous Operation](https://my.cytron.io/tutorial/iriv-smarthub-cm5-84-days-continuous-operation)
 
 ## Known limitations
 - Mini PCIe socket is USB 2.0 only; PCIe signal is not available, so PCIe-only cards will not work

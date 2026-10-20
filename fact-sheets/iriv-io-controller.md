@@ -61,6 +61,11 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Pulse counting from flow meters, energy meters and rotary encoders, with running totals in Modbus registers polled by a PLC, SCADA or dashboard
 - IoT gateway to Blynk, ThingSpeak and MQTT
 - Agricultural automation
+- Cytron tutorial: [IRIV IO Controller - Send Sensor readings to IRIV PiControl using MQTT](https://my.cytron.io/tutorial/iriv-ioc-sending-data-from-humidity-and-temperature-sensor-to-iriv-picontrol-using-mqtt-protocol)
+- Cytron tutorial: [Getting Started with IRIV IO Controller With Circuit Python](https://my.cytron.io/tutorial/getting-started-with-iriv-io-controller-with-circuit-python)
+- Cytron tutorial: [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp)
+- Cytron tutorial: [Modbus Configuration Tool for Slave ID and Baudrate Setup](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup)
+- Cytron tutorial: [Building a Line-Crossing People Counter with IRIV Vision Studio](https://my.cytron.io/tutorial/building-a-line-crossing-people-counter-using-iriv-vision-studio)
 
 ## Known limitations
 - Analog inputs are not isolated (AGND is shared with system GND)

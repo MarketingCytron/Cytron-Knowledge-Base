@@ -39,6 +39,7 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 ## Use cases
 - Radio-controlled 1 kg sumo robot for competitions
 - Plug-and-play sumo robot build with no coding
+- Cytron tutorial: [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10)
 
 ## Known limitations
 - No warranty

@@ -69,6 +69,11 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Smart surveillance
 - Agriculture, energy and infrastructure monitoring
 - Factory floor, mobile robotics and network-edge deployments
+- Cytron tutorial: [Getting Started with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/getting-started-with-iriv-edgeai-cm5)
+- Cytron tutorial: [Empowering Edge AI: Highlights from the AI Horizon Exhibition at SPICE Arena Penang](https://my.cytron.io/tutorial/AIHorizon25)
+- Cytron tutorial: [IRIV EdgeAI CM5: Enhancing CCTV Cameras](https://my.cytron.io/tutorial/enhance-rtsp-camera-with-iriv-edge-ai)
+- Cytron tutorial: [Automate Shutdown and Power‑On with IRIV Real‑Time Clock](https://my.cytron.io/tutorial/automate-shutdown-and-poweron-with-iriv-realtime-clock)
+- Cytron tutorial: [Custom Object Detection on IRIV Edge AI](https://my.cytron.io/tutorial/custom-object-detection-on-iriv-edge-ai)
 
 ## Known limitations
 - mPCIe socket has only USB 2.0 connected; no PCIe signal

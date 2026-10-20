@@ -115,9 +115,36 @@ An ESP32 development board on the ESP32-WROOM-32E-N8 module, in the NodeMCU ESP3
 - None for board-level facts (all open items closed by the design team on 2026-09-28).
 - RRP and store list change over time — re-check the live product page before quoting in public content.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with FreeRTOS on ESP32](https://my.cytron.io/tutorial/getting-started-freertos-esp32) — Tutorial, Intermediate, 2026 (series, 3 parts) [PP: tutorial]
+- [Getting Started with ESP32 & PS4 Controller: Beginner](https://my.cytron.io/tutorial/esp32-ps4controller-beginner) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with ESP32 & Blynk](https://my.cytron.io/tutorial/getting-started-esp32-and-blynk) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with ESP32 & Node-RED](https://my.cytron.io/tutorial/getting-started-esp32-and-nodered) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Control Outputs with Telegram](https://my.cytron.io/tutorial/control-esp32-outputs-with-telegram) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with ESP-NOW](https://my.cytron.io/tutorial/getting-started-espnow) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with ESP32 and Over-The-Air Programming (OTA)](https://my.cytron.io/tutorial/getting-started-with-esp32-ota) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Smart Home Dashboard with Real-Time Sensor Data](https://my.cytron.io/tutorial/esp32-smart-home-dashboard-with-real-time-sensor-data) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Smoke Detection Alarm](https://my.cytron.io/tutorial/esp32-smoke-detection-alarm) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with ESP32 & ThingSpeak](https://my.cytron.io/tutorial/getting-started-thingspeak) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Smart Light Control with App](https://my.cytron.io/tutorial/esp32-smart-light-control-with-app) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Water Tank Monitoring with Web Dashboard](https://my.cytron.io/tutorial/esp32-water-tank-monitoring) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 LED Pattern Generator](https://my.cytron.io/tutorial/esp32-led-pattern-generator) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Clap Switch](https://my.cytron.io/tutorial/esp32-clap-switch) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 WiFi Weather Station](https://my.cytron.io/tutorial/wifi-weather-station-esp32) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Air Quality Monitoring](https://my.cytron.io/tutorial/esp32-air-quality-monitoring) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 High Temperature Alert System](https://my.cytron.io/tutorial/esp32-high-temperature-alert-system-with-dht11-sensor) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Motion Detector Alert](https://my.cytron.io/tutorial/esp32-motion-detector-alert) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Digital Clock](https://my.cytron.io/tutorial/esp32-digital-clock) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Getting Started with Maker ESP32](https://my.cytron.io/tutorial/getting-started-with-maker-esp32) — Tutorial, Beginner, 2026 (series, 4 parts) [PP: tutorial]
+- [ESP32 Indoor Weather Indicator](https://my.cytron.io/tutorial/indoor-weather-indicator-using-maker-esp32) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 Voice Controlled Window with Sinric Pro](https://my.cytron.io/tutorial/voice-controlled-window-using-sinricpro) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [ESP32 IoT Gate using Blynk](https://my.cytron.io/tutorial/iot-gate-with-blynk) — Tutorial, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] Maker ESP32 Datasheet Rev 1.1 (Sept 2026) — (Cytron document — link not public)
 - [DT] Cytron design team confirmations, 2026-09-28 (CH9102F, VIN 5 V out, mute switch, dual power) — recorded in `claude/maker-esp32-reference.md`
 - [PP] https://my.cytron.io/p-maker-esp32 · launch page https://my.cytron.io/maker-esp32
 - [GH] https://github.com/CytronTechnologies/Cytron-Maker-ESP32
 - [VEN] https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

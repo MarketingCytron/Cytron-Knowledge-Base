@@ -171,8 +171,13 @@ Other LEDs: PWR on when powered; 485 on when there is RS485 activity; DOUT 0-3 o
 - Whether the firmware supports MODBUS TCP or HTTP, and static IP (the dashboard shows an assigned LAN IP; static IP not described).
 - Whether isolated I/O works on USB-C power only; certifications; whether a CR2032 is included (RTC unused by this firmware).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with IRIV-IOC MQTT Gateway](https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway) — Tutorial, Beginner, 2026 (series, 6 parts) [PP: tutorial]
+
 ## Sources
 - [DS] IRIV IOC MQTT Gateway Datasheet, Rev 1.0, June 2026 (Google Doc, modified 2026-08-03; read in full, including the PDF export figures): (Cytron document — link not public)
 - Comparison base: local KB file /home/claude/kb/iriv-io-controller.md (IRIV IO Controller Datasheet Rev 1.0, July 2024)
 - [PP] Product page (read 2026-10-19): https://my.cytron.io/p-iriv-io-controller-mqtt-ir4.0-industrial-i-o-controller-with-mqtt-ready
 - [PP: tutorial] Asri Ruslan, 16–23 Jun 2026: https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway · configuring-the-mqtt-broker-connection · configuring-io-channels · field-bus-rs485modbus-rtu · diagnostic--system-settings · factory-reset-and-firmware-update-iriv-ioc-mqtt-gateway
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

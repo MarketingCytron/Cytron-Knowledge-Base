@@ -133,9 +133,14 @@ Control mode: two-PWM-per-motor (Input A = forward speed, Input B = backward spe
 - Stepper drive method/library — the datasheet shows a connection diagram only.
 - ESP32: library calls `ledcWrite(pin, duty)` without `ledcAttach()` — whether this works on ESP32 Arduino core 3.x unmodified is untested.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] MDD3A Datasheet Rev 1.0, March 2019 — https://docs.google.com/document/d/1ax3gSo0srTzoSr2bo8ETLym0OqrYjlk_JCZK4kxtfXg/edit (PDF mirrors: https://www.electrokit.com/upload/product/41018/41018266/MDD3A%20Datasheet.pdf — same Rev 1.0, March 2019; https://cdn.shopify.com/s/files/1/0176/3274/files/MDD3A_Datasheet.pdf — not opened)
 - [PP] Product page https://www.cytron.io/p-mdd3a (URL as linked from Cytron GitHub README; my.cytron.io **not read**)
 - [PP: Tindie] Cytron Technologies Tindie listing — https://www.tindie.com/products/cytron/3amp-2-channel-4v-16v-dc-motor-driver/
 - [GH] https://github.com/CytronTechnologies/CytronMotorDriver (README.md, library.properties, CytronMotorDriver.h/.cpp, examples/PWM_PWM_DUAL/PWM_PWM_DUAL.ino)
 - [3P] (cross-check only) https://robotshop.com/en/cytron-3a-4-16v-dual-channel-dc-motor-driver.html · https://thingbits.in/products/4-16v-3a-dual-channel-dc-motor-driver
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

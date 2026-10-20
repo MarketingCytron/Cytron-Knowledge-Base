@@ -119,6 +119,12 @@ Pin mapping (datasheet section 1; BCM GPIO numbers) [DS]:
 - Whether the product is discontinued (Pimoroni says it no longer stocks it [3P]); Cytron page shows out of stock only [PP].
 - Whether the four button GPIOs also show on GPIO status LEDs (page: "Status LEDs for each GPIOs").
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Send Temperature and Humidity Data To ThingSpeak Using micro:bit](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4-2) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Maker HAT Base, combine HAT and modules on Raspberry Pi 4](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Maker HAT Base, allows you to easily access the Raspberry Pi 400 GPIO pins](https://my.cytron.io/tutorial/maker-hat-base-allows-you-to-easily-access-the-raspberry-pi-400-gpio-pins) — Tutorial, Beginner, 2021 [PP: tutorial]
+
 ## Sources
 - [DS] MAKER-HAT-BASE Datasheet, Rev 1.0, September 2021 (Google Doc, modified 2024-01-23): https://docs.google.com/document/d/12l4vzu-r3VRBCLkCsuM00KOYnMPnQw5HxdfxjA3p5E0/edit
 - [DS] Mirror of the same datasheet (Electrokit PDF, read via fetch, matches the Google Doc): https://www.electrokit.com/upload/product/41018/41018865/MAKER-HAT-BASE%20Datasheet.pdf
@@ -129,3 +135,4 @@ Pin mapping (datasheet section 1; BCM GPIO numbers) [DS]:
 - [3P] The Pi Hut, Maker HAT Base for Raspberry Pi 500/400: https://thepihut.com/products/maker-hat-base-for-raspberry-pi-400
 - [3P] Tom's Hardware review: https://www.tomshardware.com/reviews/cytron-maker-hat-base
 - [3P] Raspberry Pi Official Magazine review: https://magazine.raspberrypi.com/articles/review-maker-hat-base-for-raspberry-pi-400
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

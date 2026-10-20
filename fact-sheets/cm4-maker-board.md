@@ -43,6 +43,9 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Maker's carrier board for Raspberry Pi CM4
 - Connecting Grove, QWIIC and Stemma QT modules to a Compute Module
 - Booting a CM4 from NVMe SSD, eMMC or microSD
+- Cytron tutorial: [Getting Started with CM4 Maker Board](https://my.cytron.io/tutorial/getting-started-with-cm4-maker-board)
+- Cytron tutorial: [Node-RED on CM4 Maker Board: Displaying Thermocouple Sensor Data](https://my.cytron.io/tutorial/node-red-on-cm4-maker-board-displaying-thermocouple-sensor-data)
+- Cytron tutorial: [Log Thermocouple Sensor Data to Google Sheets using CM4 Maker Board](https://my.cytron.io/tutorial/log-thermocouple-sensor-data-to-google-sheets-using-cm4-maker-board)
 
 ## Known limitations
 - M.2 SATA SSD is not supported

@@ -36,6 +36,7 @@ A set of square EVA-foam floor tiles printed with black line patterns on a white
 ## Use cases
 - Build a reconfigurable line-following course for robot cars
 - Line following in the Bocobot Car Kit with Robo Pico tutorial
+- Cytron tutorial: [4.Line Following](https://my.cytron.io/tutorial/line-following)
 
 ## Known limitations
 - Combo 8 and Combo 16 contain only Cross, Curve and Straight tiles; Station, Blank and T-Junction tiles come only in Add On packs

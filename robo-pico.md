@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Product code | `ROBO-PICO` |
+| Product code | `ROBO-PICO`. The my.cytron.io page "Robo Pico: Simplifying Robotics with Raspberry Pi Pico / Pico W" is listed in the tutorial shop links with model code `V-ROBO-PICO` (the page's variant code) [PP: tutorial] |
 | Family | Robo series |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -154,9 +154,19 @@ The datasheet Grove table was mangled when read as text. The mapping above was r
 - Whether the buttons have on-board pull-ups (examples rely on the RP2040 internal pull-up).
 - Pico 2 software: which CircuitPython/MicroPython build and examples Cytron tests on Pico 2 (page says it works; no Pico 2 example code read).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started Guide with Robo Pico using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-robo-pico-using-circuitpython) — Tutorial, Beginner, 2023 (series, 15 parts) [PP: tutorial]
+- [Learn Robotics with Bocobot Car Kit and Robo Pico](https://my.cytron.io/tutorial/build-bocobot-car-with-robo-pico) — Tutorial, Beginner, 2023 (series, 6 parts) [PP: tutorial]
+- [Setting up the MOTION 2350 Pro](https://my.cytron.io/tutorial/get-started-motion-2350-pro-circuitpython-setting-up-robo-pico) — Tutorial, Beginner, 2024 (part of "Getting Started with MOTION 2350 Pro using CircuitPython") [PP: tutorial]
+- [How to Create Temperature Gauge Using Pi Pico](https://my.cytron.io/tutorial/how-to-create-temperature-gauge-using-pi-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Build an RC robot car using Pi Pico W and Robo Pico](https://my.cytron.io/tutorial/build-an-rc-robot-car-using-pi-pico-w-and-robo-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Colour Detection Robot using Colour Sensor with Robo Pico](https://my.cytron.io/tutorial/colour-detection-robot-using-TCS3200) — Tutorial, Intermediate, 2026 [PP: tutorial]
+
 ## Sources
 - [GH] https://github.com/CytronTechnologies/Cytron-ROBO-PICO — README, `Demo_Code/circuitpython/code.py`, `Getting_Started_Guide/CircuitPython/*/code.py`, `Getting_Started_Guide/MicroPython/*/main.py`, `Getting_Started_Guide/Arduino/*/*.ino` (read via raw.githubusercontent.com)
 - [PP] Cytron tutorial page: https://my.cytron.io/tutorial/getting-started-with-robo-pico-using-circuitpython
 - [PP] Product page (linked from [GH], not read): https://my.cytron.io/p-robo-pico-simplifying-robotics-with-raspberry-pi-pico
 - [VEN] Adafruit CircuitPython Motor library source: https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_Motor/main/adafruit_motor/motor.py
 - [3P] https://core-electronics.com.au/robo-pico-simplifying-robotics-with-raspberry-pi-pico-pico-w.html · https://www.tomshardware.com/reviews/cytron-robo-pico · https://uk.robotshop.com/products/robo-pico-simplifying-robotics-raspberry-pi-pico-pico-robo-pico-only · https://www.cnx-software.com/2023/07/30/robo-pico-review-raspberry-pi-pico-w-motor-sensor-control-board-bocobot-robotic-kit/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -137,6 +137,25 @@ Onboard function map (manual sections 7 and 8, and demo code) [UM]:
 - Pi Zero 2 W compatibility — not listed on the product page.
 - Why it is not compatible with Pi 5 (the page states the test result only).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [How to Display on I2C OLED Using Raspberry Pi](https://my.cytron.io/tutorial/display-i2c-oled-using-raspberry-pi) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Telegram Bot on Raspberry Pi OS Using Raspberry Pi 4 Model B](https://my.cytron.io/tutorial/telegram-bot-on-raspberry-pi-os-using-raspberry-pi-4-model-b) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Getting Started with Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/getting-started-maker-drive-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Home Notification using Telegram and Raspberry Pi](https://my.cytron.io/tutorial/home-notification-using-telegram-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Getting Started with Maker pHAT](https://my.cytron.io/tutorial/getting-started-with-maker-phat) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Lesson 2: Sending Blynk Notification Using Raspberry Pi and Maker pHAT](https://my.cytron.io/tutorial/sending-blynk-notification-using-raspberry-pi-maker-phat) — Tutorial, Beginner, 2018 (part of "Getting Started with Raspberry Pi and Blynk") [PP: tutorial]
+- [Remote Raspberry Pi Using Maker pHAT](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi-2) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Program Maker pHAT Using Scratch on Raspberry Pi](https://my.cytron.io/tutorial/program-maker-phat-using-scratch-on-raspberry-pi) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Lesson 3: Controlling LED on Maker pHAT Using Raspberry Pi and Blynk](https://my.cytron.io/tutorial/controlling-led-maker-phat-using-raspberry-pi-blynk) — Tutorial, Beginner, 2018 (part of "Getting Started with Raspberry Pi and Blynk") [PP: tutorial]
+- [Raspberry Pi with PIR Sensor](https://my.cytron.io/tutorial/raspberry-pi-pir-sensor) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Selfie with Raspberry Pi](https://my.cytron.io/tutorial/selfie-raspberry-pi) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Setting Up OpenCV on Raspberry Pi](https://my.cytron.io/tutorial/Setting_Up_OpenCV_on_Raspberry_Pi) — Tutorial, Intermediate, 2026 (series, 2 parts) [PP: tutorial]
+- [Getting Started with Raspberry Pi - Arduino Connection](https://my.cytron.io/tutorial/getting-started-with-raspberry-pi-arduino-connection) — Tutorial, Beginner, 2026 (series, 2 parts) [PP: tutorial]
+- [Displaying Text on Dot Matrix Using Raspberry Pi](https://my.cytron.io/tutorial/Displaying_Text_on_Dot_Matrix_Using_Raspberry_Pi) — Tutorial, Beginner, 2026 (series, 4 parts) [PP: tutorial]
+- [Setting Up 4x4 Keypad with Raspberry Pi Series](https://my.cytron.io/tutorial/setting_up_4x4_keypad_with_raspberry_pi_series) — Tutorial, Intermediate, 2026 [PP: tutorial]
+
 ## Sources
 - [UM] Maker pHAT (HAT-MAKER) User's Manual, Rev 1.10, Feb 2019 (Google Doc, modified 2024-01-23): https://docs.google.com/document/d/1iDYLyoQKOPJRD5m5ivu8Ivv6zyeLIc3IxUtRKOx7n8k/view
 - [UM] Mirror of the same manual (Electrokit PDF, read via fetch, matches the Google Doc): https://www.electrokit.com/upload/product/41018/41018274/Maker%20pHAT%20User's%20Manual.pdf
@@ -146,3 +165,4 @@ Onboard function map (manual sections 7 and 8, and demo code) [UM]:
 - [GH] Maker pHAT demo code gist (IdrisCytron): https://gist.github.com/IdrisCytron/9b3e2994eb2142d4ac10cb4d151016e3
 - [3P] Core Electronics, Maker pHAT: https://core-electronics.com.au/maker-phat.html
 - [3P] The Pi Hut, Maker pHAT: https://thepihut.com/collections/cytron/products/maker-phat-simplifying-raspberry-pi-for-education
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

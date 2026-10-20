@@ -59,6 +59,7 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - Building circuits on the onboard breadboard and perfboard
 - Portable projects powered from a powerbank
 - Learning Arduino with the Arduino Learning Guide for Beginners with Maker UNO X
+- Cytron tutorial: [K-Type Thermocouple With Maker UnoX And Blynk](https://my.cytron.io/tutorial/k-type-thermocouple-with-maker-uno-x-and-blynk)
 
 ## Known limitations
 - USB-serial driver not compatible with Windows 7

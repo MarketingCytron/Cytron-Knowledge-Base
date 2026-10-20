@@ -140,6 +140,17 @@ Motor truth table [DS]: A=L, B=L → **Brake**. A=H, B=L → Forward. A=L, B=H �
 - Which 10 GPIOs have status LEDs (the page says 10; the official Blink example drives 8 — 16, 17, 21, 22, 25, 26, 32, 33; are 36 and 39 the other two?).
 - Where the reset button is: the page says "built-in reset button", the datasheet function table lists none — it may be the NodeMCU ESP32 EN button.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Smart Farming with ESP32](https://my.cytron.io/tutorial/farm-automation-system-using-roboesp32) — Tutorial, Intermediate, 2025 [PP: tutorial]
+- [Smart Dustbin with ESP32](https://my.cytron.io/tutorial/smart-dustbin-with-robo-esp32) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting Started with Robo ESP32](https://my.cytron.io/tutorial/getting-started-guide-with-robo-esp32) — Tutorial, Beginner, 2025 (series, 25 parts) [PP: tutorial]
+- [Control LED & Servo from Raspberry Pi via I2C with RoboESP32](https://my.cytron.io/tutorial/robo-esp32-raspberry-pi-i2c) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Top ESP32 Projects to Kickstart Your IoT Journey part 3](https://my.cytron.io/tutorial/top-esp32-projects-to-kickstart-your-iot-journey-part-3) — Project, Beginner, 2025 (series, 5 parts) [PP: tutorial]
+- [ESP32 Clap Switch](https://my.cytron.io/tutorial/esp32-clap-switch) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Basic Robot Battle with Robo ESP32](https://my.cytron.io/tutorial/robot-battle-with-robo-esp32) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [ESP32 Smart Cat House](https://my.cytron.io/tutorial/esp32-smart-cat-house) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] Robo ESP32 Rev1.1 Board Datasheet (Rev 1.1, Feb 2026): (Cytron document — link not public)
 - [DS] Robo ESP32 Board Datasheet (Rev 1.0, May 2025): (Cytron document — link not public)
@@ -148,3 +159,4 @@ Motor truth table [DS]: A=L, B=L → **Brake**. A=H, B=L → Forward. A=L, B=H �
 - [GH] https://github.com/CytronTechnologies/Cytron-ROBO-ESP32 (README, `Getting Started Guide/Arduino/*/*.ino`, `Internet of Things/Blynk/Blynk.ino`)
 - [VEN] https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html
 - [3P] https://www.robotshop.com/products/cytron-robo-esp32-simplifying-robotics-w-esp32 · https://my.element14.com/cytron/robo-esp32/robo-kit-esp32-wi-fi-bluetooth/dp/4871671
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

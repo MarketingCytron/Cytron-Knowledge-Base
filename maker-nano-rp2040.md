@@ -122,6 +122,27 @@ RP2040 pin functions on the Nano positions [VEN]:
 - Price (only [3P] CNX "$7.12" at launch), dimensions (figure not readable), regulator type and protections.
 - Dimensions in mm (dimension image exists on the page but was not readable here); regulator type and protections.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Display Images on Graphic LCD with Maker Nano RP2040](https://my.cytron.io/tutorial/display-image-on-the-graphic-lcd-using-maker-nano-rp2040-and-circuitpython) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Gesture Control With Maker Nano RP2040 And APDS9960](https://my.cytron.io/tutorial/gesture-control-with-makernanorp2040-and-apds9960) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Interfacing Maker Nano RP2040 With DHT22 And Sparkfun SERLCD](https://my.cytron.io/tutorial/interfacing-makernanorp2040-with-dht22-and-sparkfun-serlcd) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Interfacing Maker Nano RP2040 with Grove LED Bar and Grove Slide Potentiometer](https://my.cytron.io/tutorial/interfacing-maker-nano-rp2040-with-grove-led-bar-and-grove-slide-potentiometer) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Measure Distance With Maker Nano RP2040 And Ultrasonic Sensor With TFT Display](https://my.cytron.io/tutorial/measure-distance-with-maker-nano-rp2040-and-ultrasonicsensor-with-tftdisplay) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [What Is The Air Quality Inside Your Room](https://my.cytron.io/tutorial/what-is-the-air-quality-inside-your-room) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Otto DIY robot head for Maker Nano RP2040](https://my.cytron.io/tutorial/otto-diy-robot-head-for-maker-nano-rp2040) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Maker Nano RP2040 Interfacing With Maker Drive Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerdrive) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Measure The LPG Gas Using Maker Nano RP2040 And Gas Sensor MQ-9B](https://my.cytron.io/tutorial/interfacing-maker-nano-rp2040-with-grove-gas-sensor-mq9b) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Getting Started With Maker Nano RP2040](https://my.cytron.io/tutorial/Getting-Started-With-Maker-Nano-RP2040) — Tutorial, Beginner, 2023 (series, 14 parts) [PP: tutorial]
+- [Drink water reminder with CircuitPython and Maker Nano RP2040](https://my.cytron.io/tutorial/drink-water-reminder-with-circuitpython-and-maker-nano-rp2040) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Maker Nano RP2040 Interfacing With Maker Line Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerline) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Build Fun Piano with Ultrasonic using Maker Nano RP2040](https://my.cytron.io/tutorial/build-fun-piano-with-ultrasonic-using-maker-nano-rp2040) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Bidirectional Visitor Counter using CircuitPython on Maker Nano RP2040](https://my.cytron.io/tutorial/bidirectional-visitor-counter-using-circuitpython-on-maker-nano-rp2040) — Tutorial, Intermediate, 2022 [PP: tutorial]
+- [Getting Started With Maker Nano RP2040 & Blynk IoT](https://my.cytron.io/tutorial/getting-started-with-maker-nano-rp2040-and-blynk-iot) — Tutorial, Beginner, 2023 (series, 9 parts) [PP: tutorial]
+- [WIFI Robot Maneuver With MDDS10](https://my.cytron.io/tutorial/wifi-robot-maneuver-with-mdds10) — Tutorial, Intermediate, 2022 [PP: tutorial]
+
 ## Sources
 - [DS-R10] MAKER-NANO-RP2040 Datasheet, Rev 1.0, December 2021 (DigiKey mirror): https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6147/MAKER-NANO-RP2040.pdf
 - [GH] https://github.com/CytronTechnologies/MAKER-NANO-RP2040 — README, `setup-circuitpython.md`, `MAKER-NANO-RP2040-Image.PNG` (via raw.githubusercontent.com)
@@ -130,3 +151,4 @@ RP2040 pin functions on the Nano positions [VEN]:
 - [VEN] CircuitPython: https://raw.githubusercontent.com/adafruit/circuitpython/main/ports/raspberrypi/boards/cytron_maker_nano_rp2040/pins.c (and `mpconfigboard.h`, `mpconfigboard.mk`); https://raw.githubusercontent.com/adafruit/circuitpython-org/main/_board/cytron_maker_nano_rp2040.md
 - [VEN] arduino-pico: https://raw.githubusercontent.com/earlephilhower/arduino-pico/master/variants/cytron_maker_nano_rp2040/pins_arduino.h · https://raw.githubusercontent.com/earlephilhower/arduino-pico/master/boards.txt
 - [3P] Zephyr: https://raw.githubusercontent.com/zephyrproject-rtos/zephyr/main/boards/cytron/maker_nano_rp2040/arduino_nano_connector.dtsi · https://shop.pimoroni.com/products/maker-nano-rp2040 · https://core-electronics.com.au/maker-nano-rp2040.html · https://www.cnx-software.com/2022/01/31/maker-nano-rp2040-arduino-nano-board-grove-qwiic-modules/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

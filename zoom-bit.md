@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Product code | No Cytron source read states a code. `ZOOMBIT-NB` appears only as RobotShop's "Manufacturer #" for the without-micro:bit option [3P] (see *Needs verification*) |
+| Product code | `ZOOMBIT` — model code of the my.cytron.io page "ZOOM:BIT Robot Car Kit for micro:bit (V2 included)" (p-zoombit-robot-car-kit-for-microbit), from the Cytron tutorial shop links [PP: tutorial]. A second shop listing, "ZOOM:BIT Robot Car Kits for micro:bit" (p-zoombit-robot-car-kits-for-microbit), has code `V-ZOOMBIT` and is the one linked from the Smart AI Lens tutorials [PP: tutorial]. `ZOOMBIT-NB` (without micro:bit) appears only as RobotShop's "Manufacturer #" [3P] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -113,7 +113,7 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 | Kit list wording | [UM] lists "Castor" and "DC Motor & Wheel x2" | ManualsLib copy reads "Castor DC Motor & Wheel x2" | Text-extraction merge on the mirror. Use the [UM] list |
 
 ## Needs verification
-- **Product codes:** `ZOOMBIT-NB` (without micro:bit) appears only as RobotShop's "Manufacturer #" [3P]. Codes for the V2-included kit and Classroom Pack were not found.
+- **Product codes:** `ZOOMBIT` and `V-ZOOMBIT` are now Cytron-sourced [PP: tutorial]. Still open: per-option codes (without micro:bit — `ZOOMBIT-NB` only from RobotShop [3P]; Classroom Pack), and how the `V-ZOOMBIT` listing differs from the main page.
 - **Grove port each sensor plugs into** (Maker Line, ultrasonic, both LED modules) — only shown in guidebook wiring diagrams, which could not be read. The pins above come from [GH] code.
 - Whether the Grove buzzer port "P0:P1" [UM] and the Maker Line on P1 [GH] can be used together. The buzzer on V1 (MakeCode music default pin P0) has not been confirmed.
 - **Which REKA:BIT servo port** (S1–S4) the head servo uses.
@@ -123,6 +123,16 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 - Which ultrasonic module ships: the packing list links the SR04P (HC-SR04P) page, while a pxt-zoombit code comment names RCWL-9610 timing [GH]; confirm the part with the EDU team.
 - AA battery type: the packing list links PKCELL Heavy Duty AA cells; voltage under motor load and run time are not stated.
 - Per-option prices (the page shows "from RM262.50" for the default option).
+
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Differences Between Newer and Earlier Versions of Ultrasonic Sensor HC-SR04P](https://my.cytron.io/tutorial/differences-between-newer-and-earlier-versions-of-ultrasonic-sensor-hc-sr04p) — Protip, Beginner, 2022 [PP: tutorial]
+- [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [AI with ZOOM:BIT: Introduction & Hardware Setup](https://my.cytron.io/tutorial/ai-with-zoombit-introduction--hardware-setup) — Tutorial, Beginner, 2024 (series, 6 parts) [PP: tutorial]
+- [Chapter 1: Setting Up Smart AI Lens & Battery with ZOOM:BIT](https://my.cytron.io/tutorial/setting-up-smart-ai-lens-and-battery-with-zoombit) — Tutorial, Intermediate, 2025 (series, 6 parts) [PP: tutorial]
+- [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini) — Project, Beginner, 2026 [PP: tutorial]
+- [Getting Started with 3D Printed ZOOM:BIT](https://my.cytron.io/tutorial/getting-started-with-3d-printed-zoombit) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [3D Printed ZOOM:BIT with 3D Robo Grip](https://my.cytron.io/tutorial/3d-zoombit-with-robo-grip-mini) — Tutorial, Beginner, 2026 [PP: tutorial]
 
 ## Sources
 - [UM] ZOOM:BIT Quick Start Guidebook, English, v1.1 (file name), public: https://static.cytron.io/download/ZOOMBIT/ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf
@@ -134,3 +144,4 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 - [GH] https://github.com/CytronTechnologies/pxt-zoombit — `README.md`, `pxt.json` (v0.1.1), `main.ts` (read via raw.githubusercontent.com)
 - [GH] https://github.com/CytronTechnologies/pxt-rekabit — `README.md`, `pxt.json` (v1.2.3), `main.ts`, `power.ts`, `motor.ts`, `rgb.ts`
 - [3P] RobotShop: https://www.robotshop.com/products/zoombit-robot-car-kit-for-microbit-w-o-microbit
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -101,9 +101,14 @@ No disagreement between the Getting Started Guide [UM] and the product page [PP]
 - Weight, operating temperature — not stated.
 - The guide is V1.0 from JAN 2015; whether the board has been revised since (the product page says the proto area was moved "to the middle") — confirm the current revision matches the guide [DT].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor) — Tutorial, Beginner, 2016 [PP: tutorial]
+
 ## Sources
 - [UM] "Shield-Screw2 Getting Started Guide", V1.0, JAN 2015, Cytron Technologies Sdn. Bhd. (Google Doc; the product page links it without a label) — https://docs.google.com/document/d/1Z65lZsEQ4x1nS4j9RSolcZ5cMYRg-nfXlnVgrgTl15o/edit
 - [PP: photo] Cytron product photos — https://static.cytron.io/image/catalog/products/SHIELD-SCREW2/shield-screw2-a.png , -b.png (top), -c.png (bottom)
 - [PP] Cytron product page (re-read 2026-10-19: 127 in stock, RM31.50, no new specs; earlier read 2026-10-16: product code, price RM31.50, stock 128, warranty 12 months, "upgraded the screw shield with the prototyping area at the middle") — https://my.cytron.io/p-cytron-screw-terminal-shield
 - [3P] (cross-check only) RobotShop product page, SKU RB-Cyt-243, Manufacturer # SHIELD-SCREW2 — https://www.robotshop.com/products/cytron-screw-terminal-shield-arduino
 - [3P] (cross-check only) RobotShop Community thread "Cytron screw shield", Jan 2019 — https://community.robotshop.com/forum/t/cytron-screw-shield/37525
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -62,6 +62,11 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - SSD1315 OLED text display over I2C
 - NTP clock
 - IoT examples: simple HTTP server, ThingSpeak, Blynk
+- Cytron tutorial: [Getting Started Guide with Robo Pico using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-robo-pico-using-circuitpython)
+- Cytron tutorial: [Learn Robotics with Bocobot Car Kit and Robo Pico](https://my.cytron.io/tutorial/build-bocobot-car-with-robo-pico)
+- Cytron tutorial: [Setting up the MOTION 2350 Pro](https://my.cytron.io/tutorial/get-started-motion-2350-pro-circuitpython-setting-up-robo-pico)
+- Cytron tutorial: [How to Create Temperature Gauge Using Pi Pico](https://my.cytron.io/tutorial/how-to-create-temperature-gauge-using-pi-pico)
+- Cytron tutorial: [Build an RC robot car using Pi Pico W and Robo Pico](https://my.cytron.io/tutorial/build-an-rc-robot-car-using-pi-pico-w-and-robo-pico)
 
 ## Known limitations
 - No microcontroller on the board; a Raspberry Pi Pico or Pico W is needed

@@ -60,6 +60,9 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - Combat Robot
 - Sumo Robot
 - RC Toy
+- Cytron tutorial: [Build 1KG RC Sumo Robot using MDDRC10](https://my.cytron.io/tutorial/rcsumo1kg-mddrc10)
+- Cytron tutorial: [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10)
+- Cytron tutorial: [1KG RC Sumo Robot Using MDDRC10](https://my.cytron.io/tutorial/1kg-rc-sumo-robot-using-mddrc10)
 
 ## Known limitations
 - Power input 7–30 V absolute maximum

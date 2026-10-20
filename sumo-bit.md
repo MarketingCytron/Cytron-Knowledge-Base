@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Product code | Not stated in the datasheet. Datasheet titles use "SUMO:BIT" and "SUMO-BIT"; Cytron marketing artwork shows "SUMOBIT" [DS]. Cytron SKU not confirmed — see Needs verification |
+| Product code | `SUMO-BIT` — model code of the my.cytron.io page "SUMO:BIT - Sumo Robot Expansion Board for micro:bit" (p-sumo-bit), from the Cytron tutorial shop links [PP: tutorial]. Not stated in the datasheet; datasheet titles use "SUMO:BIT" and "SUMO-BIT"; Cytron marketing artwork shows "SUMOBIT" [DS] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -147,8 +147,18 @@ Servos, RGB LEDs, motors, mode switch and battery voltage are **not** on micro:b
 - LiPo cell count recommendation; behaviour at low battery.
 - How the USB joystick and RC-receiver inputs are used in code (no extension blocks).
 - Telegram "SUMO:BIT Support Group" — named in the datasheet, no link.
-- Shop product code for the two options (page shows names only).
+- Per-option shop codes for the two options (the page model code `SUMO-BIT` is known from the tutorial shop links [PP: tutorial]).
 - MicroPython support named in the page FAQ — no library or example linked.
+
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Build Sumo Robot with micro:bit (SUMO:BIT)](https://my.cytron.io/tutorial/build-sumo-robot-with-sumobit) — Tutorial, Beginner, 2024 (series, 7 parts) [PP: tutorial]
+- [2 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/2-wheel-robot-battle-with-sumobit) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting started with Soccer Robot using SUMO:BIT](https://my.cytron.io/tutorial/soccer-robot-using-sumo-bit) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Robot Battle RC Mode with HotRC](https://my.cytron.io/tutorial/SUMO:BIT_RC_Mode_with_HOT_RC) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [4 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/4-wheel-robot-battle-with-sumobit) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [SUMO:BIT Autonomous Mode (DIP)](https://my.cytron.io/tutorial/SUMO:BIT_Autonomous_Mode_(DIP)) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Joystick Pairing with SUMO:BIT and Motion 2350 Pro](https://my.cytron.io/tutorial/joystick-pairing-with-sumobit-and-motion-2350-pro) — Tutorial, 2026 [PP: tutorial]
 
 ## Sources
 - [DS] SUMO:BIT Datasheet, Rev 1.0, December 2024, Cytron Technologies Sdn Bhd — public mirror: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-429/pdf/sumobit-expansion-board-for-microbit-datasheet.pdf (read as text; figures not read). Also mirrored at https://makerselectronics.com/wp-content/uploads/2025/08/SUMO_BIT-Datasheet.pdf (not opened). No Cytron Google Doc found.
@@ -157,3 +167,4 @@ Servos, RGB LEDs, motors, mode switch and battery voltage are **not** on micro:b
 - [MD13S UM] via KB file `kb/md13s.md`
 - [PP] https://www.cytron.io/p-sumo-bit — product page not read (fetch failed); my.cytron.io also not reachable
 - [3P] (cross-check only) https://www.robotshop.com/products/sumobit-expansion-board-for-microbit-1 ; https://makerselectronics.com/product/cytron-sumo-bit-expansion-board-with/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

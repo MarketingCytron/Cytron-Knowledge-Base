@@ -170,6 +170,12 @@ OC LED, power LED and motor status LED pins are not in the pin map [DS].
 - Operating temperature, weight, terminal type — not stated.
 - Read the Cytron "MDDRC5 firmware programming" and "Getting Started with MDDRC5" tutorials (failsafe, neutral calibration, custom code).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with MDDRC5](https://my.cytron.io/tutorial/getting-started-with-mddrc5) — Tutorial, Beginner, 2026 (series, 4 parts) [PP: tutorial]
+- [From Test Bench to Champion: MDDRC5 at ROVATION](https://my.cytron.io/tutorial/mddrc5-500g-rc-sumo-rovation-2026) — Success Stories, Beginner, 2026 [PP: tutorial]
+- [Build a Robot Sumo 500g R/C with MDDRC5](https://my.cytron.io/tutorial/build-robot-sumo-500g-rc-mddrc5) — Tutorial, Intermediate, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] MDDRC5 Datasheet, "5 Amp 7V-30V DC Motor Driver for R/C (2 Channels)", Rev 1.0, March 2026 — (Cytron document — link not public)
 - [PP] Product page (not read — fetch failed) — https://my.cytron.io/p-5-amp-7v-30v-dc-motor-driver-for-r-c-2-channels
@@ -179,3 +185,4 @@ OC LED, power LED and motor status LED pins are not in the pin map [DS].
 - [GH] SHA256SUMS — https://raw.githubusercontent.com/CytronTechnologies/mddrc5/main/SHA256SUMS
 - [GH] Sumo 3D README — https://raw.githubusercontent.com/CytronTechnologies/mddrc5/main/3d-files/robot-sumo-500g-rc/README.md
 - [GH] Firmware files — https://raw.githubusercontent.com/CytronTechnologies/mddrc5/main/firmware/mddrc5_v1.0.6.uf2 (also v1.0.4, v1.0.5)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

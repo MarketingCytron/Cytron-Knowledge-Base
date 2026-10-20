@@ -207,6 +207,18 @@ Other specifications (not in Table 4):
 - Which variant the RM62.58 price is (page shows one price; two variants listed).
 - Read the public schematic PDF linked on the product page to confirm IOREF, the "~5V out" source and the UNO position mapping.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [DHT11 Sensor Data Logging using Maker Uno RP2040](https://my.cytron.io/tutorial/data-logging-maker-uno-rp2040) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Getting Started with Maker Uno RP2040](https://my.cytron.io/tutorial/getting-started-guide-with-maker-uno-rp2040) — Tutorial, Beginner, 2024 (series, 21 parts) [PP: tutorial]
+- [Play Game using Joystick on Maker Uno RP2040](https://my.cytron.io/tutorial/joystick-maker-uno-rp2040) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Offline Dino Game Cheat with Maker Uno RP2040](https://my.cytron.io/tutorial/offline-dino-game-cheat-with-maker-uno-rp2040) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Maker UNO RP2040 Project Collection 2024](https://my.cytron.io/tutorial/maker-uno-rp2040-project-collection-2024) — Project, Beginner, 2024 [PP: tutorial]
+- [RainBot: Automatic Clothes Collector](https://my.cytron.io/tutorial/rainbot-auto-clothes-collector) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [MDDS30 with Maker UNO RP2040 to Control DC Motors](https://my.cytron.io/tutorial/mdds30-arduino) — Tutorial, Beginner, 2025 (part of "Getting Started with Cytron Motor Driver") [PP: tutorial]
+- [MD13S with Maker UNO RP2040 to Control DC Motors](https://my.cytron.io/tutorial/getting-started-md13s-with-arduino) — Tutorial, Beginner, 2025 (part of "Getting Started with Cytron Motor Driver") [PP: tutorial]
+- [MD10C with Maker Uno RP2040 to Control DC Motors](https://my.cytron.io/tutorial/md10c-arduino) — Tutorial, Beginner, 2025 (part of "Getting Started with Cytron Motor Driver") [PP: tutorial]
+
 ## Sources
 - [DS] Maker Uno RP2040 Datasheet, Rev 1.0, February 2024 (public Google Doc): https://docs.google.com/document/d/16RTRPaV0Xaqg3xKwM89iMkXrDB8T_pBjCKYHOadv_Z4/edit
 - [DS mirror] https://www.electrokit.com/upload/Maker-Uno-RP2040-Datasheet.pdf (Rev 1.0, February 2024; same content)
@@ -219,3 +231,4 @@ Other specifications (not in Table 4):
 - [3P] Zephyr: https://docs.zephyrproject.org/latest/boards/cytron/maker_uno_rp2040/doc/index.html
 - [3P] MicroPython downloads (no Maker Uno RP2040 build listed): https://micropython.org/download/?mcu=rp2040
 - [3P] Resellers: https://thepihut.com/collections/cytron/products/maker-uno-rp2040, https://www.robotshop.com/products/cytron-maker-uno-rp2040
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

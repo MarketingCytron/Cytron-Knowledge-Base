@@ -136,9 +136,28 @@ Control mode: two-PWM-per-motor (Input A = forward speed, Input B = backward spe
 - ESP32: library calls `ledcWrite(pin, duty)` without `ledcAttach()` — whether this works on ESP32 Arduino core 3.x unmodified is untested.
 - Tamiya gearboxes are listed as suitable "although the stall current is 2.10A" (above the 1.5 A peak) — ask Cytron how users should limit stall current.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line) — Project, Intermediate, 2021 [PP: tutorial]
+- [Obstacles Avoiding Robot Using Arduino and Maker Drive](https://my.cytron.io/tutorial/obstacles-avoiding-robot-using-arduino-maker-drive) — Tutorial, Intermediate, 2019 [PP: tutorial]
+- [Maker Nano RP2040 Interfacing With Maker Drive Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerdrive) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Bluetooth Mobile Robot wih Maker Drive](https://my.cytron.io/tutorial/bluetooth-mobile-robot-wih-maker-drive) — Tutorial, Intermediate, 2019 [PP: tutorial]
+- [Maker Nano RP2040 Interfacing With Maker Line Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerline) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Getting Started with Maker Drive and micro:bit](https://my.cytron.io/tutorial/getting-started-maker-drive-microbit) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Getting Started with Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/getting-started-maker-drive-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Raspberry Pi Mobile Robot with Maker Drive](https://my.cytron.io/tutorial/raspberry-pi-mobile-robot-maker-drive) — Tutorial, Intermediate, 2019 [PP: tutorial]
+- [Line Following Robot using Scratch in Raspberry Pi 5](https://my.cytron.io/tutorial/line-rollowing-robot-using-raspberryPi5-and-scratch) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Fire Fighting Robot using Motion 2350 Pro](https://my.cytron.io/tutorial/firefighting-robot-using-motion-2350-pro) — Tutorial, Intermediate, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] MAKER-DRIVE Datasheet Rev 1.0, Feb 2019 — https://docs.google.com/document/d/1XakJWz9DAtrMc_Jf75FnDXs4gwT_osCSj3Rbx1OU7bM/edit (PDF mirror, same revision: https://www.electrokit.com/upload/quick/48/3d/70a9_MAKER-DRIVE-Datasheet.pdf)
 - [PP] Product page https://www.cytron.io/p-maker-drive (URL as linked from Cytron GitHub README; my.cytron.io **not read**)
 - [PP: Tindie] Cytron Technologies Tindie listing — https://www.tindie.com/products/cytron/maker-drive-1a-dual-channel-h-bridge-motor-driver/ · design files (Cytron document — link not public) (not opened)
 - [GH] https://github.com/CytronTechnologies/CytronMotorDriver (README.md, library.properties, CytronMotorDriver.h/.cpp, examples/PWM_PWM_DUAL/PWM_PWM_DUAL.ino)
 - [3P] (cross-check only) https://thepihut.com/products/maker-drive-simplifying-h-bridge-motor-driver · https://botland.com.pl/en/motor-drivers-modules/13999-cytron-maker-drive-mx1508-two-channel-motor-controller-95v1a.html (title only; page timed out)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

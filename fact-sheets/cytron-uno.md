@@ -49,6 +49,11 @@ A Cytron version of the Arduino UNO built on an SMD ATmega328 with the Optiboot 
 - Stacking Arduino UNO shields (e.g. LCD Keypad shield)
 - Mobile robots with shields (e.g. wireless remote omni robot with SHIELD-XBEE and FD04A-R2)
 - Stacking onto strip/donut board for custom circuits
+- Cytron tutorial: [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno)
+- Cytron tutorial: [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor)
+- Cytron tutorial: [IoT Project with LoRaWAN Using Cytron LoRa-RFM Shield & Helium](https://my.cytron.io/tutorial/build-an-iot-project-using-lorawan-network-with-cytron-lora-rfm-shield-and-helium-console)
+- Cytron tutorial: [Getting Started with Light Sensor Module (SN-LIGHT-MOD)](https://my.cytron.io/tutorial/getting-started-light-sensor-module-sn-light-mod)
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
 
 ## Known limitations
 - 5V regulator 1 A rating is given only with Vin at 12V

@@ -61,6 +61,11 @@ An Arduino UNO-compatible controller board with an onboard 2-channel brushed DC 
 - Autonomous sumo robot (Cytron URC10SumoRobot sample: search, attack and edge back-off)
 - "Building a Sumo Robot" with URC10 (Cytron Hackster guide linked from the user manual)
 - Auto sumo robot started and stopped by an IR Sumo Start module (pack's Auto Kit notes)
+- Cytron tutorial: [1KG Autonomous Sumo Robot Starter Kit User Guide using URC10](https://my.cytron.io/tutorial/1kg_sumo_robot_urc10)
+- Cytron tutorial: [1KG Autonomous Sumo Robot using URC10](https://my.cytron.io/tutorial/1-kg-autonomous-sumo-robot-starter-kit-user-guide-using-urc10)
+- Cytron tutorial: [Mastering Wireless Control with URC10](https://my.cytron.io/tutorial/mastering-wireless-control-with-urc10)
+- Cytron tutorial: [Battle Robot with URC10](https://my.cytron.io/tutorial/battle-robot-with-urc10)
+- Cytron tutorial: [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10)
 
 ## Known limitations
 - No reverse polarity protection; reverse connection damages the board instantly

@@ -52,6 +52,7 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 ## Use cases
 - Controlling DC motors and servo motors with micro:bit ("Simplifying Motion Control with micro:bit")
 - Adding sensors and modules through the GPIO breakout and Maker Ports
+- Cytron tutorial: [Getting Started with MOTION:BIT Pro](https://my.cytron.io/tutorial/getting-started-with-motion-bit-pro)
 
 ## Known limitations
 - External input 7–12 V; absolute maximum 6–16 V

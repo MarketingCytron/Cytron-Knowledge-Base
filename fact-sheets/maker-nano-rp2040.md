@@ -47,6 +47,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 ## Use cases
 - Projects that need an Arduino Nano form factor with an RP2040 MCU
 - Connecting Qwiic, STEMMA QT or Grove modules through the Maker Ports
+- Cytron tutorial: [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040)
+- Cytron tutorial: [Display Images on Graphic LCD with Maker Nano RP2040](https://my.cytron.io/tutorial/display-image-on-the-graphic-lcd-using-maker-nano-rp2040-and-circuitpython)
+- Cytron tutorial: [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor)
+- Cytron tutorial: [Gesture Control With Maker Nano RP2040 And APDS9960](https://my.cytron.io/tutorial/gesture-control-with-makernanorp2040-and-apds9960)
 
 ## Known limitations
 - 3.3 V logic: digital input high level max 3.6 V, so 5 V signals can't drive the pins directly

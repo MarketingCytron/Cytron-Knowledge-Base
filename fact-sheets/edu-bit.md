@@ -53,6 +53,11 @@ A micro:bit training and project kit: a board with built-in modules (buzzer, sen
 - Projects with up to 3 servo motors and 2 DC motors while playing music
 - AI projects with Teachable Machine (tutorial series ch.1–6: object sorting, face recognition door, gesture-controlled fan, colour-controlled motor, object counter)
 - Classroom teaching (Classroom Pack of 10)
+- Cytron tutorial: [3.3V Serial Character LCD Display with micro:bit via I2C](https://my.cytron.io/tutorial/3-3v-serial-character-lcd-display-with-microbit-via-i2c)
+- Cytron tutorial: [Send Meal Selection and Locations through Telegram Bot Using ESP8266 Grove WiFi Module on micro:bit](https://my.cytron.io/tutorial/send-meal-selection-and-locations-through-telegram-bot-using-esp8266-grove-wifi-module-on-microbit)
+- Cytron tutorial: [EDU:BIT Pedestrian Crossing Traffic Lights](https://my.cytron.io/tutorial/edubit-pedestrian-crossing-traffic-lights)
+- Cytron tutorial: [Control LED on EDU:BIT Using IoT Blynk App and Raspberry Pi](https://my.cytron.io/tutorial/control-led-on-edubit-using-iot-blynk-app-and-raspberry-pi)
+- Cytron tutorial: [Automatic Dustbin Using REKA:BIT](https://my.cytron.io/tutorial/automatic-dustbin-using-rekabit)
 
 ## Known limitations
 - The default EDU:BIT MakeCode extension is not compatible with Bluetooth (NeoPixel/RGB dependencies); a modified version is provided in the Teachable Machine Chapter 1 tutorial

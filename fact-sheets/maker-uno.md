@@ -55,6 +55,11 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - Testing code without external parts using the onboard LEDs, buzzer and button
 - Troubleshooting with pin LEDs that show input state
 - Portable projects powered by a power bank or Cytron LiPo Power Shield
+- Cytron tutorial: [Installing CH340 Driver on Mac OS](https://my.cytron.io/tutorial/CH340_MacOS)
+- Cytron tutorial: [Car Reverse Beep System Using Ultrasonic Sensor & Maker UNO](https://my.cytron.io/tutorial/measuring-distance-using-ultrasonic-sensor)
+- Cytron tutorial: [Build a Robotic Arm with Servo, Joystick and Arduino Maker UNO](https://my.cytron.io/tutorial/robotic-arm)
+- Cytron tutorial: [Getting Started with 4 Channel Motor Driver and Arduino](https://my.cytron.io/tutorial/getting-started-4-channel-motor-driver-arduino)
+- Cytron tutorial: [Controlling LED on Arduino using IR Remote](https://my.cytron.io/tutorial/controlling-led-on-arduino-using-ir-remote)
 
 ## Known limitations
 - Power from USB only, 4.8–5.2 V; no DC jack and no Vin pin

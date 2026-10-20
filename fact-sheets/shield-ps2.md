@@ -49,6 +49,8 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - Reading joystick and button states of a PS2 controller as easily as reading UART data
 - Remote-controlling Arduino robots with a wired or wireless PS2 controller
 - Controlling the PS2 controller's vibration motors from the Arduino
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
+- Cytron tutorial: [Wirelessly Control OjanBot with PS2 Shield](https://my.cytron.io/tutorial/ojan-bot-with-ps2-shield)
 
 ## Known limitations
 - Powered only from the Arduino's 5 V (4.5–5.5 V); up to 500 mA consumption

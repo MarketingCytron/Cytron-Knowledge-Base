@@ -129,9 +129,19 @@ No UART TX pin is described; the driver only receives [UM]. UART logic level is 
 - UART logic level for DIG1 Rx (3.3 V UART) not explicitly stated.
 - Figures (board layout photo, wiring and dimension drawings) were not viewed; label letters A–M are from the text.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current) — Protip, 2016 [PP: tutorial]
+- [Raspberry Pi: Control DC Motor using MDDS10](https://my.cytron.io/tutorial/raspberry-pi-control-dc-motor-using-mdds10) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control) — Tutorial, Beginner, 2015 [PP: tutorial]
+- [Let’s Arduino Control SmartDriveDuo-10 (MDDS10)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-10) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Improve MDDS10 Performance With External Fan](https://my.cytron.io/tutorial/improve-mdds10-performance-external-fan) — Protip, Beginner, 2015 [PP: tutorial]
+- [WIFI Robot Maneuver With MDDS10](https://my.cytron.io/tutorial/wifi-robot-maneuver-with-mdds10) — Tutorial, Intermediate, 2022 [PP: tutorial]
+
 ## Sources
 - SmartDriveDuo-10 MDDS10 User's Manual V1.0, June 2015 (RobotShop CDN mirror) [UM]: https://cdn.robotshop.com/media/c/cyt/rb-cyt-165/pdf/mdds10_users_manual.pdf
 - Same manual, Electrokit mirror (not opened): https://www.electrokit.com/upload/product/41018/41018268/MDDS10%20User's%20Manual.pdf
 - Cytron_SmartDriveDuo Arduino library [GH]: https://github.com/CytronTechnologies/Cytron_SmartDriveDuo (README.md, library.properties, src/Cytron_SmartDriveDuo.h, src/Cytron_SmartDriveDuo.cpp via raw.githubusercontent.com)
 - RobotShop UK listing (cross-check only) [3P]: https://uk.robotshop.com/products/cytron-smartdriveduo-smart-dual-channel-10a-motor-driver
 - Product page: not read (my.cytron.io blocked from this environment)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

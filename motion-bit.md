@@ -144,6 +144,13 @@ Motor and servo channels map to PCA9685 outputs, not to micro:bit pins [GH]:
 - Whether the 1 A / 1.5 A motor rating is per channel or total (comparison image does not say).
 - Maker Port pin pairing — still only the datasheet text ("P0-P9, P1-P2, P2-P12").
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Build an Autonomous Obstacle-Avoiding Robot Car Using MOTION:BIT](https://my.cytron.io/tutorial/build-an-obstacle-avoiding-robot-car-using-motionbit) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Getting Started with MOTION:BIT & Projects Guide](https://my.cytron.io/tutorial/getting-started-with-motion-bit-and-projects-guide) — Tutorial, Beginner, 2023 (series, 8 parts) [PP: tutorial]
+- [CONTROL OMNI ROBOT CAR WITH MOTION:BIT USING BLUETOOTH APP](https://my.cytron.io/tutorial/control-omni-robot-car-with-motion:bit-using-bluetooth-app) — Project, Intermediate, 2023 [PP: tutorial]
+- [Line Following with MOTION:BIT and Maker Line](https://my.cytron.io/tutorial/line_following_robot_car_using_motionbit) — Tutorial, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] MOTION:BIT Datasheet Rev 1.0, February 2023 — https://docs.google.com/document/d/15iJY2DswdKegSMR-l9DNCwXlKnizPk3_2rCNBSDg5PY/edit (public). PDF mirror, same revision: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-424/pdf/motionbit-simplifying-motion-control-microbit-jr-kit-18650-li-ion-battery-datasheet.pdf
 - [PP] https://www.cytron.io/p-motionbit (linked from the [GH] README; **not read**)
@@ -152,3 +159,4 @@ Motor and servo channels map to PCA9685 outputs, not to micro:bit pins [GH]:
 - [VEN] https://tech.microbit.org/hardware/edgeconnector/
 - [3P] (cross-check only) https://thepihut.com/collections/cytron/products/motion-bit-for-micro-bit · https://www.switch-science.com/products/9789 · https://www.robotshop.com/products/motionbit-simplifying-motion-control · https://eu.robotshop.com/products/motionbit-18650-li-ion-battery
 - Cytron tutorial (linked by The Pi Hut, **not read**): https://www.cytron.io/tutorial/getting-started-with-motion-bit-and-projects-guide
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -125,6 +125,11 @@ All four motor pins (11, 10, 9, 3) are PWM pins on the Maker UNO, as `PWM_PWM` m
 - Which pin the external start push button connects to (the sample code uses the on-board D2 button).
 - Box height: the page says 127 × 55 × 190 mm; Opencircuit [3P] printed 19 mm — confirm.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Program PikaBot Using mBlock](https://my.cytron.io/tutorial/program-pikabot-using-mblock) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Control PikaBot Using a Phone Through Bluetooth](https://my.cytron.io/tutorial/control-pikabot-using-a-phone-through-bluetooth) — Tutorial, Beginner, 2020 [PP: tutorial]
+
 ## Sources
 - [UM] PikaBot Booklet (Arduino IDE, English), PDF on Google Drive: https://drive.google.com/file/d/1G9rhCY_9ogJN4ufXdAwFmrgbaEHKP3Cp/view (image-only; OCR fragments read 2026-10-19)
 - [UM, not read] Buku Panduan Pengaturcaraan PikaBot menggunakan Aplikasi mBlock v1.1: https://static.cytron.io/download/PIKABOT/Buku-Panduan-Pengaturcaraan-PikaBot-menggunakan-Aplikasi-mBlock-v1.1.pdf (host blocked)
@@ -134,3 +139,4 @@ All four motor pins (11, 10, 9, 3) are PWM pins on the Maker UNO, as `PWM_PWM` m
 - [PP: tutorial mBlock] https://www.hackster.io/cytron-technologies/program-arduino-mobile-robot-using-mblock-3-line-follow-24119e (Cytron Technologies, 27 Apr 2020)
 - [PP: sample code] 20240904 Exhibition Flyer (Cytron EDU line-up): (Cytron document — link not public)
 - [3P] https://opencircuit.shop/product/pikabot-maker-uno-smart-car-kit (read 2026-10-19)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

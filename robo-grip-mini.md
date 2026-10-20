@@ -102,9 +102,17 @@ Robo Grip Mini PCB (with 6 label parts) x1, M2 bolt 6mm x6, M2 nut x6, M3 **bras
 - Reseller code `CYTRON-CK-ROBO-GP-MINI-3TS90` [3P Switch Science].
 - Rivet size printed "3x65mm" on the product page — confirm whether it means 3 × 6.5 mm.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Robo Grip Mini Installation Guide](https://my.cytron.io/tutorial/robo-grip-mini-installation-guide) — Tutorial, Beginner, 2026 (series, 4 parts) [PP: tutorial]
+- [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini) — Project, Beginner, 2026 [PP: tutorial]
+- [3D Printed ZOOM:BIT with 3D Robo Grip](https://my.cytron.io/tutorial/3d-zoombit-with-robo-grip-mini) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [RDK X5 Robot Kit with Robo Grip Mini](https://my.cytron.io/tutorial/rdk-x5-robot-kit-with-robo-grip-mini) — Tutorial, Intermediate, 2026 (part of "RDK X5 Mission Ready Robotic Series") [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-robo-grip-mini-kits — Robo Grip Mini Kits, read by the coordinator 2026-10-19 (RM34.90–RM94.19, availability 177, warranty blank, options, packing lists, servo list)
 - [PP: tutorial IG] https://my.cytron.io/tutorial/robo-grip-mini-installation-guide — Norasyiqin Munirah, 23 Feb 2026 (kit list, snap-and-file note, 1/2/3-servo roles)
 - [PP] https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini — Ng Zhi Tian, 18 Mar 2026 (title/metadata only)
 - [3P] https://www.switch-science.com/products/11032 — Robo Grip Mini kit with 3 TS90A (links the Cytron "with-4pcs" URL)
 - KB cross-references: `robo-base.md`, `robo-base-mini.md`, `robo-bracket-micro-servo.md`, `beetlebit.md`, `strikerbit.md`, `zoom-bit.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

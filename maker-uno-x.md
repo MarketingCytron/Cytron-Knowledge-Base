@@ -162,6 +162,10 @@ Header connectors defined in Cytron's Fritzing part (36 connectors) [GH]: D0/RX,
 - [3P] The Pi Hut marks the product "Discontinued" on its own store; Cytron's page shows it in stock — no effect on Cytron status.
 - Read the product page images `maker-uno-x-specs.png` and `maker-uno-x-whats-included.jpeg` (dimensions, breadboard size) when the browser can render images.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [K-Type Thermocouple With Maker UnoX And Blynk](https://my.cytron.io/tutorial/k-type-thermocouple-with-maker-uno-x-and-blynk) — Tutorial, Intermediate, 2021 [PP: tutorial]
+
 ## Sources
 - [UM] Arduino Learning Guide For Beginners — MAKER UNO X, v1.5, Feb 2023 (PDF, Drive): (Cytron document — link not public) (read 2026-10-19 as text, cover to p. ~80)
 - [UM-v1.4] same title, v1.4, Feb 2020 (Drive): (Cytron document — link not public) (read to p. ~80); public copy https://static.cytron.io/download/MAKER-UNO-X/Arduino-Learning-Guide-for-Beginners-Using-Maker-UNO-X-EN-v1.4.pdf (not reachable from here)
@@ -170,3 +174,4 @@ Header connectors defined in Cytron's Fritzing part (36 connectors) [GH]: D0/RX,
 - [UM] Guide driver links: https://cdn.cytron.io/makeruno/CH341SER.EXE · https://cdn.cytron.io/makeruno/CH341SER_MAC.ZIP · https://cdn.cytron.io/makeruno/Troubleshooting_CH431_Driver_For_Mac.pdf
 - [GH] https://github.com/CytronTechnologies/MAKER-UNO-X (folder list only) · Fritzing part https://raw.githubusercontent.com/CytronTechnologies/MAKER-UNO-X/master/Fritzing/MakerUnoX.fzpz (downloaded and read 2026-10-19)
 - [3P] (cross-check only) https://thepihut.com/products/maker-uno-x
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -149,6 +149,15 @@ The Grove table was flattened in the text export but rebuilt unambiguously; the 
 - Battery connector type and VIN terminal type — not stated in text.
 - Arduino board-package details (which core, board name) — only the [DS] VID/PID row and a [PP] pointer to Arduino news; Zephyr also lists a `cytron/maker_pi_rp2040` board [3P].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Build Otto DIY Robot Using Maker Pi RP2040](https://my.cytron.io/tutorial/build-otto-diy-robot-using-maker-pi-rp2040) — Uncategorized, 2021 [PP: tutorial]
+- [Object Sense With Servo Using Maker Pi RP2040](https://my.cytron.io/tutorial/object-sense-with-servo-using-maker-pi-rp2040) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Hungry Robot, powered by Maker Pi RP2040 and CircuitPython](https://my.cytron.io/tutorial/hungry-robot-powered-by-maker-pi-rp2040-and-circuitpython) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Maker Pi RP2040](https://my.cytron.io/tutorial/getting-started-with-rbm-maker-pi-rp2040) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base Mini") [PP: tutorial]
+- [Maker Pi RP2040 Mobile Robot](https://my.cytron.io/tutorial/maker-pi-rp2040-mobile-robot) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Maker Pi RP2040](https://my.cytron.io/tutorial/getting-started-with-rb-maker-pi-rp2040) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base") [PP: tutorial]
+
 ## Sources
 - [DS] MAKER-PI-RP2040 Datasheet, Rev 1.2, January 2022 (public Google Doc, linked from the Cytron GitHub README): https://docs.google.com/document/d/1DJASwxgbattM37V4AIlJVR4pxukq0up25LppA8-z_AY/edit
 - [DS Rev 1.0] MAKER-PI-RP2040 Datasheet, Rev 1.0, April 2021 (public PDF mirror, Electrokit): https://www.electrokit.com/upload/product/41018/41018440/MAKER-PI-RP2040%20Datasheet.pdf
@@ -156,3 +165,4 @@ The Grove table was flattened in the text export but rebuilt unambiguously; the 
 - [GH] https://github.com/CytronTechnologies/MAKER-PI-RP2040 — README.md, setup-circuitpython.md, Examples/CircuitPython/Out-of-the-box Demo Code/code.py, maker-pi-rp2040-tagline.png (via raw.githubusercontent.com)
 - [VEN] Adafruit CircuitPython Motor library source: https://raw.githubusercontent.com/adafruit/Adafruit_CircuitPython_Motor/main/adafruit_motor/motor.py
 - [3P] https://shop.pimoroni.com/products/maker-pi-rp2040 · https://docs.zephyrproject.org/latest/boards/cytron/maker_pi_rp2040/doc/index.html
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

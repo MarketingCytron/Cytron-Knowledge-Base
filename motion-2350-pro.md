@@ -167,6 +167,19 @@ Motor PWM slices [GH pinout]: M1 = PWM4 (GP8/GP9), M2 = PWM5 (GP10/GP11), M3 = P
 - Product code / SKU — not shown on the product page.
 - Overvoltage protection threshold and behaviour (Rev 2.0) — named on the product page, not quantified.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with HuskyLens & Arduino](https://my.cytron.io/tutorial/getting-started-with-huskylens-and-arduino) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting Started with MOTION 2350 Pro using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-cp) — Tutorial, Beginner, 2024 (series, 13 parts) [PP: tutorial]
+- [Getting Started with MOTION 2350 Pro using Arduino IDE](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-using-arduino-ide) — Tutorial, Beginner, 2024 (series, 14 parts) [PP: tutorial]
+- [Motion 2350 Pro with FlySky and HotRC](https://my.cytron.io/tutorial/motion-2350-pro-with-flysky-and-hotrc) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting Started with Motion 2350 Pro Robot Kit](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-robot-kit) — Tutorial, Beginner, 2025 (series, 4 parts) [PP: tutorial]
+- [Robo Soccer with Motion 2350 Pro](https://my.cytron.io/tutorial/robo-soccer-with-motion-2350-pro) — Tutorial, Beginner, 2025 (series, 3 parts) [PP: tutorial]
+- [Motion 2350 Pro with Huskylens](https://my.cytron.io/tutorial/motion-2350-pro-with-huskylens) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Fire Fighting Robot using Motion 2350 Pro](https://my.cytron.io/tutorial/firefighting-robot-using-motion-2350-pro) — Tutorial, Intermediate, 2026 [PP: tutorial]
+- [Robo Soccer uses solenoids with Motion 2350 Pro](https://my.cytron.io/tutorial/robo-soccer-uses-solenoids-with-motion-2350-pro) — Project, Beginner, 2025 [PP: tutorial]
+- [Joystick Pairing with SUMO:BIT and Motion 2350 Pro](https://my.cytron.io/tutorial/joystick-pairing-with-sumobit-and-motion-2350-pro) — Tutorial, 2026 [PP: tutorial]
+
 ## Sources
 - [DS] MOTION 2350 Pro Datasheet, Rev 2.0, September 2025, Cytron Technologies Sdn Bhd (public mirror): https://www.farnell.com/datasheets/4726021.pdf
 - [DS-R1] MOTION 2350 Pro Datasheet, Rev 1.0, July 2024 (public mirrors): https://www.electrokit.com/upload/quick/5f/62/6a8c_MOTION-2350-PRO-Datasheet.pdf · https://akizukidenshi.com/goodsaffix/MOTION-2350-PRO%20Datasheet.pdf
@@ -176,3 +189,4 @@ Motor PWM slices [GH pinout]: M1 = PWM4 (GP8/GP9), M2 = PWM5 (GP10/GP11), M3 = P
 - [VEN] MicroPython board: https://raw.githubusercontent.com/micropython/micropython/master/ports/rp2/boards/CYTRON_MOTION_2350_PRO/pins.csv
 - [VEN] arduino-pico: https://raw.githubusercontent.com/earlephilhower/arduino-pico/master/variants/cytron_motion_2350_pro/pins_arduino.h · https://raw.githubusercontent.com/earlephilhower/arduino-pico/master/boards.txt
 - [3P] https://www.adafruit.com/product/6080 · https://www.cnx-software.com/2024/08/09/cytron-motion-2350-pro-a-raspberry-pi-rp2350-board-for-robotics-and-motor-control/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -66,6 +66,11 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Offline Dino Game Cheat with Maker Uno RP2040
 - DHT11 sensor data logging
 - Playing a game using a joystick
+- Cytron tutorial: [DHT11 Sensor Data Logging using Maker Uno RP2040](https://my.cytron.io/tutorial/data-logging-maker-uno-rp2040)
+- Cytron tutorial: [Getting Started with Maker Uno RP2040](https://my.cytron.io/tutorial/getting-started-guide-with-maker-uno-rp2040)
+- Cytron tutorial: [Play Game using Joystick on Maker Uno RP2040](https://my.cytron.io/tutorial/joystick-maker-uno-rp2040)
+- Cytron tutorial: [Offline Dino Game Cheat with Maker Uno RP2040](https://my.cytron.io/tutorial/offline-dino-game-cheat-with-maker-uno-rp2040)
+- Cytron tutorial: [Maker UNO RP2040 Project Collection 2024](https://my.cytron.io/tutorial/maker-uno-rp2040-project-collection-2024)
 
 ## Known limitations
 - 3.3 V logic: digital input high max 3.6 V, analog input 0 – 3.3 V; not for 5 V shields or 5 V signals

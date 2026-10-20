@@ -141,6 +141,13 @@ The manual has no numbered spec table; the rows below are every quantitative or 
 - Library v3.0.2 release date and whether the Library Manager entry is current.
 - Whether Rev1.0 boards (ESP8266-12) can be upgraded to ESP-AT v2.2.0 with the Rev2.0 procedure — boards shipped since mid-Oct 2021 already carry Cytron_ESP_AT V2.2.0 [PP].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Arduino Blynk Lesson 4 : Timer](https://my.cytron.io/tutorial/arduino-blynk-lesson-4-timer) — Tutorial, Beginner, 2018 (part of "Getting Started with Arduino and Blynk") [PP: tutorial]
+- [Arduino Blynk Lesson 2 : Notification](https://my.cytron.io/tutorial/arduino-blynk-lesson-2-notification) — Tutorial, Beginner, 2018 (part of "Getting Started with Arduino and Blynk") [PP: tutorial]
+- [Arduino Blynk Lesson 1: LED](https://my.cytron.io/tutorial/arduino-blynk-lesson-1-led) — Tutorial, Beginner, 2018 (part of "Getting Started with Arduino and Blynk") [PP: tutorial]
+- [Arduino Blynk Lesson 3 : Servo](https://my.cytron.io/tutorial/arduino-blynk-lesson-3-servo) — Tutorial, Beginner, 2018 (part of "Getting Started with Arduino and Blynk") [PP: tutorial]
+
 ## Sources
 - [UM] ESPWiFi Shield SHIELD-ESP-WIFI Rev2.0 User's Manual, V2.1, August 2021 — https://docs.google.com/document/d/1LFCe6MTNQh_0EBHRgc0f6n_hDLNUG8sFuM53oBJG8eE/view
 - [UM-R1] ESPWiFi Shield SHIELD-ESP-WIFI User's Manual, V1.0, Nov 2015 — https://docs.google.com/document/d/1LAc8jJ9u6FDcugRvzn4Bewz6karp-EPfDKOmeD8yw84/view
@@ -149,3 +156,4 @@ The manual has no numbered spec table; the rows below are every quantitative or 
 - [VEN] ESP-WROOM-02 Datasheet v2.0, Nov 2016 — Drive link https://drive.google.com/file/d/0BzFWfMiqqjyqR1A5d0NhVC15XzA/view (not found); mirror used: https://cdn.sparkfun.com/assets/9/3/8/d/d/0c-esp-wroom-02-datasheet-en.pdf
 - [GH] Firmware — https://github.com/CytronTechnologies/esp-at-binaries (README.md; Cytron_ESP-12F_WROOM-02_AT_Firmware_V2.2.0.bin)
 - [GH] Library — https://github.com/CytronTechnologies/CytronWiFiShield (README.md, library.properties v3.0.2, keywords.txt, src/CytronWiFiShield.h/.cpp, src/CytronWiFiClient.h, src/CytronWiFiServer.h, examples/CytronWiFiDemo/CytronWiFiDemo.ino)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

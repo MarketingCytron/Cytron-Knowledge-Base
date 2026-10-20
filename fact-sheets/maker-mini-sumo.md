@@ -59,6 +59,10 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - RC category of Sumo robot competitions, and both RC and autonomous categories with the same robot
 - Mini sumo robot controlled by a PS2 controller
 - Mini sumo robot controlled by a Bluetooth controller (HC-05 or HC-06)
+- Cytron tutorial: [Maker Mini Sumo with RC Controller](https://my.cytron.io/tutorial/rc-sumo-using-maker-mini-sumo-controller)
+- Cytron tutorial: [Maker Mini Sumo with Bluetooth Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-bluetooth-controller)
+- Cytron tutorial: [Maker Mini Sumo with PS2 Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller)
+- Cytron tutorial: [Robot Battle Getting Started Instruction](https://my.cytron.io/tutorial/Robot-Battle-Getting-Started-Instruction)
 
 ## Known limitations
 - Motor current limited to 3.0 A continuous per channel; 6.0 A peak only for < 5 seconds

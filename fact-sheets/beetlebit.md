@@ -61,6 +61,7 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Control BeetleBit using a controller (second micro:bit over radio)
 - Input–output challenge
 - Stepping stone for learners who have mastered ZOOM:BIT, Pikabot, BocoBot or OjanBot
+- Cytron tutorial: [Chapter 1: Setting Up Beetle:Bit with Huskylens 2](https://my.cytron.io/tutorial/chapter-1-setting-up-beetlebit-with-huskylens-2)
 
 ## Known limitations
 - The micro:bit is not included in the "without micro:bit" and "Accessories Kit only" options

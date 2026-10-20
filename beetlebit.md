@@ -133,6 +133,10 @@ Which physical Grove port label each sensor cable plugs into is only shown in th
 - Run time on 4x AA and whether USB power alone drives motors and servo.
 - Codes for the individual options (with/without micro:bit, with/without battery, Accessories Kit) — the page shows names only.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Chapter 1: Setting Up Beetle:Bit with Huskylens 2](https://my.cytron.io/tutorial/chapter-1-setting-up-beetlebit-with-huskylens-2) — Tutorial, Intermediate, 2025 (series, 5 parts) [PP: tutorial]
+
 ## Sources
 - [PP] Product page (read by the coordinator 2026-10-19): https://my.cytron.io/p-beetlebit-gripper-robot-car-kit-for-microbit (short link https://my.cytron.io/p-beetlebit)
 - [UM] BEETLE:BIT Booklet / Guide Book PDF (English) — "202602 BEETLEBIT Quick Start Guide.pdf", Drive, uploaded 2026-02-13, **not readable as text**: https://drive.google.com/file/d/18ZOwcWVUn0xsEVdcUNOMDvZKf5haVmz5/view
@@ -143,3 +147,4 @@ Which physical Grove port label each sensor cable plugs into is only shown in th
 - [GH] https://github.com/CytronTechnologies/pxt-rekabit — README.md, pxt.json (v1.2.3)
 - Related KB files: `reka-bit.md`, `maker-line.md`, `zoom-bit.md`
 - Not readable here (403 / blocked): https://my.cytron.io/tutorial/chapter-1-setting-up-beetlebit-with-huskylens-2
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

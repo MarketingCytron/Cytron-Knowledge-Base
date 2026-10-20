@@ -37,6 +37,7 @@ An Arduino-format shield that extends all pins of the Arduino out to 3.5mm pitch
 - Screwing wires directly to the Arduino pins instead of using jumper wires
 - Prototyping circuits on the 0.1" through-hole area while the Arduino pins remain available on screw terminals
 - Stacking under another shield (stackable headers)
+- Cytron tutorial: [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor)
 
 ## Known limitations
 - Terminal count, terminal order and terminal ratings are not stated in the Getting Started Guide

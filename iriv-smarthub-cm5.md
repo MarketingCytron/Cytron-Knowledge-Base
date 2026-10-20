@@ -203,7 +203,17 @@ The [DS] gives no 40-pin header and no field terminals. Its only GPIO mapping is
 - Node-RED, Cytron libraries or example code for this product — none found.
 - Spec table lists RAM 2GB/4GB and eMMC 16GB/32GB while a 16GB/64GB variant is on sale — page table not updated?
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Digital Signage With IRIV SmartHub CM5](https://my.cytron.io/tutorial/iriv-smarthub-digital-signage) — Tutorial, Intermediate, 2025 [PP: tutorial]
+- [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started) — Tutorial, Intermediate, 2025 (series, 6 parts) [PP: tutorial]
+- [Inventory Management System with IRIV SmartHub CM5](https://my.cytron.io/tutorial/inventory-management-system-with-smarthub) — Tutorial, Intermediate, 2025 [PP: tutorial]
+- [Milesight-BeaverIoT Quick Start Guide](https://my.cytron.io/tutorial/milesight-beaveriot-quick-start-guide-smarthub) — Tutorial, Advanced, 2026 (series, 4 parts) [PP: tutorial]
+- [IRIV SmartHub CM5: 84 Days of Continuous Operation](https://my.cytron.io/tutorial/iriv-smarthub-cm5-84-days-continuous-operation) — Protip, Beginner, 2026 [PP: tutorial]
+- [Can IRIV SmartHub CM5 Create a Simple MES System?](https://my.cytron.io/tutorial/iriv-smarthub-cm5-simple-mes-system) — Protip, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - [PP] Product page (not read this pass): https://my.cytron.io/p-iriv-smarthub-cm5 (also linked as https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-smarthub-cm5)
 - [VEN] Raspberry Pi Compute Module documentation: https://www.raspberrypi.com/documentation/computers/compute-module.html ; usbboot / rpiboot: https://github.com/raspberrypi/usbboot
 - [3P] RobotShop listing (price cross-check only): https://robotshop.com/products/cytron-iriv-smarthub-cm5-wireless-4gb-ram-32gb-emmc
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

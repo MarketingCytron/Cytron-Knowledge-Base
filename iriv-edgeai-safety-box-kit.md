@@ -106,7 +106,7 @@ How the 24V PSU, fan, DIN terminal block and controller VIN are wired inside the
 - [PP] https://my.cytron.io/p-iriv-edgeai-safety-box-kit — read 2026-10-19 (RM7,999.00, Enquiry, 12-month warranty, description, features, hardware specs, packing list, resources)
 - [QSG] IRIV EdgeAI Safety Box: Quick Start Guide (Asri Ruslan, 17 Aug 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-quick-start-guide
 - [PP: PS-36W-24V] Industry Switching Power Supply 24V 36W, Wide DC and AC Input Voltage (Mornsun, RM89.00) — https://my.cytron.io/p-industry-switching-power-supply-24v-36w-wide-dc-and-ac-input-voltage
-- [VEN: Mornsun] LM35-23BxxR2 datasheet 2023.07.14-A/1 (linked from that page) — (Cytron document — link not public)
+- [VEN: Mornsun] LM35-23BxxR2 datasheet 2023.07.14-A/1 (linked from that page) — https://drive.google.com/file/d/1A2HJg8hk1-A60YMEfViTI_Fh13rufIcy/view
 - [PP: tutorial] IRIV EdgeAI Safety Box: Ready for OSHMP30 (Asri Ruslan, 12 Oct 2026) — https://my.cytron.io/tutorial/iriv-edgeai-safety-box-ready-for-oshmp30
 - [LP] Landing page — https://marketingcytron.github.io/iriv-edgeai-safety-box/ (also https://my.cytron.io/iriv-edgeai-safety-box)
 - [VEN] Raspberry Pi AI HAT+ (Hailo-8 26 TOPS / Hailo-8L 13 TOPS) — https://www.raspberrypi.com/documentation/accessories/ai-hat-plus.html

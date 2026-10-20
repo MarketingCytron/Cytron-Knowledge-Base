@@ -57,6 +57,11 @@ An ESP32 development board built around the ESP32-WROOM-32E-N8 module, in the No
 - Existing NodeMCU ESP32 projects
 - I²C sensor/module prototyping through the Maker Port
 - GPIO learning and debugging with the onboard LEDs
+- Cytron tutorial: [Getting Started with FreeRTOS on ESP32](https://my.cytron.io/tutorial/getting-started-freertos-esp32)
+- Cytron tutorial: [Getting Started with ESP32 & PS4 Controller: Beginner](https://my.cytron.io/tutorial/esp32-ps4controller-beginner)
+- Cytron tutorial: [Getting Started with ESP32 & Blynk](https://my.cytron.io/tutorial/getting-started-esp32-and-blynk)
+- Cytron tutorial: [Getting Started with ESP32 & Node-RED](https://my.cytron.io/tutorial/getting-started-esp32-and-nodered)
+- Cytron tutorial: [ESP32 Control Outputs with Telegram](https://my.cytron.io/tutorial/control-esp32-outputs-with-telegram)
 
 ## Known limitations
 - GPIO LEDs are on only the 14 listed pins, not on every GPIO

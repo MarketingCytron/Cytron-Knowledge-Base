@@ -10,7 +10,7 @@ REKA:BIT, REKABIT, REKA-BIT, REKA BIT, REKA:BIT Simplifying Robotics with micro:
 A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC motor driver, 4 servo ports, RGB LEDs and 6 Grove ports. It works with micro:bit V1 and V2.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: REKABIT-NB (without micro:bit, my.cytron.io model code); with-micro:bit code not stated
 - Power input voltage: 3.6 V min, 6 V max (DC jack)
 - On/Off switch and power LED
 - Low Voltage LED: blinks when the power input is below 3.6V; can be used as the low battery indicator
@@ -49,6 +49,11 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - Student projects with mechanical movement using DC motors and servos
 - Adding sensors and modules through Grove ports
 - REKA:BIT RBT Project Kit (STEAM and RBT projects for beginners)
+- Cytron tutorial: [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit)
+- Cytron tutorial: [Build an Automatic Plant Watering System with REKA:BIT and micro:bit](https://my.cytron.io/tutorial/automatic-plant-watering-system-using-rekabit)
+- Cytron tutorial: [Build a Smart IoT Alarm System with micro:bit and Telegram Alerts](https://my.cytron.io/tutorial/build-smart-alarm-system-using-iot-with-microbit)
+- Cytron tutorial: [Build an IoT Plant Monitoring System with MicroBit and Grove WiFi Module](https://my.cytron.io/tutorial/build-an-iot-plant-monitoring-system-with-microbit-and-grove-wifi-module)
+- Cytron tutorial: [AI-Driven Recycling Centre with HuskyLens and REKA:BIT](https://my.cytron.io/tutorial/aI-driven-recycling-centre-with-huskylens-and-rekabit)
 
 ## Known limitations
 - Power input 3.6–6 V; above 7V the servo and DC motor power is cut off

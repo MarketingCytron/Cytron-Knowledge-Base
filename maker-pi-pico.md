@@ -138,9 +138,56 @@ Each Grove port: GPIO, GPIO, 3V3, GND [GH silkscreen].
 - Pico 2 W pin differences on the Base (GP23–GP25, GP29) — the page sells a Base + Pico 2 WH bundle but does not discuss them.
 - Rev1.0.0–1.1.0 schematic — only the Rev1.2.0 schematic is linked.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Keyboard Emulator Using Raspberry Pi Pico (Maker Pi Pico) and CircuitPython](https://my.cytron.io/tutorial/keyboard-emulator-using-raspberry-pi-pico-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Write Read Data to SD Card Using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/write-read-data-to-sd-card-using-maker-pi-pico-and-circuitpython) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Bluetooth HC-05 Master-Slave Configuration with CircuitPython](https://my.cytron.io/tutorial/bluetooth-hc-05-master-slave-configuration-using-circuitpython) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [DIY USB Keyboard Mouse Using Maker Pi Pico](https://my.cytron.io/tutorial/diy-usb-keyboard-mouse-using-maker-pi-pico) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [DIY USB MIDI Drum Kit using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/diy-usb-midi-drum-kit-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Real-Time Multitasking on Maker Pi Pico Using pyRTOS](https://my.cytron.io/tutorial/real-time-multitasking-on-maker-pi-pico-using-pyrtos) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Interface RFID RC522 with Maker Pi Pico Using CircuitPython](https://my.cytron.io/tutorial/interface-rfid-rc522-reader-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Play MP3 File on Maker Pi Pico Using CircuitPython](https://my.cytron.io/tutorial/play-mp3-file-on-maker-pi-pico-using-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line) — Project, Intermediate, 2021 [PP: tutorial]
+- [Real-Time IoT Room Monitoring on Maker Pi Pico Using pyRTOS](https://my.cytron.io/tutorial/real-time-iot-room-monitoring-on-maker-pi-pico-using-pyrtos) — Project, Intermediate, 2021 [PP: tutorial]
+- [Internet Clock using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/internet-clock-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Display Temperature & Humidity on OLED with Maker Pi Pico](https://my.cytron.io/tutorial/displaying-temperature-and-humidity-on-oled-using-maker-pi-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Program Maker Pi Pico and ESP01 with Blynk IoT App using Arduino IDE](https://my.cytron.io/tutorial/program-maker-pi-pico-and-esp01-with-blynk-iot-app-using-arduino-ide) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Display Covid-19 Data Using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/display-covid-19-data-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Telegram IoT Signboard using CircuitPython on Maker Pi Pico](https://my.cytron.io/tutorial/telegram-iot-signboard-using-circuitpython-on-maker-pi-pico) — Tutorial, Intermediate, 2022 [PP: tutorial]
+- [Metronome Maker Pi Pico, programmed with CircuitPython](https://my.cytron.io/tutorial/metronome-maker-pi-pico-programmed-with-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Monitor Your Plants with Maker Pi Pico and A Soil Moisture Sensor](https://my.cytron.io/tutorial/monitor-your-plants-with-maker-pi-pico-and-soil-moisture-sensor) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Power Up the Robo Pico](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-power-up-robo-pico) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Controlling Relay via Telegram using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/controlling-relay-via-telegram-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Display BTC price on dot matrix using Maker Pi Pico](https://my.cytron.io/tutorial/display-btc-price-on-dot-matrix-using-maker-pi-pico) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Setting up the Robo Pico](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-setting-up-robo-pico) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [NTP Clock](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-ntp-clock) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Displaying text on SSD1315 OLED module via I2C](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-display-text-on-oled) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Read Sensor Value](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-read-analog-sensor-value) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Build a Light Theremin Using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/build-a-light-theremin-using-maker-pi-pico-and-circuitpython) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Face Recognition using HuskyLens](https://my.cytron.io/tutorial/face-recognition-using-huskylens) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Controlling RGB LED Stick with Maker Pi Pico](https://my.cytron.io/tutorial/controlling-neopixel-rgb-led-stick-with-maker-pi-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Measure Temperature Using PCT2075 Sensor And Maker Pi Pico](https://my.cytron.io/tutorial/measure-temperature-using-pct2075-and-makerpipico) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [IoT Simple HTTP Server](https://my.cytron.io/tutorial/getting-started-with-robo-pico-iot-simple-http-server) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Maker Pi Pico Project Collection 2024](https://my.cytron.io/tutorial/maker-pi-pico-project-collection-2024) — Project, Beginner, 2024 [PP: tutorial]
+- [IoT ThingSpeak](https://my.cytron.io/tutorial/getting-started-with-robo-pico-iot-thingspeak) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [DIY Piano Paper With Raspberry Pi Pico](https://my.cytron.io/tutorial/diy-piano-paper-with-raspberry-pi-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [DC Motor](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-dc-motor) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Micro Servo Motor](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-micro-servo-motor) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [IoT Blynk](https://my.cytron.io/tutorial/getting-started-with-robo-pico-iot-blynk) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Lighting up the RGB LED](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpyhton-lighting-up-the-rgb-led) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Press the Buttons](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-press-the-buttons) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Turn On the Music](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-turn-on-the-music) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Blink](https://my.cytron.io/tutorial/get-started-robo-pico-circuitpython-blink) — Tutorial, Beginner, 2023 (part of "Getting Started Guide with Robo Pico using CircuitPython") [PP: tutorial]
+- [Make Music with Maker Pi Pico: Ultrasonic Piano Tutorial](https://my.cytron.io/tutorial/make-music-with-maker-pi-pico-ultrasonic-piano-tutorial) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Face Detection using HuskyLens](https://my.cytron.io/tutorial/face-detection-using-huskylens) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Talking Photo? Program using CircuitPython on Maker Pi Pico](https://my.cytron.io/tutorial/talking-photo-program-using-circuitpython-on-maker-pi-pico) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [IoT-Based Door Security Alarm System Using Pico W and Telegram](https://my.cytron.io/tutorial/iot-based-door-security-alarm-system-using-picow) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] Maker Pi Pico Datasheet, Rev 1.2, March 2021 (public Google Doc, linked from the Cytron GitHub README): https://docs.google.com/document/d/1JoHsZk5IipQPCLXWbZYpDKjGlnkyACOJ1taUrKVsRg8/edit
 - [DS mirror] Same datasheet as public PDF (Electrokit), Rev 1.2, March 2021: https://www.electrokit.com/upload/product/41019/41019030/Maker%20Pi%20Pico%20Datasheet.pdf
 - [PP] https://my.cytron.io/p-maker-pi-pico (read 2026-10-16)
 - [GH] https://github.com/CytronTechnologies/MAKER-PI-PICO — README.md, MakerPiPico-Pinout.png, Out-of-the-box Demo Code/CircuitPython/code.py, Out-of-the-box Demo Code/MicroPython/main.py (via raw.githubusercontent.com)
 - [3P] https://core-electronics.com.au/maker-pi-pico.html (cross-check only)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

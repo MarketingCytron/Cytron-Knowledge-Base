@@ -35,6 +35,7 @@ A small PCB stick with 8 addressable 5050 RGB LEDs (SK6812-based, WS2812B-compat
 ## Use cases
 - Blue/red/green and random colour patterns with Maker Pi Pico and CircuitPython (Cytron tutorial)
 - Boom Barrier Gate and Mobile Robot Car projects in the REKA:BIT RBT Project Kit (RBT kit guide)
+- Cytron tutorial: [Controlling RGB LED Stick with Maker Pi Pico](https://my.cytron.io/tutorial/controlling-neopixel-rgb-led-stick-with-maker-pi-pico)
 
 ## Known limitations
 - The page says it cannot be used with a Linux-based microcomputer or an interpreted microcontroller such as netduino or Basic Stamp (product page); Cytron's own tutorials run it from CircuitPython on Maker Pi Pico and MakeCode on micro:bit

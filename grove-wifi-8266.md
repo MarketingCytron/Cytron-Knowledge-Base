@@ -111,6 +111,12 @@ No numeric disagreement was found: supply 3–6 V matches between [DS] and [3P];
 - **Whether the Grove RX input is 5 V tolerant** — the datasheet limit (3.6 V) says no; confirm with the design team before any 5 V-host tutorial.
 - The RobotShop PDF mirror of the datasheet (https://cdn.robotshop.com/media/c/cyt/rb-cyt-321/pdf/grove-wifi-8266-iot-microbit--beyond-datasheet.pdf) could not be downloaded (proxy refused), so its revision was not compared.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Connect Grove WiFi 8266 with micro:bit for WiFi & Telegram](https://my.cytron.io/tutorial/grove-wifi-8266-microbit-wifi-telegram-integration) — Tutorial, Beginner, 2024 [PP: tutorial]
+
 ## Sources
 - [DS] GROVE WIFI 8266 Datasheet, Rev 1.0, August 2021 (public Google Doc) — https://docs.google.com/document/d/1ub3WuRrp1F8QijoHCDjOez6SC1mtG5pQglhiPdeB12k/edit
 - [PP] https://my.cytron.io/p-grove-wifi-8266-iot-for-microbit-and-beyond (read by the coordinator 2026-10-16: RM27.72, in stock 173, warranty 12 months; linked documents: datasheet, MakeCode extension, CircuitPython examples, ESP-AT firmware, CAD)
@@ -120,3 +126,4 @@ No numeric disagreement was found: supply 3–6 V matches between [DS] and [3P];
 - [PP link, not opened] CAD — https://drive.google.com/drive/folders/1kfOuKsVLOXPVkPTSarWBtlN2XdDNWKZJ
 - [PP] /home/claude/kb/maker-pi-rp2040.md (product page Q&A suggests Grove WiFi 8266)
 - [3P] https://www.robotshop.com/products/grove-wifi-8266-iot-microbit-beyond · https://thepihut.com/collections/pico/products/grove-wifi-8266-iot-for-micro-bit-pico-more
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

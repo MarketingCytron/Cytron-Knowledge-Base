@@ -48,6 +48,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Linking two boards for 16-servo projects
 - Wireless servo control over XBee (Cytron tutorial)
 - Robotics using RC servos: humanoid robots, biologically inspired robots, robotic arms (User's Manual framing)
+- Cytron tutorial: [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller)
 
 ## Known limitations
 - No on-board regulator: the servo supply goes directly to the servos; over-supply voltage may spoil the servo motor (User's Manual V1.0)

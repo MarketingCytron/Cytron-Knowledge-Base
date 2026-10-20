@@ -65,6 +65,7 @@ A single-channel brushed DC motor driver for medium to high power motors, runnin
 - Control from a standard hobby radio control transmitter and receiver, or a microcontroller generating the similar signal
 - Motor controlled by a joystick or foot pedal with potentiometer
 - Microcontroller control via PWM or UART serial
+- Cytron tutorial: [Controlling SmartDrive40 Using 3.3V Microcontroller (Serial Simplified Mode)](https://my.cytron.io/tutorial/controlling-smartdrive40-using-3-3v-microcontroller)
 
 ## Known limitations
 - Drives one motor only; two motors need two boards

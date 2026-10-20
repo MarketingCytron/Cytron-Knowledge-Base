@@ -69,6 +69,9 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Compact competition robots
 - Compact mobile platforms
 - Space-limited robotics projects
+- Cytron tutorial: [Getting Started with MDDRC5](https://my.cytron.io/tutorial/getting-started-with-mddrc5)
+- Cytron tutorial: [From Test Bench to Champion: MDDRC5 at ROVATION](https://my.cytron.io/tutorial/mddrc5-500g-rc-sumo-rovation-2026)
+- Cytron tutorial: [Build a Robot Sumo 500g R/C with MDDRC5](https://my.cytron.io/tutorial/build-robot-sumo-500g-rc-mddrc5)
 
 ## Known limitations
 - Power input absolute maximum 30 V (minimum 7 V)

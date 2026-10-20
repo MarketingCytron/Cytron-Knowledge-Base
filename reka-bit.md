@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Product code | Not stated in the datasheet. Resellers list "REKABIT-NB" / "CYTRON-REKABIT-NB" [3P] — see Needs verification. Related kit codes KIT-REKABIT-RBT-NB / KIT-REKABIT-RBT (REKA:BIT RBT Project Kit)  |
+| Product code | `REKABIT-NB` — model code of the my.cytron.io page "REKA:BIT (without micro:bit)" (p-rekabit-without-microbit), from the Cytron tutorial shop links [PP: tutorial]; resellers list the same code [3P]. The with-micro:bit code is not stated. Not stated in the datasheet. Related kit codes KIT-REKABIT-RBT-NB / KIT-REKABIT-RBT (REKA:BIT RBT Project Kit)  |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -115,6 +115,39 @@ The Cytron pinout diagram on the product page confirms these pairs (see *Product
 - Exact board length: the page prints "10.4mm x 72mm x 15mm" (10.4 must be ~104 mm; Tom's Hardware [3P] 103.8 × 71.8 mm).
 - Reverse-polarity protection on the DC jack (page lists under/over-voltage protection only).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Build an Automatic Plant Watering System with REKA:BIT and micro:bit](https://my.cytron.io/tutorial/automatic-plant-watering-system-using-rekabit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Build a Smart IoT Alarm System with micro:bit and Telegram Alerts](https://my.cytron.io/tutorial/build-smart-alarm-system-using-iot-with-microbit) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Build an IoT Plant Monitoring System with MicroBit and Grove WiFi Module](https://my.cytron.io/tutorial/build-an-iot-plant-monitoring-system-with-microbit-and-grove-wifi-module) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [AI-Driven Recycling Centre with HuskyLens and REKA:BIT](https://my.cytron.io/tutorial/aI-driven-recycling-centre-with-huskylens-and-rekabit) — Project, Beginner, 2025 [PP: tutorial]
+- [Build Auto Barrier Gate with Microbit](https://my.cytron.io/tutorial/build-auto-barrier-gate-with-microbit) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [RBT Automatic Plant Watering IoT Project Using Blynk IoT](https://my.cytron.io/tutorial/rbt-automatic-plant-watering-iot-project-using-blynk-iot) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Smart Plant Monitor Using Microbit and Soil Moisture Sensor](https://my.cytron.io/tutorial/smart-plant-monitor-using-microbit-and-soil-moisture-sensor) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [The Winners of MU War Of STEM 2023](https://my.cytron.io/tutorial/news-mu-war-of-stem-2023) — Success Stories, 2023 [PP: tutorial]
+- [DIY Interactive Robot using REKA:BIT with micro:bit | Tutorial for Beginners](https://my.cytron.io/tutorial/diy-interactive-robot-using-rekabit-with-microbit-tutorial-for-beginners) — Tutorial, Advanced, 2021 [PP: tutorial]
+- [Control and Monitor Using Blynk IoT App and micro:bit](https://my.cytron.io/tutorial/control-and-monitor-using-blynk-iot-app-and-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Send Meal Selection and Locations through Telegram Bot Using ESP8266 Grove WiFi Module on micro:bit](https://my.cytron.io/tutorial/send-meal-selection-and-locations-through-telegram-bot-using-esp8266-grove-wifi-module-on-microbit) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Easy Machine Learning Project with REKABIT Teachable Machine](https://my.cytron.io/tutorial/Easy-Machine-Learning-Project-with-REKABIT-and-Teachable-Machine) — Tutorial, Beginner, 2023 (series, 4 parts) [PP: tutorial]
+- [DIY Cat Stealing Money Bank using Reka:bit](https://my.cytron.io/tutorial/diy-cat-stealing-money-bank-using-rekabit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [3D Printed Elevator Based on micro:bit](https://my.cytron.io/tutorial/3d-printed-elevator-based-on-microbit) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [DIY Automated Vacuum Cleaner Using REKA:BIT With Micro:bit](https://my.cytron.io/tutorial/diy-automated-vacuum-cleaner-using-rekabit-with-microbit) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Display Internet Time (NTP) on micro:bit](https://my.cytron.io/tutorial/display-internet-time-ntp-on-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [DIY Candy Dispenser Machine Using REKA:BIT With Micro:bit](https://my.cytron.io/tutorial/diy-candy-dispenser-machine-using-rekabit-with-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Automatic Dustbin Using REKA:BIT](https://my.cytron.io/tutorial/automatic-dustbin-using-rekabit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Robotic Arm Using Reka:bit](https://my.cytron.io/tutorial/robotic-arm-using-rekabit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [DIY Digital Alarm Clock Using REKA:BIT With Micro:bit | Tutorial for Beginners](https://my.cytron.io/tutorial/diy-digital-alarm-clock-using-rekabit-with-microbit-tutorial-for-beginners) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [DIY Football Game Using REKA:BIT With Micro:bit](https://my.cytron.io/tutorial/diy-football-game-using-rekabit-with-microbit) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Connect Grove WiFi 8266 with micro:bit for WiFi & Telegram](https://my.cytron.io/tutorial/grove-wifi-8266-microbit-wifi-telegram-integration) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [RBT Automatic Plant Watering Project - Automatic Pet Feeder](https://my.cytron.io/tutorial/rbt-automatic-plant-watering-project-automatic-pet-feeder) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [DIY Bubble Blower Using REKA:BIT With Micro:bit](https://my.cytron.io/tutorial/diy-bubble-blower-using-rekabit-with-microbit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [RBT Auto Plant Watering Kit Project - Not Enough Water!](https://my.cytron.io/tutorial/rbt-auto-plant-watering-kit-project-not-enough-water) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Build a Hungry Robot using REKA:BIT in 1 minute](https://my.cytron.io/tutorial/build-a-hungry-robot-using-rekabit-in-1-minute) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [REKA:BIT](https://my.cytron.io/tutorial/getting-started-with-rbm-rekabit) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base Mini") [PP: tutorial]
+- [Chapter 1: Setting Up Smart AI Lens & Battery with ZOOM:BIT](https://my.cytron.io/tutorial/setting-up-smart-ai-lens-and-battery-with-zoombit) — Tutorial, Intermediate, 2025 (series, 6 parts) [PP: tutorial]
+- [REKA:BIT](https://my.cytron.io/tutorial/getting-started-with-rb-reka-bit) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base") [PP: tutorial]
+
 ## Sources
 - [DS] REKA:BIT Datasheet, Rev 1.0, April 2021 — public Google Doc: https://docs.google.com/document/d/1axLhH-zaFDheOyz6gbXfYEysigGxpmMnRBC93SW-zR8/edit (linked from the public Switch Science product page; read in full as text, figures not read). Same document mirrored at https://www.farnell.com/datasheets/3685793.pdf and https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6147/REKABIT.pdf
 - [GH] https://github.com/CytronTechnologies/pxt-rekabit — README, pxt.json (v1.2.3), main.ts, motor.ts, power.ts, rgb.ts, test.ts via https://raw.githubusercontent.com/CytronTechnologies/pxt-rekabit/master/
@@ -122,3 +155,4 @@ The Cytron pinout diagram on the product page confirms these pairs (see *Product
 - [GH] https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit — README, big_led.ts, soil_moisture.ts, ultrasonic.ts
 - [PP] https://www.cytron.io/p-rekabit-simplifying-robotics-with-microbit — not read
 - [3P] (cross-check only) https://www.switch-science.com/products/8349 ; https://www.elektor.com/products/cytron-reka-bit-robotics-with-micro-bit ; https://www.tomshardware.com/reviews/cytron-rekabit ; https://www.robotshop.com/products/rekabit-w-o-microbit
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

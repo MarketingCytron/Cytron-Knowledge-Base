@@ -46,6 +46,9 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Send Telegram bot messages from micro:bit or Raspberry Pi Pico (Cytron GitHub)
 - Get internet time (SNTP) on micro:bit (Cytron GitHub)
 - Send data to Adafruit IO from Maker Pi Pico / Maker Pi RP2040 with CircuitPython (Cytron GitHub)
+- Cytron tutorial: [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit)
+- Cytron tutorial: [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk)
+- Cytron tutorial: [Connect Grove WiFi 8266 with micro:bit for WiFi & Telegram](https://my.cytron.io/tutorial/grove-wifi-8266-microbit-wifi-telegram-integration)
 
 ## Known limitations
 - Serial RX/GPIO input high level is 2.5–3.6 V max and TX output high is 2.6–3.3 V; the logic is 3.3 V level even though VCC accepts 3–6 V (datasheet)

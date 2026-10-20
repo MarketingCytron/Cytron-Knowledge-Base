@@ -42,6 +42,9 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Detect the presence of water in soil (datasheet)
 - Soil moisture reading on a Grove analog port of a Cytron board (Cytron GitHub examples)
 - Cytron tutorial: 3D Printed Self-Watering Pot featuring Maker Soil Moisture Sensor (2022-03-25)
+- Cytron tutorial: [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor)
+- Cytron tutorial: [3D Printed Battery Holder for Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-battery-holder-for-maker-soil-moisture-sensor)
+- Cytron tutorial: [3D Printed Self-Watering Pot with Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-self-watering-pot-featuring-maker-soil-moisture-sensor)
 
 ## Known limitations
 - Output voltage can reach 5.2 V; at VCC = 5.0 V the DRY band (3.1–3.6 V) is above a 3.3 V ADC's full scale

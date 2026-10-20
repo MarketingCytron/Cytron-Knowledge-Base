@@ -59,6 +59,11 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Driving 2 brushed DC motors or 1 bipolar/unipolar stepper motor
 - Driving up to 4 RC servo motors
 - Connecting Grove modules (digital, analog, I2C, SPI, UART)
+- Cytron tutorial: [Build Otto DIY Robot Using Maker Pi RP2040](https://my.cytron.io/tutorial/build-otto-diy-robot-using-maker-pi-rp2040)
+- Cytron tutorial: [Object Sense With Servo Using Maker Pi RP2040](https://my.cytron.io/tutorial/object-sense-with-servo-using-maker-pi-rp2040)
+- Cytron tutorial: [Hungry Robot, powered by Maker Pi RP2040 and CircuitPython](https://my.cytron.io/tutorial/hungry-robot-powered-by-maker-pi-rp2040-and-circuitpython)
+- Cytron tutorial: [Maker Pi RP2040](https://my.cytron.io/tutorial/getting-started-with-rbm-maker-pi-rp2040)
+- Cytron tutorial: [Maker Pi RP2040 Mobile Robot](https://my.cytron.io/tutorial/maker-pi-rp2040-mobile-robot)
 
 ## Known limitations
 - Spec values are absolute maximum ratings

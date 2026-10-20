@@ -47,6 +47,7 @@ A micro:bit lesson kit that builds an automatic plant-watering system: a Maker S
 - Visualise soil moisture as a bar graph on the LED matrix
 - Play melodies and sound notifications
 - IoT monitoring with Blynk IoT (IoT version)
+- Cytron tutorial: [RBT Auto Plant Watering Kit Project - Not Enough Water!](https://my.cytron.io/tutorial/rbt-auto-plant-watering-kit-project-not-enough-water)
 
 ## Known limitations
 - The micro:bit is not included in the "without micro:bit" options

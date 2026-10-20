@@ -151,6 +151,19 @@ There are no onboard buttons other than Reset, and no buzzer — the only user-c
 - Per-pin LED colours other than PWR (green) and pin 13 (orange) — TX/RX LED colours not stated.
 - 3D CAD folder (linked) was not listed by the Drive tool; contents not checked.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno) — Tutorial, Beginner, 2015 [PP: tutorial]
+- [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor) — Tutorial, Beginner, 2016 [PP: tutorial]
+- [IoT Project with LoRaWAN Using Cytron LoRa-RFM Shield & Helium](https://my.cytron.io/tutorial/build-an-iot-project-using-lorawan-network-with-cytron-lora-rfm-shield-and-helium-console) — Project, Intermediate, 2022 [PP: tutorial]
+- [Getting Started with Light Sensor Module (SN-LIGHT-MOD)](https://my.cytron.io/tutorial/getting-started-light-sensor-module-sn-light-mod) — Tutorial, Beginner, 2017 [PP: tutorial]
+- [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control) — Tutorial, Beginner, 2015 [PP: tutorial]
+- [Let's Arduino Control Your SmartDriveDuo-60 (MDDS60)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-60) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting Started with Encoder Sensor Module (SN-ENC-MOD)](https://my.cytron.io/tutorial/getting-started-encoder-sensor-module-sn-enc-mod) — Tutorial, Beginner, 2017 [PP: tutorial]
+- [Getting Started with Temperature Sensor (Celsius) (SN-LM35DZ)](https://my.cytron.io/tutorial/getting-started-temperature-sensor-celsius-sn-lm35dz) — Uncategorized, 2017 [PP: tutorial]
+- [Introducing CT-UNO!](https://my.cytron.io/tutorial/introducing-ct-uno) — Success Stories, 2014 [PP: tutorial]
+- [Cytron Uno Starter Kit Book](https://my.cytron.io/tutorial/cytron-uno-starter-kit-book) — Success Stories, 2015 [PP: tutorial]
+
 ## Sources
 - [UM] CT-UNO User's Manual (CT UNO (Arduino Uno Compatible), V1.0, Nov 2014) — https://docs.google.com/document/d/1lAeGP_92g0VC_xuyL_ibK_EhHU-cxrf3AOS--tf-hvw/view (public; read 2026-10-16)
 - CT-UNO Schematic (not readable here) — https://drive.google.com/file/d/0BzFWfMiqqjyqTHlXdTlxaDU4bWM/view
@@ -159,3 +172,4 @@ There are no onboard buttons other than Reset, and no buzzer — the only user-c
 - [PP] https://www.cytron.com.my/p-CT-UNO (read 2026-10-16, summarised fetch)
 - [UM] driver link given in the manual: http://www.ftdichip.com/Drivers/VCP.htm
 - [3P] (cross-check only; agrees with UM) https://tindie.com/products/cytron/ct-uno
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

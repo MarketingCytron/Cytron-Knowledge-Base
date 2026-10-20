@@ -193,8 +193,14 @@ The panel prints **AN0–AN3**; the manual text and block diagram call them **AI
 - Whether Adafruit's legacy `Adafruit_ADS1x15` package is still the recommended library (DS and UM recommend it).
 - Per-variant SKU codes — the page shows variant names only (Wireless 8GB/32GB, 4GB/32GB, 2GB/16GB).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Ai-Gestured Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol) — Project, Advanced, 2025 [PP: tutorial]
+- [AI Plant Disease Detection with IRIV PiControl](https://my.cytron.io/tutorial/ai-plant-disease-detection-with-iriv-picontrol) — Tutorial, Advanced, 2025 [PP: tutorial]
+
 ## Sources
 - [PP] not read — https://my.cytron.io/p-iriv-picontrol-cm4-industrial-controller
 - [WIKI] Node-RED tutorial — https://my.cytron.io/tutorial/iriv-picontrol-hands-on-using-nodered-in-industry-4
 - [VEN] https://github.com/raspberrypi/usbboot · https://www.raspberrypi.com/software/operating-systems/
 - [3P] https://www.cnx-software.com/2023/12/21/cytron-iriv-picontrol-industry-4-0-controller-raspberry-pi-cm4/ · https://www.robotshop.com/products/iriv-picontrol-ir40-cm4-industrial-controller-wireless-2gb-ram-16gb-emmc · https://trace-tec.vn/IRIV-PICL-W216-pe56589.html
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

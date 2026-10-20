@@ -40,6 +40,11 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 - Use as an adapter plate to mount a Cytron controller board on another robot chassis
 - Line following with Maker Line, obstacle sensing with an ultrasonic sensor, servo add-ons
 - Fire Fighting Robot using MOTION 2350 Pro; Line Following with Robo Base using URC10 (Cytron tutorials)
+- Cytron tutorial: [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Getting Started with Robo Base](https://my.cytron.io/tutorial/getting-started-with-robo-base)
+- Cytron tutorial: [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10)
+- Cytron tutorial: [Motion 2350 Pro with Huskylens](https://my.cytron.io/tutorial/motion-2350-pro-with-huskylens)
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option

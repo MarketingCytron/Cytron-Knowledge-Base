@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Product code | `IRIV-EDGEAI-CM5` (datasheet page header). Per-variant SKUs: not stated in any source read |
+| Product code | `IRIV-EDGEAI-CM5` (datasheet page header). The my.cytron.io page is listed in the tutorial shop links with model code `V-IRIV-EAI5` (page variant code) [PP: tutorial]. Per-variant SKUs: not stated in any source read |
 | Family | IRIV industrial series |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -193,7 +193,25 @@
 - Per-configuration SKU codes and which AI HAT+ chip (Hailo-8 / Hailo-8L) each TOPS option uses — page names Hailo-8 only as an example.
 - CSI lane count: the page says "two 4-lane MIPI CSI"; the datasheet says "22-way" connectors only — confirm with the design team.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/getting-started-with-iriv-edgeai-cm5) — Tutorial, Intermediate, 2025 (series, 6 parts) [PP: tutorial]
+- [Empowering Edge AI: Highlights from the AI Horizon Exhibition at SPICE Arena Penang](https://my.cytron.io/tutorial/AIHorizon25) — Success Stories, 2025 [PP: tutorial]
+- [IRIV EdgeAI CM5: Enhancing CCTV Cameras](https://my.cytron.io/tutorial/enhance-rtsp-camera-with-iriv-edge-ai) — Tutorial, Intermediate, 2026 [PP: tutorial]
+- [Automate Shutdown and Power‑On with IRIV Real‑Time Clock](https://my.cytron.io/tutorial/automate-shutdown-and-poweron-with-iriv-realtime-clock) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [Custom Object Detection on IRIV Edge AI](https://my.cytron.io/tutorial/custom-object-detection-on-iriv-edge-ai) — Tutorial, Advanced, 2026 (series, 7 parts) [PP: tutorial]
+- [Exploration of Yolov4 with IRIV EdgeAI CM5 in Custom Object Detection](https://my.cytron.io/tutorial/Yolov4-training-intro) — Tutorial, 2025 (series, 3 parts) [PP: tutorial]
+- [Capture Hand Movement using Mediapipe on IRIV Edge AI](https://my.cytron.io/tutorial/capture-hand-movement-using-mediapipe-on-iriv-edge-ai) — Tutorial, Intermediate, 2026 [PP: tutorial]
+- [How AI Detects Defects in Product Quality Inspection](https://my.cytron.io/tutorial/how-ai-detects-defects-in-product-quality-inspection) — Protip, Beginner, 2026 [PP: tutorial]
+- [Real-Time PPE Detection on Raspberry Pi With Edge AI](https://my.cytron.io/tutorial/real-time-ppe-detection-raspberry-pi) — Protip, Beginner, 2026 [PP: tutorial]
+- [Exploring Industrial Edge AI Applications with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/industrial-edge-ai-applications-iriv-edgeai-cm5) — Protip, Beginner, 2026 [PP: tutorial]
+- [AI Packaging Detection for Missing Item Inspection](https://my.cytron.io/tutorial/ai-packaging-detection-missing-item-inspection) — Project, Intermediate, 2026 [PP: tutorial]
+- [Industrial Edge AI Applications with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/industrial-edge-ai-iriv-edgeai-cm5) — Protip, Beginner, 2026 [PP: tutorial]
+- [IRIV EdgeAI Workshop with DRB-HICOM](https://my.cytron.io/tutorial/iriv-edgeai-workshop-drb-hicom) — Success Stories, Beginner, 2026 [PP: tutorial]
+- [AI PPE Zone Monitoring with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/ai-ppe-zone-monitoring-iriv-edgeai-cm5) — Protip, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-iriv-edge-ai-cm5 (also https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-edge-ai-cm5) — not read; facts via 
 - [VEN] https://www.raspberrypi.com/documentation/computers/compute-module.html · https://github.com/raspberrypi/usbboot
 - [3P, rejected] https://docs.cirkitdesigner.com/component/ab31ab26-a746-4ba8-85ce-e0a748435f64/iriv-edgeai-cm5
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -112,6 +112,10 @@ Kit wiring from the Cytron guide tutorial [PP: tutorial], with driver facts from
 - STL file names and body part count in the Drive folder (packing list names chassis, base, top cover and 2 motor brackets).
 - Product page sentence "With fewer parts to assemble… Please refer to this **user guide**" links to `/tutorial/1kg-rc-sumo-robot-starter-kit-user-guide-using-mddrc10&tracking=khai&utm_campaign=edukhai` — 404 (re-checked 19 Oct 2026; the clean slug is 404 too, and the link uses "&" where "?" is needed). The other link, "Radio Controlled (RC) 1KG Sumo Robot Getting Started Guide", works. Ask the web team to point "user guide" to the working tutorial.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10) — Tutorial, Beginner, 2024 [PP: tutorial]
+
 ## Sources
 - [PP] Product page (read by coordinator 2026-10-19) — https://my.cytron.io/p-radio-controlled-rc-1kg-sumo-robot-kits
 - [PP: tutorial] "1KG RC Sumo Robot Using MDDRC10", Adrian Afiq, 12 Mar 2025 (read 2026-10-19) — https://my.cytron.io/tutorial/1kg-rc-sumo-robot-using-mddrc10
@@ -119,3 +123,4 @@ Kit wiring from the Cytron guide tutorial [PP: tutorial], with driver facts from
 - [PP] STL folder "KIT-SUMO-RC-3DP" (Drive, created 2025-03-12; contents not listable here) — https://drive.google.com/drive/folders/1ah8zN67osF_GZj4KbN-Ox7QSPSIbz36X
 - [DS: MDDRC10] MDDRC10 Datasheet Rev 1.0, Aug 2020, as recorded in /home/claude/kb/mddrc10.md — mirror https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf
 - KB cross-references: /home/claude/kb/mddrc10.md · /home/claude/kb/pcb-sumo-plate.md
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

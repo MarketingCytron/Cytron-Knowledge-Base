@@ -98,8 +98,13 @@ Tag notes: [PP] = coordinator's browser read, 2026-10-19 (my.cytron.io not fetch
 - Maker ESP32 Halloween tutorial content (pin, power) — not read.
 - PCB revision, mounting-hole size/spacing.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Controlling RGB LED Stick with Maker Pi Pico](https://my.cytron.io/tutorial/controlling-neopixel-rgb-led-stick-with-maker-pi-pico) — Tutorial, Beginner, 2023 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-neopixel-rgb-led-stick-by-cytron (coordinator read, 2026-10-19; notes in local file m-pp.md)
 - [PP: tutorial] "Controlling RGB LED Stick with Maker Pi Pico", my.cytron.io, 14 May 2023 (coordinator read; URL not recorded)
 - [UM][GH] via KB file rekabit-rbt-project-kit.md — https://github.com/CytronTechnologies/pxt-rekabit-rbt-project-kit
 - KB files maker-pi-pico.md, reka-bit.md (Grove 3V3 supply)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

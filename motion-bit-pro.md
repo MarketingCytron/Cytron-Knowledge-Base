@@ -123,9 +123,14 @@ Extension channel names (from [GH]): motors M1–M4; servos S1–S8 (block "all"
 - Whether 3 A / 5 A is per channel or total (comparison image does not say); dimensions in mm (same form factor as MOTION:BIT, 95.2 × 57.2 mm, implied but not stated for Pro); motor driver IC; protections.
 - Datasheet micro USB row ("for charging the battery or power up") — conflicts with the product page; ask Cytron to correct the datasheet.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with MOTION:BIT Pro](https://my.cytron.io/tutorial/getting-started-with-motion-bit-pro) — Tutorial, Beginner, 2024 (series, 8 parts) [PP: tutorial]
+
 ## Sources
 - [DS] MOTION:BIT Pro Datasheet Rev 1.0, April 2024 — https://drive.google.com/file/d/17kkl6oBU0n-gQtyQ84ylxg2KX3E9Ma0_/view (public). PDF mirror, same revision: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-437/pdf/cytron-motionbit-pro-12v-robotics-expansion-board-for-microbit-datasheet.pdf
 - [PP] Product page: not found; Cytron tutorial linked by The Pi Hut (**not read**): https://www.cytron.io/tutorial/getting-started-with-motion-bit-pro
 - [GH] https://github.com/CytronTechnologies/pxt-motionbit (README.md, pxt.json, motor.ts, rgb.ts) · https://makecode.microbit.org/pkg/CytronTechnologies/pxt-motionbit
 - [VEN] https://tech.microbit.org/hardware/edgeconnector/
 - [3P] (cross-check only) https://thepihut.com/products/motion-bit-pro-for-micro-bit · https://www.switch-science.com/collections/cytron/products/9790 · https://www.switch-science.com/products/9789 (comparison table) · https://ca.robotshop.com/products/cytron-motionbit-pro-12v-robotics-expansion-board-microbit
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

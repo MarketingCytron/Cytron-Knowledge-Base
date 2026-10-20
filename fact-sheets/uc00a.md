@@ -46,6 +46,7 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - Loading program into Arduino boards without an onboard USB chip (Arduino Pro Mini, FIO, BBFuino, ArduPilot, Rainbow LED Ring V3)
 - Testing a UART device (example: SKPS PS2 controller converter) from a PC terminal
 - Communication between two PCs using two UC00A boards
+- Cytron tutorial: [Getting Started with Arduino – PRO Mini](https://my.cytron.io/tutorial/getting-started-arduino-pro-mini)
 
 ## Known limitations
 - "Vsel" and "5V" are supplied directly from the computer's USB port; it is advised not to use this power to power application circuits or devices; wrong polarity, wrong voltage or a short might permanently damage the computer

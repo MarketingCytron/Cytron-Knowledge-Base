@@ -59,6 +59,7 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Factory Floor Digitalization: aggregating machine health parameters, production cycle counts and downtime alerts to feed predictive maintenance dashboards
 - Smart Facilities & Building Automation: centralizing HVAC performance, energy sub-metering and safety alarms across a corporate or university campus into a unified cloud interface
 - Sending field data to a server for processing and visualization out of the box, for software/IT users not familiar with hardware or firmware
+- Cytron tutorial: [Getting Started with IRIV-IOC MQTT Gateway](https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway)
 
 ## Known limitations
 - Uses standard MQTT (Port 1883) with no TLS/SSL on the device; for cloud encryption, route the data through a local secure broker or edge gateway

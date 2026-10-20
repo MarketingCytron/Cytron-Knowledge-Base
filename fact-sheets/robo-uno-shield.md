@@ -58,6 +58,8 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Teaching robotics with simplified wiring and power options (educators and training centres)
 - Adding sensors and modules through Grove ports and the Maker Port without messy wiring
 - Troubleshooting wiring vs code with status LEDs and motor test buttons
+- Cytron tutorial: [Getting Started with Robo Uno Shield](https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield)
+- Cytron tutorial: [Display Animation on OLED with Maker UNO and Robo UNO Shield](https://my.cytron.io/tutorial/display-animation-on-oled-with-maker-uno-and-robo-uno-shield)
 
 ## Known limitations
 - Power input 3.6–6 V only (absolute maximum); only single-cell batteries are supported

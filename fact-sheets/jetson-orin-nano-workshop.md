@@ -39,6 +39,7 @@ A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at th
 - Hands-on real-time object detection, image classification and image regression (product page, workshop tentative)
 - Edge inference on Jetson Orin Nano (product page)
 - Earning an official NVIDIA AI certification (product page)
+- Cytron tutorial: [My Experience Attending the NVIDIA Jetson Workshop by Cytron](https://my.cytron.io/tutorial/jetson-orin-nano-workshop-experience)
 
 ## Known limitations
 - The 30 Sep 2026 date had passed by 2026-10-19

@@ -10,7 +10,7 @@ SUMO:BIT, SUMOBIT, SUMO-BIT, SUMO BIT
 A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plugs in two external MD13S motor drivers, and provides opponent-sensor, edge-sensor, servo/RC, RGB LED, mode-switch and joystick connections.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: SUMO-BIT (my.cytron.io model code)
 - Power input voltage (LiPo battery): 7 V min, 25 V max; reverse polarity protection
 - Vibration-proof on/off slide switch with MOSFET latching circuit; green power LED
 - Battery voltage can be monitored programmatically (battery + terminal feeds an analog input)
@@ -55,6 +55,11 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - Selecting a tactic or mode with the DIP switch before a match
 - Wireless joystick control through the USB-A port
 - SUMO:BIT Robot Kit builds
+- Cytron tutorial: [Build Sumo Robot with micro:bit (SUMO:BIT)](https://my.cytron.io/tutorial/build-sumo-robot-with-sumobit)
+- Cytron tutorial: [2 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/2-wheel-robot-battle-with-sumobit)
+- Cytron tutorial: [Getting started with Soccer Robot using SUMO:BIT](https://my.cytron.io/tutorial/soccer-robot-using-sumo-bit)
+- Cytron tutorial: [Robot Battle RC Mode with HotRC](https://my.cytron.io/tutorial/SUMO:BIT_RC_Mode_with_HOT_RC)
+- Cytron tutorial: [4 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/4-wheel-robot-battle-with-sumobit)
 
 ## Known limitations
 - Battery input must stay within 7–25 V (LiPo)

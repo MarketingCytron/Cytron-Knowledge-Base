@@ -142,6 +142,11 @@ Byte 1 (group 1) bits 7→0: Left, Down, Right, Up, Start, R-joystick centre, L-
 - [3P] RobotShop reviewer: joystick reads 255 with no controller attached — consistent with the library's 0xFF timeout value [GH], but not confirmed by Cytron.
 - Whether the 500 mA max consumption includes both vibration motors running.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control) — Tutorial, Beginner, 2015 [PP: tutorial]
+- [Wirelessly Control OjanBot with PS2 Shield](https://my.cytron.io/tutorial/ojan-bot-with-ps2-shield) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [UM] Shield-PS2 — Cytron PS2 Shield — User's Manual, V1.0, September 2013 — https://docs.google.com/document/d/1cifT1XqOquLffnu5J961wpKakSO8_LpV35v4sKSaIQU/edit
 - [PP] Product page (read by coordinator 2026-10-16) — https://my.cytron.io/p-cytron-ps2-shield
@@ -149,3 +154,4 @@ Byte 1 (group 1) bits 7→0: Left, Down, Right, Up, Start, R-joystick centre, L-
 - [PP] Fritzing part — https://drive.google.com/file/d/188TaxyHvO1C1Kst8E6sXgypYA1Sc8eEk/view (SHIELD-PS2.fzpz; not opened)
 - [PP] Tutorial (not read) — https://my.cytron.io/tutorial/softwareserial-conflicting-servo-interrupt
 - [3P] (cross-check only) https://eu.robotshop.com/products/cytron-ps2-shield-arduino · https://test.robu.in/wp-content/uploads/2019/01/UserManual.pdf (SmartElex variant — not this product)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

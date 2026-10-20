@@ -101,6 +101,13 @@ No datasheet spec table exists. Facts stated in text:
 - Hole diameters and pitch (drawings only, no dimensioned hole map).
 - Reseller codes `CYTRON-CK-ROBO-BASE-MINI-2WD` / `-4WD` [3P Switch Science].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Robo Base Mini](https://my.cytron.io/tutorial/getting-started-with-robo-base-mini) — Tutorial, Beginner, 2025 (series, 17 parts) [PP: tutorial]
+- [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Line Following Robo Base Mini](https://my.cytron.io/tutorial/line-following-robo-base-mini-esp32) — Project, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-robo-base-mini-and-kits — Robo Base Series page, read by the coordinator 2026-10-19 (options, Mini packing lists with 25 mm stands, compatible boards, RM9.00–RM112.00, availability 333, warranty 12 months)
 - [PP: tutorial GS-RBM] https://my.cytron.io/tutorial/getting-started-with-robo-base-mini — "Getting Started with Robo Base Mini", Hao Zhen Goh, 05 Mar 2025, and its 16 linked parts (26 Feb – 3 Mar 2025), all read 2026-10-19
@@ -108,3 +115,4 @@ No datasheet spec table exists. Facts stated in text:
 - [3P] https://www.switch-science.com/products/10530 (Mini 2WD), https://www.switch-science.com/products/10531 (Mini 4WD), https://thepihut.com/products/robo-base-mini
 - Drive (marketing only, no specs): "Website Banner Robo Base Mini .png" (Cytron document — link not public) ; "IV ROBO BASE MINI LATEST VERSION.mp4" (Cytron document — link not public)
 - KB cross-references: `robo-base.md`, `robo-grip-mini.md`, `robo-bracket-micro-servo.md`, `strikerbit.md`, `maker-line.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

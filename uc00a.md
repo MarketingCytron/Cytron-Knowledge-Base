@@ -159,6 +159,10 @@ The Arduino Pro Mini wiring table in the manual lists the same six pins in the o
 - Which current Cytron boards it programs — only BBFuino named [UM]; confirm with design team before naming others.
 - 5 V VCC current on Rev3.0 — the page says only "5V from USB port"; the 3.3 V regulator is rated 500 mA [PP].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Arduino – PRO Mini](https://my.cytron.io/tutorial/getting-started-arduino-pro-mini) — Tutorial, Beginner, 2012 [PP: tutorial]
+
 ## Sources
 - [UM] UC00A Rev3.0 Cytron USB to UART Converter User's Manual, V1.1, December 2018 — https://docs.google.com/document/d/1pFK7DSRuZB7SeP3aCmjYzWB0i7aT-C_W_D-x25WLops/view (Google Doc; figures did not extract)
 - [UM-R2] UC00A Rev2.0 Cytron USB to UART Converter User's Manual, V1.0, July 2012 — https://docs.google.com/document/d/1NzYIGVAZ6Ag8efs4lL3g3SEAHSsp9qsj3M6aJMoFAIk/view
@@ -167,3 +171,4 @@ The Arduino Pro Mini wiring table in the manual lists the same six pins in the o
 - [PP] Product page https://my.cytron.io/p-uc00a-ftdi-usb-to-uart-converter (read by coordinator 2026-10-16: RM43.05, in stock 274, warranty 12 months)
 - [UM] Driver Installation Guide for Win 7 (linked from manual; not opened) — https://drive.google.com/file/d/12HDo0o2ygGj9s0I90drnNp0FnFZG2jAx/view
 - [VEN] FTDI FT232R USB UART IC Datasheet, Document No. FT_000053, Version 2.11 — https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf (product page link; fetch failed here, read via mirror https://www.digikey.ca/en/resources/datasheets/ftdi/ft232r)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

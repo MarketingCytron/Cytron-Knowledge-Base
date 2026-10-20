@@ -39,6 +39,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 ## Use cases
 - Build your robot car base by using the STEM Robot Building Base Kit (installation guide)
 - 2-wheeled robot car chassis for a micro:bit or RP2040 controller board (REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico)
+- Cytron tutorial: [STEM Robot Building Base Kit Step-by-Step Installation Guide](https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide)
 
 ## Known limitations
 - No controller board, motor driver, battery, battery holder, sensors or cable ties are included

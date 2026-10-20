@@ -58,6 +58,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - Robots and motion-control projects with micro:bit ("simplifying robots & motion control projects making with micro:bit")
 - Projects with mechanical movements using DC motors and servos
 - Adding sensors and modules through the GPIO breakout and Maker Ports
+- Cytron tutorial: [Build an Autonomous Obstacle-Avoiding Robot Car Using MOTION:BIT](https://my.cytron.io/tutorial/build-an-obstacle-avoiding-robot-car-using-motionbit)
+- Cytron tutorial: [Getting Started with MOTION:BIT & Projects Guide](https://my.cytron.io/tutorial/getting-started-with-motion-bit-and-projects-guide)
+- Cytron tutorial: [CONTROL OMNI ROBOT CAR WITH MOTION:BIT USING BLUETOOTH APP](https://my.cytron.io/tutorial/control-omni-robot-car-with-motion:bit-using-bluetooth-app)
+- Cytron tutorial: [Line Following with MOTION:BIT and Maker Line](https://my.cytron.io/tutorial/line_following_robot_car_using_motionbit)
 
 ## Known limitations
 - Power input 3.6–6 V absolute maximum

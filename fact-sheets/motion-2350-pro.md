@@ -57,6 +57,11 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Building an advanced robot while minimizing effort on electronics and focusing on mechanics
 - Robots with mecanum wheels using the 4-channel driver
 - Robots controlled by a USB joystick/gamepad through the USB host port
+- Cytron tutorial: [Getting Started with HuskyLens & Arduino](https://my.cytron.io/tutorial/getting-started-with-huskylens-and-arduino)
+- Cytron tutorial: [Getting Started with MOTION 2350 Pro using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-cp)
+- Cytron tutorial: [Getting Started with MOTION 2350 Pro using Arduino IDE](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-using-arduino-ide)
+- Cytron tutorial: [Motion 2350 Pro with FlySky and HotRC](https://my.cytron.io/tutorial/motion-2350-pro-with-flysky-and-hotrc)
+- Cytron tutorial: [Getting Started with Motion 2350 Pro Robot Kit](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-robot-kit)
 
 ## Known limitations
 - Rev 2.0 ratings (5 A continuous / 10 A peak) apply to Rev 2.0 only; Rev 1.0 is rated 3 A continuous / 5 A peak and has no motor overcurrent protection

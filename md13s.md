@@ -158,6 +158,12 @@ Mode selection — by wiring, no jumper or switch [UM]:
 8. Revision history — the manual (V1.1) has no revision table; board revisions not documented.
 9. [3P]-only: G.W 22.5 g, height 15 mm (Farnell/element14).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current) — Protip, 2016 [PP: tutorial]
+- [micro:bit with external motor driver - MD13S](https://my.cytron.io/tutorial/microbit-with-external-motor-driver-md13s) — Tutorial, Intermediate, 2022 [PP: tutorial]
+- [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver) — Tutorial, Beginner, 2025 (series, 2 parts) [PP: tutorial]
+
 ## Sources
 - [UM] MD13S 13Amp DC Motor Driver User's Manual, V1.1, June 2018 (Cytron), public PDF mirror: https://www.electrokit.com/upload/product/41018/41018267/MD13S%20User's%20Manual.pdf
 - [UM] mirror linked from RobotShop (could not be opened): https://cdn.robotshop.com/media/c/cyt/rb-cyt-212/pdf/MD13S_User-Mannual.pdf
@@ -165,3 +171,4 @@ Mode selection — by wiring, no jumper or switch [UM]:
 - [GH] Cytron Motor Drivers Library: https://github.com/CytronTechnologies/CytronMotorDriver
 - [3P] RobotShop listing (cross-check): https://jp.robotshop.com/en/products/cytron-13a-dc-motor-driver-grove-compatible
 - [3P] Farnell/element14 page for Seeed 108070021 (cross-check only): https://www.farnell.com/datasheets/3708173.pdf
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

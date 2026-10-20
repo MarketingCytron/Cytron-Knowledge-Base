@@ -135,6 +135,17 @@ Pin summary for tutorials:
 - How to re-enable IO LEDs after cutting the jumper; mute switch position markings.
 - Certifications.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Heart Rate Monitor Using Pulse Sensor and Maker Nano](https://my.cytron.io/tutorial/heart-rate-monitor-using-pulse-sensor-and-maker-nano) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Social Distance Alert Wristband Using Arduino (Maker Nano)](https://my.cytron.io/tutorial/social-distance-alert-wristband-using-arduino-maker-nano) — Uncategorized, 2020 [PP: tutorial]
+- [Control NeoPixel RGB LED Color Code Using Keypad and Maker Nano](https://my.cytron.io/tutorial/control-neopixel-rgb-led-color-code-using-keypad-and-maker-nano) — Tutorial, Intermediate, 2020 [PP: tutorial]
+- [Maker Nano Heartbeat Monitoring With Mlx30102](https://my.cytron.io/tutorial/maker-nano-heartbeat-monitoring-with-mlx30102) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Gas Detector Using The MQ2 Sensor on Maker NANO](https://my.cytron.io/tutorial/gas-detector-using-mq2-sensor-on-maker-nano) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Simple Alarm System Using Maker Nano](https://my.cytron.io/tutorial/simple-alarm-system-using-maker-nano) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Display on MAX7219 Dot Matrix Using Maker NANO](https://my.cytron.io/tutorial/display-on-max7219-dot-matrix-using-maker-nano) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Sorting and Counting The Coin Using Maker NANO](https://my.cytron.io/tutorial/sorting-and-counting-the-coin-using-maker-nano) — Tutorial, Beginner, 2020 [PP: tutorial]
+
 ## Sources
 - [DS] Maker Nano Datasheet ("MAKER-NANO Simplifying Arduino for Projects", Rev 1.0, June 2020): https://docs.google.com/document/d/1lUUJSzbsvzH_Ss6vDcHpGfVY7p_txuW5BZ1QOmHgcBA/view (public; read as text 2026-10-16)
 - [PP] https://my.cytron.io/p-maker-nano-simplifying-arduino-for-projects (price/stock 2026-10-16; full description, packing list, resources 2026-10-19)
@@ -143,3 +154,4 @@ Pin summary for tutorials:
 - [PP: tutorial] Social Distance Alert Wristband Using Arduino (Maker Nano) — https://my.cytron.io/tutorial/social-distance-alert-wristband-using-arduino-maker-nano
 - Schematic (image only, no text extracted): "Maker Nano Schematic v1.0.0.pdf" https://drive.google.com/file/d/1xRj-DJnCv_tZUSp1jUOuZCaw-S2rgI9P/view (link found on a reseller page)
 - [3P] (cross-check only): https://core-electronics.com.au/cytron-maker-nano.html · https://thepihut.com/collections/arduino-store/products/maker-nano · https://www.robotshop.com/products/maker-nano-arduino-based-microcontroller · https://www.slideshare.net/slideshow/maker-nano-datasheetdocx/259830635 (copy of the datasheet, same text gaps)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

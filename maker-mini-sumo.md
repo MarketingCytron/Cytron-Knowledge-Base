@@ -141,6 +141,13 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - Ikedo Mini Sumo Robot Pro Bundle contents (product page not read).
 - Library behaviour on Arduino IDE 2.x / current AVR core (last commit 2020) — untested here.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Maker Mini Sumo with RC Controller](https://my.cytron.io/tutorial/rc-sumo-using-maker-mini-sumo-controller) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Maker Mini Sumo with Bluetooth Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-bluetooth-controller) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Maker Mini Sumo with PS2 Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Robot Battle Getting Started Instruction](https://my.cytron.io/tutorial/Robot-Battle-Getting-Started-Instruction) — Tutorial, Beginner, 2024 [PP: tutorial]
+
 ## Sources
 - [DS] MAKER-MSUMO Datasheet Rev 1.0, Nov 2019 — https://docs.google.com/document/d/1HrApn-5ldC58r9UOs4APiLVk_vUcJKDNX2-tJEHuHKk/edit (same Rev 1.0 PDF mirrored at https://cdn.shopify.com/s/files/1/0176/3274/files/MAKER-MSUMO_Datasheet.pdf and https://cdn.robotshop.com/media/c/cyt/rb-cyt-276/pdf/ikedo-mini-sumo-robot-pro-kit-datasheet.pdf)
 - [PP] https://my.cytron.io/p-maker-mini-sumo-controller-simplifying-sumo-robot-for-beginner · 3D CAD https://drive.google.com/drive/folders/1HrNAYGAMyBuPfVD5zGpPvkgv8Eog58x3
@@ -150,3 +157,4 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - [GH] https://github.com/CytronTechnologies/CytronMakerSumo (README, library.properties, CytronMakerSumo.h/.cpp, examples/)
 - [VEN] Arduino `tone()` reference — https://github.com/arduino/reference-en/blob/master/Language/Functions/Advanced%20IO/tone.adoc · Servo library — https://github.com/arduino-libraries/Servo · ATmega328P — https://www.microchip.com/en-us/product/atmega328p
 - [3P] (cross-check only) https://thepihut.com/collections/cytron/products/maker-mini-sumo-controller · https://www.robotshop.com/products/cytron-maker-mini-sumo-controller · https://stg.robu.in/product/maker-mini-sumo-controller-simplifying-sumo-robot-for-beginner
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

@@ -61,6 +61,9 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - Custom OEM machinery
 - Standalone field-deployed equipment
 - Doors, actuators, and reversible conveyors
+- Cytron tutorial: [Getting Started with iMD16 (No Code Setup)](https://my.cytron.io/tutorial/getting-started-with-imd16)
+- Cytron tutorial: [Conveyor Belt Control without Code using iMD16](https://my.cytron.io/tutorial/imd16-conveyor-belt-control-without-code)
+- Cytron tutorial: [Cytron Brings its First Industrial DC Motor Driver to the Global Stage](https://my.cytron.io/tutorial/cytron-launches-imd16-industrial-dc-motor-driver)
 
 ## Known limitations
 - No current limiting function: 16 A continuous and 30 A peak (< 10 seconds) are maximum supported operating currents, not an active current limit; operating above the rated current may cause the board to overheat and could damage it

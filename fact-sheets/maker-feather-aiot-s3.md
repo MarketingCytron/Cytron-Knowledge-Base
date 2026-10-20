@@ -56,6 +56,11 @@ An ESP32-S3 development board in the Adafruit Feather form factor, with GPIO sta
 - IoT work
 - Teaching
 - Cytron IoT Kit
+- Cytron tutorial: [Getting Started with Maker Feather AIoT S3 (Arduino IDE)](https://my.cytron.io/tutorial/getting-started-with-Maker-Feather-AIoT-S3-(ArduinoIDE))
+- Cytron tutorial: [Getting Started with Maker Feather AIoT S3 using CircuitPython](https://my.cytron.io/tutorial/get-started-with-maker-feather-aIot-s3-using-circuitpyhton)
+- Cytron tutorial: [Maker Feather AIOT S3 Data Logging To Firebase](https://my.cytron.io/tutorial/maker-feather-aiot-s3-data-logging-to-firebase)
+- Cytron tutorial: [How To Control LED with Blynk Using Maker Feather AIOT S3](https://my.cytron.io/tutorial/how-to-control-led-with-blynk-using-maker-feather-aiot-s3)
+- Cytron tutorial: [Arducam Mega 3MP with Maker Feather AIOT S3](https://my.cytron.io/tutorial/arducam-mega-3mp-with-maker-feather-aiot-s3)
 
 ## Known limitations
 - The GPIO LEDs, RGB LED, buzzer and both horizontal Maker Ports run from VP: GPIO11 must be HIGH first. CircuitPython and the Arduino core turn VP on; ESP-IDF and generic MicroPython do not

@@ -103,8 +103,13 @@ No other source disagreement found (only one Cytron source states facts).
 - Where the Maker Line fixes with the 3 × M2.3 × 8 mm screws — the installation guide does not cover it.
 - Whether this bundle is identical to the chassis supplied inside the BocoBot (Robo Pico) kit — implied by the page's "Boco Bot kit" photo and the [3P] review, not stated.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [STEM Robot Building Base Kit Step-by-Step Installation Guide](https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide) — Tutorial, Beginner, 2023 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-stem-robot-building-base-kit — read by the coordinator 2026-10-19 (RM35.00; Blue / Green; stock 136; warranty blank; packing list; features; dimension image)
 - [PP: tutorial] https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide — read in full through the browser, 2026-10-19
 - [3P] https://www.cnx-software.com/2023/07/30/robo-pico-review-raspberry-pi-pico-w-motor-sensor-control-board-bocobot-robotic-kit/ (cross-check only)
 - KB cross-references: `reka-bit.md`, `motion-bit.md`, `maker-pi-rp2040.md`, `robo-pico.md`, `maker-line.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

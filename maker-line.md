@@ -135,8 +135,22 @@ Values between Left–Center–Right vary continuously (arrows in the table) [DS
 - Whether CAL has an internal pull-up (DS only says short to GND).
 - Weight — not stated by Cytron ([3P] element14 0.01 kg).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [ESP32 PD Line Following Robot with Maker Line](https://my.cytron.io/tutorial/esp32-pd-line-following-robot-with-maker-line) — Tutorial, Intermediate, 2019 [PP: tutorial]
+- [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line) — Project, Intermediate, 2021 [PP: tutorial]
+- [Raspberry Pi Line Following Robot with Maker Line](https://my.cytron.io/tutorial/raspberry-pi-line-following-robot-with-maker-line) — Project, Advanced, 2019 [PP: tutorial]
+- [Maker Nano RP2040 Interfacing With Maker Line Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerline) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [4.Line Following](https://my.cytron.io/tutorial/line-following) — Tutorial, Beginner, 2023 (part of "Learn Robotics with Bocobot Car Kit and Robo Pico") [PP: tutorial]
+- [Line Following Robot using Scratch in Raspberry Pi 5](https://my.cytron.io/tutorial/line-rollowing-robot-using-raspberryPi5-and-scratch) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Maker Line](https://my.cytron.io/tutorial/getting-started-with-rbm-maker-line) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base Mini") [PP: tutorial]
+- [Maker Line](https://my.cytron.io/tutorial/getting-started-with-rb-maker-line) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base") [PP: tutorial]
+- [Line Following with MOTION:BIT and Maker Line](https://my.cytron.io/tutorial/line_following_robot_car_using_motionbit) — Tutorial, Beginner, 2026 [PP: tutorial]
+- [RDK X5 Robot Kit with Maker Line](https://my.cytron.io/tutorial/rdk-x5-robot-kit-with-maker-line) — Tutorial, Intermediate, 2026 (part of "RDK X5 Mission Ready Robotic Series") [PP: tutorial]
+
 ## Sources
 - [DS] MAKER-LINE Datasheet Rev 1.0, July 2019 — https://docs.google.com/document/d/1wZwWl72CKkajTDIyiMxSQ3bwXbWbqW0eq7rdg2MUPeU/edit (public; PDF mirror, same revision: https://cdn.robotshop.com/media/c/cyt/rb-cyt-274/pdf/cytron-maker-line-line-sensor-datasheet.pdf; Farnell mirror listed by element14, not opened: https://www.farnell.com/datasheets/4725986.pdf)
 - [PP] Product page https://my.cytron.io/p-maker-line-simplifying-line-sensor-for-beginner (URL as linked in a Cytron internal doc; **not read**)
 - [PP: Tindie] Cytron Technologies Tindie listing — https://www.tindie.com/products/Cytron/maker-line-simplifying-line-sensor-for-beginner/
 - [3P] (cross-check only) https://thepihut.com/products/maker-line-simplifying-line-sensor · https://my.element14.com/cytron/maker-line/simplifying-line-sensor-kit-200hz/dp/4871623 · https://robotshop.com/products/cytron-maker-line-line-sensor
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

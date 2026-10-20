@@ -82,6 +82,11 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - Color Based Water pH System
 - Smart Microphone Alert System
 - Data logging to the Pico's flash with CircuitPython
+- Cytron tutorial: [AI HuskyLens With EDU PICO V2 : Step-by-Step Guide](https://my.cytron.io/tutorial/edupico_with_huskylens)
+- Cytron tutorial: [Create a Flappy Bird game in EDU PICO V2 with skin feel](https://my.cytron.io/tutorial/create-a-flappy-bird-game-in-edu-pico-v2-with-skin-feel)
+- Cytron tutorial: [EDU PICO V2 Wireless Communication System](https://my.cytron.io/tutorial/edu-pico-v2-wireless-communication-system)
+- Cytron tutorial: [Build a Gesture Snake game inside EDU PICO V2](https://my.cytron.io/tutorial/build-a-gesture-snake-game-inside-edu-pico-v2)
+- Cytron tutorial: [Smart Microphone Alert System Using EDU PICO V2](https://my.cytron.io/tutorial/smart-microphone-alert-system-using-edu-pico-v2)
 
 ## Known limitations
 - Spec values are absolute maximum ratings

@@ -111,6 +111,10 @@ No numeric disagreement was found between [PP] and [UM].
 - **RGB LED blocks** in Lesson 3 (which REKA:BIT block and pin) — booklet shows images only.
 - Kit box dimensions/weight — not stated.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [RBT Auto Plant Watering Kit Project - Not Enough Water!](https://my.cytron.io/tutorial/rbt-auto-plant-watering-kit-project-not-enough-water) — Tutorial, Beginner, 2022 [PP: tutorial]
+
 ## Sources
 - [UM] Auto Plant Watering Kit for micro:bit lesson guide, English, April 2022 (file v1): https://static.cytron.io/download/KIT-RBT-APW/RBT_APW_KIT_Booklet_English_v1.pdf
 - [UM] Short links listed on the product page (not fetched): https://link.cytron.io/apw-book-english · https://link.cytron.io/apw-book-malay · https://link.cytron.io/apw-book-chinese · https://link.cytron.io/apw-book-thai
@@ -120,3 +124,4 @@ No numeric disagreement was found between [PP] and [UM].
 - [GH] REKA:BIT extension: https://github.com/CytronTechnologies/pxt-rekabit (via reka-bit.md) · Grove WiFi 8266 extension: https://github.com/CytronTechnologies/pxt-esp8266 (via grove-wifi-8266.md)
 - [3P] Pakronics (packing list cross-check, matches [PP]): https://www.pakronics.com.au/products/auto-plant-watering-kit-for-micro-bit-without-micro-bit-pakr-a0567
 - Related KB files: reka-bit.md, maker-soil-moisture.md, grove-wifi-8266.md, rekabit-rbt-project-kit.md
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

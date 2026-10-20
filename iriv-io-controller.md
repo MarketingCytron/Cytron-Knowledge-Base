@@ -175,6 +175,14 @@ No conflict with Drive: the only Drive item is a video subtitle file (see Source
 - DIN rail width (35 mm) [WIKI only]. Warranty 12 months [WIKI only]. CR2032 included or not.
 - CR2032 for the RTC: included or not (not in the packing list).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [IRIV IO Controller - Send Sensor readings to IRIV PiControl using MQTT](https://my.cytron.io/tutorial/iriv-ioc-sending-data-from-humidity-and-temperature-sensor-to-iriv-picontrol-using-mqtt-protocol) — Tutorial, Advanced, 2025 [PP: tutorial]
+- [Getting Started with IRIV IO Controller With Circuit Python](https://my.cytron.io/tutorial/getting-started-with-iriv-io-controller-with-circuit-python) — Tutorial, Beginner, 2024 (series, 15 parts) [PP: tutorial]
+- [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp) — Tutorial, Beginner, 2026 (series, 5 parts) [PP: tutorial]
+- [Modbus Configuration Tool for Slave ID and Baudrate Setup](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup) — Tutorial, Advanced, 2026 (series, 3 parts) [PP: tutorial]
+- [Building a Line-Crossing People Counter with IRIV Vision Studio](https://my.cytron.io/tutorial/building-a-line-crossing-people-counter-using-iriv-vision-studio) [PP: tutorial]
+
 ## Sources
 - [PP] Product page (not read; URL as given by the wiki): https://my.cytron.io/c-industrial-with-raspberry-pi/p-iriv-io-controller
 - [WIKI] Tutorial: https://my.cytron.io/tutorial/getting-started-with-iriv-io-controller-with-circuit-python
@@ -182,3 +190,4 @@ No conflict with Drive: the only Drive item is a video subtitle file (see Source
 - [VEN] Raspberry Pi microcontroller docs: https://www.raspberrypi.com/documentation/microcontrollers/; Wiznet W5500: https://www.wiznet.io/product-item/w5500/
 - [3P] CNX Software, 13 Sep 2024: https://www.cnx-software.com/2024/09/13/raspberry-pi-rp2350-industrial-io-controller/
 - [3P] Resellers: https://www.robotshop.com/products/cytron-iriv-io-controller-ir40-industrial-i-o-controller, https://thepihut.com/products/iriv-io-controller-ir4-0-industrial-i-o-controller
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

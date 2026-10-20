@@ -152,6 +152,12 @@ No numeric conflicts were found between the datasheet and the product page.
 - Exact column placement of the 20 KHz PWM value in Table 2 (text extraction ambiguous).
 - What "auto calibration upon power up" calibrates (neutral point?) and whether the sticks must be centred at power-up.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Build 1KG RC Sumo Robot using MDDRC10](https://my.cytron.io/tutorial/rcsumo1kg-mddrc10) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [1KG RC Sumo Robot Using MDDRC10](https://my.cytron.io/tutorial/1kg-rc-sumo-robot-using-mddrc10) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] MDDRC10 Datasheet, "10Amp 7V-30V DC Motor Driver for R/C (2 Channels)", Rev 1.0, August 2020 — public mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-288/pdf/cytron-10a-7v-30v-dual-dc-motor-driver-r-c-datasheet.pdf
 - [DS] Same datasheet, second public mirror — https://aws.robu.in/wp-content/uploads/2021/03/Cytron-10Amp-7V-30V-DC-Motor-Driver-for-RC-2-Channels-MDDRC10-1.pdf
@@ -159,3 +165,4 @@ No numeric conflicts were found between the datasheet and the product page.
 - [PP] my.cytron.io copy (not read — fetch failed) — https://my.cytron.io/p-10amp-7v-30v-dc-motor-driver-for-rc-2-channels
 - [3P] Robokits India listing (cross-check only) — https://robokits.co.in/motor-drives-drivers/rhino-cytron-dc-motor-drivers/cytron-10amp-7v-30v-dc-motor-driver-for-r-c-2-channel-mddrc10-original
 - Comparison basis: /home/claude/kb/mddrc5.md (MDDRC5 Datasheet Rev 1.0, March 2026)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

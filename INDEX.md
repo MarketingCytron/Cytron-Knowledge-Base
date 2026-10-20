@@ -29,6 +29,8 @@ This is the public edition. Internal working notes (internal document links, pri
 | **1. Product fact sheets** | `fact-sheets/` | Cytron Content Hub "Product fact sheets" form: 13 fixed headings, source-only facts, `[NOT STATED]` where the source is silent | Pasting into the Content Hub; marketing, scripts and articles; the first thing any agent reads |
 | **2. Detailed references** | this folder (`<product>.md`) | Source-tagged reference with pin maps, conflicts and *Needs verification* | Writing code, wiring and tutorials; checking where a fact came from |
 
+Cytron tutorials are an add-on to the product facts: 64 product files have a *Cytron tutorials* section listing only the my.cytron.io tutorials that use that product (series shown once with their part count), and each of those fact sheets lists up to 5 under *Use cases*. Products with no matching tutorial have no section. Tutorials never override [DS] or [UM] specs.
+
 `fact-sheets/ALL-fact-sheets.md` holds every sheet in one file, ready to paste. A fact sheet must never say more than its detailed reference. When a reference changes, update the matching fact sheet in the same edit.
 
 Fact sheet rules (from the Content Hub form): use only what the source states; keep numbers, units and names exactly; `[NOT STATED]` for anything missing; keep every heading in order; keep every stated limitation; marketing language only under *Positioning*; when product page and datasheet disagree give both with their source; price only if a source states one; each alias belongs to one product only.

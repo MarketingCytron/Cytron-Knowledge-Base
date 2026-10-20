@@ -57,6 +57,11 @@ An ESP32 development board built around the ESP32-WROOM-32E-N8 module, in the No
 - Existing NodeMCU ESP32 projects
 - I²C sensor/module prototyping through the Maker Port
 - GPIO learning and debugging with the onboard LEDs
+- Cytron tutorial: [Getting Started with FreeRTOS on ESP32](https://my.cytron.io/tutorial/getting-started-freertos-esp32)
+- Cytron tutorial: [Getting Started with ESP32 & PS4 Controller: Beginner](https://my.cytron.io/tutorial/esp32-ps4controller-beginner)
+- Cytron tutorial: [Getting Started with ESP32 & Blynk](https://my.cytron.io/tutorial/getting-started-esp32-and-blynk)
+- Cytron tutorial: [Getting Started with ESP32 & Node-RED](https://my.cytron.io/tutorial/getting-started-esp32-and-nodered)
+- Cytron tutorial: [ESP32 Control Outputs with Telegram](https://my.cytron.io/tutorial/control-esp32-outputs-with-telegram)
 
 ## Known limitations
 - GPIO LEDs are on only the 14 listed pins, not on every GPIO
@@ -163,6 +168,11 @@ A carrier board that turns a plug-in 30-pin NodeMCU ESP32 into a robot controlle
 - PS4 controller (Bluepad32) and Bluetooth app control
 - IoT projects: ThingSpeak, Blynk, Telegram
 - Controller for the OjanBot ESP32 kit
+- Cytron tutorial: [Smart Farming with ESP32](https://my.cytron.io/tutorial/farm-automation-system-using-roboesp32)
+- Cytron tutorial: [Smart Dustbin with ESP32](https://my.cytron.io/tutorial/smart-dustbin-with-robo-esp32)
+- Cytron tutorial: [Getting Started with Robo ESP32](https://my.cytron.io/tutorial/getting-started-guide-with-robo-esp32)
+- Cytron tutorial: [Control LED & Servo from Raspberry Pi via I2C with RoboESP32](https://my.cytron.io/tutorial/robo-esp32-raspberry-pi-i2c)
+- Cytron tutorial: [Top ESP32 Projects to Kickstart Your IoT Journey part 3](https://my.cytron.io/tutorial/top-esp32-projects-to-kickstart-your-iot-journey-part-3)
 
 ## Known limitations
 - No ESP32 on the board; a NodeMCU ESP32 must be bought separately
@@ -261,6 +271,11 @@ An ESP32-S3 development board in the Adafruit Feather form factor, with GPIO sta
 - IoT work
 - Teaching
 - Cytron IoT Kit
+- Cytron tutorial: [Getting Started with Maker Feather AIoT S3 (Arduino IDE)](https://my.cytron.io/tutorial/getting-started-with-Maker-Feather-AIoT-S3-(ArduinoIDE))
+- Cytron tutorial: [Getting Started with Maker Feather AIoT S3 using CircuitPython](https://my.cytron.io/tutorial/get-started-with-maker-feather-aIot-s3-using-circuitpyhton)
+- Cytron tutorial: [Maker Feather AIOT S3 Data Logging To Firebase](https://my.cytron.io/tutorial/maker-feather-aiot-s3-data-logging-to-firebase)
+- Cytron tutorial: [How To Control LED with Blynk Using Maker Feather AIOT S3](https://my.cytron.io/tutorial/how-to-control-led-with-blynk-using-maker-feather-aiot-s3)
+- Cytron tutorial: [Arducam Mega 3MP with Maker Feather AIOT S3](https://my.cytron.io/tutorial/arducam-mega-3mp-with-maker-feather-aiot-s3)
 
 ## Known limitations
 - The GPIO LEDs, RGB LED, buzzer and both horizontal Maker Ports run from VP: GPIO11 must be HIGH first. CircuitPython and the Arduino core turn VP on; ESP-IDF and generic MicroPython do not
@@ -356,6 +371,11 @@ An Arduino UNO-compatible board built on the ATmega328P, powered and programmed 
 - Testing code without external parts using the onboard LEDs, buzzer and button
 - Troubleshooting with pin LEDs that show input state
 - Portable projects powered by a power bank or Cytron LiPo Power Shield
+- Cytron tutorial: [Installing CH340 Driver on Mac OS](https://my.cytron.io/tutorial/CH340_MacOS)
+- Cytron tutorial: [Car Reverse Beep System Using Ultrasonic Sensor & Maker UNO](https://my.cytron.io/tutorial/measuring-distance-using-ultrasonic-sensor)
+- Cytron tutorial: [Build a Robotic Arm with Servo, Joystick and Arduino Maker UNO](https://my.cytron.io/tutorial/robotic-arm)
+- Cytron tutorial: [Getting Started with 4 Channel Motor Driver and Arduino](https://my.cytron.io/tutorial/getting-started-4-channel-motor-driver-arduino)
+- Cytron tutorial: [Controlling LED on Arduino using IR Remote](https://my.cytron.io/tutorial/controlling-led-on-arduino-using-ir-remote)
 
 ## Known limitations
 - Power from USB only, 4.8–5.2 V; no DC jack and no Vin pin
@@ -534,6 +554,7 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - Building circuits on the onboard breadboard and perfboard
 - Portable projects powered from a powerbank
 - Learning Arduino with the Arduino Learning Guide for Beginners with Maker UNO X
+- Cytron tutorial: [K-Type Thermocouple With Maker UnoX And Blynk](https://my.cytron.io/tutorial/k-type-thermocouple-with-maker-uno-x-and-blynk)
 
 ## Known limitations
 - USB-serial driver not compatible with Windows 7
@@ -634,6 +655,11 @@ A development board in the Arduino UNO form factor built around the Raspberry Pi
 - Offline Dino Game Cheat with Maker Uno RP2040
 - DHT11 sensor data logging
 - Playing a game using a joystick
+- Cytron tutorial: [DHT11 Sensor Data Logging using Maker Uno RP2040](https://my.cytron.io/tutorial/data-logging-maker-uno-rp2040)
+- Cytron tutorial: [Getting Started with Maker Uno RP2040](https://my.cytron.io/tutorial/getting-started-guide-with-maker-uno-rp2040)
+- Cytron tutorial: [Play Game using Joystick on Maker Uno RP2040](https://my.cytron.io/tutorial/joystick-maker-uno-rp2040)
+- Cytron tutorial: [Offline Dino Game Cheat with Maker Uno RP2040](https://my.cytron.io/tutorial/offline-dino-game-cheat-with-maker-uno-rp2040)
+- Cytron tutorial: [Maker UNO RP2040 Project Collection 2024](https://my.cytron.io/tutorial/maker-uno-rp2040-project-collection-2024)
 
 ## Known limitations
 - 3.3 V logic: digital input high max 3.6 V, analog input 0 – 3.3 V; not for 5 V shields or 5 V signals
@@ -722,6 +748,11 @@ An Arduino Nano-form-factor board whose pin header is compatible with the origin
 - Building projects with an Arduino Nano-compatible board ("Simplifying Arduino for Projects")
 - Playing a tone or melody on the onboard piezo buzzer
 - Reading the onboard user button on D2 from the user program
+- Cytron tutorial: [Heart Rate Monitor Using Pulse Sensor and Maker Nano](https://my.cytron.io/tutorial/heart-rate-monitor-using-pulse-sensor-and-maker-nano)
+- Cytron tutorial: [Social Distance Alert Wristband Using Arduino (Maker Nano)](https://my.cytron.io/tutorial/social-distance-alert-wristband-using-arduino-maker-nano)
+- Cytron tutorial: [Control NeoPixel RGB LED Color Code Using Keypad and Maker Nano](https://my.cytron.io/tutorial/control-neopixel-rgb-led-color-code-using-keypad-and-maker-nano)
+- Cytron tutorial: [Maker Nano Heartbeat Monitoring With Mlx30102](https://my.cytron.io/tutorial/maker-nano-heartbeat-monitoring-with-mlx30102)
+- Cytron tutorial: [Gas Detector Using The MQ2 Sensor on Maker NANO](https://my.cytron.io/tutorial/gas-detector-using-mq2-sensor-on-maker-nano)
 
 ## Known limitations
 - DC +5V output is limited to 100 mA and DC +3V3 to 50 mA, both including onboard usage
@@ -801,6 +832,10 @@ An Arduino Nano form-factor microcontroller board built on the Raspberry Pi RP20
 ## Use cases
 - Projects that need an Arduino Nano form factor with an RP2040 MCU
 - Connecting Qwiic, STEMMA QT or Grove modules through the Maker Ports
+- Cytron tutorial: [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040)
+- Cytron tutorial: [Display Images on Graphic LCD with Maker Nano RP2040](https://my.cytron.io/tutorial/display-image-on-the-graphic-lcd-using-maker-nano-rp2040-and-circuitpython)
+- Cytron tutorial: [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor)
+- Cytron tutorial: [Gesture Control With Maker Nano RP2040 And APDS9960](https://my.cytron.io/tutorial/gesture-control-with-makernanorp2040-and-apds9960)
 
 ## Known limitations
 - 3.3 V logic: digital input high level max 3.6 V, so 5 V signals can't drive the pins directly
@@ -886,6 +921,11 @@ A Cytron version of the Arduino UNO built on an SMD ATmega328 with the Optiboot 
 - Stacking Arduino UNO shields (e.g. LCD Keypad shield)
 - Mobile robots with shields (e.g. wireless remote omni robot with SHIELD-XBEE and FD04A-R2)
 - Stacking onto strip/donut board for custom circuits
+- Cytron tutorial: [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno)
+- Cytron tutorial: [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor)
+- Cytron tutorial: [IoT Project with LoRaWAN Using Cytron LoRa-RFM Shield & Helium](https://my.cytron.io/tutorial/build-an-iot-project-using-lorawan-network-with-cytron-lora-rfm-shield-and-helium-console)
+- Cytron tutorial: [Getting Started with Light Sensor Module (SN-LIGHT-MOD)](https://my.cytron.io/tutorial/getting-started-light-sensor-module-sn-light-mod)
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
 
 ## Known limitations
 - 5V regulator 1 A rating is given only with Vin at 12V
@@ -1033,6 +1073,8 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Teaching robotics with simplified wiring and power options (educators and training centres)
 - Adding sensors and modules through Grove ports and the Maker Port without messy wiring
 - Troubleshooting wiring vs code with status LEDs and motor test buttons
+- Cytron tutorial: [Getting Started with Robo Uno Shield](https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield)
+- Cytron tutorial: [Display Animation on OLED with Maker UNO and Robo UNO Shield](https://my.cytron.io/tutorial/display-animation-on-oled-with-maker-uno-and-robo-uno-shield)
 
 ## Known limitations
 - Power input 3.6–6 V only (absolute maximum); only single-cell batteries are supported
@@ -1119,6 +1161,8 @@ An Arduino-form-factor shield that converts a SONY PS2 (DualShock) controller, w
 - Reading joystick and button states of a PS2 controller as easily as reading UART data
 - Remote-controlling Arduino robots with a wired or wireless PS2 controller
 - Controlling the PS2 controller's vibration motors from the Arduino
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
+- Cytron tutorial: [Wirelessly Control OjanBot with PS2 Shield](https://my.cytron.io/tutorial/ojan-bot-with-ps2-shield)
 
 ## Known limitations
 - Powered only from the Arduino's 5 V (4.5–5.5 V); up to 500 mA consumption
@@ -1208,6 +1252,10 @@ An Arduino shield carrying an Espressif ESP-WROOM-02 (ESP8266) Wi-Fi module prel
 - Performing AT tests and sending AT commands to the ESP8266 from the PC
 - Using the ESP8266 as an additional microcontroller with custom firmware (advanced users)
 - Extra file storage with the microSD slot; small circuits on the prototyping area
+- Cytron tutorial: [Arduino Blynk Lesson 4 : Timer](https://my.cytron.io/tutorial/arduino-blynk-lesson-4-timer)
+- Cytron tutorial: [Arduino Blynk Lesson 2 : Notification](https://my.cytron.io/tutorial/arduino-blynk-lesson-2-notification)
+- Cytron tutorial: [Arduino Blynk Lesson 1: LED](https://my.cytron.io/tutorial/arduino-blynk-lesson-1-led)
+- Cytron tutorial: [Arduino Blynk Lesson 3 : Servo](https://my.cytron.io/tutorial/arduino-blynk-lesson-3-servo)
 
 ## Known limitations
 - D4 is reserved for the microSD chip select
@@ -1440,6 +1488,7 @@ An Arduino-format shield that extends all pins of the Arduino out to 3.5mm pitch
 - Screwing wires directly to the Arduino pins instead of using jumper wires
 - Prototyping circuits on the 0.1" through-hole area while the Arduino pins remain available on screw terminals
 - Stacking under another shield (stackable headers)
+- Cytron tutorial: [Arduino + 2A Motor Shield + Encoder Motor](https://my.cytron.io/tutorial/arduino-2a-motor-shield-encoder-motor)
 
 ## Known limitations
 - Terminal count, terminal order and terminal ratings are not stated in the Getting Started Guide
@@ -1811,6 +1860,8 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - Project 3: read the IR line sensors; follow a black line; stop at a full black line
 - Project 4: play melodies on the Maker UNO buzzer (toneMelody, Super Mario, Baby Shark, Birthday Song)
 - Reuse the parts to build new robots from cardboard, cartons, bottles or old toys
+- Cytron tutorial: [Program PikaBot Using mBlock](https://my.cytron.io/tutorial/program-pikabot-using-mblock)
+- Cytron tutorial: [Control PikaBot Using a Phone Through Bluetooth](https://my.cytron.io/tutorial/control-pikabot-using-a-phone-through-bluetooth)
 
 ## Known limitations
 - The booklet PDF is image-only; its wiring diagrams were not readable for this sheet
@@ -1906,6 +1957,11 @@ A robot controller carrier board for the Raspberry Pi Pico / Pico W. The Pico pl
 - SSD1315 OLED text display over I2C
 - NTP clock
 - IoT examples: simple HTTP server, ThingSpeak, Blynk
+- Cytron tutorial: [Getting Started Guide with Robo Pico using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-robo-pico-using-circuitpython)
+- Cytron tutorial: [Learn Robotics with Bocobot Car Kit and Robo Pico](https://my.cytron.io/tutorial/build-bocobot-car-with-robo-pico)
+- Cytron tutorial: [Setting up the MOTION 2350 Pro](https://my.cytron.io/tutorial/get-started-motion-2350-pro-circuitpython-setting-up-robo-pico)
+- Cytron tutorial: [How to Create Temperature Gauge Using Pi Pico](https://my.cytron.io/tutorial/how-to-create-temperature-gauge-using-pi-pico)
+- Cytron tutorial: [Build an RC robot car using Pi Pico W and Robo Pico](https://my.cytron.io/tutorial/build-an-rc-robot-car-using-pi-pico-w-and-robo-pico)
 
 ## Known limitations
 - No microcontroller on the board; a Raspberry Pi Pico or Pico W is needed
@@ -2029,6 +2085,11 @@ A project and innovation board for the Raspberry Pi Pico 2 W with built-in senso
 - Color Based Water pH System
 - Smart Microphone Alert System
 - Data logging to the Pico's flash with CircuitPython
+- Cytron tutorial: [AI HuskyLens With EDU PICO V2 : Step-by-Step Guide](https://my.cytron.io/tutorial/edupico_with_huskylens)
+- Cytron tutorial: [Create a Flappy Bird game in EDU PICO V2 with skin feel](https://my.cytron.io/tutorial/create-a-flappy-bird-game-in-edu-pico-v2-with-skin-feel)
+- Cytron tutorial: [EDU PICO V2 Wireless Communication System](https://my.cytron.io/tutorial/edu-pico-v2-wireless-communication-system)
+- Cytron tutorial: [Build a Gesture Snake game inside EDU PICO V2](https://my.cytron.io/tutorial/build-a-gesture-snake-game-inside-edu-pico-v2)
+- Cytron tutorial: [Smart Microphone Alert System Using EDU PICO V2](https://my.cytron.io/tutorial/smart-microphone-alert-system-using-edu-pico-v2)
 
 ## Known limitations
 - Spec values are absolute maximum ratings
@@ -2139,6 +2200,11 @@ A robot controller board with the Raspberry Pi RP2040 microcontroller soldered o
 - Driving 2 brushed DC motors or 1 bipolar/unipolar stepper motor
 - Driving up to 4 RC servo motors
 - Connecting Grove modules (digital, analog, I2C, SPI, UART)
+- Cytron tutorial: [Build Otto DIY Robot Using Maker Pi RP2040](https://my.cytron.io/tutorial/build-otto-diy-robot-using-maker-pi-rp2040)
+- Cytron tutorial: [Object Sense With Servo Using Maker Pi RP2040](https://my.cytron.io/tutorial/object-sense-with-servo-using-maker-pi-rp2040)
+- Cytron tutorial: [Hungry Robot, powered by Maker Pi RP2040 and CircuitPython](https://my.cytron.io/tutorial/hungry-robot-powered-by-maker-pi-rp2040-and-circuitpython)
+- Cytron tutorial: [Maker Pi RP2040](https://my.cytron.io/tutorial/getting-started-with-rbm-maker-pi-rp2040)
+- Cytron tutorial: [Maker Pi RP2040 Mobile Robot](https://my.cytron.io/tutorial/maker-pi-rp2040-mobile-robot)
 
 ## Known limitations
 - Spec values are absolute maximum ratings
@@ -2228,6 +2294,11 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Metronome with Maker Pi Pico, programmed with CircuitPython
 - Ultrasonic HC-SR04P Using Raspberry Pi Pico
 - IoT-enabling a project with an ESP-01 module
+- Cytron tutorial: [Keyboard Emulator Using Raspberry Pi Pico (Maker Pi Pico) and CircuitPython](https://my.cytron.io/tutorial/keyboard-emulator-using-raspberry-pi-pico-maker-pi-pico-and-circuitpython)
+- Cytron tutorial: [Write Read Data to SD Card Using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/write-read-data-to-sd-card-using-maker-pi-pico-and-circuitpython)
+- Cytron tutorial: [Bluetooth HC-05 Master-Slave Configuration with CircuitPython](https://my.cytron.io/tutorial/bluetooth-hc-05-master-slave-configuration-using-circuitpython)
+- Cytron tutorial: [DIY USB Keyboard Mouse Using Maker Pi Pico](https://my.cytron.io/tutorial/diy-usb-keyboard-mouse-using-maker-pi-pico)
+- Cytron tutorial: [DIY USB MIDI Drum Kit using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/diy-usb-midi-drum-kit-using-maker-pi-pico-and-circuitpython)
 
 ## Known limitations
 - Spec values are absolute maximum ratings
@@ -2393,6 +2464,11 @@ A robot controller board built on the Raspberry Pi RP2350, with a 4-channel brus
 - Building an advanced robot while minimizing effort on electronics and focusing on mechanics
 - Robots with mecanum wheels using the 4-channel driver
 - Robots controlled by a USB joystick/gamepad through the USB host port
+- Cytron tutorial: [Getting Started with HuskyLens & Arduino](https://my.cytron.io/tutorial/getting-started-with-huskylens-and-arduino)
+- Cytron tutorial: [Getting Started with MOTION 2350 Pro using CircuitPython](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-cp)
+- Cytron tutorial: [Getting Started with MOTION 2350 Pro using Arduino IDE](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-using-arduino-ide)
+- Cytron tutorial: [Motion 2350 Pro with FlySky and HotRC](https://my.cytron.io/tutorial/motion-2350-pro-with-flysky-and-hotrc)
+- Cytron tutorial: [Getting Started with Motion 2350 Pro Robot Kit](https://my.cytron.io/tutorial/getting-started-with-motion-2350-pro-robot-kit)
 
 ## Known limitations
 - Rev 2.0 ratings (5 A continuous / 10 A peak) apply to Rev 2.0 only; Rev 1.0 is rated 3 A continuous / 5 A peak and has no motor overcurrent protection
@@ -2558,6 +2634,10 @@ A robotics and motion-control expansion board for the BBC micro:bit that drives 
 - Robots and motion-control projects with micro:bit ("simplifying robots & motion control projects making with micro:bit")
 - Projects with mechanical movements using DC motors and servos
 - Adding sensors and modules through the GPIO breakout and Maker Ports
+- Cytron tutorial: [Build an Autonomous Obstacle-Avoiding Robot Car Using MOTION:BIT](https://my.cytron.io/tutorial/build-an-obstacle-avoiding-robot-car-using-motionbit)
+- Cytron tutorial: [Getting Started with MOTION:BIT & Projects Guide](https://my.cytron.io/tutorial/getting-started-with-motion-bit-and-projects-guide)
+- Cytron tutorial: [CONTROL OMNI ROBOT CAR WITH MOTION:BIT USING BLUETOOTH APP](https://my.cytron.io/tutorial/control-omni-robot-car-with-motion:bit-using-bluetooth-app)
+- Cytron tutorial: [Line Following with MOTION:BIT and Maker Line](https://my.cytron.io/tutorial/line_following_robot_car_using_motionbit)
 
 ## Known limitations
 - Power input 3.6–6 V absolute maximum
@@ -2647,6 +2727,7 @@ A higher-voltage robotics and motion-control expansion board for the BBC micro:b
 ## Use cases
 - Controlling DC motors and servo motors with micro:bit ("Simplifying Motion Control with micro:bit")
 - Adding sensors and modules through the GPIO breakout and Maker Ports
+- Cytron tutorial: [Getting Started with MOTION:BIT Pro](https://my.cytron.io/tutorial/getting-started-with-motion-bit-pro)
 
 ## Known limitations
 - External input 7–12 V; absolute maximum 6–16 V
@@ -2693,7 +2774,7 @@ SUMO:BIT, SUMOBIT, SUMO-BIT, SUMO BIT
 A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plugs in two external MD13S motor drivers, and provides opponent-sensor, edge-sensor, servo/RC, RGB LED, mode-switch and joystick connections.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: SUMO-BIT (my.cytron.io model code)
 - Power input voltage (LiPo battery): 7 V min, 25 V max; reverse polarity protection
 - Vibration-proof on/off slide switch with MOSFET latching circuit; green power LED
 - Battery voltage can be monitored programmatically (battery + terminal feeds an analog input)
@@ -2738,6 +2819,11 @@ A sumo robot expansion board for the BBC micro:bit. It takes a LiPo battery, plu
 - Selecting a tactic or mode with the DIP switch before a match
 - Wireless joystick control through the USB-A port
 - SUMO:BIT Robot Kit builds
+- Cytron tutorial: [Build Sumo Robot with micro:bit (SUMO:BIT)](https://my.cytron.io/tutorial/build-sumo-robot-with-sumobit)
+- Cytron tutorial: [2 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/2-wheel-robot-battle-with-sumobit)
+- Cytron tutorial: [Getting started with Soccer Robot using SUMO:BIT](https://my.cytron.io/tutorial/soccer-robot-using-sumo-bit)
+- Cytron tutorial: [Robot Battle RC Mode with HotRC](https://my.cytron.io/tutorial/SUMO:BIT_RC_Mode_with_HOT_RC)
+- Cytron tutorial: [4 Wheel Robot Battle with SUMO:BIT](https://my.cytron.io/tutorial/4-wheel-robot-battle-with-sumobit)
 
 ## Known limitations
 - Battery input must stay within 7–25 V (LiPo)
@@ -2780,7 +2866,7 @@ REKA:BIT, REKABIT, REKA-BIT, REKA BIT, REKA:BIT Simplifying Robotics with micro:
 A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC motor driver, 4 servo ports, RGB LEDs and 6 Grove ports. It works with micro:bit V1 and V2.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: REKABIT-NB (without micro:bit, my.cytron.io model code); with-micro:bit code not stated
 - Power input voltage: 3.6 V min, 6 V max (DC jack)
 - On/Off switch and power LED
 - Low Voltage LED: blinks when the power input is below 3.6V; can be used as the low battery indicator
@@ -2819,6 +2905,11 @@ A robotics expansion board for the BBC micro:bit with a built-in 2-channel DC mo
 - Student projects with mechanical movement using DC motors and servos
 - Adding sensors and modules through Grove ports
 - REKA:BIT RBT Project Kit (STEAM and RBT projects for beginners)
+- Cytron tutorial: [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit)
+- Cytron tutorial: [Build an Automatic Plant Watering System with REKA:BIT and micro:bit](https://my.cytron.io/tutorial/automatic-plant-watering-system-using-rekabit)
+- Cytron tutorial: [Build a Smart IoT Alarm System with micro:bit and Telegram Alerts](https://my.cytron.io/tutorial/build-smart-alarm-system-using-iot-with-microbit)
+- Cytron tutorial: [Build an IoT Plant Monitoring System with MicroBit and Grove WiFi Module](https://my.cytron.io/tutorial/build-an-iot-plant-monitoring-system-with-microbit-and-grove-wifi-module)
+- Cytron tutorial: [AI-Driven Recycling Centre with HuskyLens and REKA:BIT](https://my.cytron.io/tutorial/aI-driven-recycling-centre-with-huskylens-and-rekabit)
 
 ## Known limitations
 - Power input 3.6–6 V; above 7V the servo and DC motor power is cut off
@@ -2863,7 +2954,7 @@ ZOOM:BIT, ZOOMBIT, ZOOM BIT, ZOOM:BIT Robot Car Kit, ZOOM:BIT Robot Car
 A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with a line sensor, an ultrasonic sensor, two LED headlights, two DC motors and a servo-driven head. It comes with a printed building and coding guide book and a line following track.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: ZOOMBIT (main shop page); V-ZOOMBIT (second shop listing used by the Smart AI Lens tutorials)
 - Purchase options: ZOOM:BIT with micro:bit V2 included; ZOOM:BIT without micro:bit; ZOOM:BIT Classroom Pack (10x with micro:bit V2 included)
 - Controller board: REKA:BIT (with or without micro:bit)
 - Kit contents: Zoom Track, REKA:BIT (with or without micro:bit), Maker Line Sensor, Grove Cable x4, Ultrasonic Sensor, LED Module x2, DC Motor & Wheel x2, Screwdriver, Screw & Nut x4, Castor, Double-sided Tape x5, Power & Data Cable, Servo Motor, White Rivet x4, Black Rivet x8, AA Battery x4, Battery Holder; printed guide book
@@ -2913,6 +3004,11 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Change from one mode to another
 - Remote control (bonus chapter)
 - ZOOM:BIT with HuskyLens (Cytron video content and workshops)
+- Cytron tutorial: [Differences Between Newer and Earlier Versions of Ultrasonic Sensor HC-SR04P](https://my.cytron.io/tutorial/differences-between-newer-and-earlier-versions-of-ultrasonic-sensor-hc-sr04p)
+- Cytron tutorial: [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk)
+- Cytron tutorial: [AI with ZOOM:BIT: Introduction & Hardware Setup](https://my.cytron.io/tutorial/ai-with-zoombit-introduction--hardware-setup)
+- Cytron tutorial: [Chapter 1: Setting Up Smart AI Lens & Battery with ZOOM:BIT](https://my.cytron.io/tutorial/setting-up-smart-ai-lens-and-battery-with-zoombit)
+- Cytron tutorial: [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini)
 
 ## Known limitations
 - The micro:bit is not included in the "ZOOM:BIT without micro:bit" option
@@ -3005,6 +3101,11 @@ A micro:bit training and project kit: a board with built-in modules (buzzer, sen
 - Projects with up to 3 servo motors and 2 DC motors while playing music
 - AI projects with Teachable Machine (tutorial series ch.1–6: object sorting, face recognition door, gesture-controlled fan, colour-controlled motor, object counter)
 - Classroom teaching (Classroom Pack of 10)
+- Cytron tutorial: [3.3V Serial Character LCD Display with micro:bit via I2C](https://my.cytron.io/tutorial/3-3v-serial-character-lcd-display-with-microbit-via-i2c)
+- Cytron tutorial: [Send Meal Selection and Locations through Telegram Bot Using ESP8266 Grove WiFi Module on micro:bit](https://my.cytron.io/tutorial/send-meal-selection-and-locations-through-telegram-bot-using-esp8266-grove-wifi-module-on-microbit)
+- Cytron tutorial: [EDU:BIT Pedestrian Crossing Traffic Lights](https://my.cytron.io/tutorial/edubit-pedestrian-crossing-traffic-lights)
+- Cytron tutorial: [Control LED on EDU:BIT Using IoT Blynk App and Raspberry Pi](https://my.cytron.io/tutorial/control-led-on-edubit-using-iot-blynk-app-and-raspberry-pi)
+- Cytron tutorial: [Automatic Dustbin Using REKA:BIT](https://my.cytron.io/tutorial/automatic-dustbin-using-rekabit)
 
 ## Known limitations
 - The default EDU:BIT MakeCode extension is not compatible with Bluetooth (NeoPixel/RGB dependencies); a modified version is provided in the Teachable Machine Chapter 1 tutorial
@@ -3086,6 +3187,9 @@ A Wi-Fi module board carrying an Ai-Thinker ESP-12F (ESP8266) module, connected 
 - Send Telegram bot messages from micro:bit or Raspberry Pi Pico (Cytron GitHub)
 - Get internet time (SNTP) on micro:bit (Cytron GitHub)
 - Send data to Adafruit IO from Maker Pi Pico / Maker Pi RP2040 with CircuitPython (Cytron GitHub)
+- Cytron tutorial: [Getting Started with Grove WiFi 8266 on micro:bit](https://my.cytron.io/tutorial/get-started-with-grove-wifi-8266-on-the-microbit)
+- Cytron tutorial: [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk)
+- Cytron tutorial: [Connect Grove WiFi 8266 with micro:bit for WiFi & Telegram](https://my.cytron.io/tutorial/grove-wifi-8266-microbit-wifi-telegram-integration)
 
 ## Known limitations
 - Serial RX/GPIO input high level is 2.5–3.6 V max and TX output high is 2.6–3.3 V; the logic is 3.3 V level even though VCC accepts 3–6 V (datasheet)
@@ -3251,6 +3355,7 @@ A micro:bit lesson kit that builds an automatic plant-watering system: a Maker S
 - Visualise soil moisture as a bar graph on the LED matrix
 - Play melodies and sound notifications
 - IoT monitoring with Blynk IoT (IoT version)
+- Cytron tutorial: [RBT Auto Plant Watering Kit Project - Not Enough Water!](https://my.cytron.io/tutorial/rbt-auto-plant-watering-kit-project-not-enough-water)
 
 ## Known limitations
 - The micro:bit is not included in the "without micro:bit" options
@@ -3348,6 +3453,7 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Control BeetleBit using a controller (second micro:bit over radio)
 - Input–output challenge
 - Stepping stone for learners who have mastered ZOOM:BIT, Pikabot, BocoBot or OjanBot
+- Cytron tutorial: [Chapter 1: Setting Up Beetle:Bit with Huskylens 2](https://my.cytron.io/tutorial/chapter-1-setting-up-beetlebit-with-huskylens-2)
 
 ## Known limitations
 - The micro:bit is not included in the "without micro:bit" and "Accessories Kit only" options
@@ -3522,6 +3628,7 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - Remote-controlled sumo robot via wireless USB joystick, hobby RC transmitter, or a second micro:bit as joystick
 - DIP-switch strategy selection for competitions, started by button or IR Sumo Start
 - Practice with the PCB plate; tournaments with the steel blade
+- Cytron tutorial: [Joystick Pairing with SUMO:BIT and Motion 2350 Pro](https://my.cytron.io/tutorial/joystick-pairing-with-sumobit-and-motion-2350-pro)
 
 ## Known limitations
 - Charger not included; extra weights, robot holder tape, Joystick:bit and a second micro:bit are not included
@@ -3842,6 +3949,10 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - RC category of Sumo robot competitions, and both RC and autonomous categories with the same robot
 - Mini sumo robot controlled by a PS2 controller
 - Mini sumo robot controlled by a Bluetooth controller (HC-05 or HC-06)
+- Cytron tutorial: [Maker Mini Sumo with RC Controller](https://my.cytron.io/tutorial/rc-sumo-using-maker-mini-sumo-controller)
+- Cytron tutorial: [Maker Mini Sumo with Bluetooth Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-bluetooth-controller)
+- Cytron tutorial: [Maker Mini Sumo with PS2 Controller](https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller)
+- Cytron tutorial: [Robot Battle Getting Started Instruction](https://my.cytron.io/tutorial/Robot-Battle-Getting-Started-Instruction)
 
 ## Known limitations
 - Motor current limited to 3.0 A continuous per channel; 6.0 A peak only for < 5 seconds
@@ -3949,6 +4060,11 @@ An Arduino UNO-compatible controller board with an onboard 2-channel brushed DC 
 - Autonomous sumo robot (Cytron URC10SumoRobot sample: search, attack and edge back-off)
 - "Building a Sumo Robot" with URC10 (Cytron Hackster guide linked from the user manual)
 - Auto sumo robot started and stopped by an IR Sumo Start module (pack's Auto Kit notes)
+- Cytron tutorial: [1KG Autonomous Sumo Robot Starter Kit User Guide using URC10](https://my.cytron.io/tutorial/1kg_sumo_robot_urc10)
+- Cytron tutorial: [1KG Autonomous Sumo Robot using URC10](https://my.cytron.io/tutorial/1-kg-autonomous-sumo-robot-starter-kit-user-guide-using-urc10)
+- Cytron tutorial: [Mastering Wireless Control with URC10](https://my.cytron.io/tutorial/mastering-wireless-control-with-urc10)
+- Cytron tutorial: [Battle Robot with URC10](https://my.cytron.io/tutorial/battle-robot-with-urc10)
+- Cytron tutorial: [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10)
 
 ## Known limitations
 - No reverse polarity protection; reverse connection damages the board instantly
@@ -4265,6 +4381,7 @@ A plug-and-play, no-coding 1 kg-class sumo robot bundle built on the MDDRC10 R/C
 ## Use cases
 - Radio-controlled 1 kg sumo robot for competitions
 - Plug-and-play sumo robot build with no coding
+- Cytron tutorial: [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10)
 
 ## Known limitations
 - No warranty
@@ -4404,6 +4521,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Linking two boards for 16-servo projects
 - Wireless servo control over XBee (Cytron tutorial)
 - Robotics using RC servos: humanoid robots, biologically inspired robots, robotic arms (User's Manual framing)
+- Cytron tutorial: [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller)
 
 ## Known limitations
 - No on-board regulator: the servo supply goes directly to the servos; over-supply voltage may spoil the servo motor (User's Manual V1.0)
@@ -4615,6 +4733,7 @@ A USB-powered USB-to-UART converter built on an FTDI chip that gives a computer 
 - Loading program into Arduino boards without an onboard USB chip (Arduino Pro Mini, FIO, BBFuino, ArduPilot, Rainbow LED Ring V3)
 - Testing a UART device (example: SKPS PS2 controller converter) from a PC terminal
 - Communication between two PCs using two UC00A boards
+- Cytron tutorial: [Getting Started with Arduino – PRO Mini](https://my.cytron.io/tutorial/getting-started-arduino-pro-mini)
 
 ## Known limitations
 - "Vsel" and "5V" are supplied directly from the computer's USB port; it is advised not to use this power to power application circuits or devices; wrong polarity, wrong voltage or a short might permanently damage the computer
@@ -4809,6 +4928,11 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Line following mobile robot for school project or competition
 - Automated Guided Vehicle (AGV) for industrial use
 - Precise line-following control such as PID using the analog output
+- Cytron tutorial: [ESP32 PD Line Following Robot with Maker Line](https://my.cytron.io/tutorial/esp32-pd-line-following-robot-with-maker-line)
+- Cytron tutorial: [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line)
+- Cytron tutorial: [Raspberry Pi Line Following Robot with Maker Line](https://my.cytron.io/tutorial/raspberry-pi-line-following-robot-with-maker-line)
+- Cytron tutorial: [Maker Nano RP2040 Interfacing With Maker Line Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerline)
+- Cytron tutorial: [4.Line Following](https://my.cytron.io/tutorial/line-following)
 
 ## Known limitations
 - VCC absolute maximum 5.5 V (minimum 3.0 V)
@@ -5103,6 +5227,9 @@ A capacitive soil-moisture sensor on a probe-shaped board with a 4-pin Grove por
 - Detect the presence of water in soil (datasheet)
 - Soil moisture reading on a Grove analog port of a Cytron board (Cytron GitHub examples)
 - Cytron tutorial: 3D Printed Self-Watering Pot featuring Maker Soil Moisture Sensor (2022-03-25)
+- Cytron tutorial: [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor)
+- Cytron tutorial: [3D Printed Battery Holder for Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-battery-holder-for-maker-soil-moisture-sensor)
+- Cytron tutorial: [3D Printed Self-Watering Pot with Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-self-watering-pot-featuring-maker-soil-moisture-sensor)
 
 ## Known limitations
 - Output voltage can reach 5.2 V; at VCC = 5.0 V the DRY band (3.1–3.6 V) is above a 3.3 V ADC's full scale
@@ -5450,6 +5577,7 @@ A small PCB stick with 8 addressable 5050 RGB LEDs (SK6812-based, WS2812B-compat
 ## Use cases
 - Blue/red/green and random colour patterns with Maker Pi Pico and CircuitPython (Cytron tutorial)
 - Boom Barrier Gate and Mobile Robot Car projects in the REKA:BIT RBT Project Kit (RBT kit guide)
+- Cytron tutorial: [Controlling RGB LED Stick with Maker Pi Pico](https://my.cytron.io/tutorial/controlling-neopixel-rgb-led-stick-with-maker-pi-pico)
 
 ## Known limitations
 - The page says it cannot be used with a Linux-based microcomputer or an interpreted microcontroller such as netduino or Basic Stamp (product page); Cytron's own tutorials run it from CircuitPython on Maker Pi Pico and MakeCode on micro:bit
@@ -5580,6 +5708,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 ## Use cases
 - Build your robot car base by using the STEM Robot Building Base Kit (installation guide)
 - 2-wheeled robot car chassis for a micro:bit or RP2040 controller board (REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico)
+- Cytron tutorial: [STEM Robot Building Base Kit Step-by-Step Installation Guide](https://my.cytron.io/tutorial/p-stem-rbb-kit-step-by-step-installation-guide)
 
 ## Known limitations
 - No controller board, motor driver, battery, battery holder, sensors or cable ties are included
@@ -5644,6 +5773,7 @@ A set of square EVA-foam floor tiles printed with black line patterns on a white
 ## Use cases
 - Build a reconfigurable line-following course for robot cars
 - Line following in the Bocobot Car Kit with Robo Pico tutorial
+- Cytron tutorial: [4.Line Following](https://my.cytron.io/tutorial/line-following)
 
 ## Known limitations
 - Combo 8 and Combo 16 contain only Cross, Curve and Straight tiles; Station, Blank and T-Junction tiles come only in Add On packs
@@ -5771,6 +5901,11 @@ A PCB chassis plate for building small mobile robot cars, or for mounting a Cytr
 - Use as an adapter plate to mount a Cytron controller board on another robot chassis
 - Line following with Maker Line, obstacle sensing with an ultrasonic sensor, servo add-ons
 - Fire Fighting Robot using MOTION 2350 Pro; Line Following with Robo Base using URC10 (Cytron tutorials)
+- Cytron tutorial: [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Getting Started with Robo Base](https://my.cytron.io/tutorial/getting-started-with-robo-base)
+- Cytron tutorial: [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10)
+- Cytron tutorial: [Motion 2350 Pro with Huskylens](https://my.cytron.io/tutorial/motion-2350-pro-with-huskylens)
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
@@ -5844,6 +5979,10 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 - Robo Base Mini Line Following Robot with Maker UNO and Maker Drive (Cytron tutorial)
 - Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive (Cytron tutorial)
 - Line Following Robo Base Mini with ESP32 (Cytron project)
+- Cytron tutorial: [Getting Started with Robo Base Mini](https://my.cytron.io/tutorial/getting-started-with-robo-base-mini)
+- Cytron tutorial: [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Line Following Robo Base Mini](https://my.cytron.io/tutorial/line-following-robo-base-mini-esp32)
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
@@ -5913,6 +6052,10 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Build a one-axis or two-axis gripper arm with micro servos
 - ZOOM:BIT with Robo Grip Mini (Cytron project)
 - BEETLE:BIT gripper robot car; STRIKER:BIT servo shooter
+- Cytron tutorial: [Robo Grip Mini Installation Guide](https://my.cytron.io/tutorial/robo-grip-mini-installation-guide)
+- Cytron tutorial: [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini)
+- Cytron tutorial: [3D Printed ZOOM:BIT with 3D Robo Grip](https://my.cytron.io/tutorial/3d-zoombit-with-robo-grip-mini)
+- Cytron tutorial: [RDK X5 Robot Kit with Robo Grip Mini](https://my.cytron.io/tutorial/rdk-x5-robot-kit-with-robo-grip-mini)
 
 ## Known limitations
 - Gripper only option includes no servo and no Robo Bracket
@@ -5997,6 +6140,11 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - Driving two brushed DC motors
 - Driving a stepper motor ("additional bonus feature")
 - Powering the project from a single power source (5V output powers the controller)
+- Cytron tutorial: [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi)
+- Cytron tutorial: [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040)
+- Cytron tutorial: [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino)
+- Cytron tutorial: [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line)
+- Cytron tutorial: [Obstacles Avoiding Robot Using Arduino and Maker Drive](https://my.cytron.io/tutorial/obstacles-avoiding-robot-using-arduino-maker-drive)
 
 ## Known limitations
 - Power input absolute maximum 9.5 VDC (minimum 2.5 VDC)
@@ -6085,6 +6233,7 @@ A 2-channel, bi-directional motor driver for two brushed DC motors or one steppe
 - Driving a stepper motor (one unipolar/bipolar stepper)
 - Bidirectional control of two brushed DC motors
 - Host controllers such as Arduino, Raspberry Pi or PLC
+- Cytron tutorial: [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino)
 
 ## Known limitations
 - Power input absolute maximum 16 VDC (minimum 4 VDC)
@@ -6398,6 +6547,9 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Control a DC motor from SK40C with PIC16F877A
 - Driving two DC geared motors with MD10C by using SKPS + SK40C
 - Measuring DC motor RPM through built-in Hall sensor encoder
+- Cytron tutorial: [Controlling MD10C DC Motor Driver Using Arduino Nano](https://my.cytron.io/tutorial/controlling-10a-dc-motor-driver-using-arduino-nano)
+- Cytron tutorial: [MD10C Fast Testing](https://my.cytron.io/tutorial/md10c-fast-testing)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - No reverse polarity protection: check polarity before power-up
@@ -6481,6 +6633,9 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - Control a DC motor's speed with a 10KΩ potentiometer and its direction with an SPDT switch
 - Control the motor with a PWM signal and a DIR pin
 - Test the functionality of the motor / driver with the test buttons
+- Cytron tutorial: [MD10-POT: Controlling DC Motor without Writing Code](https://my.cytron.io/tutorial/md10-pot-controlling-dc-motor-without-writing-code)
+- Cytron tutorial: [Make Turntable using MD10-POT Motor Driver](https://my.cytron.io/tutorial/turntable-md10pot)
+- Cytron tutorial: [MD10-POT Conveyor Belt Control without Code](https://my.cytron.io/tutorial/MD10-POT_Conveyor_Belt_Control_without_Code)
 
 ## Known limitations
 - Power input 7 V minimum, 30 V maximum
@@ -6634,6 +6789,8 @@ A dual-channel, bi-directional driver for two brushed DC motors, powered from 5�
 - Control the motors manually with the onboard test buttons
 - Control two DC motors from Arduino UNO
 - Control two DC motors from SK40C
+- Cytron tutorial: [Using MDD10A with Arduino UNO](https://my.cytron.io/tutorial/using-mdd10a-arduino-uno)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - Use a battery when driving an inductive load such as a DC brush motor; most switching power supplies shut down when regenerative current from the motor is detected
@@ -6860,6 +7017,9 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Drive a high current brushed DC motor up to 13A continuously
 - Bi-directional control for one brushed DC motor with PWM and DIR signals from a microcontroller
 - Test the motor manually with the onboard MA and MB test switches
+- Cytron tutorial: [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current)
+- Cytron tutorial: [micro:bit with external motor driver - MD13S](https://my.cytron.io/tutorial/microbit-with-external-motor-driver-md13s)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - No polarity protection (product page): check polarity before power-up
@@ -7285,6 +7445,11 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Motor control from a potentiometer, joystick or foot pedal
 - Motor control from a microcontroller via PWM, Simplified Serial or Packetized Serial
 - Up to 8 drivers sharing one microcontroller UART (Packetized Serial)
+- Cytron tutorial: [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current)
+- Cytron tutorial: [Raspberry Pi: Control DC Motor using MDDS10](https://my.cytron.io/tutorial/raspberry-pi-control-dc-motor-using-mdds10)
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
+- Cytron tutorial: [Let’s Arduino Control SmartDriveDuo-10 (MDDS10)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-10)
+- Cytron tutorial: [Improve MDDS10 Performance With External Fan](https://my.cytron.io/tutorial/improve-mdds10-performance-external-fan)
 
 ## Known limitations
 - No polarity protection on the power input / V motor; double check connections before powering up
@@ -7378,6 +7543,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Motor control from an analog joystick
 - Motor control from a microcontroller via PWM, Serial Simplified or Serial Packetized
 - Up to 8 drivers sharing one microcontroller UART Tx pin (Serial Packetized)
+- Cytron tutorial: [Control MDDS30 In Serial Simplified Mode Using Raspberry Pi](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
+- Cytron tutorial: [Remote Raspberry Pi Using Maker pHAT](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi-2)
 
 ## Known limitations
 - No polarity protection on V motor / power input; double check connections before powering up
@@ -7473,6 +7641,7 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Motor control from a joystick or foot pedal with potentiometer
 - Motor control from a microcontroller via PWM, Simplified Serial or Packetized Serial
 - Up to 8 drivers sharing one microcontroller UART Tx pin (Packetized Serial)
+- Cytron tutorial: [Let's Arduino Control Your SmartDriveDuo-60 (MDDS60)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-60)
 
 ## Known limitations
 - No polarity protection on V motor / power input; double check connections before powering up
@@ -7577,6 +7746,7 @@ A single-channel brushed DC motor driver for medium to high power motors, runnin
 - Control from a standard hobby radio control transmitter and receiver, or a microcontroller generating the similar signal
 - Motor controlled by a joystick or foot pedal with potentiometer
 - Microcontroller control via PWM or UART serial
+- Cytron tutorial: [Controlling SmartDrive40 Using 3.3V Microcontroller (Serial Simplified Mode)](https://my.cytron.io/tutorial/controlling-smartdrive40-using-3-3v-microcontroller)
 
 ## Known limitations
 - Drives one motor only; two motors need two boards
@@ -7780,6 +7950,9 @@ A dual-channel DC motor driver controlled directly from an R/C receiver, driving
 - Compact competition robots
 - Compact mobile platforms
 - Space-limited robotics projects
+- Cytron tutorial: [Getting Started with MDDRC5](https://my.cytron.io/tutorial/getting-started-with-mddrc5)
+- Cytron tutorial: [From Test Bench to Champion: MDDRC5 at ROVATION](https://my.cytron.io/tutorial/mddrc5-500g-rc-sumo-rovation-2026)
+- Cytron tutorial: [Build a Robot Sumo 500g R/C with MDDRC5](https://my.cytron.io/tutorial/build-robot-sumo-500g-rc-mddrc5)
 
 ## Known limitations
 - Power input absolute maximum 30 V (minimum 7 V)
@@ -7877,6 +8050,9 @@ A dual-channel brushed DC motor driver controlled directly from an R/C receiver,
 - Combat Robot
 - Sumo Robot
 - RC Toy
+- Cytron tutorial: [Build 1KG RC Sumo Robot using MDDRC10](https://my.cytron.io/tutorial/rcsumo1kg-mddrc10)
+- Cytron tutorial: [1KG RC Sumo Robot Starter Kit User Guide using MDDRC10](https://my.cytron.io/tutorial/1kg_sumo_robot_mddrc10)
+- Cytron tutorial: [1KG RC Sumo Robot Using MDDRC10](https://my.cytron.io/tutorial/1kg-rc-sumo-robot-using-mddrc10)
 
 ## Known limitations
 - Power input 7–30 V absolute maximum
@@ -7973,6 +8149,9 @@ A single-channel, bidirectional brushed DC motor driver in a metal enclosure, ra
 - Custom OEM machinery
 - Standalone field-deployed equipment
 - Doors, actuators, and reversible conveyors
+- Cytron tutorial: [Getting Started with iMD16 (No Code Setup)](https://my.cytron.io/tutorial/getting-started-with-imd16)
+- Cytron tutorial: [Conveyor Belt Control without Code using iMD16](https://my.cytron.io/tutorial/imd16-conveyor-belt-control-without-code)
+- Cytron tutorial: [Cytron Brings its First Industrial DC Motor Driver to the Global Stage](https://my.cytron.io/tutorial/cytron-launches-imd16-industrial-dc-motor-driver)
 
 ## Known limitations
 - No current limiting function: 16 A continuous and 30 A peak (< 10 seconds) are maximum supported operating currents, not an active current limit; operating above the rated current may cause the board to overheat and could damage it
@@ -8080,6 +8259,8 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - System integrator pathway
 - Training (workshops, kits, Industry 4.0 capability building)
 - Custom IRIV solution
+- Cytron tutorial: [Ai-Gestured Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol)
+- Cytron tutorial: [AI Plant Disease Detection with IRIV PiControl](https://my.cytron.io/tutorial/ai-plant-disease-detection-with-iriv-picontrol)
 
 ## Known limitations
 - Digital inputs accept wet contacts only (need an external source, min DC 3.0V 0.2mA, max DC 50V); a plain dry switch will not register
@@ -8284,6 +8465,11 @@ An industrial I/O controller in a fanless metal DIN-rail enclosure, built on the
 - Pulse counting from flow meters, energy meters and rotary encoders, with running totals in Modbus registers polled by a PLC, SCADA or dashboard
 - IoT gateway to Blynk, ThingSpeak and MQTT
 - Agricultural automation
+- Cytron tutorial: [IRIV IO Controller - Send Sensor readings to IRIV PiControl using MQTT](https://my.cytron.io/tutorial/iriv-ioc-sending-data-from-humidity-and-temperature-sensor-to-iriv-picontrol-using-mqtt-protocol)
+- Cytron tutorial: [Getting Started with IRIV IO Controller With Circuit Python](https://my.cytron.io/tutorial/getting-started-with-iriv-io-controller-with-circuit-python)
+- Cytron tutorial: [IRIV PiControl to IO Controller Communication via Modbus TCP](https://my.cytron.io/tutorial/iriv-picontrol-to-io-controller-communication-via-modbus-tcp)
+- Cytron tutorial: [Modbus Configuration Tool for Slave ID and Baudrate Setup](https://my.cytron.io/tutorial/modbus-configuration-tool-slave-id-and-baudrate-setup)
+- Cytron tutorial: [Building a Line-Crossing People Counter with IRIV Vision Studio](https://my.cytron.io/tutorial/building-a-line-crossing-people-counter-using-iriv-vision-studio)
 
 ## Known limitations
 - Analog inputs are not isolated (AGND is shared with system GND)
@@ -8380,6 +8566,7 @@ An IRIV IO Controller (Raspberry Pi RP2350A industrial I/O controller) that ship
 - Factory Floor Digitalization: aggregating machine health parameters, production cycle counts and downtime alerts to feed predictive maintenance dashboards
 - Smart Facilities & Building Automation: centralizing HVAC performance, energy sub-metering and safety alarms across a corporate or university campus into a unified cloud interface
 - Sending field data to a server for processing and visualization out of the box, for software/IT users not familiar with hardware or firmware
+- Cytron tutorial: [Getting Started with IRIV-IOC MQTT Gateway](https://my.cytron.io/tutorial/getting-started-with-iriv-ioc-mqtt-gateway)
 
 ## Known limitations
 - Uses standard MQTT (Port 1883) with no TLS/SSL on the device; for cloud encryption, route the data through a local secure broker or edge gateway
@@ -8481,6 +8668,11 @@ An industrial controller in a fanless metal enclosure, built around the Raspberr
 - Basic machine vision with a UVC USB webcam
 - Inspection stations
 - Offline video monitoring
+- Cytron tutorial: [Digital Signage With IRIV SmartHub CM5](https://my.cytron.io/tutorial/iriv-smarthub-digital-signage)
+- Cytron tutorial: [IRIV SmartHub CM5 Tutorial Series](https://my.cytron.io/tutorial/iriv-smarthub-getting-started)
+- Cytron tutorial: [Inventory Management System with IRIV SmartHub CM5](https://my.cytron.io/tutorial/inventory-management-system-with-smarthub)
+- Cytron tutorial: [Milesight-BeaverIoT Quick Start Guide](https://my.cytron.io/tutorial/milesight-beaveriot-quick-start-guide-smarthub)
+- Cytron tutorial: [IRIV SmartHub CM5: 84 Days of Continuous Operation](https://my.cytron.io/tutorial/iriv-smarthub-cm5-84-days-continuous-operation)
 
 ## Known limitations
 - Mini PCIe socket is USB 2.0 only; PCIe signal is not available, so PCIe-only cards will not work
@@ -8590,6 +8782,11 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Smart surveillance
 - Agriculture, energy and infrastructure monitoring
 - Factory floor, mobile robotics and network-edge deployments
+- Cytron tutorial: [Getting Started with IRIV EdgeAI CM5](https://my.cytron.io/tutorial/getting-started-with-iriv-edgeai-cm5)
+- Cytron tutorial: [Empowering Edge AI: Highlights from the AI Horizon Exhibition at SPICE Arena Penang](https://my.cytron.io/tutorial/AIHorizon25)
+- Cytron tutorial: [IRIV EdgeAI CM5: Enhancing CCTV Cameras](https://my.cytron.io/tutorial/enhance-rtsp-camera-with-iriv-edge-ai)
+- Cytron tutorial: [Automate Shutdown and Power‑On with IRIV Real‑Time Clock](https://my.cytron.io/tutorial/automate-shutdown-and-poweron-with-iriv-realtime-clock)
+- Cytron tutorial: [Custom Object Detection on IRIV Edge AI](https://my.cytron.io/tutorial/custom-object-detection-on-iriv-edge-ai)
 
 ## Known limitations
 - mPCIe socket has only USB 2.0 connected; no PCIe signal
@@ -8785,6 +8982,11 @@ A Raspberry Pi Zero-size pHAT that stacks on the Raspberry Pi 40-pin GPIO header
 - Learning to interface with sensors and actuators and coding with the onboard LEDs, push buttons and buzzer
 - Prototyping with labelled GPIO, SPI, UART and I2C breakouts
 - Hardware shutdown with push buttons
+- Cytron tutorial: [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi)
+- Cytron tutorial: [How to Display on I2C OLED Using Raspberry Pi](https://my.cytron.io/tutorial/display-i2c-oled-using-raspberry-pi)
+- Cytron tutorial: [Telegram Bot on Raspberry Pi OS Using Raspberry Pi 4 Model B](https://my.cytron.io/tutorial/telegram-bot-on-raspberry-pi-os-using-raspberry-pi-4-model-b)
+- Cytron tutorial: [Getting Started with Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/getting-started-maker-drive-raspberry-pi)
+- Cytron tutorial: [Home Notification using Telegram and Raspberry Pi](https://my.cytron.io/tutorial/home-notification-using-telegram-raspberry-pi)
 
 ## Known limitations
 - Power input is USB 5V only (4.8 – 5.2 V absolute maximum)
@@ -8863,6 +9065,9 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - Connecting components to the Raspberry Pi pins with jumper cables
 - Connecting Grove modules over I2C, UART or GPIO
 - Using the onboard buttons and buzzer as programmable inputs and output
+- Cytron tutorial: [Send Temperature and Humidity Data To ThingSpeak Using micro:bit](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4-2)
+- Cytron tutorial: [Maker HAT Base, combine HAT and modules on Raspberry Pi 4](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4)
+- Cytron tutorial: [Maker HAT Base, allows you to easily access the Raspberry Pi 400 GPIO pins](https://my.cytron.io/tutorial/maker-hat-base-allows-you-to-easily-access-the-raspberry-pi-400-gpio-pins)
 
 ## Known limitations
 - 5V is supplied by the Raspberry Pi; the board has no separate power input
@@ -8937,6 +9142,9 @@ A carrier board for the Raspberry Pi Compute Module 4 (CM4 Lite or eMMC) with Ra
 - Maker's carrier board for Raspberry Pi CM4
 - Connecting Grove, QWIIC and Stemma QT modules to a Compute Module
 - Booting a CM4 from NVMe SSD, eMMC or microSD
+- Cytron tutorial: [Getting Started with CM4 Maker Board](https://my.cytron.io/tutorial/getting-started-with-cm4-maker-board)
+- Cytron tutorial: [Node-RED on CM4 Maker Board: Displaying Thermocouple Sensor Data](https://my.cytron.io/tutorial/node-red-on-cm4-maker-board-displaying-thermocouple-sensor-data)
+- Cytron tutorial: [Log Thermocouple Sensor Data to Google Sheets using CM4 Maker Board](https://my.cytron.io/tutorial/log-thermocouple-sensor-data-to-google-sheets-using-cm4-maker-board)
 
 ## Known limitations
 - M.2 SATA SSD is not supported
@@ -9766,6 +9974,7 @@ A one-day hands-on AI fundamentals workshop on the NVIDIA Jetson Orin Nano at th
 - Hands-on real-time object detection, image classification and image regression (product page, workshop tentative)
 - Edge inference on Jetson Orin Nano (product page)
 - Earning an official NVIDIA AI certification (product page)
+- Cytron tutorial: [My Experience Attending the NVIDIA Jetson Workshop by Cytron](https://my.cytron.io/tutorial/jetson-orin-nano-workshop-experience)
 
 ## Known limitations
 - The 30 Sep 2026 date had passed by 2026-10-19

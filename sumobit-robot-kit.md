@@ -141,6 +141,10 @@ Assembly sequence (Assembly (V1) deck) [UM]: (1) fit the two Maker Reflect edge 
 - Motor gear ratio and stall current — torque 3.5 kgf·cm comes only from the packing-list product link.
 - Whether a "3D printed body only" option is still sold (the page now lists four kit options only).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Joystick Pairing with SUMO:BIT and Motion 2350 Pro](https://my.cytron.io/tutorial/joystick-pairing-with-sumobit-and-motion-2350-pro) — Tutorial, 2026 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-sumobit-robot-kits-1kg-sumo-robot-for-microbit — product page facts as read by the coordinator on 2026-10-19 (page not fetched directly).
 - [UM] SUMO:BIT Robot Kit | Assembly (V1), Last Updated 2 Dec 2024 — https://docs.google.com/presentation/d/15mmPIKEZlVMuslrhgAz_jTQuCI3Ud2Z0r1F7EQjnnpk/edit
@@ -152,3 +156,4 @@ Assembly sequence (Assembly (V1) deck) [UM]: (1) fit the two Maker Reflect edge 
 - [GH] https://github.com/CytronTechnologies/Cytron-SUMOBIT — README read via raw.githubusercontent.com; file listing not accessible
 - [GH] https://github.com/CytronTechnologies/pxt-sumobit — README and pxt.json (v1.3.6)
 - KB cross-references: `sumo-bit.md`, `md13s.md`, `maker-object.md`, `maker-reflect.md`, `ir-sumo-start.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

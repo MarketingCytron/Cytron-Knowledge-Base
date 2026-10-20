@@ -134,6 +134,12 @@ Not stated: operating temperature, power-supply current rating, 5V/3V3 current a
 - [3P] Tom's Hardware: board height 17.3 mm; HDMI "4K60"; the CM4 "can be inserted upside down"; price $56 — not used as specs.
 - The page mentions "4 options" but describes two (board only; board + CM4NW216 + accessories) — confirm the other two.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with CM4 Maker Board](https://my.cytron.io/tutorial/getting-started-with-cm4-maker-board) — Tutorial, Beginner, 2023 (series, 8 parts) [PP: tutorial]
+- [Node-RED on CM4 Maker Board: Displaying Thermocouple Sensor Data](https://my.cytron.io/tutorial/node-red-on-cm4-maker-board-displaying-thermocouple-sensor-data) — Tutorial, Intermediate, 2023 [PP: tutorial]
+- [Log Thermocouple Sensor Data to Google Sheets using CM4 Maker Board](https://my.cytron.io/tutorial/log-thermocouple-sensor-data-to-google-sheets-using-cm4-maker-board) — Tutorial, Intermediate, 2023 [PP: tutorial]
+
 ## Sources
 - [DS] CM4 Maker Board Datasheet, Rev 1.2, October 2023 (public Google Doc; read as text and exported to PDF for Figures 1 and 2): https://docs.google.com/document/d/1XmZSR81IN70pndZ2odBmlZgAufiIBawVdKZ71C7101Y/edit
 - [PP] https://my.cytron.io/p-cm4-maker-board-and-kits (read by coordinator 2026-10-16)
@@ -141,3 +147,4 @@ Not stated: operating temperature, power-supply current rating, 5V/3V3 current a
 - [GH] https://raw.githubusercontent.com/CytronTechnologies/MAKER-CM4_Script/main/README.md
 - CAD (not read): https://drive.google.com/drive/folders/1cI4fqBKrXHo-Z5plleaJ9RTZGAdneMa0
 - [3P, cross-check only] https://www.tomshardware.com/reviews/cytron-cm4-maker-board
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

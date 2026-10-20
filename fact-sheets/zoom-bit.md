@@ -10,7 +10,7 @@ ZOOM:BIT, ZOOMBIT, ZOOM BIT, ZOOM:BIT Robot Car Kit, ZOOM:BIT Robot Car
 A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with a line sensor, an ultrasonic sensor, two LED headlights, two DC motors and a servo-driven head. It comes with a printed building and coding guide book and a line following track.
 
 ## Specs and functions
-- Product code: [NOT STATED]
+- Product code: ZOOMBIT (main shop page); V-ZOOMBIT (second shop listing used by the Smart AI Lens tutorials)
 - Purchase options: ZOOM:BIT with micro:bit V2 included; ZOOM:BIT without micro:bit; ZOOM:BIT Classroom Pack (10x with micro:bit V2 included)
 - Controller board: REKA:BIT (with or without micro:bit)
 - Kit contents: Zoom Track, REKA:BIT (with or without micro:bit), Maker Line Sensor, Grove Cable x4, Ultrasonic Sensor, LED Module x2, DC Motor & Wheel x2, Screwdriver, Screw & Nut x4, Castor, Double-sided Tape x5, Power & Data Cable, Servo Motor, White Rivet x4, Black Rivet x8, AA Battery x4, Battery Holder; printed guide book
@@ -60,6 +60,11 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - Change from one mode to another
 - Remote control (bonus chapter)
 - ZOOM:BIT with HuskyLens (Cytron video content and workshops)
+- Cytron tutorial: [Differences Between Newer and Earlier Versions of Ultrasonic Sensor HC-SR04P](https://my.cytron.io/tutorial/differences-between-newer-and-earlier-versions-of-ultrasonic-sensor-hc-sr04p)
+- Cytron tutorial: [Remote Control ZOOM:BIT using Grove 8266 WiFi and Blynk](https://my.cytron.io/tutorial/remote-control-zoombit-using-grove-8266-wifi-and-blynk)
+- Cytron tutorial: [AI with ZOOM:BIT: Introduction & Hardware Setup](https://my.cytron.io/tutorial/ai-with-zoombit-introduction--hardware-setup)
+- Cytron tutorial: [Chapter 1: Setting Up Smart AI Lens & Battery with ZOOM:BIT](https://my.cytron.io/tutorial/setting-up-smart-ai-lens-and-battery-with-zoombit)
+- Cytron tutorial: [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini)
 
 ## Known limitations
 - The micro:bit is not included in the "ZOOM:BIT without micro:bit" option

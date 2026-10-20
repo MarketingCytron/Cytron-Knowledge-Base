@@ -48,6 +48,9 @@ A single-channel brushed DC motor driver, 7–30 V input, 10 A continuous and 30
 - Control a DC motor's speed with a 10KΩ potentiometer and its direction with an SPDT switch
 - Control the motor with a PWM signal and a DIR pin
 - Test the functionality of the motor / driver with the test buttons
+- Cytron tutorial: [MD10-POT: Controlling DC Motor without Writing Code](https://my.cytron.io/tutorial/md10-pot-controlling-dc-motor-without-writing-code)
+- Cytron tutorial: [Make Turntable using MD10-POT Motor Driver](https://my.cytron.io/tutorial/turntable-md10pot)
+- Cytron tutorial: [MD10-POT Conveyor Belt Control without Code](https://my.cytron.io/tutorial/MD10-POT_Conveyor_Belt_Control_without_Code)
 
 ## Known limitations
 - Power input 7 V minimum, 30 V maximum

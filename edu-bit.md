@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| Product code | V-EDUBIT (board code EDUBIT; reseller EDUBIT-NB) [PP]. Farnell/element14 list Manufacturer Part Number "EDUBIT-NB" [3P] |
+| Product code | V-EDUBIT (board code EDUBIT; reseller EDUBIT-NB) [PP]. The tutorial shop links list the page "EDU:BIT Training & Project Kit for micro:bit" with model code `EDUBIT` [PP: tutorial]. Farnell/element14 list Manufacturer Part Number "EDUBIT-NB" [3P] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -150,6 +150,17 @@ The course-overview PDF text came out with columns interleaved; the pairing abov
 - Why the extension depends on the "microphone" package.
 - Per-option prices (the page gives only the range).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [3.3V Serial Character LCD Display with micro:bit via I2C](https://my.cytron.io/tutorial/3-3v-serial-character-lcd-display-with-microbit-via-i2c) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Send Meal Selection and Locations through Telegram Bot Using ESP8266 Grove WiFi Module on micro:bit](https://my.cytron.io/tutorial/send-meal-selection-and-locations-through-telegram-bot-using-esp8266-grove-wifi-module-on-microbit) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [EDU:BIT Pedestrian Crossing Traffic Lights](https://my.cytron.io/tutorial/edubit-pedestrian-crossing-traffic-lights) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Control LED on EDU:BIT Using IoT Blynk App and Raspberry Pi](https://my.cytron.io/tutorial/control-led-on-edubit-using-iot-blynk-app-and-raspberry-pi) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Automatic Dustbin Using REKA:BIT](https://my.cytron.io/tutorial/automatic-dustbin-using-rekabit) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [EDU:bit Objects Counter with Mini Conveyor](https://my.cytron.io/tutorial/edubit-objects-counter-with-mini-conveyor) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [EDU:BIT Kickstarter Campaign - How to Pledge](https://my.cytron.io/tutorial/edubit-kickstarter-campaign-how-to-pledge) — Success Stories, 2020 [PP: tutorial]
+- [Chapter 1: Setting Up EDU:BIT with Teachable Machine (TM)](https://my.cytron.io/tutorial/chapter-1-setting-up-edubit-with-teachable-machine-tm) — Tutorial, Beginner, 2025 (series, 6 parts) [PP: tutorial]
+
 ## Sources
 - [PP] Cytron product page (read by coordinator in a browser, 2026-10-19): https://my.cytron.io/p-edubit-training-and-project-kits-for-microbit — saved as /tmp/claude-0/-home-claude/89df22ce-d748-57bf-95c2-077265d94eeb/scratchpad/m-pp.md
 - [UM] Lesson guide: "Learn Coding Bit by Bit with EDU:BIT Course Overview.pdf": (Cytron document — link not public)
@@ -160,3 +171,4 @@ The course-overview PDF text came out with columns interleaved; the pairing abov
 - [UM-book] Explore STEM & Coding with EDU:BIT (English guide book, 4th printing May 2021) — Farnell copy https://www.farnell.com/datasheets/3685792.pdf (image-only PDF, read visually 2026-10-19)
 - Not readable: http://link.cytron.io/edubit-book-english ; https://gitlab.com/cytrontech/rh2t/edubit
 - [3P] (cross-check only) https://uk.farnell.com/cytron/edubit-nb/programmable-board-education/dp/3942218 ; https://thepihut.com/collections/cytron/products/edu-bit-learning-project-kit-for-micro-bit ; https://www.recantha.co.uk/blog/?p=21134
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

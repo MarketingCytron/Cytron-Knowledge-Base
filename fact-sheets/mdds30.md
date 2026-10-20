@@ -56,6 +56,9 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Motor control from an analog joystick
 - Motor control from a microcontroller via PWM, Serial Simplified or Serial Packetized
 - Up to 8 drivers sharing one microcontroller UART Tx pin (Serial Packetized)
+- Cytron tutorial: [Control MDDS30 In Serial Simplified Mode Using Raspberry Pi](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
+- Cytron tutorial: [Remote Raspberry Pi Using Maker pHAT](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi-2)
 
 ## Known limitations
 - No polarity protection on V motor / power input; double check connections before powering up

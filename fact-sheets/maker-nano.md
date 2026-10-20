@@ -46,6 +46,11 @@ An Arduino Nano-form-factor board whose pin header is compatible with the origin
 - Building projects with an Arduino Nano-compatible board ("Simplifying Arduino for Projects")
 - Playing a tone or melody on the onboard piezo buzzer
 - Reading the onboard user button on D2 from the user program
+- Cytron tutorial: [Heart Rate Monitor Using Pulse Sensor and Maker Nano](https://my.cytron.io/tutorial/heart-rate-monitor-using-pulse-sensor-and-maker-nano)
+- Cytron tutorial: [Social Distance Alert Wristband Using Arduino (Maker Nano)](https://my.cytron.io/tutorial/social-distance-alert-wristband-using-arduino-maker-nano)
+- Cytron tutorial: [Control NeoPixel RGB LED Color Code Using Keypad and Maker Nano](https://my.cytron.io/tutorial/control-neopixel-rgb-led-color-code-using-keypad-and-maker-nano)
+- Cytron tutorial: [Maker Nano Heartbeat Monitoring With Mlx30102](https://my.cytron.io/tutorial/maker-nano-heartbeat-monitoring-with-mlx30102)
+- Cytron tutorial: [Gas Detector Using The MQ2 Sensor on Maker NANO](https://my.cytron.io/tutorial/gas-detector-using-mq2-sensor-on-maker-nano)
 
 ## Known limitations
 - DC +5V output is limited to 100 mA and DC +3V3 to 50 mA, both including onboard usage

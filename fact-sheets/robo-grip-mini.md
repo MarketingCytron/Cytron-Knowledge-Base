@@ -38,6 +38,10 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Build a one-axis or two-axis gripper arm with micro servos
 - ZOOM:BIT with Robo Grip Mini (Cytron project)
 - BEETLE:BIT gripper robot car; STRIKER:BIT servo shooter
+- Cytron tutorial: [Robo Grip Mini Installation Guide](https://my.cytron.io/tutorial/robo-grip-mini-installation-guide)
+- Cytron tutorial: [ZOOM:BIT with Robo Grip Mini](https://my.cytron.io/tutorial/zoombit-with-robo-grip-mini)
+- Cytron tutorial: [3D Printed ZOOM:BIT with 3D Robo Grip](https://my.cytron.io/tutorial/3d-zoombit-with-robo-grip-mini)
+- Cytron tutorial: [RDK X5 Robot Kit with Robo Grip Mini](https://my.cytron.io/tutorial/rdk-x5-robot-kit-with-robo-grip-mini)
 
 ## Known limitations
 - Gripper only option includes no servo and no Robo Bracket

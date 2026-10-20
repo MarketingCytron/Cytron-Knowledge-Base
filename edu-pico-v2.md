@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Product code | `EDU-PICO2` (board name used throughout the datasheet); variant `EDU-PICO2-NB` ships without the Raspberry Pi Pico 2 W [DS]. my.cytron.io sells it as "EDU PICO 2" with two options (with / without Raspberry Pi Pico 2 W) [PP] |
+| Product code | `EDU-PICO2` (board name used throughout the datasheet); variant `EDU-PICO2-NB` ships without the Raspberry Pi Pico 2 W [DS]. my.cytron.io sells it as "EDU PICO 2" with two options (with / without Raspberry Pi Pico 2 W) [PP]; the tutorial shop links list that page with model code `V-EDU-PICO2` [PP: tutorial] |
 | Family | Raspberry Pi Pico education kits |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -180,6 +180,17 @@ Motor driver truth table (Table 4) [DS]: A Low / B Low → Brake; A High / B Low
 - Whether the V1 `boot.py` (Cytron-EDU-PICO repo) linked from the V2 datasheet is the intended file for V2.
 - Shop SKU for the two options (page shows names, not codes).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [AI HuskyLens With EDU PICO V2 : Step-by-Step Guide](https://my.cytron.io/tutorial/edupico_with_huskylens) — Tutorial, Beginner, 2026 (series, 5 parts) [PP: tutorial]
+- [Create a Flappy Bird game in EDU PICO V2 with skin feel](https://my.cytron.io/tutorial/create-a-flappy-bird-game-in-edu-pico-v2-with-skin-feel) — Project, Beginner, 2026 [PP: tutorial]
+- [EDU PICO V2 Wireless Communication System](https://my.cytron.io/tutorial/edu-pico-v2-wireless-communication-system) — Project, Intermediate, 2026 [PP: tutorial]
+- [Build a Gesture Snake game inside EDU PICO V2](https://my.cytron.io/tutorial/build-a-gesture-snake-game-inside-edu-pico-v2) — Project, Beginner, 2026 [PP: tutorial]
+- [Smart Microphone Alert System Using EDU PICO V2](https://my.cytron.io/tutorial/smart-microphone-alert-system-using-edu-pico-v2) — Project, Beginner, 2026 [PP: tutorial]
+- [DIY SpaceShip Game in EDU PICO V2 with Audio Effect](https://my.cytron.io/tutorial/diy-spaceship-game-in-edu-pico-v2-with-audio-effec) — Project, Beginner, 2026 [PP: tutorial]
+- [Color Based Water pH System Using EDU PICO V2](https://my.cytron.io/tutorial/color-based-water-ph-system-using-edu-pico-v2) — Project, Beginner, 2026 [PP: tutorial]
+- [Auto count conveyor with EDUPICO V2](https://my.cytron.io/tutorial/Auto count conveyor with EDUPICO V2) [PP: tutorial]
+
 ## Sources
 - [DS] EDU PICO V2 Datasheet, Rev 1.1, June 2026 — (Cytron document — link not public) (same Rev 1.1 also hosted by Farnell: https://www.farnell.com/datasheets/4795796.pdf)
 - [DS, V1 comparison only] EDU PICO Board Datasheet, Rev 1.0, December 2023 — (Cytron document — link not public)
@@ -187,3 +198,4 @@ Motor driver truth table (Table 4) [DS]: A Low / B Low → Brake; A High / B Low
 - [PP, not read] Product page — https://my.cytron.io/p-edu-pico-2-project-innovation-kit-for-pico-2-w
 - [GH] https://github.com/CytronTechnologies/Cytron-EDU-PICO2 (README; https://raw.githubusercontent.com/CytronTechnologies/Cytron-EDU-PICO2/main/demo_code/circuitpython/code.py and `edu_pico_lib/*.py`)
 - [3P] https://circuitpython.org/board/cytron_edu_v2_pico_2w/ and https://circuitpython.org/board/cytron_edu_pico_w/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

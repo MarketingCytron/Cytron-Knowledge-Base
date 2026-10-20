@@ -47,6 +47,8 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - Project 3: read the IR line sensors; follow a black line; stop at a full black line
 - Project 4: play melodies on the Maker UNO buzzer (toneMelody, Super Mario, Baby Shark, Birthday Song)
 - Reuse the parts to build new robots from cardboard, cartons, bottles or old toys
+- Cytron tutorial: [Program PikaBot Using mBlock](https://my.cytron.io/tutorial/program-pikabot-using-mblock)
+- Cytron tutorial: [Control PikaBot Using a Phone Through Bluetooth](https://my.cytron.io/tutorial/control-pikabot-using-a-phone-through-bluetooth)
 
 ## Known limitations
 - The booklet PDF is image-only; its wiring diagrams were not readable for this sheet

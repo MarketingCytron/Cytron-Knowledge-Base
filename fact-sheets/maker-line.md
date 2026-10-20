@@ -46,6 +46,11 @@ A line sensor with 5 infrared sensors that gives 5 digital outputs (one per sens
 - Line following mobile robot for school project or competition
 - Automated Guided Vehicle (AGV) for industrial use
 - Precise line-following control such as PID using the analog output
+- Cytron tutorial: [ESP32 PD Line Following Robot with Maker Line](https://my.cytron.io/tutorial/esp32-pd-line-following-robot-with-maker-line)
+- Cytron tutorial: [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line)
+- Cytron tutorial: [Raspberry Pi Line Following Robot with Maker Line](https://my.cytron.io/tutorial/raspberry-pi-line-following-robot-with-maker-line)
+- Cytron tutorial: [Maker Nano RP2040 Interfacing With Maker Line Using Arduino IDE](https://my.cytron.io/tutorial/maker-nano-rp2040-interfacing-with-makerline)
+- Cytron tutorial: [4.Line Following](https://my.cytron.io/tutorial/line-following)
 
 ## Known limitations
 - VCC absolute maximum 5.5 V (minimum 3.0 V)

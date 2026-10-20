@@ -53,6 +53,11 @@ A dual-channel brushed DC motor driver that runs two motors from one 7–35 V su
 - Motor control from a potentiometer, joystick or foot pedal
 - Motor control from a microcontroller via PWM, Simplified Serial or Packetized Serial
 - Up to 8 drivers sharing one microcontroller UART (Packetized Serial)
+- Cytron tutorial: [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current)
+- Cytron tutorial: [Raspberry Pi: Control DC Motor using MDDS10](https://my.cytron.io/tutorial/raspberry-pi-control-dc-motor-using-mdds10)
+- Cytron tutorial: [CT Uno + PS2 shield + MDDS10 for mobile robot control](https://my.cytron.io/tutorial/ctuno-ps2-shield-mdds10-mobile-robot-control)
+- Cytron tutorial: [Let’s Arduino Control SmartDriveDuo-10 (MDDS10)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-10)
+- Cytron tutorial: [Improve MDDS10 Performance With External Fan](https://my.cytron.io/tutorial/improve-mdds10-performance-external-fan)
 
 ## Known limitations
 - No polarity protection on the power input / V motor; double check connections before powering up

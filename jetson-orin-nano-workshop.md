@@ -99,7 +99,12 @@ Not applicable (service). Kit power supply stated on the page: 19V 45W [PP]. No 
 - Whether the 21 Oct 2026 and 18 Nov 2026 dates are still open.
 - Whether real-time object detection is actually taught on the day (not on the tentative timetable).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [My Experience Attending the NVIDIA Jetson Workshop by Cytron](https://my.cytron.io/tutorial/jetson-orin-nano-workshop-experience) — Success Stories, 2024 [PP: tutorial]
+
 ## Sources
 - [UM] Jetson Orin Nano Workshop Tentative (Day 1).pdf — Cytron timetable (Google Drive): https://drive.google.com/file/d/1W4ZJX9gzJETGO6qNpKIIxZXKXTTGLwMZ/view
 - [PP] Product page (facts supplied by coordinator, read 2026-10-19): https://my.cytron.io/p-jetson-orin-nano-ai-fundamentals-hands-on-workshop-with-nvidia-certification-v
 - Blocked (not read): https://www.cytron.io/p-jetson-orin-nano-ai-fundamentals-hands-on-workshop-with-nvidia-certification-v
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

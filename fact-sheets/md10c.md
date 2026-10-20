@@ -54,6 +54,9 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from o
 - Control a DC motor from SK40C with PIC16F877A
 - Driving two DC geared motors with MD10C by using SKPS + SK40C
 - Measuring DC motor RPM through built-in Hall sensor encoder
+- Cytron tutorial: [Controlling MD10C DC Motor Driver Using Arduino Nano](https://my.cytron.io/tutorial/controlling-10a-dc-motor-driver-using-arduino-nano)
+- Cytron tutorial: [MD10C Fast Testing](https://my.cytron.io/tutorial/md10c-fast-testing)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - No reverse polarity protection: check polarity before power-up

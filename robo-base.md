@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Product code | `Robo Base (series page code V-ROBO-BASE-MINI)` [PP] — Robo Base and Robo Base Mini are sold as two "series" choices on one product page; no separate Cytron SKU for Robo Base is shown in text |
+| Product code | `Robo Base (series page code V-ROBO-BASE-MINI)` [PP] — Robo Base and Robo Base Mini are sold as two "series" choices on one product page; no separate Cytron SKU for Robo Base is shown in text. A separate shop listing, "Robo Base Basic Bundle" (p-robo-base-basic-kit), has code `KIT-ROBO-BASE` [PP: tutorial] |
 | Family | Robot platforms and parts |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
@@ -107,6 +107,15 @@ No datasheet spec table exists. Facts stated in text:
 - Robo Uno Shield fit — the tutorial names Robo Pico and Robo ESP32 only.
 - Reseller codes `CYTRON-CK-ROBO-BASE-2WD` / `CYTRON-CK-ROBO-BASE-4WD` [3P Switch Science] — not Cytron SKUs shown on the product page.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Getting Started with Robo Base](https://my.cytron.io/tutorial/getting-started-with-robo-base) — Tutorial, Beginner, 2025 (series, 17 parts) [PP: tutorial]
+- [Line Following with Robo Base using URC10](https://my.cytron.io/tutorial/line-following-robo-base-urc10) — Project, Intermediate, 2025 [PP: tutorial]
+- [Motion 2350 Pro with Huskylens](https://my.cytron.io/tutorial/motion-2350-pro-with-huskylens) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Fire Fighting Robot using Motion 2350 Pro](https://my.cytron.io/tutorial/firefighting-robot-using-motion-2350-pro) — Tutorial, Intermediate, 2026 [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-robo-base-mini-and-kits — Robo Base Series page, read by the coordinator 2026-10-19 (options, packing lists, compatible boards, material text, RM9.00–RM112.00, availability 333, warranty 12 months)
 - [PP: tutorial GS-RB] https://my.cytron.io/tutorial/getting-started-with-robo-base — "Getting Started with Robo Base", Sim Jia Hong, 16–19 Jun 2025; sub-pages https://my.cytron.io/tutorial/getting-started-with-rb-<part> for assembly-guide, double-base-2wd-full-assembly, double-base-4wd-full-assembly, dc-motor-and-castors, ultrasonic-sensor, maker-line, micro-servo-motor, 12v-dc-motor, mounting-main-controller-boards, reka-bit, motion-series, uno, robo-series, maker-pi-rp2040, raspberry-pi, jetson-series (all read 2026-10-19)
@@ -114,3 +123,4 @@ No datasheet spec table exists. Facts stated in text:
 - [PP] https://my.cytron.io/p-robo-bracket-for-microservo-motor and https://my.cytron.io/p-robo-grip-mini-kits (fit statements; via `robo-bracket-micro-servo.md`, m-pp.md)
 - [3P] https://www.switch-science.com/products/10708 (Robo Base Kit 2WD) and https://www.switch-science.com/products/10709 (Robo Base Kit 4WD) — packing lists match [PP]; dimensions images only
 - KB cross-references: `robo-base-mini.md`, `robo-grip-mini.md`, `robo-bracket-micro-servo.md`, `beetlebit.md`, `maker-line.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

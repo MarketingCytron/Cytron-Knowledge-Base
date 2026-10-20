@@ -161,6 +161,16 @@ It ships with the UF2 bootloader and CircuitPython preinstalled [DS][GH].
 - The ADC2 / Wi-Fi impact on GPIO13 battery reads on this board is inferred from the [VEN] rule, not tested.
 - Pin maps were transcribed by eye from the pinout image and schematic (my.cytron.io blocked to scripts) — spot-check Maker Port pin order and GPIO LED list on a real board.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Maker Feather AIoT S3 (Arduino IDE)](https://my.cytron.io/tutorial/getting-started-with-Maker-Feather-AIoT-S3-(ArduinoIDE)) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Getting Started with Maker Feather AIoT S3 using CircuitPython](https://my.cytron.io/tutorial/get-started-with-maker-feather-aIot-s3-using-circuitpyhton) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Maker Feather AIOT S3 Data Logging To Firebase](https://my.cytron.io/tutorial/maker-feather-aiot-s3-data-logging-to-firebase) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [How To Control LED with Blynk Using Maker Feather AIOT S3](https://my.cytron.io/tutorial/how-to-control-led-with-blynk-using-maker-feather-aiot-s3) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Arducam Mega 3MP with Maker Feather AIOT S3](https://my.cytron.io/tutorial/arducam-mega-3mp-with-maker-feather-aiot-s3) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Temperature And Humidity Data From SHT40 To Thingspeak With Maker Feather AIOT S3](https://my.cytron.io/tutorial/temperature-and-humidity-data-from-sht40-to-thingspeak-with-maker-feather-aiot-s3) — Tutorial, Beginner, 2023 [PP: tutorial]
+- [Environment Data Monitoring With Maker Feather AIOT S3 and Adafruit IO](https://my.cytron.io/tutorial/environment-data-monitoring-with-maker-feather-aiot-S3-and-adafruit-io) — Tutorial, Beginner, 2023 [PP: tutorial]
+
 ## Sources
 - [DS] Maker Feather AIoT S3 Datasheet Rev 1.1, Jan 2023 — https://docs.google.com/document/d/1vVYSdn84I8Hvi9SWHU54lhH_vWlhD3mwJ6pcSyLNGcE/edit
 - [DS] MAKER-FEATHER-AIOT-S3 Schematic.pdf (REV 1.0.0, 10/18/2022) — https://drive.google.com/file/d/1s7VMlzyGdPTzRH8j-vfVWBLO983qKnwl/view
@@ -172,3 +182,4 @@ It ships with the UF2 bootloader and CircuitPython preinstalled [DS][GH].
 - [GH] https://circuitpython.org/board/cytron_maker_feather_aiot_s3/ (source: https://github.com/adafruit/circuitpython-org/blob/main/_board/cytron_maker_feather_aiot_s3.md)
 - [VEN] https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/adc/adc_oneshot.html ; ESP32-S3-WROOM-1 datasheet (linked from [PP])
 - [3P] https://thepihut.com/products/maker-feather-aiot-s3 ; https://www.cnx-software.com/2023/01/10/maker-feather-aiot-s3-esp32-s3-board-circuitpython-arduino/ ; https://www.espboards.dev/esp32/cytron-maker-feather-aiot-s3/ ; https://docs.cirkitdesigner.com/component/03c3256e-c76c-bf89-ec38-ef23a162afe1/cytron-maker-feather-aiot-s3 ; https://www.micropython.org/download
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

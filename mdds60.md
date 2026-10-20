@@ -137,6 +137,10 @@ No UART TX pin is described; the driver only receives [UM].
 - Maximum PWM input frequency, RC pulse range, operating temperature, fuse rating, terminal wire gauge.
 - Packing list (page tab empty).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Let's Arduino Control Your SmartDriveDuo-60 (MDDS60)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-60) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - SmartDriveDuo-60 MDDS60 User's Manual Rev 1.1, July 2019 (public Google Doc) [UM]: https://docs.google.com/document/d/15ICHc5CqQL8oXdU-n3ZL0_o8Vm4wQCnWOHHEfrEDDaI/view
 - MDDS60 Product User's Manual Rev 1.0, August 2015 (Tindie mirror) [UM-1.0]: https://media.tindie.com/datasheets/5716/2015-09-10-06-59-28/MDDS60UsersManual.pdf
@@ -144,3 +148,4 @@ No UART TX pin is described; the driver only receives [UM].
 - Switch Science listing (cross-check only) [3P]: https://www.switch-science.com/collections/cytron/products/3610 (also links a quick start guide and Fritzing file on Drive; quick start guide not accessible)
 - ThingBits listing (cross-check only) [3P]: https://www.thingbits.in/products/cytron-mdds60-smartdrive-dc-motor-driver-60a-7v-to-45v-dual-channel
 - Product page: not read (https://www.cytron.io/p-mdds60 per Switch Science; blocked from this environment)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

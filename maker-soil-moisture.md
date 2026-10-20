@@ -119,6 +119,12 @@ Grove port [DS Table 1] (the physical pin order on the Grove connector is shown 
 - Whether the "Maker Soil Sensor" named in the Maker Uno RP2040 repo is this product — assumed by name only.
 - Reverse polarity protection and sensor IC / oscillator — not stated (no on-board regulator, per the product page).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Monitor Soil Moisture With Maker Nano RP2040 And Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/maker-nano-rp2040-with-maker-soil-moisture-sensor) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [3D Printed Battery Holder for Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-battery-holder-for-maker-soil-moisture-sensor) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [3D Printed Self-Watering Pot with Maker Soil Moisture Sensor](https://my.cytron.io/tutorial/3d-printed-self-watering-pot-featuring-maker-soil-moisture-sensor) — Tutorial, Beginner, 2022 [PP: tutorial]
+
 ## Sources
 - [DS] MAKER SOIL MOISTURE SENSOR Datasheet, Rev 1.0, January 2022 — https://docs.google.com/document/d/1XErDF1j2W9LaeTdB7ySIbm4T83_ov0TZtVC47lmC7Pg/edit (public; PDF mirror, same revision and tables, read: https://cdn.robotshop.com/media/c/cyt/rb-cyt-361/pdf/maker-soil-moisture-sensor-capacitive-datasheet.pdf)
 - [PP] Product page https://my.cytron.io/p-maker-soil-moisture-sensor (read by the coordinator 2026-10-16: code MAKER-SOIL-MOISTURE, RM20.58, out of stock, warranty 12 months, Grove cable options, datasheet + 3D CAD links)
@@ -126,3 +132,4 @@ Grove port [DS Table 1] (the physical pin order on the Grove connector is shown 
 - [PP tutorial, not fetched] https://tutorial.cytron.io/2022/03/25/3d-printed-self-watering-pot-featuring-maker-soil-moisture-sensor/
 - [GH] via KB entries robo-pico.md (Grove 6 / GP27), robo-esp32.md (Grove 7 / D36), maker-uno-rp2040.md
 - [3P] (cross-check only) https://thepihut.com/products/maker-soil-moisture-sensor-capacitive · https://core-electronics.com.au/maker-soil-moisture-sensor.html · https://www.robotshop.com/products/maker-soil-moisture-sensor-capacitive
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

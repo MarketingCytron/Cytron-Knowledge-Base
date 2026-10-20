@@ -57,6 +57,7 @@ A 1 kg-class sumo robot kit for the BBC micro:bit built around the SUMO:BIT boar
 - Remote-controlled sumo robot via wireless USB joystick, hobby RC transmitter, or a second micro:bit as joystick
 - DIP-switch strategy selection for competitions, started by button or IR Sumo Start
 - Practice with the PCB plate; tournaments with the steel blade
+- Cytron tutorial: [Joystick Pairing with SUMO:BIT and Motion 2350 Pro](https://my.cytron.io/tutorial/joystick-pairing-with-sumobit-and-motion-2350-pro)
 
 ## Known limitations
 - Charger not included; extra weights, robot holder tape, Joystick:bit and a second micro:bit are not included

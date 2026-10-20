@@ -94,7 +94,12 @@ The page's pattern list names the options as "16 Combo, 8 Combo, 4 Cross, 4 Curv
 - **Colour / reflectance figures** of the white surface and black line — not stated.
 - Use in the Bocobot tutorial (which part, which sensor, calibration advice) — tutorial not read.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [4.Line Following](https://my.cytron.io/tutorial/line-following) — Tutorial, Beginner, 2023 (part of "Learn Robotics with Bocobot Car Kit and Robo Pico") [PP: tutorial]
+
 ## Sources
 - [PP] https://my.cytron.io/p-cytron-reconfigurable-line-following-track — read by the coordinator 2026-10-19 (RM44.00–RM176.00; variants and set contents; stock 947; warranty 12 months; material, hardness, size, thickness, line width; info sheet)
 - [PP: tutorial] https://my.cytron.io/tutorial/build-bocobot-car-with-robo-pico — not readable here (blocked); metadata from  index https://raw.githubusercontent.com/MarketingCytron/Restructure-Cytron-Tutorial-Page/main/data/tutorials.json (id 453)
 - KB cross-references: `maker-line.md`, `lsa08.md`, `maker-reflect.md`, `robo-pico.md`, `zoom-bit.md`
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

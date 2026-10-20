@@ -138,6 +138,12 @@ Mode selection — by wiring, no jumper or switch is stated [UM]:
 6. ESP32 use of the Cytron library: the code calls `ledcWrite(_pin1, …)` with no `ledcAttach` in the constructor [GH]; whether ESP32 users must attach LEDC themselves is not documented.
 7. UL94 flammability rating — Cytron reply: "for now we're not sure about that" [PP].
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Controlling MD10C DC Motor Driver Using Arduino Nano](https://my.cytron.io/tutorial/controlling-10a-dc-motor-driver-using-arduino-nano) — Tutorial, Beginner, 2017 [PP: tutorial]
+- [MD10C Fast Testing](https://my.cytron.io/tutorial/md10c-fast-testing) — Tutorial, Beginner, 2012 [PP: tutorial]
+- [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver) — Tutorial, Beginner, 2025 (series, 2 parts) [PP: tutorial]
+
 ## Sources
 - [UM] MD10C Rev3.0 User's Manual (Google Doc, "MD10C R3.0 10Amp DC Motor Driver User's Manual Rev3.0, V1.0, Aug 2018"): https://docs.google.com/document/d/1rgQzn-nWn-qcWNnHjDZvIYqUrdCeBQQxXA-TU3BF0AQ/view
 - [UM-PDF] PDF copy of the same manual (robu.in mirror): https://stgaws.robu.in/wp-content/uploads/2014/12/MD10C-Rev3.0-Users-Manual.pdf
@@ -146,3 +152,4 @@ Mode selection — by wiring, no jumper or switch is stated [UM]:
 - [GH] Cytron Motor Drivers Library: https://github.com/CytronTechnologies/CytronMotorDriver (README, library.properties, CytronMotorDriver.cpp/.h, examples/PWM_DIR/PWM_DIR.ino via raw.githubusercontent.com)
 - [GH] SK40C + MD10C PIC sample: https://github.com/CytronTechnologies/SK40C-MD10C
 - Tutorial: https://tutorial.cytron.io/2013/07/29/controlling-md10c-with-arduino/
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

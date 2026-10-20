@@ -41,6 +41,9 @@ A base board that connects to the Raspberry Pi 400 GPIO by a 40-way ribbon cable
 - Connecting components to the Raspberry Pi pins with jumper cables
 - Connecting Grove modules over I2C, UART or GPIO
 - Using the onboard buttons and buzzer as programmable inputs and output
+- Cytron tutorial: [Send Temperature and Humidity Data To ThingSpeak Using micro:bit](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4-2)
+- Cytron tutorial: [Maker HAT Base, combine HAT and modules on Raspberry Pi 4](https://my.cytron.io/tutorial/maker-hat-base-combine-hat-and-modules-on-raspberry-pi-4)
+- Cytron tutorial: [Maker HAT Base, allows you to easily access the Raspberry Pi 400 GPIO pins](https://my.cytron.io/tutorial/maker-hat-base-allows-you-to-easily-access-the-raspberry-pi-400-gpio-pins)
 
 ## Known limitations
 - 5V is supplied by the Raspberry Pi; the board has no separate power input

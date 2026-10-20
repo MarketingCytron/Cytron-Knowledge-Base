@@ -51,6 +51,11 @@ A beginner project board for the Raspberry Pi Pico, with the Pico soldered onboa
 - Metronome with Maker Pi Pico, programmed with CircuitPython
 - Ultrasonic HC-SR04P Using Raspberry Pi Pico
 - IoT-enabling a project with an ESP-01 module
+- Cytron tutorial: [Keyboard Emulator Using Raspberry Pi Pico (Maker Pi Pico) and CircuitPython](https://my.cytron.io/tutorial/keyboard-emulator-using-raspberry-pi-pico-maker-pi-pico-and-circuitpython)
+- Cytron tutorial: [Write Read Data to SD Card Using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/write-read-data-to-sd-card-using-maker-pi-pico-and-circuitpython)
+- Cytron tutorial: [Bluetooth HC-05 Master-Slave Configuration with CircuitPython](https://my.cytron.io/tutorial/bluetooth-hc-05-master-slave-configuration-using-circuitpython)
+- Cytron tutorial: [DIY USB Keyboard Mouse Using Maker Pi Pico](https://my.cytron.io/tutorial/diy-usb-keyboard-mouse-using-maker-pi-pico)
+- Cytron tutorial: [DIY USB MIDI Drum Kit using Maker Pi Pico and CircuitPython](https://my.cytron.io/tutorial/diy-usb-midi-drum-kit-using-maker-pi-pico-and-circuitpython)
 
 ## Known limitations
 - Spec values are absolute maximum ratings

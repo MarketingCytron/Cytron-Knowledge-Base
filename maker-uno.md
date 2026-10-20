@@ -152,8 +152,60 @@ Pin summary for tutorials:
 - Whether the power header has 5V, 3.3V, GND, RESET in the standard UNO order (implied by "Arduino UNO R3-standard female headers", not listed).
 - Price history: only the current RM37.80 is Cytron-stated.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Installing CH340 Driver on Mac OS](https://my.cytron.io/tutorial/CH340_MacOS) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Car Reverse Beep System Using Ultrasonic Sensor & Maker UNO](https://my.cytron.io/tutorial/measuring-distance-using-ultrasonic-sensor) — Project, Beginner, 2018 [PP: tutorial]
+- [Build a Robotic Arm with Servo, Joystick and Arduino Maker UNO](https://my.cytron.io/tutorial/robotic-arm) — Project, Beginner, 2020 [PP: tutorial]
+- [Getting Started with 4 Channel Motor Driver and Arduino](https://my.cytron.io/tutorial/getting-started-4-channel-motor-driver-arduino) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Controlling LED on Arduino using IR Remote](https://my.cytron.io/tutorial/controlling-led-on-arduino-using-ir-remote) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [USB Serial Communication Between Arduino and Raspberry Pi](https://my.cytron.io/tutorial/usb-serial-communication-between-arduino-and-raspberry-pi) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Getting Started of I2C Serial LCD with Arduino (Maker UNO)](https://my.cytron.io/tutorial/getting-started-i2c-serial-lcd-arduino-maker-uno) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Getting Started with Blynk IoT platform using Maker UNO](https://my.cytron.io/tutorial/getting-started-with-the-new-blynk-iot-platform-using-maker-uno) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [How To Program Arduino (Maker UNO) Using Atmel Studio](https://my.cytron.io/tutorial/program-arduino-maker-uno-using-atmel-studio) — Protip, Beginner, 2018 [PP: tutorial]
+- [Metal and Wet Waste Separator Using Maker Uno](https://my.cytron.io/tutorial/metal-wet-waste-separator-using-maker-uno) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Program Maker UNO Using Chromebook](https://my.cytron.io/tutorial/program-maker-uno-using-chromebook) — Project, Beginner, 2018 [PP: tutorial]
+- [DHT11 Sensor Data Logging using Maker Uno RP2040](https://my.cytron.io/tutorial/data-logging-maker-uno-rp2040) — Tutorial, Beginner, 2024 [PP: tutorial]
+- [Height Measurement Using Ultrasonic Sensor and Dot Matrix on Maker UNO](https://my.cytron.io/tutorial/height-measurement-using-ultrasonic-sensor-and-dot-matrix-on-maker-uno) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Getting Started of GY-521 MPU6050 with Arduino (Maker UNO)](https://my.cytron.io/tutorial/getting-started-gy-521-mpu6050-arduino-maker-uno) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Arduino Device Tracker Using GSM GPS SIM7600E Module](https://my.cytron.io/tutorial/arduino-device-tracker-using-gsm-gps-sim7600e-module) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Maker Uno Portable GPS With DHT 11](https://my.cytron.io/tutorial/maker-uno-portable-gps-with-dht-11) — Tutorial, Intermediate, 2022 [PP: tutorial]
+- [Automatic Doorbell with PIR Motion Sensor](https://my.cytron.io/tutorial/automatic-doorbell-pir-motion-sensor) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Rainbow Spark in Mini House using Maker Uno.](https://my.cytron.io/tutorial/rainbow-spark-in-mini-house-using-maker-uno) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Control A Servo And Display Sensor’s Reading Using The GUI On Arduino.](https://my.cytron.io/tutorial/control-servo-and-display-sensors-reading-using-the-gui-on-arduino) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Automatic Soap Dispenser Using Maker UNO](https://my.cytron.io/tutorial/automatic-soap-dispenser) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Bluetooth Mobile Robot wih Maker Drive](https://my.cytron.io/tutorial/bluetooth-mobile-robot-wih-maker-drive) — Tutorial, Intermediate, 2019 [PP: tutorial]
+- [Colourful Bed Lamp Using Tilt Sensor on Maker UNO](https://my.cytron.io/tutorial/colourful-bed-lamp-using-tilt-sensor-on-maker-uno) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [DS18B20 Waterproof Temperature Sensor with Maker UNO](https://my.cytron.io/tutorial/ds18b20-waterproof-temperature-sensor) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Iron Man Arc Reactor Using LED Ring and Maker UNO](https://my.cytron.io/tutorial/iron-man-arc-reactor-using-led-ring-and-maker-uno) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [K-Type Thermocouple With Maker UnoX And Blynk](https://my.cytron.io/tutorial/k-type-thermocouple-with-maker-uno-x-and-blynk) — Tutorial, Intermediate, 2021 [PP: tutorial]
+- [Maker UNO DHT11 Alphanumeric Display](https://my.cytron.io/tutorial/is-it-possible-to-program-maker-uno-with-python-3) — Tutorial, Beginner, 2022 [PP: tutorial]
+- [Is it possible to program Maker UNO with Python?](https://my.cytron.io/tutorial/is-it-possible-to-program-maker-uno-with-python) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Chocolate Box with Touch Sensor and Arduino](https://my.cytron.io/tutorial/chocolate-box-with-touch-sensor-and-arduino) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Displaying Text Message on Dot Matrix Using Blynk and Arduino](https://my.cytron.io/tutorial/displaying-text-message-dot-matrix-using-blynk-arduino) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Sound Level Detector using Maker UNO paired with ESP8266 Grove WiFi on Blynk](https://my.cytron.io/tutorial/sound-level-detector-using-maker-uno-paired-with-esp8266-grove-wifi-on-blynk) — Tutorial, Beginner, 2021 [PP: tutorial]
+- [Getting Started with Arduino and Blynk](https://my.cytron.io/tutorial/getting-started-with-arduino-and-blynk) — Tutorial, Beginner, 2025 (series, 5 parts) [PP: tutorial]
+- [LED KETUPAT RAYA WITH MAKER UNO](https://my.cytron.io/tutorial/led-ketupat-raya-with-maker-uno) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [Control PikaBot Using a Phone Through Bluetooth](https://my.cytron.io/tutorial/control-pikabot-using-a-phone-through-bluetooth) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [READ RFID TAG USING RFID-RC522 AND ARDUINO](https://my.cytron.io/tutorial/height-measurement-using-ultrasonic-sensor-and-dot-matrix-on-maker-uno-2) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [IMPROVING MINI FAN USING MAKER’S PRODUCT AND ARDUINO](https://my.cytron.io/tutorial/improving-mini-fan-using-makers-product-and-arduino-2) — Tutorial, Beginner, 2019 [PP: tutorial]
+- [Maker UNO RP2040 Project Collection 2024](https://my.cytron.io/tutorial/maker-uno-rp2040-project-collection-2024) — Project, Beginner, 2024 [PP: tutorial]
+- [Clap to Turn On The Light!](https://my.cytron.io/tutorial/clap-turn-light) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Non-Contact Hand Washing Timer Using Maker UNO](https://my.cytron.io/tutorial/non-contact-hand-washing-timer-using-maker-uno) — Tutorial, Beginner, 2020 [PP: tutorial]
+- [MDD10A with Maker UNO to Control DC Motors](https://my.cytron.io/tutorial/mdd10a-maker-uno-dc-motor-control) — Tutorial, Beginner, 2025 (part of "Getting Started with Cytron Motor Driver") [PP: tutorial]
+- [Piano with Maker UNO](https://my.cytron.io/tutorial/piano-maker-uno) — Tutorial, Beginner, 2018 [PP: tutorial]
+- [Maker Uno IoT with ESP8266 Module and Blynk Apps – 1. Hardware Setup (BM)](https://my.cytron.io/tutorial/maker-uno-iot-esp8266-module-blynk-apps-1-hardware-setup-bm) — Project, Beginner, 2018 [PP: tutorial]
+- [Maker Uno IoT with ESP8266 Module and Blynk Apps – 2. Software Setup (BM)](https://my.cytron.io/tutorial/maker-uno-iot-esp8266-module-blynk-apps-2-software-setup-bm) — Project, Beginner, 2018 [PP: tutorial]
+- [Getting Started with Robo Uno Shield](https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield) — Tutorial, Beginner, 2025 (series, 24 parts) [PP: tutorial]
+- [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Maker UNO/Arduino UNO](https://my.cytron.io/tutorial/getting-started-with-rbm-maker-uno-arduino-uno) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base Mini") [PP: tutorial]
+- [Display Animation on OLED with Maker UNO and Robo UNO Shield](https://my.cytron.io/tutorial/display-animation-on-oled-with-maker-uno-and-robo-uno-shield) — Tutorial, Beginner, 2025 [PP: tutorial]
+- [Maker UNO / Arduino UNO](https://my.cytron.io/tutorial/getting-started-with-rb-uno) — Tutorial, Beginner, 2025 (part of "Getting Started with Robo Base") [PP: tutorial]
+
 ## Sources
 - [UM] MAKER-UNO User's Manual, Rev 1.0, Dec 2017, Cytron Technologies Sdn Bhd — public mirror: https://cdn.robotshop.com/media/c/cyt/rb-cyt-250/pdf/cytron-maker-uno-microcontroller-datasheet1.pdf (public; read 2026-10-16 as text)
 - [PP] https://www.cytron.com.my/p-maker-uno-simplifying-arduino-for-education (read 2026-10-16)
 - [GH] https://raw.githubusercontent.com/CytronTechnologies/MakerUno/master/boards.txt · https://raw.githubusercontent.com/CytronTechnologies/cytrontechnologies.github.io/master/package_cytron_makeruno_index.json · https://github.com/CytronTechnologies/MakerUno
 - [3P] (cross-check only) https://www.notebookcheck.com/Maker-Uno-Einplatinenrechner-mit-erleichterter-Fehlersuche.293572.0.html · https://www.manualslib.com/manual/2040269/Cytron-Technologies-Maker-Uno.html (copy of the UM, not opened)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

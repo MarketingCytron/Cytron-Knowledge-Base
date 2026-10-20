@@ -69,6 +69,8 @@ An industrial controller built around the Raspberry Pi Compute Module 4 in a fan
 - System integrator pathway
 - Training (workshops, kits, Industry 4.0 capability building)
 - Custom IRIV solution
+- Cytron tutorial: [Ai-Gestured Controlled with IRIV PiControl](https://my.cytron.io/tutorial/gesture-controlled-with-iriv-picontrol)
+- Cytron tutorial: [AI Plant Disease Detection with IRIV PiControl](https://my.cytron.io/tutorial/ai-plant-disease-detection-with-iriv-picontrol)
 
 ## Known limitations
 - Digital inputs accept wet contacts only (need an external source, min DC 3.0V 0.2mA, max DC 50V); a plain dry switch will not register

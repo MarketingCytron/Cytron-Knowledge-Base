@@ -30,4 +30,4 @@ Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Maker UNO · Maker UNO Plu
 
 - Always check prices, stock and availability on the live product page at [my.cytron.io](https://my.cytron.io) before publishing them.
 - This is the public edition. Internal working notes are kept privately by the Cytron marketing team.
-- Maintained by Cytron Technologies marketing. Last updated 19 Oct 2026.
+- Maintained by Cytron Technologies marketing. Last updated 20 Oct 2026.

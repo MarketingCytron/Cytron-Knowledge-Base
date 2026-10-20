@@ -153,9 +153,15 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 - mBlock extension availability and name.
 - Whether fresh 4xAA alkaline cells stay within the 6 V absolute maximum (DS gives 4xAA as an example).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Getting Started with Robo Uno Shield](https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield) — Tutorial, Beginner, 2025 (series, 24 parts) [PP: tutorial]
+- [Display Animation on OLED with Maker UNO and Robo UNO Shield](https://my.cytron.io/tutorial/display-animation-on-oled-with-maker-uno-and-robo-uno-shield) — Tutorial, Beginner, 2025 [PP: tutorial]
+
 ## Sources
 - [DS] Robo Uno Shield Datasheet, Rev 1.0, February 2025 — https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit (public; PDF mirror: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-428/pdf/cytron-robo-uno-shield-for-arduino-all-in-1-robotics-shield-datasheet.pdf)
 - [GH] https://github.com/CytronTechnologies/Cytron-SHIELD-ROBO-UNO (README.md, Getting_Started_Guide/*, Demo_Code/Demo_Code.ino; commit 823f5c2, 12 Feb 2025) · https://github.com/CytronTechnologies/CytronMotorDriver (CytronMotorDriver.cpp)
 - [PP] Getting Started tutorial (not read — blocked): https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield
 - [VEN] Arduino Uno Rev3 PWM pins (D3, D5, D6, D9, D10, D11) — https://docs.arduino.cc/
 - [3P] (cross-check only) https://www.switch-science.com/products/10305 · https://thepihut.com/products/robo-uno-shield · https://uk.robotshop.com/products/cytron-robo-uno-shield-for-arduino-all-in-1-robotics-shield
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

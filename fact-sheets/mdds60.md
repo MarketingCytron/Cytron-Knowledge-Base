@@ -55,6 +55,7 @@ A dual-channel brushed DC motor driver that runs two motors from one 10–45 V s
 - Motor control from a joystick or foot pedal with potentiometer
 - Motor control from a microcontroller via PWM, Simplified Serial or Packetized Serial
 - Up to 8 drivers sharing one microcontroller UART Tx pin (Packetized Serial)
+- Cytron tutorial: [Let's Arduino Control Your SmartDriveDuo-60 (MDDS60)](https://my.cytron.io/tutorial/lets-arduino-control-smartdriveduo-60)
 
 ## Known limitations
 - No polarity protection on V motor / power input; double check connections before powering up

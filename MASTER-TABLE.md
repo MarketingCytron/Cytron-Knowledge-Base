@@ -39,7 +39,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 | 29 | 12 | [Robo Uno Shield](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | Arduino-compatible boards | Sold | Medium | Medium | 8 | 11 | 3 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2025 |
 | 30 | 24 | [EDU PICO V2](edu-pico-v2.md) | `EDU-PICO2` | Pico / RP2040 / RP2350 boards | Sold | Medium | Medium | 10 | 7 | 3 | Done (2026-10-19) | Datasheet Rev 1.1, Jun 2026 |
 | 31 | 31 | [MOTION:BIT Pro](motion-bit-pro.md) | `MOTION-BIT-PRO` | micro:bit accessories | Sold | Medium-high | Low | 5 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2024 |
-| 32 | 32 | [SUMO:BIT](sumo-bit.md) | `SUMO:BIT` | micro:bit accessories | Sold | Medium-high | Low | 6 | 5 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) |
+| 32 | 32 | [SUMO:BIT](sumo-bit.md) | `SUMO:BIT` | micro:bit accessories | Sold | Medium-high | Low | 6 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) |
 | 33 | 46 | [URC10](urc10.md) | `URC10` | Sumo controllers | Sold | Medium-high | Medium | 8 | 8 | 10 | Done (2026-10-19) | URC10 Sumo Robot Controller Datasheet, Rev 1.0, March 2019 datasheet (local file URC10 Datasheet.pdf) |
 | 34 | 76 | [MDD3A](mdd3a.md) | `MDD3A` | Motor drivers | Sold | Medium-high | Medium | 8 | 4 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Mar 2019 |
 | 35 | 83 | [MD13S](md13s.md) | `MD13S` | Motor drivers | Sold | Medium-high | Medium | 9 | 4 | 8 | Done (2026-10-19) | User's Manual V1.1, Jun 2018 (no datasheet) |
@@ -50,7 +50,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 | 40 | 80 | [MD10C](md10c.md) | `MD10C` | Motor drivers | Sold | Medium | Medium | 7 | 4 | 5 | Done (2026-10-19) | User's Manual Rev3.0 V1.0, Aug 2018 (no datasheet) |
 | 41 | 91 | [MDDS10](mdds10.md) | `MDDS10` | Motor drivers | Sold | Medium-high | Low | 4 | 5 | 5 | Done (2026-10-19) | User's Manual V1.0, Jun 2015 (no datasheet) |
 | 42 | 102 | [IRIV IOC MQTT Gateway](iriv-ioc-mqtt-gateway.md) | `IRIV-IOC-MQTT` | IRIV industrial | Sold | Medium-high | Low | 6 | 10 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Jun 2026 |
-| 43 | 33 | [REKA:BIT](reka-bit.md) | `REKA:BIT` | micro:bit accessories | Sold | Medium-high | Low | 4 | 4 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2021 |
+| 43 | 33 | [REKA:BIT](reka-bit.md) | `REKA:BIT` | micro:bit accessories | Sold | Medium-high | Low | 4 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2021 |
 | 44 | 99 | [IRIV PiControl CM4](iriv-picontrol-cm4.md) | `IRIV-PICL` | IRIV industrial | Sold | Medium-high | Medium | 14 | 8 | 0 | Done (2026-10-19) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.3, Nov 2025 |
 | 45 | 7 | [Maker Uno RP2040](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | Arduino-compatible boards | Sold | Medium-high | Medium | 16 | 9 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2024 |
 | 46 | 109 | [Industrial IO HAT+](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 14 | 5 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Sep 2025 |
@@ -69,7 +69,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 | 59 | 92 | [MDDS30](mdds30.md) | `MDDS30` | Motor drivers | Sold | Medium-high | Low | 7 | 8 | 5 | Done (2026-10-19) | User's Manual Rev 1.2, Sep 2023 (no datasheet) |
 | 60 | 58 | [Maker Line](maker-line.md) | `MAKER-LINE` | Sensors | Sold | Medium-high | Low | 5 | 4 | 5 | Done (2026-10-19) | Datasheet Rev 1.0, Jul 2019 |
 | 61 | 85 | [MDD10A](mdd10a.md) | `MDD10A` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 5 | Done (2026-10-19) | User's Manual V2.0, Jun 2017 (no datasheet) |
-| 62 | 34 | [ZOOM:BIT](zoom-bit.md) | `ZOOM:BIT` | micro:bit accessories | Sold | Medium | Medium | 11 | 4 | 1 | Done (2026-10-19) | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet |
+| 62 | 34 | [ZOOM:BIT](zoom-bit.md) | `ZOOM:BIT` | micro:bit accessories | Sold | Medium | Medium | 11 | 4 | 0 | Done (2026-10-19) | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet |
 | 63 | 6 | [Maker UNO X](maker-uno-x.md) | `MAKER-UNO-X` | Arduino-compatible boards | Sold | Medium | Medium | 11 | 5 | 6 | Done (2026-10-19) | Guide book v1.5, Feb 2023 + product page (no datasheet) |
 | 64 | 16 | [Servo Controller Shield](shield-servo.md) | `SHIELD-SERVO` | Arduino shields (non-motor) | Sold | Medium-high | Medium | 10 | 8 | 0 | Done (2026-10-19) | User's Manual V1.1, Apr 2018 (no datasheet) |
 | 65 | 52 | [SC08A Servo Controller](sc08a.md) | `SC08A` | Servo, RC and interface | Sold | Medium | Medium | 11 | 9 | 0 | Done (2026-10-19) | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) |

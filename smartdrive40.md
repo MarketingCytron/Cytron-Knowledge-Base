@@ -161,6 +161,10 @@ Manual example DIP strings (positions 1–8) [UM]: RC Independent `00000000`; RC
 - Size of current increase from an optional fan; fan current limit on the 5 V output.
 - Exact contents of the Rev 1.0 PDF beyond the items listed (read via text extraction only).
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Controlling SmartDrive40 Using 3.3V Microcontroller (Serial Simplified Mode)](https://my.cytron.io/tutorial/controlling-smartdrive40-using-3-3v-microcontroller) — Tutorial, Intermediate, 2025 [PP: tutorial]
+
 ## Sources
 - [UM] MDS40B User's Manual, Rev 1.1, July 2023 (Google Doc) — https://docs.google.com/document/d/1WtfqfUlUlLCjGR_q33lZQt5xLPtft4zG0jJk5PX1A8Y/edit
 - [UM] MDS40B User's Manual, Rev 1.0, December 2015 (PDF mirror, public) — https://cdn.robotshop.com/media/c/cyt/rb-cyt-179/pdf/mds40b_user_s_manual.pdf
@@ -168,3 +172,4 @@ Manual example DIP strings (positions 1–8) [UM]: RC Independent `00000000`; RC
 - [GH] CytronMotorDriver README — https://raw.githubusercontent.com/CytronTechnologies/CytronMotorDriver/master/README.md
 - [GH] PWM_DIR example — https://raw.githubusercontent.com/CytronTechnologies/CytronMotorDriver/master/examples/PWM_DIR/PWM_DIR.ino
 - [3P] Opencircuit listing (cross-check; carries the Rev 1.1 manual link) — https://opencircuit.shop/product/40amp-10v-45v-smartdrive-dc-motor-driver
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

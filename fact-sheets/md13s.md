@@ -52,6 +52,9 @@ A single-channel, bi-directional driver for one brushed DC motor, powered from 6
 - Drive a high current brushed DC motor up to 13A continuously
 - Bi-directional control for one brushed DC motor with PWM and DIR signals from a microcontroller
 - Test the motor manually with the onboard MA and MB test switches
+- Cytron tutorial: [Peak Current vs Continuous/Rated Current](https://my.cytron.io/tutorial/peak-current-vs-continuousrated-current)
+- Cytron tutorial: [micro:bit with external motor driver - MD13S](https://my.cytron.io/tutorial/microbit-with-external-motor-driver-md13s)
+- Cytron tutorial: [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver)
 
 ## Known limitations
 - No polarity protection (product page): check polarity before power-up

@@ -52,6 +52,11 @@ A 2-channel, bi-directional H-bridge motor driver for two brushed DC motors or o
 - Driving two brushed DC motors
 - Driving a stepper motor ("additional bonus feature")
 - Powering the project from a single power source (5V output powers the controller)
+- Cytron tutorial: [Controlling Stepper Motor Using Maker Drive and Raspberry Pi](https://my.cytron.io/tutorial/controlling-stepper-motor-using-maker-drive-raspberry-pi)
+- Cytron tutorial: [Control DC motor using Maker Drive and CircuitPython on RP2040](https://my.cytron.io/tutorial/control-dc-motor-using-maker-drive-and-circuitpython-on-rp2040)
+- Cytron tutorial: [Getting Started With MDD3A/MAKER DRIVE Using Arduino](https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino)
+- Cytron tutorial: [Building Line Following Robot Using Maker Pi Pico, Maker Drive and Maker Line](https://my.cytron.io/tutorial/building-line-following-robot-using-maker-pi-pico-maker-drive-and-maker-line)
+- Cytron tutorial: [Obstacles Avoiding Robot Using Arduino and Maker Drive](https://my.cytron.io/tutorial/obstacles-avoiding-robot-using-arduino-maker-drive)
 
 ## Known limitations
 - Power input absolute maximum 9.5 VDC (minimum 2.5 VDC)

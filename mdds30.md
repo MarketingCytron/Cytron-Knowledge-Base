@@ -143,6 +143,13 @@ Pin names on MDDS30 are **IN1/IN2** (MDDS10 and MDDS60 use DIG1/DIG2). No UART T
 - Shutdown temperature for MDDS30 (MDDS10/60 shut down >105°C; MDDS30 table ends at ">100 → 30 A").
 - Rev 1.3 board changes (RC-mode jerk fix) are not in the Rev 1.2 manual (Sep 2023) — ask whether a newer manual exists.
 
+## Cytron tutorials
+Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
+- [Introducing 30A Dual Channel DC Motor Driver with Smart Features - SmartDriveDuo-30](https://my.cytron.io/tutorial/introducing-30a-dual-channel-dc-motor-driver-smart-features-smartdriveduo-30) — Protip, Beginner, 2026 [PP: tutorial]
+- [Control MDDS30 In Serial Simplified Mode Using Raspberry Pi](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi) — Project, Intermediate, 2019 [PP: tutorial]
+- [Getting Started with Cytron Motor Driver](https://my.cytron.io/tutorial/getting-started-with-cytron-motor-driver) — Tutorial, Beginner, 2025 (series, 2 parts) [PP: tutorial]
+- [Remote Raspberry Pi Using Maker pHAT](https://my.cytron.io/tutorial/control-mdds30-in-serial-simplified-mode-using-raspberry-pi-2) — Tutorial, Beginner, 2026 [PP: tutorial]
+
 ## Sources
 - SmartDriveDuo-30 MDDS30 User's Manual Rev 1.2, Sept 2023 (public Google Doc) [UM]: https://docs.google.com/document/d/1OstW8T0kRIopWSuMEOyG2h9KNhQ3O4yowwjnp40Z23o/view
 - SmartDriveDuo-30 User's Manual Rev 1.11, July 2019 (forum mirror) [UM-1.11]: https://forum.dronebotworkshop.com/wp-content/uploads/wpforo/attachments/5360/6077-MDDS30UserManual.pdf
@@ -150,3 +157,4 @@ Pin names on MDDS30 are **IN1/IN2** (MDDS10 and MDDS60 use DIG1/DIG2). No UART T
 - Cytron_SmartDriveDuo Arduino library [GH]: https://github.com/CytronTechnologies/Cytron_SmartDriveDuo (src, library.properties, examples; last commit Jul 2023)
 - Switch Science listing (cross-check only) [3P]: https://www.switch-science.com/products/3609
 - Product page: not read (https://www.cytron.io/p-mdds30 linked from the UM packing list; blocked from this environment)
+- [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

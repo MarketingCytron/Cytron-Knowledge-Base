@@ -42,6 +42,10 @@ The smaller PCB chassis plate in Cytron's Robo Base series, for building small m
 - Robo Base Mini Line Following Robot with Maker UNO and Maker Drive (Cytron tutorial)
 - Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive (Cytron tutorial)
 - Line Following Robo Base Mini with ESP32 (Cytron project)
+- Cytron tutorial: [Getting Started with Robo Base Mini](https://my.cytron.io/tutorial/getting-started-with-robo-base-mini)
+- Cytron tutorial: [Robo Base Mini Line Following Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-line-following-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive](https://my.cytron.io/tutorial/robo-base-mini-obstacle-avoidance-robot-with-maker-uno-and-maker-drive)
+- Cytron tutorial: [Line Following Robo Base Mini](https://my.cytron.io/tutorial/line-following-robo-base-mini-esp32)
 
 ## Known limitations
 - No controller board, battery, sensors or servo are included in any kit option
