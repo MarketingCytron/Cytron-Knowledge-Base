@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | Product code | `V-MN2040` [PP] |
-| Family | Robot parts and project bundles |
+| Family | Raspberry Pi Pico, RP2040 and RP2350 boards (starter bundle for the Maker Nano RP2040) |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-19 |
 | Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). The packing list for both variants is now read: the Blynk bundle includes the Grove WiFi 8266 and a Grove cable, and neither bundle lists a 10K resistor |

@@ -81,7 +81,7 @@ One row per product in the Cytron Product Knowledge Base (121 products), in revi
 | 70 | 39 | [BEETLE:BIT](beetlebit.md) | `V-BEETLEBIT` | micro:bit kits | Sold | Medium | Medium | 9 | 5 | 5 | Done (2026-10-19) | Resource hub + MakeCode chapter programs (booklet PDF is image-only) |
 | 71 | 81 | [MD10-POT](md10-pot.md) | `MD10-POT` | Motor drivers | Sold | Medium-high | Low | 7 | 2 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Oct 2018 |
 | 72 | 15 | [LiPo Power Shield](shield-lipo.md) | `SHIELD-LIPO` | Arduino shields (non-motor) | Sold | Medium | Medium | 6 | 3 | 2 | Done (2026-10-19) | User's Manual V1.0, Jan 2016 (no datasheet) |
-| 73 | 29 | [Maker Nano RP2040 Bundles](maker-nano-rp2040-bundles.md) | `V-MN2040` | Pico project bundles | Sold | Medium-high | Low | 7 | 7 | 2 | Done (2026-10-19) | Getting Started docs (2022–2023, no version) |
+| 73 | 29 | [Maker Nano RP2040 Bundles](maker-nano-rp2040-bundles.md) | `V-MN2040` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Low | 7 | 7 | 2 | Done (2026-10-19) | Getting Started docs (2022–2023, no version) |
 | 74 | 48 | [Ikedo Mini Sumo V2](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Sumo robot kits and parts | Sold | Medium-high | Low | 6 | 6 | 3 | Done (2026-10-19) | Ikedo Bot V2 Getting Started Instruction |
 | 75 | 61 | [Maker Reflect S](maker-reflect-s.md) | `MAKER-REFLECT-S` | Sensors | Sold | Medium-high | Low | 5 | 4 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2026 |
 | 76 | 71 | [Robo Bracket (Servo)](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | Robot parts and accessories | Sold | Medium | Medium | 8 | 1 | 6 | Done (2026-10-19) | Product page |

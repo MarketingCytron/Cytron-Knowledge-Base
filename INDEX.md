@@ -102,7 +102,7 @@ Arduino-kit notes for every agent:
 - **Edu Kit vs Learning Box contents differ** (Learning Box: IR sensor, SR04, 1N4007, 2× 2N2222, 10/10/10 resistors). The Edu Kit packing list is not in any Cytron text — don't publish a list.
 - **Maker UNO X guide wiring is for the X board** (it has a Debug switch the plain Maker UNO lacks); don't apply its pin notes to the Maker UNO Learning Box without checking.
 
-### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO)
+### Raspberry Pi Pico, RP2040 and RP2350 boards (Robo, Maker Pi, MOTION, EDU PICO, Maker Nano RP2040 bundles)
 
 | Product | File | Code | Chip | Primary source | Confidence |
 |---|---|---|---|---|---|
@@ -112,19 +112,13 @@ Arduino-kit notes for every agent:
 | Maker Pi Pico | [`maker-pi-pico.md`](maker-pi-pico.md) | `MAKER-PI-PICO` (`MAKER-PI-PICO-NB` = Maker Pi Pico Base, no Pico) | Raspberry Pi Pico soldered on | Datasheet Rev 1.2, Mar 2021 | **Medium-high** |
 | Maker Pi Pico Mini | [`maker-pi-pico-mini.md`](maker-pi-pico-mini.md) | `MAKER-PI-PICO-MINI` (`-NB` = socket, no Pico) | Raspberry Pi Pico / Pico W | Datasheet Rev 1.0, Jun 2022 | **Medium-high** |
 | MOTION 2350 Pro | [`motion-2350-pro.md`](motion-2350-pro.md) | Not stated (mirrors use `MOTION-2350-PRO`) | RP2350 | Datasheet **Rev 2.0, Sep 2025** | **Medium-high** |
+| Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | RP2040 — Maker Nano RP2040 board (Arduino Nano layout) in a starter bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium-high** |
 
 Pico / RP2040 / RP2350 notes for every agent:
 - **MOTION 2350 Pro Rev 2.0 motors are 5 A continuous / 10 A peak per channel**, with over-current, 150 ℃ thermal and >18 V input shutdown. 3 A (and "no over-current protection") is the Rev 1.0 board — don't use 3 A for the current board. Motors GP8–GP15, servos GP0–GP7, buttons GP20/GP21, buzzer GP22, 2 RGB LEDs GP23; Arduino `LED_BUILTIN` = GP2 (a servo pin). Never publish the datasheet's "VIN = VADC / 6.1" until the design team confirms it.
 - **Maker Pi RP2040 brake/coast:** High/High = coast, Low/Low = brake (datasheet). In CircuitPython `throttle = 0` coasts and `throttle = None` brakes — the opposite of Cytron's demo comments. Power 3.6–6 V (USB, LiPo or VIN); motor/servo voltage = input voltage.
 - **Maker Pi Pico is USB-powered only** (4.5–5.5 V; no battery or VIN). GP18 drives both the buzzer and the left audio channel (mute the buzzer when using the jack); audio is not amplified. RGB: Maker Pi RP2040 = 2× WS2812B on GP18; Maker Pi Pico = 1× WS2812B on GP28.
 - **Maker Pi Pico Mini Maker Ports are JST-SH (Qwiic/STEMMA QT)**, not Grove (Grove needs a conversion cable); the GP0/GP1 and GP4/GP5 ports both sit on I2C0. No audio jack, microSD, ESP-01 socket or mute switch (unlike Maker Pi Pico).
-
-### Pico / RP2040 project bundles
-
-| Product | File | Code | What it is | Primary source | Confidence |
-|---|---|---|---|---|---|
-| Maker Nano RP2040 Getting Started Bundles | [`maker-nano-rp2040-bundles.md`](maker-nano-rp2040-bundles.md) | `V-MN2040` | Board + parts bundle; Getting Started / Blynk IoT variants | Getting Started docs (2022–2023, no version) | **Medium-high** |
-
 - **Maker Nano RP2040 + Grove WiFi 8266:** power the Grove WiFi from 5 V, not 3.3 V (the Blynk doc says 3.3 V is not enough). The Blynk doc's sample code carries a template ID — never copy it. Board facts live in `maker-nano-rp2040.md`.
 
 ### micro:bit accessories
