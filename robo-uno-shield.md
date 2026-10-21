@@ -168,6 +168,7 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 | Status |  Launched Feb 2025 | [3P] The Pi Hut: "Discontinued" | Unresolved; check my.cytron.io |
 
 ## Needs verification
+- **Schematic:** the Cytron GitHub organisation (299 public repos, listed 21 Oct 2026) has no schematic or design-file repo for SHIELD-ROBO-UNO; `Cytron-SHIELD-ROBO-UNO` holds code only. Ask the design team for the schematic.
 - **Motor control scheme** — whether the shield takes PWM+DIR (D5/D4, D6/D7) through on-board logic or raw A/B inputs on D4–D7. If D4 = Input A and D5 = Input B literally, Cytron's `PWM_DIR` code would not give symmetric speed in reverse (derived from [DS] table + [GH] library). The DCMotor sketch's CONNECTIONS header (D4 DIR 1, D5 PWM 1, D6 PWM 2, D7 DIR 2) adds [GH] weight to PWM/DIR but cannot override [DS] — ask [DT] for the schematic.
 - **Schematic / design files** — none in the Cytron-SHIELD-ROBO-UNO GitHub repo (full history and all branches checked 2026-10-21; the GitHub API listing could not be queried from this session, but `git ls-remote` shows only `main`). Ask the design team.
 - Whether buttons D2/D3 have on-board pull-up resistors (Cytron code always enables `INPUT_PULLUP`, except D3 in the Buzzer sketch).

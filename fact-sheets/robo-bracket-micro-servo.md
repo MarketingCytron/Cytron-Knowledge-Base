@@ -18,8 +18,8 @@ A black powder-coated aluminium-alloy bracket that holds a 9 g-class micro servo
 - Fits micro servos: SG90, MG90S, TS90A, EF90D, FS90R and same-dimension servos (23.0x12.2x29.0mm)
 - Designed to fit Robo Base and Robo Base Mini
 - Packing list: 1x bracket, 4x M2*6 screw, 4x M3*6 screw
-- Overall dimensions: [NOT STATED] (dimension drawing image only)
-- Hole pattern and hole sizes: [NOT STATED]
+- Overall dimensions: 37.50 mm wide × 28.00 mm high × 14.50 mm deep (dimension drawing)
+- Holes (dimension drawing): 2 × M2 threaded holes for the servo tabs; 4 × M3 threaded side holes in a diamond 8.00 mm × 6.00 mm apart; 2 × M3 holes 10.50 mm apart; front face 3 × 3.0 mm slots (two vertical slots 25.00 mm apart, one horizontal slot 6.50 mm above the bottom edge)
 - Weight: [NOT STATED]
 - Warranty: [NOT STATED] (field blank on the product page)
 
@@ -27,7 +27,7 @@ A black powder-coated aluminium-alloy bracket that holds a 9 g-class micro servo
 - Mechanical part; no electrical interface
 - Servos: SG90, MG90S, TS90A, EF90D, FS90R and same-dimension (23.0x12.2x29.0mm) servos
 - Chassis: Robo Base, Robo Base Mini
-- Which screws go to the servo and which to the base: [NOT STATED]
+- Screws: M2 × 6 into the threaded servo-tab holes, M3 × 6 into the threaded M3 holes; no nuts needed (inferred from the drawing); which face mounts to the chassis is not stated
 - Linked Cytron project: "ZOOM:BIT with Robo Grip Mini" (Ng Zhi Tian, 18 Mar 2026)
 
 ## Use cases

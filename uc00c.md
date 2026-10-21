@@ -27,7 +27,7 @@ The user manual has no numeric spec table; the rows below collect every stated f
 | Power source | USB powered; "no external source is required to use this converter" | [UM] |
 | UART logic level | 3.3 V or 5 V TTL, selected by the VCC selectable switch at "F" ("Selectable Switch 5V and 3.3V") | [UM] |
 | Power output to target | VCC pin: 3.3 V or 5 V, follows the Vsel slide switch; "5V from USB port is available for user" | [UM] |
-| Interface header | 6-way header socket: DTR, RX, TX, VCC, CTS, GND ("Header socket, for Arduino board"). Photo: **female right-angle socket** at the board edge; silkscreen **"(GREEN)"** at the TX-LED end and **"(BLACK)"** at the RX-LED end; the six pins are not individually labelled; pitch not stated | [UM] |
+| Interface header | 6-way header socket: DTR, RX, TX, VCC, CTS, GND ("Header socket, for Arduino board"). Photo: **female right-angle socket** at the board edge; silkscreen **"(GREEN)"** at the TX-LED end and **"(BLACK)"** at the RX-LED end; the six pins are not individually labelled on the manual photo; the product page pinout image labels them **DTR, RXI, TXO, VCC, CTS, GND** from the GREEN end [PP: image]; pitch not stated | [UM][PP: image] |
 | LEDs | Power LED (green), RX LED, TX LED; silkscreen "PWR", "RX", "TX" beside them (photo) | [UM] |
 | Switch silkscreen | Slide switch marked **5V** at one end and **3V3** at the other (photo); shipped position not stated | [UM] |
 | Bootloader compatibility | "Compatible with Bootloader for Arduino board such as BBFuino, Boarduino, Arduino Mini Pro, etc." | [UM] |
@@ -48,7 +48,9 @@ Chip-vendor reference (not a Cytron spec, for context only): the WCH CH340 datas
 - **Features list:** CH340 USB to UART chip; USB powered; selectable 3.3 V / 5 V UART; 6-pin interface DTR, RXD, TXD, VCC, CTS, GND; 6-way header socket for bootloading Arduino-compatible boards (BBFuino, Arduino Pro Mini 328, Arduino Fio); **dimension 39.8 × 21.2 × 5.6 mm** [PP].
 - **Packing list:** 1x UC00C (CH340) USB to UART Converter [PP].
 - **Resources:** UC00C User Manual (Google Doc); CH34X drivers (Windows V3.5, Mac V1.5, Linux V1.5, Mar 2019), older macOS drivers (third-party links), WCH factory driver, CH341 Mac troubleshooting PDF [PP].
-- Pinout image and pin-description image are on the page (`UC00C-Pinout-Image.png`, `UC00C-Pinout-Description.png`) — not read here (image only).
+- **Pinout image** (`UC00C-Pinout-Image.png`, read 2026-10-21): pins labelled from the **(GREEN)** end: DTR, RXI, TXO, VCC, CTS, GND, ending at **(BLACK)** [PP: image].
+- **Pin-description image** (`UC00C-Pinout-Description.png`): DTR = output, Data Terminal Ready, **active low**; RXI = input, serial receive; TXO = output, serial transmit; VCC = supply output, 3.3 V or 5 V; CTS = input, Clear To Send, **active low**; GND = supply output, ground (0 V) [PP: image].
+- Voltage-switch image shows the slide switch marked 5V and 3V3; LED image shows TX and RX LEDs beside the socket [PP: image].
 
 ## Interfaces, terminals and pin mapping
 ### Board layout (user manual section 4.0) [UM]
@@ -71,7 +73,7 @@ Chip-vendor reference (not a Cytron spec, for context only): the WCH CH340 datas
 | CTS | UC00C Clear To Send pin | "Hardware Hand-shacking pin." | [UM] |
 | GND | Ground or negative | Ground of power and signal; connect to the device's GND | [UM] |
 
-The manual's board figure (read 2026-10-21) does **not** label the six socket pins; it marks only the ends: **"(GREEN)"** at the end beside the TX LED and **"(BLACK)"** at the end beside the RX LED [UM]. The table order DTR, RX, TX, VCC, CTS, GND is the only order stated in words [UM]. Read with the common "FTDI-style" convention (GREEN = DTR end, BLACK = GND end, as on Arduino Pro Mini headers), the physical order from the GREEN end would be DTR, RX, TX, VCC, CTS, GND — **inferred, not stated**; confirm from the product page pinout image before printing it in a tutorial. See Needs verification.
+The manual's board figure (read 2026-10-21) does **not** label the six socket pins; it marks only the ends: **"(GREEN)"** at the end beside the TX LED and **"(BLACK)"** at the end beside the RX LED [UM]. The table order DTR, RX, TX, VCC, CTS, GND is the only order stated in words [UM]. **Physical order, confirmed by the product page pinout image [PP: image]: from the GREEN end — DTR, RXI, TXO, VCC, CTS, GND — BLACK end.** The page labels RX as "RXI" (input) and TX as "TXO" (output). DTR and CTS are active low [PP: image].
 
 ### Voltage selection [UM]
 - The switch at "F" sets the TTL level of the UART interface pins and the VCC output: 5V → "all the interface pins which include TX, RX, DTR, CTS, RTS, DSR will be in 5V TTL logic"; 3V3 → all interface pins in 3.3 V TTL logic [UM].
@@ -79,10 +81,10 @@ The manual's board figure (read 2026-10-21) does **not** label the six socket pi
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - **Cross the data lines.** UC00C RX → target TX; UC00C TX → target RX; GND to GND [UM].
-- **Match GREEN to GREEN, BLACK to BLACK.** The socket ends are marked "(GREEN)" and "(BLACK)" [UM]; Pro Mini-style bootloader headers carry the same marks, so the socket plugs straight on when the ends match (inferred from the markings; the manual does not say this in words).
+- **Match GREEN to GREEN, BLACK to BLACK.** The socket ends are marked "(GREEN)" and "(BLACK)" [UM]; Pro Mini-style bootloader headers carry the same marks, so the socket plugs straight on when the ends match (the pinout image confirms GREEN = DTR end and BLACK = GND end [PP: image]; the manual does not say this in words).
 - **Set the switch before plugging into a 3.3 V board.** The switch sets both the signal logic level and the VCC output [UM]. The manual gives no factory default position for UC00C — check the switch; do not tell readers it "defaults to 5V" (that statement exists only in the UC00A manuals).
 - **Do not power an application circuit from VCC/5V.** Manual caution: "'Vsel' and '5V' on UC00C is supply directly from USB of computer; it is advised not to use this power source to power application circuit or device. Wrong connection such as wrong polarity, wrong voltage, shorted might permanently damage computer." [UM]
-- **DTR is the Arduino auto-reset line** on the 6-way socket [UM]. The manual does not describe the DTR polarity or the capacitor; the auto-reset capacitor sits on the Arduino-style target board, not on UC00C (not stated — do not claim otherwise).
+- **DTR is the Arduino auto-reset line** on the 6-way socket [UM]. The manual does not describe the DTR polarity or the capacitor; the auto-reset capacitor sits on the Arduino-style target board, not on UC00C (not stated — do not claim otherwise). The product page states DTR is an **active-low output** [PP: image].
 - **CTS is the only hardware handshake pin on the socket.** RTS/DSR are mentioned in the switch description but are not listed on the 6-way socket [UM] — do not promise RTS or DSR access on UC00C.
 - **Driver first.** A CH340-family driver must be installed once before the virtual COM port appears [UM][PP]. Use the links on the product page [PP], not the 2016 links inside the manual (those point to an old third-party host, v3.4 Windows / v1.3 Mac).
 - **Windows support statement is 7/8/10** [UM]; nothing is stated for Windows 11 or current macOS versions — see Needs verification.
@@ -134,15 +136,13 @@ The manual's board figure (read 2026-10-21) does **not** label the six socket pi
 - Exact CH340 variant fitted — the 2016 manual photo shows a WCH 16-pin chip with an external crystal marked "A120K59" (consistent with CH340G + 12 MHz crystal, inferred); whether current boards still use it or a CH340C — no Cytron source states it.
 - Supported baud rate range on UC00C — not stated [UM]; CH340 vendor figure 50 bps–2 Mbps [VEN] not confirmed by Cytron.
 - Default position of the voltage switch as shipped — not stated [UM].
-- Physical pin order of the 6-way socket — the manual figure (read 2026-10-21) marks only the ends "(GREEN)" and "(BLACK)", not each pin; the order DTR…GND from the GREEN end is inferred, not printed [UM].
-- Whether DTR is active-low / its polarity — not stated [UM].
 - Windows 11, macOS 11+ and Linux kernel-driver support — not stated [UM]; the Mac troubleshooting PDF on the product page was not readable in this session.
 - Header socket pitch — not stated (the photo shows a female right-angle socket) [UM].
 - Which current Cytron boards it programs — only BBFuino named [UM]; confirm with design team [DT] before naming others.
-- Physical pin order: read the product page images `UC00C-Pinout-Image.png` / `UC00C-Pinout-Description.png` when the browser can render images.
 
 ## Sources
 - [PP] Product page https://my.cytron.io/p-uc00c-ch340-usb-to-uart-converter (read by coordinator 2026-10-16: RM15.75, in stock 240, warranty 12 months)
+- [PP: image] Product page images read in the browser 2026-10-21: https://www.cytron.io/image/catalog/products/UC00C/UC00C-Pinout-Image.png · …/UC00C-Pinout-Description.png · …/UC00C-VoltageSelectionSwitch.png · …/UC00C-LEDs.png
 - [PP] Windows driver "CH341SER V3.5 Mar2019.zip" — https://drive.google.com/file/d/1kk0b2HTYLKBXxS4TNNlC_neef6iE94sV/view (metadata only; not downloaded)
 - [PP] Mac driver "CH341SER_MAC.ZIP" (V1.5 Mar2019) — https://drive.google.com/file/d/1iZ4fO-eAttw0ztlWVN_VTPB9cVSOu3CX/view (metadata only)
 - [PP] Linux driver "CH341SER_LINUX.ZIP" (V1.5 Mar2019) — https://drive.google.com/file/d/1YQcex-0j6PN2I8J1Fa5ecxfsCLarANj2/view (metadata only)

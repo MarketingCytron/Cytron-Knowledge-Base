@@ -122,6 +122,7 @@ PWM/DIR truth table (Table 4), per channel x [DS]:
 [PP] (read 2026-10-19) agrees with [DS]: 7–30 V, 10 A / 30 A, 1.8/3.3/5 V logic, 20 kHz, current limiting, temperature protection, undervoltage shutdown, no reverse-voltage protection. The Tindie [3P] lines above repeat the Cytron product page text.
 
 ## Needs verification
+- **Schematic / design files:** the Cytron GitHub organisation (299 public repos, listed 21 Oct 2026) has no SHIELD-MDD10 repo; `Shield-MD10-3D` is the single-channel SHIELD-MD10 R2 and `Cytron_ShieldMD10` is SHIELD-MD10 example code. Ask the design team for the schematic.
 1. **PWM/DIR Input Pin Selector options and defaults** for PWM1, DIR1, PWM2, DIR2 — only in Figure 1 (image). [3P] Tindie says "configurable via jumpers"; no pin list in text.
 2. Board dimensions and mounting holes (Figure 3 image only).
 3. Current limit vs temperature values (Figure 5 image only) and the undervoltage threshold.

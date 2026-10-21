@@ -36,7 +36,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 25 | 23 | [Robo Pico](robo-pico.md) | `ROBO-PICO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 10 | 5 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2023 |
 | 26 | 99 | [IRIV PiControl CM5](iriv-picontrol-cm5.md) | `IRIV-PICL5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 7 | 0 | Done (2026-10-21) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.5, Jan 2026 (read in full incl. figures 21 Oct 2026) |
 | 27 | 30 | [MOTION:BIT](motion-bit.md) | `MOTION-BIT` | micro:bit accessories | Sold | Medium-high | Low | 7 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2023 |
-| 28 | 12 | [Robo Uno Shield](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | Arduino-compatible boards | Sold | Medium | Medium | 10 | 14 | 3 | Done (2026-10-21) | Datasheet Rev 1.0, Feb 2025 + Cytron GitHub sketches (Getting Started + Demo_Code; no schematic in repo) |
+| 28 | 12 | [Robo Uno Shield](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | Arduino-compatible boards | Sold | Medium | Medium | 11 | 14 | 3 | Done (2026-10-21) | Datasheet Rev 1.0, Feb 2025 + Cytron GitHub sketches (Getting Started + Demo_Code; no schematic in repo) |
 | 29 | 24 | [EDU PICO V2](edu-pico-v2.md) | `EDU-PICO2` | Pico / RP2040 / RP2350 boards | Sold | Medium | Medium | 10 | 7 | 3 | Done (2026-10-19) | Datasheet Rev 1.1, Jun 2026 |
 | 30 | 31 | [MOTION:BIT Pro](motion-bit-pro.md) | `MOTION-BIT-PRO` | micro:bit accessories | Sold | Medium-high | Low | 5 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2024 |
 | 31 | 32 | [SUMO:BIT](sumo-bit.md) | `SUMO:BIT` | micro:bit accessories | Sold | Medium-high | Low | 6 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) |
@@ -75,7 +75,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 64 | 51 | [SC08A Servo Controller](sc08a.md) | `SC08A` | Servo, RC and interface | Sold | Medium-high | Medium | 8 | 11 | 0 | Done (2026-10-21) | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample… |
 | 65 | 2 | [Robo ESP32](robo-esp32.md) | `ROBO-ESP32` | ESP32 boards | Sold | Medium-high | Medium | 10 | 6 | 0 | Done (2026-10-19) | Robo ESP32 Rev1.1 Board Datasheet, Rev 1.1, February 2026 (Cytron Google Doc) |
 | 66 | 28 | [MOTION 2350 Pro](motion-2350-pro.md) | `MOTION-2350-PRO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 9 | 7 | 0 | Done (2026-10-19) | Datasheet Rev 2.0, Sep 2025 |
-| 67 | 53 | [UC00C](uc00c.md) | `UC00C` | Servo, RC and interface | Sold | Medium | Medium | 9 | 7 | 1 | Done (2026-10-21) | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) +… |
+| 67 | 53 | [UC00C](uc00c.md) | `UC00C` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 7 | 1 | Done (2026-10-21) | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures) + product page incl. pinout… |
 | 68 | 37 | [REKA:BIT RBT Project Kit](rekabit-rbt-project-kit.md) | `V-KIT-REKABIT-RBT` | micro:bit kits | Sold | Medium-high | Low | 5 | 5 | 0 | Done (2026-10-21) | Quick Start Guide, English v2.0 (Feb 2023, read 21 Oct 2026) + resource hub + pxt-rekabit-rbt-project-kit |
 | 69 | 39 | [BEETLE:BIT](beetlebit.md) | `V-BEETLEBIT` | micro:bit kits | Sold | Medium-high | Medium | 8 | 6 | 4 | Done (2026-10-21) | BEETLE:BIT Quick Start Guide booklet (read 21 Oct 2026) + resource hub + MakeCode chapter programs |
 | 70 | 80 | [MD10-POT](md10-pot.md) | `MD10-POT` | Motor drivers | Sold | Medium-high | Low | 7 | 2 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Oct 2018 |
@@ -83,10 +83,10 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 72 | 29 | [Maker Nano RP2040 Bundles](maker-nano-rp2040-bundles.md) | `V-MN2040` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Low | 7 | 7 | 2 | Done (2026-10-19) | Getting Started docs (2022–2023, no version) |
 | 73 | 47 | [Ikedo Mini Sumo V2](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Sumo robot kits and parts | Sold | Medium-high | Low | 6 | 6 | 3 | Done (2026-10-19) | Ikedo Bot V2 Getting Started Instruction |
 | 74 | 60 | [Maker Reflect S](maker-reflect-s.md) | `MAKER-REFLECT-S` | Sensors | Sold | Medium-high | Low | 5 | 4 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2026 |
-| 75 | 70 | [Robo Bracket (Servo)](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | Robot parts and accessories | Sold | Medium | Medium | 8 | 1 | 6 | Done (2026-10-19) | Product page |
+| 75 | 70 | [Robo Bracket (Servo)](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 1 | 3 | Done (2026-10-21) | Product page + its dimension drawing (read 21 Oct 2026) |
 | 76 | 73 | [Robo Grip Mini](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | Robot parts and accessories | Sold | Medium-high | Medium | 11 | 6 | 5 | Done (2026-10-21) | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page |
 | 77 | 78 | [FD04A](fd04a.md) | `FD04A` | Motor drivers | Sold | Medium-high | Medium | 10 | 6 | 2 | Done (2026-10-21) | User's Manual V1.2, Jun 2025 (read in full incl. figures 21 Oct 2026) |
-| 78 | 85 | [SHIELD-MDD10](shield-mdd10.md) | `SHIELD-MDD10` | Motor drivers | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, May 2019 |
+| 78 | 85 | [SHIELD-MDD10](shield-mdd10.md) | `SHIELD-MDD10` | Motor drivers | Sold | Medium | Medium | 8 | 2 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, May 2019 |
 | 79 | 105 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
 | 80 | 5 | [Maker UNO Plus](maker-uno-plus.md) | `MAKER-UNO-PLUS` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 6 | 1 | Done (2026-10-19) | User's Manual Rev 1.0, Oct 2018 (no datasheet) |
 | 81 | 13 | [PS2 Shield](shield-ps2.md) | `SHIELD-PS2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 4 | 1 | Done (2026-10-19) | User's Manual V1.0, Sep 2013 (no datasheet) |
@@ -197,7 +197,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Servo Controller Shield** (2026-10-19): Page agrees with the manual (4 A cont / 5 A peak, 0.25 µs, 9600); size 7.4 × 6.6 cm. Medium → Medium-high.
 - **SC08A Servo Controller** (2026-10-21): Cytron manual read in full incl. figures (connector pin orders); Medium → Medium-high
 - **MOTION 2350 Pro** (2026-10-19): my.cytron.io now shows Rev 2.0 5 A / 10 A, 2 MB flash, 95.2 × 57.2 × 8 mm, Arduino tutorial. Medium → Medium-high.
-- **UC00C** (2026-10-21): Manual read incl. figures; stays Medium until socket pin order is confirmed
+- **UC00C** (2026-10-21): Product page pinout + description images read; socket order confirmed; Medium → Medium-high
 - **REKA:BIT RBT Project Kit** (2026-10-21): English guide v2.0 read (ports and servo for all 5 projects, pump/motor warnings); Medium → Medium-high
 - **BEETLE:BIT** (2026-10-21): Booklet read in full (wiring, Grove ports, box list, chapter rules); Medium → Medium-high
 - **MD10-POT** (2026-10-19): Packing list, 81.28 × 48.26 mm, locked-antiphase, regenerative braking, no reverse-polarity protection. Medium → Medium-high.
@@ -205,7 +205,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Maker Nano RP2040 Bundles** (2026-10-19): Packing lists for both variants read: Blynk bundle has Grove WiFi 8266 + cable; no 10K resistor. Medium → Medium-high.
 - **Ikedo Mini Sumo V2** (2026-10-19): Page note: Maker Reflect S edge sensors from March 2026; full packing list; 500 g class; no warranty. Medium → Medium-high.
 - **Maker Reflect S** (2026-10-19): Comparison table: analog output 0–VCC, 5.0 V, 25 mA, 3 mm; Ikedo V2 edge sensor from March 2026. Medium → Medium-high.
-- **Robo Bracket (Servo)** (2026-10-19): Page matches the KB; no new facts. Stays Medium.
+- **Robo Bracket (Servo)** (2026-10-21): Dimension drawing read (size, slots, threaded holes); Medium → Medium-high
 - **Robo Grip Mini** (2026-10-21): Full installation series read; assembly order and horn rules; Medium → Medium-high
 - **FD04A** (2026-10-21): Manual re-read with all figures (IDE pin order, size, terminals); Medium → Medium-high
 - **SHIELD-MDD10** (2026-10-19): Page agrees with DS; stepper use, packing, warranty, price. Stays Medium (jumper options image).

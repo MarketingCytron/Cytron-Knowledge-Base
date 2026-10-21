@@ -106,6 +106,7 @@ PWM low pulls both outputs LOW (motor terminals shorted to ground — brake-to-g
 - Battery vs switching supply / regenerative current: not stated.
 
 ## Software support
+- **Cytron example sketch** `CytronTechnologies/Cytron_ShieldMD10` (ShieldMd10Example, Rev 1.0, 22 Oct 2012; repo updated Jan 2019): PWM on **D3**, DIR on **D2** (one of the jumper-selectable pin pairs); ramps the motor from 0 to full speed and back in both directions with `analogWrite` [GH].
 - Arduino: **Cytron Motor Drivers Library** (`CytronMotorDriver`, v1.0.1); SHIELD-MD10 is listed under the **PWM_DIR** example [GH]:
   - `CytronMD motor(PWM_DIR, 3, 4);` then `motor.setSpeed(-255..255)` [GH]. With the shield's default jumpers use `CytronMD motor(PWM_DIR, 3, 2);` (PWM D3, DIR D2) [UM].
 - The manual points to example code on the product page [UM].
@@ -152,6 +153,7 @@ PWM low pulls both outputs LOW (motor terminals shorted to ground — brake-to-g
 6. Part numbers of the MOSFETs and the three SOIC-8 ICs (the model gives package outlines only), and the purpose of inductor L1.
 
 ## Sources
+- [GH] Example sketch: https://github.com/CytronTechnologies/Cytron_ShieldMD10 (ShieldMd10Example.ino, Rev 1.0, 22 Oct 2012; read 2026-10-21)
 - [UM] SHIELD-MD10 User's Manual for Rev2.0 (V1.0, June 2015): https://docs.google.com/document/d/1zITY9dHK26-iBkS9AnZ0ZUS3Z8K8NzLu3t709F7r7us/view
 - [UM-R1] SHIELD-MD10 User's Manual for Rev1.0 (V1.1, September 2014): https://docs.google.com/document/d/1acVuzZKuqC_79RzD5BRT9IQ7ug63zG0wpf-bUgQ7QHY/view
 - PDF mirror of the Rev2.0 manual (cross-check): https://stgaws.robu.in/wp-content/uploads/2015/01/SHIELD-MD10Users_ManualREV2.pdf

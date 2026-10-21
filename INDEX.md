@@ -175,7 +175,7 @@ micro:bit kit notes for every agent:
 |---|---|---|---|---|---|
 | SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample code (PIC, GUI, Arduino) | **Medium-high** |
 | RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Cytron Connection Diagram (read 20 Oct 2026) + product page | **Medium-high** |
-| UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) + product page + CH34x driver links | **Medium** |
+| UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures) + product page incl. pinout images (21 Oct 2026) + CH34x driver links | **Medium-high** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
 | URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + Cytron schematic URS232A.sch (1/2/2016) [DT]; TI MAX232 [VEN] for chip context | **Medium-high** |
 | Breakout Board PS2 Connector | [`bb-psc.md`](bb-psc.md) | `BB-PSC` | Female PS2 connector broken out to 0.1" | Maker Mini Sumo PS2 tutorial (20 May 2024, read in full incl. wiring figure) + product page | **Medium-high** |
@@ -222,7 +222,7 @@ Sensor notes for every agent:
 |---|---|---|---|---|---|
 | STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Installation guide tutorial (25 Jul 2023, read in full incl. images) + product page | **Medium-high** |
 | Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
-| Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
+| Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page + its dimension drawing (read 21 Oct 2026) | **Medium-high** |
 | Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images | **Medium-high** |
 | Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-high** |
 | Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page | **Medium-high** |
