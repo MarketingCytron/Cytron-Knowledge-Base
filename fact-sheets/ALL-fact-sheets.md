@@ -8923,6 +8923,671 @@ https://my.cytron.io/p-iriv-edgeai-safety-box-kit
 # Product fact sheets
 
 ## Product name
+Teltonika RUT200 LTE Cat 4 Industrial Grade Router
+## Aliases
+RUT200, RUT-200, RUT200015000, Teltonika RUT200, RUT200 industrial cellular router, RUT200 4G Wi-Fi router
+## What it is
+A compact industrial 4G LTE Cat 4 cellular router made by Teltonika Networks and distributed by Cytron (product page). It has one SIM slot, two Ethernet ports and 2.4 GHz Wi-Fi, and runs RutOS, Teltonika's OpenWrt-based Linux OS (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps; 3GPP Release 9 (datasheet).
+- Cytron's order code RUT200015000 is the "*1****" version: LTE-FDD B1, B3, B5, B7, B8, B20, B28; LTE-TDD B38, B40, B41; 3G B1, B5, B8; 2G B3, B8; Universal PSU; no eSIM (Teltonika ordering page).
+- One Mini SIM (2FF) slot, 1.8 V / 3 V, external holder (datasheet).
+- Ethernet: 1 × WAN and 1 × LAN, 10/100 Mbps (datasheet).
+- Wi-Fi: 802.11b/g/n (Wi-Fi 4), access point and station modes, up to 50 users (datasheet).
+- I/O on the 4-pin power socket: 1 digital input (0–6 V low, 8–30 V high) and 1 open collector output (30 V, 300 mA) (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB DDR2 RAM, 16 MB SPI flash (datasheet).
+- Power: 9–30 VDC on a 4-pin industrial socket, or passive PoE on LAN1 (Mode B, 9–30 VDC); under 6.5 W max (datasheet).
+- Housing: aluminium with plastic panels, 83 × 25 × 74 mm, 125 g, IP30, -40 °C to 75 °C, 10–90 % RH (datasheet).
+- Packing: router, 9 W power supply, 2 swivel mobile antennas (SMA), 1 swivel Wi-Fi antenna (RP-SMA), quick start guide (product page).
+## Interfaces and compatibility
+- RJ45 × 2 (1 WAN, 1 LAN); LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- Antenna connectors: 2 × SMA (LTE), 1 × RP-SMA (Wi-Fi) (datasheet).
+- Protocols: Modbus TCP server and client, Modbus–MQTT gateway, DNP3 (TCP), BACnet/IP router, OPC UA, DLMS (TCP), MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Stunnel, Tinc (datasheet).
+- Approvals listed by Teltonika include SIRIM, RCM, IMDA and CE/RED (Teltonika certifications page).
+- Pin numbers for the 4-pin power socket are [NOT STATED] here; they are on the Teltonika Wiki, which could not be opened (Wiki).
+- Sold separately by Cytron: Teltonika 4G Mobile Magnetic SMA Antenna and Teltonika DIN Rail Kit (product page).
+## Use cases
+- Cross-industry monitoring through a cloud solution (product page).
+- Predictive maintenance connectivity (product page).
+- Energy storage system connectivity (product page).
+- Wi-Fi mesh for autonomous pallet shuttles (product page).
+- Remote vending machine and parcel terminal management with RMS (product page).
+- Primary or backup 4G link for a small industrial LAN (datasheet).
+## Known limitations
+- Single SIM; Cytron's order code has no eSIM (Teltonika ordering page).
+- No GNSS, no RS232/RS485, no USB; Modbus is TCP only (datasheet).
+- Ethernet is 10/100 Mbps only, with just 2 ports (datasheet).
+- Wi-Fi is 2.4 GHz Wi-Fi 4 only, one antenna (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- Supply 9–30 VDC; surge protection above 31 VDC for 10 µs only (datasheet).
+- IP30 housing; DIN rail or wall mounting needs an extra kit (datasheet).
+## Positioning (kept apart from specs)
+- Teltonika: "industrial cellular router" providing mission-critical connectivity in automation, transportation and manufacturing (Teltonika product page).
+- Cytron: compact router for primary and backup connectivity with remote management (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM566.00, or RM549.02 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rut200-lte-cat-4-industrial-grade-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rut200
+
+# Product fact sheets
+
+## Product name
+Teltonika RUT140 Industrial Ethernet Router
+## Aliases
+RUT140, RUT-140, RUT140000000, Teltonika RUT140, RUT140 Industrial Modbus Router
+## What it is
+A compact industrial Ethernet router with Wi-Fi and no cellular modem, made by Teltonika Networks and distributed by Cytron (product page). It isolates and connects end devices on an industrial network and runs RutOS, Teltonika's OpenWrt-based Linux OS (datasheet).
+## Specs and functions
+- No mobile module and no SIM slot (datasheet).
+- Ethernet: 1 × WAN and 1 × LAN, 10/100 Mbps, IEEE 802.3az (datasheet).
+- Wi-Fi: 802.11b/g/n (Wi-Fi 4), access point and station modes, up to 50 users, one RP-SMA connector (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB DDR2 RAM, 16 MB serial NOR flash (datasheet).
+- Power: 9–30 VDC on a 3-position pluggable terminal block, or passive PoE on LAN1 (Mode B, 9–30 VDC); idle under 1 W, max under 2 W (datasheet).
+- Status LEDs: WAN type, LAN type, power (datasheet).
+- Grounding screw and integrated DIN rail bracket (datasheet).
+- Housing: anodised aluminium, 113.10 × 25 × 68.6 mm, 142.3 g, IP30, -40 °C to 75 °C, 10–90 % RH (datasheet).
+- Packing: router, 3-pin power connector, quick start guide; no power supply and no Wi-Fi antenna listed (product page, Teltonika ordering page).
+## Interfaces and compatibility
+- RJ45 × 2 (1 WAN, 1 LAN); LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- 3-pin pluggable power terminal; pin order [NOT STATED] here (Wiki could not be opened).
+- Protocols: Modbus TCP server and client, Modbus–MQTT gateway, DNP3 (TCP), BACnet/IP router, OPC UA, DLMS (TCP), MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Stunnel, Tinc, EoIP (datasheet).
+- IoT platforms: Cumulocity – Cloud of Things, Azure IoT Hub (datasheet).
+- Cytron suggests a 4G Mobile Magnetic SMA Antenna as an accessory, but this model has no cellular port (product page, datasheet).
+## Use cases
+- Network segmentation that isolates end devices on an industrial network (product page).
+- Wired-to-Wi-Fi bridge or Wi-Fi client uplink for a machine (datasheet).
+- Modbus TCP, DNP3, DLMS or OPC UA data to an MQTT or HTTP server (datasheet).
+- Small DIN-rail VPN gateway into a control cabinet (datasheet).
+## Known limitations
+- No cellular, no SIM, no SMS or call control (datasheet).
+- No I/O, no serial port, no USB (datasheet).
+- Ethernet is 10/100 Mbps only, with just 2 ports (datasheet).
+- Wi-Fi is 2.4 GHz Wi-Fi 4 only (datasheet).
+- No power supply in the box; a 9–30 VDC source is needed (product page, Teltonika ordering page).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- SIRIM is not in Teltonika's certifications list for this model (Teltonika certifications page).
+## Positioning (kept apart from specs)
+- Teltonika: "Industrial Modbus Router" with industrial protocols and RMS (Teltonika product page).
+- Cytron: compact industrial Ethernet router that enhances security through network isolation (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM312.00, or RM302.64 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rut140-industrial-ethernet-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rut140
+
+# Product fact sheets
+
+## Product name
+Teltonika RUT901 LTE Cat 4 Industrial Grade Router
+## Aliases
+RUT901, RUT-901, RUT90100040021, RUT901000400, Teltonika RUT901, RUT901 4G dual SIM router
+## What it is
+An industrial 4G LTE Cat 4 dual-SIM cellular router made by Teltonika Networks and distributed by Cytron (product page). It has four Ethernet ports and 2.4 GHz Wi-Fi and runs RutOS, Teltonika's OpenWrt-based Linux OS. Unlike the RUT906 it has no GNSS, no RS232/RS485, no USB, no microSD and no 10-pin I/O socket (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps; 3GPP Release 9 (datasheet).
+- Bands of the RUT901 0***** version (nearest match to Cytron's MPN): LTE-FDD B1, B3, B5, B7, B8, B20, B28; LTE-TDD B38, B40, B41; 3G B1, B5, B8; 2G B3, B8 (Teltonika ordering page).
+- Two Mini SIM (2FF) slots with auto failover and SIM idle protection; eSIM needs different hardware (datasheet).
+- Ethernet: 1 × WAN and 3 × LAN, 10/100 Mbps (datasheet).
+- Wi-Fi: 802.11b/g/n (Wi-Fi 4), access point and station modes, up to 100 users, 2 RP-SMA connectors (datasheet).
+- I/O on the 4-pin power socket: 1 digital input (0–6 V low, 8–30 V high) and 1 open collector output (30 V, 300 mA) (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB DDR2 RAM, 16 MB SPI flash (datasheet).
+- Power: 9–30 VDC on a 4-pin industrial socket, or passive PoE on LAN1 (Mode B, 9–30 VDC); under 2 W idle, under 7 W max (datasheet).
+- Housing: aluminium with plastic panels, 110 × 50 × 100 mm, 297 g, IP30, -40 °C to 75 °C, 10–90 % RH (datasheet).
+- Packing: router, 9 W PSU, 2 swivel mobile antennas, 2 swivel Wi-Fi antennas, 1.5 m Ethernet cable, SIM adapter kit, quick start guide (product page).
+## Interfaces and compatibility
+- RJ45 × 4 (1 WAN, 3 LAN); LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- Antenna connectors: 2 × SMA (LTE), 2 × RP-SMA (Wi-Fi) (datasheet).
+- Protocols: Modbus TCP server and client, Modbus–MQTT gateway, DNP3 (TCP), BACnet/IP router, DLMS (TCP), MQTT, SNMP, TR-069, JSON-RPC, RMS; OPC UA not listed (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Stunnel, Tinc (datasheet).
+- Approvals listed by Teltonika include SIRIM, RCM, IMDA, CE/RED and E-mark (Teltonika certifications page).
+- Pin numbers for the 4-pin power socket are [NOT STATED] here; they are on the Teltonika Wiki, which could not be opened (Wiki).
+- Sold separately by Cytron: Teltonika DIN Rail Kit and Teltonika 4G Mobile Magnetic SMA Antenna (product page).
+## Use cases
+- Remote management of boring and milling equipment (product page).
+- Remote image control for armoured trucks (product page).
+- 4G connectivity for retail sites, vending machines and parcel terminals (product page).
+- Wi-Fi mesh for autonomous pallet shuttles (product page).
+- Dual-SIM failover link for a small industrial LAN of up to 3 wired devices plus Wi-Fi (datasheet).
+## Known limitations
+- No GNSS, no RS232/RS485, no USB, no microSD; Modbus is TCP only (datasheet).
+- Only one DI and one DO, both on the power socket (datasheet).
+- Ethernet is 10/100 Mbps only (datasheet).
+- Wi-Fi is 2.4 GHz Wi-Fi 4 only (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- IP30 housing; mounting needs an extra kit (datasheet).
+- Cytron's MPN does not match a Teltonika order code and the page shows no warranty (product page, Teltonika ordering page).
+## Positioning (kept apart from specs)
+- Teltonika: "industrial cellular router" that delivers the top-rated features of its predecessors, the RUT950 and RUT951 (Teltonika product page).
+- Cytron: compact industrial 4G router with automatic WAN failover for professional industrial use cases (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM749.00, or RM726.53 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rut901-lte-cat-4-industrial-grade-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rut901
+
+# Product fact sheets
+
+## Product name
+Teltonika RUT906 LTE Cat 4 Industrial Grade Router
+## Aliases
+RUT906, RUT-906, RUT906000400, Teltonika RUT906, RUT906 4G LTE RS232/RS485 Router, RUT906 Cellular Router
+## What it is
+An industrial 4G LTE Cat 4 dual-SIM cellular router with GNSS, RS232, RS485, USB and I/O, made by Teltonika Networks and distributed by Cytron (product page). It runs RutOS, Teltonika's OpenWrt-based Linux OS. Compared with the RUT901 it adds GNSS, RS232, RS485, USB host, microSD and a 10-pin I/O socket on the same platform (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps; 3GPP Release 9 (datasheet).
+- Cytron's order code RUT906000400 is the "0*****" version: LTE-FDD B1, B3, B5, B7, B8, B20, B28; LTE-TDD B38, B40, B41; 3G B1, B8; 2G B2, B8; Universal PSU; no eSIM (Teltonika ordering page).
+- Two Mini SIM (2FF) slots with auto failover and SIM idle protection (datasheet).
+- Ethernet: 1 × WAN and 3 × LAN, 10/100 Mbps (datasheet).
+- Wi-Fi: 802.11b/g/n (Wi-Fi 4), access point and station modes, up to 100 users (datasheet).
+- GNSS: GPS, with GLONASS, BeiDou, Galileo and QZSS listed as under development; NMEA 0183, NTRIP, geofencing (datasheet).
+- Serial: RS232 on a DB9 socket with RTS/CTS, 300–115200 baud; RS485 on a 6-pin socket, 2-wire or 4-wire, 300–230400 baud (datasheet).
+- Inputs: dry input 0–3 V, isolated input 0–30 V, analog input 0–24 V or 4–20 mA, plus a digital input on the 4-pin power socket (0–5 V low, 8–30 V high) (datasheet).
+- Outputs: open collector 30 V 250 mA, SPST relay 40 V 4 A, plus an open collector output 30 V 300 mA on the 4-pin power socket (datasheet).
+- USB 2.0 host and internal microSD up to 2 TB (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB DDR2 RAM, 16 MB SPI flash (datasheet).
+- Power: 9–30 VDC on a 4-pin industrial socket, or passive PoE on LAN1 (Mode B, 9–30 VDC); under 2 W idle, under 7 W max (datasheet).
+- Housing: aluminium with plastic panels, 109.5 × 50 × 100 mm, 295 g, IP30, -40 °C to 75 °C, 10–90 % RH (datasheet).
+- Packing: router, 9 W PSU, 2 magnetic mobile antennas, 2 magnetic Wi-Fi antennas, GNSS antenna, RS485 and I/O connector blocks, Ethernet cable, SIM adapter kit, quick start guide (product page).
+## Interfaces and compatibility
+- RJ45 × 4 (1 WAN, 3 LAN); LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- 10-pin industrial I/O socket, 6-pin RS485 socket, DB9 RS232 socket, USB A host, 4-pin power socket with DI/DO (datasheet).
+- Antenna connectors: 2 × SMA (LTE), 2 × RP-SMA (Wi-Fi), 1 × SMA (GNSS) (datasheet).
+- Protocols: Modbus RTU/TCP server and client, Modbus–MQTT gateway, DNP3 (serial, TCP, USB), BACnet (IP and RS485/USB), OPC UA, DLMS (serial, TCP), MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Stunnel, Tinc (datasheet).
+- Approvals listed by Teltonika include SIRIM, RCM, IMDA, CE/RED and E-mark (Teltonika certifications page).
+- Pin numbers for the power, I/O and RS485 sockets are [NOT STATED] here; they are on the Teltonika Wiki, which could not be opened (Wiki).
+- Sold separately by Cytron: Teltonika DIN Rail Kit and Teltonika 4G Mobile Magnetic SMA Antenna (product page).
+## Use cases
+- Connectivity for mobile agricultural machines (product page).
+- Remote access to Siemens PLCs (product page).
+- Control of a wastewater treatment plant (product page).
+- Remote vending machine and parcel terminal management (product page).
+- Modbus RTU to cloud or MQTT gateway for serial PLCs and meters (datasheet).
+- Vehicle or asset tracking with GNSS and geofencing (datasheet).
+## Known limitations
+- GNSS is GPS only for now; other constellations are listed as under development (datasheet).
+- Ethernet is 10/100 Mbps only (datasheet).
+- Wi-Fi is 2.4 GHz Wi-Fi 4 only (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- Dry input is 0–3 V; the open collector outputs are limited to 30 V and 250–300 mA (datasheet).
+- IP30 housing; mounting needs an extra kit (datasheet).
+- Cytron's order code has no eSIM, and Teltonika's region list for it does not name Malaysia (Teltonika ordering page).
+## Positioning (kept apart from specs)
+- Teltonika: "4G LTE RS232/RS485 Router" for industrial IoT, with GNSS and failsafe features such as dual SIM, auto-failover and backup WAN (Teltonika product page).
+- Cytron: designed for industrial IoT applications with serial interfaces, MQTT and BACnet, I/O and Ethernet (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM821.00, or RM796.37 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rut906-lte-cat-4-industrial-grade-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rut906
+
+# Product fact sheets
+
+## Product name
+Teltonika RUT956 LTE Cat 4 Industrial Grade Router
+## Aliases
+RUT956, RUT-956, RUT956200100, Teltonika RUT956, RUT956 industrial cellular router
+## What it is
+An industrial 4G LTE Cat 4 cellular router made by Teltonika Networks and distributed in Malaysia by Cytron (product page). It combines dual SIM, Ethernet, 2.4 GHz Wi-Fi, GNSS, RS232, RS485 and digital/analog I/O, and runs RutOS, Teltonika's OpenWrt-based Linux OS (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps (datasheet).
+- Cytron's order code RUT956200100 is the "2*****" version: LTE-FDD B1, B3, B7, B8, B20, B28A; LTE-TDD B38, B40, B41; 3G B1, B8; 2G B3, B8; UK PSU (Teltonika ordering page).
+- Two Mini SIM (2FF) slots with auto failover; eSIM only on other order codes (datasheet, Teltonika ordering page).
+- Ethernet: 1 × WAN and 3 × LAN, 10/100 Mbps (datasheet).
+- Wi-Fi: 802.11b/g/n (Wi-Fi 4), access point and station modes, up to 100 users (datasheet).
+- GNSS: GPS, GLONASS, BeiDou, Galileo and QZSS (datasheet).
+- Serial: RS232 on a DB9 socket with RTS/CTS; RS485 on a 6-pin socket, 2-wire or 4-wire, 300–115200 baud (datasheet).
+- Inputs: dry input 0–3 V, isolated input 0–30 V, analog input 0–24 V or 4–20 mA, plus a digital input on the 4-pin power socket (datasheet).
+- Outputs: open collector 30 V 250 mA, SPST relay 40 V 4 A, plus an open collector output 30 V 300 mA on the 4-pin power socket (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB DDR2 RAM, 16 MB SPI flash, internal microSD up to 2 TB (datasheet).
+- Power: 9–30 VDC on a 4-pin industrial socket, or passive PoE on LAN1 (Mode B, 9–30 VDC); under 2 W idle, under 7 W max (datasheet).
+- Housing: aluminium with plastic panels, 110 × 50 × 100 mm, 287 g, IP30, -40 °C to 75 °C (datasheet).
+- Packing: router, 9 W PSU, 2 mobile antennas, 2 Wi-Fi antennas, GNSS antenna, RS485 and I/O connector blocks, Ethernet cable, SIM adapter kit, quick start guide (product page).
+## Interfaces and compatibility
+- RJ45 × 4 (1 WAN, 3 LAN); LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- 10-pin industrial I/O socket, 6-pin RS485 socket, DB9 RS232 socket, USB A host, 4-pin power socket with DI/DO from HW revision 1600 (datasheet).
+- Antenna connectors: 2 × SMA (LTE), 2 × RP-SMA (Wi-Fi), 1 × SMA (GNSS) (datasheet).
+- Protocols: Modbus RTU/TCP server and client, DNP3, BACnet, OPC UA, DLMS, MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Tinc (datasheet).
+- Pin numbers for the power, I/O and RS485 sockets are [NOT STATED] here; they are on the Teltonika Wiki, which could not be opened (Wiki).
+## Use cases
+- Bus monitoring systems (product page).
+- Radio broadcast links (product page).
+- Grain silo connectivity (product page).
+- Tailings storage facility safety monitoring in mines (product page).
+- Remotely operated underwater vehicles (product page).
+- Modbus RTU to cloud or MQTT gateway for serial PLCs and meters (datasheet).
+## Known limitations
+- Ethernet is 10/100 Mbps only (datasheet).
+- Wi-Fi is 2.4 GHz Wi-Fi 4 only (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- Supply 9–30 VDC; surge protection above 31 VDC for 10 µs only (datasheet).
+- Dry input is 0–3 V; the open collector outputs are limited to 30 V and 250–300 mA (datasheet).
+- IP30 housing; mounting needs an extra kit (datasheet).
+- Cytron's order code has no eSIM (inferred from the Teltonika ordering page).
+## Positioning (kept apart from specs)
+- Teltonika: "industrial cellular router" that combines cellular, Wi-Fi and wired connectivity with automatic WAN failover and GNSS (Teltonika product page).
+- Cytron: serial and I/O let it integrate varied devices for equipment control, automation and event notifications (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM1,205.00, or RM1,168.85 each for 5 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rut956-lte-cat-4-industrial-grade-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rut956
+
+# Product fact sheets
+
+## Product name
+Teltonika RUTX50 5G Industrial Grade Router
+## Aliases
+RUTX50, RUT-X50, RUTX50000100, Teltonika RUTX50, RUTX50 industrial 5G router
+## What it is
+An industrial 5G cellular router made by Teltonika Networks and distributed in Malaysia by Cytron (product page). It has dual SIM 5G with LTE Cat 20 fallback, five Gigabit Ethernet ports, dual-band Wi-Fi 5 and GNSS, and runs RutOS, Teltonika's OpenWrt-based Linux OS (datasheet).
+## Specs and functions
+- Mobile: 5G Sub-6 GHz SA/NSA up to 2.1/3.3 Gbps down (4×4 MIMO) and 900/600 Mbps up; LTE Cat 20 up to 2.0 Gbps down; 3G up to 42 Mbps (datasheet).
+- Cytron's order code RUTX50000100 is the "0*****" version: 5G NR n1, n3, n5, n7, n8, n20, n28, n38, n40, n41, n77, n78; LTE-FDD B1, B3, B5, B7, B8, B20, B28, B32; LTE-TDD B38, B40, B41, B42, B43; UK PSU (Teltonika ordering page).
+- Two Mini SIM (2FF) slots with auto failover; eSIM only on other order codes (datasheet, Teltonika ordering page).
+- Ethernet: 1 × WAN and 4 × LAN, 10/100/1000 Mbps (datasheet).
+- Wi-Fi: 802.11ac Wave 2 (Wi-Fi 5), dual band, up to 867 Mbps, MU-MIMO, up to 150 users (datasheet).
+- GNSS: GPS, GLONASS, BeiDou, Galileo and QZSS (datasheet).
+- I/O on the 4-pin power socket: 1 digital input (0–6 V low, 8–30 V high) and 1 open collector output (30 V, 300 mA) (datasheet).
+- Quad-core ARM Cortex A7 717 MHz, 256 MB RAM, 256 MB flash, TPM 2.0 (datasheet).
+- Power: 9–50 VDC on a 4-pin socket, or passive PoE on LAN1 (Mode B, 9–50 VDC); idle under 4 W, max under 16.5 W (datasheet).
+- Housing: anodised aluminium, 132 × 44.2 × 95.1 mm, 533 g, IP30, -40 °C to 75 °C, grounding screw (datasheet).
+- Packing: router, 18 W PSU, 4 swivel mobile antennas, 2 Wi-Fi antennas, GNSS antenna, Ethernet cable, SIM adapter kit, quick start guide (product page).
+## Interfaces and compatibility
+- RJ45 × 5 Gigabit; LAN1 accepts passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- USB A host (USB 2.0) for storage, modem, printer or USB-serial adapter (datasheet).
+- Antenna connectors: 4 × SMA (mobile), 2 × RP-SMA (Wi-Fi), 1 × SMA (GNSS) (datasheet).
+- No RS232 or RS485 port; Modbus, DNP3 and DLMS run over TCP or a USB adapter (datasheet).
+- Protocols: Modbus TCP, DNP3, BACnet, OPC UA, DLMS, MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, Tailscale, GRE, L2TP, PPTP, SSTP, DMVPN, Tinc (datasheet).
+- Pin order of the 4-pin power socket is [NOT STATED] here; it is on the Teltonika Wiki, which could not be opened (Wiki).
+## Use cases
+- RV internet and camping Wi-Fi (product page).
+- Warehouse automation over 5G (product page).
+- Global predictive maintenance (product page).
+- Wi-Fi mesh for autonomous pallet shuttles (product page).
+- Vending machine POS and parcel terminal management with RMS (product page).
+## Known limitations
+- No serial ports; RS232/RS485 needs a USB-serial adapter (datasheet).
+- Only one digital input and one digital output (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- IP30 housing; DIN, wall or flat mounting needs an extra kit (datasheet).
+- Cytron's order code has no eSIM (inferred from the Teltonika ordering page).
+## Positioning (kept apart from specs)
+- Teltonika: dual-SIM multi-network router offering 5G for high-speed and data-heavy applications, with backward compatibility for long-term expandability (Teltonika product page).
+- Cytron: robust industrial 5G router for complex and extensive industrial network systems (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM2,688.00, or RM2,607.36 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-rutx50-5g-industrial-grade-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/rutx50
+
+# Product fact sheets
+
+## Product name
+Teltonika OTD140 LTE Cat 4 Industrial Grade Outdoor Router
+## Aliases
+OTD140, RUT-OTD-140, OTD140000000, Teltonika OTD140, OTD140 outdoor 4G router
+## What it is
+An outdoor 4G LTE Cat 4 router made by Teltonika Networks and distributed in Malaysia by Cytron (product page). It has an IP55 plastic housing with a pole/wall bracket, internal antennas, dual SIM and two Ethernet ports, one PoE-in that powers the router and one PoE-out that powers a downstream device, and runs RutOS (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps (datasheet).
+- Bands of the only listed version (OTD140 0*****): LTE-FDD B1, B3, B5, B7, B8, B20, B28; LTE-TDD B38, B40, B41; 3G B1, B5, B8; 2G B3, B8 (Teltonika ordering page).
+- Two Mini SIM (2FF) slots with automatic failover (datasheet).
+- Ethernet: 2 × RJ45 10/100 Mbps, both configurable as WAN (datasheet).
+- PoE-in: IEEE 802.3af/at, 42.5–57.0 VDC, reverse polarity and surge protection; this is the only power input (datasheet).
+- PoE-out: IEEE 802.3af Alternative B, up to 15 W, depending on the upstream power supply (datasheet).
+- Power consumption: idle under 2.5 W, max under 6 W, under 21 W with PoE-out loaded (datasheet).
+- Antennas: 2 internal omnidirectional LTE antennas, 698–960 / 1710–2690 MHz, gain under 4.5 dBi (datasheet).
+- CPU Mediatek 580 MHz MIPS 24KEc, 128 MB RAM, 16 MB flash (datasheet).
+- Housing: PC+ASA plastic, IP55, 110 × 49.3 × 235 mm, 315 g, -40 °C to 75 °C, 10–90 % RH (datasheet).
+- Mounting: integrated bracket for a vertical flat surface or a pole (datasheet).
+- Packing: 1 × OTD140 router; no PSU or PoE injector listed (product page).
+## Interfaces and compatibility
+- Two RJ45 ports only: PoE-in and PoE-out; no DC terminal, no Wi-Fi, no serial port, no I/O and no USB are listed (datasheet).
+- Needs a separate IEEE 802.3af/at PoE injector or PoE switch (inferred from the datasheet and packing list).
+- Powers 802.3af cameras or access points up to 15 W from PoE-out (datasheet).
+- Protocols over TCP: Modbus, DNP3, BACnet/IP, OPC UA, DLMS, MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Tinc (datasheet).
+- Which RJ45 is PoE-in and which is PoE-out is [NOT STATED] here; it is on the Teltonika Wiki, which could not be opened (Wiki).
+## Use cases
+- Construction site CCTV and portable offices (product page).
+- Underground EV charging stations (product page).
+- Security surveillance and agriculture sites (product page).
+- Public Wi-Fi zones, paired with a PoE access point (product page; pairing inferred).
+## Known limitations
+- Powered only by 802.3af/at PoE at 42.5–57.0 VDC; passive 12/24 V PoE will not work (datasheet).
+- PoE-out is limited to 15 W and depends on the upstream supply (datasheet).
+- Ethernet is 10/100 Mbps only (datasheet).
+- No Wi-Fi, no serial, no I/O, no external antenna connector (datasheet).
+- LTE Cat 4 (3GPP Release 9) only (datasheet).
+## Positioning (kept apart from specs)
+- Teltonika: "IP55 pioneer" outdoor 4G router that is easy to deploy and withstands outdoor conditions (Teltonika product page).
+- Cytron: robust outdoor router for reliable connectivity in challenging environments (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM701.00, or RM679.97 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-otd140-lte-cat-4-industrial-grade-outdoor-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/routers/otd140
+
+# Product fact sheets
+
+## Product name
+Teltonika TRB140 LTE Cat 4 Ethernet Gateway
+## Aliases
+TRB140, TRB-140, TRB140005000, Teltonika TRB140, TRB140 industrial LTE gateway
+## What it is
+A very small industrial 4G LTE Cat 4 gateway made by Teltonika Networks and distributed in Malaysia by Cytron (product page). It connects one Ethernet device to the mobile network, has one digital input and one digital output on its power socket, and runs RutOS, Teltonika's OpenWrt-based Linux OS (datasheet).
+## Specs and functions
+- Mobile: 4G LTE Cat 4 up to 150 Mbps down / 50 Mbps up; 3G up to 21 / 5.76 Mbps; 2G up to 236.8 kbps (datasheet).
+- Cytron's order code TRB140005000 is the "0*****" version: LTE-FDD B1, B3, B7, B8, B20, B28A; LTE-TDD B38, B40, B41; 3G B1, B8; 2G B3, B8; Malaysia is in its region list; UK PSU (Teltonika ordering page).
+- One Mini SIM (2FF) slot (datasheet).
+- Ethernet: 1 × RJ45 10/100/1000 Mbps (datasheet).
+- Micro USB: virtual network interface to a PC (datasheet).
+- I/O on the 4-pin power socket: 1 digital input (0–6 V low, 8–30 V high) and 1 open collector output (30 V, 300 mA) (datasheet).
+- ARM Cortex-A7 1.3 GHz, 128 MB DDR2 RAM, 512 MB SPI flash (datasheet).
+- Power: 9–30 VDC on a 4-pin socket, or passive PoE on the Ethernet port (Mode B, 9–30 VDC); under 5 W (datasheet).
+- Housing: aluminium, 74.5 × 25 × 64.4 mm, 136 g, IP30, -40 °C to 75 °C (datasheet).
+- Packing: gateway, 9 W PSU, magnetic LTE antenna (SMA, 3 m), micro-USB cable, hex key, LAN cable, quick start guide (product page).
+## Interfaces and compatibility
+- One Gigabit RJ45 port; passive PoE only, not IEEE 802.3af/at/bt (datasheet).
+- One SMA LTE antenna connector (datasheet).
+- Micro USB is a device port for PC setup, not a USB host (datasheet).
+- No Wi-Fi and no serial port (datasheet).
+- Protocols over TCP: Modbus, DNP3, BACnet/IP, OPC UA, DLMS, MQTT, SNMP, TR-069, JSON-RPC, RMS (datasheet).
+- VPN: OpenVPN, IPsec, WireGuard, ZeroTier, GRE, L2TP, PPTP, SSTP, DMVPN, Stunnel (product page).
+- Pin order of the 4-pin power/I/O socket is [NOT STATED] here; it is on the Teltonika Wiki, which could not be opened (Wiki).
+## Use cases
+- Water quality monitoring and water purification data links (product page).
+- Remote monitoring of solar power plants (product page).
+- Digital signage connectivity (product page).
+- Vending machine POS and parcel terminal management (product page).
+- Giving a single PLC, HMI or controller a 4G link with SMS alarms from its DI (datasheet; pairing inferred).
+## Known limitations
+- Only one Ethernet port and static routing only (datasheet).
+- Only one SIM, one antenna and one DI plus one DO (datasheet).
+- Passive PoE only; a standard 802.3af/at PoE switch will not power it (datasheet).
+- IP30 housing; DIN, wall or flat mounting needs an extra kit (datasheet).
+- Cytron's page lists "2 x configurable I/O"; Teltonika's specification lists 1 DI and 1 DO (datasheet, product page).
+## Positioning (kept apart from specs)
+- Teltonika: "industrial rugged LTE gateway"; ultra-small, lightweight and energy-efficient, for projects where a single device needs reliable internet (Teltonika product page).
+- Cytron: specially engineered for the industrial sector with SMS control, firewall, VPN, RMS and FOTA (product page).
+- Comes with a free 30-day trial of Teltonika RMS (product page).
+## Price band
+RM658.00, or RM638.26 each for 5 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-trb140-lte-cat-4-ethernet-gateway
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/gateways/trb140
+
+# Product fact sheets
+
+## Product name
+Teltonika TSW101 Automotive PoE+ Switch
+## Aliases
+TSW101, SW-TSW-101, TSW101000000, TSW101000001, Teltonika automotive PoE+ switch
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- 5 x RJ45 Ethernet ports, 10/100/1000 Mbps, auto MDI/MDIX (Teltonika specification).
+- IEEE 802.3i, 802.3u, 802.3ab, 802.3x, 802.3az (Teltonika specification).
+- PoE+ on ports 1-4, IEEE 802.3af and 802.3at, Alternative A (Teltonika specification).
+- PoE max 30 W per port and 60 W total budget at PSE (Teltonika specification).
+- Non-blocking bandwidth 10 Gbps, 128 KB packet buffer, 2K MAC table, 9216-byte jumbo frames (Teltonika specification).
+- Power input 9-30 VDC through a 2-pin industrial DC power socket; PoE output works over the same 9-30 VDC range (Teltonika specification).
+- Power consumption idle 0.64 W, max 2.31 W, PoE max 62.3 W (Teltonika specification).
+- Runs from a 12 V or 24 V car battery with no extra PSU (Teltonika specification).
+- 1 power LED, 10 Ethernet status LEDs, 1 grounding screw (Teltonika specification).
+- Anodised aluminium housing, 115 x 32 x 95 mm, 384 g, IP30 (Teltonika specification).
+- Operating temperature -40 to 75 °C, humidity 5-95 % non-condensing (Teltonika specification).
+- Profinet Class A conformance only with order code TSW101000001 (Teltonika ordering tab).
+- Packing list: 1 x TSW101 switch only (product page).
+## Interfaces and compatibility
+- Ports 1-4 power 802.3af/at devices such as IP cameras and access points; port 5 has no PoE (Teltonika specification).
+- No configuration, WebUI or firmware is listed; it is plug-and-play (Teltonika specification).
+- Mounting on DIN rail, wall or flat surface needs an additional kit (Teltonika specification).
+- Compatible Teltonika accessories: DIN rail kit, compact DIN rail kit, DIN rail kit adapter, surface mounting kit, TSW1 rear panel with DIN rail holder, 18 W 2-pin PSUs, Ethernet cable 1.5 m, RJ45 dust covers (Teltonika page).
+- Cytron suggests the Teltonika DIN Rail Kit, sold separately at RM49.00 (product page).
+- Power socket pinout is on the Teltonika Wiki and was not readable [NOT STATED].
+## Use cases
+- In-vehicle networks powered from a 12 V or 24 V battery (Teltonika page).
+- Fire-truck communication systems (product page).
+- Powering IP cameras and access points in vehicles (product page).
+- Parcel terminal setups (product page).
+## Known limitations
+- 60 W total PoE budget, so only two ports can deliver a full 30 W at once (Teltonika specification).
+- Not managed: no VLAN, no WebUI, no monitoring (Teltonika specification lists none).
+- No PSU and no mounting kit in the box (product page, Teltonika ordering tab).
+- IP30 only; not for wet locations (Teltonika specification).
+- Datasheet link on the Cytron page returns 404 (checked 2026-10-21).
+## Positioning (kept apart from specs)
+- Teltonika: "plug-and-play automotive switch dedicated to in-vehicle applications".
+- Cytron: "ideal solution for reliable in-vehicle networking".
+## Price band
+RM341.00 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-tsw101-automotive-poe-plus-switch
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/ethernet-switches/tsw101
+
+# Product fact sheets
+
+## Product name
+Teltonika TSW202 Industrial Managed PoE+ Switch
+## Aliases
+TSW202, SW-TSW-202, TSW202000000, TSW202000001, Teltonika managed PoE+ Ethernet switch
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- 8 x RJ45 10/100/1000 Mbps ports, all PoE+ (IEEE 802.3af/at), plus 2 x SFP fibre ports (Teltonika specification).
+- PoE max 30 W per port, 240 W total budget at PSE, short-circuit and overload protection (Teltonika specification).
+- PoE Alternative A on Batch 15 and Batch 17 onward, Alternative B on Batches 1-14 and 16 (Teltonika specification).
+- Power input 7-57 VDC on a 2-pin industrial DC socket, reverse polarity protection to -80 V (Teltonika specification).
+- PoE output needs 44-57 VDC input (Teltonika specification).
+- Power consumption idle under 3 W, max 8 W, PoE max 248 W (Teltonika specification).
+- TSWOS (OpenWrt-based Linux), WebUI over HTTP/HTTPS, SSH, FOTA, RMS, Web API beta, SDK (Teltonika specification).
+- VLAN 802.1Q, STP/RSTP, loop protection, LACP, IGMP snooping, SNMP v2/v3, LLDP, 802.1x, port mirroring, QoS, storm control (Teltonika specification).
+- Static IPv4/IPv6 routing and dynamic routing BGP, OSPF v2, RIP, EIGRP (Teltonika specification).
+- EtherNet/IP and MRP client/manager; PROFINET Class B only on order code TSW202000001 (Teltonika specification and ordering tab).
+- 128 MB DDR3 RAM, 16 MB flash, 20 Gbps non-blocking, 14.88 Mpps, 8K MAC table, 10000-byte jumbo frames (Teltonika specification).
+- Anodised aluminium, 132 x 44.2 x 122.2 mm, 610 g, IP30, -40 to 75 °C, 5-95 % RH (Teltonika specification).
+- Packing list: switch and Quick Start Guide (product page).
+## Interfaces and compatibility
+- Power, Aux, 16 Ethernet and 2 SFP status LEDs; software reset button; grounding screw (Teltonika specification).
+- Integrated DIN rail bracket; wall and flat-surface mounting need an extra kit (Teltonika specification).
+- Compatible Teltonika SFP modules: 1.25 Gb/s SR, 20 km BiDi and copper RJ45 (Teltonika page).
+- Compatible Teltonika PSUs: 2-pin 62 W, 130 W and 250 W (Teltonika page).
+- The Teltonika DIN Rail Kit does not list the TSW202 as compatible, although Cytron suggests it (Teltonika page, product page).
+- Power socket pinout, default LAN IP and LED meanings are in the Teltonika Wiki, which was not readable [NOT STATED].
+## Use cases
+- Smart traffic management systems (product page).
+- Smart logistics warehouses with PoE cameras and access points (product page).
+- Car manufacturing lines using PROFINET or EtherNet/IP (product page).
+- VLAN segmentation of enterprise and industrial networks (product page).
+## Known limitations
+- PoE works only with 44-57 VDC input (Teltonika specification).
+- PROFINET is not on the standard order code (Teltonika ordering tab).
+- No PSU or SFP modules in the standard box (product page, Teltonika ordering tab).
+- IP30 only (Teltonika specification).
+## Positioning (kept apart from specs)
+- Teltonika: "granular network management capabilities while centralising power distribution".
+- Teltonika: "L2 with additional L3 features for enhanced management and control".
+## Price band
+RM686.00, or RM665.42 each for 3 or more (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-tsw202-industrial-managed-poe-plus-switch
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/ethernet-switches/tsw202
+
+# Product fact sheets
+
+## Product name
+Teltonika DIN Rail Kit
+## Aliases
+PR5MEC00, HD-BK-DIN-TL, Teltonika DIN rail mounting kit
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- Mounting type: 35 mm DIN rail (Teltonika page).
+- Material: low carbon steel (Teltonika page).
+- Dimensions: 65.2 x 44.2 x 1.5 mm (Teltonika page); Cytron states 82 x 46 x 20 mm (product page).
+- Screws included: Philips pan head #6-32 x 3/16, 2 pcs (Teltonika page).
+- Weight: 57 g (Teltonika page).
+- RoHS compliant (Teltonika page).
+- Packing list: 1 x DIN rail mounting, 1 x set of screws (product page).
+## Interfaces and compatibility
+- Teltonika lists 69 compatible models, including RUT200, RUT901, RUT906, RUT956, RUTX50, TRB140 and TSW101 (Teltonika page).
+- RUT140, OTD140 and TSW202 are not on Teltonika's list (Teltonika page).
+- Cytron lists RUT200, RUT901, RUT906, RUT956, RUTM51, RUTX50, TSW202 and TSW101 (product page).
+- The TSW202 already has an integrated DIN rail bracket (Teltonika TSW202 page).
+- No electrical interface; mechanical bracket only (Teltonika page).
+## Use cases
+- Mounting Teltonika routers and gateways in DIN-rail control cabinets (product page).
+- Mounting the TSW101 switch, which needs a kit for any mounting option (Teltonika TSW101 page).
+## Known limitations
+- Fits 35 mm DIN rail only (Teltonika page).
+- Not listed by Teltonika for RUT140, OTD140 or TSW202 (Teltonika page).
+- Warranty not stated on the Cytron page [NOT STATED].
+## Positioning (kept apart from specs)
+- Cytron: "the unsung hero of clean, secure installations".
+- Cytron: keeps devices "firmly in place, even in high-vibration settings".
+## Price band
+RM49.00 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-teltonika-dinrail-kit
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/accessories/mounting-options/din-rail-kit
+
+# Product fact sheets
+
+## Product name
+Teltonika 4G Mobile Magnetic SMA Antenna
+## Aliases
+PR1KS210, ANT-4G-MGN, Teltonika Mobile Magnetic SMA Antenna, Teltonika magnetic LTE antenna
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- Frequency range: 699-868 MHz and 1850-2690 MHz (Teltonika page).
+- Polarisation: linear (Teltonika page).
+- Gain: 1.0 dBi (Teltonika page).
+- VSWR: 3.0 (Teltonika page).
+- Impedance: 50 Ω (Teltonika page).
+- Cable: RG174, 3000 mm (Teltonika page).
+- Connector: SMA male (Teltonika page).
+- Mounting: magnet (Teltonika page).
+- IP rating: IP40 (Teltonika page).
+- RoHS compliant (Teltonika page).
+- Operating temperature -40 to +85 °C, stated by Cytron only (product page).
+- Packing list: 1 x antenna with cable (product page).
+## Interfaces and compatibility
+- Teltonika lists 42 compatible models, including RUT200, RUT901, RUT906, RUT956 and TRB140 (Teltonika page).
+- RUT140, RUTX50 and OTD140 are not on Teltonika's list (Teltonika page).
+- TSW101 and TSW202 are Ethernet switches with no cellular port, so the antenna does not apply (Teltonika pages).
+- Connects to the router's mobile antenna port; one antenna serves one port (inferred).
+- The range does not include 900 MHz and covers only part of 1800 MHz (inferred from the frequency range).
+## Use cases
+- Placing the cellular antenna on a vehicle roof or metal cabinet away from the router (product page).
+- Temporary setups and mobile deployments (product page).
+## Known limitations
+- Low gain of 1.0 dBi (Teltonika page).
+- IP40, so not for exposed outdoor use (Teltonika page).
+- Single port: two are needed for MIMO or diversity (inferred).
+- Warranty not stated on the Cytron page [NOT STATED].
+## Positioning (kept apart from specs)
+- Cytron: "compact, magnet-mount antenna designed for mobile applications".
+- Cytron: "ideal for temporary setups or mobile deployments".
+## Price band
+RM65.00 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/m-teltonika/p-teltonika-4g-mobile-magnetic-sma-antenna
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://teltonika-networks.com/products/accessories/antenna-options/mobile-magnetic-sma-antenna
+
+# Product fact sheets
+
+## Product name
 Maker pHAT: Simplifying Raspberry Pi for Education
 
 ## Aliases

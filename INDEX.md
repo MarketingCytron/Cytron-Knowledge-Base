@@ -4,7 +4,7 @@ Verified product facts for **Cytron-brand products**, written for AI agents (tut
 
 **Start here:** read this index, then load only the product files a task needs.
 
-**Scope: Cytron-brand products only.** Third-party boards and modules that Cytron resells are not covered here.
+**Scope: Cytron-brand products, plus Teltonika industrial networking products distributed by Cytron (added 21 Oct 2026).** Other third-party boards and modules that Cytron resells are not covered here.
 
 This is the public edition. Internal working notes (internal document links, pricing sources, unreleased products and the open-issues log) are kept privately by the Cytron marketing team.
 
@@ -330,6 +330,31 @@ IRIV notes for every agent:
 - **Safety Box Kit is not a certified safety system**, detects helmets and vests only, needs RTSP IP cameras (not included), and its "up to 6 cameras" holds only for 640x360 sub-streams at 15–25 FPS. No accuracy figure exists — "96% compliant" in marketing is an example dashboard reading.
 - **Bare "IRIV SmartHub" is ambiguous** with the SmartHub dashboard feature of EdgeAI. Always use the full name.
 
+### Industrial networking (Teltonika)
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Teltonika RUT200 | [`teltonika-rut200.md`](teltonika-rut200.md) | `RUT200` | Compact single-SIM 4G LTE Cat 4 router, 2 Ethernet, Wi-Fi 4, DI/DO on the power plug | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page | **Medium** |
+| Teltonika RUT140 | [`teltonika-rut140.md`](teltonika-rut140.md) | `RUT140` | Industrial Ethernet/Wi-Fi router (no cellular), 3-pin 9–30 VDC terminal, DIN bracket | Teltonika product page technical spec (datasheet 2026-09-29) + Cytron page | **Medium** |
+| Teltonika RUT901 | [`teltonika-rut901.md`](teltonika-rut901.md) | `RUT901` | Dual-SIM 4G LTE Cat 4 router, 4 Ethernet, Wi-Fi 4; no GNSS/serial/USB (vs RUT906) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page | **Medium** |
+| Teltonika RUT906 | [`teltonika-rut906.md`](teltonika-rut906.md) | `RUT906` | Dual-SIM 4G LTE Cat 4 router with GNSS, RS232, RS485, USB, 10-pin I/O, 4 Ethernet, Wi-Fi 4 | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page | **Medium** |
+| Teltonika RUT956 | [`teltonika-rut956.md`](teltonika-rut956.md) | `RUT956` | Dual-SIM 4G router with Wi-Fi, GNSS, RS232/RS485 and 10-pin I/O | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page | **Medium** |
+| Teltonika RUTX50 | [`teltonika-rutx50.md`](teltonika-rutx50.md) | `RUTX50` | 5G dual-SIM router, 5× Gigabit Ethernet, Wi-Fi 5, GNSS; no serial port | Teltonika product page technical spec (datasheet 2026-09-25) + Cytron page | **Medium** |
+| Teltonika OTD140 | [`teltonika-otd140.md`](teltonika-otd140.md) | `OTD140` | IP55 outdoor 4G router, 802.3af/at PoE-in + 15 W PoE-out, internal antennas | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page | **Medium** |
+| Teltonika TRB140 | [`teltonika-trb140.md`](teltonika-trb140.md) | `TRB140` | Compact 4G-to-Gigabit-Ethernet gateway with 1 DI / 1 DO on the power plug | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page | **Medium** |
+| Teltonika TSW101 | [`teltonika-tsw101.md`](teltonika-tsw101.md) | `TSW101` | Unmanaged automotive 5-port Gigabit switch, 4× PoE+ (60 W total), 9–30 VDC | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page | **Medium** |
+| Teltonika TSW202 | [`teltonika-tsw202.md`](teltonika-tsw202.md) | `TSW202` | Managed 8-port Gigabit PoE+ switch (240 W) with 2× SFP, TSWOS; PoE needs 44–57 VDC input | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page | **Medium** |
+| Teltonika DIN Rail Kit | [`teltonika-din-rail-kit.md`](teltonika-din-rail-kit.md) | `PR5MEC00` | Steel 35 mm DIN-rail bracket for Teltonika routers and switches | Teltonika accessory page technical data + Cytron page | **Medium** |
+| Teltonika 4G Magnetic SMA Antenna | [`teltonika-4g-magnetic-sma-antenna.md`](teltonika-4g-magnetic-sma-antenna.md) | `PR1KS210` | Magnetic-base mobile antenna, 699–868 / 1850–2690 MHz, 3 m RG174, SMA male | Teltonika accessory page technical data + Cytron page | **Medium-high** |
+
+**Distributed brand (added 21 Oct 2026):** Teltonika Networks is the manufacturer; Cytron distributes these products in Malaysia (https://my.cytron.io/m-teltonika). Authority for these files: Teltonika datasheet / technical specification [DS] > Teltonika Wiki [UM] > Cytron product page [PP]. The Cytron page is used for price, stock, packing, options and warranty; where it disagrees with Teltonika the conflict is listed in the product file.
+
+Teltonika notes for every agent:
+- **Teltonika Wiki (wiki.teltonika-networks.com) was blocked by a Cloudflare check on 21 Oct 2026**, so power-socket pin order, I/O and RS485 pin numbers, LED meanings and default LAN IP are still to be read for every model — check the Wiki before giving wiring steps.
+- **DIN Rail Kit (PR5MEC00)** is listed by Teltonika for RUT200, RUT901, RUT906, RUT956, RUTX50, TRB140, TSW101 — not RUT140 (built-in bracket), OTD140 or TSW202 (built-in bracket).
+- **4G Magnetic SMA Antenna (PR1KS210)** is listed for RUT200, RUT901, RUT906, RUT956, TRB140 — not RUTX50, RUT140 or OTD140; it does not cover 900 MHz (B8).
+- Several Cytron pages carry copy errors (3G 42 Mbps vs Teltonika 21 Mbps, eSIM "optional" on non-eSIM order codes, RUT956 packing list says "RUT906", dead datasheet links for RUT956 and TSW101, OTD140 weight 855 g vs 315 g) — see each file's *Conflicts*.
+
 ### Workshops and services
 
 | Product | File | Code | What it is | Primary source | Confidence |
@@ -355,7 +380,7 @@ IRIV notes for every agent:
 
 ## How to add or update a product
 
-1. Check it is a Cytron-brand product. Then copy `_TEMPLATE.md` to `<product-slug>.md`.
+1. Check it is a Cytron-brand product (or a distributed brand the team has approved, e.g. Teltonika). Then copy `_TEMPLATE.md` to `<product-slug>.md`.
 2. Start from the main source for the product type (rule 7: datasheet for boards; guide book for education kits; board datasheet + guide book/tutorial for robot kits). Tag every fact with its source. Put conflicts and unconfirmed items in their sections — don't drop them.
 3. Fill `fact-sheets/<product-slug>.md` in the Content Hub template from that reference (only what it states), and add it to `fact-sheets/ALL-fact-sheets.md`. Check the aliases don't clash with another product.
 4. Add the row to *Products* above with an honest confidence level.
