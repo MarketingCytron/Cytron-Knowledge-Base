@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (135 products), in review-queue order. Reviewed: 135 of 135. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (185 products), in review-queue order. Reviewed: 185 of 185. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -16,7 +16,7 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 5 | 36 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium | Medium | 9 | 5 | 6 | Done (2026-10-19) | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no… |
 | 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium | Medium | 5 | 2 | 1 | Done (2026-10-19) | Getting Started Guide V1.0, Jan 2015 + product photos |
 | 7 | 71 | [Robo Base](robo-base.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 2 | 2 | Done (2026-10-19) | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images |
-| 8 | 131 | [Jetson Orin Nano Workshop](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 5 | Done (2026-10-19) | Tentative timetable + product page |
+| 8 | 181 | [Jetson Orin Nano Workshop](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 5 | Done (2026-10-19) | Tentative timetable + product page |
 | 9 | 19 | [Maker UNO Edu Kit](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Arduino kits and books | Sold | Medium-high | Low | 7 | 4 | 2 | Done (2026-10-19) | Getting Started Module PDF + Teacher Guidebook (no version/date) |
 | 10 | 40 | [STRIKER:BIT](strikerbit.md) | `V-STRIKERBIT` | micro:bit kits | Sold | Medium | Medium | 7 | 5 | 5 | Done (2026-10-20) | STRIKER:BIT Booklet (read 20 Oct 2026) + scoring sheet + product page |
 | 11 | 42 | [Robot Battle 500g](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | micro:bit kits | Sold | Medium | Medium | 7 | 3 | 2 | Done (2026-10-19) | Product page only |
@@ -24,15 +24,15 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 13 | 48 | [Ikedo Mini Sumo Pro](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Sumo robot kits and parts | Sold | Medium | Medium | 8 | 4 | 5 | Done (2026-10-19) | Product page |
 | 14 | 68 | [STEM Robot Building Base](stem-robot-building-base.md) | `V-HD-STEM` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 6 | Done (2026-10-21) | Installation guide tutorial (25 Jul 2023, read in full incl. images) + product page |
 | 15 | 72 | [Robo Base Mini](robo-base-mini.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 2 | Done (2026-10-19) | Product page + Getting Started tutorial (section list) |
-| 16 | 130 | [AI Agent Workshop](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 4 | Done (2026-10-19) | Course outline (no date) + product page |
+| 16 | 180 | [AI Agent Workshop](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 4 | Done (2026-10-19) | Course outline (no date) + product page |
 | 17 | 49 | [1KG RC Sumo Bundle](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | Sumo robot kits and parts | Sold | Medium | Medium | 6 | 4 | 4 | Done (2026-10-19) | Product page (user-guide tutorials blocked) |
 | 18 | 67 | [3-Axis Accelerometer](sn-adxl335-cy.md) | `SN-ADXL335-CY` | Sensors | Out of stock | Medium | Medium | 5 | 3 | 3 | Done (2026-10-19) | Product page + ADI vendor docs |
-| 19 | 127 | [MakerDisk NVMe 2280](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 3 | 3 | Done (2026-10-19) | Product page |
-| 20 | 133 | [JetPack Flash Service](jetpack-flash-service.md) | `SEV-JN-ORNN` | Workshops and services | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Product page |
+| 19 | 177 | [MakerDisk NVMe 2280](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 3 | 3 | Done (2026-10-19) | Product page |
+| 20 | 183 | [JetPack Flash Service](jetpack-flash-service.md) | `SEV-JN-ORNN` | Workshops and services | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Product page |
 | 21 | 18 | [Prototyping Shield](shield-proto2.md) | `SHIELD-PROTO2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 4 | 4 | 2 | Done (2026-10-20) | Schematic + artwork prints Rev 1.0.1 (read 20 Oct 2026) + product page |
 | 22 | 55 | [URS232A](urs232a.md) | `URS232A` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Product page + Cytron schematic URS232A.sch (1/2/2016) design team; TI MAX232 vendor docs for chip context |
-| 23 | 128 | [MakerDisk NVMe 2280 JetPack](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 1 | 3 | Done (2026-10-19) | Product page |
-| 24 | 129 | [MakerDisk SATA 120 GB](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | Storage (MakerDisk) | Sold | Medium | Medium | 4 | 3 | 5 | Done (2026-10-19) | Product page |
+| 23 | 178 | [MakerDisk NVMe 2280 JetPack](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 1 | 3 | Done (2026-10-19) | Product page |
+| 24 | 179 | [MakerDisk SATA 120 GB](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | Storage (MakerDisk) | Sold | Medium | Medium | 4 | 3 | 5 | Done (2026-10-19) | Product page |
 | 25 | 23 | [Robo Pico](robo-pico.md) | `ROBO-PICO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 10 | 5 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2023 |
 | 26 | 99 | [IRIV PiControl CM5](iriv-picontrol-cm5.md) | `IRIV-PICL5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 7 | 0 | Done (2026-10-21) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.5, Jan 2026 (read in full incl. figures 21 Oct 2026) |
 | 27 | 30 | [MOTION:BIT](motion-bit.md) | `MOTION-BIT` | micro:bit accessories | Sold | Medium-high | Low | 7 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2023 |
@@ -53,7 +53,7 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 42 | 33 | [REKA:BIT](reka-bit.md) | `REKA:BIT` | micro:bit accessories | Sold | Medium-high | Low | 4 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2021 |
 | 43 | 98 | [IRIV PiControl CM4](iriv-picontrol-cm4.md) | `IRIV-PICL` | IRIV industrial | Sold | Medium-high | Medium | 14 | 8 | 0 | Done (2026-10-19) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.3, Nov 2025 |
 | 44 | 7 | [Maker Uno RP2040](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | Arduino-compatible boards | Sold | Medium-high | Medium | 16 | 9 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2024 |
-| 45 | 121 | [Industrial IO HAT+](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 14 | 5 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Sep 2025 |
+| 45 | 171 | [Industrial IO HAT+](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 14 | 5 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Sep 2025 |
 | 46 | 95 | [MDDRC5](mddrc5.md) | `MDDRC5` | Motor drivers | Sold | Medium-high | Medium | 12 | 5 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Mar 2026 |
 | 47 | 102 | [IRIV SmartHub CM5](iriv-smarthub-cm5.md) | `IRIV-SH5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 14 | 0 | Done (2026-10-19) | User Manual Rev 1.3, Dec 2025 (Rev 1.4, Feb 2026 exists — not in hand) |
 | 48 | 46 | [IR Sumo Start](ir-sumo-start.md) | `IR-SUMO-START` | Sumo controllers | Sold | Medium-high | Medium | 12 | 7 | 8 | Done (2026-10-19) | IR-SUMO-START Datasheet, Rev 1.0, April 2025 (Cytron Technologies Sdn Bhd) |
@@ -87,16 +87,16 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 76 | 73 | [Robo Grip Mini](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | Robot parts and accessories | Sold | Medium-high | Medium | 11 | 6 | 5 | Done (2026-10-21) | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page |
 | 77 | 78 | [FD04A](fd04a.md) | `FD04A` | Motor drivers | Sold | Medium-high | Medium | 10 | 6 | 2 | Done (2026-10-21) | User's Manual V1.2, Jun 2025 (read in full incl. figures 21 Oct 2026) |
 | 78 | 85 | [SHIELD-MDD10](shield-mdd10.md) | `SHIELD-MDD10` | Motor drivers | Sold | Medium | Medium | 8 | 2 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, May 2019 |
-| 79 | 118 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
+| 79 | 168 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
 | 80 | 5 | [Maker UNO Plus](maker-uno-plus.md) | `MAKER-UNO-PLUS` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 6 | 1 | Done (2026-10-19) | User's Manual Rev 1.0, Oct 2018 (no datasheet) |
 | 81 | 13 | [PS2 Shield](shield-ps2.md) | `SHIELD-PS2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 4 | 1 | Done (2026-10-19) | User's Manual V1.0, Sep 2013 (no datasheet) |
 | 82 | 20 | [Maker UNO Learning Box](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Arduino kits and books | Sold | Medium-high | Low | 5 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginner Using Maker UNO, Ver 1.3, Dec 2018 (read 21 Oct 2026) + product page |
 | 83 | 22 | [PikaBot](pikabot.md) | `V-KIT-PIKABOT` | Arduino kits and books | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-21) | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot… |
 | 84 | 64 | [RE08A Rotary Encoder](re08a.md) | `RE08A` | Sensors | Sold | Medium-high | Low | 7 | 3 | 0 | Done (2026-10-19) | User's Manual V1.2, Sep 2008 (mirror; no datasheet) |
 | 85 | 65 | [50A Current Sensor](bb-acs756.md) | `BB-ACS756` | Sensors | Sold | Medium | Medium | 9 | 7 | 5 | Done (2026-10-21) | Product page + Cytron schematic + Allegro vendor docs + Cytron GitHub PIC sample code (SK28A) |
-| 86 | 120 | [CM4 Maker Board](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi HATs and boards | Sold | Medium | Medium | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Oct 2023 |
-| 87 | 125 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
-| 88 | 132 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
+| 86 | 170 | [CM4 Maker Board](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi HATs and boards | Sold | Medium | Medium | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Oct 2023 |
+| 87 | 175 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
+| 88 | 182 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
 | 89 | 14 | [ESP8266 WiFi Shield](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 5 | 3 | Done (2026-10-19) | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) |
 | 90 | 21 | [Maker Uno X Learning Guide](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Arduino kits and books | Sold | Medium-high | Low | 3 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (104 pages, read in full 21 Oct 2026) |
 | 91 | 56 | [PS2 Connector Breakout](bb-psc.md) | `BB-PSC` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Maker Mini Sumo PS2 tutorial (20 May 2024, read in full incl. wiring figure) + product page |
@@ -104,11 +104,11 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 93 | 77 | [SHIELD-3AMOTOR](shield-3amotor.md) | `SHIELD-3AMOTOR` | Motor drivers | Sold | Medium-high | Low | 6 | 3 | 4 | Done (2026-10-19) | User's Manual Rev 1.0, Apr 2017 |
 | 94 | 81 | [SHIELD-MD10](shield-md10.md) | `SHIELD-MD10` | Motor drivers | Sold | Medium | Medium | 6 | 7 | 1 | Done (2026-10-21) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 + Cytron 3D model SHIELD-MD10 R2 (GitHub, Jan 2019) design team |
 | 95 | 86 | [HAT-MDD10](hat-mdd10.md) | `HAT-MDD10` | Motor drivers | Sold | Medium-high | Low | 5 | 2 | 2 | Done (2026-10-19) | User's Manual V1.0, Mar 2017 |
-| 96 | 124 | [18650 Li-Ion 2200 mAh](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Power and accessories | Sold | Medium-high | Low | 4 | 6 | 2 | Done (2026-10-19) | Product page + PKCELL vendor sheet (2019) |
+| 96 | 174 | [18650 Li-Ion 2200 mAh](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Power and accessories | Sold | Medium-high | Low | 4 | 6 | 2 | Done (2026-10-19) | Product page + PKCELL vendor sheet (2019) |
 | 97 | 76 | [SHIELD-2AMOTOR](shield-2amotor.md) | `SHIELD-2AMOTOR` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 4 | Done (2026-10-19) | User's Manual V1.1, Feb 2015 |
 | 98 | 35 | [Grove WiFi 8266](grove-wifi-8266.md) | `GRV-WIFI-8266` | micro:bit accessories | Sold | Medium-high | Medium | 8 | 4 | 4 | Done (2026-10-20) | Datasheet Rev 1.0, Aug 2021 |
 | 99 | 44 | [Maker Mini Sumo](maker-mini-sumo.md) | `MAKER-MSUMO` | Sumo controllers | Sold | Medium-high | Medium | 11 | 6 | 3 | Done (2026-10-20) | MAKER-MSUMO Datasheet Rev 1.0, November 2019 (Google Doc linked from the product page) |
-| 100 | 119 | [Maker Hat Base](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi HATs and boards | Out of stock | Medium-high | Medium | 8 | 3 | 1 | Done (2026-10-20) | Datasheet Rev 1.0, Sep 2021 |
+| 100 | 169 | [Maker Hat Base](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi HATs and boards | Out of stock | Medium-high | Medium | 8 | 3 | 1 | Done (2026-10-20) | Datasheet Rev 1.0, Sep 2021 |
 | 101 | 3 | [Maker Feather AIoT S3](maker-feather-aiot-s3.md) | `MAKER-FEATHER-AIOT-S3` | ESP32 boards | Sold | Medium-high | Medium | 9 | 5 | 0 | Done (2026-10-20) | MAKER-FEATHER-AIOT-S3 Datasheet, Rev 1.1, January 2023 (Google Doc), plus schematic REV 1.0.0 dated… |
 | 102 | 27 | [Maker Pi Pico Mini](maker-pi-pico-mini.md) | `MAKER-PI-PICO-MINI` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Low | 7 | 1 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Jun 2022 |
 | 103 | 41 | [SUMO:BIT Robot Kit](sumobit-robot-kit.md) | `V-KIT-SUMOBIT` | micro:bit kits | Sold | Medium-high | Low | 7 | 6 | 4 | Done (2026-10-20) | Google Slides guides (Assembly/Checking/Maintenance/Autonomous/RC, Dec 2024) |
@@ -121,11 +121,11 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 110 | 38 | [Auto Plant Watering Kit](auto-plant-watering-kit.md) | `V-KIT-RBT-APW` | micro:bit kits | Sold | Medium-high | Medium | 8 | 4 | 0 | Done (2026-10-20) | Lesson Guide (English, Apr 2022) |
 | 111 | 61 | [Maker Soil Moisture](maker-soil-moisture.md) | `MAKER-SOIL-MOISTURE` | Sensors | Out of stock | Medium-high | Medium | 6 | 4 | 5 | Done (2026-10-20) | Datasheet Rev 1.0, Jan 2022 |
 | 112 | 94 | [SmartDrive160](mds160a.md) | `MDS160A` | Motor drivers | Sold | Medium-high | Low | 6 | 2 | 6 | Done (2026-10-20) | User's Manual V1.0, Aug 2014 (no datasheet) |
-| 113 | 123 | [17.5W USB-C PSU](usbc-psu-17w5.md) | `V-AD-5V3P5A` | Power and accessories | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-20) | Datasheet Rev 2.0, Oct 2024 |
+| 113 | 173 | [17.5W USB-C PSU](usbc-psu-17w5.md) | `V-AD-5V3P5A` | Power and accessories | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-20) | Datasheet Rev 2.0, Oct 2024 |
 | 114 | 62 | [MCP9700 Temp Sensor](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Sensors | Sold | Medium-high | Low | 5 | 3 | 6 | Done (2026-10-20) | Datasheet Rev 1.0, Aug 2023 |
 | 115 | 63 | [LSA08 Line Sensor](lsa08.md) | `LSA08` | Sensors | Sold | Medium-high | Low | 6 | 8 | 0 | Done (2026-10-20) | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) |
-| 116 | 122 | [27W PD USB-C PSU](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | Power and accessories | Sold | Medium-high | Low | 6 | 6 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Feb 2024 |
-| 117 | 126 | [MakerDisk NVMe 2242](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | Storage (MakerDisk) | Sold | Medium-high | Medium | 8 | 2 | 3 | Done (2026-10-20) | Datasheet Rev 1.0, Apr 2024 |
+| 116 | 172 | [27W PD USB-C PSU](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | Power and accessories | Sold | Medium-high | Low | 6 | 6 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Feb 2024 |
+| 117 | 176 | [MakerDisk NVMe 2242](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | Storage (MakerDisk) | Sold | Medium-high | Medium | 8 | 2 | 3 | Done (2026-10-20) | Datasheet Rev 1.0, Apr 2024 |
 | 118 | 10 | [Cytron UNO](cytron-uno.md) | `CT-UNO` | Arduino-compatible boards | Sold | Medium-high | Low | 6 | 4 | 4 | Done (2026-10-20) | User's Manual V1.0, Nov 2014 (no datasheet) |
 | 119 | 50 | [PCB Sumo Plate](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Sumo robot kits and parts | Sold | Medium-high | Low | 4 | 1 | 6 | Done (2026-10-20) | Product page |
 | 120 | 1 | [Maker ESP32](maker-esp32.md) | `MAKER-ESP32` | ESP32 boards | Sold | High | Low | 2 | 5 | 0 | Done (2026-10-20) | Maker ESP32 Datasheet Rev 1.1 (Sept 2026) |
@@ -142,8 +142,58 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 | 131 | 116 | [Teltonika DIN Rail Kit](teltonika-din-rail-kit.md) | `PR5MEC00` | Teltonika networking | Sold | Medium | Medium | 4 | 3 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
 | 132 | 117 | [Teltonika 4G Magnetic SMA Antenna](teltonika-4g-magnetic-sma-antenna.md) | `PR1KS210` | Teltonika networking | Sold | Medium-high | Low | 5 | 4 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
 | 133 | 105 | [IRIV PiControl Industry 4.0 Agribox](iriv-picontrol-agribox.md) | `KIT-IRIV-AGRBX2` | IRIV industrial | Inquiry | Medium-low | High | 7 | 5 | 4 | Done (2026-10-21) | Product page only (+ 2025 Agribox tutorial) |
-| 134 | 134 | [IRIV PiControl Industry 4.0 Workshop](iriv-picontrol-industry40-workshop.md) | `V-KIT-IRIV` | Workshops and services | Sold | Medium | Medium | 8 | 9 | 3 | Done (2026-10-21) | Product page + workshop brochures (2025) |
-| 135 | 135 | [IRIV EdgeAI Industry 4.0 Training](iriv-edgeai-vision-training.md) | `V-KIT-IRIV-EAI` | Workshops and services | Out of stock | Medium-low | High | 8 | 7 | 4 | Done (2026-10-21) | Product page + workshop landing page |
+| 134 | 184 | [IRIV PiControl Industry 4.0 Workshop](iriv-picontrol-industry40-workshop.md) | `V-KIT-IRIV` | Workshops and services | Sold | Medium | Medium | 8 | 9 | 3 | Done (2026-10-21) | Product page + workshop brochures (2025) |
+| 135 | 185 | [IRIV EdgeAI Industry 4.0 Training](iriv-edgeai-vision-training.md) | `V-KIT-IRIV-EAI` | Workshops and services | Out of stock | Medium-low | High | 8 | 7 | 4 | Done (2026-10-21) | Product page + workshop landing page |
+| 136 | 118 | [Milesight UG65 LoRaWAN Gateway](milesight-ug65.md) | `UG65` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 5 | 7 | 0 | Done (2026-10-21) | Milesight UG65 datasheet + user guide V2.14 + quick guide V2.5 |
+| 137 | 119 | [Milesight UG56 LoRaWAN Gateway](milesight-ug56.md) | `UG56` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 5 | 0 | Done (2026-10-21) | Milesight UG56 datasheet + quick guide V1.5 |
+| 138 | 120 | [Milesight UG67 Outdoor LoRaWAN Gateway](milesight-ug67.md) | `UG67` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 5 | 7 | 0 | Done (2026-10-21) | Milesight UG67 datasheet + quick guide V1.7 |
+| 139 | 121 | [Milesight GA01 Fiber Glass S-N Antenna Kit](milesight-ga01.md) | `FSN600` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 3 | 3 | 2 | Done (2026-10-21) | Milesight accessories guide (web) |
+| 140 | 122 | [Milesight FT101 LoRaWAN Field Tester](milesight-ft101.md) | `FT101` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 4 | 3 | 0 | Done (2026-10-21) | Milesight FT101 datasheet + user guide V1.1 |
+| 141 | 123 | [Milesight UR32 Lite Series Router](milesight-ur32.md) | `UR32L / UR32S` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 4 | 7 | 0 | Done (2026-10-21) | Milesight UR32L/UR32S datasheets + UR32L quick guide |
+| 142 | 124 | [Milesight UR35 Industrial Router](milesight-ur35.md) | `UR35` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 4 | 0 | Done (2026-10-21) | Milesight UR35 datasheet + quick guide V2.3 |
+| 143 | 125 | [Milesight UR41 Mini Industrial Router](milesight-ur41.md) | `UR41` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 4 | 2 | 0 | Done (2026-10-21) | Milesight UR41(L) datasheet + user guide V1.6 |
+| 144 | 126 | [Milesight UC100 IoT Controller](milesight-uc100.md) | `UC100` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 4 | 3 | 2 | Done (2026-10-21) | UC100 datasheet + user guide V2.0 |
+| 145 | 127 | [Milesight UC300 IoT Controller](milesight-uc300.md) | `UC300` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 5 | 3 | 1 | Done (2026-10-21) | UC300 datasheet + LoRaWAN user guide |
+| 146 | 128 | [Milesight UC501 Multi-Interface Controller](milesight-uc501.md) | `UC501` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 3 | 1 | Done (2026-10-21) | UC50x datasheet + user guide |
+| 147 | 129 | [Milesight UC502 Multi-Interface Controller](milesight-uc502.md) | `UC502` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 5 | 1 | Done (2026-10-21) | UC50x datasheet + user guide |
+| 148 | 130 | [Milesight UC512 Solenoid Valve Controller](milesight-uc512.md) | `UC512` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 3 | 1 | Done (2026-10-21) | UC51x datasheet + user guide V4.3 |
+| 149 | 131 | [Milesight WS558-LN Smart Light Controller](milesight-ws558-ln.md) | `WS558-LN` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 4 | 2 | 1 | Done (2026-10-21) | WS558 datasheet + user guide |
+| 150 | 132 | [Milesight WS50x Smart Wall Switch](milesight-ws50x.md) | `WS501 / WS502` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 2 | 1 | Done (2026-10-21) | WS50x datasheet + user guide V1.3 |
+| 151 | 133 | [Milesight WT304 Smart Fan Coil Thermostat](milesight-wt304.md) | `WT304` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 4 | 3 | 0 | Done (2026-10-21) | WT303/304 datasheet + WT30x user guide |
+| 152 | 134 | [Milesight CT Series Smart Current Transformer](milesight-ct10x.md) | `V-LR-CT10X` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 5 | 3 | 0 | Done (2026-10-21) | Milesight CT10x + CT3xx datasheets and user guides V2.0 |
+| 153 | 135 | [Milesight CTH01 Smart Power Monitor Hub](milesight-cth01.md) | `LR-CTH01` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 5 | 5 | 0 | Done (2026-10-21) | Milesight CTH01 datasheet + user guide V1.0 |
+| 154 | 136 | [Milesight RCT-RJ11 Split-core CTs for CTH01](milesight-cth01-ct-clamps.md) | `V-LR-RCT` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 4 | 4 | 0 | Done (2026-10-21) | CTH01 datasheet CT table + Cytron page |
+| 155 | 137 | [Milesight EM300-DI LoRaWAN Pulse Counter](milesight-em300-di.md) | `LR-EM300-DI` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 5 | 3 | 0 | Done (2026-10-21) | Milesight EM300-DI datasheet + user guide V1.1 |
+| 156 | 138 | [Milesight EM320-TH Temperature & Humidity Sensor](milesight-em320-th.md) | `V-LR-EM320-TH` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 4 | 0 | Done (2026-10-21) | Milesight EM320-TH datasheet + user guide V1.2 |
+| 157 | 139 | [Milesight EM300-TH Temperature & Humidity Sensor](milesight-em300-th.md) | `LR-EM300-TH` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 3 | 0 | Done (2026-10-21) | Milesight EM300-TH datasheet + user guide V2.3 |
+| 158 | 140 | [Milesight LoRaWAN IAQ Sensor (AM102/103/307/308/319)](milesight-iaq-sensor.md) | `V-LR-AM` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 5 | 9 | 0 | Done (2026-10-21) | Milesight AM30x/AM319/AM102/AM103 datasheets + user guides |
+| 159 | 141 | [Milesight WTS506 LoRaWAN IoT Weather Station](milesight-wts506.md) | `LR-WTS506` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 3 | 0 | Done (2026-10-21) | Milesight WTS506 datasheet + user guide V1.1 |
+| 160 | 142 | [Milesight EM400-MUD Ultrasonic Distance Sensor](milesight-em400-mud.md) | `EM400-MUD` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 3 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V1.1 |
+| 161 | 143 | [Milesight EM400-TLD ToF Laser Distance Sensor](milesight-em400-tld.md) | `EM400-TLD` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 2 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V1.1 |
+| 162 | 144 | [Milesight EM410-RDL Radar Distance / Level Sensor](milesight-em410-rdl.md) | `EM410-RDL` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 5 | 0 | Done (2026-10-21) | Milesight EM410-RDL datasheet + user guide V1.2 |
+| 163 | 145 | [Milesight EM500-UDL (W050/W100)](milesight-em500-udl.md) | `EM500-UDL` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 5 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.2.1 |
+| 164 | 146 | [Milesight EM500-PP Pipe Pressure Sensor](milesight-em500-pp.md) | `EM500-PP` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 4 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.2.1 |
+| 165 | 147 | [Milesight EM500-PT100 Industrial Temperature Sensor (T200)](milesight-em500-pt100.md) | `EM500-PT100` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 5 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.2.1 |
+| 166 | 148 | [Milesight EM500-SMTC Soil Moisture, Temperature and EC Sensor](milesight-em500-smtc.md) | `EM500-SMTC` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 4 | 5 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.3 |
+| 167 | 149 | [Milesight EM500-CO2 Carbon Dioxide Sensor (4 in 1)](milesight-em500-co2.md) | `EM500-CO2` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 5 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.2.1 |
+| 168 | 150 | [Milesight VS121 AI Workplace Occupancy Sensor](milesight-vs121.md) | `VS121` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 4 | 12 | 0 | Done (2026-10-21) | VS121 datasheet + user guide V2.0 |
+| 169 | 151 | [Milesight VS125 PoE AI Stereo Vision People Counter](milesight-vs125.md) | `VS125-LW-P` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 4 | 2 | 0 | Done (2026-10-21) | VS125-LW datasheet + user guide V1.2 |
+| 170 | 152 | [Milesight VS135 Ultra ToF People Counter](milesight-vs135.md) | `VS135` | Milesight LoRaWAN & IoT | Out of stock | Medium | Medium | 5 | 7 | 0 | Done (2026-10-21) | VS135 datasheet + VS135-P and VS135 user guides V1.4 |
+| 171 | 153 | [Milesight VS330 Bathroom Occupancy Sensor](milesight-vs330.md) | `VS330` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 4 | 0 | Done (2026-10-21) | VS330 datasheet + user guide V1.0 |
+| 172 | 154 | [Milesight VS370 Radar Human Presence Sensor](milesight-vs370.md) | `VS370` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 3 | 0 | Done (2026-10-21) | VS370 datasheet + user guide V1.1 |
+| 173 | 155 | [Milesight WS202 PIR & Light Sensor](milesight-ws202.md) | `WS202` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 3 | 0 | Done (2026-10-21) | WS202 datasheet + user guide V1.3 |
+| 174 | 156 | [Milesight WS301 Magnetic Contact Switch](milesight-ws301.md) | `WS301` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 7 | 0 | Done (2026-10-21) | WS301 datasheet + user guide V1.4 |
+| 175 | 157 | [Milesight EM300-MCS Magnetic Contact Switch](milesight-em300-mcs.md) | `EM300-MCS` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 6 | 0 | Done (2026-10-21) | EM300-MCS datasheet + user guide V2.3 |
+| 176 | 158 | [Milesight WS101 Smart Button](milesight-ws101.md) | `WS101` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 3 | 3 | 0 | Done (2026-10-21) | WS101 datasheet + user guide V1.2 |
+| 177 | 159 | [Milesight EM300-SLD Spot Leak Detection Sensor](milesight-em300-sld.md) | `LR-EM300-SLD` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 4 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V2.3 |
+| 178 | 160 | [Milesight EM300-ZLD Zone Leak Detection Sensor](milesight-em300-zld.md) | `LR-EM300-ZLD` | Milesight LoRaWAN & IoT | Sold | Medium-high | Low | 4 | 7 | 0 | Done (2026-10-21) | Milesight datasheet + ZLD user guide V2.3 |
+| 179 | 161 | [Milesight GS301 Bathroom Odor Detector](milesight-gs301.md) | `LR-GS301` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 5 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V1.1 |
+| 180 | 162 | [Milesight GS601 Vape Detector](milesight-gs601.md) | `LR-GS601` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 4 | 4 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V1.0 |
+| 181 | 163 | [Milesight AT101 Outdoor Asset Tracker](milesight-at101.md) | `LR-AT101` | Milesight LoRaWAN & IoT | Out of stock | Medium-high | Medium | 3 | 2 | 0 | Done (2026-10-21) | Milesight datasheet + user guide V1.0 |
+| 182 | 164 | [Milesight LoRaWAN Smart CoWork Kit](milesight-smart-cowork-kit.md) | `LR-KIT-SC-A` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 6 | 5 | 3 | Done (2026-10-21) | Cytron page + iBox CoWork Kit-A datasheet |
+| 183 | 165 | [Milesight LoRaWAN Smart Building Kit](milesight-smart-building-kit.md) | `LR-KIT-SB` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 6 | 5 | 3 | Done (2026-10-21) | Cytron page + iBox Smart Building datasheet |
+| 184 | 166 | [Milesight LoRaWAN Smart Agriculture Kit](milesight-smart-agriculture-kit.md) | `LR-KIT-SA` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 6 | 3 | 3 | Done (2026-10-21) | Cytron page + iBox Agriculture Kit datasheet |
+| 185 | 167 | [Milesight LoRaWAN Indoor Air Quality Kit](milesight-iaq-kit.md) | `LR-KIT-IAQ` | Milesight LoRaWAN & IoT | Sold | Medium | Medium | 7 | 6 | 3 | Done (2026-10-21) | Cytron page + iBox IAQ Kit datasheet |
 
 ## Review log
 
@@ -281,3 +331,53 @@ One row per product in the Cytron Product Knowledge Base (135 products), in revi
 - **IRIV PiControl Industry 4.0 Agribox** (2026-10-21): New product added 21 Oct 2026 from the product page; MyAgritech provider/terms, PSU and wiring still open
 - **IRIV PiControl Industry 4.0 Workshop** (2026-10-21): New product added 21 Oct 2026 from page + 2025 brochures; fee/duration conflicts, HQ slots passed
 - **IRIV EdgeAI Industry 4.0 Training** (2026-10-21): New product added 21 Oct 2026 from page + landing page; out of stock; no outline, dates or venue
+- **Milesight UG65 LoRaWAN Gateway** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guides read; Cytron Wi-Fi/LTE claims overridden
+- **Milesight UG56 LoRaWAN Gateway** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guides read
+- **Milesight UG67 Outdoor LoRaWAN Gateway** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — M12 power pinout read
+- **Milesight GA01 Fiber Glass S-N Antenna Kit** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no datasheet; web spec only
+- **Milesight FT101 LoRaWAN Field Tester** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guide read in full
+- **Milesight UR32 Lite Series Router** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — PoE/packing conflicts with Cytron; LTE bands unknown
+- **Milesight UR35 Industrial Router** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — full serial/IO/power pinout read
+- **Milesight UR41 Mini Industrial Router** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — power-terminal conflict between datasheet and user guide
+- **Milesight UC100 IoT Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — terminal polarity not stated; Cytron 16 vs datasheet 32 devices
+- **Milesight UC300 IoT Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — PT100 channel-2 wiring and power polarity unclear
+- **Milesight UC501 Multi-Interface Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — full pin tables read
+- **Milesight UC502 Multi-Interface Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — full pin tables read
+- **Milesight UC512 Solenoid Valve Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — pin table read
+- **Milesight WS558-LN Smart Light Controller** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — output terminal labels from a low-res image
+- **Milesight WS50x Smart Wall Switch** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — wiring diagram read
+- **Milesight WT304 Smart Fan Coil Thermostat** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — EC-fan output allocation unconfirmed
+- **Milesight CT Series Smart Current Transformer** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheets and guides read
+- **Milesight CTH01 Smart Power Monitor Hub** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guide read; installation safety follows the guide
+- **Milesight RCT-RJ11 Split-core CTs for CTH01** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no stand-alone datasheet; 1000 A data conflicts
+- **Milesight EM300-DI LoRaWAN Pulse Counter** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — wiring figure read
+- **Milesight EM320-TH Temperature & Humidity Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guide read
+- **Milesight EM300-TH Temperature & Humidity Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guide read
+- **Milesight LoRaWAN IAQ Sensor (AM102/103/307/308/319)** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — many Cytron spec conflicts; AM319 part number unknown
+- **Milesight WTS506 LoRaWAN IoT Weather Station** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — datasheet and guide read
+- **Milesight EM400-MUD Ultrasonic Distance Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no material conflict
+- **Milesight EM400-TLD ToF Laser Distance Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no conflict
+- **Milesight EM410-RDL Radar Distance / Level Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — minor thread note
+- **Milesight EM500-UDL (W050/W100)** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — beam angle open
+- **Milesight EM500-PP Pipe Pressure Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — pinout read
+- **Milesight EM500-PT100 Industrial Temperature Sensor (T200)** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron accuracy typo
+- **Milesight EM500-SMTC Soil Moisture, Temperature and EC Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron page battery 4000 mAh and IP66 conflict with datasheet
+- **Milesight EM500-CO2 Carbon Dioxide Sensor (4 in 1)** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron Tx-power typo
+- **Milesight VS121 AI Workplace Occupancy Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron power/temperature specs conflict with datasheet
+- **Milesight VS125 PoE AI Stereo Vision People Counter** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — DI/DO wiring figure unread
+- **Milesight VS135 Ultra ToF People Counter** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron variant-to-model mapping unconfirmed
+- **Milesight VS330 Bathroom Occupancy Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — minor conflicts resolved
+- **Milesight VS370 Radar Human Presence Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron breathing/battery claims corrected
+- **Milesight WS202 PIR & Light Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Tx power conflict resolved
+- **Milesight WS301 Magnetic Contact Switch** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron IP30/dimensions corrected
+- **Milesight EM300-MCS Magnetic Contact Switch** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — packing/battery claims resolved
+- **Milesight WS101 Smart Button** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no material conflict
+- **Milesight EM300-SLD Spot Leak Detection Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — no material conflict
+- **Milesight EM300-ZLD Zone Leak Detection Sensor** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron page errors noted
+- **Milesight GS301 Bathroom Odor Detector** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron resolution typos
+- **Milesight GS601 Vape Detector** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — confirm adapter in box
+- **Milesight AT101 Outdoor Asset Tracker** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — Cytron page matches
+- **Milesight LoRaWAN Smart CoWork Kit** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — quantities and frequency plan not stated
+- **Milesight LoRaWAN Smart Building Kit** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — quantities, frequency plan and WS558 variant not stated
+- **Milesight LoRaWAN Smart Agriculture Kit** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — UC511 not in KB; quantities and frequency plan not stated
+- **Milesight LoRaWAN Indoor Air Quality Kit** (2026-10-21): New product added 21 Oct 2026 (Milesight datasheet + user guide + Cytron page) — model naming conflicts; quantities and frequency plan not stated

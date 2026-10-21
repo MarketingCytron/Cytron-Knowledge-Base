@@ -4,7 +4,7 @@ Verified product facts for **Cytron-brand products**, written for AI agents (tut
 
 **Start here:** read this index, then load only the product files a task needs.
 
-**Scope: Cytron-brand products, plus Teltonika industrial networking products distributed by Cytron (added 21 Oct 2026).** Other third-party boards and modules that Cytron resells are not covered here.
+**Scope: Cytron-brand products, plus Teltonika industrial networking and Milesight LoRaWAN/IoT products distributed by Cytron (added 21 Oct 2026).** Other third-party boards and modules that Cytron resells are not covered here.
 
 This is the public edition. Internal working notes (internal document links, pricing sources, unreleased products and the open-issues log) are kept privately by the Cytron marketing team.
 
@@ -356,6 +356,71 @@ Teltonika notes for every agent:
 - **4G Magnetic SMA Antenna (PR1KS210)** is listed for RUT200, RUT901, RUT906, RUT956, TRB140 — not RUTX50, RUT140 or OTD140; it does not cover 900 MHz (B8).
 - Several Cytron pages carry copy errors (3G 42 Mbps vs Teltonika 21 Mbps, eSIM "optional" on non-eSIM order codes, RUT956 packing list says "RUT906", dead datasheet links for RUT956 and TSW101, OTD140 weight 855 g vs 315 g) — see each file's *Conflicts*.
 
+### LoRaWAN and IoT (Milesight)
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Milesight UG65 LoRaWAN Gateway | [`milesight-ug65.md`](milesight-ug65.md) | `UG65` | 8-channel IP65 LoRaWAN gateway with built-in network server, PoE, optional 4G | Milesight UG65 datasheet + user guide V2.14 + quick guide V2.5 | **Medium-high** |
+| Milesight UG56 LoRaWAN Gateway | [`milesight-ug56.md`](milesight-ug56.md) | `UG56` | 8-channel IP30 metal LoRaWAN gateway, PoE or USB-C power, no cellular | Milesight UG56 datasheet + quick guide V1.5 | **Medium-high** |
+| Milesight UG67 Outdoor LoRaWAN Gateway | [`milesight-ug67.md`](milesight-ug67.md) | `UG67` | 8-channel IP67 outdoor LoRaWAN gateway with 4G, GNSS, PoE or 6–12 V M12 power | Milesight UG67 datasheet + quick guide V1.7 | **Medium-high** |
+| Milesight GA01 Fiber Glass S-N Antenna Kit | [`milesight-ga01.md`](milesight-ga01.md) | `FSN600` | 60 cm fiber-glass LoRa antenna with SMA–N cable for UG56 (not UG65/UG67) | Milesight accessories guide (web) | **Medium** |
+| Milesight FT101 LoRaWAN Field Tester | [`milesight-ft101.md`](milesight-ft101.md) | `FT101` | Handheld Android LoRaWAN signal and coverage tester | Milesight FT101 datasheet + user guide V1.1 | **Medium-high** |
+| Milesight UR32 Lite Series Router | [`milesight-ur32.md`](milesight-ur32.md) | `UR32L / UR32S` | Pocket 4G Cat 4 router (UR32 Lite), 2 Ethernet, UR32S adds Wi-Fi; no serial/I/O | Milesight UR32L/UR32S datasheets + UR32L quick guide | **Medium** |
+| Milesight UR35 Industrial Router | [`milesight-ur35.md`](milesight-ur35.md) | `UR35` | Dual-SIM 4G router, 5 Ethernet, RS232+RS485, DI/DO, optional Wi-Fi/PoE | Milesight UR35 datasheet + quick guide V2.3 | **Medium-high** |
+| Milesight UR41 Mini Industrial Router | [`milesight-ur41.md`](milesight-ur41.md) | `UR41` | Mini 4G Cat 4 router with GNSS, 1 LAN, RS232/RS485, DI/DO, low-power standby | Milesight UR41(L) datasheet + user guide V1.6 | **Medium** |
+| Milesight UC100 IoT Controller | [`milesight-uc100.md`](milesight-uc100.md) | `UC100` | Modbus RS485 to LoRaWAN converter | UC100 datasheet + user guide V2.0 | **Medium** |
+| Milesight UC300 IoT Controller | [`milesight-uc300.md`](milesight-uc300.md) | `UC300` | Multi-I/O industrial IoT controller (LoRaWAN/4G) | UC300 datasheet + LoRaWAN user guide | **Medium** |
+| Milesight UC501 Multi-Interface Controller | [`milesight-uc501.md`](milesight-uc501.md) | `UC501` | Solar IP68 LoRaWAN multi-interface controller | UC50x datasheet + user guide | **Medium-high** |
+| Milesight UC502 Multi-Interface Controller | [`milesight-uc502.md`](milesight-uc502.md) | `UC502` | Battery IP68 LoRaWAN multi-interface controller | UC50x datasheet + user guide | **Medium-high** |
+| Milesight UC512 Solenoid Valve Controller | [`milesight-uc512.md`](milesight-uc512.md) | `UC512` | LoRaWAN controller for 2 DC 12 V latching valves | UC51x datasheet + user guide V4.3 | **Medium-high** |
+| Milesight WS558-LN Smart Light Controller | [`milesight-ws558-ln.md`](milesight-ws558-ln.md) | `WS558-LN` | 8-output mains LoRaWAN light controller | WS558 datasheet + user guide | **Medium** |
+| Milesight WS50x Smart Wall Switch | [`milesight-ws50x.md`](milesight-ws50x.md) | `WS501 / WS502` | 1/2-gang LoRaWAN smart wall switch (neutral required) | WS50x datasheet + user guide V1.3 | **Medium-high** |
+| Milesight WT304 Smart Fan Coil Thermostat | [`milesight-wt304.md`](milesight-wt304.md) | `WT304` | LoRaWAN fan-coil thermostat with e-ink display | WT303/304 datasheet + WT30x user guide | **Medium** |
+| Milesight CT Series Smart Current Transformer | [`milesight-ct10x.md`](milesight-ct10x.md) | `V-LR-CT10X` | Self-powered LoRaWAN split-core current sensor (CT101/103/303/310) | Milesight CT10x + CT3xx datasheets and user guides V2.0 | **Medium-high** |
+| Milesight CTH01 Smart Power Monitor Hub | [`milesight-cth01.md`](milesight-cth01.md) | `LR-CTH01` | 12-channel DIN-rail LoRaWAN energy/power-quality hub (CTs separate) | Milesight CTH01 datasheet + user guide V1.0 | **Medium-high** |
+| Milesight RCT-RJ11 Split-core CTs for CTH01 | [`milesight-cth01-ct-clamps.md`](milesight-cth01-ct-clamps.md) | `V-LR-RCT` | RJ11 split-core current transformers for the CTH01 hub | CTH01 datasheet CT table + Cytron page | **Medium** |
+| Milesight EM300-DI LoRaWAN Pulse Counter | [`milesight-em300-di.md`](milesight-em300-di.md) | `LR-EM300-DI` | Battery LoRaWAN pulse counter for reed-switch meters, with T/RH | Milesight EM300-DI datasheet + user guide V1.1 | **Medium-high** |
+| Milesight EM320-TH Temperature & Humidity Sensor | [`milesight-em320-th.md`](milesight-em320-th.md) | `V-LR-EM320-TH` | Compact battery LoRaWAN temperature/humidity sensor (Standard/Magnetic) | Milesight EM320-TH datasheet + user guide V1.2 | **Medium-high** |
+| Milesight EM300-TH Temperature & Humidity Sensor | [`milesight-em300-th.md`](milesight-em300-th.md) | `LR-EM300-TH` | Battery LoRaWAN temperature/humidity sensor, IP67 | Milesight EM300-TH datasheet + user guide V2.3 | **Medium-high** |
+| Milesight LoRaWAN IAQ Sensor (AM102/103/307/308/319) | [`milesight-iaq-sensor.md`](milesight-iaq-sensor.md) | `V-LR-AM` | AM102/AM102L/AM103/AM307/AM308/AM319 indoor air-quality sensors | Milesight AM30x/AM319/AM102/AM103 datasheets + user guides | **Medium** |
+| Milesight WTS506 LoRaWAN IoT Weather Station | [`milesight-wts506.md`](milesight-wts506.md) | `LR-WTS506` | Solar-powered all-in-one LoRaWAN weather station | Milesight WTS506 datasheet + user guide V1.1 | **Medium-high** |
+| Milesight EM400-MUD Ultrasonic Distance Sensor | [`milesight-em400-mud.md`](milesight-em400-mud.md) | `EM400-MUD` | Ultrasonic distance/fill-level sensor for bins and parking | Milesight datasheet + user guide V1.1 | **Medium-high** |
+| Milesight EM400-TLD ToF Laser Distance Sensor | [`milesight-em400-tld.md`](milesight-em400-tld.md) | `EM400-TLD` | ToF laser fill-level sensor for small bins | Milesight datasheet + user guide V1.1 | **Medium-high** |
+| Milesight EM410-RDL Radar Distance / Level Sensor | [`milesight-em410-rdl.md`](milesight-em410-rdl.md) | `EM410-RDL` | 60 GHz radar distance/liquid-level sensor, external antenna | Milesight EM410-RDL datasheet + user guide V1.2 | **Medium-high** |
+| Milesight EM500-UDL (W050/W100) | [`milesight-em500-udl.md`](milesight-em500-udl.md) | `EM500-UDL` | Ultrasonic level sensor; two Cytron listings W050 (0.3–5 m) and W100 (0.5–10 m) | Milesight datasheet + user guide V2.2.1 | **Medium-high** |
+| Milesight EM500-PP Pipe Pressure Sensor | [`milesight-em500-pp.md`](milesight-em500-pp.md) | `EM500-PP` | Pipe pressure sensor 0–1600 kPa with SS316L probe | Milesight datasheet + user guide V2.2.1 | **Medium-high** |
+| Milesight EM500-PT100 Industrial Temperature Sensor (T200) | [`milesight-em500-pt100.md`](milesight-em500-pt100.md) | `EM500-PT100` | PT100 RTD temperature sensor, T200 range | Milesight datasheet + user guide V2.2.1 | **Medium-high** |
+| Milesight EM500-SMTC Soil Moisture, Temperature and EC Sensor | [`milesight-em500-smtc.md`](milesight-em500-smtc.md) | `EM500-SMTC` | Buried soil moisture/temperature/EC probe with EM500 transceiver | Milesight datasheet + user guide V2.3 | **Medium** |
+| Milesight EM500-CO2 Carbon Dioxide Sensor (4 in 1) | [`milesight-em500-co2.md`](milesight-em500-co2.md) | `EM500-CO2` | Outdoor CO2, temperature, humidity and pressure sensor | Milesight datasheet + user guide V2.2.1 | **Medium-high** |
+| Milesight VS121 AI Workplace Occupancy Sensor | [`milesight-vs121.md`](milesight-vs121.md) | `VS121` | AI vision workplace occupancy sensor, LoRaWAN Class C, USB-C powered | VS121 datasheet + user guide V2.0 | **Medium** |
+| Milesight VS125 PoE AI Stereo Vision People Counter | [`milesight-vs125.md`](milesight-vs125.md) | `VS125-LW-P` | 3D stereo-vision AI people counter, PoE/Ethernet (no LoRaWAN), low-and-wide | VS125-LW datasheet + user guide V1.2 | **Medium** |
+| Milesight VS135 Ultra ToF People Counter | [`milesight-vs135.md`](milesight-vs135.md) | `VS135` | ToF AI people counter, PoE+ or LoRaWAN builds, Standard / High Ceiling optics | VS135 datasheet + VS135-P and VS135 user guides V1.4 | **Medium** |
+| Milesight VS330 Bathroom Occupancy Sensor | [`milesight-vs330.md`](milesight-vs330.md) | `VS330` | Battery LoRaWAN cubicle/bathroom occupancy sensor (PIR + ToF) | VS330 datasheet + user guide V1.0 | **Medium-high** |
+| Milesight VS370 Radar Human Presence Sensor | [`milesight-vs370.md`](milesight-vs370.md) | `VS370` | Battery LoRaWAN mmWave radar + PIR presence sensor, wall mount | VS370 datasheet + user guide V1.1 | **Medium-high** |
+| Milesight WS202 PIR & Light Sensor | [`milesight-ws202.md`](milesight-ws202.md) | `WS202` | Battery LoRaWAN PIR motion + light sensor | WS202 datasheet + user guide V1.3 | **Medium-high** |
+| Milesight WS301 Magnetic Contact Switch | [`milesight-ws301.md`](milesight-ws301.md) | `WS301` | Battery LoRaWAN door/window contact switch with tamper | WS301 datasheet + user guide V1.4 | **Medium-high** |
+| Milesight EM300-MCS Magnetic Contact Switch | [`milesight-em300-mcs.md`](milesight-em300-mcs.md) | `EM300-MCS` | IP67 LoRaWAN magnetic contact switch with temperature/humidity | EM300-MCS datasheet + user guide V2.3 | **Medium-high** |
+| Milesight WS101 Smart Button | [`milesight-ws101.md`](milesight-ws101.md) | `WS101` | Battery LoRaWAN smart button, 3 press modes, D2D | WS101 datasheet + user guide V1.2 | **Medium-high** |
+| Milesight EM300-SLD Spot Leak Detection Sensor | [`milesight-em300-sld.md`](milesight-em300-sld.md) | `LR-EM300-SLD` | LoRaWAN spot leak + T/H sensor, IP67, battery | Milesight datasheet + user guide V2.3 | **Medium-high** |
+| Milesight EM300-ZLD Zone Leak Detection Sensor | [`milesight-em300-zld.md`](milesight-em300-zld.md) | `LR-EM300-ZLD` | LoRaWAN rope leak + T/H sensor, 3 m cable | Milesight datasheet + ZLD user guide V2.3 | **Medium-high** |
+| Milesight GS301 Bathroom Odor Detector | [`milesight-gs301.md`](milesight-gs301.md) | `LR-GS301` | LoRaWAN NH3/H2S/T/H restroom odour detector | Milesight datasheet + user guide V1.1 | **Medium-high** |
+| Milesight GS601 Vape Detector | [`milesight-gs601.md`](milesight-gs601.md) | `LR-GS601` | Ceiling LoRaWAN vape/smoke detector, USB-powered | Milesight datasheet + user guide V1.0 | **Medium-high** |
+| Milesight AT101 Outdoor Asset Tracker | [`milesight-at101.md`](milesight-at101.md) | `LR-AT101` | LoRaWAN GNSS + Wi-Fi-scan tracker, IP67/IK09 | Milesight datasheet + user guide V1.0 | **Medium-high** |
+| Milesight LoRaWAN Smart CoWork Kit | [`milesight-smart-cowork-kit.md`](milesight-smart-cowork-kit.md) | `LR-KIT-SC-A` | Smart-office LoRaWAN kit (iBox Kit-A) + 6-month IoT Cloud | Cytron page + iBox CoWork Kit-A datasheet | **Medium** |
+| Milesight LoRaWAN Smart Building Kit | [`milesight-smart-building-kit.md`](milesight-smart-building-kit.md) | `LR-KIT-SB` | Smart-building LoRaWAN kit, 7 devices + 6-month IoT Cloud | Cytron page + iBox Smart Building datasheet | **Medium** |
+| Milesight LoRaWAN Smart Agriculture Kit | [`milesight-smart-agriculture-kit.md`](milesight-smart-agriculture-kit.md) | `LR-KIT-SA` | Smart-farming kit: soil sensor, UC511 valve controller, gateway + 6-month IoT Cloud | Cytron page + iBox Agriculture Kit datasheet | **Medium** |
+| Milesight LoRaWAN Indoor Air Quality Kit | [`milesight-iaq-kit.md`](milesight-iaq-kit.md) | `LR-KIT-IAQ` | IAQ kit: AM102/AM103/AM307/AM319 + UG56 + 6-month IoT Cloud | Cytron page + iBox IAQ Kit datasheet | **Medium** |
+
+**Distributed brand (added 21 Oct 2026):** Milesight (Xiamen Milesight IoT Co., Ltd.) is the manufacturer; Cytron distributes these products in Malaysia (https://my.cytron.io/Milesight, 51 listings → 50 files; the two EM500-UDL listings W050/W100 share one file). Authority: Milesight datasheet [DS] > Milesight user guide [UM] > Cytron product page [PP]. Status follows the Cytron brand-page card on 21 Oct 2026; many "Out of stock" cards open a product page that says "Availability: Enquiry".
+
+Milesight notes for every agent:
+- **Frequency plan:** Cytron sells `-915M` hardware and states "Malaysia AS923-2, Singapore AS923-1" on most pages (CTH01 says AS923-1 in one place) — check the factory plan before deployment.
+- **Gateways:** UG56 (IP30, PoE/USB-C, SMA LoRa), UG65 (IP65, N-female, optional 4G), UG67 (IP67 outdoor, 4G, M12 6–12 V or PoE). The **GA01** antenna kit (SMA–N) fits the **UG56 only**.
+- **Routers:** Cytron's "UR32 Series" is the **UR32 Lite** (UR32L/UR32S) — no serial, I/O or GNSS. UR35 has RS232+RS485+DI/DO on an 8-pin terminal; **UR41 power-pin location conflicts** between datasheet (2-pin block) and user guide (pins 4/8 of the 8-pin plug) — check the unit label.
+- **Kits** list components without quantities or frequency plan; the Smart Agriculture Kit's **UC511 is not the UC512**; VS340, DS3604 and WS303 kit parts are not in the KB.
+- **CT products:** follow the CTH01 guide (power off and lock out before installing); Cytron's "install on live circuits" wording is contradicted by the guide.
+- Many Cytron pages carry spec errors (Tx power, battery capacity, IP rating, warranty 12 months vs Milesight 3 years) — see each file's *Conflicts*.
+
 ### Workshops and services
 
 | Product | File | Code | What it is | Primary source | Confidence |
@@ -384,7 +449,7 @@ Teltonika notes for every agent:
 
 ## How to add or update a product
 
-1. Check it is a Cytron-brand product (or a distributed brand the team has approved, e.g. Teltonika). Then copy `_TEMPLATE.md` to `<product-slug>.md`.
+1. Check it is a Cytron-brand product (or a distributed brand the team has approved, e.g. Teltonika, Milesight). Then copy `_TEMPLATE.md` to `<product-slug>.md`.
 2. Start from the main source for the product type (rule 7: datasheet for boards; guide book for education kits; board datasheet + guide book/tutorial for robot kits). Tag every fact with its source. Put conflicts and unconfirmed items in their sections — don't drop them.
 3. Fill `fact-sheets/<product-slug>.md` in the Content Hub template from that reference (only what it states), and add it to `fact-sheets/ALL-fact-sheets.md`. Check the aliases don't clash with another product.
 4. Add the row to *Products* above with an honest confidence level.

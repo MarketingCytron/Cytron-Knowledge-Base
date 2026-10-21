@@ -9659,6 +9659,2528 @@ https://teltonika-networks.com/products/accessories/antenna-options/mobile-magne
 # Product fact sheets
 
 ## Product name
+Milesight UG65 Semi-Industrial LoRaWAN® Gateway (with or without Cellular)
+## Aliases
+UG65, V-LR-UG65, LR-UG65, LR-UG65-NC, UG65-L08GL-915M-EA, UG65-915M-EA, Milesight UG65, UG65 Indoor LoRaWAN Gateway
+## What it is
+An 8-channel LoRaWAN® gateway made by Milesight and distributed in Malaysia by Cytron (product page). It has a Semtech SX1302 chip, a quad-core ARM Cortex-A53 CPU, Gigabit Ethernet with PoE, 2.4 GHz Wi-Fi, optional 4G LTE and a built-in LoRaWAN network server, in an IP65 enclosure for indoor and sheltered outdoor use (datasheet).
+## Specs and functions
+- Cytron sells two versions: With Cellular (MPN UG65-L08GL-915M-EA, RM1,945.85) and Without Cellular (MPN UG65-915M-EA, RM1,610.05) (product page).
+- Frequency plan sold by Cytron: Malaysia AS923-2, Singapore AS923-1, on 915 MHz-band hardware (product page).
+- Milesight model range covers CN470, IN865, EU868, RU864, US915, AU915, KR920 and AS923-1/2/3/4 (datasheet).
+- LoRa: 8 half/full-duplex channels, -140 dBm sensitivity at 292 bps, 27 dBm max Tx power, LoRaWAN V1.0 and V1.0.2 Class A/B/C (datasheet).
+- Capacity around 2000 Class A/B/C devices at a 10-minute uplink interval; up to 15 km line of sight, about 2 km urban (datasheet).
+- LoRa antennas: 2 internal plus 1 × 50 Ω N-Female external connector; an 18 cm LoRa antenna is in Milesight's standard package (datasheet).
+- CPU quad-core 1.5 GHz 64-bit ARM Cortex-A53, 512 MB DDR4 RAM, 8 GB eMMC (datasheet).
+- Ethernet: 1 × RJ45 WAN, 10/100/1000 Mbps, PoE powered device (802.3af), 1.5 kV isolation (datasheet).
+- Wi-Fi: 802.11 b/g/n 2.4 GHz, internal antenna, AP or client mode (datasheet).
+- Cellular (optional): 4G LTE, internal antenna, 1 × mini SIM (2FF) (datasheet).
+- Power: DC 9–24 V on a 2.1 × 5.5 mm jack, 802.3af PoE, or 5 V / 1 A on USB Type-C; typical 2.9 W, max 4.2 W (datasheet).
+- Embedded network server with Milesight codecs, multicast, FUOTA and Gateway Fleet; MQTT(s), HTTP(s), BACnet/IP, BACnet/SC, Modbus TCP and Modbus RTU over TCP integration (datasheet).
+- IP65, PC+ABS, 180 × 110 × 55.5 mm, 548 g, -40 °C to +70 °C (datasheet).
+- Default web access: join the gateway's Wi-Fi AP and open https://192.168.1.1; the default login and Wi-Fi password are set at the factory and are not copied here (user guide).
+## Interfaces and compatibility
+- RJ45 Gigabit WAN with 802.3af PoE input, DC jack, USB Type-C (power and console), N-Female LoRa antenna connector, mini SIM slot on the cellular version, reset button (datasheet).
+- LEDs: POWER, STATUS, LoRa, Wi-Fi, LTE, ETH (datasheet).
+- Works with The Things Stack, ChirpStack, Actility and AWS through packet forwarders (datasheet).
+- Managed through Milesight DeviceHub and Milesight Development Platform; Python SDK and Node-RED on the gateway (datasheet).
+- Pairs with Milesight LoRaWAN sensors and controllers on the same regional plan, such as EM320-TH and UC100 (product page).
+- Optional GA01 fiber-glass N-N antenna kits (60 cm or 130 cm) for longer range (Milesight page).
+## Use cases
+- Smart office and smart building LoRaWAN coverage (datasheet).
+- Building management integration over BACnet or Modbus (datasheet).
+- Smart city, industrial automation and smart agriculture sensor networks (product page).
+- Indoor air quality, HVAC, energy, cold chain and space management (Milesight page).
+## Known limitations
+- Wi-Fi is 2.4 GHz only (datasheet).
+- Only one Ethernet port (WAN) (datasheet).
+- Cellular antenna is internal; reduced cellular performance above 60 °C (datasheet).
+- The gateway hardware is band-specific; Cytron's units are 915 MHz-band (product page).
+- LTE bands are not stated in the global datasheet (datasheet).
+- Cytron's packing list names only the gateway; Milesight's standard box adds an adapter, bracket and antenna (product page, datasheet).
+## Positioning (kept apart from specs)
+- Milesight: "Semi-Industrial LoRaWAN® Gateway" in the datasheet; "Indoor LoRaWAN® Gateway" on its current web page (datasheet, Milesight page).
+- Cytron: high-performance, reliable gateway for smart cities, industrial automation, smart agriculture and intelligent buildings (product page).
+- Milesight states a 3-year warranty in the user guide; Cytron lists 12 months (user guide, product page).
+## Price band
+RM1,610.05 (Without Cellular) to RM1,945.85 (With Cellular) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ug65-semi-industrial-lorawan-gateway-with-without-cellular
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ug65-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ug65-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UG56 Industrial LoRaWAN® Gateway (without Cellular)
+## Aliases
+UG56, LR-UG56-NC, UG56-915M, Milesight UG56, UG56 Industrial LoRaWAN Gateway
+## What it is
+An 8-channel industrial LoRaWAN® gateway in a small metal IP30 housing, made by Milesight and distributed in Malaysia by Cytron (product page). It has a Semtech SX1302 chip, a quad-core ARM Cortex-A35 CPU, 10/100 Ethernet with PoE input, 2.4 GHz Wi-Fi and a built-in LoRaWAN network server (datasheet). Cytron sells the non-cellular version.
+## Specs and functions
+- Cytron version: MPN UG56-915M, non-cellular, frequency plan Malaysia AS923-2 / Singapore AS923-1 (product page).
+- Milesight model range covers CN470, IN865, EU868, RU864, US915, AU915, KR920 and AS923-1/2/3/4 (datasheet).
+- LoRa: 8 half-duplex channels, -140 dBm at 292 bps, 27 dBm max, LoRaWAN V1.0 and V1.0.2 Class A/B/C, listen-before-talk supported except AU915/US915 (datasheet).
+- Capacity around 2000 Class A/B/C devices at a 10-minute uplink interval (datasheet).
+- LoRa antenna: 1 × 50 Ω SMA connector (female centre pin); a magnetic LoRa antenna is in the box (datasheet, product page).
+- CPU quad-core 1.3 GHz Cortex-A35, 512 MB DDR3, 8 GB eMMC, internal micro SD slot (datasheet).
+- Ethernet: 1 × RJ45 WAN, 10/100 Mbps, 802.3af PoE powered device (datasheet).
+- Wi-Fi: 802.11 b/g/n 2.4 GHz, internal antenna, AP or client (datasheet).
+- Power: 802.3af PoE or 5 V / 2 A on USB Type-C; typical 1.8 W, max 6.9 W (datasheet).
+- Metal housing, IP30, 110 × 75 × 24 mm, 186 g, -20 °C to +60 °C (datasheet).
+- LEDs: SYS (off starting, red error, green running) and LoRa (on when the packet forwarder runs) (quick guide).
+- Default web access: join the gateway's Wi-Fi AP and open https://192.168.1.1; the default login and Wi-Fi password are not copied here (quick guide).
+- Packing: gateway, LoRaWAN magnetic antenna, wall bracket, screws, wall kits, quick start guide, warranty card; no power adapter (product page).
+## Interfaces and compatibility
+- RJ45 10/100 with PoE input, USB Type-C (power and console), SMA LoRa connector, internal micro SD and reset button behind the front cover (quick guide).
+- Embedded network server with MQTT(s), HTTP(s), BACnet/IP, BACnet/SC, Modbus TCP and Modbus RTU over TCP integration (datasheet).
+- Packet forwarders for The Things Stack, ChirpStack, Actility and AWS (datasheet).
+- DeviceHub and Milesight Development Platform management; Python SDK and Node-RED (datasheet).
+- Fits the GA01 fiber-glass S-N antenna kit for longer range (Milesight page).
+- Pairs with Milesight LoRaWAN sensors and controllers on the same regional plan (product page).
+## Use cases
+- Smart building and smart industry LoRaWAN coverage (datasheet).
+- Gateway inside a control panel, server rack or on a wall (product page).
+- BMS and PLC integration over BACnet or Modbus (datasheet).
+- Indoor coverage up to 3 floors up and down (product page).
+## Known limitations
+- IP30: indoor or cabinet use only (datasheet).
+- Ethernet is 10/100 Mbps; Wi-Fi is 2.4 GHz only (datasheet).
+- Operating range -20 °C to +60 °C (datasheet).
+- No power adapter in the box; a PoE source or 5 V / 2 A Type-C supply is needed (product page, datasheet).
+- No hot-plugging of SIM or micro SD cards (quick guide).
+- DIN rail mounting only on new hardware, with an optional clip kit (datasheet).
+- Cytron's version has no cellular modem (product page).
+## Positioning (kept apart from specs)
+- Milesight: "Industrial LoRaWAN® Gateway" with a rugged metal enclosure (datasheet).
+- Cytron: compact, high-performance gateway for massive, secure IoT coverage indoors and semi-outdoors, with fast deployment and lower scaling costs (product page).
+- Milesight states a 3-year warranty in the user guide; Cytron lists 12 months (user guide, product page).
+## Price band
+RM998.75 (Cytron product page, read 2026-10-21; backorder)
+## Product page
+https://my.cytron.io/Milesight/p-ug56-industrial-lorawan-gateway-without-cellular
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ug56-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ug56-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UG67 Outdoor LoRaWAN® Gateway (With Cellular)
+## Aliases
+UG67, LR-UG67, UG67-L08GL-915M, Milesight UG67, UG67 Outdoor LoRaWAN Gateway
+## What it is
+An 8-channel outdoor LoRaWAN® gateway in an IP67 housing, made by Milesight and distributed in Malaysia by Cytron (product page). It has a Semtech SX1302 chip, a quad-core ARM Cortex-A53 CPU, two external LoRa antenna connectors, Gigabit Ethernet with PoE, 2.4 GHz Wi-Fi, 4G LTE, GNSS and a built-in LoRaWAN network server (datasheet).
+## Specs and functions
+- Cytron version: MPN UG67-L08GL-915M with 4G LTE, frequency plan Malaysia AS923-2 / Singapore AS923-1 (product page).
+- Milesight model range covers CN470, IN865, EU868, RU864, US915, AU915, KR920 and AS923-1/2/3/4 (datasheet).
+- LoRa: 8 half/full-duplex channels, -140 dBm at 292 bps, 27 dBm max, LoRaWAN V1.0 and V1.0.2 Class A/B/C, listen-before-talk except AU915/US915 (datasheet).
+- Capacity around 2000 Class A/B/C devices; line of sight up to 15 km (datasheet).
+- LoRa antennas: 2 × 50 Ω N-Female connectors; two 60 cm antennas and a 1 m coaxial cable in the box (datasheet, quick guide).
+- CPU quad-core 1.5 GHz Cortex-A53, 512 MB DDR4, 8 GB eMMC (datasheet).
+- Ethernet: 1 × RJ45 WAN, 10/100/1000 Mbps, 802.3af PoE powered device (datasheet).
+- Wi-Fi 802.11 b/g/n 2.4 GHz and 4G LTE with mini SIM, both with internal antennas (datasheet).
+- GNSS: GPS/GLONASS/QZSS/SBAS, internal antenna, 2.5 m CEP (datasheet).
+- Power: 802.3af PoE (injector included) or 6–12 VDC on an M12 A-coded connector; typical 3.6 W, max 4.8 W (datasheet, product page).
+- M12 power pinout: pin 1 black GND, pin 2 white reserved, pin 3 yellow reserved, pin 4 red +12V (quick guide).
+- Built-in capacitor keeps the gateway running long enough to send a power-failure alarm (datasheet).
+- IP67, PC + aluminium, 240 × 164 × 90.9 mm, 1463 g, -40 °C to +70 °C (datasheet).
+- LEDs: SYS, LoRa, LTE; reset by holding the button more than 5 s (quick guide).
+- Default web access: join the gateway's Wi-Fi AP and open https://192.168.1.1; the default login and Wi-Fi password are not copied here (user guide).
+## Interfaces and compatibility
+- RJ45 Gigabit with PoE input through a cable gland, M12 DC/solar power connector, 2 × N-Female LoRa connectors, Type-C console, SIM slot under a dust cover, grounding stud (quick guide).
+- Embedded network server with MQTT(s), HTTP(s), BACnet/IP, BACnet/SC, Modbus TCP and Modbus RTU over TCP integration (datasheet).
+- Packet forwarders for The Things Stack, ChirpStack, Actility and AWS (datasheet).
+- DeviceHub, Milesight Development Platform and Milesight IoT Cloud; Python SDK and Node-RED (datasheet, product page).
+- Packing: gateway, 2 antennas, coaxial cable, PoE injector, M12 DC cable, mounting kit and bracket, cable gland and plug, SIM dust cover (product page).
+## Use cases
+- Smart agriculture and smart metering over wide outdoor areas (datasheet).
+- Outdoor wall or pole-mounted LoRaWAN coverage for campuses and cities (datasheet).
+- BMS integration through BACnet or Modbus (product page).
+- Remote sites with cellular backhaul (datasheet).
+## Known limitations
+- Supply on the M12 connector is 6–12 VDC only; pins 2 and 3 are reserved (quick guide).
+- Wi-Fi is 2.4 GHz only (datasheet).
+- Cellular performance is reduced above 60 °C (datasheet).
+- Outdoor use needs connector taping, earthing and lightning protection (quick guide).
+- LTE bands are not stated in the datasheet (datasheet).
+- Heavy (1463 g) and needs wall or pole mounting (datasheet).
+## Positioning (kept apart from specs)
+- Milesight: robust outdoor gateway with an IP67 waterproof case for harsh environments (datasheet).
+- Cytron: exceptional performance, new-generation LoRa chip, flexible internal and external antennas, easy antenna installation (product page).
+- Milesight states a 3-year warranty in the user guide; the Cytron page shows no warranty period (user guide, product page).
+## Price band
+RM3,788.40 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ug67-outdoor-lorawan-gateway-with-cellular
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ug67-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ug67-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight GA01 LoRaWAN Fiber Glass S-N Antenna Kit (for Milesight UG56)
+## Aliases
+GA01, GA01 60cm S-N, FSN600, LR-GA01-FSN600, Milesight GA01 fiberglass antenna kit
+## What it is
+A 60 cm fiber-glass omnidirectional LoRaWAN antenna with a 1 m SMA-to-N coaxial cable and mounting bracket kit, made by Milesight for its UG56 gateway and distributed in Malaysia by Cytron (product page, Milesight accessories page).
+## Specs and functions
+- P/N FSN600, antenna height 600 mm, omnidirectional (Milesight accessories page).
+- Gain 4–5 dBi at 863–870 MHz and at 902–928 MHz (Milesight accessories page).
+- Antenna connector N-J (N male); cable SMA-J to N-K (SMA male to N female), 1 m (Milesight accessories page).
+- White antenna, black cable (Milesight accessories page).
+- Cytron states the frequency plan as Malaysia AS923-2 / Singapore AS923-1 (product page).
+- Packing: fiberglass antenna, RF coaxial extension cable, mounting bracket kit (product page).
+## Interfaces and compatibility
+- Fits the Milesight UG56 LoRa connector (50 Ω SMA, female centre pin) (Milesight accessories page, UG56 datasheet).
+- Does not fit UG65 or UG67, which have N-Female connectors; Milesight sells N-N GA01 kits for those (Milesight accessories page).
+- Pole mounting with an antenna clamp, 4 screws and a U-bolt (UG56 quick guide).
+## Use cases
+- Raising the UG56 LoRa antenna to a higher or outdoor position for better line of sight (product page).
+- Extending LoRaWAN coverage in urban, suburban and agricultural deployments (product page).
+- Getting signal through dense building obstacles (product page).
+## Known limitations
+- Made for UG56 only (Milesight accessories page).
+- 4–5 dBi gain; Milesight's 130 cm GA01 version gives 8–8.5 dBi (Milesight accessories page).
+- 1 m cable only (Milesight accessories page).
+- No datasheet; power rating and ingress rating are [NOT STATED].
+## Positioning (kept apart from specs)
+- Cytron: high-performance external antenna extension with durable fiberglass for harsh outdoor and industrial environments (product page).
+- Cytron: ideal balance between wide-area reach and deep signal penetration (product page).
+## Price band
+RM215.25 (Cytron product page, read 2026-10-21; enquiry only)
+## Product page
+https://my.cytron.io/Milesight/p-ga01-lorawan-fiber-glass-s-n-antenna-kit-for-milesight-ug56
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+## Source link
+https://www.milesight.com/iot/product/accessories/
+
+# Product fact sheets
+
+## Product name
+Milesight FT101 LoRaWAN Field Tester
+## Aliases
+FT101, LR-FT101, FT101-915M, Milesight Field Tester, Milesight FT101
+## What it is
+A handheld Android LoRaWAN® field tester with a 5.72-inch touch screen, made by Milesight and distributed in Malaysia by Cytron (product page). It uses a single-channel SX1262 LoRaWAN module to measure RSSI, SNR and packet loss to gateways, scan channel noise and record GNSS-tagged test points (datasheet).
+## Specs and functions
+- Cytron version: MPN FT101-915M, frequency plan Malaysia AS923-2 / Singapore AS923-1 (product page).
+- Milesight supports CN470, IN865, EU868, RU864, US915, AU915, KR920 and AS923-1/2/3/4, with a different antenna per band (datasheet).
+- LoRa: 1 channel, SX1262, 50 Ω SMA female antenna connector, -137 dBm at 125 kHz, max output 22 dBm at 915 MHz, LoRaWAN V1.0.3 OTAA Class A (datasheet).
+- Test modes: noise scan, ping-pong with two testers, signal evaluation per spreading factor, real-time testing (user guide).
+- 5.72-inch 1440 × 720 touch screen, octa-core MTK6762 2 GHz, 4 GB RAM, 64 GB ROM, Android 12 (datasheet).
+- NFC (ISO/IEC 14443A, 1–3 cm), Bluetooth 4.0 BLE, Wi-Fi 2.4 GHz and 5 GHz, GPS/GLONASS/BeiDou/Galileo (datasheet).
+- USB 3.0 Type-C for charging and OTG; micro SD up to 256 GB (datasheet).
+- Built-in 4.3 V / 4300 mAh battery, about 8 hours of use, standby over 300 hours; charges at 5 V 2 A (datasheet).
+- IP65, -10 °C to 50 °C, 178 × 83 × 17 mm, 242 g without antenna (datasheet).
+- Results exported as CSV files (user guide).
+- The default AppKey and JoinEUI are set by Milesight and are not copied here (user guide).
+## Interfaces and compatibility
+- Works with any standard LoRaWAN gateway and network server (datasheet).
+- Joins as an OTAA Class A device; the user guide's example uses the Milesight UG65 embedded network server (user guide).
+- Runs the Milesight ToolBox app to configure Milesight sensors over NFC or Bluetooth (datasheet).
+- Can mock a Milesight sensor model's transmit power for realistic tests (user guide).
+## Use cases
+- Checking gateway coverage before and after deployment (datasheet).
+- Finding the best sensor and gateway locations (product page).
+- Choosing the best spreading factor and channel (user guide).
+- Testing signal obstruction from freezers, cabinets and sewers (product page).
+- Site survey with two testers before any gateway is installed (user guide).
+## Known limitations
+- Single LoRa channel; one band at a time with the matching antenna (datasheet).
+- OTAA Class A only (datasheet).
+- GNSS coordinates only outdoors (user guide).
+- Operating range -10 °C to 50 °C; do not charge above 45 °C or below -10 °C (datasheet, user guide).
+- Battery is built in and must not be removed (user guide).
+## Positioning (kept apart from specs)
+- Cytron: "the ultimate companion for signal assessment and optimization in LoRaWAN® networks" (product page).
+- Milesight: portable LoRaWAN network testing device to verify gateway coverage and optimise deployment locations (datasheet).
+## Price band
+RM2,539.95 (Cytron product page, read 2026-10-21; enquiry only)
+## Product page
+https://my.cytron.io/Milesight/p-ft101-lorawan-field-tester
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ft101-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ft101-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UR32 Series 4G Industrial Router (UR32 Lite: UR32L / UR32S)
+## Aliases
+UR32, UR32 Lite, UR32L, UR32S, V-IND-UR32, IND-UR32L, IND-UR32S, UR32L-L0GEU, UR32S-L0GEU, Milesight UR32 Series
+## What it is
+A pocket-sized 4G LTE Cat 4 industrial cellular router in an IP30 metal housing, made by Milesight and distributed in Malaysia by Cytron (product page). Cytron sells the UR32 Lite models: UR32L (cellular and Ethernet) and UR32S (adds 2.4 GHz Wi-Fi) (datasheet).
+## Specs and functions
+- Cytron variants: UR32L (MPN UR32L-L0GEU, RM603.00) and UR32S (MPN UR32S-L0GEU, RM533.00), both out of stock on 2026-10-21 (product page).
+- Cellular: 4G LTE Cat 4 / WCDMA / GSM depending on region, up to 150 Mbps down / 50 Mbps up, 1 × mini SIM (2FF), 1 × SMA female antenna connector (datasheet, Milesight page).
+- Ethernet: 2 × RJ45 10/100 Mbps, 1 WAN + 1 LAN or 2 LAN (datasheet).
+- Wi-Fi (UR32S only): 802.11 b/g/n 2.4 GHz, AP or client, up to 15 clients, RP-SMA female connector (datasheet).
+- No RS232, RS485, digital I/O or GNSS on either model (datasheet, product page).
+- CPU ARM Cortex-A7 528 MHz, 128 MB DDR3 RAM, 128 MB flash (datasheet).
+- Power: 9–48 VDC on a 2-pin 5.08 mm terminal block with surge and reverse-polarity protection; typical 1.8 W, max 2.2 W (datasheet).
+- PoE output (802.3af/at, 30 W per port, 60 W total) only on "-P" models with a 48 V supply (datasheet, user guide).
+- IP30 black metal, 108 × 90 × 26 mm, -40 °C to +70 °C (datasheet).
+- LEDs: POWER, SYSTEM, SIM and 3 signal-strength bars (quick guide).
+- Default LAN IP 192.168.1.1; the default login is not copied here (quick guide).
+- Packing: router, magnetic cellular antenna, power adapter, DIN rail kit, wall mounting kits, warranty card, quick start guide (product page).
+## Interfaces and compatibility
+- LAN1/WAN and LAN2 RJ45 ports, 2-pin DC terminal, SMA cellular connector, SIM and reset under a screw cover (quick guide).
+- VPN: OpenVPN, IPsec, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier and MilesightVPN (datasheet).
+- Protocols: MQTT, SNMP, TR-069, VRRP, OSPF, RIP, IPv6 (datasheet).
+- Managed through Milesight DeviceHub and Milesight Development Platform (datasheet).
+- Desktop, wall or 35 mm DIN rail mounting (datasheet, quick guide).
+## Use cases
+- M2M and IoT cellular connectivity in small cabinets and machines (datasheet).
+- Video surveillance sites (UR32S with Wi-Fi) (product page).
+- Cellular backhaul with automatic failover between Ethernet and cellular (datasheet).
+- Smart meters and camera boxes where space is tight (product page).
+## Known limitations
+- No serial ports, digital I/O or GNSS (datasheet).
+- Single SIM only (datasheet).
+- Ethernet is 10/100 Mbps; Wi-Fi (UR32S) is 2.4 GHz only (datasheet).
+- IP30: indoor or cabinet use (datasheet).
+- Cytron's -L0GEU models have no "-P" in the MPN, so PoE output is not expected (inferred from the user guide).
+- LTE bands of the -L0GEU models are not stated (datasheet).
+## Positioning (kept apart from specs)
+- Milesight: cost-effective industrial cellular router, "Lite Series" (datasheet).
+- Cytron: pocket-sized, highly cost-effective routers for M2M and video surveillance connectivity (product page).
+- Milesight states a 3-year warranty in the user guide; Cytron lists 12 months (user guide, product page).
+## Price band
+RM533.00 (UR32S) to RM603.00 (UR32L) (Cytron product page, read 2026-10-21; out of stock)
+## Product page
+https://my.cytron.io/Milesight/p-ur32-series-4g-industrial-router
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ur32s-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UR35 Series 4G Industrial Router
+## Aliases
+UR35, V-IND-UR35, IND-UR35, IND-UR35-W, IND-UR35-P-W, UR35-L0GEU, UR35-L0GEU-W, UR35-L0GEU-P-W, Milesight UR35
+## What it is
+A 4G LTE Cat 4 industrial cellular router with dual SIM, five Ethernet ports, RS232 and RS485 serial and one digital input and output, made by Milesight and distributed in Malaysia by Cytron (product page). Wi-Fi and PoE output are optional by variant (datasheet).
+## Specs and functions
+- Cytron variants: With PoE/Wi-Fi (UR35-L0GEU-P-W, RM1,226.95), With Wi-Fi (UR35-L0GEU-W, RM1,068.00), Without PoE/Wi-Fi (UR35-L0GEU, RM1,011.70) (product page).
+- Cellular: 4G LTE Cat 4 / WCDMA / GSM by region, 2 × mini SIM with dual-SIM backup, 2 × SMA female antenna connectors (datasheet).
+- Ethernet: 5 × RJ45 10/100 Mbps, 1 WAN + 4 LAN (datasheet).
+- PoE output on -P models: 4 × 802.3af/at PSE, 30 W per port, 60 W total, 48 V input needed (datasheet).
+- Wi-Fi on -W models: 802.11 b/g/n 2.4 GHz, AP or client, up to 15 users (datasheet).
+- Serial: 1 × RS232 + 1 × RS485 on a 3.5 mm terminal block, 300–230400 bps (datasheet).
+- DI/DO: 1 dry-contact input and 1 wet-contact output (max 0.3 A at 30 VDC), galvanically isolated (datasheet).
+- 8-pin terminal: 1 DI, 2 GND, 3 RS485 B, 4 RS232 TXD, 5 DO COM, 6 DO OUT, 7 RS485 A, 8 RS232 RXD (quick guide).
+- Power: 9–48 VDC on a 2-pin 5.08 mm terminal (pin 9 positive red, pin 10 negative black), surge and reverse-polarity protected; typical 3.9 W, max 4.6 W (datasheet, quick guide).
+- CPU Cortex-A7 528 MHz, 128 MB RAM, 128 MB flash, micro SD slot, Python SDK (datasheet).
+- IP30 black metal, 135 × 103 × 45 mm, 485 g, -40 °C to +70 °C (datasheet).
+- Default LAN IP 192.168.1.1; the default login is not copied here (quick guide).
+- Packing: router, power adapter, 8-pin terminal, DIN rail kit, 2 magnetic cellular antennas, quick start guide, warranty card; Wi-Fi antenna on Wi-Fi versions (product page).
+## Interfaces and compatibility
+- Serial modes: transparent TCP/UDP/MQTT, Modbus server and client, Modbus RTU to TCP gateway, DLMS client (datasheet).
+- DI readable and DO controllable by SMS, CLI, Modbus and MQTT (datasheet).
+- VPN: OpenVPN, IPsec, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier, MilesightVPN (datasheet).
+- Managed through DeviceHub and Milesight Development Platform; HTTP(s) API, MQTT API and CLI documentation available (datasheet, product page).
+- Desktop, wall or 35 mm DIN rail mounting; grounding stud (datasheet, quick guide).
+## Use cases
+- Remote field equipment and automation cabinets needing cellular Internet (product page).
+- Modbus RTU meters and PLCs bridged to Modbus TCP or MQTT over 4G (datasheet).
+- Powering IP cameras on site with the PoE variant (product page).
+- Alarm input and remote output switching by SMS or MQTT (datasheet).
+## Known limitations
+- Ethernet is 10/100 Mbps; Wi-Fi is 2.4 GHz only (datasheet).
+- DO max 0.3 A at 30 VDC; DI is dry contact only (datasheet).
+- PoE output only on -P variants and only with a 48 V supply (datasheet).
+- IP30: indoor or cabinet use (datasheet).
+- No hot-plugging of SIM or micro SD (quick guide).
+- LTE bands of the -L0GEU variants are not stated (datasheet).
+## Positioning (kept apart from specs)
+- Milesight: industrial 4G LTE router for mission-critical IoT (Milesight page).
+- Cytron: rugged router that bridges legacy serial equipment and remote infrastructure, with centralized fleet management (product page).
+- Milesight states a 3-year warranty in the UR35 user guide; Cytron lists 12 months (user guide, product page).
+## Price band
+RM1,011.70 (Without PoE/Wi-Fi) to RM1,226.95 (With PoE/Wi-Fi) (Cytron product page, read 2026-10-21; out of stock or enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-ur35-series-4g-industrial-router
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ur35-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ur35-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UR41 4G Mini Industrial Router
+## Aliases
+UR41, IND-UR41, UR41-L08EU, Milesight UR41, UR41 mini router
+## What it is
+A matchbox-sized 4G LTE Cat 4 industrial cellular router with GNSS, one Ethernet LAN port, one RS232/RS485 port and isolated digital I/O, made by Milesight and distributed in Malaysia by Cytron (product page). It has low-power standby and idle modes for battery or solar installs (datasheet).
+## Specs and functions
+- Cytron version: MPN UR41-L08EU (datasheet column UR41: LTE Cat 4 / WCDMA / GSM with GNSS) (product page, datasheet).
+- Cellular: 1 × nano SIM (4FF), 1 × SMA female antenna connector, LTE Class 3 (datasheet).
+- GNSS: GPS, GLONASS, BeiDou, Galileo and QZSS, 2.5 m CEP, SMA female connector (datasheet).
+- Ethernet: 1 × RJ45 10/100 Mbps LAN port (datasheet).
+- Serial: 1 × RS232 or 1 × RS485, software switchable, 300–230400 bps, 120 Ω RS485 termination switch (datasheet).
+- DI/DO: 1 dry-contact input and 1 wet-contact output (max 0.3 A at 30 VDC), galvanically isolated (datasheet).
+- 8-pin terminal: 1 DO OUT, 2 DI IN, 3 TX/A, 4 DC+, 5 DO COM, 6 GND, 7 RX/B, 8 DC− (user guide).
+- Power: 5–24 VDC on the terminal or 5 V / 1 A on USB Type-C; at 12 V standby 6.3 mA, idle 78 mA, data 226 mA (datasheet).
+- Standby mode with wake-up by schedule, SMS or DI (datasheet).
+- CPU Cortex-A7 528 MHz, 128 MB RAM, 128 MB flash (datasheet).
+- IP30 metal, 70 × 55 × 22 mm, 103 g, -40 °C to +60 °C (datasheet).
+- Default LAN IP 192.168.1.1; the default login is not copied here (user guide).
+- Packing: router, power adapter, 8-pin terminal, SIM ejector, wall bracket and kits, magnetic cellular antenna, GPS antenna, quick start guide, warranty card (product page).
+## Interfaces and compatibility
+- Serial modes: transparent TCP/UDP/MQTT, Modbus TCP/RTU client, Modbus RTU to TCP gateway, DLMS client (datasheet).
+- DI readable and DO controllable by SMS, CLI, Modbus and MQTT (datasheet).
+- USB 2.0 Type-C for power, network and debug (datasheet).
+- VPN: OpenVPN, IPsec, GRE, L2TP, PPTP, DMVPN, WireGuard, ZeroTier, MilesightVPN (datasheet).
+- Managed through DeviceHub and Milesight Development Platform; UR Series MQTT API and CLI documentation (datasheet, product page).
+- Desktop, wall or 35 mm DIN rail mounting (datasheet, user guide).
+## Use cases
+- Vending machines, robots and industrial equipment needing 4G (user guide).
+- Battery or solar-powered remote terminal units (product page).
+- Modbus RTU devices bridged to the cloud over 4G (datasheet).
+- Asset location with GNSS (datasheet).
+## Known limitations
+- One Ethernet port, LAN only; one SIM (datasheet).
+- RS232 or RS485, not both at once (datasheet).
+- DO max 0.3 A at 30 VDC; DI dry contact only (datasheet).
+- Supply 5–24 VDC only (datasheet).
+- Operating range -40 °C to +60 °C; IP30 (datasheet).
+- The datasheet's 2-pin power block and the user guide's 8-pin power pins disagree; check the unit before wiring (datasheet, user guide).
+## Positioning (kept apart from specs)
+- Milesight: mini industrial cellular router for embedded IoT (Milesight page).
+- Cytron: micro-sized, highly efficient M2M router for space-constrained and energy-restricted deployments (product page).
+## Price band
+RM1,227.00 (Cytron product page, read 2026-10-21; enquiry only)
+## Product page
+https://my.cytron.io/Milesight/p-ur41-4g-mini-industrial-router
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ur41-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ur41-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UC100 IoT Controller (Modbus RTU to LoRaWAN)
+## Aliases
+UC100, UC100-915M, UC100-915M-EA, UC100 (EA), LR-UC100, LR-UC100-EA, V-LR-UC100, Modbus RS485 to LoRaWAN converter
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- Wireless: LoRaWAN and Milesight D2D; OTAA/ABP, Class C; LoRaWAN V1.0.2/V1.0.3 (datasheet, user guide)
+- Frequency plans: CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4 (datasheet)
+- Tx power 16 dBm (868 MHz) / 22 dBm (915 MHz) / 19 dBm (470 MHz); sensitivity -137 dBm @300bps (datasheet)
+- Antenna: internal, or external 50 Ω SMA female on the EA version (datasheet)
+- 1 × RS485 on a 2-pin 3.5 mm terminal block, 120 Ω termination switch, 1200–115200 bps, Modbus RTU and passthrough (datasheet)
+- Up to 32 Modbus channels / devices, 1 or 2 registers per channel (datasheet, user guide)
+- Up to 16 IF-THEN commands with up to 3 actions each, working without network (user guide)
+- Data storage up to 800 entries, retrieval and retransmission; threshold and change alarms; FUOTA (datasheet)
+- Power: DC 5–24 V on a 2-pin 3.5 mm terminal block (surge and reverse-polarity protected) or DC 5 V/1 A via USB Type-C; < 0.5 W (datasheet)
+- 1 × system LED, 1 × internal reset button (datasheet)
+- IP30, -20 to 60 °C, 0–95 %RH non-condensing, 70 × 45 × 13 mm, 32 g, PC+ABS white (datasheet)
+- Cytron variants: Internal Antenna (LR-UC100, MPN UC100-915M) and External Antenna (LR-UC100-EA, MPN UC100-915M-EA) (product page)
+- Packing: controller, Type-C cable (1.2 m) and power adapter, terminal block, 2 wall mounting kits, quick guide, warranty card; plus magnetic LoRaWAN antenna on the external-antenna version (product page)
+## Interfaces and compatibility
+- RS485 terminal, DC power terminal, USB Type-C, 120 Ω switch, SMA (EA only) (datasheet, user guide)
+- Configured with Milesight ToolBox over USB Type-C or by LoRaWAN downlink (datasheet)
+- Works with standard LoRaWAN gateways and network servers, e.g. Milesight UG65, UG56, UG67 (datasheet, product page)
+- Milesight Development Platform for device management, API and webhooks (manufacturer page)
+- Payload decoders on GitHub Milesight-IoT/SensorDecoders (user guide)
+## Use cases
+- Smart metering from Modbus energy, water or gas meters (datasheet)
+- Smart cities and building automation (datasheet)
+- Bringing legacy Modbus RTU field devices onto a LoRaWAN network without rewiring (product page)
+- Local automation by IF-THEN rules when the network is down (user guide)
+## Known limitations
+- No on-board digital or analog I/O; data comes only through RS485 (datasheet)
+- Class C only, so it needs continuous power; no battery (datasheet)
+- Indoor rating IP30 (datasheet)
+- Two-way pass-through disables the Modbus channels (user guide)
+- Terminal pin order (A/B, +/−) is not given in the datasheet text [NOT STATED]
+- The Cytron page does not state the LoRaWAN frequency plan shipped [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Bridge the Digital Gap with UC100 IoT Controller"; "Mini but Powerful"
+- Cytron: "bridges the gap between field hardware and modern cloud platforms"
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/Milesight/p-uc100-iot-controller-modbus-rtu-to-lorawan
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/uc100-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/uc100-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UC300 IoT Controller
+## Aliases
+UC300, UC300 Series, UC300-915M, UC300-L05EU, LR-UC300, LR-UC300-LTE, V-LR-UC300, UC300 IoT Controller (RS485, RS232, DI, DO to LoRaWAN)
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- 4 × opto-isolated DI, 3–24 VDC, digital input or pulse counter up to 4000 Hz (datasheet)
+- 2 × DO, SPDT relay, max 3 A @ 30 VDC or 250 VAC (datasheet)
+- 2 × 4–20 mA (±5 %) and 2 × 0–10 V (±1 %) analog inputs, 12-bit (datasheet)
+- 2 × PT100 RTD inputs, 2/3-wire, 12-bit, -200 to 800 °C (datasheet)
+- 1 × RS232 (transparent) and 1 × RS485 (transparent, Modbus RTU), 1200–115200 bps, up to 32 Modbus devices (datasheet)
+- LoRaWAN and Milesight D2D; CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4; Tx 20 dBm at 915 MHz; -137 dBm; OTAA/ABP Class C (datasheet)
+- Cellular version: 4G LTE Cat 1/WCDMA/GSM, Micro SIM, TCP/UDP/MQTT/AWS/Milesight IoT Cloud/SMS (datasheet)
+- 1 × SMA female antenna connector, 1 × USB Type-C, SYS and ACT LEDs, internal reset button (datasheet)
+- Power 5–24 VDC on a 2-pin 3.5 mm terminal block with surge and reverse-polarity protection, or 5 V via Type-C (datasheet)
+- Up to 16 IF-THEN commands, data storage and retransmission on the LoRaWAN version (datasheet, user guide)
+- -20 to 60 °C, 0–95 %RH, IP30, 93 × 70 × 22 mm, 142.3 g (LoRaWAN) / 186 g (cellular) (datasheet)
+- Cytron versions: LoRaWAN (LR-UC300, MPN UC300-915M) and Cellular (LR-UC300-LTE, MPN UC300-L05EU) (product page)
+- Packing: UC300, antenna, power adapter, 5 terminal blocks, DIN rail clip, wall bracket, 4 wall mounting kits, 4 screws (product page)
+## Interfaces and compatibility
+- DI pins per input: 1 = −, 2 = +, always with an external 0–24 VDC source in the loop (user guide)
+- DO pins per relay: COM, NC, NO (user guide)
+- 4–20 mA block: +, −, +, −; 0–10 V block: GND/A, 0-10V_1, 0-10V_2; PT100 block: GND/A, 1, 2, B, B (user guide)
+- RS232/RS485 block: TX, RX, GND, A, B; DIP switch for 120 Ω termination, B pull-down and A pull-up (user guide)
+- Configured with Milesight ToolBox over Type-C or by downlink (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (datasheet, product page)
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page)
+## Use cases
+- Smart factory and building automation, indoor (datasheet)
+- Remote monitoring of meters, PT100 temperatures and 4–20 mA / 0–10 V transmitters (datasheet)
+- Relay control from IF-THEN rules or downlinks (user guide)
+## Known limitations
+- No battery: pulse counts and data are lost on power failure (product page FAQ)
+- DI needs an external voltage source; DO cannot drive a DI directly (user guide, product page FAQ)
+- 4–20 mA inputs need external loop power (user guide)
+- One command per downlink on the LoRaWAN version (product page FAQ)
+- IP30, indoor use only (datasheet)
+- Power consumption [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Rich Industrial Interfaces"; "Intelligent Trigger System"; "Autonomous Operation"
+- Cytron: acts as "a central hub for sensor data management and industrial IoT automation"
+## Price band
+RM602.70 (LoRaWAN) – RM904.05 (Cellular) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-uc300-iot-controller
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/uc300-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/uc300-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UC501 LoRaWAN Multi-Interface Controller with External Antenna
+## Aliases
+UC501, UC501-EA, UC501 (EA Version), LR-UC501-EA, UC50x series
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- LoRaWAN, OTAA/ABP, Class A or Class C, multicast (datasheet)
+- CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4; Tx 20 dBm at 915 MHz; -137 dBm @300bps (datasheet)
+- External antenna version: 1 × 50 Ω SMA female; magnetic antenna in the box (datasheet, product page)
+- 2 × GPIO: digital input, digital output or pulse counter; logic 0–0.8 V low, 2.5–3.3 V high; 20 mA max; ≤ 4000 Hz (datasheet)
+- 1 × RS232 or RS485 (software switchable), 1200–115200 bps, Modbus RTU on RS485, 16 Modbus channels (datasheet, user guide)
+- 2 × analog input, 12-bit, 4–20 mA or 0–10 V by DIP switch (datasheet, user guide)
+- 1 × SDI-12 V1.4 (datasheet)
+- Sensor power outputs: 2 × 3.3 V and 2 × 5/9/12 V (DIP switch), 0–10 min before collection (datasheet)
+- Power: 2 × 2550 mAh ICR18650 rechargeable cells, embedded 6 V 1.7 W solar panel, or 5–24 VDC by M12 (datasheet)
+- Data storage 600 entries, retrieval and retransmission; threshold and change alarms (datasheet)
+- IP68 (1 m, 7 days), -20 to 60 °C, 116 × 116 × 45.5 mm, wall or pole mount (datasheet)
+- Packing: UC501, 2 × 30 cm data cables, bracket, wall kits, 2 hose clamps, screw, quick guide, warranty card, magnetic antenna (product page)
+## Interfaces and compatibility
+- Data Interface 1 (6-pin M12): 1 = 5/9/12 V out, 2 = 3.3 V out, 3 = GND, 4 = AI1, 5 = AI2, 6 = 5–24 V DC in (user guide)
+- Data Interface 2 (8-pin M12): 1 = 5/9/12 V out, 2 = 3.3 V out, 3 = GND, 4 = GPIO1, 5 = GPIO2, 6 = TXD/A, 7 = RXD/B, 8 = SDI-12 (user guide)
+- Internal DIP switches set power-output voltage, analog mode and RS485 termination/bias (user guide)
+- Configuration by NFC (Milesight ToolBox app) or internal USB Type-C (ToolBox software) (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (product page)
+## Use cases
+- Smart agriculture with SDI-12 soil and weather sensors (product page, manufacturer page)
+- Meter reading by pulse counting of water, gas and electricity meters (manufacturer page)
+- Environmental and water monitoring at remote solar-powered sites (product page)
+- Modbus RTU sensors to LoRaWAN (manufacturer page)
+## Known limitations
+- GPIO output is 3.3 V logic, 20 mA; it cannot drive a relay load directly (product page FAQ)
+- DI cannot detect a short circuit (product page FAQ)
+- RS232 and RS485 share pins; only one at a time (datasheet)
+- Changing DIP switches or using USB needs the case opened (user guide)
+- No charging indicator (product page FAQ)
+- Battery life [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Rich Industrial Interfaces"; "Ultra-Rugged Enclosure for Harsh Environment"
+- Cytron: "a versatile sensor hub for connecting various field devices and sensors to a LoRaWAN® network"
+## Price band
+RM740.45 (Cytron product page, read 2026-10-21; out of stock)
+## Product page
+https://my.cytron.io/Milesight/p-uc501-lorawan-multi-interface-controller-with-external-antenna
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/uc50x-series-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/uc50x-series-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UC502 LoRaWAN Multi-Interface Controller
+## Aliases
+UC502, UC502-915M, UC502-EA, LR-UC502, LR-UC502-EA, V-LR-UC502, UC50x series
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- LoRaWAN, OTAA/ABP, Class A (datasheet)
+- CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4; Tx 20 dBm at 915 MHz; -137 dBm @300bps (datasheet)
+- Internal antenna, or external 50 Ω SMA female on the EA version (datasheet)
+- 2 × GPIO: DI, DO or pulse counter; 3.3 V logic; 20 mA max; ≤ 4000 Hz (datasheet)
+- 1 × RS232 or RS485, 1200–115200 bps, Modbus RTU on RS485, 16 channels (datasheet, user guide)
+- 2 × analog input, 12-bit, 4–20 mA or 0–10 V by DIP switch (datasheet)
+- 1 × SDI-12 V1.4 (datasheet)
+- Sensor power outputs 2 × 3.3 V and 2 × 5/9/12 V (datasheet)
+- Power: 3 × 9000 mAh replaceable ER26500 Li-SOCl2 batteries, or DC 5–24 V by M12 (datasheet)
+- Data storage 600 entries, retrieval and retransmission; threshold and change alarms (datasheet)
+- IP68 (1 m, 7 days), -30 to 70 °C, 116 × 116 × 45.5 mm, wall or pole mount (datasheet)
+- Cytron variants: Internal Antenna (LR-UC502, MPN UC502-915M) and External Antenna (LR-UC502-EA) (product page)
+## Interfaces and compatibility
+- Data Interface 1 (6-pin M12): 5/9/12 V out, 3.3 V out, GND, AI1, AI2, 5–24 V DC in (user guide)
+- Data Interface 2 (8-pin M12): 5/9/12 V out, 3.3 V out, GND, GPIO1, GPIO2, TXD/A, RXD/B, SDI-12 (user guide)
+- Internal DIP switches for power-output voltage, analog mode and RS485 termination/bias (user guide)
+- NFC configuration with the Milesight ToolBox app; internal USB Type-C for ToolBox software (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (product page)
+## Use cases
+- Remote sites without sun or mains, reading SDI-12, analog or Modbus sensors (datasheet)
+- Pulse-count meter reading (manufacturer page)
+- Cold or hot outdoor sites down to -30 °C and up to 70 °C (datasheet)
+## Known limitations
+- Batteries are primary Li-SOCl2 and cannot be charged from the DC input (user guide)
+- Class A only, no multicast (datasheet)
+- GPIO is 3.3 V logic, 20 mA, not a relay (datasheet)
+- DIP switches and USB are inside the case (user guide)
+- Battery life [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Flexible Power Supply Options"; "Ultra-Rugged Enclosure for Harsh Environment"
+- Cytron: "ideal choice for industrial and remote applications"
+## Price band
+[NOT STATED]
+
+## Product page
+https://my.cytron.io/Milesight/p-uc502-multi-interface-controllers
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/uc50x-series-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/uc50x-series-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight UC512 LoRaWAN Solenoid Valve Controller
+## Aliases
+UC512, UC512-DI-915M, LR-UC512-DI, UC51x series, LoRaWAN irrigation valve controller
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- LoRaWAN, OTAA/ABP, Class A or Class B (datasheet)
+- CN470/IN865/EU868/RU864/US915/AU915/KR920/AS923-1&2&3&4; Tx 20 dBm at 915 MHz; -137 dBm @300bps (datasheet)
+- Internal antenna on Cytron's unit (product page)
+- 2 × solenoid interfaces for 2-wire DC 12 V latching solenoids, 1.5 m cable (datasheet)
+- 2 × digital inputs, 3.3 V logic, 20 mA, digital input or pulse counter ≤ 4000 Hz (datasheet)
+- Up to 16 local rules (time, water volume), multicast, FUOTA (datasheet, user guide)
+- Power: 3 × 9000 mAh replaceable ER26500 Li-SOCl2 batteries (datasheet)
+- Battery life at 20 min reporting and 4 valve operations a day, 25 °C: Class A > 10 years; Class B about 6.2 years (SF7) or 5.8 years (SF10) (datasheet)
+- IP68 (1 m, 7 days), -30 to 70 °C, 116 × 116 × 45.5 mm, 479 g (datasheet)
+- Packing: UC51x device, 2 × 1.5 m M12 data cables, bracket, wall kits, screw, 2 hose clamps, warranty card, quick guide (product page)
+## Interfaces and compatibility
+- Solenoid & Pulse M12 interface pins: 1 = DC+/OUT1, 2 = DC-/OUT2, 3 = GND, 4 = INSERT BOOT, 5 = GND, 6 = GPIO (user guide)
+- Configuration, valve control and upgrades by NFC with the Milesight ToolBox app (user guide)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (product page)
+- Milesight IoT Cloud and Milesight Development Platform for time and flow control (datasheet)
+## Use cases
+- Agricultural valve control (datasheet)
+- Landscape and garden irrigation (datasheet)
+- Water-use monitoring with pulse water meters (product page)
+- Scheduled irrigation that keeps running without network (user guide)
+## Known limitations
+- Only 2-wire DC 12 V latching solenoids (datasheet)
+- No solar panel and no DC input on UC512; primary batteries must be replaced, not charged (datasheet, user guide)
+- Class A downlinks wait for an uplink unless a response time is set (user guide)
+- Configuration by NFC app only (user guide)
+- Moisture-based irrigation claimed by Cytron is not a built-in function in the manufacturer documents [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "LoRaWAN® Solenoid Valve Controller" for smart irrigation
+- Cytron: "rugged wireless controller designed for remote and automated irrigation valve management"
+## Price band
+RM731.85 (Cytron product page, read 2026-10-21; availability by enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-uc512-lorawan-solenoid-valve-controller
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/uc51x-series-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/uc51x-series-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WS558-LN LoRaWAN Smart Light Controller
+## Aliases
+WS558-LN, WS558, LR-WS558-LN, Smart Light Controller (LN type)
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- LN type, 100–240 VAC 50–60 Hz input (datasheet)
+- 8 active outputs; max 10 A resistive or 5 A capacitive/inductive per output; 16 A total (datasheet)
+- Measures voltage, current, power factor, power and energy (datasheet)
+- LoRaWAN and Milesight D2D agent; OTAA/ABP Class C; internal antenna (datasheet)
+- CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4; Tx 22 dBm at 915 MHz; -137 dBm (datasheet)
+- 8 switch buttons with status LEDs, power LED, reset button, USB Type-C (datasheet)
+- Multicast, delay switch (up to 18 hours turn-off delay), overcurrent protection and alarm, schedules (datasheet, product page)
+- Power-off memory: resumes the previous state after power returns (product page)
+- -20 to 60 °C, ≤ 95 %RH, creamy-white ABS, 145 × 90 × 40 mm, 274 g, wall or DIN rail mounting (datasheet)
+- Packing: controller, wall mounting kit, quick start guide, warranty card (product page)
+## Interfaces and compatibility
+- AC power terminals L and N; 8 output circuits each with N and switched-live terminals (user guide, manufacturer page)
+- Configuration by NFC (Milesight ToolBox app), USB Type-C (ToolBox software) or downlink (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (product page)
+- D2D control from Milesight WS156 scene panel and WS202 PIR & light sensor (product page)
+- Milesight IoT Cloud and payload decoder on GitHub Milesight-IoT/SensorDecoders (product page)
+## Use cases
+- Wireless control of indoor lights, fans, heaters and machines (datasheet)
+- Smart building lighting with schedules and occupancy scenes (product page)
+- Energy monitoring of lighting circuits (datasheet)
+## Known limitations
+- Indoor use only (user guide)
+- 16 A total load across all 8 outputs (datasheet)
+- Must be installed by a qualified electrician; L and N must not be swapped (user guide)
+- D2D agent only, not a D2D controller (datasheet)
+- Warranty not shown on the Cytron page [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Control up to 8 Lighting Circuits"; "More lights connected to one controller, fewer switch panels, lower wiring costs"
+- Cytron: "fits different rooms without the need of re-wiring, reducing the renovation costs"
+## Price band
+RM602.70 (Cytron product page, read 2026-10-21; availability by enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-ws558-ln-lorawan-smart-light-controller
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ws558-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ws558-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WS50x LoRaWAN Smart Wall Switch
+## Aliases
+WS50x, WS501, WS502, WS501-915M, WS502-915M, LR-WS501, LR-WS502, V-LR-WS50X, 3W-W11-EU, 3W-W12-US
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- 3-wire, neutral required; 100–250 VAC, 50–60 Hz (datasheet)
+- Max 1000 W per gang, total 2000 W; resistive 10 A per gang, inductive 5 A per gang, total 10 A; SPST relay (datasheet)
+- Measures voltage, current, power factor, active power and energy; typical ±3 %, max ±5 % (datasheet)
+- LoRaWAN and Milesight D2D (agent and controller); OTAA/ABP Class C; internal antenna (datasheet)
+- CN470/IN865/RU864/EU868/US915/AU915/KR920/AS923-1&2&3&4; Tx 22 dBm at 915 MHz; -137 dBm (datasheet)
+- Delay switch, switch lock, overcurrent protection, multicast (datasheet)
+- Ice-blue indicator (datasheet)
+- IP20, -20 to 60 °C, polycarbonate UL94 V0, 86 × 86 × 40 mm (86 type) or 118 × 72 × 46.9 mm (120 type) (datasheet)
+- Cytron options: 1-Button WS501 (LR-WS501, MPN WS501-915M) and 2-Button WS502 (LR-WS502, MPN WS502-915M) (product page)
+- Packing: switch, 2 mounting screws, quick start guide, warranty card (product page)
+## Interfaces and compatibility
+- WS502 terminals N, L, L1, L2; WS501 86 type N, L, L1; WS501 120 type G, N, L, L1 (datasheet wiring diagram)
+- Fits 86 mm square pattress boxes (86 type) or 118/120 boxes (120 type) (datasheet)
+- Configured by NFC with the Milesight ToolBox app or by downlink; no USB (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67 (product page)
+- Milesight IoT Cloud and Milesight Development Platform; payload decoder on GitHub Milesight-IoT/SensorDecoders (datasheet, product page)
+## Use cases
+- Smart lighting control in homes, offices, hotels and museums (datasheet)
+- Remote and scheduled on/off of lights and appliances (product page)
+- Energy monitoring per circuit (product page)
+- Dual-control switching with another Milesight D2D device without a gateway (user guide)
+## Known limitations
+- Needs a neutral wire in the switch box (datasheet)
+- Indoor only, IP20 (datasheet)
+- Total load 10 A / 2000 W across gangs (datasheet)
+- Installation by a qualified electrician (user guide)
+- Which WS501 size Cytron supplies is not stated [NOT STATED]
+## Positioning (kept apart from specs)
+- Milesight: "Switch To The Intelligence"
+- Cytron: "can seamlessly replace old wall switches and realize the smart control of lights or other electrical appliances"
+## Price band
+RM258.30 (WS501 or WS502) (Cytron product page, read 2026-10-21; out of stock, options by enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-ws50x-lorawan-smart-wall-switch
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ws50x-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ws50x-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WT304 LoRaWAN Smart Fan Coil Thermostat (with display)
+## Aliases
+WT304, WT304-915M, LR-WT304, WT30x, WT303&WT304, FCU thermostat
+## What it is
+[NOT STATED]
+
+## Specs and functions
+- 2-pipe and 4-pipe FCUs; 3-speed AC fans or EC fans (0–10 V); 0–10 V proportional valves, and 2/3-wire on/off valves with EC fans (datasheet)
+- Relays Q1–Q3: 4 A resistive, 3 A inductive; capacitive loads not supported (datasheet)
+- Two 0–10 V outputs (AO1, AO2) (datasheet wiring diagram)
+- Control range 5–35 °C; modes heat, cool, ventilation; fan low, medium, high, auto (datasheet)
+- Built-in temperature -20 to 60 °C (±0.5 °C at 0–60 °C) and humidity 0–100 %RH (typ. ±2 %) (datasheet)
+- Inputs: 1 × 10 kΩ 3950 NTC, 1 × dry-contact DI for key card or magnet switch (datasheet)
+- 8 plans × 16 schedules, freeze protection, open-window detection, fan delay, dehumidify, child lock (datasheet)
+- LoRaWAN Class C, Milesight D2D controller/agent/sensor-data receiving, multicast, FUOTA; internal antennas (datasheet)
+- CN470/EU868/RU864/IN865/AU915/US915/KR920/AS923-1&2&3&4; Tx 22 dBm at 915 MHz; -137 dBm (datasheet)
+- 100–240 VAC 50–60 Hz; < 2 W without loads (datasheet)
+- 2.7-inch e-ink, 5 buttons, reset LED, USB Type-C console (datasheet)
+- IP20, -20 to 60 °C (screen 0–40 °C), 86 × 86 × 42 mm, AWG 14–26 wiring (datasheet)
+- Packing: thermostat, 2 × M4×25 screws, 2-pin signal cable, M2×4 anti-theft screw, quick guide, warranty card (product page)
+## Interfaces and compatibility
+- Mains terminals N, L, Q1, Q2, Q3, AO1, AO2, GND; low-voltage socket GND, DI, NTC (datasheet wiring diagram)
+- Configured by NFC with the Milesight ToolBox app or by downlink (datasheet)
+- Fits 86 mm square or 60 mm round boxes; 118/120 boxes with optional wall plate (datasheet)
+- Works with standard LoRaWAN gateways such as Milesight UG65, UG56, UG67; BACnet via Milesight gateways (datasheet, product page)
+- Milesight Development Platform; payload decoder on GitHub Milesight-IoT/SensorDecoders (datasheet, product page)
+## Use cases
+- Hotel rooms with key-card energy saving (product page)
+- Smart buildings and commercial HVAC fan coil control (product page)
+- Scheduled and remote temperature control (datasheet)
+## Known limitations
+- Indoor only, IP20 (datasheet)
+- E-ink screen works only 0–40 °C; outside that the screen and buttons lock (user guide)
+- No capacitive loads on the relays (datasheet)
+- System type must be set after wiring (user guide)
+- The WT303 (on/off-valve model) is not sold by Cytron (product page)
+## Positioning (kept apart from specs)
+- Milesight: "Smart Fan Coil Thermostat" for optimal comfort and energy efficiency
+- Cytron: "advanced, industrial-grade LoRaWAN® Smart Fan Coil Unit (FCU) Thermostat"
+## Price band
+RM516.60 (Cytron product page, read 2026-10-21; availability by enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-wt304-lorawan-smart-fan-coil-thermostat-with-display
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/wt303-wt304-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/wt303-wt304-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight CT Series LoRaWAN Smart Current Transformer (CT101 / CT103 / CT303 / CT310)
+## Aliases
+CT10x, CT3xx, CT101, CT103, CT303, CT310, V-LR-CT10X, LR-CT101, LR-CT103, LR-CT303, LR-CT310, CT101-915M, CT103-915M, CT303-915M, CT310-915M, Milesight smart current transformer, LoRaWAN CT clamp
+## What it is
+A family of self-powered LoRaWAN smart current transformers made by Milesight and distributed in Malaysia by Cytron (product page). A split-core clamp around one phase wire harvests its own power, measures RMS current and accumulated ampere-hours, and reports over LoRaWAN; CT101/CT103 have one clamp, CT303/CT310 one transceiver with three clamps (datasheet).
+## Specs and functions
+- Rated primary current: CT101 100 A, CT103 250 A, CT303 300 A per CT, CT310 1000 A per CT (datasheet).
+- RMS current, 3.3 kHz sampling, 50–60 Hz, 1 mA resolution (datasheet).
+- Accuracy: CT101/CT103 ±1 % above 5 A and ±3 % at or below 5 A; CT303/CT310 ±1 % (datasheet).
+- Minimum current to report when self-powered (1 min / 10 min interval): CT101 1.5 / 1.4 A, CT103 3 / 2.8 A, CT303 3 / 2.5 A, CT310 10 / 8.5 A; lower currents need USB power (datasheet).
+- Accumulated Ah reported every interval; optional kWh calculated from a set voltage and power factor (user guide).
+- USB-C NTC cable-temperature sensor, -20 to 100 °C, with threshold alarm (datasheet).
+- Power: induced current from the measured conductor, or 5 V on USB-C; no battery (datasheet).
+- LoRaWAN Class A, OTAA/ABP; SMA antenna; Tx 22 dBm (CT10x) or 20 dBm (CT3xx) at 915 MHz; -137 dBm sensitivity (datasheet).
+- Cytron sells the 915M hardware and states AS923-2 for Malaysia and AS923-1 for Singapore (product page).
+- Insulation 2.5 kVac (CT10x) or 3 kVac (CT3xx), 1 mA / 1 min; CE, FCC, UL508 (datasheet).
+- IP30, indoor only; transceiver -20 to 70 °C (datasheet, user guide).
+- Wire hole: CT101/CT103 Ø16 mm, CT303 Ø24.2 mm, CT310 Ø51 mm (datasheet).
+- Reporting interval 1–1440 min, default 10 min (user guide).
+- Packing: CT, antenna, cable temperature sensor; CT101/103 also transceiver cover and extension cable (product page).
+## Interfaces and compatibility
+- Split-core clamp around one phase conductor; no terminals (user guide).
+- USB Type-C for 5 V power, ToolBox configuration or the NTC sensor (datasheet).
+- SMA antenna connector, reboot button, status/alarm LED (datasheet).
+- Configured with Milesight ToolBox over USB-C or by LoRaWAN downlink; FUOTA supported (datasheet).
+- Works with standard LoRaWAN gateways and network servers, e.g. Milesight UG65/UG56/UG67 (datasheet).
+- Payload decoder on github.com/Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Energy monitoring in smart buildings (datasheet).
+- Machine failure detection and prevention from current patterns (datasheet).
+- Sub-metering of three phases or three loads with CT303/CT310 (datasheet).
+- Over-current and cable over-temperature alarms (product page).
+## Known limitations
+- Measures current only; kWh is calculated from a typed-in voltage and power factor (user guide).
+- Stops reporting below the minimum current unless powered from USB (user guide).
+- CT303/CT310 lose power if no CT is on phase A (user guide).
+- Never put phase and neutral through the same CT (user guide).
+- IP30, indoor use only; installation by a qualified person (user guide).
+- The page is out of stock; variants are on enquiry (product page).
+## Positioning (kept apart from specs)
+- Milesight: non-invasive clamp design for quick, safe installation without de-energizing facilities (datasheet).
+- Cytron: "Self-Powered: No Batteries, No Limits"; superior accuracy with 3.3 kHz sampling (product page).
+## Price band
+RM361.60 (CT101), RM413.30 (CT103), RM585.50 (CT303), RM1,420.65 (CT310) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ct10x-smart-current-transformer
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ct10x-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight CTH01 LoRaWAN Smart Power Monitor Hub
+## Aliases
+CTH01, LR-CTH01, CTH01-915M, Milesight CTH01, Smart Power Monitor Hub, 12-channel LoRaWAN energy meter
+## What it is
+A 12-channel LoRaWAN power and energy monitoring hub made by Milesight and distributed in Malaysia by Cytron (product page). It mounts on a DIN rail in a distribution board, takes three voltage phases plus neutral and up to 12 external RJ11 current transformers, and reports power, energy and power quality over LoRaWAN Class C (datasheet).
+## Specs and functions
+- Measures RMS voltage and current, power factor, active/reactive/apparent power and energy (import and export), voltage unbalance, voltage and current THD (datasheet).
+- Accuracy: active energy ±1 % (IEC 62053-21), reactive energy ±2 % (IEC 62053-23); 6–8 kHz sampling; 50–60 Hz (datasheet).
+- Voltage: 100–500 V AC, ±1 %; max 290 Vrms N–L, 500 Vrms L–L; AWG 26–12 wire (datasheet).
+- 12 current channels on RJ11, up to 4000 A with Rogowski coils; split-core CTs 100/300/500/1000 A (datasheet).
+- 12 single-phase circuits, 4 three-phase groups, or mixed (datasheet).
+- USB-C NTC cable-temperature sensor, -20 to 100 °C, ±1 °C (datasheet).
+- LoRaWAN Class C, OTAA/ABP, SMB antenna, 20 dBm at 915 MHz (datasheet).
+- Cytron sells the 915M hardware for AS923 (Malaysia/Singapore) (product page).
+- Stores 20,000 records and 2,000 alarms; 12 months of energy statistics; threshold, out-of-range and power-failure alarms; FUOTA (datasheet).
+- Power: 12 V DC from the included AC–DC adapter, 2-pin 5 mm terminal, reverse-polarity protected, max 5.8 W (datasheet).
+- Overvoltage category III, pollution degree 2, 4 kVac insulation, IP30, -20 to 70 °C (datasheet).
+- 49.3 × 98 × 90 mm, 163 g, 35 mm DIN rail or magnetic mounting (datasheet).
+- Approvals: ETL (UL/CSA 61010-1, 61010-2-030), CE, FCC, SRRC (datasheet).
+- Packing: hub, power adapter, power terminal wire and block, voltage terminal block, magnetic antenna, USB-C NTC sensor, 4 magnetic voltage cables, screw kits; CT clamps not included (product page).
+## Interfaces and compatibility
+- 4 voltage terminals (L1, L2, L3, N) on a removable push-button terminal block (user guide).
+- 12 RJ11 current channels in groups of three; L1 must use the 1st channel of a group, L2 the 2nd, L3 the 3rd (user guide).
+- Configured by Bluetooth with the Milesight ToolBox app; downlink commands also supported (datasheet, user guide).
+- Works with RCT-RJ11 split-core CTs sold separately by Cytron (product page).
+- Needs a LoRaWAN gateway on the same frequency plan, e.g. Milesight UG65 (product page).
+## Use cases
+- Energy sub-metering in commercial buildings, industrial plants, data centres and multi-tenant apartments (datasheet).
+- Power-quality monitoring: THD, unbalance, PF anomalies (datasheet).
+- Cost allocation and preventive maintenance of critical circuits (datasheet).
+## Known limitations
+- Current transformers are not included and must be bought per circuit (product page).
+- Installation only by a qualified electrician with the board de-energized and locked out (user guide).
+- Wrong voltage-to-current channel pairing gives wrong power and energy (user guide).
+- Rogowski coils cannot be mixed with CTs inside one group (user guide).
+- IP30, indoor use only (datasheet).
+- Cytron's page names both AS923-1 and AS923-2 for Malaysia (product page).
+## Positioning (kept apart from specs)
+- Cytron: professional-grade hub for multi-circuit energy management with deployment "in under 30 minutes" (product page).
+- Milesight: for energy savings, preventative maintenance and cost allocation in energy management systems (datasheet).
+## Price band
+RM1,722.00 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-cth01-lorawan-smart-power-monitor-hub
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight RCT-RJ11 Split-core Current Transformers for CTH01 (100 A / 300 A / 1000 A)
+## Aliases
+RCT-RJ11, RCT-100, RCT-300, RCT-1000, LR-RCT100, LR-RCT300, LR-RCT1000, V-LR-RCT, CTH01 CT clamp, split-core CT for CTH01
+## What it is
+Clamp-on split-core current transformers with an RJ11 plug, made by Milesight as the current sensors for the CTH01 Smart Power Monitor Hub and distributed in Malaysia by Cytron (product page). The CTH01 ships without CTs, so one of these is needed per monitored conductor (product page).
+## Specs and functions
+- Ranges: 0–100 A, 0–300 A, 0–1000 A (datasheet).
+- Accuracy class 0.5 (datasheet).
+- Wire hole: Ø16 mm (100 A), Ø24 mm (300 A), Ø51 mm (1000 A) (datasheet).
+- Weight: 100 g, 195 g, 835 g (datasheet).
+- Dimensions: 35.5 × 30.8 × 45.6 mm (100 A), 56.5 × 36.5 × 68.5 mm (300 A) (datasheet); 75.5 × 55.5 × 110.5 mm (1000 A) (product page).
+- Insulation 3 kVac rms (1 mA / 1 min); UL94 V0 housing; -40 to 55 °C (datasheet).
+- RJ11 connector; installed suspended on the conductor (datasheet, product page).
+## Interfaces and compatibility
+- Plugs into any of the 12 numbered RJ11 current channels of the Milesight CTH01 (product page).
+- Channel range must be set to the fitted CT in the CTH01 ToolBox app (user guide).
+- L1, L2, L3 CTs go in the 1st, 2nd and 3rd channel of a CTH01 group (user guide).
+- Different CT ratings can be mixed in one group; Rogowski coils cannot be mixed with CTs (user guide).
+## Use cases
+- Current sensing for CTH01 energy sub-metering of single-phase or three-phase circuits (product page).
+- Industrial panels, data centres and commercial buildings (product page).
+## Known limitations
+- Works only as a CTH01 accessory; no radio or output of its own (product page).
+- Arrow must point to the load or the reading is negative (user guide).
+- CTH01 installation is for qualified electricians with the board de-energized (user guide).
+- Cytron and Milesight differ on the 1000 A wire hole (Ø50 vs Ø51 mm) and weight (800 vs 835 g) (datasheet, product page).
+## Positioning (kept apart from specs)
+- Cytron: professional-grade, non-invasive clamps for energy auditing without cutting wires or downtime (product page).
+## Price band
+RM215.25 (100 A), RM258.30 (300 A), RM861.00 (1000 A) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-split-core-current-transformers-for-cth01-100a300a1000a
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/cth01-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM300-DI LoRaWAN Pulse Counter
+## Aliases
+EM300-DI, LR-EM300-DI, EM300-DI-915M, Milesight EM300-DI, LoRaWAN pulse counter, wireless meter pulse reader
+## What it is
+A battery-powered LoRaWAN pulse counter made by Milesight and distributed in Malaysia by Cytron (product page). It counts dry-contact pulses from reed-switch water or gas meters (or reads them as a digital input), also measures temperature and humidity, and reports over LoRaWAN Class A (datasheet).
+## Specs and functions
+- 1 × GPIO dry-contact input on a 1 m lead: pulse counter or digital input (datasheet).
+- Pulse input up to 2000 Hz, minimum pulse width 250 µs (datasheet).
+- Temperature -30 to 70 °C, ±0.3 °C (0–70 °C); humidity 0–100 % RH, ±3 % (10–90 %) (datasheet).
+- LoRaWAN Class A, OTAA/ABP, Milesight D2D; internal antenna; 20 dBm at 915 MHz; -137 dBm (datasheet).
+- Cytron sells the 915M version for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Battery: 1 × 4000 mAh ER18505 Li-SOCl2, 5 years at a 10-minute interval (datasheet).
+- Stores 1,000 records with retransmission; water flow/outage and temperature alarms (datasheet).
+- IP67, ABS+PC, 105.6 × 85.2 × 27 mm, 114.2 g (datasheet).
+- Configured by NFC with the Milesight ToolBox app or by downlink (datasheet).
+- Packing: device, 2 wall mounting kits, 2 screw caps, quick guide, warranty card (product page).
+## Interfaces and compatibility
+- Pulse lead: red = GPIO, black = GND, to the two sides of the meter's reed switch (user guide).
+- Works with reed-switch meters or other passive pulse meters (datasheet).
+- Pulse conversion (e.g. 1 L = 40 pulses) and initial count set in ToolBox (user guide).
+- Compatible with standard LoRaWAN gateways and network servers, Milesight IoT Cloud and Development Platform (datasheet).
+- Payload decoder on github.com/Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Turning traditional water meters into wireless smart meters (datasheet).
+- Agricultural irrigation, industrial water use and property meter reading (datasheet).
+- Gas and electricity meters with pulse outputs (Milesight product page).
+## Known limitations
+- Dry-contact input only per the datasheet; no external voltage on the lead (datasheet).
+- Only ER18505 Li-SOCl2 cells; alkaline not supported (user guide).
+- Battery life is 5 years in the datasheet; Cytron's "up to 10 years" needs the dual-battery version (datasheet, product page).
+- Listed as on enquiry; the brand card shows out of stock (product page).
+## Positioning (kept apart from specs)
+- Cytron: "The User Experience As Good As A Smartphone" via NFC, and "set-and-forget" deployment (product page).
+- Milesight: helps building operators collect water data for ESG reporting and green-building certification (Milesight product page).
+## Price band
+RM275.50 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em300-di-lorawan-pulse-counter
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em300-di-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em300-di-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM320-TH LoRaWAN Temperature and Humidity Sensor
+## Aliases
+EM320-TH, EM320, V-LR-EM320-TH, LR-EM320-TH, LR-EM320-TH-MG, EM320-TH-915M, Milesight EM320 temperature humidity sensor, EM320-TH magnetic version
+## What it is
+A compact battery-powered LoRaWAN temperature and humidity sensor made by Milesight and distributed in Malaysia by Cytron (product page). It has an IP67 food-grade enclosure for cold-chain, building and greenhouse monitoring, and comes in a Standard (wall/pole) and a Magnetic version (datasheet, product page).
+## Specs and functions
+- Temperature -30 to 60 °C, typ. ±0.2 °C (0–60 °C) and ±0.3 °C (below 0 °C), 0.1 °C resolution (datasheet).
+- Humidity 0–100 % RH, typ. ±2 % at 25 °C, 0.5 % RH resolution (datasheet).
+- Sensirion sensor; Cytron names the SHT41 (datasheet, product page).
+- LoRaWAN Class A, OTAA/ABP; 22 dBm at 915 MHz; -137 dBm (datasheet).
+- Cytron sells the 915M version for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- 2 × 2700 mAh ER14505 Li-SOCl2 batteries; ≥ 10 years at a 10-minute interval in lab conditions (datasheet).
+- Stores 3,000 records with retransmission; threshold alarms (datasheet).
+- IP67; FDA-approved food-grade PC+ABS; EN12830 certified (datasheet).
+- 85 × 58 × 18 mm; 93.2 g Standard, 102 g Magnet (datasheet).
+- Configured and switched on by NFC with the Milesight ToolBox app (datasheet).
+## Interfaces and compatibility
+- No external terminals; internal power button and LED (user guide).
+- NFC configuration; the Magnetic version must be taken off metal to read (user guide).
+- Works with standard LoRaWAN gateways and network servers, Milesight IoT Cloud and Development Platform (datasheet).
+- Cytron tutorial pairs it with the Milesight UG65 gateway and Milesight Cloud (product page).
+## Use cases
+- Cold-chain transport, freezers and refrigerators (datasheet).
+- Agricultural greenhouses (datasheet).
+- Office buildings, hospitals and factories (datasheet).
+- Cytron tutorial: [How to connect Milesight Sensor and Gateway to Milesight Cloud](https://my.cytron.io/tutorial/how-to-connect-milesight-sensor-and-gateway-to-mil)
+- Cytron tutorial: [Milesight IoT System Deployment and Custom Website Integration Guide](https://my.cytron.io/tutorial/milesight-iot-system-deployment-and-custom-website-integration-guide)
+## Known limitations
+- Operating range ends at 60 °C (datasheet).
+- Only ER14505 Li-SOCl2 cells; alkaline not supported (user guide).
+- The vent must not face upwards when mounted (user guide).
+- Battery-life figures differ between Milesight and Cytron text (datasheet, product page).
+## Positioning (kept apart from specs)
+- Milesight: "simple, compact and powerful" sensor safe for contact with food or medicines (datasheet).
+- Cytron: slim, superior and safe design with FDA-approved food contact materials (product page).
+## Price band
+RM241.10 (Standard or Magnetic) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em320-lorawan-temperature-and-humidity-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em320-th-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em320-th-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM300-TH LoRaWAN Temperature and Humidity Sensor
+## Aliases
+EM300-TH, LR-EM300-TH, EM300-TH-915M, Milesight EM300-TH, EM300 temperature humidity sensor
+## What it is
+A battery-powered LoRaWAN temperature and humidity sensor in Milesight's IP67 EM300 housing, made by Milesight and distributed in Malaysia by Cytron (product page). It suits indoor and outdoor monitoring in offices, hospitals, factories and greenhouses (datasheet).
+## Specs and functions
+- Temperature -30 to 70 °C, typ. ±0.3 °C (0–70 °C) and ±0.6 °C (below 0 °C), 0.1 °C resolution (datasheet).
+- Humidity 0–100 % RH, typ. ±3 % (10–90 % RH) and ±5 % outside that, 0.5 % RH resolution (datasheet).
+- Sensirion sensor chip (datasheet).
+- LoRaWAN Class A, OTAA/ABP, Milesight D2D; internal antenna; 20 dBm at 915 MHz; -137 dBm (datasheet).
+- Cytron sells the 915M version for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- 1 × 4000 mAh ER18505 Li-SOCl2 battery; 8000 mAh version optional (datasheet).
+- Battery life at 10-minute interval: over 10 years at SF7, about 5.8 years (SF10 EU868), about 4.2 years (SF10 US915) (datasheet).
+- Stores 2,800 records with retransmission; threshold alarms (datasheet).
+- IP67, UV-resistant ABS+PC; 88.5 × 85.3 × 27 mm; 95.6 g (datasheet).
+- Approvals include CE, FCC and EN12830 (datasheet).
+- Packing: sensor, 2 wall mounting kits, 2 screw caps, quick guide, warranty card (product page).
+## Interfaces and compatibility
+- No external terminals; internal power button and LED (user guide).
+- Configured and switched on by NFC with the Milesight ToolBox app; downlink also supported (datasheet).
+- Works with standard LoRaWAN gateways and network servers, Milesight IoT Cloud and Development Platform (datasheet).
+- Payload decoder on github.com/Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Offices, hospitals and factories (datasheet).
+- Greenhouses and outdoor environment monitoring (datasheet).
+- Cold-chain monitoring under EN12830 (datasheet).
+## Known limitations
+- Lower accuracy than the newer EM320-TH (datasheet).
+- Only ER18505 Li-SOCl2 cells; do not add a second cell to the 4000 mAh version (user guide).
+- Battery life falls sharply at high spreading factors (datasheet).
+- Listed as on enquiry; the brand card shows out of stock (product page).
+## Positioning (kept apart from specs)
+- Cytron: "Industry-Proven Temperature & Humidity Sensor" with industrial-grade design for harsh environments (product page).
+## Price band
+RM223.85 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em300-th-lorawan-temperature-and-humidty-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em300-th-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em300-th-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight LoRaWAN Indoor Air Monitoring (IAQ) Sensor (AM102 / AM102L / AM103 / AM307 / AM308 / AM319)
+## Aliases
+IAQ Sensor, V-LR-AM, AM102, AM102L, AM103, AM307, AM308, AM319, LR-AM102, LR-AM102L-WDS, LR-AM103, LR-AM307, LR-AM308, LR-AM319, AM100 series, AM300 series, Milesight indoor ambience monitoring sensor
+## What it is
+A family of wall-mounted indoor air quality sensors with LoRaWAN, made by Milesight and distributed in Malaysia by Cytron under one listing with six configurations (product page). They range from a temperature/humidity unit (AM102/AM102L) to a 9-in-1 sensor with PM and HCHO or ozone (AM319), most with an E-ink display (datasheet).
+## Specs and functions
+- AM102/AM102L: temperature and humidity; AM103 adds NDIR CO2 (datasheet).
+- AM307: temperature, humidity, light, PIR motion, CO2, TVOC, barometric pressure; AM308 adds PM2.5 and PM10 (datasheet).
+- AM319: AM308 sensors plus HCHO or O3 by part number; photoacoustic CO2 400–2000 ppm (datasheet).
+- Temperature -20 to 60 °C, typ. ±0.2 °C (0–60 °C); humidity 0–100 % RH, typ. ±2 % (datasheet).
+- CO2 (AM103/AM307/AM308): 400–5000 ppm, ±(30 ppm + 3 % of reading) (datasheet).
+- PM2.5/PM10: 0–1000 µg/m3, ±10 µg/m3 up to 100 µg/m3 (datasheet).
+- Display: 2.13" E-ink (AM102/AM103), none (AM102L), 4.2" E-ink (AM307/AM308/AM319) (datasheet).
+- Power: AM10x 2 × ER14505 Li-SOCl2; AM307/AM308 4 × ER14505 or 5 V USB-C; AM319 5 V/1 A USB-C only (datasheet).
+- Battery life at 10 min, SF7: AM102 over 7 years, AM102L over 9 years, AM103 about 4.5 years, AM307 about 3.9 years, AM308 about 1.3 years (datasheet).
+- LoRaWAN Class A (AM319 Class C); 22 dBm at 915 MHz; internal antenna (datasheet).
+- Cytron sells 915M versions for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- IP30, indoor; -20 to 60 °C (E-ink 0–40 °C) (datasheet).
+- Packing: device, mounting bracket, 3M tape, 3 wall mounting kits, theft-deterring screw, quick guide, warranty card (product page).
+## Interfaces and compatibility
+- Configured by NFC with the Milesight ToolBox app; AM300 models also by PC software over NFC or USB-C (datasheet).
+- Traffic-light LED and buzzer on AM300 models show air-quality level against thresholds (datasheet).
+- Works with standard LoRaWAN gateways and network servers, Milesight IoT Cloud and Development Platform (product page).
+- Also sold inside Cytron's LoRaWAN Indoor Air Quality Kit (product page).
+## Use cases
+- Offices, retail stores, classrooms and hospitals (product page).
+- Smart building and facility management dashboards (product page).
+- Meeting-room occupancy (vacant/occupied) with comfort monitoring (product page).
+## Known limitations
+- IP30, indoor only (datasheet).
+- AM319 has no battery and must stay on USB power (datasheet).
+- TVOC is a unitless IAQ index and needs a 48-hour first run and clean-air calibration (product page).
+- PIR reports only occupied or vacant, not people counts (product page).
+- HCHO sensor life 6 years and O3 sensor life 2 years (datasheet).
+- Several Cytron spec lines differ from Milesight's datasheets (product page, datasheet).
+## Positioning (kept apart from specs)
+- Cytron: compact sensor with E-ink screen for instant assessment of indoor comfort (product page).
+- Milesight: multiple display modes and clear emoticons to understand comfort levels (datasheet).
+## Price band
+RM223.85 (AM102L), RM275.50 (AM102), RM817.95 (AM103), RM1,291.50 (AM307), RM1,506.75 (AM319), RM1,678.95 (AM308) (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-iaq-sensor
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/am30x-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WTS506 LoRaWAN IoT Weather Station
+## Aliases
+WTS506, LR-WTS506, WTS506-915M, Milesight weather station, LoRaWAN weather station, IoT Weather Station
+## What it is
+An all-in-one, solar-powered LoRaWAN weather station made by Milesight and distributed in Malaysia by Cytron (product page). A sensor head with no moving parts measures temperature, humidity, wind, pressure and rainfall; a hub sends the data over LoRaWAN and a 15 W solar panel keeps it powered (datasheet).
+## Specs and functions
+- Temperature -40 to 85 °C, ±0.3 °C (datasheet).
+- Humidity 0–100 % RH, ±3 % RH (datasheet).
+- Ultrasonic wind speed 0–60 m/s, ±0.3 m/s or ±3 %; wind direction 0–360°, ±3° (datasheet).
+- Barometric pressure 500–1100 hPa, ±0.5 hPa (datasheet).
+- Piezoelectric rainfall 0–1000 mm, 0.01 mm resolution, ±0.5 mm below 10 mm and ±5 % above (datasheet).
+- Hub: LoRaWAN Class A, OTAA/ABP, 22 dBm at 915 MHz, -137 dBm, internal antenna (datasheet).
+- Cytron sells the 915M version for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Hub stores 19,000 records with retransmission; threshold alarms (datasheet).
+- Power: 15 W solar panel (15 V, 1 A, 18 V open circuit) with 2 × 2550 mAh ICR18650 backup cells (datasheet).
+- Sensor head IP65, aluminium, 2.15 kg; hub IP67, -20 to 60 °C (datasheet).
+- Packing: sensor, hub, solar panel with brackets, sensor cable, bent pipe, hose clamps, screws, quick start guide, warranty card (product page).
+## Interfaces and compatibility
+- Hub has two M12 A-coded connectors: 2-pin 15 V power (left, from the solar panel) and data (right, to the sensor) (datasheet, user guide).
+- Configured by NFC with the Milesight ToolBox app or by PC software over the internal USB-C port (datasheet).
+- Works with standard LoRaWAN gateways and network servers, Milesight IoT Cloud and Development Platform (product page).
+## Use cases
+- Smart farms and agriculture (product page).
+- Industrial sites, schools and building automation (product page).
+- Outdoor micro-climate monitoring without grid power (product page).
+## Known limitations
+- The sensor arrow must face north for correct wind direction (user guide).
+- Batteries do not charge above 45 °C; the hub should not sit in direct sun (user guide).
+- Siting needs clearance from buildings, trees and radar (user guide).
+- Listed as on enquiry; the brand card shows out of stock (product page).
+## Positioning (kept apart from specs)
+- Cytron: tracks all weather parameters from a single unit, so you don't install separate sensors (product page).
+- Cytron: runs on "free solar power", fully independent from the grid (product page).
+## Price band
+RM12,915.00 (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-iot-weather-station
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/wts506-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/wts506-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM400-MUD LoRaWAN Ultrasonic Distance Sensor
+## Aliases
+EM400-MUD, LR-EM400-MUD, EM400-MUD-915M, Milesight EM400-MUD, multifunctional ultrasonic distance sensor
+## What it is
+A battery-powered LoRaWAN ultrasonic distance sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron (product page). It measures 3–450 cm, adds tilt and temperature sensing, has Standard, Bin and Parking Lot modes, and is aimed at waste bins and parking spaces (datasheet).
+## Specs and functions
+- Detection range 3 ~ 450 cm with a small blind zone (datasheet).
+- Accuracy ± (1 + 0.3 % × S) cm, S = distance, over -15 °C ~ 60 °C; resolution 1 mm (datasheet).
+- Beam angle 60° (datasheet).
+- 3-axis accelerometer: Normal / Tilt status, tilt = offset angle of 20° or more (datasheet, user guide).
+- NTC temperature sensor -40 ~ 125 °C, resolution 0.1 °C, for trash-burning alarms (datasheet).
+- LoRaWAN Class A, OTAA/ABP; Tx power 16 dBm (868 MHz) / 20 dBm (915 MHz) / 19 dBm (470 MHz); sensitivity -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1; MPN EM400-MUD-915M (product page).
+- Power: 2 × 9000 mAh ER26500 Li-SOCl2 replaceable batteries (datasheet).
+- Battery life: Standard mode over 10 years (10 min interval), Bin mode over 10 years (20 min interval), Parking lot mode 5 years (12 triggers per day), all at 25 °C (datasheet).
+- IP67 with internal damp-proof coating; -30 ~ 70 °C; ≤ 95 % RH (datasheet).
+- 118 × 65 × 32.5 mm, 181.4 g with batteries, ABS + PC UL94 V0 housing (datasheet).
+- Internal power/reset button and LED; NFC on/off and configuration (datasheet).
+- Packing: 1 × sensor module (product page); Milesight's box adds 2 mounting kits, warranty card and quick guide (user guide).
+## Interfaces and compatibility
+- No wires or probes; configure by NFC with the Milesight ToolBox app (user guide).
+- Works with standard LoRaWAN gateways and network servers and with Milesight IoT Cloud (datasheet).
+- Pairs with a Milesight gateway such as milesight-ug65.md (product page).
+- Payload decoders on github.com/Milesight-IoT/SensorDecoders (product page).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Fill-level monitoring of medium or large trash bins (datasheet).
+- Parking space occupancy detection (datasheet).
+- General distance and level measurement in Standard mode (product page).
+## Known limitations
+- Must be mounted level, above the target, with a clear path, at least 30 cm from side walls (user guide).
+- Range ends at 450 cm; below 3 cm is not measured (datasheet).
+- Firmware upgrade via ToolBox works on Android only (user guide).
+- Threshold alarms only in Bin and Standard modes (user guide).
+- Replace both batteries together (user guide).
+## Positioning (kept apart from specs)
+- Milesight: "multifunctional ultrasonic distance sensor" with small blind spots and three pre-set modes.
+- Cytron page: cost-effective and reliable option for smart waste and smart parking.
+## Price band
+RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em400-mud-lorawan-ultrasonic-distance-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em400-mud-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em400-mud-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM400-TLD LoRaWAN ToF Laser Distance Sensor
+## Aliases
+EM400-TLD, LR-EM400-TLD, EM400-TLD-915M, Milesight EM400-TLD, ToF laser distance sensor, smart bin sensor
+## What it is
+A battery-powered LoRaWAN time-of-flight laser distance sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron (product page). It measures 2–350 cm with a 27° field of view and is designed for fill-level monitoring of small trash bins and containers (datasheet).
+## Specs and functions
+- ToF field of view 27°; detection range 2 ~ 350 cm with an extremely short blind zone (datasheet).
+- Accuracy ± 2 cm over -20 °C ~ 70 °C; resolution 1 mm (datasheet).
+- 3-axis accelerometer: Normal / Tilt status, tilt = offset of 20° or more, used for lid status (datasheet, user guide).
+- NTC temperature sensor -40 ~ 125 °C, resolution 0.1 °C, for trash-burning alarms (datasheet).
+- Two pre-set modes: Standard and Bin (user guide).
+- LoRaWAN Class A, OTAA/ABP; Tx power 20 dBm at 915 MHz; sensitivity -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1; MPN EM400-TLD-915M (product page).
+- Power: 2 × 9000 mAh ER26500 Li-SOCl2 replaceable batteries; around 10 years in Standard (10 min) or Bin (20 min) mode at 25 °C (datasheet).
+- IP67 with damp-proof coating; -30 ~ 70 °C; ≤ 95 % RH (datasheet).
+- 118 × 65 × 30 mm, 208.3 g with batteries, ABS + PC UL94 V0 (datasheet).
+- Packing: device, 2 mounting kits, mirror cleaning cloth, warranty card, quick guide (product page).
+## Interfaces and compatibility
+- No wires or probes; NFC configuration with the Milesight ToolBox app; internal power/reset button and LED (datasheet).
+- Works with standard LoRaWAN gateways and network servers and Milesight IoT Cloud; pair with e.g. milesight-ug65.md (datasheet).
+- Payload decoders on github.com/Milesight-IoT/SensorDecoders (product page).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Fill-level monitoring of small and mini trash bins (datasheet).
+- Bin lid open/close and fire (combustion) alerts (product page).
+- General short-range distance measurement in Standard mode (user guide).
+## Known limitations
+- Optical: avoid direct sunlight or IR light in the field, glass and mirrors nearby; keep the lens clean and remove the protective film (user guide).
+- Range ends at 350 cm (datasheet).
+- No Parking Lot mode (user guide).
+- Firmware upgrade via ToolBox works on Android only (user guide).
+## Positioning (kept apart from specs)
+- Milesight: "almost no blind spot" when installed on small waste bins.
+- Cytron page: monitors fill level of small and mini trash bins with high accuracy.
+## Price band
+RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em400-tld-lorawan-tof-laser-distance-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em400-tld-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em400-tld-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM410-RDL LoRaWAN Radar Distance / Level Sensor with External Antenna
+## Aliases
+EM410-RDL, EM410-RDL-EA, LR-EM410-RDL-EA, EM410-RDL-915M-EA, EM41x-RDL, Milesight radar level sensor
+## What it is
+A battery-powered LoRaWAN 60 GHz millimetre-wave radar distance and liquid-level sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron, which sells the external-antenna version (product page). It measures 0.3–12 m with an 8° beam in a PVDF IP68 housing for sewers, wells, rivers and tanks (datasheet).
+## Specs and functions
+- 60 GHz millimetre-wave radar; target liquids or smooth-surface solids (datasheet).
+- Beam angle 8°; detection distance 0.3 ~ 12 m; blind zone 30 cm (datasheet, user guide).
+- Accuracy up to ± 2 mm on a still liquid or perfectly smooth flat solid; resolution 1 mm (datasheet).
+- 3-axis accelerometer: Normal / Tilt, tilt = offset of 15° or more (user guide).
+- Scenario modes: General, Rainwater Well, Wastewater Well, Tank; Tank mode reports liquid height from the bottom (user guide).
+- Alarms: distance threshold, distance change, blind zone; radar-echo curve and diagnostic; 2,000-entry local storage with retransmission (datasheet).
+- LoRaWAN Class A, OTAA/ABP; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1 (product page).
+- External antenna: 1 × 50 Ω SMB male connector, SMB magnetic antenna and cable gland supplied (datasheet, product page).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 battery; around 7 years at 15-min collection and 24-h reporting, 25 °C (datasheet).
+- IP68 (1 m, 48 h); -40 ~ 70 °C; 0–100 % RH non-condensing (datasheet).
+- Ф 101 × 87 mm, 400 g, PVDF UL94 V0, G1½" tank thread; wall bracket or tank thread installation (datasheet).
+- Packing: sensor, bracket, bubble level, waterproof tape, G1½ nut, screw kit, O-ring, battery, SMB magnetic antenna, cable gland (product page).
+## Interfaces and compatibility
+- No signal wiring; SMB antenna connector; two metal contacts for reboot (over 3 s) and factory reset (over 10 s) (user guide).
+- Configure with the Milesight ToolBox app over Bluetooth or NFC (datasheet).
+- Works with standard LoRaWAN gateways; pair with e.g. milesight-ug65.md (product page).
+- Management and OTA upgrade via Milesight Development Platform (datasheet).
+- A default ToolBox/Bluetooth password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Sewer, rainwater-well and wastewater-well level monitoring (user guide).
+- Storage tank and reservoir level, with threshold and sudden-rise alerts (product page).
+- River level and salt-mist sites such as seawater or brine (datasheet).
+## Known limitations
+- Nothing is measured inside the 30 cm blind zone (user guide).
+- Mount at least 20 cm from tank walls, perpendicular to the liquid (user guide).
+- Tighten the G1½ nut to no more than 4 N·m (user guide).
+- ER34615 Li-SOCl2 battery only; alkaline cells are not supported (user guide).
+- Default reporting interval is 24 h; faster reporting shortens battery life (user guide).
+## Positioning (kept apart from specs)
+- Cytron page: millimetre-level accuracy where ultrasonic or float sensors fall short.
+- Milesight: less affected by dust, condensate, temperature and acoustic noise.
+## Price band
+RM1,334.55 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em410-rdl-lorawan-radar-distance-level-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em410-rdl-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em410-rdl-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM500-UDL Ultrasonic Distance / Level Sensor (W050 and W100)
+## Aliases
+EM500-UDL, EM500-UDL-W050, EM500-UDL-W100, LR-EM500-UDL-W050, LR-EM500-UDL-W100, Milesight ultrasonic level sensor
+## What it is
+A battery-powered LoRaWAN ultrasonic distance and level sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron in two listings, W050 and W100 (product page). It is one IP67 unit with the ultrasonic horn under the transceiver body, for tank, well, river and silo level monitoring (datasheet).
+## Specs and functions
+- W050: range 0.3 – 5 m, accuracy ± 1 % FS (datasheet).
+- W100: range 0.5 – 10 m, accuracy ± 1 % FS (datasheet).
+- Resolution 1 mm for both (datasheet).
+- Blind zone is the minimum range: 0.3 m (W050) or 0.5 m (W100) (datasheet, inferred).
+- W models have temperature compensation for direct sun or large temperature swings (product page FAQ).
+- LoRaWAN Class A, OTAA/ABP, plus Milesight D2D; internal antenna; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listings: Malaysia AS923-2, Singapore AS923-1 (product page).
+- Data storage 1,000 entries, retransmission, retrievability, threshold alarm, change alarm, D2D controller (datasheet).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 replaceable battery; 10 years at 10-min interval, 25 °C (datasheet).
+- IP67; -30 °C to +65 °C; 0–80 % RH (datasheet).
+- 156.1 × 71 × 69.5 mm; 370.4 g with battery and bracket; ABS + PC, grey (datasheet).
+- Wall, pole or 35 mm DIN-rail mounting (user guide).
+## Interfaces and compatibility
+- No probe cable or terminals; internal power button, LED and USB Type-C for configuration and console (datasheet).
+- Configure by NFC with the Milesight ToolBox app or by USB-C with ToolBox PC software (datasheet).
+- Works with standard LoRaWAN gateways, Milesight IoT Cloud and Milesight Development Platform; pair with e.g. milesight-ug65.md (datasheet).
+- Uplink distance in mm; 0xFFFD means outside the range, 0xFFFF means read failure (user guide).
+- A default ToolBox password, default LoRaWAN keys and a default D2D key are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Water, oil or chemical tank levels and overflow detection (product page).
+- Reservoir, pit, sump, river and flood monitoring (product page).
+- Grain silos and solid materials (hard solids) (product page).
+## Known limitations
+- Mount vertically, more than 30 cm from side walls, not at the centre of a domed lid and not above an inlet (user guide).
+- Target must stay outside the blind zone (0.3 m W050, 0.5 m W100) (datasheet).
+- Not suggested for septic tanks with ammonia or methane, or for snow (use S050) (product page FAQ).
+- Accuracy is a percentage of full scale: ± 5 cm for W050 and ± 10 cm for W100 at full scale (datasheet, inferred).
+- ER34615 Li-SOCl2 battery only (user guide).
+## Positioning (kept apart from specs)
+- Cytron page: rugged, low-maintenance non-contact sensing for corrosive liquids, wastewater and chemicals.
+- Milesight: object distance or level detection without touch in harsh environments.
+## Price band
+W050 RM1,851.15; W100 RM1,980.30 (Cytron product pages, read 2026-10-21; out of stock / enquiry)
+## Product page
+[NOT STATED]
+
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em500-udl-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em500-udl-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM500-PP LoRaWAN Pipe Pressure Sensor
+## Aliases
+EM500-PP, LR-EM500-PP, EM500-PP-915M, Milesight EM500-PP, LoRaWAN pipe pressure sensor
+## What it is
+A battery-powered LoRaWAN pipe pressure sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron (product page). It pairs an IP67 EM500 transceiver with a stainless-steel vented-gauge pressure sensor on a 1.5 m cable, for pipe, tank and pump pressure monitoring (datasheet).
+## Specs and functions
+- Vented gauge pressure for liquids and gases; range 0 – 1600 kPa (16 bar) (datasheet).
+- Accuracy ± 0.5 % FS; resolution 1 kPa (0.01 bar); overload 150 % FS; long-term stability ± 0.3 % FS per year (datasheet).
+- Process connection G 1/2" male; stainless steel 316L sensor, IP65, 60.5 × Ф27 mm, 187 g with cable (datasheet).
+- Cable length 1.5 m (datasheet).
+- LoRaWAN Class A, OTAA/ABP; internal antenna; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1; MPN EM500-PP-915M (product page).
+- Data storage 1,000 entries, retransmission, retrievability, threshold alarm, D2D controller (datasheet).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 battery; 10 years at 10-min interval, 25 °C (datasheet).
+- Transceiver IP67, -30 ~ 70 °C, 105.4 × 71 × 69.5 mm, 328 g; sensor -10 ~ 70 °C; 0–100 % RH (datasheet).
+- Pole, wall or DIN-rail mounting (datasheet).
+## Interfaces and compatibility
+- Internal terminal block: pin 1 white GND, pin 2 red AIN, pin 6 black 12 V sensor supply; pins 3–5 unused; either of the two red wires may be used (user guide).
+- Internal USB Type-C for ToolBox PC software; NFC for the ToolBox app (datasheet).
+- Uplink pressure is always in kPa; 0xFFFD = out of range, 0xFFFF = read failure (user guide).
+- Works with standard LoRaWAN gateways and Milesight IoT Cloud; pair with e.g. milesight-ug65.md (product page).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Water mains and pipeline pressure monitoring (product page).
+- Tank and pump pressure monitoring (datasheet).
+- Water leak detection and oil and gas lines (datasheet).
+- HVAC pipe networks (product page).
+## Known limitations
+- Install on a straight run, away from bends, valves and pumps; use a damper on high-pressure hydraulic systems (user guide).
+- Sensor rated -10 ~ 70 °C; use a buffer coil for steam and anti-freeze measures outdoors (user guide).
+- Sensor assembly is IP65 while the transceiver is IP67 (datasheet).
+- Never push objects into the diaphragm (user guide).
+- ER34615 Li-SOCl2 battery only (user guide).
+## Positioning (kept apart from specs)
+- Cytron page: industry-grade pressure monitoring that helps pre-empt failures, leaks and bursts.
+- Milesight: high precision and corrosion resistance.
+## Price band
+RM1,136.50 (Cytron product page, read 2026-10-21; enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em500-pp-lorawan-pipe-pressure-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em500-pp-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em500-pp-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM500-PT100 LoRaWAN Industrial Temperature Sensor (T200)
+## Aliases
+EM500-PT100, EM500-PT100-T200, LR-EM500-PT100-T200, EM500-PT100-915M (T200), Milesight PT100 sensor
+## What it is
+A battery-powered LoRaWAN PT100 platinum RTD temperature sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron, which sells the T200 range variant (product page). An IP67 EM500 transceiver reads a 3-wire stainless-steel probe on a 1.5 m Teflon cable (datasheet).
+## Specs and functions
+- PT100, 3-wire connection; T200 range -50 °C ~ 200 °C (datasheet).
+- Accuracy Class A, typical ± 0.6 °C over -50 ~ 200 °C; resolution 0.1 °C (datasheet).
+- Probe: 304 stainless steel straight tube Φ4 × 30 mm, IP67; contact installation (datasheet).
+- Cable: Teflon, rated -200 ~ 290 °C, 1.5 m (datasheet).
+- LoRaWAN Class A, OTAA/ABP, plus Milesight D2D; internal antenna; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1 (product page).
+- Data storage 1,000 entries, retransmission, retrievability, threshold and change alarms (datasheet).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 battery; 10 years at 10-min interval, 25 °C (datasheet).
+- Transceiver IP67, -30 ~ 70 °C, 0–100 % RH, 105.4 × 71 × 69.5 mm, 362.7 g with probe (datasheet).
+- Pole, wall or DIN-rail mounting (datasheet).
+## Interfaces and compatibility
+- Internal terminal block: pin 1 white GND, pins 4 and 5 red PT1 (user guide).
+- Internal USB Type-C for ToolBox PC software; NFC for the ToolBox app (datasheet).
+- Uplink temperature in °C (INT16/10); 0xFFFD = out of range (user guide).
+- Works with standard LoRaWAN gateways and Milesight IoT Cloud; pair with e.g. milesight-ug65.md (datasheet).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Industrial machine and pipe temperature (datasheet).
+- Oven, cooking, chimney and boiler temperature (datasheet).
+- Liquid or gas temperature, medical or laboratory use (datasheet).
+## Known limitations
+- T200 range ends at 200 °C; hotter processes need Milesight's T500 or T800 variants, which Cytron does not list (datasheet).
+- The transceiver must stay within -30 ~ 70 °C (datasheet).
+- ER34615 Li-SOCl2 battery only (user guide).
+## Positioning (kept apart from specs)
+- Cytron page: industrial-grade, UV- and vibration-resistant, for precise temperature control.
+- Milesight: corrosion-resistant cable and multiple probe options.
+## Price band
+RM671.60 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em500-pt100-industrial-temperature-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em500-pt100-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em500-pt100-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM500-SMTC LoRaWAN Soil Moisture, Temperature and EC Sensor
+## Aliases
+EM500-SMTC, LR-EM500-SMTC, EM500-SMTC-915M, Milesight soil sensor, soil conductivity sensor
+## What it is
+A battery-powered LoRaWAN soil moisture, temperature and electrical-conductivity sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron (product page). An IP67 EM500 transceiver powers and reads a buried IP68 soil probe on a 2 m cable (datasheet).
+## Specs and functions
+- Soil moisture 0 – 100 %; ± 2 % (0–50 %), ± 3 % (50–100 %); resolution 0.01 % (datasheet).
+- Soil temperature -40 ~ 80 °C; ± 0.5 °C; resolution 0.1 °C (datasheet).
+- EC 0 – 20000 µS/cm; ± 3 % up to 10000, ± 5 % above; resolution 10 or 50 µS/cm (datasheet).
+- Soil probe 88 × 68 × 26 mm, 50 mm prongs, epoxy + stainless steel, IP68, 138 g with cable; cable 2 m (datasheet).
+- LoRaWAN Class A, OTAA/ABP, plus Milesight D2D; internal antenna; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1 (product page).
+- Data storage 1,000 entries, retransmission, retrievability, threshold and temperature change alarms (datasheet).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 battery; up to 10 years at 10-min interval (around 8 years at SF10 US915) (datasheet).
+- Transceiver IP67, -30 ~ 70 °C, 105.4 × 71 × 69.5 mm, 328 g; pole, wall or DIN-rail mounting (datasheet).
+## Interfaces and compatibility
+- Internal terminal block: pin 1 black GND, pin 4 white B, pin 5 yellow A, pin 6 red 12 V; the green probe wire is unused (user guide).
+- Internal USB Type-C for ToolBox PC software; NFC for the ToolBox app (datasheet).
+- Uplink: temperature °C, moisture %, conductivity µS/cm (user guide).
+- Works with standard LoRaWAN gateways and Milesight IoT Cloud; pair with e.g. milesight-ug65.md (datasheet).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Irrigation control and greenhouse control (datasheet).
+- Smart agriculture and smart horticulture (datasheet).
+- Golf course maintenance (datasheet).
+## Known limitations
+- Prongs must be fully buried in undisturbed soil without air gaps or roots (user guide).
+- Do not pull the probe out by its cable; avoid sideways force on the prongs (user guide).
+- Battery life drops to about 8 years at SF10 on US915 (datasheet).
+- The Cytron page lists a 4000 mAh battery and IP66; the datasheet says 19000 mAh and IP67/IP68 (product page, datasheet).
+## Positioning (kept apart from specs)
+- Cytron page: real-time data for better irrigation, fertilisation and crop yield.
+- Milesight: high precision for multiple kinds of soil, corrosion-resistant tough probe.
+## Price band
+RM2,135.30 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em500-smtc-soil-moisture-temperature-and-ec-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em500-smtc-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em500-smtc-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM500-CO2 LoRaWAN Carbon Dioxide Sensor (4 in 1)
+## Aliases
+EM500-CO2, LR-EM500-CO2, EM500-CO2-915M, Milesight outdoor CO2 sensor, 4-in-1 CO2 sensor
+## What it is
+A battery-powered outdoor LoRaWAN sensor for CO2, temperature, humidity and barometric pressure, made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed in Malaysia by Cytron (product page). It is a one-piece IP65 EM500-series unit with all sensors built in (datasheet).
+## Specs and functions
+- CO2: NDIR, 400 – 5000 ppm, ± (30 ppm + 3 % of reading) at 0–50 °C and 0–85 % RH, resolution 1 ppm (datasheet).
+- Temperature: MEMS, -30 ~ 70 °C, ± 0.3 °C (0–70 °C) or ± 0.6 °C (-30–0 °C), resolution 0.1 °C (datasheet).
+- Humidity: MEMS, 0 – 100 % RH, ± 3 % (10–90 %) or ± 5 % outside that, resolution 0.5 % RH (datasheet).
+- Barometric pressure: MEMS, 300 – 1100 hPa, ± 1 hPa, resolution 0.1 hPa (datasheet).
+- LoRaWAN Class A, OTAA/ABP; internal antenna; 20 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Frequency on the Cytron listing: Malaysia AS923-2, Singapore AS923-1 (product page).
+- Data storage 1,000 entries, retransmission, retrievability, threshold alarm, calibration (datasheet).
+- Power: 1 × 19000 mAh ER34615 Li-SOCl2 battery; 10 years at 10-min interval, 25 °C (datasheet).
+- IP65; -30 ~ 70 °C; 0–95 % RH; 147.9 × 71 × 69.5 mm; 434.7 g with battery and bracket (datasheet).
+- Pole, wall or DIN-rail mounting (datasheet).
+## Interfaces and compatibility
+- No probe or terminals; internal power button, LED and USB Type-C; NFC for the ToolBox app (datasheet).
+- Uplink: temperature °C, humidity %RH, CO2 ppm, pressure hPa (user guide).
+- Works with standard LoRaWAN gateways and Milesight IoT Cloud; pair with e.g. milesight-ug65.md (product page).
+- A default ToolBox password and default LoRaWAN keys are set at the factory; see the user guide (not copied) (user guide).
+## Use cases
+- Greenhouse CO2 monitoring and smart agriculture (product page).
+- Building ventilation and fruit and vegetable storage (product page).
+- Wine cellar CO2 safety and forest-fire detection (product page).
+## Known limitations
+- Mount no higher than 12–18 inches above the floor because CO2 sinks (user guide).
+- Needs manual or automatic background CO2 calibration for accurate readings (user guide).
+- IP65 only, lower than the IP67 of most EM500 models (datasheet).
+- CO2 range starts at 400 ppm and ends at 5000 ppm (datasheet).
+## Positioning (kept apart from specs)
+- Cytron page: "More than Just a Carbon Dioxide Sensor", ultra-rugged enclosure for harsh environments.
+- Milesight: outdoor LoRaWAN CO2 sensor integrating multiple sensors.
+## Price band
+RM1,033.20 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+## Product page
+https://my.cytron.io/Milesight/p-em500-co2-lorawan-carbon-dioxide-sensor-4-in-1
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em500-co2-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em500-co2-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight VS121 LoRaWAN AI Workplace Occupancy Sensor
+## Aliases
+VS121, LR-VS121, Milesight VS121, VS121 AI Workplace Occupancy Sensor, VS121 people counter
+## What it is
+A ceiling-mounted AI vision occupancy and people-counting sensor made by Milesight and distributed by Cytron (product page). It sends only counter values over LoRaWAN Class C and is powered by USB Type-C (datasheet).
+## Specs and functions
+- Field of view 190° horizontal, 112° vertical; installation height 2.3–4 m, optimum 3 m for standing people (datasheet).
+- Detection area at 3 m: 12.3 × 5.0 m; at 4 m: 19.3 × 8.3 m (datasheet).
+- Recognition rate up to 95% (datasheet).
+- Up to 16 counting regions with dwell time, bi-directional line crossing, U-turn filtering, people flow analysis up to 4 edges (datasheet).
+- Privacy: blur or normal live view, up to 8 privacy masks, no images collected (datasheet).
+- LoRaWAN OTAA/ABP Class C, Milesight D2D; Tx up to 20 dBm; sensitivity -137 dBm @ 300 bps (datasheet).
+- Cytron sells it for AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: Type-C 5 V / 3 A, 9.4 W (datasheet).
+- 85 × 85 × 20 mm, 130 g, IP30, -20 to +60 °C, indoor only (datasheet, user guide).
+- Packing: sensor, power adapter, Type-C cable, mounting kit, mounting sticker, quick guide, warranty card (product page).
+## Interfaces and compatibility
+- USB Type-C power port, Wi-Fi button, reset button, status LED; no wired data interface (user guide).
+- Wi-Fi 2.4 GHz AP for web configuration only; default IP 192.168.1.1; you set the password at first login (user guide).
+- Needs a LoRaWAN gateway on the same frequency plan, such as Milesight UG65 or UG56 (user guide, product page).
+- Works with Milesight IoT Cloud (OTAA required) and Milesight Development Platform (user guide, datasheet).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Meeting-room and workstation occupancy monitoring (product page).
+- Open-office space utilisation and workplace planning (Milesight product page).
+- Occupancy data for building automation such as HVAC and lighting (Milesight product page).
+- People flow and dwell-time analysis in retail, banks and gyms (product page).
+## Known limitations
+- Indoor only, IP30 (datasheet, user guide).
+- Needs > 20 lux for region counting and > 50 lux for line crossing; avoid sunlight, mirrors and doors in view (user guide).
+- Wi-Fi is for configuration only, not data (product page).
+- USB cables over 5 m may not power it (product page).
+- The high ceiling mount version was removed by Milesight in Feb 2026 (user guide).
+## Positioning (kept apart from specs)
+- Milesight: "100% anonymous detection", GDPR compliant, up to 95% accuracy (Milesight product page).
+- Cytron: LoRaWAN wireless deployment with privacy protection at source (product page).
+## Price band
+RM1,592.85, enquiry only (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-vs121-lorawan-ai-workplace-occupancy-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/vs121-vs121-p-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/vs121-vs121-p-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight VS125 PoE AI Stereo Vision People Counter (Low-and-Wide Version)
+## Aliases
+VS125-LW-P, LR-VS125-LW-P, VS125-LW, VS125 Low-and-Wide, Milesight VS125, 3D people counter
+## What it is
+A ceiling-mounted 3D stereo-vision AI people counter for low ceilings, made by Milesight and distributed by Cytron (product page). The version Cytron sells is PoE powered and sends data over Ethernet; it is not a LoRaWAN device (datasheet).
+## Specs and functions
+- 2 × 5 MP sensors (2592 × 1744), stereo depth with IR, works at 0 lux (datasheet).
+- Installation height 1.9–3.5 m; FoV 130° horizontal × 117° vertical (datasheet).
+- Detection area 5.57 × 4.24 m at 3 m and 7.71 × 5.87 m at 3.5 m for a 1.75 m person; Milesight quotes up to 40 m² (datasheet).
+- Counting accuracy up to 99.8% (datasheet).
+- Up to 4 bi-directional lines with U-turn filtering; up to 4 regions with dwell time (datasheet).
+- Child/adult, gender, group counting, staff detection, heat map, view direction (datasheet).
+- Stitching of up to 16 devices; local storage of one million records with CSV export (datasheet).
+- Power: 802.3af PoE or 12 V / 1 A DC; avg 6.9 W, max 12 W (datasheet).
+- 185 × 85 × 34 mm, 284.4 g, IP40, -20 to +60 °C (datasheet).
+- Packing: device, 4 ceiling mounting sets, multi-interface cable, warranty card, quick guide; no power adapter (product page).
+## Interfaces and compatibility
+- 1 × RJ45 10/100 Mbps PoE PD, 1.5 kV isolation (datasheet).
+- 1 × DI, 2 × DO (up to 1 A @ 24 V DC), 1 × RS485 (under development) on a multi-interface cable (datasheet, user guide).
+- Wi-Fi 2.4 GHz AP for configuration at 192.168.1.1 (user guide).
+- Ethernet uses DHCP by default and falls back to 192.168.5.220 after 30 s (user guide).
+- Protocols: HTTP(s), MQTT(s), BACnet/IP, 802.1x, OpenVPN, SSH, NTP (datasheet).
+- Managed with Milesight DeviceHub or Development Platform (datasheet).
+## Use cases
+- Footfall counting at retail store and boutique entrances with low ceilings (product page).
+- Queue management with zone dwell time (product page).
+- Shopper insights: adults vs children, groups, staff filtering (product page).
+- Subway and office entrance counting (datasheet).
+## Known limitations
+- No LoRaWAN; PoE (Ethernet) or a separate cellular version only (datasheet).
+- Small coverage at low heights, so wide entrances need stitched units (user guide).
+- Attribute recognition needs 1.9–3.3 m height (user guide).
+- RS485 is under development (datasheet).
+- Indoor IP40; not for rain-exposed or private areas (datasheet, user guide).
+- PoE must be 802.3af; no power adapter in the Cytron box (datasheet, product page).
+## Positioning (kept apart from specs)
+- Milesight: privacy-by-design, GDPR compliant, "up to 99.8%" accuracy (datasheet).
+- Cytron: GDPR-certified people counting and shopper insights for low-ceiling retail (product page).
+## Price band
+RM3,400.95, out of stock (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-vs125-poe-ai-stereo-vision-people-counter-low-and-wide-version
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/vs125-lw-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/vs125-lw-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight VS135 PoE Ultra ToF People Counter
+## Aliases
+VS135, V-LR-VS135, LR-VS135, LR-VS135-P, VS135-P, Milesight VS135, VS135 Ultra ToF People Counter, ToF people counter
+## What it is
+A ceiling-mounted 3D Time-of-Flight AI people counter made by Milesight and distributed by Cytron (product page). It uses depth data only, with no images or video, and comes in PoE, LoRaWAN, cellular and Wi-Fi HaLow versions with Standard or High Ceiling optics (datasheet).
+## Specs and functions
+- Second-generation ToF sensor, 940 nm invisible light; counting accuracy up to 99.8% (datasheet).
+- Standard optics: 98° × 80°, height up to 3.5 m, detection area 2.99 × 2.18 m at 3 m (datasheet).
+- High Ceiling optics: 60° × 45°, height up to 6.5 m, detection area 5.54 × 3.98 m at 6.5 m (datasheet).
+- Up to 4 bi-directional lines with U-turn filtering; up to 4 regions with dwell time (datasheet).
+- Group counting, child/adult, staff detection with staff tags, occlusion detection, heat maps (datasheet).
+- Multi-device stitching: up to 8 units on PoE, up to 4 on other versions (datasheet).
+- Local storage of one million records with CSV export (datasheet).
+- PoE version: 802.3at PoE+ or 12 V / 2 A, up to 17 W (Standard) or 24 W (High Ceiling) (datasheet).
+- LoRaWAN version: 12 V / 2 A DC, OTAA/ABP Class C; Cytron states AS923-2 and AS923-1 (datasheet, product page).
+- 200 × 35 × 85 mm, about 410–419 g, IP40, -20 to +50 °C (datasheet).
+- Cytron variants: Standard (LR-VS135, includes power adapter) and High Ceiling Mount (LR-VS135-P, includes multi-interface cable); both include 8 staff tags (product page).
+## Interfaces and compatibility
+- PoE version: RJ45 10/100 PoE PD, alarm I/O 1 in / 1 out, multi-interface DI/DO (DO up to 1 A @ 24 V DC) (datasheet, user guide).
+- Default IPs: Wi-Fi AP 192.168.1.1; Ethernet 192.168.5.220 on the PoE version; you set the password at first login (user guide).
+- PoE protocols: HTTP(S), MQTT(S), BACnet/IP, 802.1x, SSH, LLDP (datasheet).
+- LoRaWAN version works with standard LoRaWAN gateways such as Milesight UG65 or UG56 and Milesight IoT Cloud (datasheet).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Entrance counting in retail chains, airports, transport hubs and universities (product page).
+- Queue management with zone dwell time (datasheet).
+- Space utilisation and occupancy in smart buildings (product page).
+- High-ceiling venues up to 6.5 m with the High Ceiling optics (datasheet).
+## Known limitations
+- Detection area is much smaller than the visible area; wide entrances need several stitched units (user guide).
+- PoE version needs 802.3at PoE+; 802.3af is not enough (datasheet).
+- Keep away from walls, 940 nm IR sources, glass and mirrors; tilt within 15° (Standard) or 10° (High Ceiling) (user guide).
+- Indoor IP40, -20 to +50 °C (datasheet).
+- Which connectivity version each Cytron variant is has not been confirmed (product page).
+## Positioning (kept apart from specs)
+- Milesight: GDPR compliant, no images collected, up to 99.8% accuracy (datasheet).
+- Cytron: "far exceeding traditional camera-based systems", privacy-first smart analytics tool (product page).
+## Price band
+RM3,271.80 – RM3,314.85, out of stock (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-vs135-poe-ultra-tof-people-counter
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/vs135-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/vs135-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight VS330 LoRaWAN Bathroom Occupancy Sensor
+## Aliases
+VS330, LR-VS330, VS330-915M, Milesight VS330, toilet cubicle occupancy sensor
+## What it is
+A battery-powered LoRaWAN occupancy sensor for toilet cubicles and bathrooms, made by Milesight and distributed by Cytron (product page). It combines a PIR motion sensor with a ToF distance sensor and reports vacant or occupied without taking images (datasheet).
+## Specs and functions
+- ToF: 27° field of view, 0.04–3.5 m range, ±2 cm accuracy, 1 mm resolution (datasheet).
+- PIR: 80° detection area, up to 2.5 m (datasheet).
+- Sensor probe angle adjustable 0–75° in 15° steps (datasheet).
+- Accuracy over 99%; Milesight's overview says exceeding 99.5% (datasheet).
+- LoRaWAN OTAA/ABP Class A, Tx up to 22 dBm, -137 dBm sensitivity (datasheet).
+- Cytron MPN VS330-915M, stated for AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: 3 × 4000 mAh ER18505 Li-SOCl2 replaceable batteries; about 4.2 years at SF7 for 90 users a day (datasheet).
+- Reports on every occupancy change and every 1080 min by default (user guide).
+- Ø100 × 24 mm, 150 g, IP30, -20 to +60 °C (datasheet).
+- Packing: sensor, 2 wall mounting kits, mirror cleaning cloth, quick start guide, warranty card (product page).
+## Interfaces and compatibility
+- No wired interfaces; NFC configuration with the Milesight ToolBox app (datasheet, user guide).
+- One power/reset button and one status/test LED (datasheet).
+- Works with standard LoRaWAN gateways such as Milesight UG65 or UG56 and Milesight IoT Cloud (datasheet).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Public toilet cubicle occupancy display and cleaning schedules (datasheet).
+- Workplace cubicle and restroom utilisation (datasheet).
+- Triggering other devices from occupancy through Milesight IoT Cloud (datasheet).
+## Known limitations
+- IP30; keep away from water (datasheet, user guide).
+- Must be aimed so the door is outside the detection area (user guide).
+- Avoid sunlight, IR LEDs, glass and mirrors; lens must be kept clean (user guide).
+- Battery life drops to about 3.3–3.4 years at SF10 (datasheet).
+- Default ToolBox password and LoRaWAN keys must be changed (user guide).
+## Positioning (kept apart from specs)
+- Milesight: "100% anonymity", GDPR compliant, industry-leading accuracy (datasheet).
+- Cytron: "Dual Technology, Maximal Possibility" (product page).
+## Price band
+RM387.45, enquiry (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-vs330-lorawan-bathroom-occupancy-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/vs330-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/vs330-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight VS370 LoRaWAN Radar Human Presence Sensor
+## Aliases
+VS370, LR-VS370, VS370-915M, Milesight VS370, radar occupancy sensor, mmWave presence sensor
+## What it is
+A battery-powered, wall-mounted LoRaWAN presence sensor made by Milesight and distributed by Cytron (product page). It combines 24 GHz mmWave radar with PIR to detect people, including slight movement, and also reports a bright/dim light status (datasheet).
+## Specs and functions
+- Radar: 24 GHz, 150° angle, movement up to 7.5 m, slight movement up to 4.8 m (datasheet).
+- PIR: 110° area, within 7 m (datasheet).
+- Recognition rate up to 99% (datasheet).
+- Light status bright (≥ 700 lux) or dim (≤ 300 lux) by default (user guide).
+- LoRaWAN OTAA/ABP Class A with Milesight D2D controller role; Tx up to 20 dBm; -137 dBm @ 300 bps (datasheet).
+- Cytron MPN VS370-915M, stated for AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: 2 × 2700 mAh ER14505 Li-SOCl2; about 6.7 years at SF7, 4.6–5.3 years at SF10, 50 triggers a day (datasheet).
+- Reporting interval 10 min by default (1–1440 min); vacancy reported 3 min after last detection (user guide).
+- Ø70 × 48.5 mm, 89.6 g body, IP30, 0–30 °C (datasheet).
+- Packing: sensor with batteries pre-installed, magnetic bracket, bracket adhesive, quick start guide, warranty card (product page, user guide).
+## Interfaces and compatibility
+- No wired interfaces; internal reset button (datasheet).
+- Configured with the Milesight ToolBox app over Bluetooth or NFC, or by downlink (datasheet).
+- Works with LoRaWAN gateways such as Milesight UG65 or UG56; OTAA needed for Milesight Development Platform (user guide).
+- Milesight D2D: can trigger D2D agent devices such as lighting or HVAC controllers without a gateway (datasheet).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Meeting and conference room occupancy (datasheet).
+- Lighting and HVAC automation based on presence and brightness (product page).
+- Workspace utilisation analytics in offices, schools and hospitals (product page).
+## Known limitations
+- Wall mounting only at 2.5–3 m, tilted 60° or 75°; no ceiling mounting (user guide).
+- Cannot detect a completely still person showing only breathing (user guide).
+- False triggers from fans, curtains, plants, glass walls and open doors; not for small rooms like bathrooms (user guide).
+- Indoor only, 0–30 °C, IP30 (datasheet).
+- ER14505 Li-SOCl2 cells only; alkaline AA not supported (user guide).
+## Positioning (kept apart from specs)
+- Milesight: "100% privacy protection", no images captured (datasheet).
+- Cytron: next-generation, privacy-first occupancy detection for smart buildings (product page).
+## Price band
+RM430.50, enquiry (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-vs370-lorawan-radar-human-presence-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/vs370-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/vs370-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WS202 LoRaWAN PIR & Light Sensor
+## Aliases
+WS202, LR-WS202, WS202-915M, Milesight WS202, LoRaWAN PIR sensor, PIR and light sensor
+## What it is
+A small battery-powered LoRaWAN PIR motion and occupancy sensor with a built-in light sensor, made by Milesight and distributed by Cytron (product page). It reports occupied, vacant and bright or dark status, and can switch lights directly over Milesight D2D (datasheet).
+## Specs and functions
+- PIR detection 120° horizontal × 100° vertical, up to 8 m (datasheet).
+- Blocking stickers narrow the view to 70° × 60° (user guide).
+- Light: bright or dark status against a threshold set within 1–60000 lux (datasheet).
+- LoRaWAN OTAA/ABP Class A, Milesight D2D controller; Tx up to 22 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Cytron MPN WS202-915M, stated for AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: 1 × 1650 mAh ER14335 Li-SOCl2; about 4.2 years at SF7 EU868, about 2 years at SF10 US915, with 30 min interval and 30 triggers a day (datasheet).
+- Reports occupied immediately, vacant after 120 s idle, and a periodic report every 30 min by default (user guide).
+- 50 × 50 × 23.8 mm, 40 g, IP30, -20 to +60 °C (datasheet).
+- Packing: sensor, 2 wall mounting kits, 3M tape, 3 blocking stickers, quick guide (product page).
+## Interfaces and compatibility
+- No wired interfaces; NFC configuration with the Milesight ToolBox app (datasheet).
+- One status LED and an internal reset button (datasheet).
+- Works with LoRaWAN gateways such as Milesight UG65 or UG56, Milesight IoT Cloud and Development Platform (datasheet).
+- D2D lighting control with Milesight WS50x wall switches or the WS558 light controller (product page).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Automatic lighting on/off by presence and brightness (product page).
+- Room occupancy and motion alarms in homes, offices, schools and warehouses (datasheet).
+- Workstation occupancy with the blocking stickers (user guide).
+## Known limitations
+- PIR needs movement; still occupants are reported vacant after the idle time (user guide).
+- Battery life falls to about 2–2.4 years at SF10 (datasheet).
+- ER14335 Li-SOCl2 battery only; alkaline cells not supported (user guide).
+- Indoor IP30, up to 90 % RH (datasheet).
+- Default ToolBox password and LoRaWAN keys must be changed (user guide).
+## Positioning (kept apart from specs)
+- Milesight: compact, easy-to-install sensor for smart homes, offices, schools and warehouses (datasheet).
+- Cytron: reliable presence detection for lighting control and energy saving (product page).
+## Price band
+RM189.40, out of stock (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ws202-lorawan-pir-and-light-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ws202-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ws202-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WS301 LoRaWAN Magnetic Contact Switch
+## Aliases
+WS301, LR-WS301, WS301-915M, Milesight WS301, LoRaWAN door sensor, door/window contact switch
+## What it is
+A wire-free, battery-powered LoRaWAN door and window open/close sensor with tamper detection, made by Milesight and distributed by Cytron (product page). It has a sensor unit for the frame and a separate magnet for the moving part (datasheet).
+## Specs and functions
+- Magnetic contact sensing with a 20 mm sensor-to-magnet detection distance (datasheet).
+- Reports open/closed, tamper (installed/un-installed) and battery level (user guide).
+- LoRaWAN OTAA/ABP Class A, Milesight D2D controller; Tx up to 22 dBm; -137 dBm @ 300 bps (datasheet).
+- Cytron MPN WS301-915M, stated for AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: 1 × 1200 mAh ER14250 Li-SOCl2; about 6.8 years at SF7 and 3.5–4.2 years at SF10, with 1080 min interval and 30 triggers a day (datasheet).
+- Alarm sent on every open/close or tamper change; periodic report every 1080 min by default (user guide).
+- Sensor 50.5 × 31 × 19 mm, 27.9 g; magnet 50.5 × 13.5 × 13 mm, 13.7 g (datasheet).
+- IP20, -20 to +60 °C, ≤ 90 % RH (datasheet).
+- Packing: device, 3 mounting screws, warranty card, quick guide card (product page).
+## Interfaces and compatibility
+- No wired interfaces; NFC configuration with the Milesight ToolBox app (datasheet).
+- One status LED, an internal reset button and a tamper button (datasheet).
+- Works with LoRaWAN gateways such as Milesight UG65 or UG56, Milesight IoT Cloud and Development Platform (datasheet).
+- Payload: magnet status 00 = closed, 01 = open (user guide).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Door and window open/close monitoring in offices, homes and factories (datasheet).
+- Cabinet and security-gate access alerts (product page).
+- Triggering lights or HVAC directly over Milesight D2D (product page).
+## Known limitations
+- IP20, indoor dry locations only (datasheet).
+- Sensor and magnet must be within 20 mm with notched sides facing (user guide).
+- ER14250 Li-SOCl2 battery only; alkaline not supported (user guide).
+- 3M tape is not included (product page).
+- Default ToolBox password and LoRaWAN keys must be changed (user guide).
+## Positioning (kept apart from specs)
+- Milesight: minimal, compact, wire-free design for smart homes, offices and factories (datasheet).
+- Cytron: "uncompromising security" with tamper detection (product page).
+## Price band
+RM223.85, out of stock (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ws301-lorawan-magnetic-contact-switch
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ws301-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ws301-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM300-MCS LoRaWAN Magnetic Contact Switch
+## Aliases
+EM300-MCS, LR-EM300-MCS, Milesight EM300-MCS, EM300 magnetic contact switch, IP67 LoRaWAN door sensor
+## What it is
+A rugged IP67 LoRaWAN door and window open/close sensor with built-in temperature and humidity sensing, made by Milesight and distributed by Cytron (product page). A transceiver box connects by a 1.5 m cable to a reed sensor that pairs with a separate magnet (datasheet).
+## Specs and functions
+- Magnet detection distance 20–30 mm; sensor cable 1.5 m (datasheet).
+- Temperature -30 to +70 °C, ±0.3 °C from 0 to 70 °C; humidity 0–100 % RH, ±3 % from 10 to 90 % (datasheet).
+- LoRaWAN OTAA/ABP Class A, Milesight D2D controller; Tx up to 20 dBm; -137 dBm @ 300 bps (datasheet).
+- Cytron states AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Stores 2,800 records with retransmission after network loss (datasheet).
+- Power: 1 × 4000 mAh ER18505 Li-SOCl2 (8000 mAh version optional); over 10 years at SF7, about 3.2–4.5 years at SF10, with 10 min interval and 48 triggers a day (datasheet).
+- Reports every 10 min by default and sends magnet alarms on change (user guide).
+- Transceiver 105.6 × 85.3 × 27 mm; magnet 31 × 14 × 7.5 mm zinc alloy (datasheet).
+- IP67, UV-resistant, -30 to +70 °C (datasheet).
+- Cytron's packing list shows only the device; Milesight lists mounting kits, screw caps, 3M tapes and screws (product page, user guide).
+## Interfaces and compatibility
+- No user wiring; the reed-sensor cable is fixed (datasheet).
+- NFC configuration and power-on with the Milesight ToolBox app; internal power/reset button and LED (datasheet, user guide).
+- Works with LoRaWAN gateways such as Milesight UG65, UG56 or UG67, Milesight IoT Cloud and Development Platform (datasheet).
+- Payload: magnet 00 = close, 01 = open; temperature and humidity in the same uplink (user guide).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Door and window intrusion alarms (product page).
+- Cabinet, gate or enclosure door monitoring in harsh or outdoor locations (datasheet).
+- Combined door status and room temperature/humidity monitoring in homes, offices and factories (datasheet).
+## Known limitations
+- Magnet must stay within 20–30 mm and away from iron objects (datasheet, user guide).
+- Battery life drops to about 3.2–4.5 years at SF10 (datasheet).
+- ER18505 Li-SOCl2 only; alkaline not supported (user guide).
+- Default ToolBox password and LoRaWAN keys must be changed (user guide).
+- Larger than the WS301 because of the separate transceiver box (datasheet).
+## Positioning (kept apart from specs)
+- Milesight: "3 sensors in 1", industrial-grade design for harsh environments (datasheet).
+- Cytron: adds physical security monitoring against intrusion or unauthorised entry (product page).
+## Price band
+RM301.35, out of stock (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em300-magnetic-contact-switch
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em300-mcs-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em300-mcs-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight WS101 LoRaWAN Smart Button
+## Aliases
+WS101, LR-WS101, Milesight WS101, LoRaWAN smart button, LoRaWAN SOS button, scene button
+## What it is
+A small battery-powered LoRaWAN wireless push button with short, long and double press actions, an LED and a buzzer, made by Milesight and distributed by Cytron (product page). Each action can send an uplink or a Milesight D2D command to control other devices without a gateway (datasheet).
+## Specs and functions
+- Three press modes: short (≤ 3 s), long (> 3 s) and double press (within 3 s, can be disabled) (user guide).
+- LoRaWAN OTAA/ABP Class A, Milesight D2D controller; Tx up to 22 dBm at 915 MHz; -137 dBm @ 300 bps (datasheet).
+- Cytron states AS923-2 (Malaysia) and AS923-1 (Singapore) (product page).
+- Power: 1 × 1650 mAh ER14335 Li-SOCl2; about 7.1–9.5 years at a 1080 min interval and 10 presses a day (datasheet).
+- LED and buzzer feedback; each can be switched off (user guide).
+- 50 × 50 × 18 mm, Ø20 mm button, 38.8 g, IP30, -20 to +60 °C (datasheet).
+- White Scene Button and red SOS Button versions (datasheet).
+- Cytron's packing list shows only the button; Milesight lists 2 wall mounting kits, quick guide and warranty card (product page, user guide).
+## Interfaces and compatibility
+- No wired interfaces; NFC configuration with the Milesight ToolBox app or by downlink (datasheet).
+- Internal reset button, one status LED, one buzzer (datasheet).
+- Works with LoRaWAN gateways such as Milesight UG65 or UG56, Milesight IoT Cloud and Development Platform (datasheet).
+- Payload: ff 2e 01 short, 02 long, 03 double press (user guide).
+- Payload decoder on GitHub Milesight-IoT/SensorDecoders (product page).
+## Use cases
+- Triggering scenes in smart homes and offices (datasheet).
+- Call or service buttons in hotels and care facilities (product page).
+- Direct control of Milesight switches or light controllers over D2D (datasheet).
+## Known limitations
+- Not to be used as the sole emergency response tool (datasheet).
+- IP30, indoor only (datasheet).
+- ER14335 Li-SOCl2 battery only; alkaline not supported (user guide).
+- Default ToolBox password and LoRaWAN keys must be changed (user guide).
+- Button colour shipped by Cytron is not stated (product page).
+## Positioning (kept apart from specs)
+- Milesight: smart button for wireless controls, triggers and alarms (datasheet).
+- Cytron: multi-functional, programmable and virtually maintenance-free (product page).
+## Price band
+RM206.65, enquiry (Cytron product page, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-ws101-lorawan-smart-button
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/ws101-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/ws101-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM300-SLD LoRaWAN Spot Leak Detection Sensor
+## Aliases
+EM300-SLD, LR-EM300-SLD, EM300-SLD-915M, Milesight EM300-SLD, EM300 spot leak sensor, spot leakage detection sensor
+## What it is
+A battery-powered LoRaWAN spot leak detection sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed by Cytron (product page). A 1.5 m stainless-steel probe with two pins detects conductive liquids, and the transceiver also measures temperature and humidity (datasheet).
+## Specs and functions
+- LoRaWAN and Milesight D2D, internal antenna, OTAA/ABP Class A (datasheet).
+- Cytron unit: MPN EM300-SLD-915M, stated for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Milesight plans: CN470, IN865, RU864, EU868, US915, AU915, KR920, AS923-1/2/3/4 (datasheet).
+- Tx power 16 dBm (868 MHz), 20 dBm (915 MHz), 19 dBm (470 MHz); sensitivity -137 dBm at 300 bps (datasheet).
+- Leak detection of conducting liquid when the level reaches 5 mm; probe cable 1.5 m, customisable (datasheet).
+- Temperature -30 to +70 °C, ±0.3 °C (0 to 70 °C), ±0.6 °C (-30 to 0 °C), 0.1 °C resolution (datasheet).
+- Humidity 0–100 %RH, ±3 % (10–90 %RH), ±5 % outside that, 0.5 %RH resolution (datasheet).
+- Threshold alarm, D2D controller, 2,800-entry data storage, retransmission and retrievability (datasheet).
+- One 4000 mAh ER18505 Li-SOCl2 battery (8000 mAh version optional); over 10 years at SF7 with 10 min interval and 24 triggers per day (datasheet).
+- IP67, ABS+PC flame-retardant transceiver, SS316 probe, 105.6 × 85.3 × 27 mm, -30 to +70 °C (datasheet).
+- Default reporting interval 10 min (1–1080 min); application port 85 (user guide).
+- In the box: device, 2 wall mounting kits, 2 screw caps, quick guide, warranty card, 3M tape, mounting screw (product page).
+## Interfaces and compatibility
+- No external terminals or USB; internal power/reset button and LED (datasheet).
+- Configured by NFC with the Milesight ToolBox app, or by LoRaWAN downlink (user guide).
+- Works with standard LoRaWAN gateways and network servers, e.g. Milesight UG65 or UG56 (datasheet, product page).
+- Uplink fields: battery, temperature, humidity, water leak status, historical data; decoders on GitHub Milesight-IoT/SensorDecoders (user guide).
+- A default device password and default LoRaWAN keys are set at the factory; they are not copied here (user guide).
+## Use cases
+- Pipe leakage monitoring (datasheet).
+- Basement flooding detection (datasheet).
+- Pump failure monitoring (datasheet).
+- Drain pans, floor drains, pits and narrow corners (installation guide).
+- Data centres, utility rooms, warehouses and water tanks (product page).
+## Known limitations
+- Detects conductive liquids only; not oil, fuel, solvents or strong acids (installation guide).
+- Both probe pins must be wet to trigger (user guide).
+- Battery life at SF10 drops to about 4–6 years (datasheet).
+- Firmware upgrade through ToolBox is Android only (user guide).
+- Frequency plan is fixed by hardware; match it to the gateway (product page).
+## Positioning (kept apart from specs)
+- "Reliable, real-time leak detection for commercial, industrial, and smart building applications" (product page).
+- Cost-effective, long-range, maintenance-friendly leak detection (product page).
+## Price band
+RM309.95 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em300-sld-lorawan-spot-leak-detection-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em300-sld-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em300-sld-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight EM300-ZLD LoRaWAN Zone Leak Detection Sensor
+## Aliases
+EM300-ZLD, LR-EM300-ZLD, EM300-ZLD-915M, Milesight EM300-ZLD, EM300 zone leak sensor, rope leak detection sensor
+## What it is
+A battery-powered LoRaWAN zone leak detection sensor made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed by Cytron (product page). A 3 m sensing rope detects conductive liquid anywhere along its length, and the transceiver also measures temperature and humidity (datasheet).
+## Specs and functions
+- LoRaWAN and Milesight D2D, internal antenna, OTAA/ABP Class A (datasheet).
+- Cytron unit: MPN EM300-ZLD-915M, stated for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Tx power 16 dBm (868 MHz), 20 dBm (915 MHz), 19 dBm (470 MHz); sensitivity -137 dBm at 300 bps (datasheet).
+- Triggers when conductive liquid reaches 5 mm; at least 3 cm of cable wet and 1 mm deep (datasheet, user guide).
+- Sensing cable 3 m, PE + steel wire, customisable length (datasheet).
+- Temperature -30 to +70 °C (±0.3 / ±0.6 °C); humidity 0–100 %RH (±3 / ±5 %) (datasheet).
+- Threshold alarm, D2D controller, 2,800-entry storage, retransmission, retrievability (datasheet).
+- One 4000 mAh ER18505 Li-SOCl2 battery (8000 mAh version optional); over 10 years at SF7, 10 min interval, 24 triggers per day (datasheet).
+- IP67, UV resistant, 105.6 × 85.3 × 27 mm, -30 to +70 °C (datasheet).
+- Default reporting interval 10 min (1–1080 min) (user guide).
+- Packing per Cytron: device with sensor, wall mounting kit, quick guide, warranty card (product page).
+## Interfaces and compatibility
+- Sensing cable screws onto a single connector; it cannot be chained to a second cable (user guide).
+- NFC configuration with Milesight ToolBox; downlink configuration (datasheet).
+- Standard LoRaWAN gateways and network servers, e.g. Milesight UG65 or UG56 (datasheet).
+- Uplink: battery, temperature, humidity, leak status, historical data; decoders on GitHub Milesight-IoT/SensorDecoders (user guide).
+- A default device password and default LoRaWAN keys are set at the factory; not copied here (user guide).
+## Use cases
+- Pipe leakage monitoring by wrapping the rope around pipes (datasheet, user guide).
+- Basement flooding and floor-wetness detection (datasheet).
+- Pump failure and water spillage alerts (datasheet).
+- Large-area leak monitoring along walls and floors (user guide).
+## Known limitations
+- Does not locate the leak along the cable (user guide).
+- Conductive liquids only; cannot detect diesel or oil (product page FAQ).
+- Wet connectors or air-conditioning outlets cause false alarms (user guide).
+- Cable extension needs a custom or double-ended cable from Milesight (user guide).
+- Warranty not stated on the Cytron page (product page).
+## Positioning (kept apart from specs)
+- "Compact zone leakage detection sensor for detecting large area presence of water" (datasheet).
+- Industrial-grade design for harsh environments (product page).
+## Price band
+RM413.30 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-em300-zld-lorawan-leak-detection-sensor
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/em300-zld-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/em300-zld-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight GS301 LoRaWAN Bathroom Odor Detector
+## Aliases
+GS301, LR-GS301, GS301-915M, Milesight GS301, bathroom odour detector, toilet odor sensor, NH3 H2S sensor
+## What it is
+A battery-powered 4-in-1 LoRaWAN bathroom odour detector made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed by Cytron (product page). It measures ammonia, hydrogen sulfide, temperature and humidity and raises a local buzzer and LED alarm plus a LoRaWAN report when a gas passes its threshold (datasheet).
+## Specs and functions
+- LoRaWAN and Milesight D2D, internal antenna, OTAA/ABP Class A (datasheet).
+- Tx power 16 dBm (868 MHz), 19 dBm (470 MHz), 22 dBm (915 MHz); sensitivity -137 dBm (datasheet).
+- NH3: electrochemical, 0–10 ppm, ±5 % FS, 0.01 ppm resolution (datasheet).
+- H2S: electrochemical, 0–5 ppm, ±5 % FS, 0.001 ppm resolution (datasheet).
+- Temperature -40 to 85 °C ±0.2 °C; humidity 0–100 %RH ±2 % (datasheet).
+- Status/alarm LED and buzzer; external reset/power button (datasheet).
+- Four 4000 mAh ER18505 Li-SOCl2 batteries; about 3 years at 10 min interval (datasheet).
+- Gas sensor life more than 3 years (datasheet).
+- IP30, -40 to 55 °C, 0–95 %RH, 120 × 85 × 32.5 mm, 221.4 g, wall screw mounting (datasheet).
+- About 30 minutes of sensor polarisation after power-on before gas readings (user guide).
+- Cytron MPN GS301-915M; Cytron packing list: 1 × GS301 (product page).
+## Interfaces and compatibility
+- No wiring; configured by NFC with Milesight ToolBox or by downlink (user guide).
+- D2D controller can switch ventilation directly on abnormal and normal odour (user guide).
+- Standard LoRaWAN gateways and network servers; Milesight IoT Cloud with OTAA (datasheet, user guide).
+- Decoders on GitHub Milesight-IoT/SensorDecoders (product page).
+- A default device password and default LoRaWAN keys are set at the factory; not copied here (user guide).
+## Use cases
+- Smart restroom odour monitoring in hotels and buildings (datasheet).
+- Shopping malls, hospitals, airports and public restrooms (product page).
+- Automatic ventilation or HVAC control from odour levels (Milesight product page).
+## Known limitations
+- Alarm, LED, buzzer and D2D pause above 35 °C (user guide).
+- Indoor only, IP30; avoid aerosols, perfume, alcohol and paint vapours (user guide).
+- Detector working life is 3 years; replace the device after that (user guide).
+- Cytron page states no frequency plan (product page).
+## Positioning (kept apart from specs)
+- "A must-have for improving hygiene standards and air quality" (product page).
+- "Less Nasty Air. More Attentive Care." (Milesight product page).
+## Price band
+RM2,023.35 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-gs301-lorawan-bathroom-odor-detector
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/gs301-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/gs301-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight GS601 LoRaWAN Vape Detector
+## Aliases
+GS601, LR-GS601, GS601-915M, Milesight GS601, vape detector, e-cigarette detector, smoke and vape sensor
+## What it is
+A USB-powered, ceiling-mounted LoRaWAN vape and smoke detector made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed by Cytron (product page). It measures a vape index, PM1.0/2.5/10, TVOC, temperature and humidity, and raises local buzzer and LED alarms plus LoRaWAN alarms for vaping, burning and tampering (datasheet, user guide).
+## Specs and functions
+- LoRaWAN, internal antenna, OTAA/ABP Class C (datasheet).
+- Cytron unit: MPN GS601-915M, stated for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Tx power 16 dBm (868 MHz), 22 dBm (915 MHz); sensitivity -137 dBm at 300 bps (datasheet).
+- Vape index 0–100 by laser scattering, ±10 (datasheet).
+- PM1.0/PM2.5/PM10 0–1000 µg/m³; TVOC 0–2000 µg/m³ (MOX) (datasheet).
+- Temperature -20 to 60 °C ±0.2 °C; humidity 0–100 %RH ±2 % (datasheet).
+- Buzzer 70 dB at 1 m and status/alarm LED; external reset button (datasheet).
+- Threshold, tamper (vibration sensor) and burning alarms; calibration; FUOTA; multicast (datasheet, user guide).
+- Power 5 V / 1 A over USB Type-C, or optional PoE splitter (datasheet).
+- IP30, -5 to 45 °C, Ø128 × 40 mm, 178.6 g, ceiling mounting (datasheet).
+- Default reporting interval 10 min (1–1440 min) (user guide).
+- Cytron packing list: 1 × GS601 (product page).
+## Interfaces and compatibility
+- One USB Type-C port for power only (datasheet).
+- Configured by NFC with Milesight ToolBox, or by downlink (datasheet).
+- Standard LoRaWAN gateways and network servers; Milesight Development Platform (datasheet).
+- Optional Milesight PS2401 Type-C PoE splitter, 5 V 2.4 A (Milesight product page).
+- A default device password and default LoRaWAN and multicast keys are set at the factory; not copied here (user guide).
+## Use cases
+- Enforcing smoke-free and vape-free rules in schools and classrooms (product page).
+- Restrooms, changing rooms, stairwells and apartments (datasheet).
+- Detecting tampering or theft of the detector (product page).
+## Known limitations
+- Not battery powered; needs a constant 5 V supply at the ceiling (datasheet).
+- Indoor only, IP30, -5 to 45 °C (datasheet).
+- Placement is airflow-sensitive; keep 30 cm or more from doors, windows, vents and fans (user guide).
+- TVOC needs 2–7 days powered in clean air after storage to settle (user guide).
+- No Milesight D2D listed in the datasheet (datasheet).
+## Positioning (kept apart from specs)
+- "Promote healthier communities by detecting e-cigarette" (Milesight product page).
+- Tamper-proof, long-term solution for enforcing smoke-free policies (product page).
+## Price band
+RM947.10 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-gs601-vape-detector
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/gs601-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/gs601-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight AT101 LoRaWAN Outdoor Asset Tracker
+## Aliases
+AT101, LR-AT101, AT101-915M, Milesight AT101, LoRaWAN GPS tracker, outdoor asset tracker
+## What it is
+A battery-powered LoRaWAN outdoor asset tracker made by Milesight (Xiamen Milesight IoT Co., Ltd.) and distributed by Cytron (product page). It locates itself by GNSS and Wi-Fi access-point scanning, adds tilt, temperature and tamper sensing, and reports over LoRaWAN (datasheet).
+## Specs and functions
+- LoRaWAN, internal antenna, OTAA/ABP Class A (datasheet).
+- Cytron unit: MPN AT101-915M, stated for Malaysia AS923-2 and Singapore AS923-1 (product page).
+- Tx power 16 dBm (868 MHz), 20 dBm (915 MHz), 19 dBm (470 MHz); sensitivity -137 dBm at 300 bps (datasheet).
+- GNSS 5.0 m CEP line of sight; cold start 37 s, hot start 1 s average (datasheet).
+- Wi-Fi positioning by 2.4 GHz AP scanning, reports BSSID and RSSI, does not connect to Wi-Fi (datasheet).
+- 3-axis accelerometer for motion and tilt; NTC temperature -40 to 125 °C (datasheet).
+- Geofence, tilt and tamper alarms; 1000-record storage with retransmission (datasheet).
+- Periodic, motion and timing tracking modes (user guide).
+- Four 2700 mAh ER14505 Li-SOCl2 batteries: 15+ years at 2 fixes per day, 4+ years hourly (datasheet).
+- IP67, IK09, -30 to +70 °C, 110 × 70 × 30 mm, 202 g (datasheet).
+- In the box: AT101, 2 mounting kits, 3M tape, warranty card, quick guide (product page).
+## Interfaces and compatibility
+- No wiring; tamper button on the back detects removal (user guide).
+- Configured by NFC or Bluetooth 5.3 with Milesight ToolBox, or by downlink (datasheet).
+- Standard LoRaWAN gateways and network servers; Milesight IoT Cloud with OTAA (datasheet, user guide).
+- A default device password and default LoRaWAN keys are set at the factory; not copied here (user guide).
+## Use cases
+- Patrol cars, golf carts and other vehicles in a community (datasheet).
+- Construction sites, construction bins and warehouses (datasheet).
+- Farm animal tracking (datasheet).
+- Geofenced asset security (product page).
+## Known limitations
+- Wi-Fi scan results need an external geolocation service to give coordinates (datasheet).
+- Location reports need LoRaWAN gateway coverage on the same plan (product page).
+- A firmware bug placed coordinates on the opposite side of the Earth; fix by updating firmware over Bluetooth (product page FAQ).
+- Geofence works only with GNSS positioning (user guide).
+## Positioning (kept apart from specs)
+- "An exceptional outdoor tracker" (datasheet).
+- "Protect and Manage Critical Assets Anytime Anywhere" (Milesight product page).
+## Price band
+RM559.65 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-at101-outdoor-asset-tracker
+## Datasheet
+https://resource.milesight.com/milesight/iot/document/at101-datasheet-en.pdf
+## Source type
+Datasheet
+## Source link
+https://resource.milesight.com/milesight/iot/document/at101-datasheet-en.pdf
+
+# Product fact sheets
+
+## Product name
+Milesight LoRaWAN Smart CoWork Kit (iBox CoWork Kit-A)
+## Aliases
+LR-KIT-SC-A, LoraWAN Smart CoWork Kit, iBox CoWork Kit-A, iBox CoWork Kit, Milesight CoWork Kit, smart office kit
+## What it is
+A Milesight iBox smart-office starter kit distributed by Cytron (product page). It bundles a UG56 LoRaWAN gateway, a VS121 AI workplace occupancy sensor, a VS340 desk and seat occupancy sensor, a DS3604 e-ink display and 6 months of Milesight IoT Cloud (product page).
+## Specs and functions
+- Cytron code LR-KIT-SC-A; RM4,714.00; availability Enquiry; warranty 12 months (product page, 2026-10-21).
+- Packing list: UG56 Industrial LoRaWAN Gateway (without cellular); VS121 LoRaWAN AI Workplace Occupancy Sensor; VS340 Desk & Seat Occupancy Sensor; DS3604 IoT E-Ink Display; 6 months (Pro1) Milesight IoT Cloud; Quick Start Guide (product page).
+- Quantity per component: [NOT STATED] (product page).
+- Kit frequency plan: [NOT STATED] (product page).
+- Milesight D2D between kit devices with under 1 s latency (kit datasheet).
+- Gateway: 8-channel SX1302, embedded network server, BACnet/IP, Ethernet and Wi-Fi backhaul in the no-cellular version (kit datasheet, product page).
+- Platform: 6 months Milesight IoT Cloud Pro1 with dashboards, triggers and email/push alerts (product page, kit datasheet).
+- Setup or installation service: [NOT STATED] (product page).
+## Interfaces and compatibility
+- Gateway: `milesight-ug56.md`; occupancy sensor: `milesight-vs121.md` (component files).
+- VS340 and DS3604 have no KB file.
+- Works with TTN, ChirpStack and other network servers through the UG56 (kit datasheet).
+- BMS integration via BACnet/IP on the gateway (product page).
+## Use cases
+- Smart office proof of concept (Milesight kit page).
+- Workspace occupancy and desk utilisation monitoring (product page).
+- Scene switching such as "working" to "have a break" controlling lights, curtains or doors (product page).
+## Known limitations
+- Cloud subscription included for 6 months only (product page).
+- Component quantities and frequency plan are not stated (product page).
+- Cytron's VS340 packing-list link points to the UG56 page (product page).
+- Quick Start Guide is image-only (Milesight PDF).
+## Positioning (kept apart from specs)
+- "Your all-in-one solution for streamlined office automation and collaboration" (product page).
+- "Unboxing Your Next Level IoT Adventure" (kit datasheet).
+## Price band
+RM4,714.00 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-smart-cowork-kit
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+## Source link
+https://my.cytron.io/Milesight/p-lorawan-smart-cowork-kit
+
+# Product fact sheets
+
+## Product name
+Milesight LoRaWAN Smart Building Kit (iBox Smart Building Kit)
+## Aliases
+LR-KIT-SB, LoRaWAN Smart Building Kit, iBox Smart Building Kit, Milesight Smart Building Kit, smart building PoC kit
+## What it is
+A Milesight iBox smart-building starter kit distributed by Cytron (product page). It bundles a smart button, smart light controller, 3-in-1 IAQ sensor, magnetic contact switch, mini leak sensor, IoT controller and UG56 LoRaWAN gateway with 6 months of Milesight IoT Cloud (product page).
+## Specs and functions
+- Cytron code LR-KIT-SB; RM5,166.00; availability Enquiry; warranty 12 months (product page, 2026-10-21).
+- Packing list: Smart Button (WS101); Smart Light Controller (WS558); 3-in-1 IAQ Sensor (AM103); Magnetic Contact Switch (WS301); Mini Leak Detection Sensor (WS303); Industrial LoRaWAN Gateway (UG56); Smart IoT Controller (UC300); 6 months (Pro1) Milesight IoT Cloud (product page).
+- Quantity per component: [NOT STATED] (product page).
+- Kit frequency plan: [NOT STATED] (product page).
+- Platform: 6 months Milesight IoT Cloud Pro1 with real-time alarms, custom triggers and Android/iOS apps (product page).
+- Gateway embedded network server and BACnet/IP for BMS (kit datasheet).
+- Milesight D2D control between kit devices (kit datasheet).
+- Setup or installation service: [NOT STATED] (product page).
+## Interfaces and compatibility
+- Component files: `milesight-ws101.md`, `milesight-ws558-ln.md`, `milesight-iaq-sensor.md` (AM103 option), `milesight-ws301.md`, `milesight-ug56.md`, `milesight-uc300.md`.
+- WS303 has no KB file.
+- WS558 switches 100–240 VAC lighting circuits (kit datasheet).
+- UC300 offers DI/DO, analog, RS232, RS485 and PT100 inputs (kit datasheet).
+## Use cases
+- Smart building proof of concept (product page).
+- Indoor air quality, lighting control, leak and door/window monitoring (product page).
+- HVAC, lighting and security automation (Milesight kit page).
+## Known limitations
+- Cloud subscription included for 6 months only (product page).
+- Component quantities and frequency plan are not stated (product page).
+- The Cytron WS301 spec block wrongly repeats the AM103 text (product page).
+- WS558 mains wiring needs a qualified electrician (kit datasheet).
+## Positioning (kept apart from specs)
+- "The ideal solution for creating smart, sustainable, and efficient buildings" (product page).
+- "Unboxing Your Next Level IoT Adventure" (kit datasheet).
+## Price band
+RM5,166.00 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-smart-building-kit
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+## Source link
+https://my.cytron.io/Milesight/p-lorawan-smart-building-kit
+
+# Product fact sheets
+
+## Product name
+Milesight LoRaWAN Smart Agriculture Kit (iBox Smart Agriculture Kit)
+## Aliases
+LR-KIT-SA, LoRaWAN Smart Agriculture Kit, iBox Smart Agriculture Kit, Milesight Agriculture Kit, smart farming kit
+## What it is
+A Milesight iBox smart-farming starter kit distributed by Cytron (product page). It bundles an EM500-SMTC soil moisture, temperature and EC sensor, a UC511 solar-powered solenoid valve controller and a UG56 LoRaWAN gateway with 6 months of Milesight IoT Cloud (product page).
+## Specs and functions
+- Cytron code LR-KIT-SA; RM5,166.00; availability Enquiry; warranty 12 months (product page, 2026-10-21).
+- Packing list: EM500-SMTC LoRaWAN Soil Moisture, Temperature and EC Sensor; UG56 Industrial LoRaWAN Gateway (without cellular); UC511 LoRaWAN Solenoid Valve Controller; 6 months (Pro1) Milesight IoT Cloud; Quick Start Guide (product page).
+- Quantity per component: [NOT STATED] (product page).
+- Kit frequency plan: [NOT STATED] (product page).
+- UC511: 2 DC latching solenoid outputs (5/9/12 VDC), 2 pulse/digital inputs, solar 6 V 1.7 W with rechargeable batteries, IP67 (kit datasheet).
+- Platform: 6 months Milesight IoT Cloud Pro1 with triggers, reports and dashboards; Milesight Development Platform described (product page).
+- Setup or installation service: [NOT STATED] (product page).
+## Interfaces and compatibility
+- Component files: `milesight-em500-smtc.md`, `milesight-ug56.md`.
+- UC511 has no KB file and is not the UC512 in `milesight-uc512.md`.
+- Valves and water meters connect to UC511 M12 connectors (kit datasheet).
+- Gateway embedded network server and BACnet/IP (kit datasheet).
+## Use cases
+- Automated irrigation on schedules or soil conditions (product page).
+- Soil moisture, temperature and EC monitoring (product page).
+- Smart farming proof of concept (Milesight kit page).
+## Known limitations
+- No valves, water meters or pipes are included (product page).
+- No light sensor, although the Cytron feature list mentions light intensity (product page).
+- UG56 is an indoor IP30 gateway without cellular (kit datasheet).
+- Cloud subscription included for 6 months only (product page).
+## Positioning (kept apart from specs)
+- "An advanced, all-in-one IoT-based farming solution" (product page).
+- "More Stable Yields and Resilient Landscapes" (Milesight kit page).
+## Price band
+RM5,166.00 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-smart-agriculture-kit
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+## Source link
+https://my.cytron.io/Milesight/p-lorawan-smart-agriculture-kit
+
+# Product fact sheets
+
+## Product name
+Milesight LoRaWAN Indoor Air Quality Kit (iBox IAQ Kit)
+## Aliases
+LR-KIT-IAQ, LoRaWAN Indoor Air Quality Kit, iBox IAQ Kit, iBox Smart IAQ Kit, Milesight IAQ Kit
+## What it is
+A Milesight iBox indoor-air-quality starter kit distributed by Cytron (product page). It bundles four LoRaWAN IAQ sensors (AM102, AM103, AM307, AM319) and a UG56 LoRaWAN gateway with 6 months of Milesight IoT Cloud (product page).
+## Specs and functions
+- Cytron code LR-KIT-IAQ; RM6,715.80; availability Enquiry; warranty 12 months (product page, 2026-10-21).
+- Packing list: UG56 Industrial LoRaWAN Gateway (without cellular); AM102 LoRaWAN 2-in-1 IAQ Sensor; AM103 LoRaWAN 3-in-1 IAQ Sensor; AM307 LoRaWAN 7-in-1 IAQ Sensor; AM319 LoRaWAN 9-in-1 IAQ Sensor; 6 months (Pro1) Milesight IoT Cloud; Quick Start Guide (product page).
+- Quantity per component: [NOT STATED] (product page).
+- Kit frequency plan: [NOT STATED] (product page).
+- Parameters covered across the sensors: temperature, humidity, CO2, PM2.5, PM10, TVOC, light, pressure, motion, and HCHO or O3 on AM319 (kit datasheet).
+- Platform: 6 months Milesight IoT Cloud Pro1 (product page).
+- Setup or installation service: [NOT STATED] (product page).
+## Interfaces and compatibility
+- Component files: `milesight-iaq-sensor.md` (AM102/AM103/AM307/AM319 options) and `milesight-ug56.md`.
+- AM307 and AM319 take 5 V / 1 A over USB-C; AM102L and AM103 run on batteries (kit datasheet).
+- Gateway embedded network server and BACnet/IP for BMS (product page).
+## Use cases
+- Demand-controlled ventilation and HVAC optimisation (product page).
+- Offices, schools, hospitals and other indoor spaces (product page).
+- WELL-aligned air monitoring with AM319 (Milesight kit page).
+## Known limitations
+- Cloud subscription included for 6 months only (product page).
+- Component quantities and frequency plan are not stated (product page).
+- AM102 vs AM102L and AM307 7-in-1 vs 9-in-1 differ between sources (product page, kit datasheet).
+- Power adapters are not listed (product page).
+## Positioning (kept apart from specs)
+- "A comprehensive solution designed to enhance indoor environmental quality while optimizing energy efficiency" (product page).
+- "Lightning Your Way to Green Air" (Milesight kit page).
+## Price band
+RM6,715.80 (Cytron product page, availability Enquiry, read 2026-10-21)
+## Product page
+https://my.cytron.io/Milesight/p-lorawan-indoor-air-quality-kit
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+## Source link
+https://my.cytron.io/Milesight/p-lorawan-indoor-air-quality-kit
+
+# Product fact sheets
+
+## Product name
 Maker pHAT: Simplifying Raspberry Pi for Education
 
 ## Aliases
