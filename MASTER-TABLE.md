@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (132 products), in review-queue order. Reviewed: 132 of 132. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (135 products), in review-queue order. Reviewed: 135 of 135. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -16,7 +16,7 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 5 | 36 | [EDU:BIT](edu-bit.md) | `V-EDUBIT` | micro:bit accessories | Sold | Medium | Medium | 9 | 5 | 6 | Done (2026-10-19) | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no… |
 | 6 | 17 | [Screw Terminal Shield](shield-screw2.md) | `SHIELD-SCREW2` | Arduino shields (non-motor) | Sold | Medium | Medium | 5 | 2 | 1 | Done (2026-10-19) | Getting Started Guide V1.0, Jan 2015 + product photos |
 | 7 | 71 | [Robo Base](robo-base.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 2 | 2 | Done (2026-10-19) | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images |
-| 8 | 130 | [Jetson Orin Nano Workshop](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 5 | Done (2026-10-19) | Tentative timetable + product page |
+| 8 | 131 | [Jetson Orin Nano Workshop](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 5 | Done (2026-10-19) | Tentative timetable + product page |
 | 9 | 19 | [Maker UNO Edu Kit](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Arduino kits and books | Sold | Medium-high | Low | 7 | 4 | 2 | Done (2026-10-19) | Getting Started Module PDF + Teacher Guidebook (no version/date) |
 | 10 | 40 | [STRIKER:BIT](strikerbit.md) | `V-STRIKERBIT` | micro:bit kits | Sold | Medium | Medium | 7 | 5 | 5 | Done (2026-10-20) | STRIKER:BIT Booklet (read 20 Oct 2026) + scoring sheet + product page |
 | 11 | 42 | [Robot Battle 500g](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | micro:bit kits | Sold | Medium | Medium | 7 | 3 | 2 | Done (2026-10-19) | Product page only |
@@ -24,15 +24,15 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 13 | 48 | [Ikedo Mini Sumo Pro](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Sumo robot kits and parts | Sold | Medium | Medium | 8 | 4 | 5 | Done (2026-10-19) | Product page |
 | 14 | 68 | [STEM Robot Building Base](stem-robot-building-base.md) | `V-HD-STEM` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 6 | Done (2026-10-21) | Installation guide tutorial (25 Jul 2023, read in full incl. images) + product page |
 | 15 | 72 | [Robo Base Mini](robo-base-mini.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 2 | Done (2026-10-19) | Product page + Getting Started tutorial (section list) |
-| 16 | 129 | [AI Agent Workshop](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 4 | Done (2026-10-19) | Course outline (no date) + product page |
+| 16 | 130 | [AI Agent Workshop](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 4 | Done (2026-10-19) | Course outline (no date) + product page |
 | 17 | 49 | [1KG RC Sumo Bundle](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | Sumo robot kits and parts | Sold | Medium | Medium | 6 | 4 | 4 | Done (2026-10-19) | Product page (user-guide tutorials blocked) |
 | 18 | 67 | [3-Axis Accelerometer](sn-adxl335-cy.md) | `SN-ADXL335-CY` | Sensors | Out of stock | Medium | Medium | 5 | 3 | 3 | Done (2026-10-19) | Product page + ADI vendor docs |
-| 19 | 126 | [MakerDisk NVMe 2280](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 3 | 3 | Done (2026-10-19) | Product page |
-| 20 | 132 | [JetPack Flash Service](jetpack-flash-service.md) | `SEV-JN-ORNN` | Workshops and services | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Product page |
+| 19 | 127 | [MakerDisk NVMe 2280](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 3 | 3 | Done (2026-10-19) | Product page |
+| 20 | 133 | [JetPack Flash Service](jetpack-flash-service.md) | `SEV-JN-ORNN` | Workshops and services | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Product page |
 | 21 | 18 | [Prototyping Shield](shield-proto2.md) | `SHIELD-PROTO2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 4 | 4 | 2 | Done (2026-10-20) | Schematic + artwork prints Rev 1.0.1 (read 20 Oct 2026) + product page |
 | 22 | 55 | [URS232A](urs232a.md) | `URS232A` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Product page + Cytron schematic URS232A.sch (1/2/2016) design team; TI MAX232 vendor docs for chip context |
-| 23 | 127 | [MakerDisk NVMe 2280 JetPack](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 1 | 3 | Done (2026-10-19) | Product page |
-| 24 | 128 | [MakerDisk SATA 120 GB](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | Storage (MakerDisk) | Sold | Medium | Medium | 4 | 3 | 5 | Done (2026-10-19) | Product page |
+| 23 | 128 | [MakerDisk NVMe 2280 JetPack](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 1 | 3 | Done (2026-10-19) | Product page |
+| 24 | 129 | [MakerDisk SATA 120 GB](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | Storage (MakerDisk) | Sold | Medium | Medium | 4 | 3 | 5 | Done (2026-10-19) | Product page |
 | 25 | 23 | [Robo Pico](robo-pico.md) | `ROBO-PICO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 10 | 5 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2023 |
 | 26 | 99 | [IRIV PiControl CM5](iriv-picontrol-cm5.md) | `IRIV-PICL5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 7 | 0 | Done (2026-10-21) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.5, Jan 2026 (read in full incl. figures 21 Oct 2026) |
 | 27 | 30 | [MOTION:BIT](motion-bit.md) | `MOTION-BIT` | micro:bit accessories | Sold | Medium-high | Low | 7 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2023 |
@@ -53,7 +53,7 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 42 | 33 | [REKA:BIT](reka-bit.md) | `REKA:BIT` | micro:bit accessories | Sold | Medium-high | Low | 4 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2021 |
 | 43 | 98 | [IRIV PiControl CM4](iriv-picontrol-cm4.md) | `IRIV-PICL` | IRIV industrial | Sold | Medium-high | Medium | 14 | 8 | 0 | Done (2026-10-19) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.3, Nov 2025 |
 | 44 | 7 | [Maker Uno RP2040](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | Arduino-compatible boards | Sold | Medium-high | Medium | 16 | 9 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2024 |
-| 45 | 120 | [Industrial IO HAT+](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 14 | 5 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Sep 2025 |
+| 45 | 121 | [Industrial IO HAT+](industrial-io-hat-plus.md) | `HAT-IND-AG` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 14 | 5 | 1 | Done (2026-10-19) | Datasheet Rev 1.0, Sep 2025 |
 | 46 | 95 | [MDDRC5](mddrc5.md) | `MDDRC5` | Motor drivers | Sold | Medium-high | Medium | 12 | 5 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Mar 2026 |
 | 47 | 102 | [IRIV SmartHub CM5](iriv-smarthub-cm5.md) | `IRIV-SH5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 14 | 0 | Done (2026-10-19) | User Manual Rev 1.3, Dec 2025 (Rev 1.4, Feb 2026 exists — not in hand) |
 | 48 | 46 | [IR Sumo Start](ir-sumo-start.md) | `IR-SUMO-START` | Sumo controllers | Sold | Medium-high | Medium | 12 | 7 | 8 | Done (2026-10-19) | IR-SUMO-START Datasheet, Rev 1.0, April 2025 (Cytron Technologies Sdn Bhd) |
@@ -87,16 +87,16 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 76 | 73 | [Robo Grip Mini](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | Robot parts and accessories | Sold | Medium-high | Medium | 11 | 6 | 5 | Done (2026-10-21) | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page |
 | 77 | 78 | [FD04A](fd04a.md) | `FD04A` | Motor drivers | Sold | Medium-high | Medium | 10 | 6 | 2 | Done (2026-10-21) | User's Manual V1.2, Jun 2025 (read in full incl. figures 21 Oct 2026) |
 | 78 | 85 | [SHIELD-MDD10](shield-mdd10.md) | `SHIELD-MDD10` | Motor drivers | Sold | Medium | Medium | 8 | 2 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, May 2019 |
-| 79 | 117 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
+| 79 | 118 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
 | 80 | 5 | [Maker UNO Plus](maker-uno-plus.md) | `MAKER-UNO-PLUS` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 6 | 1 | Done (2026-10-19) | User's Manual Rev 1.0, Oct 2018 (no datasheet) |
 | 81 | 13 | [PS2 Shield](shield-ps2.md) | `SHIELD-PS2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 4 | 1 | Done (2026-10-19) | User's Manual V1.0, Sep 2013 (no datasheet) |
 | 82 | 20 | [Maker UNO Learning Box](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Arduino kits and books | Sold | Medium-high | Low | 5 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginner Using Maker UNO, Ver 1.3, Dec 2018 (read 21 Oct 2026) + product page |
 | 83 | 22 | [PikaBot](pikabot.md) | `V-KIT-PIKABOT` | Arduino kits and books | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-21) | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot… |
 | 84 | 64 | [RE08A Rotary Encoder](re08a.md) | `RE08A` | Sensors | Sold | Medium-high | Low | 7 | 3 | 0 | Done (2026-10-19) | User's Manual V1.2, Sep 2008 (mirror; no datasheet) |
 | 85 | 65 | [50A Current Sensor](bb-acs756.md) | `BB-ACS756` | Sensors | Sold | Medium | Medium | 9 | 7 | 5 | Done (2026-10-21) | Product page + Cytron schematic + Allegro vendor docs + Cytron GitHub PIC sample code (SK28A) |
-| 86 | 119 | [CM4 Maker Board](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi HATs and boards | Sold | Medium | Medium | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Oct 2023 |
-| 87 | 124 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
-| 88 | 131 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
+| 86 | 120 | [CM4 Maker Board](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi HATs and boards | Sold | Medium | Medium | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Oct 2023 |
+| 87 | 125 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
+| 88 | 132 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
 | 89 | 14 | [ESP8266 WiFi Shield](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 5 | 3 | Done (2026-10-19) | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) |
 | 90 | 21 | [Maker Uno X Learning Guide](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Arduino kits and books | Sold | Medium-high | Low | 3 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (104 pages, read in full 21 Oct 2026) |
 | 91 | 56 | [PS2 Connector Breakout](bb-psc.md) | `BB-PSC` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Maker Mini Sumo PS2 tutorial (20 May 2024, read in full incl. wiring figure) + product page |
@@ -104,11 +104,11 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 93 | 77 | [SHIELD-3AMOTOR](shield-3amotor.md) | `SHIELD-3AMOTOR` | Motor drivers | Sold | Medium-high | Low | 6 | 3 | 4 | Done (2026-10-19) | User's Manual Rev 1.0, Apr 2017 |
 | 94 | 81 | [SHIELD-MD10](shield-md10.md) | `SHIELD-MD10` | Motor drivers | Sold | Medium | Medium | 6 | 7 | 1 | Done (2026-10-21) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 + Cytron 3D model SHIELD-MD10 R2 (GitHub, Jan 2019) design team |
 | 95 | 86 | [HAT-MDD10](hat-mdd10.md) | `HAT-MDD10` | Motor drivers | Sold | Medium-high | Low | 5 | 2 | 2 | Done (2026-10-19) | User's Manual V1.0, Mar 2017 |
-| 96 | 123 | [18650 Li-Ion 2200 mAh](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Power and accessories | Sold | Medium-high | Low | 4 | 6 | 2 | Done (2026-10-19) | Product page + PKCELL vendor sheet (2019) |
+| 96 | 124 | [18650 Li-Ion 2200 mAh](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Power and accessories | Sold | Medium-high | Low | 4 | 6 | 2 | Done (2026-10-19) | Product page + PKCELL vendor sheet (2019) |
 | 97 | 76 | [SHIELD-2AMOTOR](shield-2amotor.md) | `SHIELD-2AMOTOR` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 4 | Done (2026-10-19) | User's Manual V1.1, Feb 2015 |
 | 98 | 35 | [Grove WiFi 8266](grove-wifi-8266.md) | `GRV-WIFI-8266` | micro:bit accessories | Sold | Medium-high | Medium | 8 | 4 | 4 | Done (2026-10-20) | Datasheet Rev 1.0, Aug 2021 |
 | 99 | 44 | [Maker Mini Sumo](maker-mini-sumo.md) | `MAKER-MSUMO` | Sumo controllers | Sold | Medium-high | Medium | 11 | 6 | 3 | Done (2026-10-20) | MAKER-MSUMO Datasheet Rev 1.0, November 2019 (Google Doc linked from the product page) |
-| 100 | 118 | [Maker Hat Base](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi HATs and boards | Out of stock | Medium-high | Medium | 8 | 3 | 1 | Done (2026-10-20) | Datasheet Rev 1.0, Sep 2021 |
+| 100 | 119 | [Maker Hat Base](maker-hat-base.md) | `MAKER-HAT-BASE` | Raspberry Pi HATs and boards | Out of stock | Medium-high | Medium | 8 | 3 | 1 | Done (2026-10-20) | Datasheet Rev 1.0, Sep 2021 |
 | 101 | 3 | [Maker Feather AIoT S3](maker-feather-aiot-s3.md) | `MAKER-FEATHER-AIOT-S3` | ESP32 boards | Sold | Medium-high | Medium | 9 | 5 | 0 | Done (2026-10-20) | MAKER-FEATHER-AIOT-S3 Datasheet, Rev 1.1, January 2023 (Google Doc), plus schematic REV 1.0.0 dated… |
 | 102 | 27 | [Maker Pi Pico Mini](maker-pi-pico-mini.md) | `MAKER-PI-PICO-MINI` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Low | 7 | 1 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Jun 2022 |
 | 103 | 41 | [SUMO:BIT Robot Kit](sumobit-robot-kit.md) | `V-KIT-SUMOBIT` | micro:bit kits | Sold | Medium-high | Low | 7 | 6 | 4 | Done (2026-10-20) | Google Slides guides (Assembly/Checking/Maintenance/Autonomous/RC, Dec 2024) |
@@ -121,26 +121,29 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 | 110 | 38 | [Auto Plant Watering Kit](auto-plant-watering-kit.md) | `V-KIT-RBT-APW` | micro:bit kits | Sold | Medium-high | Medium | 8 | 4 | 0 | Done (2026-10-20) | Lesson Guide (English, Apr 2022) |
 | 111 | 61 | [Maker Soil Moisture](maker-soil-moisture.md) | `MAKER-SOIL-MOISTURE` | Sensors | Out of stock | Medium-high | Medium | 6 | 4 | 5 | Done (2026-10-20) | Datasheet Rev 1.0, Jan 2022 |
 | 112 | 94 | [SmartDrive160](mds160a.md) | `MDS160A` | Motor drivers | Sold | Medium-high | Low | 6 | 2 | 6 | Done (2026-10-20) | User's Manual V1.0, Aug 2014 (no datasheet) |
-| 113 | 122 | [17.5W USB-C PSU](usbc-psu-17w5.md) | `V-AD-5V3P5A` | Power and accessories | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-20) | Datasheet Rev 2.0, Oct 2024 |
+| 113 | 123 | [17.5W USB-C PSU](usbc-psu-17w5.md) | `V-AD-5V3P5A` | Power and accessories | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-20) | Datasheet Rev 2.0, Oct 2024 |
 | 114 | 62 | [MCP9700 Temp Sensor](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Sensors | Sold | Medium-high | Low | 5 | 3 | 6 | Done (2026-10-20) | Datasheet Rev 1.0, Aug 2023 |
 | 115 | 63 | [LSA08 Line Sensor](lsa08.md) | `LSA08` | Sensors | Sold | Medium-high | Low | 6 | 8 | 0 | Done (2026-10-20) | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) |
-| 116 | 121 | [27W PD USB-C PSU](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | Power and accessories | Sold | Medium-high | Low | 6 | 6 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Feb 2024 |
-| 117 | 125 | [MakerDisk NVMe 2242](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | Storage (MakerDisk) | Sold | Medium-high | Medium | 8 | 2 | 3 | Done (2026-10-20) | Datasheet Rev 1.0, Apr 2024 |
+| 116 | 122 | [27W PD USB-C PSU](usbc-psu-27w-pd.md) | `V-AD-27W-PD` | Power and accessories | Sold | Medium-high | Low | 6 | 6 | 2 | Done (2026-10-20) | Datasheet Rev 1.0, Feb 2024 |
+| 117 | 126 | [MakerDisk NVMe 2242](makerdisk-nvme-2242.md) | `V-MMR-NV2242` | Storage (MakerDisk) | Sold | Medium-high | Medium | 8 | 2 | 3 | Done (2026-10-20) | Datasheet Rev 1.0, Apr 2024 |
 | 118 | 10 | [Cytron UNO](cytron-uno.md) | `CT-UNO` | Arduino-compatible boards | Sold | Medium-high | Low | 6 | 4 | 4 | Done (2026-10-20) | User's Manual V1.0, Nov 2014 (no datasheet) |
 | 119 | 50 | [PCB Sumo Plate](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Sumo robot kits and parts | Sold | Medium-high | Low | 4 | 1 | 6 | Done (2026-10-20) | Product page |
 | 120 | 1 | [Maker ESP32](maker-esp32.md) | `MAKER-ESP32` | ESP32 boards | Sold | High | Low | 2 | 5 | 0 | Done (2026-10-20) | Maker ESP32 Datasheet Rev 1.1 (Sept 2026) |
-| 121 | 105 | [Teltonika RUT200](teltonika-rut200.md) | `RUT200` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
-| 122 | 106 | [Teltonika RUT140](teltonika-rut140.md) | `RUT140` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-29) + Cytron page |
-| 123 | 107 | [Teltonika RUT901](teltonika-rut901.md) | `RUT901` | Teltonika networking | Sold | Medium | Medium | 7 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
-| 124 | 108 | [Teltonika RUT906](teltonika-rut906.md) | `RUT906` | Teltonika networking | Sold | Medium | Medium | 6 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
-| 125 | 109 | [Teltonika RUT956](teltonika-rut956.md) | `RUT956` | Teltonika networking | Sold | Medium | Medium | 7 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
-| 126 | 110 | [Teltonika RUTX50](teltonika-rutx50.md) | `RUTX50` | Teltonika networking | Sold | Medium | Medium | 5 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-25) + Cytron page |
-| 127 | 111 | [Teltonika OTD140](teltonika-otd140.md) | `OTD140` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
-| 128 | 112 | [Teltonika TRB140](teltonika-trb140.md) | `TRB140` | Teltonika networking | Sold | Medium | Medium | 6 | 6 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
-| 129 | 113 | [Teltonika TSW101](teltonika-tsw101.md) | `TSW101` | Teltonika networking | Sold | Medium | Medium | 5 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
-| 130 | 114 | [Teltonika TSW202](teltonika-tsw202.md) | `TSW202` | Teltonika networking | Sold | Medium | Medium | 4 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
-| 131 | 115 | [Teltonika DIN Rail Kit](teltonika-din-rail-kit.md) | `PR5MEC00` | Teltonika networking | Sold | Medium | Medium | 4 | 3 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
-| 132 | 116 | [Teltonika 4G Magnetic SMA Antenna](teltonika-4g-magnetic-sma-antenna.md) | `PR1KS210` | Teltonika networking | Sold | Medium-high | Low | 5 | 4 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
+| 121 | 106 | [Teltonika RUT200](teltonika-rut200.md) | `RUT200` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
+| 122 | 107 | [Teltonika RUT140](teltonika-rut140.md) | `RUT140` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-29) + Cytron page |
+| 123 | 108 | [Teltonika RUT901](teltonika-rut901.md) | `RUT901` | Teltonika networking | Sold | Medium | Medium | 7 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
+| 124 | 109 | [Teltonika RUT906](teltonika-rut906.md) | `RUT906` | Teltonika networking | Sold | Medium | Medium | 6 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
+| 125 | 110 | [Teltonika RUT956](teltonika-rut956.md) | `RUT956` | Teltonika networking | Sold | Medium | Medium | 7 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
+| 126 | 111 | [Teltonika RUTX50](teltonika-rutx50.md) | `RUTX50` | Teltonika networking | Sold | Medium | Medium | 5 | 5 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-25) + Cytron page |
+| 127 | 112 | [Teltonika OTD140](teltonika-otd140.md) | `OTD140` | Teltonika networking | Sold | Medium | Medium | 6 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-24) + Cytron page |
+| 128 | 113 | [Teltonika TRB140](teltonika-trb140.md) | `TRB140` | Teltonika networking | Sold | Medium | Medium | 6 | 6 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
+| 129 | 114 | [Teltonika TSW101](teltonika-tsw101.md) | `TSW101` | Teltonika networking | Sold | Medium | Medium | 5 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
+| 130 | 115 | [Teltonika TSW202](teltonika-tsw202.md) | `TSW202` | Teltonika networking | Sold | Medium | Medium | 4 | 4 | 1 | Done (2026-10-21) | Teltonika product page technical spec (datasheet 2026-09-30) + Cytron page |
+| 131 | 116 | [Teltonika DIN Rail Kit](teltonika-din-rail-kit.md) | `PR5MEC00` | Teltonika networking | Sold | Medium | Medium | 4 | 3 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
+| 132 | 117 | [Teltonika 4G Magnetic SMA Antenna](teltonika-4g-magnetic-sma-antenna.md) | `PR1KS210` | Teltonika networking | Sold | Medium-high | Low | 5 | 4 | 1 | Done (2026-10-21) | Teltonika accessory page technical data + Cytron page |
+| 133 | 105 | [IRIV PiControl Industry 4.0 Agribox](iriv-picontrol-agribox.md) | `KIT-IRIV-AGRBX2` | IRIV industrial | Inquiry | Medium-low | High | 7 | 5 | 4 | Done (2026-10-21) | Product page only (+ 2025 Agribox tutorial) |
+| 134 | 134 | [IRIV PiControl Industry 4.0 Workshop](iriv-picontrol-industry40-workshop.md) | `V-KIT-IRIV` | Workshops and services | Sold | Medium | Medium | 8 | 9 | 3 | Done (2026-10-21) | Product page + workshop brochures (2025) |
+| 135 | 135 | [IRIV EdgeAI Industry 4.0 Training](iriv-edgeai-vision-training.md) | `V-KIT-IRIV-EAI` | Workshops and services | Out of stock | Medium-low | High | 8 | 7 | 4 | Done (2026-10-21) | Product page + workshop landing page |
 
 ## Review log
 
@@ -275,3 +278,6 @@ One row per product in the Cytron Product Knowledge Base (132 products), in revi
 - **Teltonika TSW202** (2026-10-21): New product added 21 Oct 2026 (Teltonika spec + Cytron page; Wiki blocked by Cloudflare) — Medium
 - **Teltonika DIN Rail Kit** (2026-10-21): New product added 21 Oct 2026 (Teltonika spec + Cytron page; Wiki blocked by Cloudflare) — Medium
 - **Teltonika 4G Magnetic SMA Antenna** (2026-10-21): New product added 21 Oct 2026 (Teltonika spec + Cytron page; Wiki blocked by Cloudflare) — Medium-high
+- **IRIV PiControl Industry 4.0 Agribox** (2026-10-21): New product added 21 Oct 2026 from the product page; MyAgritech provider/terms, PSU and wiring still open
+- **IRIV PiControl Industry 4.0 Workshop** (2026-10-21): New product added 21 Oct 2026 from page + 2025 brochures; fee/duration conflicts, HQ slots passed
+- **IRIV EdgeAI Industry 4.0 Training** (2026-10-21): New product added 21 Oct 2026 from page + landing page; out of stock; no outline, dates or venue

@@ -318,6 +318,7 @@ Raspberry Pi board notes for every agent:
 | IRIV SmartHub CM5 | [`iriv-smarthub-cm5.md`](iriv-smarthub-cm5.md) | `IRIV-SH5` | Raspberry Pi CM5 (BCM2712) | User Manual Rev 1.3, Dec 2025 | **Medium-high** |
 | IRIV EdgeAI CM5 | [`iriv-edgeai-cm5.md`](iriv-edgeai-cm5.md) | `IRIV-EDGEAI-CM5` | Raspberry Pi CM5 (BCM2712) + AI HAT+ | Datasheet Rev 1.0, Jul 2025 | **Medium-high** |
 | IRIV EdgeAI Safety Box Kit | [`iriv-edgeai-safety-box-kit.md`](iriv-edgeai-safety-box-kit.md) | `KIT-IRIV-EAI-PPE` | IRIV EdgeAI CM5 (8GB/32GB) + Hailo-8 26 TOPS | **No kit datasheet exists.** Live product page + Quick Start Guide (Aug 2026) + EdgeAI CM5 Datasheet Rev 1.0 | **Medium** |
+| IRIV PiControl Industry 4.0 Agribox | [`iriv-picontrol-agribox.md`](iriv-picontrol-agribox.md) | `KIT-IRIV-AGRBX2` | IRIV PiControl CM4 (4GB/32GB) + IRIV IO Controller (RP2350) | Product page only (+ 2025 Agribox tutorial) | **Medium-low** |
 
 **Source rule for IRIV (16 Oct 2026): the datasheet is the main source.** User manuals rank second ([UM]); where a newer manual disagrees, the datasheet still wins in the text and the conflict is listed for engineering.
 
@@ -363,7 +364,10 @@ Teltonika notes for every agent:
 | Jetson Orin Nano AI Fundamentals Workshop | [`jetson-orin-nano-workshop.md`](jetson-orin-nano-workshop.md) | `V-TW-JNORNN-NVIDIA` | 1-day workshop, NVIDIA certification; kit = Orin Nano Super 8GB + 512 GB JetPack SSD | Tentative timetable + product page | **Medium** |
 | Cytron Raspbot Workshop | [`raspbot-workshop.md`](raspbot-workshop.md) | `V-TRAINING-AI` | 1-day Edge AI workshop with Raspbot (Pi 5), max 5 pax, HQ Penang | Workshop tentative + product page | **Medium-high** |
 | Flash JetPack / Orin Nano Upgrade Service | [`jetpack-flash-service.md`](jetpack-flash-service.md) | `SEV-JN-ORNN` | Software-only JetPack 5.x → 6.x flash, RM150 by enquiry | Product page | **Medium** |
+| IRIV PiControl Industry 4.0 Workshop | [`iriv-picontrol-industry40-workshop.md`](iriv-picontrol-industry40-workshop.md) | `V-KIT-IRIV` | 2-day Node-RED/RS485/MQTT workshop + IRIV PiControl CM4 (2GB/16GB) training kit; HQ max 5 or on-site min 3 pax | Product page + workshop brochures (2025) | **Medium** |
+| IRIV EdgeAI Industry 4.0 Training | [`iriv-edgeai-vision-training.md`](iriv-edgeai-vision-training.md) | `V-KIT-IRIV-EAI` | 2-day Edge AI vision workshop + kit: IRIV EdgeAI CM5 8GB/32GB 13 TOPS, USB camera, RS485 meter/sensor; Windows laptop | Product page + workshop landing page | **Medium-low** |
 
+- **IRIV training kits:** the PiControl Industry 4.0 Workshop kit is a PiControl **CM4** (2GB/16GB wireless); the EdgeAI Industry 4.0 Training kit is an EdgeAI CM5 8GB/32GB at **13 TOPS** (not 26). Both are 2-day courses; participants keep the kit. The Agribox (IRIV industrial series) is a PiControl CM4 4GB/32GB + IRIV IO Controller kit; who provides MyAgritech and its terms are not stated.
 - **Workshop dates are purchase variants and expire** — re-check the page before quoting one; several listed dates had passed on 2026-10-19. Only the Raspbot workshop states a participant cap, meals and a certificate.
 ## Quick cross-product facts (ESP32 family)
 
