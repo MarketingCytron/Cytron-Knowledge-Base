@@ -4427,6 +4427,179 @@ https://my.cytron.io/p-v-pcb-sumo-plate
 # Product fact sheets
 
 ## Product name
+High Grade Silicon Wheels for Sumo Robot (42mm x 30mm and 32mm x 22mm)
+
+## Aliases
+V-WL-SL-4230, V-WL-SL-3222, CK-WL-SL-4230, CK-WL-SL-3222, WL-RIM-3430, WL-RIM-2622, WL-SL-3629, WL-SL-2820, High Grade Silicon Wheels, Silicon Wheels Set for Sumo Robot, Custom Silicone Wheels with Aluminium Rim, Aluminium Rim (34mm x 30mm), Aluminium Rim (26mm x 22mm), Silicone Wheel Without Rim, sumo silicone wheel
+
+## What it is
+Cytron OEM sumo-robot wheels made of a light-blue silicone tyre on an aluminium rim, in two sizes: 42 x 30 mm for 1 kg sumo robots (4 mm motor shaft) and 32 x 22 mm for 500 g sumo robots (3 mm motor shaft). Each size is sold as a full set, rim only or silicone only, one wheel per unit.
+
+## Specs and functions
+- 42 x 30 mm: outer diameter 42 mm, width 30 mm (complete set); 4 mm shaft; "motor diameter 25mm (centre shaft)"; 50 g per full set; for 1 kg sumo robots (product page)
+- 32 x 22 mm: outer diameter 32 mm, width 22 mm (complete set); 3 mm shaft; "motor diameter 17mm (centre shaft)"; about 21.5 g per full set; for 500 g sumo robots (product page)
+- Material: silicone and aluminium; silicone colour light blue (product page)
+- 42 x 30 mm options: Silicon Wheels Set CK-WL-SL-4230 RM55.00; Aluminium Rim Only WL-RIM-3430 (34 x 30 mm) RM35.00; Silicone Only WL-SL-3629 (36 x 29 mm) RM20.00 (product page)
+- 32 x 22 mm options: Silicon Wheels Set CK-WL-SL-3222 RM40.00; Aluminium Rim Only WL-RIM-2622 (26 x 22 mm) RM25.00; Silicone Only WL-SL-2820 (28 x 20 mm) RM15.00 (product page)
+- 42 x 30 mm rim: flange 34 mm, tyre seat 30 mm, bore 4 mm, 2 x M4 x 0.7 set-screw holes, 9 mm hub, open cup 26 mm diameter x 21 mm deep (dimension drawing)
+- STL of the 42 x 30 mm set measures 42 x 42 x 30 mm (STL file)
+- Shore hardness: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- 42 x 30 mm: 12V 580RPM 3.5kgfcm and 12V 980RPM 2.3kgfcm GM25 High Power Brushed DC Geared Motors (product page)
+- 32 x 22 mm: SPG10 micro metal gearmotors, e.g. 6V 800RPM and 6V 400RPM; tutorials also use 6V 570RPM and 3V 1350RPM micro metal gearmotors (product page, tutorials)
+- Rim fixes to the shaft with set screws tightened by an Allen key; the tyre is fitted after the rim is tight (tutorials)
+- Used in Cytron kits: 1KG Sumo Robot Bundles RC and SOCCER:BIT (42 x 30 mm); Ikedo Mini Sumo Pro and V2 (32 x 22 mm)
+
+## Use cases
+- Drive wheels for 1 kg sumo robots, soccer robots and battle robots (42 x 30 mm)
+- Drive wheels for 500 g mini sumo robots and small line-following robots on Robo Base / Robo Base Mini (32 x 22 mm)
+- Replacement tyres or rims for Cytron sumo kits
+
+## Known limitations
+- Sold as single wheels, not pairs
+- M2 Allen key not included (sold separately)
+- The two sizes have different shaft bores and are not interchangeable
+- No Shore hardness, set-screw details or 32 x 22 mm drawing are published
+- Tyre-only names (36 x 29 mm, 28 x 20 mm) do not match the set outer diameters (42 mm, 32 mm)
+
+## Positioning (kept apart from specs)
+- "Custom Silicone Wheels with Aluminium Rim", engineered for competition traction, control and durability; "trusted by SUMO:BIT Robot Kits" (product page)
+
+## Price band
+RM20.00–RM55.00 (42 x 30 mm) and RM15.00–RM40.00 (32 x 22 mm) (Cytron product pages, read 2026-10-21)
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/high-grade-silicon-wheels-for-sumo-robot-4230
+
+# Product fact sheets
+
+## Product name
+500g Sumo Robot Map
+
+## Aliases
+PM-MAP-SUMO, 500g Sumo Robot Map, Map for Sumo Robot, Sumo Robot Training Arena, sumo practice map, mini sumo practice ring, sumo dohyo mat
+
+## What it is
+A flexible UV-vinyl practice ring for 500 g (mini) sumo robots: a 72 cm black circle inside a white border, 77 cm overall. Cytron states it is a practice map and not for competition.
+
+## Specs and functions
+- Product code: PM-MAP-SUMO (product page)
+- Material: UV vinyl (product page)
+- Diameter: 77 cm outer (white), 72 cm inner (black) (product page)
+- White border width: 2.5 cm (inferred from the two diameters)
+- No start lines visible in the product images (product page images)
+- Flat flexible sheet laid on the floor (product page)
+- Packing list: 1 x Map for Sumo Robot (product page)
+- Thickness: [NOT STATED]
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Passive mat; no electrical interface
+- Sized for 500 g / mini sumo robots such as Ikedo Mini Sumo Robot V2 and Pro and Robot Battle (500g) - SUMO:BIT (product page cross-sell)
+- Pairs with the IR Sumo Start Module for remote starts (product page cross-sell)
+- Smaller than the 1 m dohyo used in the SUMO:BIT 1 kg guide
+
+## Use cases
+- Practise and test 500 g mini sumo robots
+- Tune edge sensors and attack strategies at home or in class
+
+## Known limitations
+- Practice map only, not for competition (product page)
+- Competition rule set not stated
+- No start lines printed
+- Flat mat with no raised edge
+- Order it separately from other items to ensure proper packaging (product page)
+
+## Positioning (kept apart from specs)
+- "Sumo Robot Training Arena" made from durable UV vinyl, flexible and easy to set up in any space (product page)
+
+## Price band
+RM45.00 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-map-for-sumo-robot
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-map-for-sumo-robot
+
+# Product fact sheets
+
+## Product name
+Metal Base for Sumo Robot
+
+## Aliases
+HD-BSC-MSUMO-MB, Metal Base for Sumo Robot, Metal Plate for Sumo Robot, metal base for mini sumo robot, sumo robot weight plate, sumo ballast plate
+
+## What it is
+A flat black metal plate (8.3 x 5 x 0.3 cm, 96 g) with M3 mounting holes, screwed into sumo and soccer robot bodies to add weight. Sold as a replacement part or an upgrade.
+
+## Specs and functions
+- Product code: HD-BSC-MSUMO-MB (product page)
+- Material: metal; alloy not stated, density consistent with steel (product page; inferred)
+- Dimensions: 8.3 cm x 5 cm x 0.3 cm (product page)
+- Weight: 96 g (product page)
+- Mounting holes: M3; the photo shows 2 holes near opposite corners (product page, product photo)
+- Colour: black (product photo)
+- Packing list: 1 x Metal Plate for Sumo Robot; no screws (product page)
+- Hole positions: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Mechanical part; fixes to the robot body with M3 screws (not included)
+- Used as 2x "metal base for mini sumo robot" in the 1KG Sumo Robot Bundles - Radio Controlled (RC)
+- Suits sumo and soccer robots (product page)
+- Different from the Copper Base for Mini Sumo Robot
+
+## Use cases
+- Add weight to a sumo robot to reach the class limit and improve traction
+- Ballast for soccer robots
+- Replacement base plate for Cytron's 1 kg RC sumo bundle
+
+## Known limitations
+- No screws included
+- Hole positions not dimensioned
+- Metal type not stated
+- 96 g per plate counts toward the robot's weight limit
+
+## Positioning (kept apart from specs)
+- "Available as a replacement part or as an upgrade for your own Sumo Robot" (product page)
+
+## Price band
+RM29.00; 5 or more RM27.55 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-metal-base-for-sumo-robot
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-metal-base-for-sumo-robot
+
+# Product fact sheets
+
+## Product name
 8 Channel Servo Controller (SC08A)
 
 ## Aliases
@@ -6063,6 +6236,696 @@ Website
 
 ## Source link
 https://my.cytron.io/tutorial/robo-grip-mini-installation-guide
+
+# Product fact sheets
+
+## Product name
+DC Geared Motor Bracket (SPG30/SPG50)
+
+## Aliases
+HD-BK-SPG, SPG motor bracket, SPG30 bracket, SPG50 bracket, 37mm DC motor bracket, DC Geared Motor Bracket
+
+## What it is
+A light-grey powder-coated 1.5 mm alloy-steel L-bracket that holds a Ø37 mm SPG30, SPG30E or SPG50 DC geared motor and bolts to a robot chassis (product page).
+
+## Specs and functions
+- Product code: HD-BK-SPG (product page)
+- Material alloy steel, 1.5 mm, powder coating, light grey (product page, drawing)
+- Fitted motors: SPG30, SPG30E, SPG50; bore size 16 mm (product page, selection table)
+- Size: 40 mm wide, 42.1 mm high face, 41.1 mm deep base (drawing)
+- Motor face: 16 mm wide slot for the gearbox boss; 2 × Ø3.3 mm holes either side of the slot, 31 mm apart, about 22 mm above the base (drawing)
+- Base: 8 × Ø3.3 mm holes, two rows 31 mm apart, 10 mm pitch (drawing)
+- Packing list: 1 × bracket, 2 × M3 × 4 mm screw, 4 × M3 × 10 mm screw, 4 × M3 nut (product page)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Motor to bracket: 2 × M3 × 4 mm screws into the gearbox M3 holes (instruction image)
+- Bracket to chassis: 4 × M3 × 10 mm screws with nuts (instruction image)
+- Fits SPG30 / SPG30E and SPG30HP motors (their gearbox has 6 × M3 on a Ø31 mm circle); not for IG32E or IG42E/IG45 (selection table)
+
+## Use cases
+- Mount a 37 mm SPG geared motor on a robot chassis (product page)
+- Two-wheel robot with SPG30HP motors and MDD3A (linked Cytron tutorial)
+
+## Known limitations
+- Only two of the gearbox's six holes are used
+- Long screws must not go into the gearbox; use the 4 mm screws
+- Weight is not stated
+
+## Positioning (kept apart from specs)
+- "Strong enough to hold your DC motor at its position regardless of the strong vibration" (product page)
+
+## Price band
+RM14.00 (10 or more RM12.80) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-dc-geared-motor-bracket-spg30-spg50
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-dc-geared-motor-bracket-spg30-spg50
+
+# Product fact sheets
+
+## Product name
+Planetary Motor Bracket (IG42E/IG45)
+
+## Aliases
+HD-BK-IG4X, IG42 bracket, IG45 bracket, IG42E bracket, Planetary Geared Motor Bracket (IG42E/IG45), IG4X Bracket
+
+## What it is
+A light-grey powder-coated alloy-steel L-bracket that holds Cytron's IG42E or IG45 planetary DC geared motor and bolts to a chassis with M4 hardware (product page).
+
+## Specs and functions
+- Product code: HD-BK-IG4X (product page)
+- Material alloy steel, powder coating, light grey (product page)
+- Thickness: 1.5 mm (product page); 1.60 mm (drawing)
+- Fitted motors: IG42E, IG45; bore size 26.5 mm (product page, selection table)
+- Motor face: 52 × 49.6 mm, Ø26.5 mm bore 25.6 mm above the base, 4 × Ø4.2 mm holes in a diamond (top-bottom 34.7 mm) (drawing)
+- Base: 81.6 × 52 mm, 4 × Ø4.2 mm holes on a 42 × 60 mm rectangle, 2 slots 3.5 × 14.5 mm (drawing)
+- Packing list: 1 × bracket, 4 × M4 × 6 mm screw, 4 × M4 × 10 mm screw, 4 × M4 nut (product page)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Uses M4 screws (SPG and IG32E brackets use M3)
+- Fits IG42E and IG45 only; SPG30 needs HD-BK-SPG and IG32E needs HD-BK-IG3X (selection table)
+- Typical wheel set: 5 Inches Robot Wheel with 8 mm (IG42) or 10 mm (IG45) metal key hub
+
+## Use cases
+- Mount an IG42E/IG45 planetary motor on a robot or machine frame (product page)
+- Motor RPM measurement with the IG42E encoder (related Cytron tutorial)
+
+## Known limitations
+- No assembly image; screw use is inferred from the screw lengths
+- Page and drawing differ on thickness (1.5 vs 1.6 mm)
+- Weight is not stated
+
+## Positioning (kept apart from specs)
+- "Strong enough to hold your DC motor at its position regardless of the strong vibration" (product page)
+
+## Price band
+RM24.00 (10 or more RM22.00) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-planetary-motor-bracket-ig42e-ig45
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-planetary-motor-bracket-ig42e-ig45
+
+# Product fact sheets
+
+## Product name
+Planetary Geared Motor Bracket (IG32E)
+
+## Aliases
+HD-BK-IG3X, IG32E bracket, IG32 motor bracket, 32mm planetary motor bracket
+
+## What it is
+A light-grey powder-coated 1.5 mm alloy-steel L-bracket that holds Cytron's IG32E 32 mm planetary DC geared motor and bolts to a chassis with M3 hardware (product page).
+
+## Specs and functions
+- Product code: HD-BK-IG3X (product page)
+- Material alloy steel, 1.5 mm, powder coating, light grey (product page)
+- Fitted motor: IG32E; bore size 21 mm (product page, selection table)
+- Packing list: 1 × bracket, 4 × M3 × 4 mm screw, 4 × M3 × 10 mm screw, 4 × M3 nut (product page)
+- Hole sizes and positions: [NOT STATED]
+- Overall dimensions: [NOT STATED]
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Motor face: 4 holes around the bore; base: two rows of holes (product photo; sizes not stated)
+- Fits IG32E only; SPG30 needs HD-BK-SPG and IG42E/IG45 need HD-BK-IG4X (selection table)
+- Shaft hub for IG32: Metal Key Hub 6mm CO-SPG
+
+## Use cases
+- Mount an IG32E planetary motor on a robot chassis (product page)
+
+## Known limitations
+- No drawing or dimensions are published
+- Screw use is inferred from the packing list and photos
+- Weight is not stated
+
+## Positioning (kept apart from specs)
+- "Strong enough to hold your DC motor at its position regardless of the strong vibration" (product page)
+
+## Price band
+RM14.00 (10 or more RM12.80) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-planetary-geared-motor-bracket-ig32e
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-planetary-geared-motor-bracket-ig32e
+
+# Product fact sheets
+
+## Product name
+5 Inches Robot Wheel (without key hub / with 8 mm key hub / with 10 mm key hub)
+
+## Aliases
+WL-RBT-5, WL-RBT-508, WL-RBT-510, 5 Inches Robot Wheel Without Key Hub, 5 Inches Robot Wheel With 8mm Key Hub, 5 Inches Robot Wheel With 10mm Key Hub, 5 inch robot wheel, 127mm robot wheel
+
+## What it is
+A Cytron-designed 5-inch (127 mm) robot wheel with an ABS rim and TPE tyre, sold alone or as a combo with an 8 mm or 10 mm zinc-plated steel metal key hub for round-shaft motors (product pages).
+
+## Specs and functions
+- Codes: WL-RBT-5 (wheel only), WL-RBT-508 (with 8 mm hub), WL-RBT-510 (with 10 mm hub) (product pages)
+- Outer diameter 5 in / 127 mm; width 25.4 mm (product page, drawing)
+- Rim ABS; tyre TPE ("rubber" on the combo pages) (product pages)
+- Centre bore Ø10.4 mm; 3 × Ø5 mm hub holes at 120° on a Ø31 mm circle (drawing)
+- Combo hub: zinc-plated steel metal key hub with mounting bolts (product pages)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product pages)
+
+## Interfaces and compatibility
+- Fits Cytron 8 mm, 10 mm and 15 mm metal key hubs (product page)
+- 8 mm combo: IG42 or any 8 mm round shaft; 10 mm combo: IG45, 30W Vexta brushless motor, 40W DC brush motor or any 10 mm round shaft (product pages)
+- Same bolt circle (Ø31 mm) as the power-window motor coupling (inferred from drawings)
+- Not for the 6 mm metal key hub (different hole pattern, inferred)
+
+## Use cases
+- Drive wheel for medium and large mobile robots (product pages)
+- Wheels of the Motor Mount & 5 Inches Wheel Bundle (power-window motors)
+
+## Known limitations
+- The wheel-only listing has no shaft fitting; a key hub is needed
+- Hubs are for round shafts, not D-shafts
+- 8 mm combo had 1 unit in stock on 2026-10-21
+- Weight and load rating are not stated
+
+## Positioning (kept apart from specs)
+- "Perfect size and good friction force on most of the surface"; "Cytron's custom design" (product page)
+
+## Price band
+RM50.00 wheel only (6+ RM46.00, 20+ RM40.00); RM80.00 with 8 mm or 10 mm hub (6+ RM73.50, 20+ RM64.00) (Cytron product pages, read 2026-10-21)
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-5-inches-robot-wheel-without-key-hub
+
+# Product fact sheets
+
+## Product name
+Metal Key Hub (6 mm / 8 mm / 10 mm)
+
+## Aliases
+CO-SPG, CO-MTL-08, CO-MTL-10, Metal Key Hub - 6mm, Metal Key Hub - 8mm, Metal Key Hub - 10mm, 6mm metal key hub, 8mm key hub, 10mm key hub, shaft hub, shaft coupling, Bush - Steel - 8mm
+
+## What it is
+A Cytron OEM shaft hub that turns a motor's round output shaft into a flat, threaded flange so a wheel, pulley, sprocket or mechanism can be bolted on. Sold for 6 mm (aluminium, M3), 8 mm and 10 mm (zinc-plated steel, M5) shafts (product pages).
+
+## Specs and functions
+- Codes: CO-SPG (6 mm), CO-MTL-08 (8 mm), CO-MTL-10 (10 mm) (product pages)
+- 6 mm: aluminium; Ø25 mm flange × 6 mm, Ø15 mm boss, 15 mm long; 4 × M3 threaded holes 90° apart on a Ø20 mm circle; 2 × M3 radial set-screw holes (drawing)
+- 8 mm and 10 mm: zinc-plated steel; Ø40 mm flange × 12 mm, Ø24 mm boss, 26 mm long; 3 × tapped M5 at 120° on a Ø31 mm circle; tapped M4 radial set-screw hole(s) (drawings)
+- Packing lists: 6 mm — hub + 6 × M3 screws; 8 mm and 10 mm — hub + 2 × M4 screw + 3 × M5 screw (product pages)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product pages)
+
+## Interfaces and compatibility
+- 6 mm hub: SPG30, SPG30E, SPG30HP, SPG50, IG32 (6 mm shafts) (product page)
+- 8 mm hub: IG42 (product page)
+- 10 mm hub: IG45, 40W DC brush motor, 30W Vexta brushless motor (product page)
+- 8/10 mm hub bolt circle (3 × M5 on Ø31 mm) matches the 5 Inches Robot Wheel (inferred from drawings)
+- The 6 mm hub's flange pattern does not match the 5-inch wheel (inferred)
+
+## Use cases
+- Attach a wheel, pulley or sprocket to a DC geared motor shaft (product pages)
+- 8 mm and 10 mm hubs with the 5-inch robot wheel (wheel combo listings)
+
+## Known limitations
+- No keyway; the hub grips the shaft with set screws only
+- 6 mm and 8/10 mm hubs have different flange patterns
+- 10 mm page packing list says "1 x 8mm Metal Key Hub" (listing error)
+- Weight not stated
+
+## Positioning (kept apart from specs)
+- "Have you ever face difficulties in mounting your DC motor to a foreign part? Here, we bring you the solution - a metal key hub!" (product page)
+
+## Price band
+6 mm RM10.50 special offer (normal RM21.00); 8 mm and 10 mm RM35.00 (6+ RM32.00, 20+ RM28.00) (Cytron product pages, read 2026-10-21)
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-metal-key-hub-6mm
+
+# Product fact sheets
+
+## Product name
+6mm Key Hub for 60mm Mecanum Wheel
+
+## Aliases
+CO-MEC-06, 6mm mecanum key hub, 60mm mecanum wheel hub, mecanum hub 6mm
+
+## What it is
+A Cytron OEM aluminium shaft hub that mounts to the 60 mm Mecanum Wheel so a small omnidirectional robot can be built on SPG30, SPG50 or IG32 DC geared motors with 6 mm shafts (product page).
+
+## Specs and functions
+- Product code: CO-MEC-06 (product page)
+- Material: aluminium (product page)
+- Outside diameter 28 mm; inner diameter 6 mm (product page, drawing)
+- Flange 4 mm thick, boss Ø15 mm, overall height 12 mm (drawing)
+- Wheel holes: 3 × Ø3.2 mm through holes on a Ø23 mm circle (drawing)
+- Set-screw hole: 1 × M4 thread, 8 mm from the boss end (drawing)
+- Net weight 12 g (product page)
+- Packing list: 1 × hub, 1 × M3 screw (product page)
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Mechanical part; no electrical interface
+- Fits the 60mm Mecanum Wheel (product page)
+- Motors: SPG30 / SPG30E / SPG30HP, SPG50, IG32 (6 mm shaft) (product page)
+- Brackets: HD-BK-SPG for SPG motors, HD-BK-IG3X for IG32E
+
+## Use cases
+- Build a small omnidirectional (mecanum) robot on 6 mm-shaft DC geared motors (product page)
+
+## Known limitations
+- The drawing shows an M4 set-screw thread but the packing list gives one M3 screw
+- Wheel-mounting screws are not listed
+- The 60 mm mecanum wheel is sold separately
+
+## Positioning (kept apart from specs)
+- "It gives you peace of mind when you want to build a small size omnidirectional robot" (product page)
+
+## Price band
+RM25.00 (10 or more RM23.00, 30 or more RM20.00) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-6mm-key-hub-for-60mm-mecanum-wheel
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-6mm-key-hub-for-60mm-mecanum-wheel
+
+# Product fact sheets
+
+## Product name
+Motor Mount & 5 Inches Wheel Bundle
+
+## Aliases
+KIT-PW-5WL, Motor Mount and 5 Inches Wheel Kit, power window motor wheel kit, power window motor and wheel bundle
+
+## What it is
+A Cytron OEM drive set of two 12 V power-window motors (one Left, one Right) with a 5-inch thermoplastic-rubber wheel already mounted on each, for two-wheeled and combat robots (product page).
+
+## Specs and functions
+- Product code: KIT-PW-5WL (product page)
+- Contents: a pair of power window motors (left and right) with wheels mounted (product page)
+- Motor: 12 V DC, 60 RPM rated, 2.9 N·m (30 kgf·cm) rated torque, rated current under 15 A, stall 9.8 N·m and under 28 A (product page)
+- Duty: tested 8 s up/down × 10,000 times; not for continuous driving without stopping (product page)
+- Motor size: ~161.2 × 30.3 × 105.5 mm (product page); drawing 145.5 mm REF long, 4 × M6 × 1.0 tapped mounting holes (motor drawing)
+- Wheel: 5 in (127 mm) × 25.4 mm, thermoplastic rubber (product page, wheel drawing)
+- Worm gear: output cannot easily be back-driven (product page)
+- Warranty: 3 months (product page)
+
+## Interfaces and compatibility
+- Per motor: two leads (Gray and Black on the drawing); photos show a white 2-pin plug (plug type [NOT STATED])
+- Components documented separately: Power Window Motor with Coupling (Left/Right) and 5 Inches Robot Wheel
+- Drivers suggested by Cytron: 10A shield (Arduino), MD30C (single channel), MDDS30 (dual channel, RC input) (product page); 30 A drivers recommended for full load (inferred from the motor currents)
+
+## Use cases
+- Drive base for a two-wheeled or combat robot that resists being pushed (product page)
+
+## Known limitations
+- Not for continuous running
+- High current per motor (rated under 15 A, stall under 28 A); 10 A drivers suit light loads only
+- No bracket, chassis, battery, castor or controller included
+- Warranty only 3 months
+
+## Positioning (kept apart from specs)
+- "The worm gear in the motor can prevent it from rotating from the external force … it is difficult for your opponent's robot to push your robot on the battlefield" (product page)
+
+## Price band
+RM275.00 (5 or more RM253.00, 20 or more RM220.00) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-motor-mount-and-5-inches-wheel-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-motor-mount-and-5-inches-wheel-kit
+
+# Product fact sheets
+
+## Product name
+Line Following Mobile Robot Bundle
+
+## Aliases
+KIT-RBT-LF, Line Following Mobile Robot Bundle, Line Following Mobile Robot Kit, Robo Base Mini Line Following Robot, Maker UNO line following robot kit
+
+## What it is
+A no-solder Arduino line-following robot kit: Maker UNO controller, Maker Drive motor driver, two IR Line Tracking Modules, two TT motors with wheels and a castor on a two-layer Robo Base Mini PCB chassis, powered by 4 x AA batteries. Cytron provides an assembly tutorial and a sample Arduino sketch.
+
+## Specs and functions
+- Product code: KIT-RBT-LF (product page)
+- Controller: Maker UNO; motor driver: Maker Drive (product page)
+- Chassis: 2 x Robo Base Mini, 109 mm x 88 mm (product page)
+- Sensors: 2 x IR Line Tracking Module (product page)
+- Wheel diameter 67 mm; castor height 34 mm (product page)
+- TT motors: 48:1 gear ratio; 0.65 m/s with 66 mm wheel at 7.2 VDC; 5-10 VDC recommended; under 65 dB; 120 mA each at 6 V (product page)
+- Power: 4 x AA batteries (included) in a 4 x AA holder, powering controller and motors (product page)
+- Packing list: 2x Robo Base Mini, 1x Maker UNO, 1x Maker Drive, 2x IR Line Tracking Module, 2x TT Motor with 15cm Wires and Wheel Set, 2x TT Motor Bracket, 1x N20 Steel Ball Universal Wheel (Castor), 1x 40-way male-to-female jumper wire, 1x 40-way male-to-male jumper wire, 4x 10mm PCB stand, 6x 20mm PCB stand, 26x M3x6mm bolt, 6x M3 nut, 1x PKCELL Heavy Duty AA Battery (4pcs), 1x 4xAA battery holder, 1x USB Micro B cable, 1x tiny Phillips screwdriver, 1x mini cross wrench socket (product page)
+- The tutorial lists 15 mm standoffs instead of 10 mm and adds a 170-hole mini breadboard (tutorial)
+- Wiring: Maker Drive M1A/M1B/M2A/M2B to Maker UNO pins 11/10/6/5; IR left DO to A1, right DO to A2, VCC 3.3V (tutorial)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Arduino IDE, board "Arduino Uno", Cytron Motor Drivers Library (tutorial)
+- Maker UNO runs from the Maker Drive 5 V output; motors and Maker Drive run from the AA pack (tutorial)
+- Cytron tutorial: Robo Base Mini Line Following Robot with Maker UNO and Maker Drive (Khye Yen Ang, 19 Sep 2025)
+- Similar kits: PikaBot; Obstacle Avoidance Mobile Robot Bundle (same chassis and boards)
+- Works on the Cytron Reconfigurable Line Following Track (product page cross-sell)
+
+## Use cases
+- Learn electronics, sensors, microcontrollers and Arduino coding by building a robot (product page)
+- Line following on a black line on a white surface (tutorial)
+- Line following mobile robot for school projects
+
+## Known limitations
+- Loose parts; assembly required (no soldering)
+- Only two IR sensors; the sample sketch also reads a third (centre) sensor on A3 that the kit does not include
+- Page packing list and tutorial disagree on standoff length and the breadboard
+- IR module voltage range and output polarity not stated
+- Maker UNO has no DC jack; it relies on the Maker Drive 5 V output (200 mA max)
+
+## Positioning (kept apart from specs)
+- "Everyone loves mobile robots" — a beginner Arduino kit to learn electronics, sensors, microcontrollers and coding at once (product page)
+
+## Price band
+RM120.75 special offer (normal RM141.75) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-line-following-mobile-robot-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-line-following-mobile-robot-kit
+
+# Product fact sheets
+
+## Product name
+Obstacle Avoidance Mobile Robot Bundle
+
+## Aliases
+KIT-RBT-OA, Obstacle Avoidance Mobile Robot Bundle, Obstacle Avoidance Mobile Robot Kit, Obstacle Avoiding Robot, Robo Base Mini Obstacle Avoidance Robot, Maker UNO obstacle avoidance robot kit
+
+## What it is
+A no-solder Arduino obstacle-avoiding robot kit: Maker UNO controller, Maker Drive motor driver, an SR04P ultrasonic sensor on a bracket, two TT motors with wheels and a castor on a two-layer Robo Base Mini PCB chassis, powered by 4 x AA batteries. Cytron provides an assembly tutorial and sample Arduino code.
+
+## Specs and functions
+- Product code: KIT-RBT-OA (product page)
+- Controller: Maker UNO; motor driver: Maker Drive (product page)
+- Chassis: 2 x Robo Base Mini, 109 mm x 88 mm (product page)
+- Sensor: 1 x SR04P Ultrasonic Ranging Module (3 V-5.5 V) with a Bracket for Ultrasonic HC-SR04 (product page)
+- Wheel diameter 67 mm; castor height 34 mm (product page)
+- TT motors: 48:1 gear ratio; 0.65 m/s with 66 mm wheel at 7.2 VDC; 5-10 VDC recommended; under 65 dB; 120 mA each at 6 V (product page)
+- Power: 4 x AA batteries (included) in a 4 x AA holder, powering controller and motors (product page)
+- Packing list: 2x Robo Base Mini, 1x Maker UNO, 1x Maker Drive, 1x SR04P Ultrasonic Ranging Module, 1x Bracket for Ultrasonic HC-SR04, 2x TT Motor with 15cm Wires and Wheel Set, 2x TT Motor Bracket, 1x W420 Steel Ball Universal Wheel (Castor), 1x 40-way male-to-female jumper wire, 4x 10mm PCB stand, 2x 30mm PCB stand, 22x M3x6mm bolt, 10x M3 nut, 1x PKCELL Heavy Duty AA Battery (4pcs), 1x 4xAA battery holder, 1x USB Micro B cable, 1x tiny Phillips screwdriver, 1x mini cross wrench socket (product page)
+- Wiring (2025 tutorial): Maker Drive M1A/M1B/M2A/M2B to Maker UNO pins 11/10/6/5; ultrasonic TRIG pin 3, ECHO pin 4, VCC 3.3V (tutorial)
+- 2025 sketch: stops, reverses 300 ms and turns right 500 ms when an obstacle is under 10 cm (tutorial)
+- Weight: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Arduino IDE, board "Arduino Uno", Cytron Motor Drivers Library, CH34X USB driver (product page, tutorial)
+- Maker UNO runs from the Maker Drive 5 V output; motors and Maker Drive run from the AA pack (tutorial)
+- The page's 2019 "Sample code" uses different pins (motors 3/9 and 10/11, TRIG 5) from the 2025 tutorial wiring
+- Cytron tutorials: Robo Base Mini Obstacle Avoidance Robot with Maker UNO and Maker Drive (Khye Yen Ang, 12 Sep 2025); Obstacle Avoiding Robot (suadanwar, 24 Jan 2019, legacy L298ND build)
+- Similar kits: PikaBot; Line Following Mobile Robot Bundle (same chassis and boards)
+
+## Use cases
+- Learn electronics, sensors, microcontrollers and Arduino coding by building a robot (product page)
+- Obstacle-avoiding robot that drives forward and turns away from objects closer than 10 cm (tutorial)
+- Base for adding IR line sensors or Bluetooth control (tutorial)
+
+## Known limitations
+- Loose parts; assembly required (no soldering)
+- Page sample code and 2025 tutorial wiring use different pins
+- Page packing list and tutorial disagree on standoff lengths
+- Page feature list still says "acrylic" base; the kit ships Robo Base Mini PCB plates
+- Maker UNO has no DC jack; it relies on the Maker Drive 5 V output (200 mA max)
+
+## Positioning (kept apart from specs)
+- "Everyone loves mobile robots" — a beginner Arduino kit to learn electronics, sensors, microcontrollers and coding at once (product page)
+
+## Price band
+RM114.45 special offer (normal RM131.25; 30 or more RM105.00) (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-obstacle-avoidance-mobile-robot-kit
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-obstacle-avoidance-mobile-robot-kit
+
+# Product fact sheets
+
+## Product name
+12V 37mm DC Geared Motor (SPG30 / SPG30E)
+
+## Aliases
+V-SPG30, SPG30, SPG30E, SPG30-GR30, SPG30-GR56, SPG30-GR131, SPG30-GR270, SPG30-GR506, SPG30E-GR30, SPG30E-GR56, SPG30E-GR131, SPG30E-GR270, SPG30E-GR506, 12V 37MM DC Geared Motor, 37mm spur gear motor, SPG30 with encoder
+
+## What it is
+A Cytron OEM 12 V brushed DC motor with a Ø37 mm spur gearbox and a 6 mm D-shaft, sold in five gear ratios (1:30 to 1:506), each with or without a 16 PPR Hall-sensor quadrature encoder (product page).
+
+## Specs and functions
+- Series code V-SPG30; variant codes SPG30-GRxx (no encoder) and SPG30E-GRxx (with encoder) (product page)
+- Rated voltage 12 V DC (datasheet)
+- No-load speed: 333 / 178 / 76 / 37 / 20 rpm ±10% for GR30 / GR56 / GR131 / GR270 / GR506 (datasheet)
+- Rated speed: 266 / 140 / 60 / 29 / 16 rpm at rated load 2.8 / 4 / 8.6 / 11 / 14 kg·cm (datasheet)
+- Max torque (stall prohibited): 14 / 20 / 43 / 56 / 56 kgf·cm (datasheet)
+- Currents, all ratios: no-load ≤160 mA, rated 1288 mA, stall 5800 mA (datasheet); the product page lists 120 mA / 400 mA / 1.2 A instead (conflict, datasheet wins)
+- Starting voltage 2.0 V, starting current 75 mA, shaft end play 0.05–0.5 mm (datasheet)
+- GR506 must not be stalled (product page)
+- Shaft: Ø6 mm D-shaft (flat 5.5 mm), 21 mm from the gearbox face; offset 7 mm from the gearbox centre (datasheet drawing)
+- Gearbox Ø37 mm, length 22 / 24 / 26.5 / 26.5 / 29 mm by ratio; motor Ø34.5 × 30.3 mm; encoder version 47 mm motor+encoder length (datasheet drawing, product page image)
+- Gearbox face: 6 × M3 threaded holes on a Ø31 mm circle (datasheet drawing)
+- Encoder: incremental Hall, 16 PPR, 3.3–5 V, output resolution 16 × gear ratio, 2.54 mm female header, wires not detachable (product page)
+- Weight: [NOT STATED]
+- Warranty: [NOT STATED] (field hidden on the product page)
+
+## Interfaces and compatibility
+- Encoder version wires: Red motor +, Black motor −, Green encoder GND, Blue encoder VCC (3.3–5 V), Yellow signal A, White signal B (product page wire chart)
+- Non-encoder version: two solder tabs on the motor rear (datasheet drawing)
+- Bracket: DC Geared Motor Bracket (SPG30/SPG50) HD-BK-SPG (product page)
+- Shaft hubs: Metal Key Hub 6mm CO-SPG; 6mm Key Hub for 60mm Mecanum Wheel CO-MEC-06
+- Driver: size for the 5.8 A stall current — MDD10A (suggested on the page), MD10C or MD10-POT; MDD3A only if stalls are avoided (inferred from datasheet currents)
+
+## Use cases
+- Drive wheels of small and medium mobile robots with a key hub and wheel (product page)
+- Speed or position feedback with the encoder version (product page)
+- Encoder-based product counting in a conveyor system (linked Cytron tutorial "Product Counting in Continuous Feed Systems")
+
+## Known limitations
+- The product page's current and torque table disagrees with the Cytron datasheets; use the datasheet values
+- GR506 must never be stalled; the datasheet marks maximum torque on all ratios as stall prohibited
+- Encoder wires are not detachable
+- SPG30E-GR30 was out of stock on 2026-10-21
+- Weight, warranty and the original motor maker are not stated
+
+## Positioning (kept apart from specs)
+- "Well-labeled RPM and torque" so you can pick the motor for your speed or torque need; available with or without encoder (product page)
+
+## Price band
+RM49.00 without encoder, RM76.00 with encoder (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-12v-37mm-dc-geared-motor
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+[NOT STATED]
+
+# Product fact sheets
+
+## Product name
+12V High Power Brushed DC Geared Motors (SPG30HP-30K 380RPM / SPG30HP-10K 1100RPM)
+
+## Aliases
+SPG30HP, SPG30HP-30K, SPG30HP-10K, 12V 380RPM 1.4kgfcm High Power Brushed DC Geared Motor, 12V 1100RPM 0.5kgfcm High Power Brushed DC Geared Motor, SPG30 high power motor
+
+## What it is
+The high-power range of Cytron's SPG30 gear motor: a 12 V brushed DC motor with a Ø37 mm spur gearbox and 6 mm D-shaft, sold as a 30:1 (380 RPM) or 10:1 (1100 RPM) version. It is faster and stronger than the standard SPG30 but draws more current (product page).
+
+## Specs and functions
+- Codes: SPG30HP-30K (30:1) and SPG30HP-10K (10:1) (product page)
+- Rated voltage 12 V (drawing, product page)
+- No load: 380 / 1100 RPM ±10%, ≤0.3 A (drawing)
+- Rated load: 300 / 865 RPM ±10%, ≤1 A, 1.4 / 0.5 kg·cm (137 / 49 mN·m) (drawing, product page)
+- Permitted max: 6.5 / 2.0 kg·cm, ≤3.7 A (drawing)
+- Product page: maximum current may exceed 5 A; use a driver rated for at least 5 A
+- Weight 160 g (product page)
+- Gearbox Ø37 mm, 21.5 mm (30K) or 19 mm (10K) long; motor can Ø32.8 × 22.7 mm (drawing)
+- Shaft Ø6 mm D-shaft (flat 5.4 mm), 21 mm from the boss face, offset 7 mm from the gearbox centre; page says 15.5 mm long (drawing, product page)
+- Gearbox face: 6 × M3 holes, depth ≤3.5 mm, on a Ø31 mm circle (drawing)
+- No encoder (product page)
+- Warranty 3 months from purchase (product page)
+
+## Interfaces and compatibility
+- Two solder tabs on the motor rear; no wires supplied (drawing, packing list)
+- Bracket: DC Geared Motor Bracket (SPG30/SPG50) HD-BK-SPG (product page)
+- Shaft hub: Metal Key Hub 6mm CO-SPG (product page)
+- Drivers: MDD10A, MD10C or MD10-POT recommended for headroom; MDD3A is used with two SPG30HP-30K in Cytron's tutorials (product page, tutorials)
+- Not suitable: Maker Drive (max 9.5 V, 1 A) and 3A Motor Driver Shield (1.2 A continuous) for loaded use (inferred from ratings)
+
+## Use cases
+- Two-wheel robot with MDD3A and Maker UNO (Cytron tutorial "Getting Started With MDD3A/MAKER DRIVE Using Arduino")
+- Raspberry Pi line-following robot with Maker pHAT and Maker Line (Cytron tutorial)
+- Turntable driven by MD10-POT without programming, using the 1100 RPM motor (Cytron tutorial)
+
+## Known limitations
+- Current can exceed 5 A; small drivers will overheat or shut down
+- Gearbox screw holes are only ≤3.5 mm deep; use short screws
+- No encoder option
+- Warranty only 3 months
+- Shaft length differs between the drawing (21 mm) and the page (15.5 mm)
+
+## Positioning (kept apart from specs)
+- "Higher speed and higher torque compared to its SPG30 sibling" (product page)
+
+## Price band
+RM55.00 each (5 or more RM52.25) (Cytron product pages, read 2026-10-21)
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Datasheet
+
+## Source link
+[NOT STATED]
+
+# Product fact sheets
+
+## Product name
+Power Window Motor with Coupling (Left / Right)
+
+## Aliases
+MO-PW-CL, MO-PW-CR, Power Window Motor with Coupling (Left), Power Window Motor with Coupling (Right), power window motor, PW motor, car window motor with coupling
+
+## What it is
+A 12 V automotive power-window motor (DC motor with worm gear) fitted with a Cytron custom coupling that replaces the original output joint, so wheels and other parts attach with 3 M5 screws. Sold as a Left and a Right version because the housing is not symmetrical (product page).
+
+## Specs and functions
+- Codes: MO-PW-CL (Left), MO-PW-CR (Right) (product page)
+- Voltage rating 12 V DC (product page)
+- Rated speed 60 RPM; rated torque 2.9 N·m (30 kgf·cm) (product page)
+- Rated current less than 15 A at 12 V (product page)
+- Stall torque 9.8 N·m (100 kg·cm); stall current less than 28 A at 12 V (product page)
+- Duty: tested 8 s up/down × 10,000 times; not meant for continuous driving without stopping (product page)
+- Weight 680 g (product page)
+- Size: 145.5 mm REF long, motor Ø39 mm REF, housing 62 mm REF high × 30.3 mm, gear housing Ø66 mm REF (dimension drawing)
+- Housing mounting: 4 × ISO M6 × 1.0 tapped holes (dimension drawing)
+- Leads: Gray and Black (dimension drawing)
+- Coupling: Ø40 mm flange, Ø24 mm spigot, 37 mm long, 3 × tapped M5 on a Ø31 mm circle at 120° (coupling drawing v1.1)
+- Packing list: 1 × motor with coupling, 3 × M5 screw (product page)
+- Encoder: none
+- Warranty 3 months from purchase (product page)
+
+## Interfaces and compatibility
+- Two motor leads (Gray, Black); polarity versus rotation [NOT STATED]
+- Coupling bolt pattern (3 × M5 on Ø31 mm) matches the 5 Inches Robot Wheel's 3 × Ø5 holes on Ø31 mm (inferred from both drawings)
+- Ready-made pair with wheels: Motor Mount & 5 Inches Wheel Bundle KIT-PW-5WL
+- Drivers: 30 A class — MD30C or MDDS30 (Cytron's recommendation on the bundle page), SmartDrive40, MDDS60; MDD20A for lighter use (inferred)
+
+## Use cases
+- Drive wheels of large or combat robots (product page, bundle page)
+- Attach a wheel, sprocket, pulley or disc through the 3-screw coupling (product page images)
+
+## Known limitations
+- Not for continuous running; designed for short window strokes
+- High current: rated under 15 A and stall under 28 A, so 10 A drivers are undersized for full load
+- Left and Right are different parts; a two-wheel robot needs one of each
+- No datasheet; no-load speed and current are not stated
+- Warranty only 3 months
+
+## Positioning (kept apart from specs)
+- "Everyone loves to build robots with power window motor due to its performance and competitive price"; the custom coupling removes the need to machine an adaptor (product page)
+
+## Price band
+RM82.00 each (5 or more RM75.44) (Cytron product pages, read 2026-10-21)
+
+## Product page
+[NOT STATED]
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-power-window-motor-with-coupling-left
 
 # Product fact sheets
 
@@ -12822,6 +13685,263 @@ https://my.cytron.io/p-3v-5v-0.2a-cooling-fan-for-rpi-with-screws
 # Product fact sheets
 
 ## Product name
+Dual Output Cable - USB A to 2.1mm DC Barrel & Micro USB
+
+## Aliases
+WR-USB-UB-DC, EDU:BIT USB cable, USB to DC barrel and micro USB Y-cable, USB power and data cable for EDU:BIT, Dual output USB cable
+
+## What it is
+A black 1-metre Y-cable from a USB-A plug to a micro USB plug (data and power) and a 2.1 mm DC barrel plug (power only), designed so one USB port programs a micro:bit and powers Cytron's EDU:BIT (product page).
+
+## Specs and functions
+- Product code: WR-USB-UB-DC (product page)
+- USB 2.0 Type-A to USB micro-B and 2.1 mm DC barrel (product page)
+- Data and power on the micro-B; power only on the barrel (product page)
+- Length: about 1 metre (product page)
+- Colour: black (product page)
+- Barrel polarity, outer diameter, wire gauge, current rating: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- EDU:BIT with a BBC micro:bit (product page)
+- Any USB-A host port as the source (product page)
+- Other boards: only if their barrel jack takes a 2.1 mm plug at 5 V; [NOT STATED] by Cytron
+
+## Use cases
+- Program the micro:bit and power EDU:BIT from one computer USB port (product page)
+
+## Known limitations
+- The barrel branch carries no data (product page)
+- Power is limited to what the USB port supplies; no current rating is given
+- Barrel polarity is not stated
+
+## Positioning (kept apart from specs)
+- Fewer cables for EDU:BIT lessons (product page)
+
+## Price band
+RM10.00; RM9.00 each for 10 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-dual-output-cable-usb-a-to-2p1-mm-dc-barrel-and-micro-usb
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-dual-output-cable-usb-a-to-2p1-mm-dc-barrel-and-micro-usb
+
+# Product fact sheets
+
+## Product name
+Grove to JST-SH (Qwiic) Cable - 20cm
+
+## Aliases
+WR-GRV-JST-SH, Grove to JST-SH cable, Grove to Qwiic cable, Grove to STEMMA QT cable, Maker Port conversion cable, Grove to Maker Port cable
+
+## What it is
+A 20 cm 4-wire Cytron cable with a JST-SH 1 mm 4-pin (STEMMA QT / Qwiic) plug on one end and a Grove 4-pin plug on the other, used to connect Grove I2C modules to Cytron Maker Ports such as the Maker Nano RP2040's (product page).
+
+## Specs and functions
+- Product code: WR-GRV-JST-SH (product page)
+- Length: 20 cm (product page)
+- Connectors: JST-SH 4-pin, 1 mm pitch, to Grove 4-pin (product page)
+- Wire colours: black GND, red V+, blue SDA, yellow SCL (product page)
+- Current rating 1.0 A at AWG #28; voltage rating 50 V (product page, JST datasheet)
+- JST-SH connector temperature range: -25 to +85 °C (JST datasheet)
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Cytron Maker Ports (JST-SH 4-way) on Maker Nano RP2040, Maker Pi Pico Mini, Maker Feather AIOT S3, MOTION 2350 Pro, Maker UNO RP2040, Robo Pico and CM4 Maker Board (product page and KB board files)
+- Grove I2C modules (3–5 V) and STEMMA QT / Qwiic modules (product page)
+- Ships in the box with Maker Nano RP2040 (2), Maker Pi Pico Mini (3), Maker Feather AIOT S3 (3) and MOTION 2350 Pro (2) (KB board files)
+
+## Use cases
+- Connect a Grove I2C sensor such as a DHT20 to a Maker Nano RP2040 Maker Port (product page)
+- Connect a STEMMA QT sensor to a Grove host (product page)
+
+## Known limitations
+- Works only with Grove I2C modules (product page)
+- Qwiic boards are 3.3 V only; set a Grove host to 3 V first (product page)
+- SDA is blue, not the white of standard Grove cables (product page)
+
+## Positioning (kept apart from specs)
+- "Chimera" cable bridging the Qwiic / STEMMA QT and Grove ecosystems (product page)
+
+## Price band
+RM4.00; RM3.60 each for 5 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-grove-to-jst-sh-qwiic-cable-20cm
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-grove-to-jst-sh-qwiic-cable-20cm
+
+# Product fact sheets
+
+## Product name
+STEMMA QT / Qwiic JST SH 4-pin Cable with Premium Female Sockets - 150mm Long
+
+## Aliases
+WR-SQ-150F, STEMMA QT to female jumper cable, Qwiic to female Dupont cable, JST-SH to female socket cable, Maker Port to female header cable
+
+## What it is
+A ~150 mm 4-wire Cytron cable with a JST-SH 1 mm 4-pin (STEMMA QT / Qwiic) plug on one end and four separate 0.1-inch Dupont female sockets on the other, for connecting a Qwiic module or Maker Port to male header pins (product page).
+
+## Specs and functions
+- Product code: WR-SQ-150F (product page)
+- Length: about 150 mm (product page)
+- Connectors: JST-SH 4-pin, 1 mm pitch, to 4 Dupont female sockets (product page title, packing list, photo)
+- Wire colours: red 3.3 VDC, black GND, blue SDA, yellow SCL (product page)
+- Current and voltage rating: [NOT STATED]
+- Warranty: 12 months (product page)
+- Availability: backorder only, 327 units estimated on 30 Oct 2026 (product page)
+
+## Interfaces and compatibility
+- Qwiic and STEMMA QT modules (product page)
+- Cytron Maker Ports (JST-SH 4-way); supplied with MOTION 2350 Pro (KB board file)
+- Male header pins such as a Raspberry Pi GPIO header (product page)
+
+## Use cases
+- Connect a Qwiic sensor to a Raspberry Pi or another board's 0.1-inch header (product page)
+- Break out a Maker Port to individual pins
+
+## Known limitations
+- Female ends do not plug straight into a breadboard
+- Qwiic power is 3.3 V (product page)
+- The description text mentions male headers, but this listing is the female version (product page)
+
+## Positioning (kept apart from specs)
+- Premium latching JST-SH with Dupont sockets (product page)
+
+## Price band
+RM5.00; RM4.50 each for 10 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-stemmaqt-qwiic-jst-sh-4-pin-cable-with-premium-female-sockets-150mm
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-stemmaqt-qwiic-jst-sh-4-pin-cable-with-premium-female-sockets-150mm
+
+# Product fact sheets
+
+## Product name
+Grove to SVG Cable - 200mm length
+
+## Aliases
+WR-GRVSVG-210, Grove to SVG cable, Grove to Octopus cable, SVG to Grove cable, Signal-Voltage-Ground to Grove cable
+
+## What it is
+A ~200 mm 3-wire Cytron cable with an SVG (Signal-Voltage-Ground) 3-pin socket on one end and a Grove plug on the other, so ElecFreaks Octopus modules plug into the Grove ports of EDU:BIT and REKA:BIT (product page).
+
+## Specs and functions
+- Product code: WR-GRVSVG-210 (product page)
+- Length: about 200 mm (product page)
+- Pin definition: S yellow signal, V red VCC, G black GND (product page)
+- Signal goes to the Grove port's first GPIO, for example P0 on a P0/P1 port (product page)
+- Only three wires; the Grove port's second signal pin is unused (product page photo)
+- Warranty: [NOT STATED] in the page header
+
+## Interfaces and compatibility
+- Grove ports on EDU:BIT and REKA:BIT (product page)
+- ElecFreaks Octopus SVG modules, for example the Octopus Digital Push Button Brick (product page)
+
+## Use cases
+- Use Octopus sensor and button modules with a REKA:BIT or EDU:BIT (product page)
+
+## Known limitations
+- Program the yellow-wire pin (P0, not P1, on the P0/P1 port) (product page)
+- One signal wire only, so I2C modules cannot use it
+- Module not included (product page)
+
+## Positioning (kept apart from specs)
+- "Chimera" cable bridging Octopus modules and Grove boards (product page)
+
+## Price band
+RM4.00; RM3.60 each for 20 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-grove-to-svg-cable-200mm-length
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-grove-to-svg-cable-200mm-length
+
+# Product fact sheets
+
+## Product name
+Pin Header Sticker for Maker Uno
+
+## Aliases
+MAKER-UNO-STICKER, Maker UNO pin label sticker, Maker UNO GPIO labeling sticker, Pin Label Sticker, UNO header label sticker
+
+## What it is
+A 35 × 65 mm Cytron sticker sheet of colour-coded pin labels that peel off and stick onto the female pin headers of a Maker UNO or another UNO-layout board (product page, layout drawing).
+
+## Specs and functions
+- Product code: MAKER-UNO-STICKER (product page)
+- Sheet: 35 mm × 65 mm with four strips (layout drawing)
+- Power strip 8.3 × 21 mm: IOREF, RESET, 3.3V, 5V, GND, GND plus two blanks (layout drawing)
+- Analog strip 8.3 × 15.6 mm: A0 to A5 (layout drawing)
+- Upper digital strip 8.3 × 26 mm: SCL, SDA, AREF, GND, 13 to 8 (layout drawing)
+- Lower digital strip 8.3 × 21 mm: 7 to 2, 1 TX, 0 RX (layout drawing)
+- PWM pins 3, 5, 6, 9, 10 and 11 are marked with "~" (layout drawing)
+- Colour coded: red power, black GND, green analog, blue digital, pink serial, yellow I2C/AREF/IOREF/RESET (layout drawing)
+- Material: [NOT STATED]
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Maker UNO, which already ships with one set (product page, Maker UNO page)
+- Other Arduino UNO-layout boards (product page); the VIN position is left blank
+
+## Use cases
+- Label header pins to avoid wrong connections in classes and projects (product page)
+- Replace lost or worn labels on Maker UNO boards
+
+## Known limitations
+- No VIN label (Maker UNO has no Vin pin)
+- Material and pack quantity not stated; a reviewer reports ink-printed paper that can fade
+
+## Positioning (kept apart from specs)
+- Saves time and prevents wrong connections (product page)
+
+## Price band
+RM1.80; RM1.62 each for 10 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-pin-header-sticker-for-maker-uno
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-pin-header-sticker-for-maker-uno
+
+# Product fact sheets
+
+## Product name
 NVMe 2242 M-Key MakerDisk SSD (Preloaded with RPi OS)
 
 ## Aliases
@@ -13102,6 +14222,278 @@ Website
 
 ## Source link
 https://my.cytron.io/p-120gb-2p5-inch-makerdisk-sata-3-ssd-with-raspberry-pi-os
+
+# Product fact sheets
+
+## Product name
+Raspberry Pi Approved MakerDisk microSD Card with RPi OS
+
+## Aliases
+V-MMR-USD-MD, MMR-USD-MD-128-A1, MMR-USD-MD-64-A1, MMR-USD-MD-64, MMR-USD-MD-32-A1, MakerDisk microSD, MakerDisk microSD with Raspberry Pi OS, MakerDisk A1, MakerDisk A2, Raspberry Pi Approved MakerDisk
+
+## What it is
+A Cytron-brand (MakerDisk) microSD card sold with Raspberry Pi OS 64-bit (Bookworm) already written to it, so it boots a Raspberry Pi out of the box (product page). It comes in 32GB, 64GB and 128GB A1 versions and a 64GB A2 version, and Raspberry Pi approval certificates from 2022 and 2023 are linked from the page (certificate).
+
+## Specs and functions
+- Codes and prices: 128GB A1 MMR-USD-MD-128-A1 RM145.00; 64GB A1 MMR-USD-MD-64-A1 RM89.00; 64GB A2 MMR-USD-MD-64 RM109.00; 32GB A1 MMR-USD-MD-32-A1 RM54.00 (product page)
+- Preloaded OS: Raspberry Pi OS 64-bit, Bookworm, on units from June 2024 onwards (product page)
+- 128GB A1: sequential write above 50MB/s, random write above 700 IOPS, random read above 2000 IOPS, Class 10, A1, U3, V30 (product page)
+- 64GB A1: above 41MB/s, above 600 IOPS write, above 2300 IOPS read, Class 10, A1, U3, V30 (product page)
+- 64GB A2: above 44MB/s, above 2000 IOPS write, above 4000 IOPS read, Class 10, A2, U3, V30 (product page)
+- 32GB A1: above 32MB/s, above 800 IOPS write, above 3000 IOPS read, Class 10, A1, U1, V10 (product page)
+- Raspberry Pi 5 Diagnostics, 1 Jul 2026: 64GB A2 44879 KB/s, 2003 IOPS write, 3973 IOPS read; 64GB A1 41524 KB/s, 661 IOPS write, 2395 IOPS read (product page images)
+- Supports SDR104 bus mode (product page)
+- Usable space in Raspberry Pi OS: about 114.8GB, 56.9GB and 28.2GB for 128GB, 64GB and 32GB (product page)
+- Raspberry Pi approval: tested 29 Apr 2022 and 29 Jun 2023 on a Raspberry Pi 4 Model B rig; the 2023 certificate is valid to 1 Jul 2024 (certificate)
+- Warranty: 12 months (product page)
+- Operating temperature, endurance, dimensions: [NOT STATED]
+
+## Interfaces and compatibility
+- Boots out of the box: Raspberry Pi 5, Pi 500, Pi 400, Pi 4 Model B (1/2/4/8GB), Pi 3 Model B+, 3 Model B, 3 Model A+, Pi Zero 2 W (product page)
+- Needs re-flashing with 32-bit Raspberry Pi OS: Pi Zero, Zero W, Zero WH (product page)
+- Re-flash with Raspberry Pi Imager through a USB microSD reader, such as the USB2.0 Cytron microSD Card Reader/Writer (product page)
+
+## Use cases
+- Ready-to-boot system card for a Raspberry Pi 5 or Pi 4 (product page)
+- A2 version for faster app loading and multitasking on Pi 5 and Pi 4 (product page)
+- A1 version for mainstream projects, secondary storage and retro gaming (product page)
+
+## Known limitations
+- Do not format it if it will boot a Raspberry Pi (product page)
+- The 64-bit image does not run on Pi Zero, Zero W or Zero WH without re-flashing (product page)
+- Only the 64GB comes in A2 (product page)
+- The newest linked approval certificate expired on 1 Jul 2024 (certificate)
+- The A2 measured random read (3973 IOPS) is just under the table's "above 4000 IOPS" (product page images)
+
+## Positioning (kept apart from specs)
+- "A microSD card from Makers to Makers!" tested and approved by Raspberry Pi, in an A2 high-performance tier and an A1 value tier (product page)
+
+## Price band
+RM54.00 to RM145.00 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-raspberry-pi-approved-makerdisk-microsd-with-rpi-os
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-raspberry-pi-approved-makerdisk-microsd-with-rpi-os
+
+# Product fact sheets
+
+## Product name
+MakerDisk 32GB Preloaded Offline MakeCode & Raspberry Pi OS
+
+## Aliases
+MMR-USD-32-MC, MakerDisk MakeCode Offline, MakerDisk 32GB MakeCode, Offline MakeCode microSD, MakerDisk Class 10 A1 microSD with offline MakeCode
+
+## What it is
+A 32GB Cytron-brand MakerDisk microSD card with Raspberry Pi OS and an offline micro:bit MakeCode editor preinstalled, so a Raspberry Pi 4 can program micro:bit boards without internet (product page).
+
+## Specs and functions
+- Product code: MMR-USD-32-MC (product page)
+- Capacity: 32GB (product page)
+- Preloaded: Raspberry Pi OS (release [NOT STATED]) plus offline MakeCode editor and 18 extension .hex files (product page)
+- Speed class claimed: Class 10, A1, U3, V30 (product page); the card photo shows micro SD HC, UHS-I, Class 10, A1 (product page image)
+- Performance test on the page: write 21.8 MB/s; the "read 1.1 GB/s" figure is not a card speed (copied from a cached dd test)
+- MakeCode app starts a local web server on port 1234 for other browsers on the LAN (user instruction)
+- Warranty: 12 months (product page)
+
+## Interfaces and compatibility
+- Board: Raspberry Pi 4 Model B with the latest bootloader firmware (product page)
+- Programs any micro:bit board (product page)
+- Extensions included for Cytron EDU:BIT, REKA:BIT, REKA:BIT RBT Project Kit, MOTION:BIT and ZOOM:BIT, plus third-party kits (product page)
+- Re-install files: armhf .deb for Raspberry Pi and .exe for Windows, April 2023 builds (product page)
+
+## Use cases
+- Classrooms programming micro:bit from a Raspberry Pi without internet (product page)
+- Serving MakeCode to other computers on a LAN from the Pi (user instruction)
+
+## Known limitations
+- Do not format the card if it will boot a Raspberry Pi (product page)
+- Only Raspberry Pi 4 Model B is named (product page)
+- Extensions must be imported by hand from the Downloads folder (product page)
+- One-click WebUSB upload needs an external Chrome-based browser; the built-in app uploads by drag-and-drop (user instruction)
+- Only the 32-bit (armhf) Raspberry Pi installer is linked (product page)
+
+## Positioning (kept apart from specs)
+- Plug-and-play offline MakeCode for micro:bit lessons on Raspberry Pi (product page)
+
+## Price band
+RM54.00 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-makerdisk-class-10-a1-microsd-card-preloaded-offline-makecode-with-raspberry-pi-os
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-makerdisk-class-10-a1-microsd-card-preloaded-offline-makecode-with-raspberry-pi-os
+
+# Product fact sheets
+
+## Product name
+MakerDisk 32GB microSD with Debian 12 OS for VisionFive 2
+
+## Aliases
+MMR-USD-32-VF2, MakerDisk VisionFive 2, MakerDisk Debian 12 microSD, VisionFive 2 microSD card
+
+## What it is
+A 32GB Cytron-brand MakerDisk microSD card preloaded with Debian 12 for the StarFive VisionFive 2 single-board computer, configured so the board boots to a ready desktop without setup (product page).
+
+## Specs and functions
+- Product code: MMR-USD-32-VF2 (product page)
+- Capacity: 32GB, about 29GB usable in Debian 12 (product page)
+- Preloaded OS: Debian 12 for StarFive VisionFive 2; image build [NOT STATED] (product page)
+- Preinstalled software: LibreOffice, Chromium, Firefox, FFMPEG, VLC, COGL, OpenCV, NodeJS (product page)
+- Speed class claimed: Class 10, A1, U3, V30 (product page)
+- Write speed: 21.8 MB/s by a 1 GiB dd test (product page image)
+- The "read 1.1 GB/s" figure is a cached read of a file just written, not a card speed
+- Default login: stated on the product page (not copied)
+- Warranty: [NOT STATED] in the page header
+
+## Interfaces and compatibility
+- Boots StarFive VisionFive 2 boards (4GB or 8GB) out of the box (product page)
+- Not a Raspberry Pi image
+- Re-flash with StarFive's guide and a USB microSD reader (product page)
+
+## Use cases
+- Ready-to-use Debian desktop on a VisionFive 2 for office, browsing, media and OpenCV/NodeJS projects (product page)
+
+## Known limitations
+- Do not format the card (product page)
+- Always shut down from the desktop; pulling power can corrupt the image (product page)
+- Only the write speed is a meaningful card figure on the page
+
+## Positioning (kept apart from specs)
+- No-setup Debian 12 card for VisionFive 2, unlike Raspberry Pi OS or JetPack first-boot setup (product page)
+
+## Price band
+RM54.00 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-32gb-with-debian-12-os-for-visionfive-2
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-32gb-with-debian-12-os-for-visionfive-2
+
+# Product fact sheets
+
+## Product name
+MakerDisk microSD Card 64GB with RDK X5 OS
+
+## Aliases
+MMR-USD-64-RDK, MakerDisk RDK X5, MakerDisk 64GB RDK X5 OS, RDK X5 microSD card
+
+## What it is
+A 64GB Cytron-brand MakerDisk A2 microSD card preloaded with the official RDK X5 OS image, sold only for the RDK X5 AI Development Board (product page).
+
+## Specs and functions
+- Product code: MMR-USD-64-RDK (product page)
+- Capacity: 64GB, 56.9GB actual (product page)
+- Preloaded OS: RDK X5 OS, version [NOT STATED] (product page)
+- Sequential write above 44MB/s; random write above 2000 IOPS; random read above 4000 IOPS (product page)
+- Class 10, A2, U3, V30 (product page)
+- Warranty: 12 months (product page)
+- Operating temperature, endurance: [NOT STATED]
+
+## Interfaces and compatibility
+- RDK X5 AI Development Board only (product page)
+- Does not boot a Raspberry Pi
+- A USB microSD reader is needed to re-flash (not offered on the page)
+
+## Use cases
+- Ready-to-boot OS card for RDK X5 machine-vision, AI inference, robotics and IoT development (product page)
+
+## Known limitations
+- Only compatible with the RDK X5 (product page)
+- No resources, OS version or setup notes on the page (product page)
+- "Shockproof, waterproof, X-ray proof" and "industrial-grade" are claims without a stated rating (product page)
+
+## Positioning (kept apart from specs)
+- Plug-and-play storage tailored for the RDK X5 AI Dev Board (product page)
+
+## Price band
+RM109.00 (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
+
+# Product fact sheets
+
+## Product name
+USB2.0 Cytron microSD Card Reader/Writer Adapter
+
+## Aliases
+CA-USB-USD-CT, Cytron microSD card reader, MakerDisk card reader, USB microSD card reader/writer, USB2.0 microSD reader
+
+## What it is
+A small Cytron USB 2.0 Type-A stick that reads and writes microSD cards and shows up as a standard mass-storage device without drivers; since April 2023 it is purple and printed "MAKERDISK" (product page).
+
+## Specs and functions
+- Product code: CA-USB-USD-CT (product page)
+- Interface: USB 2.0, Type-A plug (product page)
+- Cards: microSD up to 128GB (product page)
+- Max read 16 MB/s, max write 6 MB/s (product page)
+- No driver needed; Windows 7/8/10, macOS, Linux (product page)
+- Clear plastic cap over the USB plug; loop for a cord (product page and photos)
+- No microSD card included (product page)
+- Dimensions, chipset: [NOT STATED]
+- Warranty: [NOT STATED] in the page header
+
+## Interfaces and compatibility
+- Any computer with a USB-A port, including a Raspberry Pi (product page photo)
+- MakerDisk microSD cards for Raspberry Pi, VisionFive 2 and RDK X5 (product page)
+
+## Use cases
+- Re-flash a MakerDisk microSD card with Raspberry Pi Imager (MakerDisk card page)
+- Read data-logger microSD cards on a PC (product page)
+
+## Known limitations
+- USB 2.0 speed only: 16 MB/s read, 6 MB/s write (product page)
+- Up to 128GB cards only (product page)
+- The description says "SDHC" for 128GB, which is an SDXC size
+
+## Positioning (kept apart from specs)
+- Cute, compact, low-cost reader that pairs with MakerDisk cards (product page)
+
+## Price band
+RM4.00; RM3.80 each for 5 or more (Cytron product page, read 2026-10-21)
+
+## Product page
+https://my.cytron.io/cytron-oem/p-usb2p0-cytron-microsd-card-reader-writer
+
+## Datasheet
+[NOT STATED]
+
+## Source type
+Website
+
+## Source link
+https://my.cytron.io/cytron-oem/p-usb2p0-cytron-microsd-card-reader-writer
 
 # Product fact sheets
 

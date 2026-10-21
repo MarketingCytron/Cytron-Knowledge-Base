@@ -188,8 +188,12 @@ micro:bit kit notes for every agent:
 | Ikedo Mini Sumo Robot Pro Bundle | [`ikedo-mini-sumo-pro.md`](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Pro: 800 rpm 3.1 kg·cm, steel shield, razor blade, 350 g | Product page | **Medium** |
 | 1KG Sumo Robot Bundles (RC) | [`sumo-1kg-rc-bundle.md`](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | MDDRC10 RC sumo, no code, 580 rpm 3.5 kgf·cm, 856 g | Product page (user-guide tutorials blocked) | **Medium** |
 | PCB Plate for Sumo Robot | [`pcb-sumo-plate.md`](pcb-sumo-plate.md) | `V-PCB-SUMO-PLATE` | Training blade substitute, 15 cm (1 kg) / 10 cm (500 g) | Product page | **Medium-high** |
+| High Grade Silicon Wheels for Sumo Robot (42×30 / 32×22 mm) | [`sumo-silicone-wheels.md`](sumo-silicone-wheels.md) | `V-WL-SL-4230` / `V-WL-SL-3222` | Silicone tyre on aluminium rim for 1 kg / 500 g sumo robots | Cytron product pages + rim drawing + STL | **Medium** |
+| 500g Sumo Robot Map | [`sumo-robot-map-500g.md`](sumo-robot-map-500g.md) | `PM-MAP-SUMO` | UV-vinyl 500 g sumo practice ring, 77 cm | Cytron product page | **Medium-low** |
+| Metal Base for Sumo Robot | [`sumo-metal-base.md`](sumo-metal-base.md) | `HD-BSC-MSUMO-MB` | 96 g metal ballast plate with M3 holes for sumo/soccer robots | Cytron product page | **Medium-low** |
 
 - **1KG RC bundle has no microcontroller** — the page's "Microcontroller: MDDRC10" is a motor driver; no sensors, no autonomous mode. **No warranty** on all three robot bundles. Kit pages say opponent range "50cm adjustable" — the Maker Object datasheet says 40–140 cm (white) / 15–60 cm (black).
+- **Sumo parts (added 21 Oct 2026 from the Cytron OEM page):** silicone wheels are sold **one per unit**; 42×30 mm (4 mm bore, 2× M4 set screws, 1 kg class, fits the GM25 motors) vs 32×22 mm (3 mm shaft, 500 g class, fits SPG10 micro gearmotors); M2 Allen key sold separately. The 500g Sumo Robot Map is a **practice** mat (77 cm white / 72 cm black, UV vinyl) — not for competition. The Metal Base (96 g, 83×50×3 mm, M3) is the "2x metal base" in the 1KG RC bundle; no screws included.
 
 ### Sensors
 
@@ -226,9 +230,34 @@ Sensor notes for every agent:
 | Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images | **Medium-high** |
 | Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-high** |
 | Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page | **Medium-high** |
+| DC Geared Motor Bracket (SPG30/SPG50) | [`motor-bracket-spg30-spg50.md`](motor-bracket-spg30-spg50.md) | `HD-BK-SPG` | 1.5 mm steel L-bracket for SPG30/SPG30E/SPG50 | Cytron drawing + product page | **Medium-high** |
+| Planetary Motor Bracket (IG42E/IG45) | [`motor-bracket-ig42e-ig45.md`](motor-bracket-ig42e-ig45.md) | `HD-BK-IG4X` | Steel L-bracket for IG42E/IG45 motors, 26.5 mm bore | Cytron drawing + product page | **Medium-high** |
+| Planetary Geared Motor Bracket (IG32E) | [`motor-bracket-ig32e.md`](motor-bracket-ig32e.md) | `HD-BK-IG3X` | Steel L-bracket for IG32E motors, 21 mm bore | Product page only | **Medium-low** |
+| 5 Inches Robot Wheel (no hub / 8 mm / 10 mm hub) | [`robot-wheel-5in.md`](robot-wheel-5in.md) | `WL-RBT-5` / `WL-RBT-508` / `WL-RBT-510` | 127 mm robot wheel, alone or with 8/10 mm key hub | Cytron drawing + product pages | **Medium-high** |
+| Metal Key Hub (6/8/10 mm) | [`metal-key-hub.md`](metal-key-hub.md) | `CO-SPG` / `CO-MTL-08` / `CO-MTL-10` | Shaft-to-flange hub for 6/8/10 mm motor shafts | Cytron drawings + product pages | **Medium-high** |
+| 6mm Key Hub for 60mm Mecanum Wheel | [`mecanum-key-hub-6mm.md`](mecanum-key-hub-6mm.md) | `CO-MEC-06` | Aluminium 6 mm hub for the 60 mm mecanum wheel | Cytron drawing + product page | **Medium** |
+| Motor Mount & 5 Inches Wheel Bundle | [`motor-mount-5in-wheel-bundle.md`](motor-mount-5in-wheel-bundle.md) | `KIT-PW-5WL` | Left + Right power-window motors with 5-inch wheels mounted | Product page + motor/wheel drawings | **Medium-high** |
+| Line Following Mobile Robot Bundle | [`line-following-mobile-robot-bundle.md`](line-following-mobile-robot-bundle.md) | `KIT-RBT-LF` | Maker UNO line-following robot kit on Robo Base Mini | Cytron tutorial (2025) + product page | **Medium** |
+| Obstacle Avoidance Mobile Robot Bundle | [`obstacle-avoidance-mobile-robot-bundle.md`](obstacle-avoidance-mobile-robot-bundle.md) | `KIT-RBT-OA` | Maker UNO ultrasonic obstacle-avoiding robot kit on Robo Base Mini | Cytron tutorial (2025) + product page | **Medium** |
 
 - **STEM base includes no electronics, battery or cable ties**; fit the brackets to the motors first, then screw motor + bracket to the lower plate; all fixings use M2.2 × 6 mm screws (installation guide, read 21 Oct 2026); motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
 - **Robo Base series:** no kit includes a controller, battery, sensors or servo; 2WD option is named "Rubber Wheels" but lists "plastic wheels". **Robo Grip Mini:** max 3 servos ("1-axis" = 2 servos, "2-axis" = 3); "Gripper only" has no servo or Robo Bracket; snap and file the parts before assembly. In STRIKER:BIT it is a shooter.
+- **Motor brackets, hubs and wheels (added 21 Oct 2026 from the Cytron OEM page):** the 5-inch wheel, the 8/10 mm Metal Key Hubs and the power-window motor coupling share **3× M5 on a Ø31 mm circle**; the 6 mm Metal Key Hub is different (4× M3 on Ø20 mm, Ø25 mm flange). SPG bracket = M3, IG42E/IG45 bracket = M4 (26.5 mm bore), IG32E bracket = 21 mm bore (no drawing). The 10 mm hub page's packing list says "8mm" (typo); the mecanum hub drawing shows an M4 set screw but the pack lists M3. Motor Mount & 5 Inches Wheel Bundle needs a 30 A-class driver (MD30C / MDDS30) — not the page's "10A shield".
+- **Line Following / Obstacle Avoidance bundles:** follow the 2025 tutorials (Maker Drive on pins 11/10 and 6/5). The line-following sample sketch reads a third sensor on A3 that the kit doesn't include; the obstacle page's 2019 "Sample code" uses different pins and an L298 driver. Standoff lengths on the pages differ from the tutorials; the obstacle kit is Robo Base Mini PCB, not acrylic.
+
+### Motors (Cytron OEM)
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| 12V 37mm DC Geared Motor (SPG30/SPG30E) | [`dc-geared-motor-37mm-12v.md`](dc-geared-motor-37mm-12v.md) | `V-SPG30` | 12 V 37 mm spur gearmotor, 5 ratios, optional 16 PPR encoder | Cytron Motor Specification PDFs + product page | **Medium** |
+| 12V High Power DC Geared Motors (SPG30HP) | [`high-power-dc-geared-motor-12v.md`](high-power-dc-geared-motor-12v.md) | `SPG30HP-30K` / `SPG30HP-10K` | 12 V 37 mm high-power gearmotor, 30:1 or 10:1 | Outline drawings + product pages | **Medium-high** |
+| Power Window Motor with Coupling (Left/Right) | [`power-window-motor.md`](power-window-motor.md) | `MO-PW-CL` / `MO-PW-CR` | 12 V worm-gear power-window motor with Cytron 3×M5 coupling | Product pages + motor and coupling drawings | **Medium-high** |
+
+These products are listed on Cytron's OEM page (https://my.cytron.io/cytron-oem, read 21 Oct 2026; 32 listings filed as 25 KB files — variants share one file). No page names the original motor maker.
+
+- **SPG30 / SPG30E:** the product page's current and torque table is far below Cytron's Motor Specification PDFs (e.g. 400 mA / 1.2 A vs 1288 mA / 5.8 A) — size drivers from the datasheet: MDD10A or MD10C; MDD3A only if the motor is never stalled. Encoder 16 PPR Hall, 3.3–5 V; wires Red/Black motor, Green GND, Blue VCC, Yellow A, White B.
+- **SPG30HP:** ≤1 A rated, ≤3.7 A permitted max (drawing) vs page "may exceed 5 A"; gearbox M3 holes are only ≤3.5 mm deep — long screws hit the gears.
+- **Power window motor:** 12 V 60 RPM, rated <15 A, stall <28 A, **intermittent duty only** — use a 30 A-class driver (MD30C / MDDS30); the page's 10 A suggestion (MDD10A) is below the rated current.
 
 ### Cytron motor drivers
 
@@ -298,6 +327,20 @@ Raspberry Pi board notes for every agent:
 
 - **PSU notes:** the 27W unit's 5 V profile is 5 A (5.1 V typ.); the 17.5W unit has no PD and was designed for Pi 4 B (Pi 5 appears only on the page list). **18650:** max discharge 1C ≈ 2.2 A per Cytron (vendor says 1.5C); cannot ship to Sabah/Sarawak/overseas; never treat it as an AA.
 
+### Cables and small accessories
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| Dual Output Cable - USB A to 2.1mm DC Barrel & Micro USB | [`dual-output-cable-usb-dc.md`](dual-output-cable-usb-dc.md) | `WR-USB-UB-DC` | 1 m Y-cable: micro USB data+power and 2.1mm barrel power, for EDU:BIT | Cytron page + photos | **Medium** |
+| Grove to JST-SH (Qwiic) Cable - 20cm | [`grove-to-jst-sh-cable.md`](grove-to-jst-sh-cable.md) | `WR-GRV-JST-SH` | Maker Port (JST-SH/Qwiic) to Grove I2C cable | Cytron page + JST SH datasheet | **Medium-high** |
+| STEMMA QT / Qwiic JST SH 4-pin Cable with Premium Female Sockets - 150mm | [`stemma-qt-jst-sh-female-cable.md`](stemma-qt-jst-sh-female-cable.md) | `WR-SQ-150F` | Qwiic/Maker Port to female header sockets | Cytron page + photo | **Medium** |
+| Grove to SVG Cable - 200mm length | [`grove-to-svg-cable.md`](grove-to-svg-cable.md) | `WR-GRVSVG-210` | Grove to SVG 3-wire cable for Octopus modules on REKA:BIT/EDU:BIT | Cytron page + photos | **Medium** |
+| Pin Header Sticker for Maker Uno | [`maker-uno-pin-header-sticker.md`](maker-uno-pin-header-sticker.md) | `MAKER-UNO-STICKER` | Colour-coded header label sticker sheet for Maker UNO | Cytron page + layout drawing | **Medium-high** |
+
+These products are listed on Cytron's OEM page (https://my.cytron.io/cytron-oem, read 21 Oct 2026; 32 listings filed as 25 KB files — variants share one file).
+
+- **Grove to JST-SH:** I2C only (black GND, red V+, blue SDA, yellow SCL). **STEMMA QT female cable:** JST-SH to 4 female Dupont sockets (red 3.3V, black GND, blue SDA, yellow SCL) — the page's "male headers" sentence is wrong; backorder only on 21 Oct 2026. **Grove to SVG:** 3 wires S/V/G; signal goes to the port's first GPIO (P0 on REKA:BIT P0/P1). **Dual Output Cable:** barrel polarity, size and current not stated — don't quote them. **Maker UNO sticker:** no VIN label.
+
 ### Storage (MakerDisk)
 
 | Product | File | Code | What it is | Primary source | Confidence |
@@ -306,6 +349,13 @@ Raspberry Pi board notes for every agent:
 | MakerDisk NVMe 2280 (RPi OS) | [`makerdisk-nvme-2280.md`](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | M.2 2280 NVMe 128 GB–1 TB, RPi OS preloaded | Product page | **Medium** |
 | MakerDisk NVMe 2280 (JetPack) | [`makerdisk-nvme-2280-jetpack.md`](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | 256/512 GB, JetPack 6.2 for Jetson Orin Nano Super 8GB only | Product page | **Medium** |
 | MakerDisk 2.5" SATA 120 GB | [`makerdisk-sata-120gb.md`](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | SATA III SSD, RPi OS preloaded, USB-SATA boot | Product page | **Medium** |
+| Raspberry Pi Approved MakerDisk microSD Card with RPi OS | [`makerdisk-microsd-rpi-os.md`](makerdisk-microsd-rpi-os.md) | `V-MMR-USD-MD` | MakerDisk microSD preloaded with Raspberry Pi OS (32/64/128GB, A1/A2) | Cytron page + RPi approval certificates 2022/2023 | **Medium** |
+| MakerDisk 32GB Preloaded Offline MakeCode & Raspberry Pi OS | [`makerdisk-microsd-makecode-offline.md`](makerdisk-microsd-makecode-offline.md) | `MMR-USD-32-MC` | 32GB card, RPi OS + offline micro:bit MakeCode | Cytron page + TomatoCube user instruction | **Medium** |
+| MakerDisk 32GB microSD with Debian 12 OS for VisionFive 2 | [`makerdisk-microsd-visionfive2.md`](makerdisk-microsd-visionfive2.md) | `MMR-USD-32-VF2` | 32GB card preloaded with Debian 12 for StarFive VisionFive 2 | Cytron page + images | **Medium** |
+| MakerDisk microSD Card 64GB with RDK X5 OS | [`makerdisk-microsd-rdk-x5.md`](makerdisk-microsd-rdk-x5.md) | `MMR-USD-64-RDK` | 64GB A2 card preloaded with RDK X5 OS | Cytron page only | **Medium-low** |
+| USB2.0 Cytron microSD Card Reader/Writer Adapter | [`cytron-microsd-card-reader.md`](cytron-microsd-card-reader.md) | `CA-USB-USD-CT` | USB-A microSD reader/writer (MakerDisk-branded) | Cytron page + photos | **Medium** |
+
+- **MakerDisk microSD cards (added 21 Oct 2026 from the Cytron OEM page):** the latest Raspberry Pi approval certificate read (30 Jun 2023) is valid only to 1 Jul 2024. The "Read 1.1 GB/s" on the MakeCode and VisionFive 2 pages is a cached `dd` read, not a card speed — never quote it. 32GB cards are U1/V10 (sibling pages say U3/V30). Pi Zero/Zero W/WH need a 32-bit re-flash. The VisionFive 2 page prints a default login (not copied). The card reader is USB 2.0 (16/6 MB/s), "128 GB SDHC" on the page should be SDXC.
 
 ### IRIV industrial series
 
