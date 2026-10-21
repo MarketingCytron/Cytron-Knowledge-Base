@@ -21,7 +21,12 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - 1-axis kit (2 servos): same, but 1x Robo Bracket and 2x TS90A
 - Gripper only ("with Accessories"): PCB, hardware, tools and assembly guide; no servos, no bracket
 - 40mm M3 standoff: "SS" (product page) vs "brass" (Installation Guide tutorial)
+- PCB parts numbered 1–6: 1 servo-1 plate (optional in the 1-servo build), 2 arm side plates (x2), 3 link arm, 4 jaw layer (x2), 5 geared jaws (x2), 6 servo-3 horn plate (Installation Guide)
 - Assembly: snap and break every part off the PCB, then file the snapped parts
+- 1-servo order: servo under Part 1 or Robo Base (2x M2 bolt 6mm + nut, gear away from the two front holes) → both Part 5 jaws with 12mm M3 bolts, washers and lock nuts → Part 3 on one Part 5 (3mm washers) → Part 4 to Part 5 with nylon standoffs (10 or 20mm) → self-tapping screw in the second-outermost horn hole → horn onto servo through Part 3, tighten centre screw (Installation Guide)
+- 2-servo order: build the 1-servo gripper on Part 1 → servo 2 into Robo Bracket (2x M2 bolt 6mm) → riveted Part 2 with 1mm washer on the servo axis → horn on the second Part 2 (2 self-tapping screws) → Part 1 ears into Part 2 slots, 40mm M3 standoff → lock with 2x M3 bolt + nut → fix to platform with 2x M3 bolt 6mm (Installation Guide)
+- 3-servo order: servo 3 in a Robo Base slot (or on a Robo Bracket) → horn and Part 6 on a Robo Bracket with 1mm washers (1 layer for a black horn, 2 for a white horn) → press on and tighten centre screw → repeat the 2-servo steps (Installation Guide)
+- Servo horn angle: centre the servo (set its electronic angle) before fitting the horn; no angle value given (Installation Guide)
 - Warranty: [NOT STATED] (field blank on the product page)
 
 ## Interfaces and compatibility
@@ -49,6 +54,9 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Only SG90-size micro servos are stated to fit; FS90R is a continuous-rotation servo
 - No controller board, battery or chassis included
 - Parts must be snapped off the PCB and filed before assembly
+- The Robo Bracket may need slight filing if the servo holes do not line up (Installation Guide)
+- The 2-servo build needs Part 1 (the 1-servo gripper cannot sit straight on a Robo Base for it)
+- The aluminium micro servo bracket in the packing list is not used in any step of the online Installation Guide
 - PCB thickness and dimensions are not stated in text
 - Warranty is not stated on the product page
 
@@ -70,4 +78,4 @@ https://my.cytron.io/p-robo-grip-mini-kits
 Website
 
 ## Source link
-https://my.cytron.io/p-robo-grip-mini-kits
+https://my.cytron.io/tutorial/robo-grip-mini-installation-guide

@@ -22,7 +22,8 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Tool: 1 tiny Phillips screwdriver
 - Packing list: 2x Robot Building Base, 2x Motor Bracket (blue), 25x M2.2x6mm self-tapping screw, 3x M2.3x8mm self-tapping screw for Maker Line, 4x spacer, 2x TT motor with 15cm wires, 2x wheels, 1x steel ball castor, 1x tiny Phillips screwdriver
 - Dimensions: base plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high (product page image)
-- Assembly (installation guide, 8 steps): brackets on lower plate → TT motors with wires facing inward → 4 spacers → upper plate → steel ball castor underneath → wheels
+- Assembly (installation guide, 8 steps): blue brackets onto the TT motors → motor-and-bracket screwed to the lower plate (4 M2.2 x 6 mm screws on the bracket, wires facing inward) → remove the small tab at each bottom corner, screw from below and tighten a spacer on top at all 4 corners → upper plate on the spacers, one screw per corner → steel ball castor under the lower plate on the centreline with 2 screws → wheels onto the motor shafts
+- All fixings in the guide use the M2.2 x 6 mm self-tapping screws; the M2.3 x 8 mm screws are kept for the Maker Line
 - Weight: [NOT STATED]
 - TT motor voltage, gear ratio, RPM: [NOT STATED]
 - Wheel diameter: [NOT STATED]
@@ -30,7 +31,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 
 ## Interfaces and compatibility
 - Mechanical product only; no electrical interface
-- Controller / motor driver board is secured with screws or cable ties (cable ties not included)
+- Controller / motor driver board is secured with screws or cable ties (cable ties not included); the guide shows REKA:BIT, Robo Pico and Maker Pi RP2040 screwed down and MOTION:BIT held with cable ties
 - Boards shown on the product page: REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico (Boco Bot kit) — none included
 - Maker Line sensor mounting: 3x M2.3 x 8 mm screws supplied for Maker Line (sensor not included)
 - Mounting-hole pattern: [NOT STATED]
@@ -46,6 +47,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Motor brackets are blue on both the Blue and the Green option
 - Only 3 of the screws (M2.3 x 8 mm) are intended for the Maker Line
 - Mounting-hole pattern is not stated
+- The installation guide does not show where the Maker Line is fixed
 - Warranty is not stated on the product page
 
 ## Positioning (kept apart from specs)

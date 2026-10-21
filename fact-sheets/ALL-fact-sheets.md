@@ -514,24 +514,30 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - PWM pins: 6 — pins 3, 5, 6, 9, 10 and 11 (marked ~); analogWrite range 0 to 255
 - Analog input pins: 6 (10-bit), A0–A5 only; values 0 to 1023
 - UART: 1; SPI: 1; I2C: 1
-- USB to UART chip: guide driver is CH341SER and the port shows as CH340; product page links "CH34X" drivers; product page spec list writes "CH9340"; Cytron's Fritzing part artwork labels the chip "CH340C"
+- USB to UART chip: CH340C (schematic REV 1.0.0, silkscreen and assembly diagram); guide driver is CH341SER and the port shows as CH340; product page links "CH34X" drivers; product page spec list writes "CH9340" (unconfirmed)
 - USB connector: USB Micro B for power, program loading and USB communication
-- Powerbank-friendly: "Enable continuous supply from most powerbanks"
+- Powerbank-friendly: "Enable continuous supply from most powerbanks"; done by an always-on 555-timer power bank keep-alive load with a red PWRBANK LED (schematic)
+- 3.3V regulator: RT9013-33GB, part value "3.3V 500mA", fed from USB 5V (schematic)
+- USB 5V goes straight to the 5V rail: no fuse or polarity diode on the schematic
+- VIN header pin: fed from 5V through a Schottky diode (output only); no DC jack (schematic)
+- 16MHz crystal; ATmega328P-AU (TQFP)
 - 1x programmable push button on D2 (use INPUT_PULLUP; reads LOW when pressed)
 - 1x piezo buzzer on D8
 - 12x LED as I/O indicators on D2 to D13
 - 2x LED as UART TX/RX activity indicators on D0 & D1
-- Debug mode slide switch: on = built-in LEDs and piezo buzzer enabled; off = D8 free for another I/O device
+- Debug mode slide switch: on = built-in LEDs and piezo buzzer enabled; off = D8 free for another I/O device. The switch powers the LED/buzzer rail from 3.3V; each LED and the buzzer is driven by a MOSFET from its pin, so the LEDs do not load the pins (schematic)
+- TX/RX LEDs work regardless of the Debug switch; green power LEDs for 5V and 3.3V
 - With Debug on, LED 2 acts as an input indicator and turns off when the onboard button is pressed
 - Reset button
 - Onboard perfboard (donut board) prototyping area and breadboard; the breadboard is supplied loose with adhesive backing and stuck onto the board by the user (product page features say "half-size breadboard"; packing list says "mini breadboard")
-- Header pins in Cytron's Fritzing part: D0/RX–D13/SCK, A0–A5 (A4/SDA, A5/SCL), separate SDA/SCL, AREF, IOREF, RESET, 3V3, 5V, GND, ICSP MISO/SCK/MOSI; no Vin connector
+- Headers (schematic): power header NC, IOREF (5V), RESET, 3.3V, 5V, GND, GND, VIN; A0–A5; SCL, SDA, AREF, GND, D13–D8; D7–D0; 2x3 ICSP (MISO, 5V, SCK, MOSI, RST, GND). Cytron's Fritzing part omits VIN
+- Perfboard section: 400 plated holes linked in a breadboard pattern (30 rows of a–e and f–j, plus four +/− rails) (board file)
 - Packing list: 1x Maker UNO X board, 1x mini breadboard, 1x Maker UNO pin sticker
 - USB Micro B cable: optional accessory, not in the packing list
 - Warranty: 12 months
-- 5V and 3.3V pin output current: [NOT STATED]
+- 5V and 3.3V pin output current: [NOT STATED] (3.3V regulator part value "3.3V 500mA")
 - Per-I/O-pin current: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Dimensions: board outline 127.0 x 88.9 mm overall; the UNO-shaped controller section is about 62 x 69 mm (measured from Cytron's board file)
 - Packing: Maker UNO X board, mini breadboard, Maker UNO pin sticker (product page)
 - LEDs: 12 I/O LEDs on D2–D13; D0/D1 LEDs are the TX/RX activity LEDs (product page)
 
@@ -544,8 +550,8 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - Fritzing part available from Cytron's GitHub (CytronTechnologies/MAKER-UNO-X)
 - Companion book: Arduino Learning Guide for Beginners with Maker UNO X (BOK-MUNOX)
 - Differences vs Maker UNO: adds the onboard perfboard and breadboard area; one Debug switch enables both the built-in LEDs and the buzzer (Maker UNO has a buzzer-only slide switch)
-- Differences vs genuine Arduino UNO R3: no source lists them; sources state USB Micro B, a CH340-family USB-serial chip, no Vin connector in the Fritzing part, and onboard LEDs, buzzer, button and prototyping area
-- UNO R3 shield compatibility: [NOT STATED]
+- Differences vs genuine Arduino UNO R3: no source lists them; the design files show USB Micro B, a CH340C USB-serial chip, no DC jack, VIN as an output only (fed from 5V through a diode), IOREF at 5V, a power bank keep-alive load, and onboard LEDs, buzzer, button and prototyping area
+- UNO R3 shield compatibility: [NOT STATED] by Cytron; the headers follow the UNO R3 pin order, but physical fit is unverified and shields cannot power the board through VIN
 - MicroPython / CircuitPython / block coding: [NOT STATED]
 
 ## Use cases
@@ -562,8 +568,10 @@ An Arduino UNO-compatible board built on the ATmega328P, powered, programmed and
 - D8 is shared with the buzzer; switch Debug off to use D8 for another I/O device
 - D2 is used by the onboard button and cannot be connected to other external components while in use
 - PWM only on pins 3, 5, 6, 9, 10, 11; analog input only on A0–A5
-- Power input is USB Micro B; no other power input is named and the Fritzing part has no Vin connector
-- 5V/3.3V pin current limits and protection features: [NOT STATED]
+- Power input is USB Micro B only; no DC jack, and VIN is an output (fed from 5V through a diode), so the board cannot be powered through VIN
+- No fuse or polarity protection on the USB 5V rail (schematic); 5V/3.3V pin current limits: [NOT STATED]
+- The power bank keep-alive load is always on (red PWRBANK LED blinks) and adds some current draw
+- D2–D13 each have a 3.3 MΩ pull-down through the Debug LED driver, so unconnected inputs read LOW
 - USB cable not included
 
 ## Positioning (kept apart from specs)
@@ -1043,10 +1051,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Servo ports: 4 x RC servo, signal on D9, D10, D11, D12; V+ equal to the power source voltage
 - Total 5V output current (Grove ports): 400 mA max
 - Grove ports: 6; Maker Port: 1 (shared with Grove 4)
-- RGB LEDs on D13 (user-programmable)
+- RGB LEDs on D13 (user-programmable); 2 pixels, NEO_GRB 800 kHz in Cytron code
 - Piezo buzzer on D8 (bottom side) with mute switch
 - Programmable buttons on D2 and D3
-- Status LEDs for the Grove-port pins (on when the pin is high); launch material: "2x RGB LEDs / 10x GPIO LEDs"
+- Status LEDs for the Grove-port pins (on when the pin is high); launch material: "2x RGB LEDs / 10x GPIO LEDs"; the 10 IO LEDs are on D0, D1, D2, D3 and A0–A5 (Cytron GitHub Blink sketch)
 - On/Off switch, power LED, reset button (resets the shield and the microcontroller)
 - Operating temperature: −20 to 85 ℃
 - Motor driver IC: [NOT STATED]
@@ -1064,7 +1072,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Maker Port: A4, A5; compatible with QWIIC / Stemma QT / Grove (with conversion cable)
 - Datasheet and GitHub name Arduino Uno and Maker UNO
 - Launch compatible-board list: Maker Uno / Maker Uno X / Maker Uno Plus; Maker Uno RP2040; Cytron Uno; Uno Compatible (CH340); Official Arduino Uno Rev3; Official Arduino Uno R4 Minima; Official Arduino Mega 2560 Rev3; Wifi Uno ESP8266; Official Arduino Zero, Leonardo and GIGA R1 listed as "Not tested"
-- Libraries in Cytron examples: Cytron Motor Drivers Library (CytronMotorDriver.h), Servo, Adafruit_NeoPixel, U8g2
+- Libraries in Cytron examples: Cytron Motor Drivers Library (CytronMotorDriver.h, PWM_DIR mode), Servo, Adafruit_NeoPixel, U8g2 (SSD1306 128x64 software I2C constructor)
+- Example wiring in Cytron sketches: Grove 1 Maker Soil on A0/A1; Grove 6 ultrasonic TRIG D3, ECHO D2; Grove 4 OLED SDA A4, SCL A5; DCMotor sketch header: D4 DIR 1, D5 PWM 1, D6 PWM 2, D7 DIR 2
+- Out-of-the-box Demo_Code: melody on the buzzer, IO LED sequence, RGB colour cycle, servo sweep on D9/D10, both motors forward and reverse, then buttons D2/D3 trigger tones and RGB colours (Cytron GitHub)
+- No schematic or design file is published in the Cytron GitHub repo (code and README only)
 - Packing list: 1x Robo Uno Shield board, 1x Small Philips Screwdriver, 4x Grove to Female Header Cable
 
 ## Use cases
@@ -1086,6 +1097,7 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Datasheet advises one power source at a time (LiPo and VIN together not recommended)
 - If the board will not turn on with a battery connected, the battery must be charged to activate the protection circuit
 - Grove 4 and the Maker Port share A4/A5; buttons D2/D3 share pins with Grove 6
+- IO LEDs sit on D0–D3 and A0–A5, so any signal on those pins lights them; D0/D1 are also the UART (Grove 5), so blinking them interferes with Serial
 - Motor test buttons run the motor at full speed; motor direction depends on wiring
 - Protection stated in the datasheet is limited to VIN reverse polarity and battery overcharge / over-discharge
 
@@ -1303,7 +1315,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - Primary source: Cytron LiPo Power Shield User's Manual V1.0, January 2016 (no datasheet exists)
 - Output voltage: 5 V
 - Output current: user manual — "Output current: 1A" (Features list) and "at least 500mA current, and peak at 1A"; product page — 1000 mA continuous, 700 mA at start-up, over-current cut-off about 1100 mA (sources differ; see the KB file)
-- Battery: 3.7 V 1300 mAh LiPo (single cell)
+- Battery: 3.7 V 1300 mAh LiPo (single cell); plugs into a 2-pin connector marked BATT (user manual photos)
 - Integrated charger, charging current: 500 mA
 - Charging input: onboard micro-USB port (USB Micro B cable) or the USB port on the Arduino
 - Low battery indicator threshold: 3.3 V
@@ -1311,15 +1323,15 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - LEDs: Low power (battery below 3.3 V), Power (green), Full (fully charged), Charge (charging)
 - Power switch: switches the battery on/off
 - Main board reset button (Arduino needs around 30 ms to be ready after reset)
-- VBATT solder jumper on the back of the shield: solder the pads to monitor battery voltage from the Arduino
+- VBATT solder jumper on the back of the shield: six pads, one for each analog pin A0 to A5; bridge one pad to read the battery voltage on that pin (user manual example uses A3)
 - Stackable side headers
 - ICSP header: not passed through (the battery is in the way)
 - Packing list: 1 x SHIELD-LIPO
 - Warranty: 12 months
-- Dimensions: 80 mm × 54 mm, excluding the toggle switch (product page)
+- Dimensions: about 79.5 mm × 53 mm (user manual drawing); 80 mm × 54 mm excluding the toggle switch (product page)
 - Boost converter / charger IC: [NOT STATED]
-- Arduino pins used: 5V and GND only; optional battery-voltage monitoring through pads to A0–A6 (product page)
-- Battery connector type: [NOT STATED]
+- Arduino pins used: 5V and GND only (product page); optional battery-voltage monitoring through pads to A0–A5 (user manual board photo; the product page says A0–A6)
+- Battery connector family and pitch: [NOT STATED]
 - Boost input: 3.0–4.2 V LiPo/Li-ion to 5 V (product page)
 - Works with UNO-layout boards incl. Mega, Leonardo and Due (product page)
 
@@ -1327,7 +1339,7 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - Compatible boards: Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo and possibly other pin-compatible main boards; hardware example uses Arduino UNO / CT-UNO
 - Can be stacked with shields on top, or placed on top of other shields; shields that use ICSP for data (e.g. Ethernet Shield) must be below the LiPo shield
 - Charging from the Arduino's USB port requires the shield's power switch to be OFF; charging from the onboard USB port works with the switch ON or OFF
-- Battery voltage monitoring: bridge the VBATT solder jumper, then read it with the Arduino and view it in the Arduino IDE Serial Monitor (example sketch in the manual)
+- Battery voltage monitoring: bridge one VBATT pad (A0 to A5), then read it with analogRead and view it in the Arduino IDE Serial Monitor; the manual sketch reads A3 and converts with reading × 5.0 / 1023.0 at 9600 baud
 - Battery sold separately as an option (3.7 V 1300 mAh LiPo, Lip-3.7-1300) on the product page
 - No Cytron library or GitHub repository for this product
 
@@ -1341,9 +1353,9 @@ An Arduino shield that powers a stacked Arduino from a single-cell 3.7 V LiPo ba
 - Single-cell 3.7 V LiPo only; under-voltage cut-out at 2.4 V
 - ICSP header is not passed through; ICSP-dependent shields must sit below it
 - Battery does not charge from the Arduino's USB port while the shield is switched ON
-- Battery voltage monitoring requires soldering the VBATT jumper
+- Battery voltage monitoring requires soldering a VBATT pad, and the chosen analog pin (A0 to A5) is then not free for other uses
 - Battery not in the manual's packing list (separate item)
-- Arduino pins used, dimensions and the monitoring analog pin are not stated in the manual text
+- The manual does not state which power-header pin the 5 V output uses, the boost or charger IC, or the battery connector family
 
 ## Positioning (kept apart from specs)
 - "You can take your Arduino anywhere you wish with this LiPo Power Shield."
@@ -4574,12 +4586,12 @@ UC00C, UC00C CH340, CH340 USB to UART Converter, Cytron UC00C, Cytron USB to UAR
 A small USB-powered converter board that gives a computer a virtual COM port and connects it directly to a microcontroller's TTL UART at 3.3 V or 5 V logic. It plugs onto Arduino-style bootloader headers (Pro Mini, BBFuino, Fio) for program loading.
 
 ## Specs and functions
-- USB-to-UART chip: "USB to UART chip", not named (user manual); CH340 (product page title)
+- USB-to-UART chip: "USB to UART chip", not named (user manual); CH340 (product page title); the manual photo shows a WCH chip with a separate crystal
 - USB connector: USB Micro-B socket
 - Power: USB powered, no external source required; "5V from USB port is available for user"
 - UART logic level: 3.3 V or 5 V TTL, set by the VCC selectable slide switch (label F)
-- VCC output pin: 3.3 V or 5 V, follows the switch
-- 6-way header socket: DTR, RX, TX, VCC, CTS, GND
+- VCC output pin: 3.3 V or 5 V, follows the switch (switch marked 5V and 3V3)
+- 6-way header socket: DTR, RX, TX, VCC, CTS, GND; female right-angle socket with the ends marked GREEN (TX LED side) and BLACK (RX LED side); individual pins are not labelled on the board (user manual photo)
 - DTR: used for auto-reset on Arduino-compatible boards
 - CTS: hardware handshaking pin
 - LEDs: Power LED (green), RX LED, TX LED (RX/TX LEDs work only when connected to a PC over USB)
@@ -4614,6 +4626,7 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - Does not provide RS232 levels (TTL UART only)
 - The user manual names only Windows 7, 8 and 10; Windows 11 and current macOS support are not stated
 - Driver installation is required once before the COM port appears
+- The manual does not print the pin-by-pin order of the socket; it marks only the GREEN and BLACK ends
 
 ## Positioning (kept apart from specs)
 - "Low cost, easy to use USB to UART converter" aimed at development between computer and microcontroller (user manual)
@@ -4736,12 +4749,14 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 - Dimensions: [NOT STATED]
 
 ## Interfaces and compatibility
-- Microcontroller side: 4-way header (RX_TTL, TX_TTL, +5V, GND) and 6-way header (+5V, GND, CTS_TTL, RX_TTL, TX_TTL, RTS_TTL) (Cytron schematic)
+- Microcontroller side: 4-way header JP1 pin 1 RX_TTL, 2 TX_TTL, 3 GND, 4 +5V; 6-way header JP2 pin 1 GND, 2 CTS_TTL, 3 +5V, 4 RX_TTL, 5 TX_TTL, 6 RTS_TTL (Cytron schematic)
 - Wiring: MCU TX to RX_TTL, MCU RX to TX_TTL, MCU RTS to RTS_TTL, MCU CTS to CTS_TTL — RX_TTL/RTS_TTL are board inputs (Cytron schematic)
-- DB9 pin 5 = GND (Cytron schematic)
+- DB9 pins: 2 RX, 3 TX, 5 GND, 7 RTS, 8 CTS (standard PC pin-out); 4 and 6 tied together; 1 and 9 not connected (Cytron schematic)
+- JP2 pin order does not match the UC00A/UC00C socket order; wire each signal by name
 - Device side: DB9-Male (PC side) RS232 connector (product page)
 - Works with Cytron UC00A or UC00C to make a USB-to-RS232 converter (product page)
 - UC00C's 6-way socket has no RTS pin, so RTS handshake is not available from UC00C as documented (UC00C user manual, via KB)
+- Not a USB device: the board has no USB chip; USB needs a separate USB-UART board (Cytron schematic)
 - Software: none needed on the board
 
 ## Use cases
@@ -4749,10 +4764,10 @@ A level-shifter board between a microcontroller's TTL UART and RS232 (DB9) devic
 - Making a USB-to-RS232 converter together with UC00A or UC00C
 
 ## Known limitations
-- No Cytron datasheet or user manual; the product page is the only Cytron text source
+- No Cytron datasheet or user manual; the product page and the Cytron schematic are the only Cytron sources
 - 5 V board: outputs are 5 V level; use a level shifter for 3.3 V-only UARTs
-- The schematic linked from the product page could not be read for this fact sheet
-- The DB9 is male (PC side), the same gender as a PC serial port
+- DTR/DSR, DCD and RI are not supported (DB9 pins 4 and 6 only looped together; 1 and 9 open)
+- The DB9 is male (PC side), with the same gender and pin-out as a PC serial port, so a PC needs a null-modem cable
 - The product page's "Serial Loopback Test" tutorial link returns 404
 
 ## Positioning (kept apart from specs)
@@ -4789,14 +4804,17 @@ A breakout board with a PS2 connector (female) pre-soldered on the PCB and its p
 - Pins broken out to 0.1" (product page)
 - Mounting: breadboard or donut board (product page)
 - Signals wired in Cytron's tutorial: DATA, CMD, ATT, CLK, +5V, GND (Cytron tutorial "Maker Mini Sumo with PS2 Controller")
-- Number of pins and pin order: [NOT STATED]
+- Header: one row of 9 pads marked JP1 (Cytron tutorial wiring figure)
+- Pad order counted from the square pad: 1 DATA, 2 CMD, 3 unused, 4 GND, 5 +5V, 6 ATT, 7 CLK, 8 and 9 unused (Cytron tutorial wiring figure; functions of pads 3, 8, 9 not stated)
 - Dimensions: [NOT STATED]
 - Warranty: [NOT STATED]
 
 ## Interfaces and compatibility
+- BB-PSC JP1 to signal (from the square pad): 1 DATA, 2 CMD, 4 GND, 5 +5V, 6 ATT, 7 CLK (Cytron tutorial wiring figure)
 - Maker Mini Sumo wiring (Cytron tutorial): DATA → D2 (START), CMD → D7 (OPP_FR), ATT → D6 (OPP_FC), CLK → D5 (OPP_FL), +5V → any + terminal, GND → any − terminal
 - Library: Arduino PS2X library (Cytron GitHub, https://github.com/CytronTechnologies/PS2X_lib); tutorial uses ps2x.config_gamepad(5,7,6,2,true,true), argument order clk, cmd, att, dat, pressures, rumble
-- Tutorial controller: Wireless PS2 Controller (Compatible), 2.4GHz, about 10 m range, 2 AAA batteries
+- Tutorial full code also uses the Cytron Maker Sumo Library (Arduino Library Manager)
+- Tutorial controller: Wireless PS2 Controller (Compatible), 2.4GHz, about 10 m range, 2 AAA batteries; shown as discontinued in the tutorial hardware list (21 Oct 2026)
 - Different from SHIELD-PS2, which converts the PS2 controller to UART and uses a different library
 
 ## Use cases
@@ -4805,11 +4823,11 @@ A breakout board with a PS2 connector (female) pre-soldered on the PCB and its p
 
 ## Known limitations
 - No Cytron datasheet or user manual; product page and one Cytron tutorial are the sources
-- Pin count, pin order and dimensions are not stated
+- Pad order is shown only in the tutorial wiring figure (no pad labels on the header); dimensions are not stated
 - Supply-voltage rating for the connected PS2 receiver is not stated (the tutorial uses +5V)
 - On Maker Mini Sumo all Object Sensors must be removed when connecting the PS2 breakout (Cytron tutorial)
 - On Maker Mini Sumo the PS2X example pins (13, 11, 10, 12) must be changed to (5, 7, 6, 2) (Cytron tutorial)
-- Press reset after connecting (Cytron tutorial)
+- Switch on the controller, power the board, then press reset to start control (Cytron tutorial)
 
 ## Positioning (kept apart from specs)
 - Product page frames it as a pre-soldered PS2 connector broken out for breadboard or donut board use
@@ -5456,7 +5474,8 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - Output: single analog voltage; read with any ADC-capable pin
 - Output is ratiometric: the 0 A level and sensitivity scale with VCC (Allegro chip datasheet)
 - Fritzing part linked from the product page (product page)
-- Library / sample code: [NOT STATED]
+- Sample code: Cytron GitHub C examples for PIC18F2550 on the SK28A kit (2012–2015): sensor output read on RA0/AN0 with the ADC referenced to the 5 V supply; current = (reading − zero point) × (5.04 V / 1023) / 0.04 V/A; zero point taken at start-up with no current (or fixed at 510 counts in the older example); results on a character LCD or 3-digit 7-segment display
+- Arduino library: [NOT STATED]
 
 ## Use cases
 - Motor control (product page)
@@ -5469,7 +5488,8 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - Output sits at VCC/2 at 0 A and is ratiometric to the supply, so supply variation changes offset and sensitivity (Allegro chip datasheet)
 - Specified for a 5.0 V supply (product page); Allegro says 3.3 V operation needs confirmation of accuracy from Allegro (Allegro chip datasheet)
 - Chip output drive: 3 mA source, 1 mA sink max; minimum load 4.7 kΩ (Allegro chip datasheet)
-- No Cytron datasheet, user manual or sample code exists; board-level maximum continuous current is [NOT STATED]
+- No Cytron datasheet or user manual exists, and the only Cytron sample code is PIC C for the SK28A kit (no Arduino example); board-level maximum continuous current is [NOT STATED]
+- With a 10-bit ADC at 5 V, one step is about 0.12 A, so small currents are not resolved well (derived from the 40 mV/A sensitivity)
 
 ## Positioning (kept apart from specs)
 - [NOT STATED]
@@ -5640,7 +5660,8 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Tool: 1 tiny Phillips screwdriver
 - Packing list: 2x Robot Building Base, 2x Motor Bracket (blue), 25x M2.2x6mm self-tapping screw, 3x M2.3x8mm self-tapping screw for Maker Line, 4x spacer, 2x TT motor with 15cm wires, 2x wheels, 1x steel ball castor, 1x tiny Phillips screwdriver
 - Dimensions: base plate 12 × 8.5 cm; assembled robot 13.5 cm long × 6.5 cm high (product page image)
-- Assembly (installation guide, 8 steps): brackets on lower plate → TT motors with wires facing inward → 4 spacers → upper plate → steel ball castor underneath → wheels
+- Assembly (installation guide, 8 steps): blue brackets onto the TT motors → motor-and-bracket screwed to the lower plate (4 M2.2 x 6 mm screws on the bracket, wires facing inward) → remove the small tab at each bottom corner, screw from below and tighten a spacer on top at all 4 corners → upper plate on the spacers, one screw per corner → steel ball castor under the lower plate on the centreline with 2 screws → wheels onto the motor shafts
+- All fixings in the guide use the M2.2 x 6 mm self-tapping screws; the M2.3 x 8 mm screws are kept for the Maker Line
 - Weight: [NOT STATED]
 - TT motor voltage, gear ratio, RPM: [NOT STATED]
 - Wheel diameter: [NOT STATED]
@@ -5648,7 +5669,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 
 ## Interfaces and compatibility
 - Mechanical product only; no electrical interface
-- Controller / motor driver board is secured with screws or cable ties (cable ties not included)
+- Controller / motor driver board is secured with screws or cable ties (cable ties not included); the guide shows REKA:BIT, Robo Pico and Maker Pi RP2040 screwed down and MOTION:BIT held with cable ties
 - Boards shown on the product page: REKA:BIT, MOTION:BIT, Maker Pi RP2040, Robo Pico (Boco Bot kit) — none included
 - Maker Line sensor mounting: 3x M2.3 x 8 mm screws supplied for Maker Line (sensor not included)
 - Mounting-hole pattern: [NOT STATED]
@@ -5664,6 +5685,7 @@ A plastic two-wheeled robot-car chassis bundle: plastic base plates, motor brack
 - Motor brackets are blue on both the Blue and the Green option
 - Only 3 of the screws (M2.3 x 8 mm) are intended for the Maker Line
 - Mounting-hole pattern is not stated
+- The installation guide does not show where the Maker Line is fixed
 - Warranty is not stated on the product page
 
 ## Positioning (kept apart from specs)
@@ -5984,7 +6006,12 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - 1-axis kit (2 servos): same, but 1x Robo Bracket and 2x TS90A
 - Gripper only ("with Accessories"): PCB, hardware, tools and assembly guide; no servos, no bracket
 - 40mm M3 standoff: "SS" (product page) vs "brass" (Installation Guide tutorial)
+- PCB parts numbered 1–6: 1 servo-1 plate (optional in the 1-servo build), 2 arm side plates (x2), 3 link arm, 4 jaw layer (x2), 5 geared jaws (x2), 6 servo-3 horn plate (Installation Guide)
 - Assembly: snap and break every part off the PCB, then file the snapped parts
+- 1-servo order: servo under Part 1 or Robo Base (2x M2 bolt 6mm + nut, gear away from the two front holes) → both Part 5 jaws with 12mm M3 bolts, washers and lock nuts → Part 3 on one Part 5 (3mm washers) → Part 4 to Part 5 with nylon standoffs (10 or 20mm) → self-tapping screw in the second-outermost horn hole → horn onto servo through Part 3, tighten centre screw (Installation Guide)
+- 2-servo order: build the 1-servo gripper on Part 1 → servo 2 into Robo Bracket (2x M2 bolt 6mm) → riveted Part 2 with 1mm washer on the servo axis → horn on the second Part 2 (2 self-tapping screws) → Part 1 ears into Part 2 slots, 40mm M3 standoff → lock with 2x M3 bolt + nut → fix to platform with 2x M3 bolt 6mm (Installation Guide)
+- 3-servo order: servo 3 in a Robo Base slot (or on a Robo Bracket) → horn and Part 6 on a Robo Bracket with 1mm washers (1 layer for a black horn, 2 for a white horn) → press on and tighten centre screw → repeat the 2-servo steps (Installation Guide)
+- Servo horn angle: centre the servo (set its electronic angle) before fitting the horn; no angle value given (Installation Guide)
 - Warranty: [NOT STATED] (field blank on the product page)
 
 ## Interfaces and compatibility
@@ -6012,6 +6039,9 @@ A PCB gripper kit for micro servos that mounts on Cytron's Robo Base and Robo Ba
 - Only SG90-size micro servos are stated to fit; FS90R is a continuous-rotation servo
 - No controller board, battery or chassis included
 - Parts must be snapped off the PCB and filed before assembly
+- The Robo Bracket may need slight filing if the servo holes do not line up (Installation Guide)
+- The 2-servo build needs Part 1 (the 1-servo gripper cannot sit straight on a Robo Base for it)
+- The aluminium micro servo bracket in the packing list is not used in any step of the online Installation Guide
 - PCB thickness and dimensions are not stated in text
 - Warranty is not stated on the product page
 
@@ -6033,7 +6063,7 @@ https://my.cytron.io/p-robo-grip-mini-kits
 Website
 
 ## Source link
-https://my.cytron.io/p-robo-grip-mini-kits
+https://my.cytron.io/tutorial/robo-grip-mini-installation-guide
 
 # Product fact sheets
 
@@ -6390,11 +6420,11 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Reverse polarity protection on the motor supply
 - Schottky clamping diodes
 - Power toggle switch; feature list also states "Solid state switch for power"
-- Test switches (A and B) for every channel
+- Test switches (A and B) for every channel: button A drives output A to B, button B drives B to A
 - Power indicator LED and motor status indicator LEDs
-- 3 mm mounting holes for standard PCB stands
+- Four 3 mm mounting holes for standard PCB stands
 - Over-current, thermal and under-voltage protection: [NOT STATED]
-- Dimensions: 10.67 cm × 5.21 cm (product page)
+- Dimensions: 106.68 mm × 52.07 mm (user manual dimension figure; product page 10.67 cm × 5.21 cm)
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defects only
 - In the box: 1 x FD04A Rev2.0 board, 1 x 14 way IDE cable connector
@@ -6402,9 +6432,10 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Rev2.0 since 10 April 2015 (product page)
 
 ## Interfaces and compatibility
-- Control pins through a 7 x 2 (14-way) IDE socket or through extra solder pads
+- Control pins through a 7 x 2 (14-way) IDE socket or through a row of 10 extra solder pads labelled 1 2 3 4 5 6 7 8 V G
 - Control pins 1-8: Motor 1 direction, Motor 1 enable/Speed Control, Motor 2 direction, Motor 2 enable/Speed Control, Motor 3 direction, Motor 3 enable/Speed Control, Motor 4 direction, Motor 4 enable/Speed Control; V = 5V output; G = ground; x = not connected
-- POWER terminal block for motor supply; four MOTOR terminal blocks M1 to M4
+- IDE socket layout (user manual figure): row next to the extra pads 2, 3, x, 6, 7, x, G; inner row 1, x, 4, 5, x, 8, V (x = not connected)
+- POWER terminal block for motor supply, marked + and − and "7-15V"; four MOTOR terminal blocks M1 to M4 with outputs A and B
 - IDE connector compatible with FD04A Rev1.0; can replace FD04A Rev1.0 in the PR19
 - 5V from the V pin can supply the PR19 main board; do not supply another 5V into the V pin
 - Arduino: Cytron Motor Drivers Library (PWM_DIR_DUAL example)
@@ -6420,6 +6451,7 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Maximum PWM frequency 10 kHz
 - Logic input maximum 5.5 V
 - Do not supply 5V into the V pin
+- The IDE socket does not follow 1 to 14 pin numbering: 4 positions are not connected; wire by the manual figure or board silkscreen
 - Over-current, thermal and under-voltage protection are not stated
 
 ## Positioning (kept apart from specs)
@@ -6640,21 +6672,22 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Red LED A, Red LED B, Green Power LED
 - Reset button for the Arduino main board
 - Rev 2.0 boards labelled "SHIELD-MD10 R2" on front and back
+- Truth table (board bottom silkscreen): PWM 0 gives A LOW, B LOW; PWM 1 and DIR 0 gives A HIGH, B LOW; PWM 1 and DIR 1 gives A LOW, B HIGH
 - Packing list: 1 x SHIELD-MD10 shield, 2 x mini jumper
 - Warranty: 12 months, manufacturing defects only
 - Over-current, thermal, under-voltage, reverse-polarity protection: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Dimensions: PCB about 76.2 x 55.88 mm, 1.6 mm thick, four 3.05 mm mounting holes (derived from the Cytron 3D model; not printed in the manual)
 - Product page: 7–25 V (Rev1.0), 7–30 V (Rev2.0); 10 A continuous, 15 A peak for 10 s; regenerative braking; PWM up to 10 kHz
 
 ## Interfaces and compatibility
 - PWM pin selectable: D3, D5, D6, D9, D10 or D11 (default D3)
 - DIR pin selectable: D2, D4, D7, D8, D12 or D13 (default D2)
-- Terminal block: POWER +, POWER -, Motor Output A, Motor Output B
+- Terminals: green 2-way block POWER + and -, black 2-way block MOTOR A and B, in that order along the edge (user manual, 3D model)
 - Stackable digital, analog and power headers; only RST and GND of the power header connect to the shield
-- Optional External Control header for microcontrollers other than Arduino
+- Optional External Control header for microcontrollers other than Arduino: 3 pins DIR, PWM, GND (board silkscreen in the 3D model)
 - Compatible with Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo "and possibly other pin compatible main boards"
 - Arduino library: Cytron Motor Drivers Library, PWM_DIR example
-- 3D files (STEP, IGS) for SHIELD-MD10 R2 on GitHub
+- 3D files (STEP, IGS, PNG renders) for SHIELD-MD10 R2 on Cytron GitHub, last updated January 2019
 
 ## Use cases
 - Controlling one high-current brushed DC motor from an Arduino UNO, Duemilanove, Mega or Leonardo
@@ -6669,6 +6702,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Rev2.0 manual states two different maximum voltages (30 V feature list, 25 V table)
 - Rev 1.0 boards: 25 V maximum
 - No protection features stated
+- PWM low brakes the motor (both outputs LOW), per the board silkscreen truth table
 
 ## Positioning (kept apart from specs)
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."
@@ -8281,11 +8315,11 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - SSD1306 0.96" OLED display (I2C 0x3C)
 - User button on GPIO4 (can be programmed as safe-shutdown button); reset button (hard reset, also wakes the CM5 after shutting down)
 - Active buzzer on GPIO19 (beeps when high); LED0 on GPIO20, LED1 on GPIO21
-- Status LEDs: PWR, ACT, M.2 (NVMe SSD activity)
+- Status LEDs: PWR, ACT, M.2 (NVMe SSD activity); mini PCIe PWR and STAT LEDs on the front panel (User Manual figure)
 - Operating temperature: -20 to 60 ℃
 - Enclosure: metal, fanless, DIN rail mountable; 141.2mm x 83.5mm x 39.5mm (metal enclosure only, excl. antenna, DIN socket & connectors)
 - DIN bracket can be moved; four mounting options (without DIN rail socket, DIN positions 1 (default), 2 and 3)
-- DI and DO GPIO numbers: [NOT STATED]
+- DI0–DI3 on GPIO13, 17, 22, 27; DO0–DO3 on GPIO23, 24, 25, 26 (User Manual block diagram; same as the CM4 version)
 - Sold on my.cytron.io as CM5 Wireless 16GB/64GB and 8GB/64GB (product page shared with CM4)
 - GPU: 800 MHz VideoCore VII, OpenGL ES 3.1 (product page)
 - Wireless: 2.4/5 GHz Wi-Fi 802.11ac, Bluetooth 5.0, BLE (product page)
@@ -8299,8 +8333,9 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - 1x RJ45 Gigabit Ethernet (10/100/1000M) = eth0; 1x RJ45 10/100M Ethernet via USB ethernet controller = eth1
 - 1x M.2 Key-M socket: PCIe Gen 2 x1, NVMe SSD 2230 & 2242, bootable; CM5 PCIe can be enabled as Gen 3 (not certified)
 - 1x mini PCIe socket: USB 2.0 and SPI only, no PCIe; power switched by GPIO6. Datasheet says "for 4G/LoRa modules (optional)"; User Manual names no use
-- Terminal 1: power supply input, isolated RS485 (A, B, GND), isolated RS232, isolated digital outputs
-- Terminal 2: isolated digital inputs, isolated analog inputs (AGND)
+- Terminal 1 (2 × 8, User Manual figure): upper row VIN (10-30V), RS485 A, RS485 B, 485G, DO0 pair, DO2 pair; lower row GND, RS232 TX, RS232 RX, 232G, DO1 pair, DO3 pair
+- Terminal 2 (2 × 8, User Manual figure): upper row DI0 +/−, DI2 +/−, AN0, AGND, AN2, AGND; lower row DI1 +/−, DI3 +/−, AN1, AGND, AN3, AGND
+- RS485 (/dev/ttyACM0) and RS232 (/dev/ttyACM1) come from a USB-to-dual-UART chip on the onboard USB hub, which also serves the two USB 2.0 ports, the 10/100M Ethernet (eth1) and the mini PCIe USB (User Manual block diagram)
 - OS: Raspberry Pi OS; setup script `curl -L tinyurl.com/setup-iriv-picontrol | sudo bash` (Raspberry Pi OS only), then reboot
 - Setup script edits config.txt (USB host, I2C0 + RTC, I2C1, external antenna dtparam=ant2) and installs the OLED/status/safe-shutdown background script
 - ADC library: Adafruit_ADS1x15 (pip install Adafruit_ADS1x15), ADS1115(address = 0x48, busnum = 1)
@@ -8319,22 +8354,22 @@ An industrial controller built around the Raspberry Pi Compute Module 5 in a fan
 - Digital inputs accept wet contacts only (need an external source, min DC 3.0V 0.2mA, max DC 50V)
 - Digital outputs are dry contacts, max 50V 500mA; they switch an external source and do not supply voltage
 - AGND is isolated from system ground but common to all four analog input channels
-- 0-20mA measurement needs the internal shunt DIP switch ON
+- 0-20mA measurement needs the internal shunt DIP switch ON (4-way "ADC Current Mode" DIP; channel mapping not stated)
 - RS485 termination, analog mode and USB-C Boot/Debug selection are internal switches
 - M.2 SATA SSDs are not supported (NVMe only, 2230/2242); PCIe Gen 3 on CM5 is not certified
 - Mini PCIe has no PCIe signal: only USB 2.0 and SPI
 - Setup script is only available for Raspberry Pi OS
 - RS485/RS232 appear as /dev/ttyACM0 and /dev/ttyACM1
 - USB 2.0 ports share 1000mA total
-- WiFi or BT can be disabled only by solder-shorting a jumper
-- GPIO4, 6, 19, 20, 21 are used by onboard functions (DI/DO GPIOs also used; numbers not stated)
+- WiFi or BT can be disabled only by solder-shorting a jumper (separate WLAN and BT jumpers in the User Manual figure)
+- GPIO4, 6, 19, 20, 21 are used by onboard functions, and GPIO13, 17, 22, 27 (DI) and 23, 24, 25, 26 (DO) by the isolated I/O
 - Operating temperature -20 to 60 ℃
 - The datasheet's 0-20mA code example stores a current in mA in a variable named `voltage`
 - Datasheet layout pictures and layout text are of the CM4 version
 
 ## Positioning (kept apart from specs)
 - Described as an "IR4.0 CM5 Industrial Controller"
-- Sibling product IRIV PiControl CM4 (IRIV-PICL); keep CM4 and CM5 specs apart
+- Sibling product IRIV PiControl CM4 (IRIV-PICL); keep CM4 and CM5 specs apart. "IRIV PiControl" alone is ambiguous between the two
 
 ## Price band
 RM1,489.00–RM2,899.00 across CM4/CM5 variants (Cytron product page, read 2026-10-19)

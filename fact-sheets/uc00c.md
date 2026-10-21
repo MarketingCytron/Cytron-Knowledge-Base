@@ -10,12 +10,12 @@ UC00C, UC00C CH340, CH340 USB to UART Converter, Cytron UC00C, Cytron USB to UAR
 A small USB-powered converter board that gives a computer a virtual COM port and connects it directly to a microcontroller's TTL UART at 3.3 V or 5 V logic. It plugs onto Arduino-style bootloader headers (Pro Mini, BBFuino, Fio) for program loading.
 
 ## Specs and functions
-- USB-to-UART chip: "USB to UART chip", not named (user manual); CH340 (product page title)
+- USB-to-UART chip: "USB to UART chip", not named (user manual); CH340 (product page title); the manual photo shows a WCH chip with a separate crystal
 - USB connector: USB Micro-B socket
 - Power: USB powered, no external source required; "5V from USB port is available for user"
 - UART logic level: 3.3 V or 5 V TTL, set by the VCC selectable slide switch (label F)
-- VCC output pin: 3.3 V or 5 V, follows the switch
-- 6-way header socket: DTR, RX, TX, VCC, CTS, GND
+- VCC output pin: 3.3 V or 5 V, follows the switch (switch marked 5V and 3V3)
+- 6-way header socket: DTR, RX, TX, VCC, CTS, GND; female right-angle socket with the ends marked GREEN (TX LED side) and BLACK (RX LED side); individual pins are not labelled on the board (user manual photo)
 - DTR: used for auto-reset on Arduino-compatible boards
 - CTS: hardware handshaking pin
 - LEDs: Power LED (green), RX LED, TX LED (RX/TX LEDs work only when connected to a PC over USB)
@@ -50,6 +50,7 @@ A small USB-powered converter board that gives a computer a virtual COM port and
 - Does not provide RS232 levels (TTL UART only)
 - The user manual names only Windows 7, 8 and 10; Windows 11 and current macOS support are not stated
 - Driver installation is required once before the COM port appears
+- The manual does not print the pin-by-pin order of the socket; it marks only the GREEN and BLACK ends
 
 ## Positioning (kept apart from specs)
 - "Low cost, easy to use USB to UART converter" aimed at development between computer and microcontroller (user manual)

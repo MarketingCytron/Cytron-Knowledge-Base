@@ -28,10 +28,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Servo ports: 4 x RC servo, signal on D9, D10, D11, D12; V+ equal to the power source voltage
 - Total 5V output current (Grove ports): 400 mA max
 - Grove ports: 6; Maker Port: 1 (shared with Grove 4)
-- RGB LEDs on D13 (user-programmable)
+- RGB LEDs on D13 (user-programmable); 2 pixels, NEO_GRB 800 kHz in Cytron code
 - Piezo buzzer on D8 (bottom side) with mute switch
 - Programmable buttons on D2 and D3
-- Status LEDs for the Grove-port pins (on when the pin is high); launch material: "2x RGB LEDs / 10x GPIO LEDs"
+- Status LEDs for the Grove-port pins (on when the pin is high); launch material: "2x RGB LEDs / 10x GPIO LEDs"; the 10 IO LEDs are on D0, D1, D2, D3 and A0–A5 (Cytron GitHub Blink sketch)
 - On/Off switch, power LED, reset button (resets the shield and the microcontroller)
 - Operating temperature: −20 to 85 ℃
 - Motor driver IC: [NOT STATED]
@@ -49,7 +49,10 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Maker Port: A4, A5; compatible with QWIIC / Stemma QT / Grove (with conversion cable)
 - Datasheet and GitHub name Arduino Uno and Maker UNO
 - Launch compatible-board list: Maker Uno / Maker Uno X / Maker Uno Plus; Maker Uno RP2040; Cytron Uno; Uno Compatible (CH340); Official Arduino Uno Rev3; Official Arduino Uno R4 Minima; Official Arduino Mega 2560 Rev3; Wifi Uno ESP8266; Official Arduino Zero, Leonardo and GIGA R1 listed as "Not tested"
-- Libraries in Cytron examples: Cytron Motor Drivers Library (CytronMotorDriver.h), Servo, Adafruit_NeoPixel, U8g2
+- Libraries in Cytron examples: Cytron Motor Drivers Library (CytronMotorDriver.h, PWM_DIR mode), Servo, Adafruit_NeoPixel, U8g2 (SSD1306 128x64 software I2C constructor)
+- Example wiring in Cytron sketches: Grove 1 Maker Soil on A0/A1; Grove 6 ultrasonic TRIG D3, ECHO D2; Grove 4 OLED SDA A4, SCL A5; DCMotor sketch header: D4 DIR 1, D5 PWM 1, D6 PWM 2, D7 DIR 2
+- Out-of-the-box Demo_Code: melody on the buzzer, IO LED sequence, RGB colour cycle, servo sweep on D9/D10, both motors forward and reverse, then buttons D2/D3 trigger tones and RGB colours (Cytron GitHub)
+- No schematic or design file is published in the Cytron GitHub repo (code and README only)
 - Packing list: 1x Robo Uno Shield board, 1x Small Philips Screwdriver, 4x Grove to Female Header Cable
 
 ## Use cases
@@ -71,6 +74,7 @@ An Arduino Uno-form-factor robotics shield with a 2-channel DC motor driver, 4 s
 - Datasheet advises one power source at a time (LiPo and VIN together not recommended)
 - If the board will not turn on with a battery connected, the battery must be charged to activate the protection circuit
 - Grove 4 and the Maker Port share A4/A5; buttons D2/D3 share pins with Grove 6
+- IO LEDs sit on D0–D3 and A0–A5, so any signal on those pins lights them; D0/D1 are also the UART (Grove 5), so blinking them interferes with Serial
 - Motor test buttons run the motor at full speed; motor direction depends on wiring
 - Protection stated in the datasheet is limited to VIN reverse polarity and battery overcharge / over-discharge
 

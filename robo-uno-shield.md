@@ -4,8 +4,8 @@
 |---|---|
 | Family | Arduino-compatible boards |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 1): live my.cytron.io product page read plus the dimension image. Logic-level behaviour, power options, protections, motor ratings, size and package now Cytron-stated |
+| Last verified | 2026-10-21 |
+| Reviewed | 2026-10-21 — Cytron GitHub `Cytron-SHIELD-ROBO-UNO` (supplied by the marketing team as "Schematic & Design Files") read in full: README, all 9 Getting_Started_Guide sketches and Demo_Code, full commit history (2 Jan – 12 Feb 2025, HEAD 823f5c2, branch `main` only). It settled the 10 IO-LED pins (D0–D3, A0–A5), the example wiring on Grove 1/4/6, and added a DCMotor header block that names D4 DIR 1, D5 PWM 1, D6 PWM 2, D7 DIR 2. **The repo holds no schematic, PCB or PDF in any commit**, so the motor-control scheme stays a [DS] vs [GH] conflict. Stays Medium; still open: motor control scheme and driver IC (needs [DT]), Grove 3 pins, button pull-ups. Earlier: 2026-10-19 master-table review of the live product page (logic levels, power options, protections, motor ratings, size and package Cytron-stated) |
 | Primary source | Robo Uno Shield Datasheet — **Rev 1.0, February 2025** (public Google Doc "SHIELD-ROBO-UNO Datasheet"): https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -41,6 +41,7 @@ Datasheet Table 2 is titled **"Robo Uno Shield Absolute Maximum Ratings"** [DS].
 | Grove ports | 6 | [DS] |
 | Maker Port | 1 (QWIIC / Stemma QT / Grove with conversion cable), shared with Grove 4 | [DS] |
 | RGB LEDs | User-programmable, on D13 (2 pixels in Cytron code) | [DS][GH] |
+| GPIO status LEDs | 10 ("2x RGB LEDs / 10x GPIO LEDs"), on D0, D1, D2, D3, A0, A1, A2, A3, A4, A5 (Cytron Blink sketch drives exactly these 10 pins as "IO LEDs") | [GH] |
 | Piezo buzzer | Bottom side, D8, with mute switch | [DS] |
 | Programmable buttons | 2, on D2 and D3 | [DS] |
 | Battery charger | Single-cell LiPo/Li-ion, charged via the shield's micro-USB; overcharge and over-discharge protection | [DS] |
@@ -74,12 +75,21 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 | Grove 5 | D0 (RX), D1 (TX) — UART | [DS] |
 | Grove 6 | D2, D3 | [DS] |
 | Maker Port | A4, A5 — "shared with the Grove 4 port" | [DS] |
-| Status LEDs | IO indicators for the Grove-port pins; on when the pin is high | [DS] |
+| Status LEDs | IO indicators for the Grove-port pins; on when the pin is high [DS]. The 10 LED pins are D0–D3 and A0–A5 [GH Blink sketch] | [DS][GH] |
 | VIN terminal block | 3.6–6 V, reverse polarity protected | [DS] |
 | LiPo connector | JST PH2.0, single-cell LiPo/Li-ion | [DS] |
 | Micro-USB port | Power and battery charging only — no data, no code upload | [DS] |
 | On/Off switch, Power LED, Reset button (resets shield and microcontroller) | — | [DS] |
 | Motor test buttons / motor status LEDs | MxA: Forward*, MxB: Backward*; test runs the motor at full speed | [DS] |
+
+**Example connections in Cytron's Getting Started sketches** [GH]:
+
+| Sketch | Port | Wiring as written |
+|---|---|---|
+| Read_Sensor_Analog_Arduino | Grove 1 | Maker Soil: GND, VCC, A0 – DIS, A1 – OUT (table); the code reads A0 and calls it "OUT" — see Conflicts |
+| Read_Sensor_Digital_Arduino | Grove 6 | Ultrasonic sensor: D3 – TRIG, D2 – ECHO |
+| OLED_Arduino | Grove 4 | Grove OLED: A4 – SDA, A5 – SCL; U8g2 `U8G2_SSD1306_128X64_NONAME_F_SW_I2C` (software I2C on SCL/SDA) |
+| UserButton_Arduino | on-board | Button D2 lights the A2 LED, button D3 lights the A5 LED |
 
 **Motor driver truth table** [DS Table 3] (header printed as "Input A (GP8 / GP10)", "Input B (GP9 / GP11)" — see Conflicts):
 
@@ -105,7 +115,13 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 - Motor test buttons run the motor at **full speed** — lift the wheels first [DS].
 - Grove 4 and the Maker Port share A4/A5 — one I2C bus, not two [DS].
 - Grove 5 uses D0/D1 (hardware UART); devices there can interfere with USB uploading on Uno-type boards (general Arduino behaviour [VEN]; not stated by Cytron).
-- Buttons D2/D3 are also Grove 6 pins — using Grove 6 and the buttons at the same time shares pins [DS].
+- Buttons D2/D3 are also Grove 6 pins — using Grove 6 and the buttons at the same time shares pins [DS]. The Grove 6 ultrasonic example uses D3 = TRIG, D2 = ECHO, so the buttons and that sensor cannot be used together [GH].
+- **IO LEDs sit on D0–D3 and A0–A5** [GH]: whatever drives those pins (a Grove module, the buttons, UART traffic) also lights the LED, since it is on when the pin is high [DS].
+- **D0/D1 are the UART** (Grove 5) and also carry IO LEDs. Demo_Code starts `Serial.begin(9600)` and then drives D0/D1 as LED outputs [GH]; on an Uno that interferes with serial output (general Arduino behaviour [VEN]; inferred). Do not blink D0/D1 in a sketch that uses Serial.
+- **Buttons:** Cytron sketches set `INPUT_PULLUP` and read pressed = LOW [GH]. The Buzzer sketch reads D3 without setting `pinMode(3, INPUT_PULLUP)` — always set it for both buttons (whether the board has its own pull-ups is not stated).
+- **RGB LEDs:** `Adafruit_NeoPixel(2, 13, NEO_GRB + NEO_KHZ800)`; Cytron dims them in code (Demo_Code `setBrightness(25)`, commented "10%") [GH].
+- **Servo sweep bug:** the Servo sketch's return loop starts at 200, above 180 — use 180. The sketch notes that on a 360° continuous-rotation servo `write()` sets speed (≈90 stop, 0 and 180 full speed opposite ways) [GH].
+- **Comment errors in the sketches — do not copy:** "pin GP25" (RGB sketch, really D13), "3.3V is the board's voltage reference" (analog sketch; the code correctly uses 5.0 V), "Button connected to pin D2" on the D3 line (Buzzer sketch), "PWM 1A = Pin 4, PWM 1B = Pin 5" and "4 PWM pins (2 for each motor)" (DCMotor sketch) [GH].
 - Align the header pins vertically when stacking/removing to avoid bending them [DS].
 - Brake (Low/Low) stops quickly but strains the motor; Coast (High/High) lets it spin down [DS].
 
@@ -118,8 +134,10 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 - Power tree (Figure 5.2) is an image only — rail details not readable as text [DS].
 
 ## Software support
-- **Arduino IDE** — Cytron GitHub `Cytron-SHIELD-ROBO-UNO` (commit 12 Feb 2025) has Getting_Started_Guide sketches: Blink, RGB, UserButton, Buzzer, Servo, DCMotor, Read_Sensor_Analog, Read_Sensor_Digital, OLED, plus an out-of-the-box Demo_Code [GH].
-- Libraries used in Cytron examples: Cytron Motor Drivers Library (`CytronMotorDriver.h`, `PWM_DIR` mode); `Servo.h`; `Adafruit_NeoPixel` (2 pixels on D13, `NEO_GRB + NEO_KHZ800`); `U8g2lib` for an SSD1315/SSD1306 OLED on Grove 4; `tone()` for the buzzer [GH].
+- **Arduino IDE** — Cytron GitHub `Cytron-SHIELD-ROBO-UNO` (sketches added 2 Jan 2025; Demo_Code added 12 Feb 2025; HEAD 823f5c2, branch `main`, no tags or other branches) has Getting_Started_Guide sketches: Blink, RGB, UserButton, Buzzer, Servo, DCMotor, Read_Sensor_Analog, Read_Sensor_Digital, OLED, plus an out-of-the-box Demo_Code [GH]. README hardware list: Robo Uno Shield, Arduino UNO or Maker Uno, OLED Display SSD1306; setup points to the "Getting Started Guide with Robo Uno Shield" tutorial; its "Resources" tutorial bullets are empty [GH].
+- **Demo_Code (out-of-the-box) sequence** [GH]: Happy Birthday melody on D8 → IO LEDs one by one (D0–D3, then A0–A5) and all together → RGB colour cycle → servos on D9 and D10 sweep 180°→0°→180° (RGB green, then red) → both motors 50 % forward/reverse twice with tones → loop: D2 = cyan/magenta RGB + rising C-E-G tones, D3 = yellow/green RGB + falling G-E-C. Serial 9600 prints "Robo Uno Shield OOTB Demo". Servos D11/D12 are not used in the demo.
+- Serial monitor examples (analog and ultrasonic sketches) use 9600 baud; the analog sketch converts with `raw × 5.0 / 1023` [GH].
+- Libraries used in Cytron examples: Cytron Motor Drivers Library (`CytronMotorDriver.h`, `PWM_DIR` mode); `Servo.h`; `Adafruit_NeoPixel` (2 pixels on D13, `NEO_GRB + NEO_KHZ800`); `U8g2lib` (`U8G2_SSD1306_128X64_NONAME_F_SW_I2C`, code adapted from the Seeed Grove OLED 0.96" SSD1315 wiki) for the OLED on Grove 4; `tone()` / `noTone()` for the buzzer [GH].
 - MicroPython / CircuitPython: **not stated**.
 
 ## Compatibility and accessories
@@ -142,13 +160,18 @@ Footnotes [DS]: "Voltage for the DC motor and servo is equal to power input volt
 | Motor voltage | [DS] power input 3.6–6 V; Vmotor = input voltage |  idea doc / [3P] Pi Hut, RobotShop: "2.5V to 6V DC" | [DS] wins (3.6–6 V input) |
 | Grove 1 pins | [DS] A0, A1 (UART on Grove 5: D0/D1) |  idea doc: "Grove 1: D0 & D1 (UART)" | [DS] wins (idea doc was pre-design) |
 | Grove 3 pins | [DS] A1, A3 (duplicates Grove 1/2 pins) | — | Kept as printed; see Needs verification |
-| GH example comments | [GH] DCMotor code `PWM_DIR, 5, 4` | [GH] same file comment "PWM 1A = Pin 4, PWM 1B = Pin 5" | Follow the code, not the comment |
+| GH example comments | [GH] DCMotor code `PWM_DIR, 5, 4` and the file's CONNECTIONS header "D4 – DIR 1, D5 – PWM 1, D6 – PWM 2, D7 – DIR 2" | [GH] same file: inline comment "PWM 1A = Pin 4, PWM 1B = Pin 5" and description "4 PWM pins (2 for each motor)" | Follow the code and the CONNECTIONS header, not the other comments |
+| OLED controller in examples | [GH] README: "OLED Display SSD1306" (0.96" 128×64); code uses the U8g2 SSD1306 128×64 constructor | [GH] OLED sketch header: "OLED Display SSD1315" (Seeed Grove) | Both are 128×64 I2C OLEDs driven by the same U8g2 SSD1306 constructor in Cytron's code; name the module actually used |
+| Grove 1 analog example | [GH] wiring table: A0 – DIS, A1 – OUT (Maker Soil) | [GH] code: `sensorPin = A0` commented "OUT pin" | Unresolved in source; check which Grove signal the module puts its output on before reading A0 or A1 |
+| "Schematic & Design Files" label | Marketing hand-off labelled the GitHub repo as schematic and design files | [GH] repo content: README + Arduino sketches only, no design file in any commit (checked 2026-10-21) | No [DT] source exists yet; ask the design team for the schematic |
 | LiPo + VIN together | [DS] footnote "perfectly safe" | [DS] precaution "one power source only at one time" | Advise one source at a time |
 | Status |  Launched Feb 2025 | [3P] The Pi Hut: "Discontinued" | Unresolved; check my.cytron.io |
 
 ## Needs verification
-- **Motor control scheme** — whether the shield takes PWM+DIR (D5/D4, D6/D7) through on-board logic or raw A/B inputs on D4–D7. If D4 = Input A and D5 = Input B literally, Cytron's `PWM_DIR` code would not give symmetric speed in reverse (derived from [DS] table + [GH] library) — ask [DT].
-- Grove 3 pin assignment (A1, A3 as printed) — confirm against the board silkscreen.
+- **Motor control scheme** — whether the shield takes PWM+DIR (D5/D4, D6/D7) through on-board logic or raw A/B inputs on D4–D7. If D4 = Input A and D5 = Input B literally, Cytron's `PWM_DIR` code would not give symmetric speed in reverse (derived from [DS] table + [GH] library). The DCMotor sketch's CONNECTIONS header (D4 DIR 1, D5 PWM 1, D6 PWM 2, D7 DIR 2) adds [GH] weight to PWM/DIR but cannot override [DS] — ask [DT] for the schematic.
+- **Schematic / design files** — none in the Cytron-SHIELD-ROBO-UNO GitHub repo (full history and all branches checked 2026-10-21; the GitHub API listing could not be queried from this session, but `git ls-remote` shows only `main`). Ask the design team.
+- Whether buttons D2/D3 have on-board pull-up resistors (Cytron code always enables `INPUT_PULLUP`, except D3 in the Buzzer sketch).
+- Grove 3 pin assignment (A1, A3 as printed) — confirm against the board silkscreen. No Cytron sketch uses Grove 3, and the 10 IO-LED pins (D0–D3, A0–A5) are exactly the Grove 1, 2, 4, 5 and 6 pins [GH], so the GitHub code gives no separate Grove 3 pins (inference).
 - Whether the shield powers the Arduino board, and whether "USB" in Table 2 means only the shield's micro-USB.
 - mBlock extension availability and name.
 - Whether fresh 4xAA alkaline cells stay within the 6 V absolute maximum (DS gives 4xAA as an example).
@@ -160,7 +183,7 @@ Add-on: Cytron tutorials that use this product, most-read first. Use them for wi
 
 ## Sources
 - [DS] Robo Uno Shield Datasheet, Rev 1.0, February 2025 — https://docs.google.com/document/d/1DWNFjaC8XuEBnRx13xmJkOJgdrZvjDGWSx3C6OJeUm4/edit (public; PDF mirror: https://cdn.robotshop.com/media/C/Cyt/RB-Cyt-428/pdf/cytron-robo-uno-shield-for-arduino-all-in-1-robotics-shield-datasheet.pdf)
-- [GH] https://github.com/CytronTechnologies/Cytron-SHIELD-ROBO-UNO (README.md, Getting_Started_Guide/*, Demo_Code/Demo_Code.ino; commit 823f5c2, 12 Feb 2025) · https://github.com/CytronTechnologies/CytronMotorDriver (CytronMotorDriver.cpp)
+- [GH] Cytron-SHIELD-ROBO-UNO — https://github.com/CytronTechnologies/Cytron-SHIELD-ROBO-UNO (handed over by marketing as "Schematic & Design Files"; contains README.md, Getting_Started_Guide/* (9 sketches) and Demo_Code/Demo_Code.ino only; commits 2 Jan 2025 – 12 Feb 2025, HEAD 823f5c2 "Update README.md", branch `main`; read in full with full history 2026-10-21; no schematic or design file) · https://github.com/CytronTechnologies/CytronMotorDriver (CytronMotorDriver.cpp)
 - [PP] Getting Started tutorial (not read — blocked): https://my.cytron.io/tutorial/getting-started-guide-with-robo-uno-shield
 - [VEN] Arduino Uno Rev3 PWM pins (D3, D5, D6, D9, D10, D11) — https://docs.arduino.cc/
 - [3P] (cross-check only) https://www.switch-science.com/products/10305 · https://thepihut.com/products/robo-uno-shield · https://uk.robotshop.com/products/cytron-robo-uno-shield-for-arduino-all-in-1-robotics-shield

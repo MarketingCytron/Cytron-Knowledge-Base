@@ -22,7 +22,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 11 | 42 | [Robot Battle 500g](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | micro:bit kits | Sold | Medium | Medium | 7 | 3 | 2 | Done (2026-10-19) | Product page only |
 | 12 | 43 | [SOCCER:BIT](soccerbit-robot-kit.md) | `V-SCRBIT-4WD` | micro:bit kits | Sold | Medium | Medium | 7 | 4 | 3 | Done (2026-10-19) | Product page only (its "user manual" link is the MD13S manual) |
 | 13 | 48 | [Ikedo Mini Sumo Pro](ikedo-mini-sumo-pro.md) | `KIT-IKEDO-MSUMO-P` | Sumo robot kits and parts | Sold | Medium | Medium | 8 | 4 | 5 | Done (2026-10-19) | Product page |
-| 14 | 68 | [STEM Robot Building Base](stem-robot-building-base.md) | `V-HD-STEM` | Robot parts and accessories | Sold | Medium | Medium | 6 | 2 | 6 | Done (2026-10-19) | Product page (installation tutorial blocked) |
+| 14 | 68 | [STEM Robot Building Base](stem-robot-building-base.md) | `V-HD-STEM` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 6 | Done (2026-10-21) | Installation guide tutorial (25 Jul 2023, read in full incl. images) + product page |
 | 15 | 72 | [Robo Base Mini](robo-base-mini.md) | `V-ROBO-BASE-MINI` | Robot parts and accessories | Sold | Medium-high | Low | 7 | 3 | 2 | Done (2026-10-19) | Product page + Getting Started tutorial (section list) |
 | 16 | 117 | [AI Agent Workshop](ai-agent-workshop-rpi5.md) | `V-AI-AGT-RPI` | Workshops and services | Sold | Medium | Medium | 8 | 2 | 4 | Done (2026-10-19) | Course outline (no date) + product page |
 | 17 | 49 | [1KG RC Sumo Bundle](sumo-1kg-rc-bundle.md) | `V-SUMO-1KG-RC` | Sumo robot kits and parts | Sold | Medium | Medium | 6 | 4 | 4 | Done (2026-10-19) | Product page (user-guide tutorials blocked) |
@@ -30,13 +30,13 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 19 | 114 | [MakerDisk NVMe 2280](makerdisk-nvme-2280.md) | `V-MMR-NV2280` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 3 | 3 | Done (2026-10-19) | Product page |
 | 20 | 120 | [JetPack Flash Service](jetpack-flash-service.md) | `SEV-JN-ORNN` | Workshops and services | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Product page |
 | 21 | 18 | [Prototyping Shield](shield-proto2.md) | `SHIELD-PROTO2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 4 | 4 | 2 | Done (2026-10-20) | Schematic + artwork prints Rev 1.0.1 (read 20 Oct 2026) + product page |
-| 22 | 55 | [URS232A](urs232a.md) | `URS232A` | Servo, RC and interface | Sold | Medium | Medium | 5 | 2 | 3 | Done (2026-10-19) | Product page + TI MAX232 vendor docs |
+| 22 | 55 | [URS232A](urs232a.md) | `URS232A` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Product page + Cytron schematic URS232A.sch (1/2/2016) design team; TI MAX232 vendor docs for chip context |
 | 23 | 115 | [MakerDisk NVMe 2280 JetPack](makerdisk-nvme-2280-jetpack.md) | `V-MMR-NV2280-JP` | Storage (MakerDisk) | Sold | Medium | Medium | 7 | 1 | 3 | Done (2026-10-19) | Product page |
 | 24 | 116 | [MakerDisk SATA 120 GB](makerdisk-sata-120gb.md) | `MMR-2P5-MD-120` | Storage (MakerDisk) | Sold | Medium | Medium | 4 | 3 | 5 | Done (2026-10-19) | Product page |
 | 25 | 23 | [Robo Pico](robo-pico.md) | `ROBO-PICO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 10 | 5 | 0 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2023 |
-| 26 | 99 | [IRIV PiControl CM5](iriv-picontrol-cm5.md) | `IRIV-PICL5` | IRIV industrial | Sold | Medium | Medium | 12 | 6 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.5, Jan 2026 |
+| 26 | 99 | [IRIV PiControl CM5](iriv-picontrol-cm5.md) | `IRIV-PICL5` | IRIV industrial | Sold | Medium-high | Medium | 12 | 7 | 0 | Done (2026-10-21) | Datasheet Rev 1.2, Nov 2025 (CM4/CM5) + User Manual Rev 1.5, Jan 2026 (read in full incl. figures 21 Oct 2026) |
 | 27 | 30 | [MOTION:BIT](motion-bit.md) | `MOTION-BIT` | micro:bit accessories | Sold | Medium-high | Low | 7 | 4 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2023 |
-| 28 | 12 | [Robo Uno Shield](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | Arduino-compatible boards | Sold | Medium | Medium | 8 | 11 | 3 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2025 |
+| 28 | 12 | [Robo Uno Shield](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | Arduino-compatible boards | Sold | Medium | Medium | 10 | 14 | 3 | Done (2026-10-21) | Datasheet Rev 1.0, Feb 2025 + Cytron GitHub sketches (Getting Started + Demo_Code; no schematic in repo) |
 | 29 | 24 | [EDU PICO V2](edu-pico-v2.md) | `EDU-PICO2` | Pico / RP2040 / RP2350 boards | Sold | Medium | Medium | 10 | 7 | 3 | Done (2026-10-19) | Datasheet Rev 1.1, Jun 2026 |
 | 30 | 31 | [MOTION:BIT Pro](motion-bit-pro.md) | `MOTION-BIT-PRO` | micro:bit accessories | Sold | Medium-high | Low | 5 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Apr 2024 |
 | 31 | 32 | [SUMO:BIT](sumo-bit.md) | `SUMO:BIT` | micro:bit accessories | Sold | Medium-high | Low | 6 | 5 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) |
@@ -70,22 +70,22 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 59 | 57 | [Maker Line](maker-line.md) | `MAKER-LINE` | Sensors | Sold | Medium-high | Low | 5 | 4 | 5 | Done (2026-10-19) | Datasheet Rev 1.0, Jul 2019 |
 | 60 | 84 | [MDD10A](mdd10a.md) | `MDD10A` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 5 | Done (2026-10-19) | User's Manual V2.0, Jun 2017 (no datasheet) |
 | 61 | 34 | [ZOOM:BIT](zoom-bit.md) | `ZOOM:BIT` | micro:bit accessories | Sold | Medium-high | Medium | 8 | 4 | 0 | Done (2026-10-21) | Quick Start Guidebook v1.1, 2022 (wiring pages read 21 Oct 2026; no datasheet) + REKA:BIT datasheet |
-| 62 | 6 | [Maker UNO X](maker-uno-x.md) | `MAKER-UNO-X` | Arduino-compatible boards | Sold | Medium | Medium | 10 | 5 | 6 | Done (2026-10-19) | Guide book v1.5, Feb 2023 + product page (no datasheet) |
+| 62 | 6 | [Maker UNO X](maker-uno-x.md) | `MAKER-UNO-X` | Arduino-compatible boards | Sold | Medium-high | Medium | 10 | 7 | 5 | Done (2026-10-21) | Guide book v1.5, Feb 2023 + schematic REV 1.0.0 & board files (GitHub) + product page (no datasheet) |
 | 63 | 16 | [Servo Controller Shield](shield-servo.md) | `SHIELD-SERVO` | Arduino shields (non-motor) | Sold | Medium-high | Medium | 10 | 8 | 0 | Done (2026-10-19) | User's Manual V1.1, Apr 2018 (no datasheet) |
 | 64 | 51 | [SC08A Servo Controller](sc08a.md) | `SC08A` | Servo, RC and interface | Sold | Medium-high | Medium | 8 | 11 | 0 | Done (2026-10-21) | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample… |
 | 65 | 2 | [Robo ESP32](robo-esp32.md) | `ROBO-ESP32` | ESP32 boards | Sold | Medium-high | Medium | 10 | 6 | 0 | Done (2026-10-19) | Robo ESP32 Rev1.1 Board Datasheet, Rev 1.1, February 2026 (Cytron Google Doc) |
 | 66 | 28 | [MOTION 2350 Pro](motion-2350-pro.md) | `MOTION-2350-PRO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 9 | 7 | 0 | Done (2026-10-19) | Datasheet Rev 2.0, Sep 2025 |
-| 67 | 53 | [UC00C](uc00c.md) | `UC00C` | Servo, RC and interface | Sold | Medium | Medium | 9 | 5 | 1 | Done (2026-10-19) | User's Manual V1.0, Jul 2016 (no datasheet) |
+| 67 | 53 | [UC00C](uc00c.md) | `UC00C` | Servo, RC and interface | Sold | Medium | Medium | 9 | 7 | 1 | Done (2026-10-21) | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) +… |
 | 68 | 37 | [REKA:BIT RBT Project Kit](rekabit-rbt-project-kit.md) | `V-KIT-REKABIT-RBT` | micro:bit kits | Sold | Medium-high | Low | 5 | 5 | 0 | Done (2026-10-21) | Quick Start Guide, English v2.0 (Feb 2023, read 21 Oct 2026) + resource hub + pxt-rekabit-rbt-project-kit |
 | 69 | 39 | [BEETLE:BIT](beetlebit.md) | `V-BEETLEBIT` | micro:bit kits | Sold | Medium-high | Medium | 8 | 6 | 4 | Done (2026-10-21) | BEETLE:BIT Quick Start Guide booklet (read 21 Oct 2026) + resource hub + MakeCode chapter programs |
 | 70 | 80 | [MD10-POT](md10-pot.md) | `MD10-POT` | Motor drivers | Sold | Medium-high | Low | 7 | 2 | 8 | Done (2026-10-19) | Datasheet Rev 1.0, Oct 2018 |
-| 71 | 15 | [LiPo Power Shield](shield-lipo.md) | `SHIELD-LIPO` | Arduino shields (non-motor) | Sold | Medium | Medium | 6 | 3 | 2 | Done (2026-10-19) | User's Manual V1.0, Jan 2016 (no datasheet) |
+| 71 | 15 | [LiPo Power Shield](shield-lipo.md) | `SHIELD-LIPO` | Arduino shields (non-motor) | Sold | Medium | Medium | 5 | 5 | 2 | Done (2026-10-21) | User's Manual V1.0, Jan 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) +… |
 | 72 | 29 | [Maker Nano RP2040 Bundles](maker-nano-rp2040-bundles.md) | `V-MN2040` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Low | 7 | 7 | 2 | Done (2026-10-19) | Getting Started docs (2022–2023, no version) |
 | 73 | 47 | [Ikedo Mini Sumo V2](ikedo-mini-sumo-v2.md) | `KIT-IKEDO-MSV2-S` | Sumo robot kits and parts | Sold | Medium-high | Low | 6 | 6 | 3 | Done (2026-10-19) | Ikedo Bot V2 Getting Started Instruction |
 | 74 | 60 | [Maker Reflect S](maker-reflect-s.md) | `MAKER-REFLECT-S` | Sensors | Sold | Medium-high | Low | 5 | 4 | 7 | Done (2026-10-19) | Datasheet Rev 1.0, Feb 2026 |
 | 75 | 70 | [Robo Bracket (Servo)](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | Robot parts and accessories | Sold | Medium | Medium | 8 | 1 | 6 | Done (2026-10-19) | Product page |
-| 76 | 73 | [Robo Grip Mini](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | Robot parts and accessories | Sold | Medium | Medium | 9 | 4 | 5 | Done (2026-10-19) | Product page + Installation Guide tutorial |
-| 77 | 78 | [FD04A](fd04a.md) | `FD04A` | Motor drivers | Sold | Medium | Medium | 9 | 5 | 2 | Done (2026-10-19) | User's Manual V1.2, Jun 2025 |
+| 76 | 73 | [Robo Grip Mini](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | Robot parts and accessories | Sold | Medium-high | Medium | 11 | 6 | 5 | Done (2026-10-21) | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page |
+| 77 | 78 | [FD04A](fd04a.md) | `FD04A` | Motor drivers | Sold | Medium-high | Medium | 10 | 6 | 2 | Done (2026-10-21) | User's Manual V1.2, Jun 2025 (read in full incl. figures 21 Oct 2026) |
 | 78 | 85 | [SHIELD-MDD10](shield-mdd10.md) | `SHIELD-MDD10` | Motor drivers | Sold | Medium | Medium | 7 | 2 | 6 | Done (2026-10-19) | Datasheet Rev 1.0, May 2019 |
 | 79 | 105 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
 | 80 | 5 | [Maker UNO Plus](maker-uno-plus.md) | `MAKER-UNO-PLUS` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 6 | 1 | Done (2026-10-19) | User's Manual Rev 1.0, Oct 2018 (no datasheet) |
@@ -93,16 +93,16 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 82 | 20 | [Maker UNO Learning Box](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Arduino kits and books | Sold | Medium-high | Low | 5 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginner Using Maker UNO, Ver 1.3, Dec 2018 (read 21 Oct 2026) + product page |
 | 83 | 22 | [PikaBot](pikabot.md) | `V-KIT-PIKABOT` | Arduino kits and books | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-21) | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot… |
 | 84 | 64 | [RE08A Rotary Encoder](re08a.md) | `RE08A` | Sensors | Sold | Medium-high | Low | 7 | 3 | 0 | Done (2026-10-19) | User's Manual V1.2, Sep 2008 (mirror; no datasheet) |
-| 85 | 65 | [50A Current Sensor](bb-acs756.md) | `BB-ACS756` | Sensors | Sold | Medium | Medium | 7 | 3 | 5 | Done (2026-10-19) | Product page + Cytron schematic + Allegro vendor docs |
+| 85 | 65 | [50A Current Sensor](bb-acs756.md) | `BB-ACS756` | Sensors | Sold | Medium | Medium | 9 | 7 | 5 | Done (2026-10-21) | Product page + Cytron schematic + Allegro vendor docs + Cytron GitHub PIC sample code (SK28A) |
 | 86 | 107 | [CM4 Maker Board](cm4-maker-board.md) | `MAKER-CM4` | Raspberry Pi HATs and boards | Sold | Medium | Medium | 7 | 2 | 1 | Done (2026-10-19) | Datasheet Rev 1.2, Oct 2023 |
 | 87 | 112 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
 | 88 | 119 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
 | 89 | 14 | [ESP8266 WiFi Shield](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 5 | 3 | Done (2026-10-19) | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) |
 | 90 | 21 | [Maker Uno X Learning Guide](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Arduino kits and books | Sold | Medium-high | Low | 3 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (104 pages, read in full 21 Oct 2026) |
-| 91 | 56 | [PS2 Connector Breakout](bb-psc.md) | `BB-PSC` | Servo, RC and interface | Sold | Medium | Medium | 6 | 2 | 4 | Done (2026-10-19) | Product page + Maker Mini Sumo PS2 tutorial |
+| 91 | 56 | [PS2 Connector Breakout](bb-psc.md) | `BB-PSC` | Servo, RC and interface | Sold | Medium-high | Low | 6 | 4 | 3 | Done (2026-10-21) | Maker Mini Sumo PS2 tutorial (20 May 2024, read in full incl. wiring figure) + product page |
 | 92 | 66 | [RGB LED Stick](rgb-led-stick.md) | `BCY-NEO-STICK-8` | Sensors | Sold | Medium | Medium | 6 | 4 | 2 | Done (2026-10-19) | Product page + tutorial |
 | 93 | 77 | [SHIELD-3AMOTOR](shield-3amotor.md) | `SHIELD-3AMOTOR` | Motor drivers | Sold | Medium-high | Low | 6 | 3 | 4 | Done (2026-10-19) | User's Manual Rev 1.0, Apr 2017 |
-| 94 | 81 | [SHIELD-MD10](shield-md10.md) | `SHIELD-MD10` | Motor drivers | Sold | Medium | Medium | 5 | 4 | 2 | Done (2026-10-19) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 |
+| 94 | 81 | [SHIELD-MD10](shield-md10.md) | `SHIELD-MD10` | Motor drivers | Sold | Medium | Medium | 6 | 7 | 1 | Done (2026-10-21) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 + Cytron 3D model SHIELD-MD10 R2 (GitHub, Jan 2019) design team |
 | 95 | 86 | [HAT-MDD10](hat-mdd10.md) | `HAT-MDD10` | Motor drivers | Sold | Medium-high | Low | 5 | 2 | 2 | Done (2026-10-19) | User's Manual V1.0, Mar 2017 |
 | 96 | 111 | [18650 Li-Ion 2200 mAh](li-ion-18650-2200.md) | `LI-18650-3.7-2200` | Power and accessories | Sold | Medium-high | Low | 4 | 6 | 2 | Done (2026-10-19) | Product page + PKCELL vendor sheet (2019) |
 | 97 | 76 | [SHIELD-2AMOTOR](shield-2amotor.md) | `SHIELD-2AMOTOR` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 4 | Done (2026-10-19) | User's Manual V1.1, Feb 2015 |
@@ -145,7 +145,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Robot Battle 500g** (2026-10-19): Confidence Medium-low → Medium. Both tutorials read (Karnival STEM 2025 origin; Joystick:bit or Mini micro:bit Game Handle control; MD13S under SUMO:BIT; LiPo on double-sided tape). Photo shows 2 motors — packing-list "1 x" is a page error to fix. Body-only = chassis + 2 brackets. Motor "1 x" reported to commerce team; screws follow the product page (M3×6 / M3×20).
 - **SOCCER:BIT** (2026-10-19): Confidence Medium-low → Medium. Current Complete list includes Joystick:bit V2 + 4 AAA, LiPo balance charger and LiPo indicator; with-micro:bit = 2 × micro:bit Junior Kit V2. Tutorial read: joystick channel A/B, confirm A+B. Open: Basic contents, splitter polarity. Team: Basic has no Joystick:bit and no charger.
 - **Ikedo Mini Sumo Pro** (2026-10-19): Confidence Medium-low → Medium. Truncated passages now complete: start button + external start-module port, LEDs, DIP switch, pot, buzzer, servo port; packing list ends 2561 wire, 8 × M3×6, 4 × M3×18, 4 nuts, 2 screwdrivers, USB cable. No charger, no start module.
-- **STEM Robot Building Base** (2026-10-19): Confidence Medium-low → Medium. Installation guide read (8 steps; motor wires inward; spacers join the plates); dimension image: plate 12 × 8.5 cm, assembled 13.5 cm long × 6.5 cm high. Open: hole pattern, TT motor rating.
+- **STEM Robot Building Base** (2026-10-21): Guide read in full; step order corrected; Medium → Medium-high
 - **Robo Base Mini** (2026-10-19): Confidence Medium-low → Medium-high. All 16 tutorial parts read: build order Motor > Castor > Sensor > Servo > Battery > Boards; Maker Line on 2 × 10 mm standoffs; no servo holes (servo M2 screw); battery between plates or 4×AA underneath; M3 10 mm for REKA:BIT/MOTION/Robo Pico, M2.5 for Pi/Jetson. Open: weight, 4WD bracket count.
 - **AI Agent Workshop** (2026-10-19): Confidence Medium-low → Medium. Packing list now itemised: AgentBox Starter Kit (Pi 5 8GB, 256GB NVMe 2242 MakerDisk with AgentBox OS, Argon NEO 5 + M.2 base, 27W PD UK PSU) + Cytron Workshop Certificate. Open: class size, refund terms, price mapping.
 - **1KG RC Sumo Bundle** (2026-10-19): Confidence Medium-low → Medium. Full Complete packing list read — no RC transmitter/receiver; guide tutorial read (Adrian Afiq, 12 Mar 2025): motors to Left/Right, battery red +/black −, RC1→CH1, RC2→CH2, sharp-blade warning. Starter Kit User Guide link is 404 (tell web team).
@@ -153,13 +153,13 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **MakerDisk NVMe 2280** (2026-10-19): Confidence Medium-low → Medium. Drive labels read for all four capacities: Gen3 x4 / NVMe 1.3 (128GB 1800/560, 256GB 2050/1000, 512GB 2050/1700 MB/s), 1TB Gen4 x4 / NVMe 1.4 (5100/4800); SMART & TRIM; 1-year warranty; Made in Taiwan. Random read 22351 IOPS. RobotShop 256GB speeds conflict with the Cytron label (label wins).
 - **JetPack Flash Service** (2026-10-19): Confidence Medium-low → Medium. Send-in service to Cytron HQ (Bukit Mertajam), returned tested; what-to-send list added (module, third-party carrier, optional PSU, original MakerDisk SSD, order printout, contact note). Open: JetPack point release, turnaround, data handling.
 - **Prototyping Shield** (2026-10-20): Schematic + artwork Rev 1.0.1 read (LED via JP1, RST button, rails 16 GND / 12 5V, no ICSP); Medium-low → Medium-high
-- **URS232A** (2026-10-19): Confidence Medium-low → Medium. Schematic read (2016): +5 V-only MAX232 with 5 × 1 µF; RX_TTL/RTS_TTL are board inputs (wire MCU TX → RX_TTL), TX_TTL/CTS_TTL outputs; 4-way and 6-way headers; DB9 pin 5 GND. 5 V logic — level-shift for 3.3 V UARTs.
+- **URS232A** (2026-10-21): Schematic read in full; header and DB9 pin-outs settled; Medium → Medium-high
 - **MakerDisk NVMe 2280 JetPack** (2026-10-19): Confidence Medium-low → Medium. 512GB/256GB labels identical to the RPi OS MakerDisk (Gen3 x4, NVMe 1.3, 1-year warranty); JetPack 6.2 SDK component list from the SDK Manager screenshot. Login screenshots not transcribed.
 - **MakerDisk SATA 120 GB** (2026-10-19): Confidence Medium-low → Medium. Drive label read: shock 1500G/0.5ms, 0–70 °C commercial, SMART & TRIM, Windows/Linux/RPi, 1-year warranty (void if label removed or case opened), Made in Taiwan. Test host = Pi 4 Model B via USB3-SATA adapter. Reseller-only facts now Cytron-confirmed.
 - **Robo Pico** (2026-10-19): Live page + pinout/dimension images: Pico 2 support, package, 88×72 mm + holes, WS2812 LEDs, power options. Medium → Medium-high.
-- **IRIV PiControl CM5** (2026-10-19): Live page (shared with CM4): CM5 Wireless 16/64 and 8/64 on sale, GPU, Wi-Fi/BT, 141.2×83.5×39.5 mm, packing list. Stays Medium (DI/DO GPIO + terminal order open).
+- **IRIV PiControl CM5** (2026-10-21): CM5 manual read with figures (GPIOs, terminal order, USB topology); Medium → Medium-high
 - **MOTION:BIT** (2026-10-19): Live page + Cytron comparison image: package (18650 is 2200 mAh), 95.2×57.2 mm, power sources, 1 A/1.5 A, 300 mA 5 V, servo 3 A. Medium → Medium-high.
-- **Robo Uno Shield** (2026-10-19): Live page: on sale (Pi Hut "discontinued" is reseller only), VCC follows reset pin, power and protections, 60.96×68.58 mm, package. Stays Medium (motor scheme open).
+- **Robo Uno Shield** (2026-10-21): GitHub repo read in full (no design files); IO-LED and example pins confirmed; stays Medium
 - **EDU PICO V2** (2026-10-19): Live page: status, two packing lists, 12 GPIO LEDs, resources. Stays Medium (booklet image-only).
 - **MOTION:BIT Pro** (2026-10-19): Live page + comparison image: external Vin only (no micro USB/battery), 3 A/5 A, 5 V 3 A, servo 5 V/Vin select, package. Medium → Medium-high.
 - **SUMO:BIT** (2026-10-19): Live page: package (2 × MD13S attached), 125×80 mm, firmware on GitHub. Medium → Medium-high.
@@ -193,21 +193,21 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Maker Line** (2026-10-19): High-priority review: live status confirmed (Sold). in stock RM45.78; Tindie text confirmed on my.cytron.io. Stays Medium-high.
 - **MDD10A** (2026-10-19): High-priority review: live status confirmed (Sold). page matches UM; RM108.78. Stays Medium-high.
 - **ZOOM:BIT** (2026-10-21): Guidebook wiring pages read (motor terminals, Grove ports, servo S1, light threshold); Medium → Medium-high
-- **Maker UNO X** (2026-10-19): Packing list and D0/D1 TX/RX LEDs confirmed. Stays Medium (chip name, dimensions image).
+- **Maker UNO X** (2026-10-21): Schematic REV 1.0.0 + Eagle board read; power path, VIN, Debug wiring settled; Medium → Medium-high
 - **Servo Controller Shield** (2026-10-19): Page agrees with the manual (4 A cont / 5 A peak, 0.25 µs, 9600); size 7.4 × 6.6 cm. Medium → Medium-high.
 - **SC08A Servo Controller** (2026-10-21): Cytron manual read in full incl. figures (connector pin orders); Medium → Medium-high
 - **MOTION 2350 Pro** (2026-10-19): my.cytron.io now shows Rev 2.0 5 A / 10 A, 2 MB flash, 95.2 × 57.2 × 8 mm, Arduino tutorial. Medium → Medium-high.
-- **UC00C** (2026-10-19): 3.3 V max 500 mA, LED colours, size, packing from the page. Stays Medium (pin order image unread).
+- **UC00C** (2026-10-21): Manual read incl. figures; stays Medium until socket pin order is confirmed
 - **REKA:BIT RBT Project Kit** (2026-10-21): English guide v2.0 read (ports and servo for all 5 projects, pump/motor warnings); Medium → Medium-high
 - **BEETLE:BIT** (2026-10-21): Booklet read in full (wiring, Grove ports, box list, chapter rules); Medium → Medium-high
 - **MD10-POT** (2026-10-19): Packing list, 81.28 × 48.26 mm, locked-antiphase, regenerative braking, no reverse-polarity protection. Medium → Medium-high.
-- **LiPo Power Shield** (2026-10-19): Pins used (5V/GND), size 80 × 54 mm, boost 3.0–4.2 V now Cytron-stated. Stays Medium (output current conflict).
+- **LiPo Power Shield** (2026-10-21): Manual read incl. figures (VBATT pads, sketch, size); stays Medium on output-current conflict
 - **Maker Nano RP2040 Bundles** (2026-10-19): Packing lists for both variants read: Blynk bundle has Grove WiFi 8266 + cable; no 10K resistor. Medium → Medium-high.
 - **Ikedo Mini Sumo V2** (2026-10-19): Page note: Maker Reflect S edge sensors from March 2026; full packing list; 500 g class; no warranty. Medium → Medium-high.
 - **Maker Reflect S** (2026-10-19): Comparison table: analog output 0–VCC, 5.0 V, 25 mA, 3 mm; Ikedo V2 edge sensor from March 2026. Medium → Medium-high.
 - **Robo Bracket (Servo)** (2026-10-19): Page matches the KB; no new facts. Stays Medium.
-- **Robo Grip Mini** (2026-10-19): Packing lists re-read; new headings (3 servos / 2 servos / accessories). Stays Medium.
-- **FD04A** (2026-10-19): Size 10.67 × 5.21 cm, packing (IDE cable), reverse-polarity protection. Stays Medium (logic conflict, pin order).
+- **Robo Grip Mini** (2026-10-21): Full installation series read; assembly order and horn rules; Medium → Medium-high
+- **FD04A** (2026-10-21): Manual re-read with all figures (IDE pin order, size, terminals); Medium → Medium-high
 - **SHIELD-MDD10** (2026-10-19): Page agrees with DS; stepper use, packing, warranty, price. Stays Medium (jumper options image).
 - **Maker pHAT** (2026-10-19): Rev1.1 FT231X since Jan 2019; Pi 5 tested not compatible; packing list. Medium → Medium-high.
 - **Maker UNO Plus** (2026-10-19): FT231X, 12 LEDs (2–13), 3.3 V 500 mA, packing with USB cable, 12-month warranty confirmed. Medium → Medium-high.
@@ -215,16 +215,16 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Maker UNO Learning Box** (2026-10-21): Maker UNO guide Ver 1.3 read in full (project wiring confirmed); Medium → Medium-high
 - **PikaBot** (2026-10-21): Booklet OCR + wiring pages/schematic read (all pins, power path, calibration); Medium → Medium-high
 - **RE08A Rotary Encoder** (2026-10-19): Page independently confirms 5 V, 8 PPR, pull-up, 1 kHz, 35 mm disc, output polarity. Medium → Medium-high.
-- **50A Current Sensor** (2026-10-19): Page matches the KB. Stays Medium.
+- **50A Current Sensor** (2026-10-21): SK28A sample code read; conversion constants captured; stays Medium
 - **CM4 Maker Board** (2026-10-19): Back in stock (59); page states CM5 compatible; CM4NW216 = CM4 2GB/16GB no wireless; DSI/CSI vs RTC gotcha. Stays Medium (CM5 setup).
 - **RPi Cooling Fan 30 mm** (2026-10-19): Page matches the KB. Stays Medium.
 - **Raspbot Workshop** (2026-10-19): Refund (1 week before) and on-site option now stated; page + outline agree. Medium → Medium-high.
 - **ESP8266 WiFi Shield** (2026-10-19): Rev history, Rev1.0 = ESP8266-12, 3.3 V reg 500 mA, ESP-AT V2.2.0 since Oct 2021. Medium → Medium-high.
 - **Maker Uno X Learning Guide** (2026-10-21): Full v1.5 guide read incl. P15–P17 (ultrasonic pins 11/12, code typos); Medium → Medium-high
-- **PS2 Connector Breakout** (2026-10-19): Page matches the KB. Stays Medium.
+- **PS2 Connector Breakout** (2026-10-21): Tutorial wiring figure read; JP1 pad order settled; Medium → Medium-high
 - **RGB LED Stick** (2026-10-19): Page matches the KB. Stays Medium.
 - **SHIELD-3AMOTOR** (2026-10-19): Page independently confirms the manual (DRV8871, ratings, modes, no Vmotor polarity protection). Medium → Medium-high.
-- **SHIELD-MD10** (2026-10-19): Page: 7–25 V Rev1.0 / 7–30 V Rev2.0, 15 A peak, packing, price. Stays Medium (abs-max table).
+- **SHIELD-MD10** (2026-10-21): 3D model R2 read; truth table, pin-outs, PCB size added; stays Medium on voltage conflict
 - **HAT-MDD10** (2026-10-19): Page independently confirms the manual incl. 67.5 × 59 mm. Medium → Medium-high.
 - **18650 Li-Ion 2200 mAh** (2026-10-19): Full page read: chargers, holders, series use, >500 cycles, 1-week warranty. Medium → Medium-high.
 - **SHIELD-2AMOTOR** (2026-10-19): Page confirms the manual and adds VIN 6.5–12 V vs external 5–26 V and the power jumper. Medium → Medium-high.

@@ -33,7 +33,8 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - Output: single analog voltage; read with any ADC-capable pin
 - Output is ratiometric: the 0 A level and sensitivity scale with VCC (Allegro chip datasheet)
 - Fritzing part linked from the product page (product page)
-- Library / sample code: [NOT STATED]
+- Sample code: Cytron GitHub C examples for PIC18F2550 on the SK28A kit (2012–2015): sensor output read on RA0/AN0 with the ADC referenced to the 5 V supply; current = (reading − zero point) × (5.04 V / 1023) / 0.04 V/A; zero point taken at start-up with no current (or fixed at 510 counts in the older example); results on a character LCD or 3-digit 7-segment display
+- Arduino library: [NOT STATED]
 
 ## Use cases
 - Motor control (product page)
@@ -46,7 +47,8 @@ A breakout board for the Allegro ACS756 Hall-effect linear current sensor (50 A 
 - Output sits at VCC/2 at 0 A and is ratiometric to the supply, so supply variation changes offset and sensitivity (Allegro chip datasheet)
 - Specified for a 5.0 V supply (product page); Allegro says 3.3 V operation needs confirmation of accuracy from Allegro (Allegro chip datasheet)
 - Chip output drive: 3 mA source, 1 mA sink max; minimum load 4.7 kΩ (Allegro chip datasheet)
-- No Cytron datasheet, user manual or sample code exists; board-level maximum continuous current is [NOT STATED]
+- No Cytron datasheet or user manual exists, and the only Cytron sample code is PIC C for the SK28A kit (no Arduino example); board-level maximum continuous current is [NOT STATED]
+- With a 10-bit ADC at 5 V, one step is about 0.12 A, so small currents are not resolved well (derived from the 40 mV/A sensitivity)
 
 ## Positioning (kept apart from specs)
 - [NOT STATED]

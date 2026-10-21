@@ -51,13 +51,13 @@ Fact sheet rules (from the Content Hub form): use only what the source states; k
 |---|---|---|---|---|---|
 | Maker UNO | [`maker-uno.md`](maker-uno.md) | `MAKER-UNO` | ATmega328P + CH340G | User's Manual Rev 1.0, Dec 2017 (no datasheet) | **Medium-high** |
 | Maker UNO Plus | [`maker-uno-plus.md`](maker-uno-plus.md) | `MAKER-UNO-PLUS` | ATmega328P + **FT231X** (not CH340) | User's Manual Rev 1.0, Oct 2018 (no datasheet) | **Medium-high** |
-| Maker UNO X | [`maker-uno-x.md`](maker-uno-x.md) | `MAKER-UNO-X` | ATmega328P + CH340-family USB chip (page: "CH9340") | Guide book v1.5, Feb 2023 + product page (no datasheet) | **Medium** |
+| Maker UNO X | [`maker-uno-x.md`](maker-uno-x.md) | `MAKER-UNO-X` | ATmega328P + CH340-family USB chip (page: "CH9340") | Guide book v1.5, Feb 2023 + schematic REV 1.0.0 & board files (GitHub) + product page (no datasheet) | **Medium-high** |
 | Maker Nano | [`maker-nano.md`](maker-nano.md) | `MAKER-NANO` | ATmega328P + **CH340C** | Datasheet Rev 1.0, Jun 2020 + product-page comparison table, pinout and dimension images | **Medium-high** |
 | Cytron UNO | [`cytron-uno.md`](cytron-uno.md) | `CT-UNO` | ATmega328P + **FT231X** | User's Manual V1.0, Nov 2014 (no datasheet) | **Medium-high** |
 | Cytron UNO Special Edition | [`cytron-uno-se.md`](cytron-uno-se.md) | `CT-UNO-SE` | ATmega328P + **FT231X** (same as CT-UNO) | Product page (CT-UNO + side connectors) + CT-UNO manual | **Medium-high** |
 | Maker Uno RP2040 | [`maker-uno-rp2040.md`](maker-uno-rp2040.md) | `MAKER-UNO-RP2040` | RP2040, 2 MB flash | Datasheet Rev 1.0, Feb 2024 | **Medium-high** |
 | Maker Nano RP2040 | [`maker-nano-rp2040.md`](maker-nano-rp2040.md) | `MAKER-NANO-RP2040` | RP2040 | Datasheet Rev 1.1, Jul 2024 | **Medium-high** |
-| Robo Uno Shield | [`robo-uno-shield.md`](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | None — shield for UNO-form-factor boards | Datasheet Rev 1.0, Feb 2025 | **Medium** |
+| Robo Uno Shield | [`robo-uno-shield.md`](robo-uno-shield.md) | `SHIELD-ROBO-UNO` | None — shield for UNO-form-factor boards | Datasheet Rev 1.0, Feb 2025 + Cytron GitHub sketches (Getting Started + Demo_Code; no schematic in repo) | **Medium** |
 
 Arduino-board notes for every agent:
 - **Maker UNO has no DC jack and no VIN** — USB Micro-B 4.8–5.2 V only. Select "Arduino Uno" in the IDE; CH340 driver needed.
@@ -65,7 +65,7 @@ Arduino-board notes for every agent:
 - **Robo Uno Shield:** 3.6–6 V single-cell input only; cannot be powered from the Arduino VIN pin; its micro-USB charges/powers the shield only (no code upload). Follow Cytron's code for motor pins (`CytronMD motor1(PWM_DIR, 5, 4); motor2(PWM_DIR, 6, 7);`) until the design team resolves the datasheet conflict. Grove 4 and the Maker Port share A4/A5; buttons D2/D3 are the Grove 6 pins.
 - **USB-serial chips differ:** Maker UNO = CH340; **Maker UNO Plus and Cytron UNO = FTDI FT231X** (use the FTDI driver, not Maker UNO's CH340 steps). **Maker Nano = CH340C** (CH34X driver; Cytron comparison table).
 - **Maker UNO Plus is USB-only** (4.8–5.2 V; no DC jack, no Vin, no 5 V regulator); button D2 needs `INPUT_PULLUP`; buzzer D8 with mute switch; LEDs on pins 2–13.
-- **Maker UNO X:** USB Micro-B only (no DC jack or Vin named); the built-in LEDs and buzzer (D8) work only with the **Debug** switch on — switch Debug off to use D8 for something else; button D2 needs `INPUT_PULLUP`; USB driver does not support Windows 7.
+- **Maker UNO X:** USB Micro-B only (no DC jack; the VIN pin is an output only, fed from 5 V through a Schottky diode — schematic REV 1.0.0); USB chip CH340C, 3.3 V from an RT9013 (500 mA part); the built-in LEDs and buzzer (D8) work only with the **Debug** switch on — switch Debug off to use D8 for something else; button D2 needs `INPUT_PULLUP`; USB driver does not support Windows 7.
 - **Maker Nano power:** Vin 7.0–30.0 V, but the 5V pin gives only **100 mA** and 3V3 only **50 mA** (including the board's own use) — never copy Maker UNO's 500 mA. D2–D13 LEDs light whenever the pin is high (cut a trace to disable). A6/A7 are analog-only. IDE board: "Arduino Nano".
 - **Cytron UNO:** DC jack 7–15 V recommended (6–20 V absolute); 5 V regulator 1 A max only stated "with Vin at 12V"; 3.3 V 500 mA; select "Arduino Uno"; one user LED (D13), no button or buzzer. **Cytron UNO Special Edition (CT-UNO-SE)** is the same board with special side connectors for stacking on top of or under a shield (product page, 19 Oct 2026).
 
@@ -75,7 +75,7 @@ Arduino-board notes for every agent:
 |---|---|---|---|---|---|
 | Cytron PS2 Shield | [`shield-ps2.md`](shield-ps2.md) | `SHIELD-PS2` | PS2 controller interface over UART | User's Manual V1.0, Sep 2013 (no datasheet) | **Medium-high** |
 | Cytron ESP8266 WiFi Shield | [`shield-esp-wifi.md`](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` (Rev 2.0) | ESP-WROOM-02 Wi-Fi over UART + microSD | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) | **Medium-high** |
-| LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (no datasheet) | **Medium** |
+| LiPo Power Shield | [`shield-lipo.md`](shield-lipo.md) | `SHIELD-LIPO` | 1-cell LiPo power + charger shield | User's Manual V1.0, Jan 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) + product page | **Medium** |
 | 8 Channels RC Servo Controller Shield | [`shield-servo.md`](shield-servo.md) | `SHIELD-SERVO` | 8-ch servo controller shield, 7–25 V in, 5 V 4 A/5 A peak out | User's Manual V1.1, Apr 2018 (no datasheet) | **Medium-high** |
 | Cytron Screw Terminal Shield | [`shield-screw2.md`](shield-screw2.md) | `SHIELD-SCREW2` | Screw-terminal + proto-area shield, 3.5 mm pitch | Getting Started Guide V1.0, Jan 2015 + product photos | **Medium** |
 | Cytron Prototyping Shield | [`shield-proto2.md`](shield-proto2.md) | `SHIELD-PROTO2` | Proto shield, UNO R3 / Leonardo, stackable headers, reset button, 1 LED | Schematic + artwork prints Rev 1.0.1 (read 20 Oct 2026) + product page | **Medium-high** |
@@ -175,10 +175,10 @@ micro:bit kit notes for every agent:
 |---|---|---|---|---|---|
 | SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample code (PIC, GUI, Arduino) | **Medium-high** |
 | RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Cytron Connection Diagram (read 20 Oct 2026) + product page | **Medium-high** |
-| UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
+| UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (Cytron Google Doc, read in full incl. figures 21 Oct 2026; no datasheet) + product page + CH34x driver links | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |
-| URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + TI MAX232 [VEN] | **Medium** |
-| Breakout Board PS2 Connector | [`bb-psc.md`](bb-psc.md) | `BB-PSC` | Female PS2 connector broken out to 0.1" | Product page + Maker Mini Sumo PS2 tutorial | **Medium** |
+| URS232A TTL-to-RS232 | [`urs232a.md`](urs232a.md) | `URS232A` | MAX232 level shifter, DB9 male (PC side), Tx/Rx/CTS/RTS | Product page + Cytron schematic URS232A.sch (1/2/2016) [DT]; TI MAX232 [VEN] for chip context | **Medium-high** |
+| Breakout Board PS2 Connector | [`bb-psc.md`](bb-psc.md) | `BB-PSC` | Female PS2 connector broken out to 0.1" | Maker Mini Sumo PS2 tutorial (20 May 2024, read in full incl. wiring figure) + product page | **Medium-high** |
 
 ### Sumo robot kits and parts
 
@@ -203,7 +203,7 @@ micro:bit kit notes for every agent:
 | MCP9700 Temperature Sensor | [`mcp9700-temperature-sensor.md`](mcp9700-temperature-sensor.md) | `BCY-TEMP-MCP9700` | Analog temperature, 10 mV/°C with 500 mV offset at 0 °C | Datasheet Rev 1.0, Aug 2023 | **Medium-high** |
 | LSA08 Line Sensor | [`lsa08.md`](lsa08.md) | `LSA08` | 8-sensor auto-calibrating line sensor bar; analog / digital / UART | User's Manual V1.1, Jun 2012 + Library Manual V1.1, Jan 2013 (no datasheet) | **Medium-high** |
 | RE08A Rotary Encoder Kit | [`re08a.md`](re08a.md) | `RE08A` | 8-slot opto rotary encoder, 16 pulses/rev, single channel | User's Manual V1.2, Sep 2008 (mirror; no datasheet) | **Medium-high** |
-| 50A Current Sensor | [`bb-acs756.md`](bb-acs756.md) | `BB-ACS756` | Allegro ACS756 ±50 A breakout, 40 mV/A, 5 V | Product page + Cytron schematic + Allegro [VEN] | **Medium** |
+| 50A Current Sensor | [`bb-acs756.md`](bb-acs756.md) | `BB-ACS756` | Allegro ACS756 ±50 A breakout, 40 mV/A, 5 V | Product page + Cytron schematic + Allegro [VEN] + Cytron GitHub PIC sample code (SK28A) | **Medium** |
 | RGB LED Stick | [`rgb-led-stick.md`](rgb-led-stick.md) | `BCY-NEO-STICK-8` | 8× SK6812 (WS2812B-compatible) chainable stick | Product page + tutorial | **Medium** |
 | 3-Axis Accelerometer | [`sn-adxl335-cy.md`](sn-adxl335-cy.md) | `SN-ADXL335-CY` | ADXL335 ±3 g breakout, 2.5–6 V (on-board 3.3 V reg), 50 Hz | Product page + ADI [VEN] | **Medium** |
 
@@ -220,14 +220,14 @@ Sensor notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Product page (installation tutorial blocked) | **Medium** |
+| STEM Robot Building Base Bundles | [`stem-robot-building-base.md`](stem-robot-building-base.md) | `V-HD-STEM` | Plastic 2WD base + TT motors, wheels, castor (Blue/Green) | Installation guide tutorial (25 Jul 2023, read in full incl. images) + product page | **Medium-high** |
 | Reconfigurable Line Following Track | [`line-following-track.md`](line-following-track.md) | `V-RE-TRACKS` | EVA foam tiles 315×315×10 mm, 18 mm line; Combo 8/16 + add-ons | Product page | **Medium-high** |
 | Robo Bracket for Micro Servo | [`robo-bracket-micro-servo.md`](robo-bracket-micro-servo.md) | `ROBO-BK-SG90` | 1.5 mm aluminium bracket for SG90-size servos, fits Robo Base / Mini | Product page | **Medium** |
 | Robo Base | [`robo-base.md`](robo-base.md) | Series page `V-ROBO-BASE-MINI` | PCB robot chassis; 2WD / 4WD mecanum / accessories / single-base options; 30 mm standoffs | Getting Started with Robo Base tutorial series (16 parts, Jun 2025) + product page spec images | **Medium-high** |
 | Robo Base Mini | [`robo-base-mini.md`](robo-base-mini.md) | Series page `V-ROBO-BASE-MINI` | Smaller PCB chassis, same options; 25 mm standoffs | Product page + Getting Started tutorial (section list) | **Medium-high** |
-| Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Product page + Installation Guide tutorial | **Medium** |
+| Robo Grip Mini Kits | [`robo-grip-mini.md`](robo-grip-mini.md) | `V-ROBO-GRIP-MINI` | PCB gripper for SG90-size servos; gripper only / 2-servo / 3-servo | Installation Guide series (overview + 1/2/3-servo parts, Feb 2026, read in full) + product page | **Medium-high** |
 
-- **STEM base includes no electronics, battery or cable ties**; motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
+- **STEM base includes no electronics, battery or cable ties**; fit the brackets to the motors first, then screw motor + bracket to the lower plate; all fixings use M2.2 × 6 mm screws (installation guide, read 21 Oct 2026); motor brackets are blue on both colour options. **Line track:** Combo 8/16 contain only Cross/Curve/Straight — Station, Blank and T-Junction are add-on packs only; hardness "40 degree (±5)" has no scale stated.
 - **Robo Base series:** no kit includes a controller, battery, sensors or servo; 2WD option is named "Rubber Wheels" but lists "plastic wheels". **Robo Grip Mini:** max 3 servos ("1-axis" = 2 servos, "2-axis" = 3); "Gripper only" has no servo or Robo Bracket; snap and file the parts before assembly. In STRIKER:BIT it is a shooter.
 
 ### Cytron motor drivers
@@ -251,9 +251,9 @@ Sensor notes for every agent:
 | iMD16 | [`imd16.md`](imd16.md) | `IMD16` | 1 ch, 16 A cont / 30 A peak (<10 s), no current limit | Datasheet Rev 1.0, Apr 2026 | **Medium-high** |
 | SHIELD-2AMOTOR | [`shield-2amotor.md`](shield-2amotor.md) | `SHIELD-2AMOTOR` | 2 ch Arduino shield, 5–26 V, **0.8 A cont** / 2 A peak | User's Manual V1.1, Feb 2015 | **Medium-high** |
 | SHIELD-3AMOTOR | [`shield-3amotor.md`](shield-3amotor.md) | `SHIELD-3AMOTOR` | 2 ch Arduino shield, 7–30 V, **1.2 A cont** / 3 A peak (≤1 s) | User's Manual Rev 1.0, Apr 2017 | **Medium-high** |
-| FD04A | [`fd04a.md`](fd04a.md) | `FD04A` (Rev 2.0) | **4 ch**, 7–15 V, 1.5 A cont / 2.5 A peak, L298P | User's Manual V1.2, Jun 2025 | **Medium** |
+| FD04A | [`fd04a.md`](fd04a.md) | `FD04A` (Rev 2.0) | **4 ch**, 7–15 V, 1.5 A cont / 2.5 A peak, L298P | User's Manual V1.2, Jun 2025 (read in full incl. figures 21 Oct 2026) | **Medium-high** |
 | MD10-POT | [`md10-pot.md`](md10-pot.md) | `MD10-POT` | 1 ch, 7–30 V, 10 A / 30 A peak (<10 s); pot + switch or PWM/DIR | Datasheet Rev 1.0, Oct 2018 | **Medium-high** |
-| SHIELD-MD10 | [`shield-md10.md`](shield-md10.md) | `SHIELD-MD10` (Rev 2.0, "R2") | 1 ch Arduino shield, 7–30 V (abs-max table says 25 V), 15 A peak (10 s) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 | **Medium** |
+| SHIELD-MD10 | [`shield-md10.md`](shield-md10.md) | `SHIELD-MD10` (Rev 2.0, "R2") | 1 ch Arduino shield, 7–30 V (abs-max table says 25 V), 15 A peak (10 s) | User's Manual (Rev 2.0 board) V1.0, Jun 2015 + Cytron 3D model SHIELD-MD10 R2 (GitHub, Jan 2019) [DT] | **Medium** |
 | SHIELD-MDD10 | [`shield-mdd10.md`](shield-mdd10.md) | `SHIELD-MDD10` | 2 ch Arduino shield, 7–30 V, 10 A / 30 A over-current limit (temperature-dependent) | Datasheet Rev 1.0, May 2019 | **Medium** |
 | HAT-MDD10 | [`hat-mdd10.md`](hat-mdd10.md) | `HAT-MDD10` | 2 ch Raspberry Pi HAT, 6–24 V, 10 A / 30 A (10 s) | User's Manual V1.0, Mar 2017 | **Medium-high** |
 | MD30C | [`md30c.md`](md30c.md) | `MD30C` (Rev 2.0) | 1 ch, 5–30 V, 30 A cont / 80 A peak (≤1 s) | User's Manual V1.4, Dec 2017 (no datasheet) | **Medium-high** |
@@ -312,7 +312,7 @@ Raspberry Pi board notes for every agent:
 | Product | File | Code | Processor | Primary source | Confidence |
 |---|---|---|---|---|---|
 | IRIV PiControl CM4 | [`iriv-picontrol-cm4.md`](iriv-picontrol-cm4.md) | `IRIV-PICL` | Raspberry Pi CM4 (BCM2711) | **Datasheet Rev 1.2, Nov 2025** (CM4/CM5) + User Manual Rev 1.3, Nov 2025 | **Medium-high** |
-| IRIV PiControl CM5 | [`iriv-picontrol-cm5.md`](iriv-picontrol-cm5.md) | `IRIV-PICL5` | Raspberry Pi CM5 (BCM2712) | **Datasheet Rev 1.2, Nov 2025** (CM4/CM5) + User Manual Rev 1.5, Jan 2026 | **Medium** |
+| IRIV PiControl CM5 | [`iriv-picontrol-cm5.md`](iriv-picontrol-cm5.md) | `IRIV-PICL5` | Raspberry Pi CM5 (BCM2712) | **Datasheet Rev 1.2, Nov 2025** (CM4/CM5) + User Manual Rev 1.5, Jan 2026 (read in full incl. figures 21 Oct 2026) | **Medium-high** |
 | IRIV IO Controller | [`iriv-io-controller.md`](iriv-io-controller.md) | `IRIV-IOC` | Raspberry Pi RP2350A (microcontroller, no Linux) | Datasheet Rev 1.0, Jul 2024 | **Medium-high** |
 | IRIV IOC MQTT Gateway | [`iriv-ioc-mqtt-gateway.md`](iriv-ioc-mqtt-gateway.md) | `IRIV-IOC-MQTT` | Same hardware as IO Controller + factory MQTT firmware | Datasheet Rev 1.0, Jun 2026 | **Medium-high** |
 | IRIV SmartHub CM5 | [`iriv-smarthub-cm5.md`](iriv-smarthub-cm5.md) | `IRIV-SH5` | Raspberry Pi CM5 (BCM2712) | User Manual Rev 1.3, Dec 2025 | **Medium-high** |

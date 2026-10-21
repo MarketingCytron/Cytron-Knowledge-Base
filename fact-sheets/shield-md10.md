@@ -24,21 +24,22 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Red LED A, Red LED B, Green Power LED
 - Reset button for the Arduino main board
 - Rev 2.0 boards labelled "SHIELD-MD10 R2" on front and back
+- Truth table (board bottom silkscreen): PWM 0 gives A LOW, B LOW; PWM 1 and DIR 0 gives A HIGH, B LOW; PWM 1 and DIR 1 gives A LOW, B HIGH
 - Packing list: 1 x SHIELD-MD10 shield, 2 x mini jumper
 - Warranty: 12 months, manufacturing defects only
 - Over-current, thermal, under-voltage, reverse-polarity protection: [NOT STATED]
-- Dimensions: [NOT STATED]
+- Dimensions: PCB about 76.2 x 55.88 mm, 1.6 mm thick, four 3.05 mm mounting holes (derived from the Cytron 3D model; not printed in the manual)
 - Product page: 7–25 V (Rev1.0), 7–30 V (Rev2.0); 10 A continuous, 15 A peak for 10 s; regenerative braking; PWM up to 10 kHz
 
 ## Interfaces and compatibility
 - PWM pin selectable: D3, D5, D6, D9, D10 or D11 (default D3)
 - DIR pin selectable: D2, D4, D7, D8, D12 or D13 (default D2)
-- Terminal block: POWER +, POWER -, Motor Output A, Motor Output B
+- Terminals: green 2-way block POWER + and -, black 2-way block MOTOR A and B, in that order along the edge (user manual, 3D model)
 - Stackable digital, analog and power headers; only RST and GND of the power header connect to the shield
-- Optional External Control header for microcontrollers other than Arduino
+- Optional External Control header for microcontrollers other than Arduino: 3 pins DIR, PWM, GND (board silkscreen in the 3D model)
 - Compatible with Arduino UNO, Arduino Duemilanove, Arduino Mega, Arduino Leonardo "and possibly other pin compatible main boards"
 - Arduino library: Cytron Motor Drivers Library, PWM_DIR example
-- 3D files (STEP, IGS) for SHIELD-MD10 R2 on GitHub
+- 3D files (STEP, IGS, PNG renders) for SHIELD-MD10 R2 on Cytron GitHub, last updated January 2019
 
 ## Use cases
 - Controlling one high-current brushed DC motor from an Arduino UNO, Duemilanove, Mega or Leonardo
@@ -53,6 +54,7 @@ A single-channel Arduino shield that drives one brushed DC motor at up to 10 A c
 - Rev2.0 manual states two different maximum voltages (30 V feature list, 25 V table)
 - Rev 1.0 boards: 25 V maximum
 - No protection features stated
+- PWM low brakes the motor (both outputs LOW), per the board silkscreen truth table
 
 ## Positioning (kept apart from specs)
 - "Solid state components provide faster response time and eliminate the wear and tear of mechanical relay."

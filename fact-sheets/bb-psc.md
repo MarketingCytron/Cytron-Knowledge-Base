@@ -14,14 +14,17 @@ A breakout board with a PS2 connector (female) pre-soldered on the PCB and its p
 - Pins broken out to 0.1" (product page)
 - Mounting: breadboard or donut board (product page)
 - Signals wired in Cytron's tutorial: DATA, CMD, ATT, CLK, +5V, GND (Cytron tutorial "Maker Mini Sumo with PS2 Controller")
-- Number of pins and pin order: [NOT STATED]
+- Header: one row of 9 pads marked JP1 (Cytron tutorial wiring figure)
+- Pad order counted from the square pad: 1 DATA, 2 CMD, 3 unused, 4 GND, 5 +5V, 6 ATT, 7 CLK, 8 and 9 unused (Cytron tutorial wiring figure; functions of pads 3, 8, 9 not stated)
 - Dimensions: [NOT STATED]
 - Warranty: [NOT STATED]
 
 ## Interfaces and compatibility
+- BB-PSC JP1 to signal (from the square pad): 1 DATA, 2 CMD, 4 GND, 5 +5V, 6 ATT, 7 CLK (Cytron tutorial wiring figure)
 - Maker Mini Sumo wiring (Cytron tutorial): DATA → D2 (START), CMD → D7 (OPP_FR), ATT → D6 (OPP_FC), CLK → D5 (OPP_FL), +5V → any + terminal, GND → any − terminal
 - Library: Arduino PS2X library (Cytron GitHub, https://github.com/CytronTechnologies/PS2X_lib); tutorial uses ps2x.config_gamepad(5,7,6,2,true,true), argument order clk, cmd, att, dat, pressures, rumble
-- Tutorial controller: Wireless PS2 Controller (Compatible), 2.4GHz, about 10 m range, 2 AAA batteries
+- Tutorial full code also uses the Cytron Maker Sumo Library (Arduino Library Manager)
+- Tutorial controller: Wireless PS2 Controller (Compatible), 2.4GHz, about 10 m range, 2 AAA batteries; shown as discontinued in the tutorial hardware list (21 Oct 2026)
 - Different from SHIELD-PS2, which converts the PS2 controller to UART and uses a different library
 
 ## Use cases
@@ -30,11 +33,11 @@ A breakout board with a PS2 connector (female) pre-soldered on the PCB and its p
 
 ## Known limitations
 - No Cytron datasheet or user manual; product page and one Cytron tutorial are the sources
-- Pin count, pin order and dimensions are not stated
+- Pad order is shown only in the tutorial wiring figure (no pad labels on the header); dimensions are not stated
 - Supply-voltage rating for the connected PS2 receiver is not stated (the tutorial uses +5V)
 - On Maker Mini Sumo all Object Sensors must be removed when connecting the PS2 breakout (Cytron tutorial)
 - On Maker Mini Sumo the PS2X example pins (13, 11, 10, 12) must be changed to (5, 7, 6, 2) (Cytron tutorial)
-- Press reset after connecting (Cytron tutorial)
+- Switch on the controller, power the board, then press reset to start control (Cytron tutorial)
 
 ## Positioning (kept apart from specs)
 - Product page frames it as a pre-soldered PS2 connector broken out for breadboard or donut board use

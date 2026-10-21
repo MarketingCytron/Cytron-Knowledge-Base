@@ -24,11 +24,11 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Reverse polarity protection on the motor supply
 - Schottky clamping diodes
 - Power toggle switch; feature list also states "Solid state switch for power"
-- Test switches (A and B) for every channel
+- Test switches (A and B) for every channel: button A drives output A to B, button B drives B to A
 - Power indicator LED and motor status indicator LEDs
-- 3 mm mounting holes for standard PCB stands
+- Four 3 mm mounting holes for standard PCB stands
 - Over-current, thermal and under-voltage protection: [NOT STATED]
-- Dimensions: 10.67 cm × 5.21 cm (product page)
+- Dimensions: 106.68 mm × 52.07 mm (user manual dimension figure; product page 10.67 cm × 5.21 cm)
 - Operating temperature: [NOT STATED]
 - Warranty: 12 months, manufacturing defects only
 - In the box: 1 x FD04A Rev2.0 board, 1 x 14 way IDE cable connector
@@ -36,9 +36,10 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Rev2.0 since 10 April 2015 (product page)
 
 ## Interfaces and compatibility
-- Control pins through a 7 x 2 (14-way) IDE socket or through extra solder pads
+- Control pins through a 7 x 2 (14-way) IDE socket or through a row of 10 extra solder pads labelled 1 2 3 4 5 6 7 8 V G
 - Control pins 1-8: Motor 1 direction, Motor 1 enable/Speed Control, Motor 2 direction, Motor 2 enable/Speed Control, Motor 3 direction, Motor 3 enable/Speed Control, Motor 4 direction, Motor 4 enable/Speed Control; V = 5V output; G = ground; x = not connected
-- POWER terminal block for motor supply; four MOTOR terminal blocks M1 to M4
+- IDE socket layout (user manual figure): row next to the extra pads 2, 3, x, 6, 7, x, G; inner row 1, x, 4, 5, x, 8, V (x = not connected)
+- POWER terminal block for motor supply, marked + and − and "7-15V"; four MOTOR terminal blocks M1 to M4 with outputs A and B
 - IDE connector compatible with FD04A Rev1.0; can replace FD04A Rev1.0 in the PR19
 - 5V from the V pin can supply the PR19 main board; do not supply another 5V into the V pin
 - Arduino: Cytron Motor Drivers Library (PWM_DIR_DUAL example)
@@ -54,6 +55,7 @@ A four-channel bi-directional driver for four brushed DC motors, built on the L2
 - Maximum PWM frequency 10 kHz
 - Logic input maximum 5.5 V
 - Do not supply 5V into the V pin
+- The IDE socket does not follow 1 to 14 pin numbering: 4 positions are not connected; wire by the manual figure or board silkscreen
 - Over-current, thermal and under-voltage protection are not stated
 
 ## Positioning (kept apart from specs)
