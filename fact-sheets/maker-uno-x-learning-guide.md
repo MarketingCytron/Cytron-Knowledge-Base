@@ -23,12 +23,12 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - Lesson 5 Analog Input: P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line
 - Lesson 6 DC Motor: P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton
 - Lesson 7 Ultrasonic Sensor: P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor
-- Project pins (as stated in the guide): P1–P3 LEDs on pins 7 and 2–7; P4 on-board switch pin 2 (INPUT_PULLUP) and LED 4; P5 external pushbutton on pin 3 with a 10 kΩ pull-up; P6–P7 external LED with 220 Ω on pin 5 (PWM); P8–P10 piezo buzzer on pin 8 via tone(); P11 potentiometer on A0; P12–P13 IR sensor VCC 5V, GND, A0 to A0; P14 DC motor on pin 5 through a 2N2222 transistor, 220 Ω resistor and a diode
+- Project pins (as stated in the guide): P1–P3 LEDs on pins 7 and 2–7; P4 on-board switch pin 2 (INPUT_PULLUP) and LED 4; P5 external pushbutton on pin 3 with a 10 kΩ pull-up; P6–P7 external LED with 220 Ω on pin 5 (PWM); P8–P10 piezo buzzer on pin 8 via tone(); P11 potentiometer on A0; P12–P13 IR sensor VCC 5V, GND, A0 to A0; P14 DC motor on pin 5 through a 2N2222 transistor, 220 Ω resistor and a diode; P15 on-board switch steps the motor speed 0 / 100 / 255; P16–P17 ultrasonic VCC 5V, TRIG pin 11, ECHO pin 12, GND; P17 buzzer F4 (349 Hz) on pin 8
 - Tone values taught: Do 262, Re 294, Mi 330, Fa 349, So 392, La 440, Ti 494, high Do 523 Hz; delay 30 % longer than the note duration
 - IR threshold rule: (reading on white + reading on black) / 2; author's example 500
 - Motor speed demo: analogWrite(5, 255) for 3 s then analogWrite(5, 80) for 3 s; kit motor rated 3–6 V
 - Each project links a demo video by QR code; each lesson ends with a Task and a summary
-- Page count, size, ISBN: [NOT STATED]
+- Page count: 104 pages (PDF); size and ISBN: [NOT STATED]
 - Warranty: 12 months
 
 ## Interfaces and compatibility
@@ -51,7 +51,8 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - The on-board switch occupies pin 2 and cannot be shared with other components while in use
 - P6 blinks forever once the switch is pressed until reset; P9 plays once because the code is in setup()
 - The motor may lack torque if its blades rest on a surface; applying voltage beyond the motor's rating shortens its life
-- Projects 15–17 and the total page count were not read for this sheet
+- Printed code typos: P17 "if (distance < 2{" is missing a bracket, and the first P16 listing uses curly quotes; type straight quotes
+- The guide never says which board to select in Tools > Board
 - The product page does not state which edition ships
 
 ## Positioning (kept apart from specs)

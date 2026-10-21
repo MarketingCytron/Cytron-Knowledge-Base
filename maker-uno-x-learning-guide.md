@@ -5,13 +5,13 @@
 | Product code | `BOK-MUNOX` (my.cytron.io product page [PP]) |
 | Family | Arduino kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 4): live my.cytron.io product page read (description, features, packing list, resources). Page lists all 17 project titles and the packing list; Projects 15–17 content is still unread, so it stays Medium |
-| Primary source | The product IS the document. **Guide book: "Arduino Learning Guide for Beginners Using Maker UNO X", v1.5, February 2023, published by Cytron Technologies** (Drive PDF `Arduino Learning Guide for Beginners Using Maker UNO X R15 Feb23.pdf`) [UM]. Read as extracted text from the cover to Lesson 6 Project 14 (p. ~80); Projects 15–17 were cut off by the reader. An older edition v1.4 (February 2020) also exists on Drive [UM-v1.4, cover only] |
+| Last verified | 2026-10-21 |
+| Reviewed | 2026-10-21 — full v1.5 PDF (104 pages) read from the copy in the team folder, including Projects 15–17 that the earlier reader cut off. All 17 projects' parts, pins and code are now Cytron-stated [UM]. Raised Medium → Medium-high; still open: whether the printed BOK-MUNOX book is v1.5, and page size/ISBN. Earlier: 2026-10-19 master-table review of the live product page |
+| Primary source | The product IS the document. **Guide book: "Arduino Learning Guide for Beginners Using Maker UNO X", v1.5, February 2023, published by Cytron Technologies** (Drive PDF `Arduino Learning Guide for Beginners Using Maker UNO X R15 Feb23.pdf`, 104 pages) [UM], read in full 2026-10-21 from the copy in the team folder. An older edition v1.4 (February 2020) also exists on Drive [UM-v1.4, cover only] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are images and were not readable; "ti" ligature drops appear in places). [PP] = my.cytron.io page "Learning Guide for Beginners with Maker Uno X compatible with Arduino" (coordinator capture 2026-10-19). This file documents the **book** only. The Maker UNO X board has its own KB file (`maker-uno-x.md`) — statements about the board below are what the guide says.
+Tag notes: [UM] = the v1.5 guide above (full text layer read 2026-10-21; "ti" ligature drops appear in places). [PP] = my.cytron.io page "Learning Guide for Beginners with Maker Uno X compatible with Arduino" (coordinator capture 2026-10-19). This file documents the **book** only. The Maker UNO X board has its own KB file (`maker-uno-x.md`) — statements about the board below are what the guide says.
 
 ## What it is
 - A printed beginner's guidebook for learning Arduino on the **Maker UNO X** board, sold on its own as "Learning Guide for Beginners with Maker Uno X compatible with Arduino"; "designed for the Maker Uno X Learning Box"; packing: 1× book [PP].
@@ -31,7 +31,8 @@ Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are im
 | Software covered | Arduino IDE (arduino.cc download; Windows 10+ 64-bit recommended); CH340/CH341 driver for Windows and Mac | [UM] |
 | Price | RM39.00 (5+ RM37.10, 10+ RM35.10) | [PP] |
 | Warranty | 12 months | [PP] |
-| Size / page count / ISBN | Not stated | — |
+| Page count | 104 pages (PDF, including notes pages); back cover prints "R1240223" and "PM-MUNOX-LK" (meaning not stated) | [UM] |
+| Size / ISBN | Not stated | — |
 
 ### Lesson and project list [UM]
 | Lesson | Projects | Learnt (lesson summary) |
@@ -42,8 +43,8 @@ Tag notes: [UM] = the v1.5 guide above (text extraction; circuit drawings are im
 | 3 Analog Output | P6 Construct An LED Circuit; P7 Fade An LED | LED circuit; `while` loop; digital vs analog output; shorter code |
 | 4 Melody Tone | P8 Compose Basic Tone; P9 Compose "Happy Birthday" Melody; P10 Optimize Your Code | `tone()`; compose a melody; load an IDE example (toneMelody); `for` loop and arrays |
 | 5 Analog Input | P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line | `analogRead()` 0–1023; Serial Monitor; how an IR sensor works; variables |
-| 6 DC Motor | P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton | transistor-driven motor; PWM speed (P15 not read) |
-| 7 Ultrasonic Sensor | P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor | (not read) |
+| 6 DC Motor | P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton | build a circuit to run a DC motor; control its speed; `switch...case` |
+| 7 Ultrasonic Sensor | P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor | how an ultrasonic sensor works; self-declared functions |
 ### Product page facts (my.cytron.io, read 19 Oct 2026)
 - **Description:** guidebook designed for the Maker Uno X Learning Box, also usable as a general Arduino beginner reference; written by a non-technical person; "copy, upload, see the result, then learn" approach [PP].
 - **Project list (page):** Lessons 1–7 with Projects 1–17, ending with Project 15 "Controlling A Motor Speed Using A Pushbutton", Project 16 "Setting Up Ultrasonic Sensor", Project 17 "Build A Car's Rear Bumper Sensor" [PP].
@@ -68,6 +69,10 @@ Pins and parts each project uses, as the guide states them [UM]:
 | P13 | IR sensor, white card with a 2 cm black line, ~2 cm from the sensor | `irValue > 500` (author's threshold; reader sets midpoint of white/black readings) → LED 3 on |
 | P14 | DC motor with blade, diode ("white stripe … to the positive wire (red)"), 220 Ω resistor, 2N2222 transistor, jumper wires | motor driven from **pin 5** (PWM) via the transistor; on-board switch (pin 2) starts `analogWrite(5, 255)` 3 s / `analogWrite(5, 80)` 3 s forever |
 
+| P15 | same circuit as P14 | on-board switch (pin 2, `INPUT_PULLUP`) steps `mode` 0 → 1 → 2 → 0: `analogWrite(5, 0 / 100 / 255)`; `while(digitalRead(2)==LOW);` waits for release |
+| P16 | ultrasonic sensor, jumper wires | **VCC → 5V, TRIG → pin 11, ECHO → pin 12, GND → GND**; sensor at the breadboard edge so wires do not block it; `distance = duration*0.034/2` (cm), Serial 9600; then the same code moved into a `ultrasonic()` function |
+| P17 | ultrasonic sensor + on-board buzzer | `tone(8, 349)` (F4) continuously when distance < 2 cm; otherwise beep 50 ms every `distance × 10` ms; Task: a theremin with distance zones |
+
 Board behaviour the guide relies on [UM]: on-board LEDs on pins 2–13, piezo buzzer on pin 8, on-board switch on pin 2 (internally connected; cannot be used for other components while in use), a **"Debug" mode slide switch** that enables the built-in LEDs and the buzzer, PWM only on pins 3, 5, 6, 9, 10, 11 ("~"), analog input only on A0–A5, 3.3V and 5V pins used to demonstrate motor speed vs voltage.
 
 ## Rules and gotchas (for code, wiring and tutorials)
@@ -78,7 +83,9 @@ Board behaviour the guide relies on [UM]: on-board LEDs on pins 2–13, piezo bu
 - **Motor circuit:** diode stripe to the red (positive) wire; motor may lack torque "if the blades are resting on a surface"; "WARNING! Applying high voltage to a motor (beyond the recommended voltage) will shorten a motor's life cycle"; the kit motor's recommended voltage is 3–6 V [UM].
 - **Code hygiene taught:** Arduino is case sensitive (`OUTPUT`, `pinMode`, `digitalWrite`); check `;`, `( )`, `{ }`; code in `setup()` runs once, in `loop()` forever; `while(1)` never exits without reset [UM].
 - **Driver:** Windows `CH341SER.EXE`; Mac `CH341SER_MAC.ZIP` then restart; Mac port appears as `/dev/cu.usbserial-220` (author's example); Mac troubleshooting PDF `Troubleshooting_CH431_Driver_For_Mac.pdf` on cdn.cytron.io [UM].
-- **Board selection is not stated in the text read** — do not quote one from this book.
+- **Board selection is never stated** in v1.5 (only Tools > Port) — do not quote one from this book; see `maker-uno-x.md`.
+- **Code typos in the printed listings** [UM]: P17's explanation page prints `if (distance < 2{` (missing `)`), and the first P16 listing uses curly quotes (“Distance = “) that will not compile if typed as printed; the second P16 listing uses straight quotes. Tell readers to use straight quotes and check brackets.
+- **`while(condition);` with a semicolon** (P15) waits on that line until the condition becomes false — used to wait for the button release [UM].
 
 ## Power and electrical limits
 - Not a powered product. Projects run from the Maker UNO X over a micro USB cable [UM]. Motor voltage demonstration uses the board's 3.3V and 5V pins; the kit motor is "3-6V" [UM].
@@ -110,14 +117,12 @@ Board behaviour the guide relies on [UM]: on-board LEDs on pins 2–13, piezo bu
 | Illustrator name | [UM] OCR "Suhana Oazmi" | Cytron staff listing "Suhana Azmi" (Drive) | OCR error; "Suhana Azmi" |
 
 ## Needs verification
-- Projects 15, 16 and 17 (pins, components, code) — not read (reader truncation).
-- Total page count, physical size, binding, ISBN.
+- Physical size, binding, ISBN (PDF: 104 pages).
 - Whether the printed book sold as BOK-MUNOX is v1.5 (the page does not state the edition; "an earlier KB note says v1.5").
-- Which Arduino board name the guide tells readers to select.
 - Breadboard supplied with the Learning Box (the guide says to peel and stick it onto the Maker UNO X board) — kit fact, not book fact.
 
 ## Sources
-- [UM] Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (PDF): (Cytron document — link not public) (read 2026-10-19 as text, cover to p. ~80)
+- [UM] Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (PDF, 104 pages): (Cytron document — link not public) (read in full 2026-10-21 from the copy in the team folder; earlier partial read 2026-10-19)
 - [UM-v1.4] Arduino-Learning-Guide-for-Beginners-Using-Maker-UNO-X.pdf, v1.4 Feb 2020: (Cytron document — link not public) (cover and contents only)
 - [PP] https://my.cytron.io/p-arduino-learning-guide-for-beginners-with-maker-uno-x (coordinator capture, 2026-10-19)
 - [UM] Driver links in the guide: https://cdn.cytron.io/makeruno/CH341SER.EXE · https://cdn.cytron.io/makeruno/CH341SER_MAC.ZIP · https://cdn.cytron.io/makeruno/Troubleshooting_CH431_Driver_For_Mac.pdf

@@ -70,9 +70,9 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 59 | 57 | [Maker Line](maker-line.md) | `MAKER-LINE` | Sensors | Sold | Medium-high | Low | 5 | 4 | 5 | Done (2026-10-19) | Datasheet Rev 1.0, Jul 2019 |
 | 60 | 84 | [MDD10A](mdd10a.md) | `MDD10A` | Motor drivers | Sold | Medium-high | Low | 5 | 3 | 5 | Done (2026-10-19) | User's Manual V2.0, Jun 2017 (no datasheet) |
 | 61 | 34 | [ZOOM:BIT](zoom-bit.md) | `ZOOM:BIT` | micro:bit accessories | Sold | Medium-high | Medium | 8 | 4 | 0 | Done (2026-10-21) | Quick Start Guidebook v1.1, 2022 (wiring pages read 21 Oct 2026; no datasheet) + REKA:BIT datasheet |
-| 62 | 6 | [Maker UNO X](maker-uno-x.md) | `MAKER-UNO-X` | Arduino-compatible boards | Sold | Medium | Medium | 11 | 5 | 6 | Done (2026-10-19) | Guide book v1.5, Feb 2023 + product page (no datasheet) |
+| 62 | 6 | [Maker UNO X](maker-uno-x.md) | `MAKER-UNO-X` | Arduino-compatible boards | Sold | Medium | Medium | 10 | 5 | 6 | Done (2026-10-19) | Guide book v1.5, Feb 2023 + product page (no datasheet) |
 | 63 | 16 | [Servo Controller Shield](shield-servo.md) | `SHIELD-SERVO` | Arduino shields (non-motor) | Sold | Medium-high | Medium | 10 | 8 | 0 | Done (2026-10-19) | User's Manual V1.1, Apr 2018 (no datasheet) |
-| 64 | 51 | [SC08A Servo Controller](sc08a.md) | `SC08A` | Servo, RC and interface | Sold | Medium | Medium | 11 | 9 | 0 | Done (2026-10-21) | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) + Cytron GitHub sample code (PIC, GUI,… |
+| 64 | 51 | [SC08A Servo Controller](sc08a.md) | `SC08A` | Servo, RC and interface | Sold | Medium-high | Medium | 8 | 11 | 0 | Done (2026-10-21) | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample… |
 | 65 | 2 | [Robo ESP32](robo-esp32.md) | `ROBO-ESP32` | ESP32 boards | Sold | Medium-high | Medium | 10 | 6 | 0 | Done (2026-10-19) | Robo ESP32 Rev1.1 Board Datasheet, Rev 1.1, February 2026 (Cytron Google Doc) |
 | 66 | 28 | [MOTION 2350 Pro](motion-2350-pro.md) | `MOTION-2350-PRO` | Pico / RP2040 / RP2350 boards | Sold | Medium-high | Medium | 9 | 7 | 0 | Done (2026-10-19) | Datasheet Rev 2.0, Sep 2025 |
 | 67 | 53 | [UC00C](uc00c.md) | `UC00C` | Servo, RC and interface | Sold | Medium | Medium | 9 | 5 | 1 | Done (2026-10-19) | User's Manual V1.0, Jul 2016 (no datasheet) |
@@ -90,7 +90,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 79 | 105 | [Maker pHAT](maker-phat.md) | `HAT-MAKER` | Raspberry Pi HATs and boards | Sold | Medium-high | Medium | 8 | 4 | 1 | Done (2026-10-19) | User's Manual Rev 1.10, Feb 2019 (no datasheet) |
 | 80 | 5 | [Maker UNO Plus](maker-uno-plus.md) | `MAKER-UNO-PLUS` | Arduino-compatible boards | Sold | Medium-high | Low | 3 | 6 | 1 | Done (2026-10-19) | User's Manual Rev 1.0, Oct 2018 (no datasheet) |
 | 81 | 13 | [PS2 Shield](shield-ps2.md) | `SHIELD-PS2` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 4 | 1 | Done (2026-10-19) | User's Manual V1.0, Sep 2013 (no datasheet) |
-| 82 | 20 | [Maker UNO Learning Box](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Arduino kits and books | Sold | Medium | Medium | 7 | 2 | 2 | Done (2026-10-19) | Product page (Beginner Guide PDF host blocked) |
+| 82 | 20 | [Maker UNO Learning Box](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Arduino kits and books | Sold | Medium-high | Low | 5 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginner Using Maker UNO, Ver 1.3, Dec 2018 (read 21 Oct 2026) + product page |
 | 83 | 22 | [PikaBot](pikabot.md) | `V-KIT-PIKABOT` | Arduino kits and books | Sold | Medium-high | Low | 5 | 4 | 2 | Done (2026-10-21) | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot… |
 | 84 | 64 | [RE08A Rotary Encoder](re08a.md) | `RE08A` | Sensors | Sold | Medium-high | Low | 7 | 3 | 0 | Done (2026-10-19) | User's Manual V1.2, Sep 2008 (mirror; no datasheet) |
 | 85 | 65 | [50A Current Sensor](bb-acs756.md) | `BB-ACS756` | Sensors | Sold | Medium | Medium | 7 | 3 | 5 | Done (2026-10-19) | Product page + Cytron schematic + Allegro vendor docs |
@@ -98,7 +98,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 | 87 | 112 | [RPi Cooling Fan 30 mm](rpi-cooling-fan-30mm.md) | `FAN-0305-3008` | Power and accessories | Sold | Medium | Medium | 6 | 2 | 5 | Done (2026-10-19) | Product page |
 | 88 | 119 | [Raspbot Workshop](raspbot-workshop.md) | `V-TRAINING-AI` | Workshops and services | Sold | Medium-high | Low | 7 | 2 | 4 | Done (2026-10-19) | Workshop tentative + product page |
 | 89 | 14 | [ESP8266 WiFi Shield](shield-esp-wifi.md) | `SHIELD-ESP-WIFI` | Arduino shields (non-motor) | Sold | Medium-high | Low | 6 | 5 | 3 | Done (2026-10-19) | User's Manual Rev2.0 V2.1, Aug 2021 (no datasheet) |
-| 90 | 21 | [Maker Uno X Learning Guide](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Arduino kits and books | Sold | Medium | Medium | 5 | 2 | 1 | Done (2026-10-19) | Guide v1.5, Feb 2023 (read to Lesson 6) |
+| 90 | 21 | [Maker Uno X Learning Guide](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Arduino kits and books | Sold | Medium-high | Low | 3 | 2 | 1 | Done (2026-10-21) | Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (104 pages, read in full 21 Oct 2026) |
 | 91 | 56 | [PS2 Connector Breakout](bb-psc.md) | `BB-PSC` | Servo, RC and interface | Sold | Medium | Medium | 6 | 2 | 4 | Done (2026-10-19) | Product page + Maker Mini Sumo PS2 tutorial |
 | 92 | 66 | [RGB LED Stick](rgb-led-stick.md) | `BCY-NEO-STICK-8` | Sensors | Sold | Medium | Medium | 6 | 4 | 2 | Done (2026-10-19) | Product page + tutorial |
 | 93 | 77 | [SHIELD-3AMOTOR](shield-3amotor.md) | `SHIELD-3AMOTOR` | Motor drivers | Sold | Medium-high | Low | 6 | 3 | 4 | Done (2026-10-19) | User's Manual Rev 1.0, Apr 2017 |
@@ -195,7 +195,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **ZOOM:BIT** (2026-10-21): Guidebook wiring pages read (motor terminals, Grove ports, servo S1, light threshold); Medium → Medium-high
 - **Maker UNO X** (2026-10-19): Packing list and D0/D1 TX/RX LEDs confirmed. Stays Medium (chip name, dimensions image).
 - **Servo Controller Shield** (2026-10-19): Page agrees with the manual (4 A cont / 5 A peak, 0.25 µs, 9600); size 7.4 × 6.6 cm. Medium → Medium-high.
-- **SC08A Servo Controller** (2026-10-21): Arduino_SC08A GitHub sketches read (protocol confirmed, speed-0 rule); stays Medium — no manual file in the folder
+- **SC08A Servo Controller** (2026-10-21): Cytron manual read in full incl. figures (connector pin orders); Medium → Medium-high
 - **MOTION 2350 Pro** (2026-10-19): my.cytron.io now shows Rev 2.0 5 A / 10 A, 2 MB flash, 95.2 × 57.2 × 8 mm, Arduino tutorial. Medium → Medium-high.
 - **UC00C** (2026-10-19): 3.3 V max 500 mA, LED colours, size, packing from the page. Stays Medium (pin order image unread).
 - **REKA:BIT RBT Project Kit** (2026-10-21): English guide v2.0 read (ports and servo for all 5 projects, pump/motor warnings); Medium → Medium-high
@@ -212,7 +212,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **Maker pHAT** (2026-10-19): Rev1.1 FT231X since Jan 2019; Pi 5 tested not compatible; packing list. Medium → Medium-high.
 - **Maker UNO Plus** (2026-10-19): FT231X, 12 LEDs (2–13), 3.3 V 500 mA, packing with USB cable, 12-month warranty confirmed. Medium → Medium-high.
 - **PS2 Shield** (2026-10-19): Size 68 × 53 mm; page agrees with UM/GH (A1 reset, baud jumper; page omits 4800). Medium → Medium-high.
-- **Maker UNO Learning Box** (2026-10-19): Page agrees with the KB. Stays Medium (guide unread).
+- **Maker UNO Learning Box** (2026-10-21): Maker UNO guide Ver 1.3 read in full (project wiring confirmed); Medium → Medium-high
 - **PikaBot** (2026-10-21): Booklet OCR + wiring pages/schematic read (all pins, power path, calibration); Medium → Medium-high
 - **RE08A Rotary Encoder** (2026-10-19): Page independently confirms 5 V, 8 PPR, pull-up, 1 kHz, 35 mm disc, output polarity. Medium → Medium-high.
 - **50A Current Sensor** (2026-10-19): Page matches the KB. Stays Medium.
@@ -220,7 +220,7 @@ One row per product in the Cytron Product Knowledge Base (120 products), in revi
 - **RPi Cooling Fan 30 mm** (2026-10-19): Page matches the KB. Stays Medium.
 - **Raspbot Workshop** (2026-10-19): Refund (1 week before) and on-site option now stated; page + outline agree. Medium → Medium-high.
 - **ESP8266 WiFi Shield** (2026-10-19): Rev history, Rev1.0 = ESP8266-12, 3.3 V reg 500 mA, ESP-AT V2.2.0 since Oct 2021. Medium → Medium-high.
-- **Maker Uno X Learning Guide** (2026-10-19): Project titles 1–17 and packing from the page. Stays Medium.
+- **Maker Uno X Learning Guide** (2026-10-21): Full v1.5 guide read incl. P15–P17 (ultrasonic pins 11/12, code typos); Medium → Medium-high
 - **PS2 Connector Breakout** (2026-10-19): Page matches the KB. Stays Medium.
 - **RGB LED Stick** (2026-10-19): Page matches the KB. Stays Medium.
 - **SHIELD-3AMOTOR** (2026-10-19): Page independently confirms the manual (DRV8871, ratings, modes, no Vmotor polarity protection). Medium → Medium-high.

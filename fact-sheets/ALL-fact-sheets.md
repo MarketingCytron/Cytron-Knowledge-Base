@@ -1687,7 +1687,8 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 - Software: Arduino IDE; CH341 (CH34x) USB driver; Maker UNO default sketch on GitHub
 - Warranty: 12 months
 - Dimensions and weight: [NOT STATED]
-- Project wiring (pins per project): [NOT STATED] (guide PDF not read)
+- Guide: "Arduino Learning Guide For Beginner Using Maker UNO", Ver 1.3, Dec 2018, 90 pages (Lesson 0 setup + 7 lessons, 17 projects)
+- Project wiring (guide): on-board LEDs pins 2–7; on-board button pin 2 (INPUT_PULLUP); external button on pin 3 with 10 kΩ pull-up; external LED + 220 Ω on pin 5; buzzer pin 8; potentiometer A0; IR sensor analog output A0; motor on pin 5 through a 2N2222 with 220 Ω base resistor and a diode; ultrasonic Trig pin 11, Echo pin 12, VCC 5V
 - Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
@@ -1712,7 +1713,8 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 ## Known limitations
 - Power is USB only; no battery or adapter in the kit
 - The guide is a PDF download; a printed copy is not listed in the packing list
-- Project wiring is in the guide PDF, which was not read for this fact sheet
+- Hold the motor while testing; it may not have the torque to spin with the propeller resting on a surface
+- The transistor circuit cannot reverse the motor; a motor driver is needed for direction control
 - Not the Maker UNO X Learning Box: same 17-project structure but a different board and guide edition
 - The 3 V motor must be driven through the supplied transistor, not directly from an I/O pin (Maker UNO I/O pin limit 20 mA)
 
@@ -1731,10 +1733,10 @@ https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-makin
 https://s3-ap-southeast-1.amazonaws.com/cdn.cytron.io/makeruno/Arduino_Learning_Guide_for_Beginner_Using_Maker_UNO.pdf
 
 ## Source type
-Website
+Datasheet
 
 ## Source link
-https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-making
+[NOT STATED]
 
 # Product fact sheets
 
@@ -1761,12 +1763,12 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - Lesson 5 Analog Input: P11 Display Analog Value On Serial Monitor; P12 Read Analog IR Sensor; P13 IR Sensor To Detect Black Line
 - Lesson 6 DC Motor: P14 Control A DC Motor; P15 Controlling A Motor Speed Using A Pushbutton
 - Lesson 7 Ultrasonic Sensor: P16 Setting Up Ultrasonic Sensor; P17 Build A Car's Rear Bumper Sensor
-- Project pins (as stated in the guide): P1–P3 LEDs on pins 7 and 2–7; P4 on-board switch pin 2 (INPUT_PULLUP) and LED 4; P5 external pushbutton on pin 3 with a 10 kΩ pull-up; P6–P7 external LED with 220 Ω on pin 5 (PWM); P8–P10 piezo buzzer on pin 8 via tone(); P11 potentiometer on A0; P12–P13 IR sensor VCC 5V, GND, A0 to A0; P14 DC motor on pin 5 through a 2N2222 transistor, 220 Ω resistor and a diode
+- Project pins (as stated in the guide): P1–P3 LEDs on pins 7 and 2–7; P4 on-board switch pin 2 (INPUT_PULLUP) and LED 4; P5 external pushbutton on pin 3 with a 10 kΩ pull-up; P6–P7 external LED with 220 Ω on pin 5 (PWM); P8–P10 piezo buzzer on pin 8 via tone(); P11 potentiometer on A0; P12–P13 IR sensor VCC 5V, GND, A0 to A0; P14 DC motor on pin 5 through a 2N2222 transistor, 220 Ω resistor and a diode; P15 on-board switch steps the motor speed 0 / 100 / 255; P16–P17 ultrasonic VCC 5V, TRIG pin 11, ECHO pin 12, GND; P17 buzzer F4 (349 Hz) on pin 8
 - Tone values taught: Do 262, Re 294, Mi 330, Fa 349, So 392, La 440, Ti 494, high Do 523 Hz; delay 30 % longer than the note duration
 - IR threshold rule: (reading on white + reading on black) / 2; author's example 500
 - Motor speed demo: analogWrite(5, 255) for 3 s then analogWrite(5, 80) for 3 s; kit motor rated 3–6 V
 - Each project links a demo video by QR code; each lesson ends with a Task and a summary
-- Page count, size, ISBN: [NOT STATED]
+- Page count: 104 pages (PDF); size and ISBN: [NOT STATED]
 - Warranty: 12 months
 
 ## Interfaces and compatibility
@@ -1789,7 +1791,8 @@ A printed beginner's guidebook (v1.5, February 2023, published by Cytron Technol
 - The on-board switch occupies pin 2 and cannot be shared with other components while in use
 - P6 blinks forever once the switch is pressed until reset; P9 plays once because the code is in setup()
 - The motor may lack torque if its blades rest on a surface; applying voltage beyond the motor's rating shortens its life
-- Projects 15–17 and the total page count were not read for this sheet
+- Printed code typos: P17 "if (distance < 2{" is missing a bracket, and the first P16 listing uses curly quotes; type straight quotes
+- The guide never says which board to select in Tools > Board
 - The product page does not state which edition ships
 
 ## Positioning (kept apart from specs)
@@ -4437,7 +4440,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - JP11 mini jumper: "1-8" for a single board or the first board, "9-16" for the second board (User's Manual V1.0)
 - LEDs: orange servo power indicator; green 5 V for PIC indicator (User's Manual V1.0)
 - Buttons: servo test (drives servos to the end position); reset (stops all pulse generation, servos free-run) (User's Manual V1.0)
-- Connectors: two 4-way UART/expansion headers (U_1, U_2) (User's Manual V1.0)
+- Connectors: two 4-way UART/expansion headers (U_1 locking 2510 header, U_2 pin header), pin order RX, TX, GND, 5V; servo headers S1–S8, pin order S (signal), +, − (User's Manual V1.0 board photos)
 - Packing list: 1 × SC08A main board, 1 × 2510H-04 connector with terminal pins, 1 × 2561-04 connector with terminal pins, 1 × mini jumper for JP11 (User's Manual V1.0)
 - Warranty: 6 months (User's Manual V1.0); 12 months (product page, read 2026-10-16)
 - Size: 49 mm × 46 mm (product page)
@@ -4493,7 +4496,7 @@ https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view
 Datasheet
 
 ## Source link
-https://www.gotronic.fr/pj2-38783-nt-3349.pdf
+https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view
 
 # Product fact sheets
 

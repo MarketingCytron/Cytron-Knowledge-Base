@@ -93,9 +93,9 @@ Shield notes for every agent:
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
 | Maker UNO Edu Kit | [`maker-uno-edu-kit.md`](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Maker UNO + components kit for classes (School Package 10+1) | Getting Started Module PDF + Teacher Guidebook (no version/date) | **Medium-high** |
-| Maker UNO Learning Box | [`maker-uno-learning-box.md`](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Maker UNO + parts for 17 projects / 7 lessons | Product page (Beginner Guide PDF host blocked) | **Medium** |
+| Maker UNO Learning Box | [`maker-uno-learning-box.md`](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Maker UNO + parts for 17 projects / 7 lessons | Arduino Learning Guide for Beginner Using Maker UNO, Ver 1.3, Dec 2018 (read 21 Oct 2026) + product page | **Medium-high** |
 | PikaBot | [`pikabot.md`](pikabot.md) | `V-KIT-PIKABOT` | Maker UNO + Maker Drive smart-car kit, Arduino IDE or mBlock booklet | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot Resources doc with code | **Medium-high** |
-| Maker Uno X Learning Guide (book) | [`maker-uno-x-learning-guide.md`](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Printed 17-project guide for the Maker UNO X Learning Box | Guide v1.5, Feb 2023 (read to Lesson 6) | **Medium** |
+| Maker Uno X Learning Guide (book) | [`maker-uno-x-learning-guide.md`](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Printed 17-project guide for the Maker UNO X Learning Box | Arduino Learning Guide for Beginners Using Maker UNO X, v1.5 Feb 2023 (104 pages, read in full 21 Oct 2026) | **Medium-high** |
 
 Arduino-kit notes for every agent:
 - **PikaBot pins (booklet + code):** left motor D11/D10, right D9/D3 (`PWM_PWM`), ultrasonic TRIG D5 / ECHO D4, IR left A0 / right A1 (LOW = white, HIGH = black), start push button D2 to GND, buzzer D8. Sensors are generic IR modules and HC-SR04, not Maker Line / Maker Object. Maker UNO has no DC jack/Vin — the battery feeds Maker Drive through the rocker switch, and Maker Drive 5VO powers the Maker UNO via the breadboard 5V rail. Switch off before uploading.
@@ -173,7 +173,7 @@ micro:bit kit notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) + Cytron GitHub sample code (PIC, GUI, Arduino) | **Medium** |
+| SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (Cytron copy, read in full 21 Oct 2026; no datasheet) + Cytron GitHub sample code (PIC, GUI, Arduino) | **Medium-high** |
 | RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Cytron Connection Diagram (read 20 Oct 2026) + product page | **Medium-high** |
 | UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |

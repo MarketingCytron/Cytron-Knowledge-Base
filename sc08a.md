@@ -6,8 +6,8 @@
 | Family | Servo and RC controllers |
 | Status | Check the live product page on my.cytron.io |
 | Last verified | 2026-10-21 |
-| Reviewed | 2026-10-21 — Cytron GitHub `Arduino_SC08A` read in full (README + both sketches): the command bytes match the manual's protocol table, and the sketches add Arduino-side rules (hardware UART at 9600, speed 0 must not be used with position reporting). No SC08A manual file was found in the team reference folder, so the manual is still read only through the reseller mirror and the connector pin orders stay open — stays Medium. Earlier: 2026-10-19 master-table review of the live product page |
-| Primary source | "SC08A SERVO CONTROLLER — User's Manual", **V1.0, June 2011**, Cytron Technologies Sdn. Bhd. [UM] — no separate datasheet exists; the user manual is the top-ranked source |
+| Reviewed | 2026-10-21 — Cytron's own copy of the User's Manual (file "SC08A_Users_Manual.pdf", 31 pages) read in full from the team folder: text layer plus the board photos and wiring figures viewed as images. The text matches the earlier mirror reading word for word; the figures now give the UART connector pin order (RX, TX, GND, 5V) and the servo header order (S, +, −). Raised Medium → Medium-high. Same day: Cytron GitHub `Arduino_SC08A` sketches read (protocol confirmed; speed 0 must not be used with position reporting). Earlier: 2026-10-19 master-table review of the live product page |
+| Primary source | "SC08A SERVO CONTROLLER — User's Manual", **V1.0, June 2011**, Cytron Technologies Sdn. Bhd., 31 pages (PDF created 19 Nov 2012) [UM] — read in full 2026-10-21 from Cytron's copy supplied by the team. No separate datasheet exists; the user manual is the top-ranked source |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -58,10 +58,13 @@ Board layout (manual chapter 4) [UM]:
 | E | Small green LED — 5 V for PIC operation |
 | F | 4-way header pin and connector for UART communication (UC00A) / expansion — two of them, U_1 and U_2 |
 | G | Servo test button — "the pulses generated will drive servos to the end of position" |
-| H / I | Reset button and PIC16F1827 (the table and the description list swap these two labels) |
+| H / I | Reset button and PIC16F1827 (the table and the description list swap these two labels; the board photo arrow H points at the RESET button S1) |
+| JP12 | two pads beside the reset button, silkscreen "RESET" and "GND" (purpose not described in text) |
+| D2 | diode beside the UART connector (purpose not described) |
 
 - **Reset button**: "Pressing this button will stop all pulses generation and return SC08A to initial stage"; "Without pulses generation, all servo connected to SC08A will not rotate, is free run" [UM].
-- **UART connector**: the manual names TX, RX and 5 V sharing but never prints the pin order of the 4-way connector in text (figure only). Minimum 3 wires from the host; "A minimum of Transmit pin is required to send command to SC08A"; the SC08A TX pin is only needed for position reporting [UM]. TX/RX must be **cross-connected** (SC08A RX ← host TX, SC08A TX → host RX); "wrong connection will spoilt SC08A and worst the host or microcontroller" [UM].
+- **UART connector pin order** (board silkscreen in the manual photos, top to bottom): **RX, TX, GND, 5V** — the labels sit beside **U_1** (4-way 2510 locking header) and **U_2** (4-way plain pin header) side by side. Host cable for a microcontroller: 4-way rainbow cable crimped into a 2561 housing (manual step photos).
+- **Servo header order** (silkscreen above and below the 8 × 3 header, channels S1–S8 from top): **S (signal), +, −** [UM]. Minimum 3 wires from the host; "A minimum of Transmit pin is required to send command to SC08A"; the SC08A TX pin is only needed for position reporting [UM]. TX/RX must be **cross-connected** (SC08A RX ← host TX, SC08A TX → host RX); "wrong connection will spoilt SC08A and worst the host or microcontroller" [UM].
 - **Only one host** (computer or microcontroller) may be connected at a time [UM].
 - **Expansion to 16 channels** [UM]: two SC08A, both set up per 5.1 (they may share a servo supply that can deliver the higher current); a separate 4-way interlink cable (polarity must be correct; "Do not use this cable to connect SC08A with microcontroller") joins either U_1 or U_2 of one board to the other; board 1 jumper at "1-8", board 2 at "9-16"; board 2's S1 is addressed as S9 (channels 9–16). The host UART cable goes to one board (which one is shown only in a figure).
 
@@ -137,14 +140,14 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 | Speed table value 1 | [UM]: speed 1 = "2.0 minutes" | [UM] rest of table: 16 → 14 s, 0 → 0.3 s | Inconsistent with the monotonic trend; do not quote the "2.0 minutes" figure as a spec |
 | Speed byte description | [UM]: "0-100", 1 slowest, 100 fastest | [UM]: value 0 "more faster than value '100'" | Both are in the manual: 0 is the special full-speed value; 1–100 scale slow → fast |
 | Board layout labels H/I | [UM] table: H = reset button, I = PIC16F1827 | [UM] description list: H = PIC16F1827, I = reset button | Labels swapped between table and text; both items exist |
+| Position command 1st byte range | [UM] table: 0xE1 to 0xF0 (channels 1–16) | [UM] text: channel 0 = all channels | The table leaves out 0xE0 (all channels) that the text allows; the Arduino sketch only sends channels 1–8. Treat 0xE0 as allowed by the text but untested |
 | Blue terminal block label | [UM] chapter 4: label "A" | [UM] 5.2: "JP2" | Same connector |
+| Manual date | [UM] cover: V1.0, June 2011 | PDF metadata: created 19 Nov 2012 | Same document; cite "V1.0, June 2011" |
 | Warranty | [UM] chapter 8: 6 months | [PP]: 12 months | Product page is the current commercial term (2026-10-16); manual (2011) is older; record both |
 | Servo supply range | [UM] 5.1: "4.8V to 9V (standard is 4.8V to 6.0V)" | [UM] chapter 3: "between 4.8V and 6V. Some may need 7.2V" | Both are statements about servos, not a board limit; the board's own maximum is not stated |
 
 ## Needs verification
-- Full verbatim text of the manual — read via a summarising fetcher from a reseller mirror; figures (connector pin order, board photo, wiring diagrams) not readable. Re-read the Cytron Drive PDF when accessible.
-- Pin order of the 4-way UART/expansion connectors (which pin is 5 V, GND, TX, RX) and whether the two 4-way headers are electrically identical.
-- Servo header pin order (S / + / −) and labelling S1–S8.
+- Whether U_1 and U_2 are wired in parallel (the photos show one set of RX/TX/GND/5V labels for both; the text says either can be used for the interlink).
 - Board maximum servo-supply voltage and current rating of the terminal block / PCB traces.
 - Whether servo ground and logic ground are common.
 - Pulse refresh rate (frame period).
@@ -152,14 +155,13 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Behaviour on UART loss, and whether the stored start-up position moves the servo at power-up before activation.
 - Board revision / hardware revision history — not stated anywhere read.
 - Board weight — not stated (size 49 × 46 mm is from the product page).
-- Re-read the user manual from the Cytron Drive PDF (linked from the product page) to replace the reseller-mirror reading — no copy is in the team reference folder yet (checked 2026-10-21).
 
 ## Cytron tutorials
 Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
 - [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller) — Tutorial, Advanced, 2022 [PP: tutorial]
 
 ## Sources
-- [UM] "SC08A SERVO CONTROLLER — User's Manual", V1.0, June 2011, Cytron Technologies Sdn. Bhd. — read from the reseller mirror https://www.gotronic.fr/pj2-38783-nt-3349.pdf (Cytron's own copy, linked from the product page, is https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view — not readable here)
+- [UM] "SC08A SERVO CONTROLLER — User's Manual", V1.0, June 2011, Cytron Technologies Sdn. Bhd., 31 pages — Cytron's copy (product page link: https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view), read in full 2026-10-21 from "SC08A_Users_Manual.pdf" in the team reference folder. Earlier cross-check copy: https://www.gotronic.fr/pj2-38783-nt-3349.pdf
 - [PP] Product page (read by the coordinator 2026-10-16; not fetched here) — https://my.cytron.io/p-8-channel-servo-controller
 - [GH] PIC16F877A sample code README — https://raw.githubusercontent.com/CytronTechnologies/SC08A_PIC16F877A/master/README.md
 - [GH] PIC18F4520 sample code README — https://raw.githubusercontent.com/CytronTechnologies/SC08A_PIC18F4520/master/README.md

@@ -11,7 +11,7 @@
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [UM] = the v1.5 guide (text extraction; read from the cover to Lesson 6 Project 14, p. ~80; Projects 15–17 were cut off by the reader; drawings are images and were not readable). [UM-v1.4] = the v1.4 edition (February 2020), read to the same point, used only for differences. [PP] = my.cytron.io page "Maker UNO X for Classrooms (Arduino Compatible)", captured by the coordinator in a browser on 2026-10-19. [GH] = github.com/CytronTechnologies/MAKER-UNO-X: the repo shows only two folders, `Fritzing/` and `Schematic and PCB/`, and no README; the schematic folder could not be listed or downloaded here, so [GH] facts come only from the Fritzing part `Fritzing/MakerUnoX.fzpz` (part title "Maker UNO X", author SC Lim, dated Fri Jan 17 2020, family "Maker UNO"). The guide book itself is a separate KB product (`maker-uno-x-learning-guide.md`, BOK-MUNOX); the older board is `maker-uno.md`.
+Tag notes: [UM] = the v1.5 guide (text extraction; read in full on 2026-10-21, 104 pages; drawings are images). [UM-v1.4] = the v1.4 edition (February 2020), read to the same point, used only for differences. [PP] = my.cytron.io page "Maker UNO X for Classrooms (Arduino Compatible)", captured by the coordinator in a browser on 2026-10-19. [GH] = github.com/CytronTechnologies/MAKER-UNO-X: the repo shows only two folders, `Fritzing/` and `Schematic and PCB/`, and no README; the schematic folder could not be listed or downloaded here, so [GH] facts come only from the Fritzing part `Fritzing/MakerUnoX.fzpz` (part title "Maker UNO X", author SC Lim, dated Fri Jan 17 2020, family "Maker UNO"). The guide book itself is a separate KB product (`maker-uno-x-learning-guide.md`, BOK-MUNOX); the older board is `maker-uno.md`.
 
 ## What it is
 - An Arduino UNO-compatible board built on the ATmega328P, aimed at educators and classrooms: "code right away", the board lights up and plays a melody with a button press, no soldering [PP].
@@ -157,7 +157,6 @@ Header connectors defined in Cytron's Fritzing part (36 connectors) [GH]: D0/RX,
 - Breadboard size (half-size vs mini) and whether the perfboard is a soldering area on the PCB.
 - UNO R3 shield compatibility; presence of a DC jack (none mentioned; Fritzing part has no Vin).
 - Dimensions, weight, PCB colour, mounting holes.
-- Guide Projects 15–17 (pins and parts) — not read.
 - Schematic files in the GitHub `Schematic and PCB/` folder — not listed or read.
 - [3P] The Pi Hut marks the product "Discontinued" on its own store; Cytron's page shows it in stock — no effect on Cytron status.
 - Read the product page images `maker-uno-x-specs.png` and `maker-uno-x-whats-included.jpeg` (dimensions, breadboard size) when the browser can render images.

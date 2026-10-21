@@ -24,7 +24,8 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 - Software: Arduino IDE; CH341 (CH34x) USB driver; Maker UNO default sketch on GitHub
 - Warranty: 12 months
 - Dimensions and weight: [NOT STATED]
-- Project wiring (pins per project): [NOT STATED] (guide PDF not read)
+- Guide: "Arduino Learning Guide For Beginner Using Maker UNO", Ver 1.3, Dec 2018, 90 pages (Lesson 0 setup + 7 lessons, 17 projects)
+- Project wiring (guide): on-board LEDs pins 2–7; on-board button pin 2 (INPUT_PULLUP); external button on pin 3 with 10 kΩ pull-up; external LED + 220 Ω on pin 5; buzzer pin 8; potentiometer A0; IR sensor analog output A0; motor on pin 5 through a 2N2222 with 220 Ω base resistor and a diode; ultrasonic Trig pin 11, Echo pin 12, VCC 5V
 - Prices are subject to SST from April 2026, calculated at checkout (product page)
 
 ## Interfaces and compatibility
@@ -49,7 +50,8 @@ A beginner kit that packs a Maker UNO board with the LEDs, switches, resistors, 
 ## Known limitations
 - Power is USB only; no battery or adapter in the kit
 - The guide is a PDF download; a printed copy is not listed in the packing list
-- Project wiring is in the guide PDF, which was not read for this fact sheet
+- Hold the motor while testing; it may not have the torque to spin with the propeller resting on a surface
+- The transistor circuit cannot reverse the motor; a motor driver is needed for direction control
 - Not the Maker UNO X Learning Box: same 17-project structure but a different board and guide edition
 - The 3 V motor must be driven through the supplied transistor, not directly from an I/O pin (Maker UNO I/O pin limit 20 mA)
 
@@ -68,7 +70,8 @@ https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-makin
 https://s3-ap-southeast-1.amazonaws.com/cdn.cytron.io/makeruno/Arduino_Learning_Guide_for_Beginner_Using_Maker_UNO.pdf
 
 ## Source type
-Website
+Datasheet
 
 ## Source link
-https://my.cytron.io/p-maker-uno-learning-box-everything-you-need-to-start-making
+[NOT STATED]
+

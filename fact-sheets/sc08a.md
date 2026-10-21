@@ -26,7 +26,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - JP11 mini jumper: "1-8" for a single board or the first board, "9-16" for the second board (User's Manual V1.0)
 - LEDs: orange servo power indicator; green 5 V for PIC indicator (User's Manual V1.0)
 - Buttons: servo test (drives servos to the end position); reset (stops all pulse generation, servos free-run) (User's Manual V1.0)
-- Connectors: two 4-way UART/expansion headers (U_1, U_2) (User's Manual V1.0)
+- Connectors: two 4-way UART/expansion headers (U_1 locking 2510 header, U_2 pin header), pin order RX, TX, GND, 5V; servo headers S1–S8, pin order S (signal), +, − (User's Manual V1.0 board photos)
 - Packing list: 1 × SC08A main board, 1 × 2510H-04 connector with terminal pins, 1 × 2561-04 connector with terminal pins, 1 × mini jumper for JP11 (User's Manual V1.0)
 - Warranty: 6 months (User's Manual V1.0); 12 months (product page, read 2026-10-16)
 - Size: 49 mm × 46 mm (product page)
@@ -82,4 +82,4 @@ https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view
 Datasheet
 
 ## Source link
-https://www.gotronic.fr/pj2-38783-nt-3349.pdf
+https://drive.google.com/file/d/0BzFWfMiqqjyqem1oQnlXUk4yaXc/view
