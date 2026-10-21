@@ -94,11 +94,11 @@ Shield notes for every agent:
 |---|---|---|---|---|---|
 | Maker UNO Edu Kit | [`maker-uno-edu-kit.md`](maker-uno-edu-kit.md) | `V-KIT-MUNO-EDU` | Maker UNO + components kit for classes (School Package 10+1) | Getting Started Module PDF + Teacher Guidebook (no version/date) | **Medium-high** |
 | Maker UNO Learning Box | [`maker-uno-learning-box.md`](maker-uno-learning-box.md) | `KIT-MAKER-UNO-START` | Maker UNO + parts for 17 projects / 7 lessons | Product page (Beginner Guide PDF host blocked) | **Medium** |
-| PikaBot | [`pikabot.md`](pikabot.md) | `V-KIT-PIKABOT` | Maker UNO + Maker Drive smart-car kit, Arduino IDE or mBlock booklet | PikaBot booklet (image-only) + Cytron PikaBot Resources doc with code | **Medium** |
+| PikaBot | [`pikabot.md`](pikabot.md) | `V-KIT-PIKABOT` | Maker UNO + Maker Drive smart-car kit, Arduino IDE or mBlock booklet | PikaBot Booklet, Arduino IDE edition (108 pages, read 21 Oct 2026 by OCR + page images) + Cytron PikaBot Resources doc with code | **Medium-high** |
 | Maker Uno X Learning Guide (book) | [`maker-uno-x-learning-guide.md`](maker-uno-x-learning-guide.md) | `BOK-MUNOX` | Printed 17-project guide for the Maker UNO X Learning Box | Guide v1.5, Feb 2023 (read to Lesson 6) | **Medium** |
 
 Arduino-kit notes for every agent:
-- **PikaBot pins (Cytron code):** left motor D11/D10, right D9/D3 (`PWM_PWM`), ultrasonic TRIG D5 / ECHO D4, IR left A0 / right A1 (LOW = white, HIGH = black), start button D2, buzzer D8. Sensors are generic IR modules and HC-SR04, not Maker Line / Maker Object. Maker UNO has no DC jack/Vin — the battery feeds Maker Drive.
+- **PikaBot pins (booklet + code):** left motor D11/D10, right D9/D3 (`PWM_PWM`), ultrasonic TRIG D5 / ECHO D4, IR left A0 / right A1 (LOW = white, HIGH = black), start push button D2 to GND, buzzer D8. Sensors are generic IR modules and HC-SR04, not Maker Line / Maker Object. Maker UNO has no DC jack/Vin — the battery feeds Maker Drive through the rocker switch, and Maker Drive 5VO powers the Maker UNO via the breadboard 5V rail. Switch off before uploading.
 - **Edu Kit vs Learning Box contents differ** (Learning Box: IR sensor, SR04, 1N4007, 2× 2N2222, 10/10/10 resistors). The Edu Kit packing list is not in any Cytron text — don't publish a list.
 - **Maker UNO X guide wiring is for the X board** (it has a Debug switch the plain Maker UNO lacks); don't apply its pin notes to the Maker UNO Learning Box without checking.
 
@@ -129,7 +129,7 @@ Pico / RP2040 / RP2350 notes for every agent:
 | MOTION:BIT Pro | [`motion-bit-pro.md`](motion-bit-pro.md) | `MOTION-BIT-PRO` | Motor + servo expansion board, 7–12 V | Datasheet Rev 1.0, Apr 2024 | **Medium-high** |
 | SUMO:BIT | [`sumo-bit.md`](sumo-bit.md) | Not stated | Sumo robot controller; needs 2× MD13S | Datasheet Rev 1.0, Dec 2024 (RobotShop mirror) | **Medium-high** |
 | REKA:BIT | [`reka-bit.md`](reka-bit.md) | Not stated (resellers: `REKABIT-NB`) | Robotics expansion board, 3.6–6 V | Datasheet Rev 1.0, Apr 2021 | **Medium-high** |
-| ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (no datasheet) + REKA:BIT datasheet | **Medium** |
+| ZOOM:BIT | [`zoom-bit.md`](zoom-bit.md) | Not stated | Robot car kit built on REKA:BIT | Quick Start Guidebook v1.1, 2022 (wiring pages read 21 Oct 2026; no datasheet) + REKA:BIT datasheet | **Medium-high** |
 | Grove WiFi 8266 | [`grove-wifi-8266.md`](grove-wifi-8266.md) | `GRV-WIFI-8266` | ESP8266 Wi-Fi Grove module (ESP-AT), 3.3 V logic | Datasheet Rev 1.0, Aug 2021 | **Medium-high** |
 | EDU:BIT | [`edu-bit.md`](edu-bit.md) | `V-EDUBIT` (board `EDUBIT`) | micro:bit training board with break-off modules, 3 servo + 2 DC motor ports, 10+1 game lessons | Product page + course overview + guide book (4th printing May 2021, read as images) + pxt-edubit v1.15.0 (no electrical datasheet) | **Medium** |
 
@@ -146,19 +146,18 @@ micro:bit notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| REKA:BIT RBT Project Kit | [`rekabit-rbt-project-kit.md`](rekabit-rbt-project-kit.md) | `V-KIT-REKABIT-RBT` | RBT Y5/Y6 kit: REKA:BIT + 7 components, 5 projects | Quick Start Guide (Malay, v1.0) + resource hub + pxt-rekabit-rbt-project-kit | **Medium** |
+| REKA:BIT RBT Project Kit | [`rekabit-rbt-project-kit.md`](rekabit-rbt-project-kit.md) | `V-KIT-REKABIT-RBT` | RBT Y5/Y6 kit: REKA:BIT + 7 components, 5 projects | Quick Start Guide, English v2.0 (Feb 2023, read 21 Oct 2026) + resource hub + pxt-rekabit-rbt-project-kit | **Medium-high** |
 | Auto Plant Watering Kit | [`auto-plant-watering-kit.md`](auto-plant-watering-kit.md) | `V-KIT-RBT-APW` | REKA:BIT + soil sensor + pump + servo; IoT option adds Grove WiFi 8266 | Lesson Guide (English, Apr 2022) | **Medium-high** |
-| BEETLE:BIT | [`beetlebit.md`](beetlebit.md) | `V-BEETLEBIT` | REKA:BIT gripper robot car, 7 chapters | Resource hub + MakeCode chapter programs (booklet PDF is image-only) | **Medium** |
+| BEETLE:BIT | [`beetlebit.md`](beetlebit.md) | `V-BEETLEBIT` | REKA:BIT gripper robot car, 7 chapters | BEETLE:BIT Quick Start Guide booklet (read 21 Oct 2026) + resource hub + MakeCode chapter programs | **Medium-high** |
 | STRIKER:BIT | [`strikerbit.md`](strikerbit.md) | `V-STRIKERBIT` | 4-robot classroom soccer kit on MOTION:BIT + Robo Base Mini | STRIKER:BIT Booklet (read 20 Oct 2026) + scoring sheet + product page | **Medium** |
 | SUMO:BIT Robot Kit (1 kg) | [`sumobit-robot-kit.md`](sumobit-robot-kit.md) | `V-KIT-SUMOBIT` | 1 kg sumo robot on SUMO:BIT + 2× MD13S | Google Slides guides (Assembly/Checking/Maintenance/Autonomous/RC, Dec 2024) | **Medium-high** |
 | Robot Battle (500g) SUMO:BIT | [`robot-battle-500g-sumobit.md`](robot-battle-500g-sumobit.md) | `V-BATTLE-SMB` | 500 g battle robot on SUMO:BIT, no controller, no warranty | Product page only | **Medium** |
 | SOCCER:BIT (4 wheel) | [`soccerbit-robot-kit.md`](soccerbit-robot-kit.md) | `V-SCRBIT-4WD` | 4-motor soccer robot on SUMO:BIT | Product page only (its "user manual" link is the MD13S manual) | **Medium** |
-| DIY RC Boat Using micro:bit | [`diy-rc-boat-microbit.md`](diy-rc-boat-microbit.md) | `PR-DIY-BOAT-MBIT` | Project kit: 2 micro:bits + MOTION:BIT boat | Product page + tutorial (partial) | **Medium** |
 
 micro:bit kit notes for every agent:
 - **Soil moisture reading rises as soil dries** — the APW trigger is `reading > threshold`; there is no fixed threshold in the booklet. APW wiring: sensor P2:P12 (read P2), pump MOTOR 2, servo S1; servo sweeps 30–150°.
 - **RBT kit extension is `pxt-rekabit-rbt-project-kit`** (search "rekabit rbt project"); ultrasonic returns 300 cm when nothing is detected (ZOOM:BIT's returns 255). RGB Stick and Ultrasonic blocks need an init block.
-- **BEETLE:BIT uses `pxt-zoombit`** (there is no beetlebit extension); gripper servo S1, motors M1 left / M2 right, Maker Line P1, ultrasonic P2 trig / P12 echo; RC mode needs a second micro:bit (not included).
+- **BEETLE:BIT uses `pxt-zoombit`** (there is no beetlebit extension); gripper servo S1, motors M1 left / M2 right, Maker Line in Grove port P1:P9 (leave the white CAL wire off on micro:bit V1), ultrasonic in P2:P12; RC mode needs a second micro:bit V2 (not included).
 - **SUMO:BIT kit motors are 12 V 580 rpm** (torque not stated — don't borrow 3.5 kgf·cm from the RC bundle); built weight ≈860 g before weights. For USB-joystick or hobby-RC mode the micro:bit must be removed; only Cytron's USB Joystick is supported. Battle kit: 495 g, 15×15×4 cm, charger included; sumo kit: charger NOT included.
 - **STRIKER:BIT:** the servo part is a shooter, not a gripper; each robot needs two micro:bits (robot + Joystick:bit); battery is a button-top 18650. Score rules: max 2 yellow cards per robot, 2 red per team.
 
@@ -174,7 +173,7 @@ micro:bit kit notes for every agent:
 
 | Product | File | Code | What it is | Primary source | Confidence |
 |---|---|---|---|---|---|
-| SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) | **Medium** |
+| SC08A Servo Controller | [`sc08a.md`](sc08a.md) | `SC08A` | 8-ch (16 with two boards) UART servo controller, 9600 baud | User's Manual V1.0, Jun 2011 (no datasheet; read from a mirror) + Cytron GitHub sample code (PIC, GUI, Arduino) | **Medium** |
 | RCSwitch10 | [`rcswitch10.md`](rcswitch10.md) | `RCS10A` | RC-controlled SPDT relay, 250 VAC / 30 VDC, 10 A | Cytron Connection Diagram (read 20 Oct 2026) + product page | **Medium-high** |
 | UC00C | [`uc00c.md`](uc00c.md) | `UC00C` | CH340 USB-to-UART converter, 3.3/5 V switch | User's Manual V1.0, Jul 2016 (no datasheet) | **Medium** |
 | UC00A | [`uc00a.md`](uc00a.md) | `UC00A` (Rev 3.0) | FTDI FT232RL USB-to-UART converter, 3.3/5 V switch | User's Manual Rev3.0 V1.1, Dec 2018 (no datasheet) | **Medium-high** |

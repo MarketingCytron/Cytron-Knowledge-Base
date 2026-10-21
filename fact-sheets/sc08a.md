@@ -33,6 +33,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Ramping: one of 100 ramp rates per servo; resolution 0.25 µs (8000 steps); UART 9600 baud (product page)
 
 ## Interfaces and compatibility
+- Arduino sample sketches (CytronTechnologies/Arduino_SC08A): Arduino UNO or CT-Uno on the hardware UART (D1 TX → SC08A RX; D0 RX ← SC08A TX for position reporting), 9600 baud; activate all channels first, then send position and speed
 - PC: UC00A USB-to-UART converter plugged into the 4-way UART connector; driver creates a virtual COM port; SC08A takes its 5 V from the UC00A (User's Manual V1.0)
 - Microcontroller: 5 V TTL UART and 5 V supply, minimum 3 wires; TX/RX cross-connected; SC08A TX only needed for position reporting (User's Manual V1.0)
 - Only one host (computer or microcontroller) may be connected at a time (User's Manual V1.0)
@@ -51,6 +52,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Cytron tutorial: [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller)
 
 ## Known limitations
+- Do not use speed 0 with position reporting; the servo oscillates (Cytron Arduino sketch note)
 - No on-board regulator: the servo supply goes directly to the servos; over-supply voltage may spoil the servo motor (User's Manual V1.0)
 - Servo power must be connected correctly before servos are plugged in, else all servo motors will be damaged (User's Manual V1.0)
 - Servo headers are not polarised; a servo plugged in backwards may be destroyed (User's Manual V1.0)

@@ -1833,12 +1833,13 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - Sensors: 2x IR line tracking module; 1x HC-SR04 ultrasonic
 - Power: 4x AA batteries in a 4xAA battery holder; powers controller and motors; panel-mount rocker switch
 - Breadboard: 1x mini breadboard 35x42mm; 40-way M-F jumper; 40-way M-M jumper
-- Packing list (product page, truncated): 1x Maker UNO, 1x Maker Drive, 2x TT gear motor, 2x rubber wheel, 2x IR line tracking module, 1x HC-SR04 ultrasonic, 4x AA batteries, 1x 4xAA battery holder, 1x mini breadboard, 40-way M-F jumper, 40-way M-M jumper
+- Packing list (product page, short form): 1x Maker UNO, 1x Maker Drive, 2x TT gear motor, 2x rubber wheel, 2x IR line tracking module, 1x HC-SR04 ultrasonic, 4x AA batteries, 1x 4xAA battery holder, 1x mini breadboard, 40-way M-F jumper, 40-way M-M jumper
 - No soldering: assembled with jumper wires
 - Arduino booklet projects: 1 Let's Move It (3 steps + Rectangle, Circle, Triangle challenges); 2 Oh No! Stop! (2 steps + challenge); 3 Black or White Line? (2 steps + challenge); 4 Music On (2 steps + Super Mario, Baby Shark, Birthday Song challenges)
 - mBlock lesson series: 1 Move Around; 2 Detect Object; 3 Line Follow
 - Arduino library: Cytron Motor Drivers Library (CytronMotorDriver.h), PWM_PWM mode
-- Pin map (Cytron sample code): left motor D11/D10; right motor D9/D3; ultrasonic TRIG D5, ECHO D4; left IR A0, right IR A1 (digital read); start button D2 (on-board, INPUT_PULLUP); buzzer D8 (on-board)
+- Pin map (booklet wiring and sample code): Maker Drive M1A ← D11, M1B ← D10, M2A ← D9, M2B ← D3; left motor black → M1A, red → M1B; right motor red → M2A, black → M2B; ultrasonic TRIG D5, ECHO D4; left IR DO → A0, right IR DO → A1 (digital read; module A0 pins left disconnected); start push button D2 to GND (INPUT_PULLUP); buzzer D8 (on-board)
+- Power wiring (booklet): battery red → rocker switch → Maker Drive VB+, black → VB−; Maker Drive 5VO and the Maker UNO 5V pin share the breadboard 5V rail, so the Maker UNO runs from Maker Drive on battery
 - IR logic in code: LOW = white surface, HIGH = black line
 - Ultrasonic distance in code: pulseIn(ECHO, HIGH) x 0.017 cm; lessons stop at 15 cm and avoid at 20 cm
 - Warranty: [NOT STATED]
@@ -1865,9 +1866,9 @@ A DIY two-wheel robot car kit built on the Maker UNO board and the Maker Drive m
 - Cytron tutorial: [Control PikaBot Using a Phone Through Bluetooth](https://my.cytron.io/tutorial/control-pikabot-using-a-phone-through-bluetooth)
 
 ## Known limitations
-- The booklet PDF is image-only; its wiring diagrams were not readable for this sheet
-- The product page packing list is truncated in the capture; the full list is not confirmed from Cytron text
-- Programs wait for the on-board D2 button before moving; the buzzer needs the D8 slide switch on
+- Turn the power switch off before uploading, so the moving robot cannot pull on the USB cable (booklet)
+- The booklet schematic labels the cells "AAA" but the text and packing list say AA
+- Programs wait for the start push button on D2 before moving; the buzzer needs the D8 slide switch on
 - Turn convention in Cytron code: robotMove(-200, 200) = turn left, robotMove(200, -200) = turn right; swapped motor wires reverse this
 - The Maker UNO cannot take the battery directly (no DC jack, no Vin)
 - The IR modules and HC-SR04 are generic modules, not Cytron Maker Line / Maker Object
@@ -2967,13 +2968,13 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - DC motor current: 1 A continuous, 1.5 A peak (< 5 seconds)
 - DC motor voltage at full speed and servo V+: equal to the power source voltage
 - Low voltage LED blinks below 3.6 V; over voltage LED lights above 7 V and power to the servos and DC motors is cut off
-- Drive motors: left = M1, right = M2 (REKA:BIT motor channels)
+- Drive motors: left = MOTOR 1 (black → M1A, red → M1B), right = MOTOR 2 (red → M2A, black → M2B)
 - Motor test buttons on REKA:BIT run a motor at full speed (MxA forward, MxB backward)
-- Maker Line sensor: 5 IR sensors (S1–S5) with LED indicators, calibration button, line-colour switch ("DARK" for a black line); read on P1 (analog)
-- Ultrasonic sensor: trigger P2, echo P12; MakeCode block returns 1 – 255 cm, 255 if over 255 cm or no echo
-- Headlights (LED modules): left P13, right P15
+- Maker Line sensor: 5 IR sensors (S1–S5) with LED indicators, calibration button, line-colour switch ("DARK" for a black line); plugs into Grove port P1:P9 (yellow AN = P1, white CAL; leave white unconnected on micro:bit V1)
+- Ultrasonic sensor: Grove port P2:P12 (yellow trigger = P2, white echo = P12); MakeCode block returns 1 – 255 cm, 255 if over 255 cm or no echo
+- Headlights (LED modules): left in port P13:P14 (signal P13), right in port P15:P16 (signal P15); white wire not connected; turn on automatically when the micro:bit light level is below 50 (guide book code)
 - RGB LEDs: 2 x WS2812B on REKA:BIT, on P8, labelled "0" and "1"
-- Head: 180 degree servo motor on a REKA:BIT servo port
+- Head: 180 degree servo motor on REKA:BIT servo port S1
 - Motors and servos are controlled by the REKA:BIT co-processor over I2C (address 0x08)
 - Power switch: slide OFF then ON to reset
 - Warranty: 12 months
@@ -3238,7 +3239,8 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Without-micro:bit option: same contents minus the micro:bit
 - Guide book list: REKA:BIT (with or without micro:bit), micro servo motor, RGB board, soil moisture sensor, Big LED module x2, water pump, ultrasonic sensor, USB cable (power & data), Grove cable x4, AA battery x4, battery holder, ball caster, DC motor with wheels x2, mini screwdriver, adhesive tape x5
 - Guide book: Quick Start Guide, 5 projects + 7 components; softcopies in English, Malay, Chinese (Spanish on the resource hub)
-- Projects: 1 Boom Barrier Gate; 2 Interactive Robot; 3 Auto Plant Watering Robot (two code versions, 3a and 3b); 4 Coin-Eating Robot; 5 Mobile Robot Car
+- Projects: 1 Boom Barrier Gate; 2 Interactive Robot; 3 Water Level Detection Robot and Auto Plant Watering Robot (two parts, code 3a and 3b); 4 Coin Eating Robot; 5 Mobile Robot Car
+- Guide wiring per project (English guide v2.0): RGB Stick on port P0:P1; Big LEDs on P13:P14 and P15:P16; soil moisture sensor and ultrasonic on P2:P12; servo on S1; water pump on MOTOR 2; car motors on MOTOR 1 (left) and MOTOR 2 (right)
 - RGB stick: 8 LEDs labelled 0 to 7; brightness 0 to 255
 - Servo: channels S1 to S4; angle 0 to 180 degrees; disable-servo block stops jitter
 - Water pump: motor channel M1 or M2; speed 0 to 255; works in either direction
@@ -3259,7 +3261,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Ultrasonic Trig/Echo pairs: P0/P1, P1/P9, P2/P12, P13/P14, P15/P16 (README example Trig P2, Echo P12)
 - Water pump: MOTOR terminal (Project 3: motor terminal 2)
 - Mobile Robot Car: left wheel MOTOR 1, right wheel MOTOR 2
-- Servo: REKA:BIT servo terminal S1 to S4 (wire labels s = signal, +, -)
+- Servo: REKA:BIT servo terminal S1 to S4 through an extension cable: s ← white ← servo orange, + ← red ← red, − ← black ← brown; the guide projects use S1
 - micro:bit V1 and V2 (V1 has no built-in buzzer; add a Grove Buzzer module)
 - MakeCode Blocks, JavaScript and Python modes; MakeCode Offline App supported
 - WebUSB download needs the latest Edge or Chrome; otherwise drag the .hex file to the MICROBIT drive
@@ -3281,11 +3283,11 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Ultrasonic block returns 300 when nothing is detected
 - The soil moisture threshold (README example 550) is an example, not a calibrated value
 - Disable an unused servo to prevent jitter
-- The pump and DC motor pages in the guide carry a warning symbol
+- Pump and DC motor terminals: clamp the exposed wire lead, not the insulator; the pump must be fully submerged and is not polarity sensitive
+- Adult supervision is required when using sharp tools in the projects
 - All electrical limits are the REKA:BIT board's (3.6 to 6 V input; 1 A continuous / 1.5 A peak per motor; 300 mA Grove 3V3; over 7 V cuts motor and servo power)
 - Cardboard, hot glue, Blu Tack, plastic container and steel hanger used in the projects are not included
 - New MakeCode extensions may need an internet connection to compile even in the offline app
-- The guide's per-project wiring is shown in diagrams; port labels for the RGB stick, Big LEDs, ultrasonic sensor and servo in each project are not stated in text
 
 ## Positioning (kept apart from specs)
 - "with the aim to lower the learning curve for beginners who wants to build STEAM (and RBT) projects with micro:bit"
@@ -3299,13 +3301,13 @@ RM219.00–RM295.00 across 2 options (Cytron product page, read 2026-10-19)
 https://my.cytron.io/p-rekabit-rbt-project-kits
 
 ## Datasheet
-https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+https://link.cytron.io/rekabit-project-book-english
 
 ## Source type
 Datasheet
 
 ## Source link
-https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+https://link.cytron.io/rekabit-project-book-english
 
 # Product fact sheets
 
@@ -3416,11 +3418,12 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Programming: MakeCode
 - Packing list (with micro:bit, with battery): 1x BBC micro:bit V2, 1x REKA:BIT, 1x Dual Output Cable USB-A to 2.1mm DC barrel & Micro USB, 1x 4xAA battery holder with DC jack, 1x Ultrasonic 3V3, 1x Maker Line, 4x AA battery, 2x TT motor with 15cm wires and wheel kit, 1x TS90A micro servo, 1x BEETLE:BIT Booklet, 1x BEETLE:BIT Track, 1x Accessories Kit
 - Accessories Kit: bracket for ultrasonic HC-SR04, W420 steel ball castor, 2x TT motor bracket, 2x Robo Base (PCB only), 3x Grove 4-pin buckled to female cable, M3 PCB stands 40/20/10/5mm, 14x M3 nut, 14x M3x6 screw, Velcro set, 4x M3x10 bolt, 1x Robo Grip PCB with accessories, 1x ping pong ball
-- Booklet: "202602 BEETLEBIT Quick Start Guide.pdf" (English), 7 chapters plus a Setup Guide and Bonus activities
+- Booklet: "BEETLE:BIT — Build. Code. Move. Grab." Quick Start Guide (Cytron Education Team, 2026, 96 pages, works with micro:bit V1 & V2), 7 chapters plus a Setup Guide and Bonus activities
+- Box contents (booklet): battery holder & USB cable, 2x Robo Base, REKA:BIT, 3x Grove cables, ultrasonic bracket, servo motor, ultrasonic sensor, Maker Line sensor, 2x DC motor bracket, 2x DC motor & wheels, M2 & M3 screwdriver, Velcro, Robo Grip Mini, 4x AA batteries, cross wrench, castor wheel, M3 PCB stands (40 mm x5, 20 mm x8, 10 mm x4, 5 mm x4), M3 bolts, nuts, lock nuts and washers, M2 bolts and nuts
 - Chapters: Setup Guide (build BEETLE:BIT); 1 The Beetle's Brain (micro:bit Basics); 2 How the Beetle Moves (TT Motors); 3 The Beetle's Claw (Servo Gripper); 4 The Beetle's Eyes (Ultrasonic Sensor); 5 The Beetle Senses (Line Following); 6 Teaching the Beetle to Decide; 7 Coordinated Actions (Line + Grab); Bonus 1 Control BeetleBit Using a Controller; Bonus 2 BEETLE:BIT Input–Output Challenge
 - Gripper angles in Cytron's chapter code: Chapter 3 toggles 0 and 180; Chapters 6 and 7 use 120 = open, 0 = closed, then disable the servo after a pause
-- Drive speeds in Cytron's chapter code: 128 for move/turn; obstacle thresholds: ultrasonic < 10 = stop, < 20 = slow
-- Bonus 1 RC mode: micro:bit radio group 1; numbers 0–5 = forward, backward, turn left, turn right, toggle gripper, brake; remote is a second micro:bit
+- Drive speeds in Cytron's chapter code: 128 for move/turn; obstacle thresholds (booklet Ch4): under 20 cm = slow down, under 10 cm = stop; Ch4 challenge keeps a 15 cm distance
+- Bonus 1 RC mode: micro:bit radio group 1; hold A = forward, hold B = backward, tilt = turn, shake = open/close gripper, upright = stop; needs an extra micro:bit V2 (V2 recommended for both to avoid latency)
 - Warranty: 12 months (1 year for manufacturing defects; wear and tear, misuse, abuse or improper maintenance not covered; troubleshooting, repair and testing take 7 working days from receipt)
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
@@ -3430,14 +3433,13 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - RC mode needs a second micro:bit (not included) (product page)
 
 ## Interfaces and compatibility
-- Left drive motor: REKA:BIT M1; right drive motor: REKA:BIT M2
-- Gripper servo: REKA:BIT servo port S1
-- Maker Line sensor: micro:bit P1 (analog)
-- Ultrasonic sensor: trigger P2, echo P12
+- Motor 1: black → M1A, red → M1B (left motor in pxt-zoombit); Motor 2: red → M2A, black → M2B (right motor)
+- Gripper servo: REKA:BIT servo port S1 (orange signal, red +, brown −)
+- Maker Line sensor: Grove port P1:P9 (yellow AN = P1, white CAL = P9, red Vcc, black GND); on micro:bit V1 leave the white CAL wire disconnected
+- Ultrasonic sensor: Grove port P2:P12 (yellow trigger = P2, white echo = P12, red Vcc, black GND)
 - RGB LEDs on REKA:BIT: P8 (not used by the chapter code)
 - Motors and servo are driven over I2C by the REKA:BIT co-processor (address 0x08)
-- Grove port labels used for the sensor cables: [NOT STATED]
-- MakeCode extension: pxt-zoombit v0.1.1 (https://github.com/cytrontechnologies/pxt-zoombit), which loads pxt-rekabit; the product page names the extension as pxt-rekabit "BEETLE:BIT (ZOOM:BIT) Extension"
+- MakeCode extension: ZOOMBIT (pxt-zoombit v0.1.1 (https://github.com/cytrontechnologies/pxt-zoombit), which loads pxt-rekabit), as the booklet says; the product page names the extension as pxt-rekabit "BEETLE:BIT (ZOOM:BIT) Extension"
 - MakeCode blocks, JavaScript and Python modes; MakeCode Offline App available
 - micro:bit V2 is included in the "with micro:bit" option; RC mode needs a second micro:bit
 - Related Cytron tutorials: colour detection bot using HuskyLens; line following robot car using motionbit; colour detection robot using TCS3200; Chapter 1: Setting Up Beetle:Bit with Huskylens 2
@@ -3460,7 +3462,10 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - The micro:bit is not included in the "without micro:bit" and "Accessories Kit only" options
 - RC mode needs an additional micro:bit, which is not included
 - Batteries are not included in the "without battery" options
-- No kit datasheet; the booklet PDF is image-only (223 MB) and its text could not be read; chapter facts come from the Resource Hub and published code
+- No kit datasheet; the booklet is the main source
+- Do not force the servo gears by hand; attach Robo Grip Mini Part 3 to the first horn hole for better grip
+- Two TT motors can run at different speeds, so the robot may drift; low battery and soft floors slow it down
+- The product page Accessories Kit list gives fewer stands, nuts and screws than the booklet box list
 - Pins used by the kit: P1 (Maker Line), P2 and P12 (ultrasonic), P8 (RGB LEDs), I2C to the REKA:BIT co-processor; servo on S1; motors on M1/M2
 - Controller limits apply from REKA:BIT: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor, 300 mA total on Grove +3V3, motor and servo power cut above 7 V
 - All Bonus 1 programs use radio group 1, so two kits in the same room interfere unless the group is changed
@@ -3820,76 +3825,6 @@ Website
 
 ## Source link
 https://my.cytron.io/p-soccerbit-robot-kits
-
-# Product fact sheets
-
-## Product name
-DIY RC Boat Using micro:bit
-
-## Aliases
-DIY RC Boat Using micro:bit, PR-DIY-BOAT-MBIT, DIY RC Boat, micro:bit RC Boat, RC Boat micro:bit, DIY Boat micro:bit
-
-## What it is
-A do-it-yourself remote-controlled boat project for the BBC micro:bit: one micro:bit on the boat plugged into a MOTION:BIT drives two DC motors with propellers and a 9 g servo rudder fin, and a second micro:bit is the radio remote. The product page is the build guide and the hull is 3D-printed from Cytron's STL files or made from foam or plastic.
-
-## Specs and functions
-- Product code: PR-DIY-BOAT-MBIT
-- Project kit; the product page is itself the build guide (6 build steps: gather components, assemble hull, ...)
-- Controller board: MOTION:BIT (see the MOTION:BIT fact sheet; not re-documented here)
-- Components listed: BBC micro:bit x2; MOTION:BIT; 2x DC motors with propellers; 9g servo (fin); 3.7V LiPo battery pack; boat hull 3D-printed (STL provided) or foam/plastic; waterproof enclosure optional
-- Propulsion: 2x DC motors with propellers
-- Steering: 9 g servo moving a fin; fin positions used by Cytron's remote code: 130 degrees, 50 degrees, 90 degrees (centre)
-- Power: 18650 cell in the MOTION:BIT holder, supplied with the MOTION:BIT bundle (page text calls it a "3.7V LiPo battery pack")
-- Software: MakeCode blocks with the MOTIONBIT extension; Code #1 on the boat micro:bit, Code #2 on the remote micro:bit
-- Remote controls: Shake = start the motors; Button A = fin to 130 degrees; Button B = fin to 50 degrees; Buttons A+B = fin back to 90 degrees; touch the micro:bit logo = stop the motors
-- Hull: 3D-printed (STL files provided; Cytron printed it on an Artillery Hornet) or foam/plastic
-- Packing list (product page image): 2 × 56 mm 4-blade propellers; 1 × SG90 micro servo; 2 × 3 V miniature brushed DC motors with leads; 1 × MOTION:BIT bundle with micro:bit Junior Kit and 18650; 1 × micro:bit V2 Go Bundle. No hull
-- Warranty: [NOT STATED]
-- Dimensions: [NOT STATED]
-- Weight: [NOT STATED]
-
-## Interfaces and compatibility
-- Boat: micro:bit on MOTION:BIT; 2 DC motors on MOTION:BIT motor terminals; 9 g servo on a MOTION:BIT servo port
-- Motors on MOTION:BIT M1 and M2; servo on a right-side servo header, port number not readable (product page image)
-- Remote: second micro:bit over micro:bit radio; radio group: [NOT STATED]
-- Battery: 18650 in the MOTION:BIT holder
-- MakeCode blocks; MOTIONBIT extension https://github.com/CytronTechnologies/pxt-motionbit
-- Linked resources: Getting Started with MOTION:BIT & Projects Guide tutorial; MOTION:BIT datasheet; pxt-motionbit; MOTION:BIT 3D CAD
-- Tutorial with video: Build an RC Boat Using micro:bit (https://my.cytron.io/tutorial/build-an-rc-boat-using-micro-bit)
-- micro:bit: remote is the micro:bit V2 Go Bundle (touch logo needs V2); boat micro:bit comes in the micro:bit Junior Kit
-
-## Use cases
-- Build a remote-control boat with a micro:bit
-- Control the boat's motors and rudder fin from a second micro:bit using shake, buttons and the touch logo
-- 3D-print a boat hull from the provided STL files
-
-## Known limitations
-- No datasheet, booklet or packing list; the product page and tutorial are the only guides
-- The hull is not included
-- MOTION:BIT motor channels, servo port and the radio group are not stated in text (shown only in code-block images)
-- The hull must be 3D-printed from the STL files or made from foam or plastic
-- Waterproof enclosure is optional and not described; the micro:bit, MOTION:BIT and LiPo are not waterproof
-- MOTION:BIT limits apply: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor channel
-- The remote's touch-logo stop command needs a micro:bit with a touch logo
-- Motor current, run time and warranty are not stated
-
-## Positioning (kept apart from specs)
-- Remote-control boat built with a micro:bit, with a video tutorial available
-
-## Price band
-RM297.55 (Cytron product page, read 2026-10-19)
-
-## Product page
-https://my.cytron.io/p-diy-boat-mbit
-
-## Datasheet
-[NOT STATED]
-
-## Source type
-Website
-
-## Source link
-https://my.cytron.io/tutorial/build-an-rc-boat-using-micro-bit
 
 # Product fact sheets
 
@@ -4509,6 +4444,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Ramping: one of 100 ramp rates per servo; resolution 0.25 µs (8000 steps); UART 9600 baud (product page)
 
 ## Interfaces and compatibility
+- Arduino sample sketches (CytronTechnologies/Arduino_SC08A): Arduino UNO or CT-Uno on the hardware UART (D1 TX → SC08A RX; D0 RX ← SC08A TX for position reporting), 9600 baud; activate all channels first, then send position and speed
 - PC: UC00A USB-to-UART converter plugged into the 4-way UART connector; driver creates a virtual COM port; SC08A takes its 5 V from the UC00A (User's Manual V1.0)
 - Microcontroller: 5 V TTL UART and 5 V supply, minimum 3 wires; TX/RX cross-connected; SC08A TX only needed for position reporting (User's Manual V1.0)
 - Only one host (computer or microcontroller) may be connected at a time (User's Manual V1.0)
@@ -4527,6 +4463,7 @@ A stand-alone 8-channel RC servo controller board (PIC16F1827) commanded over 5 
 - Cytron tutorial: [Quadruped Robot with SC08A Servo Controller](https://my.cytron.io/tutorial/quadruped-robot-with-sc08a-servo-controller)
 
 ## Known limitations
+- Do not use speed 0 with position reporting; the servo oscillates (Cytron Arduino sketch note)
 - No on-board regulator: the servo supply goes directly to the servos; over-supply voltage may spoil the servo motor (User's Manual V1.0)
 - Servo power must be connected correctly before servos are plugged in, else all servo motors will be damaged (User's Manual V1.0)
 - Servo headers are not polarised; a servo plugged in backwards may be destroyed (User's Manual V1.0)

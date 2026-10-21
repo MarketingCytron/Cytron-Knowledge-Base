@@ -5,12 +5,12 @@
 | Product code | `V-KIT-REKABIT-RBT` (product page, variant parent) [PP]. Kit codes `KIT-REKABIT-RBT` (with micro:bit V2) / `KIT-REKABIT-RBT-NB` (without micro:bit) ; the Cytron CDN image path also uses `KIT-REKABIT-RBT` [PP: resource hub] |
 | Family | micro:bit kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Page agrees with the KB (two options, packing list, guide links, resource hub, MakeCode extension); nothing new on component models or port labels, so it stays Medium |
-| Primary source | No datasheet exists for the kit. Guide book: **"Buku Panduan — Kit Projek RBT REKA:BIT" (REKA:BIT RBT Project Kit Quick Start Guide), Malay edition, file `REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf`** (static.cytron.io), credited "Adam & Anna", "Nota daripada rero EDUteam" [UM]. "v1.0" comes from the file name only; no date is printed in the readable text. The English edition (link.cytron.io/rekabit-project-book-english) could not be fetched here — see Needs verification |
+| Last verified | 2026-10-21 |
+| Reviewed | 2026-10-21 — English Quick Start Guide v2.0 (56 pages, PDF created 28 Feb 2023) read from the copy in the team folder: text layer plus every project wiring page and the warning pages viewed as images. Port and servo use for all five projects, servo cable colours and the pump/motor warnings are now Cytron-stated [UM]. Raised Medium → Medium-high; still open: component models (ultrasonic, servo, pump) and kit codes. Earlier: 2026-10-19 master-table review of the live product page |
+| Primary source | No datasheet exists for the kit (KB rule 7: the guide book is the main source). Guide book: **"Quick Start Guide to REKA:BIT RBT Project Kit"**, English, file `REKABIT-RBT-Project-Kit-Quick-Start-Guide-EN-v2.0.pdf` (56 pages; "v2.0" from the file name; PDF created 28 Feb 2023; no date printed on the pages), credited "Adam & Anna", "Note from rero EDUteam" — read 2026-10-21 [UM]. The Malay edition `...-BM-v1.0.pdf` (static.cytron.io) was read earlier through a summarising fetch [UM: BM v1.0] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Notes: [UM] = the Malay guide book above, read through a summarising fetch; its wiring diagrams and the REKA:BIT board diagram (parts labelled A–L) are images and could not be read, so **no per-component Grove port label comes from the guide**. [PP] = my.cytron.io product page as read by the coordinator on 2026-10-19, plus the public **REKA:BIT RBT Project Kit Resource Hub** (rekabit-rbt-hub.cytron.io, Cytron Google Site) tagged [PP: resource hub]. [GH] = `pxt-rekabit-rbt-project-kit` v1.1.4. [3P] = Petrosains online shop (kit list cross-check only). The REKA:BIT board itself is documented in **reka-bit.md**; the Maker Soil Moisture Sensor in **maker-soil-moisture.md** — this file does not re-document them.
+Notes: [UM] = the English guide book v2.0 above (wiring diagrams read as images on 2026-10-21); [UM: BM v1.0] = the Malay edition read earlier through a summarising fetch. [PP] = my.cytron.io product page as read by the coordinator on 2026-10-19, plus the public **REKA:BIT RBT Project Kit Resource Hub** (rekabit-rbt-hub.cytron.io, Cytron Google Site) tagged [PP: resource hub]. [GH] = `pxt-rekabit-rbt-project-kit` v1.1.4. [3P] = Petrosains online shop (kit list cross-check only). The REKA:BIT board itself is documented in **reka-bit.md**; the Maker Soil Moisture Sensor in **maker-soil-moisture.md** — this file does not re-document them.
 
 ## What it is
 - A micro:bit project kit for the Malaysian primary-school RBT syllabus: "For RBT Y5 and Y6 (Reka Bentuk dan Teknologi Tahun 5 & 6)"; page tags: Age 10+, Platform micro:bit, Syllabus RBT Y5&Y6 [PP].
@@ -45,20 +45,29 @@ No spec table exists for the kit. Kit-level items only; board limits are in reka
 - The ultrasonic sensor, servo, pump and LED modules are not linked to product pages on this page, so their models are still unconfirmed [PP].
 
 ## Interfaces, terminals and pin mapping
-The guide tells the reader to "set the pin number to match the port on REKA:BIT you connected the module to" for the RGB board, Big LED, soil moisture sensor and ultrasonic sensor [UM] — i.e. the port is a choice, not fixed. What the sources state in text:
+The component pages tell the reader to "set the pin number to match the port on REKA:BIT to which you connected" each Grove module [UM], so the port is a choice in code. The ports below are the ones drawn in the guide's project wiring diagrams [UM]:
 
-| Component | Connection | Src |
+| Project | Connections drawn in the guide | Src |
 |---|---|---|
-| RGB stick | Any REKA:BIT IO (Grove) port, black Grove cable; pin set in the `set RGB Stick at pin` block (choices P0, P1, P2, P13, P15); README example uses **P0** | [UM][GH] |
-| Big LED ×2 | Any IO port; pin choices P0, P1, P2, P13, P15; README example uses **P13** | [UM][GH] |
-| Soil moisture sensor | Grove cable (black/red/white wires) to an IO port; analog pin choices P0, P1, P2; README example uses **P2**; hub Project 3 says **"P2:P12"** | [UM][GH][PP: resource hub] |
-| Ultrasonic sensor | Any IO port; Trig/Echo pairs offered: P0/P1, P1/P9, **P2/P12** (README example), P13/P14, P15/P16 | [UM][GH] |
-| Servo | REKA:BIT servo terminal S1–S4; wire labels s (Isyarat/signal), +, − ; servo lead colours listed as white and orange (guide does not say which is which) | [UM] |
-| Water pump | MOTOR terminal M1 or M2; hub Project 3: "motor terminal 2" | [UM][PP: resource hub] |
-| DC motors (Project 5 car) | left wheel → **MOTOR 1**, right wheel → **MOTOR 2** | [PP: resource hub] |
-| Battery holder | REKA:BIT power jack ("battery jack") | [PP: resource hub] |
+| 1 Boom Barrier Gate | RGB Stick (DIN end) → Grove port **P0:P1**; servo → **S1** | [UM] |
+| 2 Interactive Robot | Big LED ×2 → ports **P13:P14** and **P15:P16**; servo → **S1** | [UM] |
+| 3 Water Level Detection Robot (part 1) | soil moisture sensor → port **P2:P12**; servo → **S1** | [UM] |
+| 3 Auto Plant Watering Robot (part 2) | soil moisture sensor → port **P2:P12**; water pump → **MOTOR 2** terminal | [UM], [PP: resource hub] |
+| 4 Coin Eating Robot | ultrasonic sensor → port **P2:P12** (Grove-to-female cable: VCC, Trig, Echo, GND); servo → **S1** | [UM] |
+| 5 Mobile Robot Car | RGB Stick → **P0:P1**; ultrasonic → **P2:P12**; Big LEDs → **P13:P14** and **P15:P16**; DC motors → **MOTOR 1** (left) and **MOTOR 2** (right) | [UM], [PP: resource hub] |
 
-Grove signal pairs (yellow/white pin) on REKA:BIT — P0/P1, P1/P9, P2/P12, P13/P14, P15/P16 — are derived from this extension's enums [GH]; confirm against the REKA:BIT datasheet Figure 1 (see reka-bit.md).
+| Component | Connection rule | Src |
+|---|---|---|
+| Servo (via extension cable) | REKA:BIT servo port **s** (signal) ← extension cable **white** ← servo **orange**; **+** ← red ← red; **−** ← black ← brown. Channels S1–S4; the guide's projects use S1 | [UM] |
+| Grove modules (RGB Stick, Big LED, soil moisture, ultrasonic) | REKA:BIT IO port with a Grove cable (the guide shows black, red and white wires to the module) | [UM] |
+| RGB stick pin choices | P0, P1, P2, P13, P15 in the `set RGB Stick at pin` block; README example **P0** | [GH] |
+| Big LED pin choices | P0, P1, P2, P13, P15; README example **P13** | [GH] |
+| Soil moisture pin choices | P0, P1, P2 (analog); README example **P2** | [GH] |
+| Ultrasonic Trig/Echo pairs | P0/P1, P1/P9, **P2/P12** (README example), P13/P14, P15/P16 | [GH] |
+| Water pump / DC motor | screw terminal **MOTOR 1** or **MOTOR 2**: insert the exposed wire ends, then tighten with the screwdriver; **clamp the exposed wire lead, not the insulator**. The pump is not polarity sensitive (red/black either way round) | [UM] |
+| Battery holder | REKA:BIT power jack | [UM], [PP: resource hub] |
+
+Grove port labels on the board, as drawn in the guide: P0:P1, P1:P9, P2:P12, P13:P14, P15:P16, I2C [UM].
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - **The extension is `pxt-rekabit-rbt-project-kit`** (search "rekabit rbt project" in MakeCode Extensions); it depends on `pxt-rekabit`, so the REKA:BIT motor/servo blocks load with it [GH]. Block categories added: RGB Stick, Big LED, Soil Moisture, Ultrasonic [GH].
@@ -66,11 +75,12 @@ Grove signal pairs (yellow/white pin) on REKA:BIT — P0/P1, P1/P9, P2/P12, P13/
 - **Pin choice must match the physical port** — the guide repeats this for every Grove module [UM]. The big-LED/RGB pin list is P0, P1, P2, P13, P15 (the yellow pin of each Grove port); the soil-moisture pin list is P0, P1, P2 only (the analog-capable ports) [GH].
 - **Soil moisture reading rises as soil dries** (sensor: higher voltage = less moisture [DS in maker-soil-moisture.md]). README example: `< 550` → moist, `> 550` → dry; 550 is an example, not a calibrated value [GH]. The guide uses a user-chosen "reference value" (threshold) [UM].
 - **Ultrasonic distance block** returns 1–300 cm and 300 when nothing is detected; a background reader refreshes every 200 ms; a different timing constant is applied on micro:bit V1 vs V2 [GH].
-- **Servo jitter:** disable a servo that is not in use ("this prevents the servo from jittering") [UM]. Servo range 0°–180° [UM].
-- **Pump and motor blocks carry a ⚠ warning symbol** in the guide, but the warning text is not readable in the extracted text [UM]. Speed 0–255 [UM].
+- **Servo jitter:** disable a servo that is not in use (it stops the servo twitching) [UM]. Servo range 0°–180° [UM].
+- **Adult supervision** is required when using sharp tools (cutter knife, scissors) — printed on every project page [UM].
+- **Pump and motor wiring warning:** "Clamp the exposed wire lead, and not the insulator" [UM]. Speed 0–255 [UM]. The pump comes with a 1-metre rubber tube on the outlet and must be **fully submerged** in water to work [UM]. To reverse a DC motor, swap its red and black wires or change the direction in code [UM].
 - **Reset:** "slide the power switch to OFF, then to ON to restart" [UM]. Flashing: use the latest Edge or Chrome; if no WebUSB pop-up appears, drag the downloaded `microbit-xxx.hex` to the MICROBIT drive; success = "Hello" scrolls then a heart icon [UM].
 - **micro:bit V1:** the product page says "Get a Grove Buzzer module if you are going to use REKA:BIT with micro:bit V1 board (No built-in piezo buzzer)" [PP]; the extension states REKA:BIT works with V1 & V2 [GH]. The guide only mentions "micro:bit V2" [UM].
-- **Project 3 has two code versions** on the hub (3a and 3b) [PP: resource hub].
+- **Project 3 has two parts:** Water Level Detection Robot (soil sensor + servo; warning tone and asks for water when "thirsty") and Auto Plant Watering Robot (soil sensor + pump); the hub has two code versions (3a and 3b) [UM], [PP: resource hub].
 
 ## Power and electrical limits
 - Power sources in the kit: USB cable (power & data) and 4× AA battery holder with DC plug [UM][PP]. The guide does not say when to use which [UM].
@@ -87,8 +97,8 @@ Grove signal pairs (yellow/white pin) on REKA:BIT — P0/P1, P1/P9, P2/P12, P13/
 - Project list and components (guide + hub) [UM][PP: resource hub]:
   1. **Boom Barrier Gate** (Pagar Keselamatan) — servo, RGB stick, battery holder, cardboard + printed A4 template.
   2. **Interactive Robot** (Robot Interaktif) — 2× Big LED, servo, battery holder, cardboard template.
-  3. **Auto Plant Watering Robot** (guide prints "Robot Penjaga Tanaman"; see Conflicts) — soil moisture sensor on P2:P12, water pump on motor terminal 2, battery holder.
-  4. **Coin-Eating Robot** (Robot Pemakan Syiling) — servo, ultrasonic sensor, battery holder; steel hanger wire (20 cm) and popsicle sticks.
+  3. **Water Level Detection Robot** + **Auto Plant Watering Robot** (two parts) — soil moisture sensor on P2:P12, servo on S1 (part 1), water pump on MOTOR 2 (part 2).
+  4. **Coin Eating Robot** (Robot Pemakan Syiling) — servo, ultrasonic sensor; tools/materials: cardboard, scissors, cutter knife, pliers, iron wire, popsicle sticks, hot glue gun.
   5. **Mobile Robot Car** (Robot Mudah Alih) — 2× DC motor + wheels (left M1, right M2), castor, ultrasonic, 2× LED headlights, RGB stick; chassis = a plastic food container.
 - Resource hub downloads: printable A4 project templates (Google Drive), project folders, REKA:BIT datasheet (Google Doc), MakeCode Offline App link [PP: resource hub].
 - Support: Telegram group t.me/microbit_malaysia; warranty claims via my.cytron.io/support with the warranty form [PP: resource hub helpdesk].
@@ -106,25 +116,22 @@ Grove signal pairs (yellow/white pin) on REKA:BIT — P0/P1, P1/P9, P2/P12, P13/
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
 |---|---|---|---|
-| Project 3 name | [PP: resource hub] "Auto Plant Watering Robot" (code 3a/3b) | [UM] heading reads "Robot Penjaga Tanaman" with overlapping text "Robot Penyiram Pokok Auto"; a line "Projek 3: Robot Pengesan Paras Air" (water-level detecting robot) also appears | Text-extraction overlap in the PDF; use "Auto Plant Watering Robot (Robot Penyiram Pokok Auto)" and verify against the printed book |
+| Project 3 name | [PP: resource hub] "Auto Plant Watering Robot" (code 3a/3b) | [UM: BM v1.0] "Robot Penjaga Tanaman", "Robot Penyiram Pokok Auto", "Robot Pengesan Paras Air" | Resolved by the English guide [UM]: Project 3 has two parts — Water Level Detection Robot, then Auto Plant Watering Robot |
 | Number of components | [PP] "5 projects + 7 components" | [PP: resource hub] lists 8 "Explore Components" (REKA:BIT + 7) | Same count: 7 component types plus the REKA:BIT board |
 | Guide languages | [PP] English, Malay, Chinese | [PP: resource hub] adds Spanish | Hub is newer; say "English, Malay, Chinese (and Spanish on the hub)" |
-| micro:bit V1 support | [GH] "REKA:BIT works with micro:bit V1 & V2"; [PP] V1 needs a Grove buzzer | [UM] mentions only micro:bit V2 | Works with V1 (no speaker); the kit ships with V2 |
+| micro:bit V1 support | [GH] "REKA:BIT works with micro:bit V1 & V2"; [PP] V1 needs a Grove buzzer | [UM] mentions only micro:bit V2 (the first test is "Hello Hello (micro:bit V2)") | Works with V1 (no speaker); the kit ships with V2 |
 | "RGB LED Stick" vs "RGB board" | [PP] "RGB LED Stick"; [GH] "RGB Stick" | [UM] "Papan RGB" (RGB board) | Same part (8-LED NeoPixel stick) |
 
 ## Needs verification
-- **English guide book** (link.cytron.io/rekabit-project-book-english): fetch blocked here (permission not granted); the Malay v1.0 PDF was read instead. Confirm the English title, version/date, and whether a v1.1+ exists.
-- **Per-component Grove port labels** in the guide's wiring diagrams (which port each module is shown on in each project) — images not readable. Only Project 3 (P2:P12, motor 2) and Project 5 (M1 left, M2 right) are stated in hub text.
-- **Which servo port** (S1–S4) Projects 1, 2 and 4 use — not stated in text.
-- **⚠ warning text** beside the pump and DC-motor blocks in the guide.
-- **Ultrasonic module model** shipped (code comment names RCWL-9610 timing [GH]); **Big LED** module spec (10 mm LED module, voltage) ; **pump** voltage (the sibling APW kit lists "DC 3V-5V" [PP]); **servo** model (APW kit: analog 9g 3–6 V [PP]) — none stated for this kit.
+- **Ultrasonic module model** shipped (the guide drawing shows an HC-SR04-style module; code comment names RCWL-9610 timing [GH]); **Big LED** module spec (10 mm LED module, voltage); **pump** voltage (the sibling APW kit lists "DC 3V-5V" [PP]); **servo** model (APW kit: analog 9g 3–6 V [PP]) — none stated for this kit.
+- **Guide editions:** English v2.0 (Feb 2023) vs Malay v1.0 — check that the Malay softcopy matches v2.0, and whether the Chinese and Spanish editions are current.
 - **Dimensions/weight** of the kit box: not stated anywhere.
-- **MakeCode share links** could not be opened here; pin usage per project is taken from the README examples and hub text, not the actual project code.
-- Whether the guide's "Hello" chapter requires USB power only or the battery pack.
+- Whether the guide's "Hello" test needs USB power only or the battery pack.
 
 ## Sources
-- [UM] REKA:BIT RBT Project Kit Quick Start Guide, Malay, v1.0 (file name): https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf (read via summarising fetch; diagrams unreadable)
-- [UM] English / Malay / Chinese / Spanish short links (not fetched): https://link.cytron.io/rekabit-project-book-english · https://link.cytron.io/rekabit-project-book-malay · https://link.cytron.io/rekabit-project-book-chinese · https://link.cytron.io/rekabit-project-book-spanish
+- [UM] Quick Start Guide to REKA:BIT RBT Project Kit, English, v2.0 (file name; PDF created 28 Feb 2023), file `REKABIT-RBT-Project-Kit-Quick-Start-Guide-EN-v2.0.pdf` in the team reference folder (read 2026-10-21; softcopy link: https://link.cytron.io/rekabit-project-book-english)
+- [UM: BM v1.0] REKA:BIT RBT Project Kit Quick Start Guide, Malay, v1.0 (file name): https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf (read via summarising fetch)
+- [UM] English / Malay / Chinese / Spanish short links (short links not fetched from here): https://link.cytron.io/rekabit-project-book-english · https://link.cytron.io/rekabit-project-book-malay · https://link.cytron.io/rekabit-project-book-chinese · https://link.cytron.io/rekabit-project-book-spanish
 - [PP] Product page (coordinator read, 2026-10-19): https://my.cytron.io/p-rekabit-rbt-project-kits
 - [PP: resource hub] https://rekabit-rbt-hub.cytron.io/ — pages: /download, /helpdesk, /chapter-resources/rekabit-project-1 … -5, /explore-components (component pages are images only)
 - [PP: resource hub] Printable A4 template (Project 1): https://drive.google.com/file/d/1lwTzCC9j0Wd9DKnT5X_91dygzJ2q7xXz/view · Project folders: https://drive.google.com/drive/folders/1jGbZVvKiiMLRpCJtgBJF-tlE6xInuxhu (Boom Barrier Gate) · (Cytron document — link not public) (Interactive Robot) · (Cytron document — link not public) (Auto Plant Watering / Coin-Eating)

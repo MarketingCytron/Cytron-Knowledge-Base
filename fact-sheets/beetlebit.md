@@ -23,11 +23,12 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - Programming: MakeCode
 - Packing list (with micro:bit, with battery): 1x BBC micro:bit V2, 1x REKA:BIT, 1x Dual Output Cable USB-A to 2.1mm DC barrel & Micro USB, 1x 4xAA battery holder with DC jack, 1x Ultrasonic 3V3, 1x Maker Line, 4x AA battery, 2x TT motor with 15cm wires and wheel kit, 1x TS90A micro servo, 1x BEETLE:BIT Booklet, 1x BEETLE:BIT Track, 1x Accessories Kit
 - Accessories Kit: bracket for ultrasonic HC-SR04, W420 steel ball castor, 2x TT motor bracket, 2x Robo Base (PCB only), 3x Grove 4-pin buckled to female cable, M3 PCB stands 40/20/10/5mm, 14x M3 nut, 14x M3x6 screw, Velcro set, 4x M3x10 bolt, 1x Robo Grip PCB with accessories, 1x ping pong ball
-- Booklet: "202602 BEETLEBIT Quick Start Guide.pdf" (English), 7 chapters plus a Setup Guide and Bonus activities
+- Booklet: "BEETLE:BIT — Build. Code. Move. Grab." Quick Start Guide (Cytron Education Team, 2026, 96 pages, works with micro:bit V1 & V2), 7 chapters plus a Setup Guide and Bonus activities
+- Box contents (booklet): battery holder & USB cable, 2x Robo Base, REKA:BIT, 3x Grove cables, ultrasonic bracket, servo motor, ultrasonic sensor, Maker Line sensor, 2x DC motor bracket, 2x DC motor & wheels, M2 & M3 screwdriver, Velcro, Robo Grip Mini, 4x AA batteries, cross wrench, castor wheel, M3 PCB stands (40 mm x5, 20 mm x8, 10 mm x4, 5 mm x4), M3 bolts, nuts, lock nuts and washers, M2 bolts and nuts
 - Chapters: Setup Guide (build BEETLE:BIT); 1 The Beetle's Brain (micro:bit Basics); 2 How the Beetle Moves (TT Motors); 3 The Beetle's Claw (Servo Gripper); 4 The Beetle's Eyes (Ultrasonic Sensor); 5 The Beetle Senses (Line Following); 6 Teaching the Beetle to Decide; 7 Coordinated Actions (Line + Grab); Bonus 1 Control BeetleBit Using a Controller; Bonus 2 BEETLE:BIT Input–Output Challenge
 - Gripper angles in Cytron's chapter code: Chapter 3 toggles 0 and 180; Chapters 6 and 7 use 120 = open, 0 = closed, then disable the servo after a pause
-- Drive speeds in Cytron's chapter code: 128 for move/turn; obstacle thresholds: ultrasonic < 10 = stop, < 20 = slow
-- Bonus 1 RC mode: micro:bit radio group 1; numbers 0–5 = forward, backward, turn left, turn right, toggle gripper, brake; remote is a second micro:bit
+- Drive speeds in Cytron's chapter code: 128 for move/turn; obstacle thresholds (booklet Ch4): under 20 cm = slow down, under 10 cm = stop; Ch4 challenge keeps a 15 cm distance
+- Bonus 1 RC mode: micro:bit radio group 1; hold A = forward, hold B = backward, tilt = turn, shake = open/close gripper, upright = stop; needs an extra micro:bit V2 (V2 recommended for both to avoid latency)
 - Warranty: 12 months (1 year for manufacturing defects; wear and tear, misuse, abuse or improper maintenance not covered; troubleshooting, repair and testing take 7 working days from receipt)
 - Dimensions: [NOT STATED]
 - Weight: [NOT STATED]
@@ -37,14 +38,13 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - RC mode needs a second micro:bit (not included) (product page)
 
 ## Interfaces and compatibility
-- Left drive motor: REKA:BIT M1; right drive motor: REKA:BIT M2
-- Gripper servo: REKA:BIT servo port S1
-- Maker Line sensor: micro:bit P1 (analog)
-- Ultrasonic sensor: trigger P2, echo P12
+- Motor 1: black → M1A, red → M1B (left motor in pxt-zoombit); Motor 2: red → M2A, black → M2B (right motor)
+- Gripper servo: REKA:BIT servo port S1 (orange signal, red +, brown −)
+- Maker Line sensor: Grove port P1:P9 (yellow AN = P1, white CAL = P9, red Vcc, black GND); on micro:bit V1 leave the white CAL wire disconnected
+- Ultrasonic sensor: Grove port P2:P12 (yellow trigger = P2, white echo = P12, red Vcc, black GND)
 - RGB LEDs on REKA:BIT: P8 (not used by the chapter code)
 - Motors and servo are driven over I2C by the REKA:BIT co-processor (address 0x08)
-- Grove port labels used for the sensor cables: [NOT STATED]
-- MakeCode extension: pxt-zoombit v0.1.1 (https://github.com/cytrontechnologies/pxt-zoombit), which loads pxt-rekabit; the product page names the extension as pxt-rekabit "BEETLE:BIT (ZOOM:BIT) Extension"
+- MakeCode extension: ZOOMBIT (pxt-zoombit v0.1.1 (https://github.com/cytrontechnologies/pxt-zoombit), which loads pxt-rekabit), as the booklet says; the product page names the extension as pxt-rekabit "BEETLE:BIT (ZOOM:BIT) Extension"
 - MakeCode blocks, JavaScript and Python modes; MakeCode Offline App available
 - micro:bit V2 is included in the "with micro:bit" option; RC mode needs a second micro:bit
 - Related Cytron tutorials: colour detection bot using HuskyLens; line following robot car using motionbit; colour detection robot using TCS3200; Chapter 1: Setting Up Beetle:Bit with Huskylens 2
@@ -67,7 +67,10 @@ An educational gripper robot car kit for the BBC micro:bit, built on the REKA:BI
 - The micro:bit is not included in the "without micro:bit" and "Accessories Kit only" options
 - RC mode needs an additional micro:bit, which is not included
 - Batteries are not included in the "without battery" options
-- No kit datasheet; the booklet PDF is image-only (223 MB) and its text could not be read; chapter facts come from the Resource Hub and published code
+- No kit datasheet; the booklet is the main source
+- Do not force the servo gears by hand; attach Robo Grip Mini Part 3 to the first horn hole for better grip
+- Two TT motors can run at different speeds, so the robot may drift; low battery and soft floors slow it down
+- The product page Accessories Kit list gives fewer stands, nuts and screws than the booklet box list
 - Pins used by the kit: P1 (Maker Line), P2 and P12 (ultrasonic), P8 (RGB LEDs), I2C to the REKA:BIT co-processor; servo on S1; motors on M1/M2
 - Controller limits apply from REKA:BIT: 3.6–6 V input, 1 A continuous / 1.5 A peak per motor, 300 mA total on Grove +3V3, motor and servo power cut above 7 V
 - All Bonus 1 programs use radio group 1, so two kits in the same room interfere unless the group is changed

@@ -17,7 +17,8 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Without-micro:bit option: same contents minus the micro:bit
 - Guide book list: REKA:BIT (with or without micro:bit), micro servo motor, RGB board, soil moisture sensor, Big LED module x2, water pump, ultrasonic sensor, USB cable (power & data), Grove cable x4, AA battery x4, battery holder, ball caster, DC motor with wheels x2, mini screwdriver, adhesive tape x5
 - Guide book: Quick Start Guide, 5 projects + 7 components; softcopies in English, Malay, Chinese (Spanish on the resource hub)
-- Projects: 1 Boom Barrier Gate; 2 Interactive Robot; 3 Auto Plant Watering Robot (two code versions, 3a and 3b); 4 Coin-Eating Robot; 5 Mobile Robot Car
+- Projects: 1 Boom Barrier Gate; 2 Interactive Robot; 3 Water Level Detection Robot and Auto Plant Watering Robot (two parts, code 3a and 3b); 4 Coin Eating Robot; 5 Mobile Robot Car
+- Guide wiring per project (English guide v2.0): RGB Stick on port P0:P1; Big LEDs on P13:P14 and P15:P16; soil moisture sensor and ultrasonic on P2:P12; servo on S1; water pump on MOTOR 2; car motors on MOTOR 1 (left) and MOTOR 2 (right)
 - RGB stick: 8 LEDs labelled 0 to 7; brightness 0 to 255
 - Servo: channels S1 to S4; angle 0 to 180 degrees; disable-servo block stops jitter
 - Water pump: motor channel M1 or M2; speed 0 to 255; works in either direction
@@ -38,7 +39,7 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Ultrasonic Trig/Echo pairs: P0/P1, P1/P9, P2/P12, P13/P14, P15/P16 (README example Trig P2, Echo P12)
 - Water pump: MOTOR terminal (Project 3: motor terminal 2)
 - Mobile Robot Car: left wheel MOTOR 1, right wheel MOTOR 2
-- Servo: REKA:BIT servo terminal S1 to S4 (wire labels s = signal, +, -)
+- Servo: REKA:BIT servo terminal S1 to S4 through an extension cable: s ← white ← servo orange, + ← red ← red, − ← black ← brown; the guide projects use S1
 - micro:bit V1 and V2 (V1 has no built-in buzzer; add a Grove Buzzer module)
 - MakeCode Blocks, JavaScript and Python modes; MakeCode Offline App supported
 - WebUSB download needs the latest Edge or Chrome; otherwise drag the .hex file to the MICROBIT drive
@@ -60,11 +61,11 @@ A micro:bit project kit for the Malaysian RBT Year 5 and Year 6 syllabus, built 
 - Ultrasonic block returns 300 when nothing is detected
 - The soil moisture threshold (README example 550) is an example, not a calibrated value
 - Disable an unused servo to prevent jitter
-- The pump and DC motor pages in the guide carry a warning symbol
+- Pump and DC motor terminals: clamp the exposed wire lead, not the insulator; the pump must be fully submerged and is not polarity sensitive
+- Adult supervision is required when using sharp tools in the projects
 - All electrical limits are the REKA:BIT board's (3.6 to 6 V input; 1 A continuous / 1.5 A peak per motor; 300 mA Grove 3V3; over 7 V cuts motor and servo power)
 - Cardboard, hot glue, Blu Tack, plastic container and steel hanger used in the projects are not included
 - New MakeCode extensions may need an internet connection to compile even in the offline app
-- The guide's per-project wiring is shown in diagrams; port labels for the RGB stick, Big LEDs, ultrasonic sensor and servo in each project are not stated in text
 
 ## Positioning (kept apart from specs)
 - "with the aim to lower the learning curve for beginners who wants to build STEAM (and RBT) projects with micro:bit"
@@ -78,10 +79,10 @@ RM219.00–RM295.00 across 2 options (Cytron product page, read 2026-10-19)
 https://my.cytron.io/p-rekabit-rbt-project-kits
 
 ## Datasheet
-https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+https://link.cytron.io/rekabit-project-book-english
 
 ## Source type
 Datasheet
 
 ## Source link
-https://static.cytron.io/download/REKABIT-RBT-Project-Kit/REKABIT-RBT-Project-Kit-Quick-Start-Guide-BM-v1.0.pdf
+https://link.cytron.io/rekabit-project-book-english

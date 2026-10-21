@@ -5,8 +5,8 @@
 | Product code | `SC08A` [PP]; document title "SC08A SERVO CONTROLLER" [UM] |
 | Family | Servo and RC controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Board size and the feature list are now Cytron-stated; the manual was only read through a reseller mirror and connector pin orders are still open, so it stays Medium |
+| Last verified | 2026-10-21 |
+| Reviewed | 2026-10-21 — Cytron GitHub `Arduino_SC08A` read in full (README + both sketches): the command bytes match the manual's protocol table, and the sketches add Arduino-side rules (hardware UART at 9600, speed 0 must not be used with position reporting). No SC08A manual file was found in the team reference folder, so the manual is still read only through the reseller mirror and the connector pin orders stay open — stays Medium. Earlier: 2026-10-19 master-table review of the live product page |
 | Primary source | "SC08A SERVO CONTROLLER — User's Manual", **V1.0, June 2011**, Cytron Technologies Sdn. Bhd. [UM] — no separate datasheet exists; the user manual is the top-ranked source |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
@@ -87,6 +87,8 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Resolution for code: use **0.25 µs** per step (0 = 0.5 ms, 8000 = 2.5 ms). The 0.5 µs figure printed in the protocol section contradicts the pulse range [UM] — see Conflicts.
 - Speed byte **0 = fastest**, 1 = slowest, 100 = fast but slower than 0 [UM].
 - Position report on channel 0 is not executed; it needs the SC08A TX wire connected to the host RX [UM].
+- **Do not use speed 0 with position reporting:** the Cytron Arduino sketch says speed 0 makes the servo oscillate in position-reporting operation "due to limitation of software position feedback" — use speed 1–100 there [GH].
+- **Arduino UNO hardware UART is shared with USB upload** (D0/D1): the Cytron sketches use it for SC08A, so the SC08A link is on the same pins the board uses for uploading [GH].
 - Reset stops all pulses; servos go free-running until re-activated and commanded [UM].
 - Never connect PC and microcontroller hosts at the same time; never use the expansion cable as the host cable [UM].
 - When two boards are linked, add **8** to the channel number for the second board (S1 → S9). The manual's sentence "Every label should be added with 16" is an error — see Conflicts [UM].
@@ -100,7 +102,8 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Whether logic ground and servo ground are common is not stated in text [UM].
 
 ## Software support
-- **Protocol**: raw UART bytes at 9600 baud (table above); no library is published for SC08A on Arduino [UM][GH]. The SHIELD-SERVO Arduino library uses the same command bytes but targets the shield.
+- **Protocol**: raw UART bytes at 9600 baud (table above); there is no Arduino library for SC08A, only sample sketches [UM][GH]. The SHIELD-SERVO Arduino library uses the same command bytes but targets the shield.
+- **Arduino sample sketches** [GH] — `CytronTechnologies/Arduino_SC08A` (README last updated Aug 2015; hardware: Arduino UNO or CT-Uno): "SC08A_Arduino_without_position_reporting" and "SC08A_Arduino_with_position_reporting". Both use the hardware `Serial` port (D1 = TX to SC08A RX; D0 = RX from SC08A TX, needed only for position reporting and the starting-position reply) at 9600 baud, send activate-all (`0xC0`, then `1`) in `setup()`, wait for a button on D12 to be pressed and released, then move all 8 channels between positions 7300 and 400 at speed 50 (LED on D13 shows which end). Helper functions: `on_off_motor(channel, on)` → `0xC0|ch, on`; `set_ch_pos_spd(channel, position, speed)` → `0xE0|ch, (pos>>6)&0x7F, pos&0x3F, speed`; `rd_current_pos(channel)` → sends `0xA0|ch`, reads 2 bytes, returns `(high<<6)|low`; `initial_position(channel, position)` → `0x80|ch, high, low`, then waits for the reply byte `0x04`. The README links the tutorial "Interfacing servo motors controllers (SC08A and SC16A) using Arduino" (tutorial.cytron.com.my, 2012).
 - **PIC sample code** [UM][GH]: `SK40C_16F877A_SC08A.c` / `.hex`, PICC Lite, PIC16F877A on an SK40C (also works on PIC16F876A); SW1 activates all channels, SW2 sweeps every servo left-right-left. GitHub `CytronTechnologies/SC08A_PIC16F877A` holds folders "SC08A_Sample Code" (Feb 2011) and "SK40C_16F877A_SC08_Apr14" (Apr 2014) [GH].
 - GitHub `CytronTechnologies/SC08A_PIC18F4520`: "Sample Code 18F4520 + SC08A May 2012" [GH].
 - **PC GUI** "SC08A Servo Control Panel" (8 or 16 servo): search/refresh COM ports, connect/disconnect, "Active 8 Servo" / "Active 16 servo", per-servo A (activate) / D (deactivate), position slider, position/pulse/speed values, "Reset_Servo_Initial Position" tab with Send and RESET; shortcut named "SC08A VB project1" [UM]. GitHub `CytronTechnologies/GUI_SC08A`: "SC08A Sample GUI + Project File (VB 2010 Express) July 2012", with a tutorial "Wireless servo controller using XBee" (SC08A + XBee series 1 + SKXBee) [GH].
@@ -108,7 +111,7 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Not supported / not described: I2C, SPI, PWM input, RC receiver input, baud-rate change [UM].
 
 ## Compatibility and accessories
-- Hosts: PC via UC00A USB-to-UART; any microcontroller with 5 V TTL UART (examples: SK40C with PIC16F877A/PIC16F876A, PIC18F4520) [UM][GH].
+- Hosts: PC via UC00A USB-to-UART; any microcontroller with 5 V TTL UART (examples: SK40C with PIC16F877A/PIC16F876A, PIC18F4520, Arduino UNO / CT-Uno) [UM][GH].
 - Wireless: XBee series 1 on SKXBee with the GUI (tutorial) [GH].
 - Second SC08A for channels 9–16 via a 4-way interlink cable [UM].
 - Packing list: 1 × SC08A main board, 1 × 2510H-04 connector (with terminal pins), 1 × 2561-04 connector (with terminal pins), 1 × mini jumper for JP11; manual and software are downloads [UM].
@@ -149,7 +152,7 @@ UART protocol (manual 7.1) — first byte = 3 mode bits + 5-bit channel; channel
 - Behaviour on UART loss, and whether the stored start-up position moves the servo at power-up before activation.
 - Board revision / hardware revision history — not stated anywhere read.
 - Board weight — not stated (size 49 × 46 mm is from the product page).
-- Re-read the user manual from the Cytron Drive PDF (now linked from the product page) to replace the reseller-mirror reading.
+- Re-read the user manual from the Cytron Drive PDF (linked from the product page) to replace the reseller-mirror reading — no copy is in the team reference folder yet (checked 2026-10-21).
 
 ## Cytron tutorials
 Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
@@ -161,5 +164,6 @@ Add-on: Cytron tutorials that use this product, most-read first. Use them for wi
 - [GH] PIC16F877A sample code README — https://raw.githubusercontent.com/CytronTechnologies/SC08A_PIC16F877A/master/README.md
 - [GH] PIC18F4520 sample code README — https://raw.githubusercontent.com/CytronTechnologies/SC08A_PIC18F4520/master/README.md
 - [GH] GUI README — https://raw.githubusercontent.com/CytronTechnologies/GUI_SC08A/master/README.md
+- [GH] Arduino sample sketches (README + 2 sketches, read 2026-10-21) — https://github.com/CytronTechnologies/Arduino_SC08A
 - Cross-reference only: SHIELD-SERVO User's Manual V1.1 (same protocol) — https://docs.google.com/document/d/191P6FwTgJ_dWhAhB3eWfP0YMSbI4_7Kehgzw3pYy-AY/view
 - [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

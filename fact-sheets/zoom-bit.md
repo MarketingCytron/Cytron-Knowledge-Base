@@ -22,13 +22,13 @@ A robot car kit for the BBC micro:bit, built on a REKA:BIT controller board with
 - DC motor current: 1 A continuous, 1.5 A peak (< 5 seconds)
 - DC motor voltage at full speed and servo V+: equal to the power source voltage
 - Low voltage LED blinks below 3.6 V; over voltage LED lights above 7 V and power to the servos and DC motors is cut off
-- Drive motors: left = M1, right = M2 (REKA:BIT motor channels)
+- Drive motors: left = MOTOR 1 (black → M1A, red → M1B), right = MOTOR 2 (red → M2A, black → M2B)
 - Motor test buttons on REKA:BIT run a motor at full speed (MxA forward, MxB backward)
-- Maker Line sensor: 5 IR sensors (S1–S5) with LED indicators, calibration button, line-colour switch ("DARK" for a black line); read on P1 (analog)
-- Ultrasonic sensor: trigger P2, echo P12; MakeCode block returns 1 – 255 cm, 255 if over 255 cm or no echo
-- Headlights (LED modules): left P13, right P15
+- Maker Line sensor: 5 IR sensors (S1–S5) with LED indicators, calibration button, line-colour switch ("DARK" for a black line); plugs into Grove port P1:P9 (yellow AN = P1, white CAL; leave white unconnected on micro:bit V1)
+- Ultrasonic sensor: Grove port P2:P12 (yellow trigger = P2, white echo = P12); MakeCode block returns 1 – 255 cm, 255 if over 255 cm or no echo
+- Headlights (LED modules): left in port P13:P14 (signal P13), right in port P15:P16 (signal P15); white wire not connected; turn on automatically when the micro:bit light level is below 50 (guide book code)
 - RGB LEDs: 2 x WS2812B on REKA:BIT, on P8, labelled "0" and "1"
-- Head: 180 degree servo motor on a REKA:BIT servo port
+- Head: 180 degree servo motor on REKA:BIT servo port S1
 - Motors and servos are controlled by the REKA:BIT co-processor over I2C (address 0x08)
 - Power switch: slide OFF then ON to reset
 - Warranty: 12 months

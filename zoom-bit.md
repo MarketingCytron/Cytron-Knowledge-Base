@@ -5,12 +5,12 @@
 | Product code | `ZOOMBIT` — model code of the my.cytron.io page "ZOOM:BIT Robot Car Kit for micro:bit (V2 included)" (p-zoombit-robot-car-kit-for-microbit), from the Cytron tutorial shop links [PP: tutorial]. A second shop listing, "ZOOM:BIT Robot Car Kits for micro:bit" (p-zoombit-robot-car-kits-for-microbit), has code `V-ZOOMBIT` and is the one linked from the Smart AI Lens tutorials [PP: tutorial]. `ZOOMBIT-NB` (without micro:bit) appears only as RobotShop's "Manufacturer #" [3P] |
 | Family | micro:bit accessories |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 2): live my.cytron.io product page read (description, features, packing list, resources). Packing lists for all five options, the ultrasonic module, the battery pack and the HuskyLens AI option are now Cytron-stated; guidebook wiring figures still not read, so it stays Medium |
+| Last verified | 2026-10-21 |
+| Reviewed | 2026-10-21 — Quick Start Guidebook v1.1 read from the copy in the team folder: assembly and wiring pages viewed as images (steps 1–34) and the rest as text. Motor terminals, Grove ports for every sensor and LED module, the head servo port and the headlight light threshold are now Cytron-stated [UM]. Raised Medium → Medium-high; still open: per-option product codes and which ultrasonic module ships. Earlier: 2026-10-19 master-table review of the live product page |
 | Primary source | No ZOOM:BIT datasheet exists in any source found. The kit's user manual is the **ZOOM:BIT Quick Start Guidebook** (Cytron / rero EDUteam), English PDF `ZOOMBIT-Quick-Start-Guide-Book-EN-v1.1-2022.pdf`. No revision or date is printed inside it; "v1.1, 2022" comes from the file name only. The controller board in the kit is REKA:BIT. Its electrical limits come from the **REKA:BIT Datasheet, "Simplifying Robotics with micro:bit", Rev 1.0, April 2021** (Cytron) |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Notes: [UM] = ZOOM:BIT Quick Start Guidebook v1.1 (file name). [DS] = REKA:BIT Datasheet Rev 1.0. It covers only the REKA:BIT controller board in the kit, not the kit as a whole. REKA:BIT is a separate Cytron product with its own KB entry and is **not** an alias for ZOOM:BIT. Both PDFs and the product page were read through a summarising fetch, not as raw text. Wiring diagrams in the guidebook could not be read.
+Notes: [UM] = ZOOM:BIT Quick Start Guidebook v1.1 (file name). [DS] = REKA:BIT Datasheet Rev 1.0. It covers only the REKA:BIT controller board in the kit, not the kit as a whole. REKA:BIT is a separate Cytron product with its own KB entry and is **not** an alias for ZOOM:BIT. The guidebook was read on 2026-10-21 from the file in the team folder (text layer plus the wiring pages as images); the REKA:BIT datasheet and the product page were read through a summarising fetch.
 
 ## What it is
 - A robot car kit for the BBC micro:bit: "ZOOM:BIT Robot Car Kit for micro:bit" [PP].
@@ -42,22 +42,24 @@ There is no ZOOM:BIT spec table. The table below is every row of the REKA:BIT da
 - **FAQ (page):** MakeCode for beginners and MicroPython for advanced users (marketing FAQ; no ZOOM:BIT MicroPython library named) [PP].
 
 ## Interfaces, terminals and pin mapping
-| Function | micro:bit pin / channel | Notes | Src |
+Wiring is stated in the guidebook assembly steps (pages 11–16 of the printed book) [UM]; the pin behind each port matches the pxt-zoombit code [GH].
+
+| Function | Connection | Notes | Src |
 |---|---|---|---|
-| Left drive motor | REKA:BIT motor channel M1 | `LEFT_MOTOR = MotorChannel.M1` | [GH] |
-| Right drive motor | REKA:BIT motor channel M2 | `RIGHT_MOTOR = MotorChannel.M2` | [GH] |
+| Motor 1 (left) | REKA:BIT **MOTOR 1**: black (−) → **M1A**, red (+) → **M1B** | pxt-zoombit: `LEFT_MOTOR = M1` | [UM], [GH] |
+| Motor 2 (right) | REKA:BIT **MOTOR 2**: red (+) → **M2A**, black (−) → **M2B** | pxt-zoombit: `RIGHT_MOTOR = M2`; wired the opposite way round to Motor 1 | [UM], [GH] |
 | Motors and servos (all) | Driven by the REKA:BIT co-processor over I2C, address 0x08 | Extension comment names the co-processor "PIC16F1827". Not micro:bit GPIO | [GH] |
-| Maker Line sensor | P1 (analog) | One analog value encodes the line position | [GH] |
-| Ultrasonic sensor trigger | P2 | | [GH] |
-| Ultrasonic sensor echo | P12 | | [GH] |
-| Left headlight (LED module) | P13 | | [GH] |
-| Right headlight (LED module) | P15 | | [GH] |
+| Maker Line sensor | Grove-to-female cable into port **P1:P9**: white = CAL, yellow = AN (P1, analog), black = GND, red = VCC | **micro:bit V1: leave the white wire unconnected** | [UM], [GH] |
+| Ultrasonic sensor | Grove cable into port **P2:P12**: red = VCC, yellow = Trig (P2), white = Echo (P12), black = GND | the module in the guidebook photos is labelled HC-SR04 | [UM], [GH] |
+| Left headlight (LED module) | port **P13:P14**: yellow = IN (P13), red = VCC, black = GND, white not connected | | [UM], [GH] |
+| Right headlight (LED module) | port **P15:P16**: yellow = IN (P15), red = VCC, black = GND, white not connected | | [UM], [GH] |
+| Head servo (180°) | servo port **S1**: orange = S, red = +, brown = − | | [UM] |
+| Battery | 4 × AA holder cable into the REKA:BIT power jack | | [UM] |
 | RGB LEDs (on REKA:BIT) | P8 | WS2812B, user programmable [DS]. 2 LEDs, labelled "0" and "1" [UM]; `RGB_LED_LENGTH = 2` [GH] | [DS], [UM], [GH] |
-| Head servo | One of the 4 REKA:BIT servo ports | Which port is not stated in any text read | [DS] ports; port used unverified |
-| Grove buzzer (micro:bit V1 only) | "Port P0:P1" | "plug in a Grove buzzer to Port P0:P1 to play sounds" | [UM] |
+| Grove buzzer (micro:bit V1 only) | port **P0:P1** | "plug in a Grove buzzer to Port P0:P1 to play sounds" | [UM] |
 | I2C Grove port | REKA:BIT I2C port | Suggested for a Grove OLED Display | [UM]; port listed in [DS] |
 
-REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off switch, power LED, low-voltage LED (blinks below 3.6 V), over-voltage LED (on above 7 V), WS2812B RGB LEDs on P8, Grove ports (3x analog input/digital I/O, 2x digital I/O, 1x I2C), GPIO status LEDs on the Grove-port pins, motor status LEDs, DC motor terminals, 4 motor test buttons (M1A, M1B, M2A, M2B), 4 RC servo ports. The datasheet doesn't map the Grove ports to micro:bit pins.
+REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off switch, power LED, low-voltage LED (blinks below 3.6 V), over-voltage LED (on above 7 V), WS2812B RGB LEDs on P8, Grove ports (P0:P1, P1:P9, P2:P12, P13:P14, P15:P16, I2C — labels as printed on the board [UM]), GPIO status LEDs on the Grove-port pins, motor status LEDs, DC motor terminals, 4 motor test buttons (M1A, M1B, M2A, M2B), 4 RC servo ports.
 
 ## Rules and gotchas (for code, wiring and tutorials)
 - **Pins taken by the kit** [GH]: P1 (Maker Line), P2 and P12 (ultrasonic), P13 and P15 (headlights), P8 (RGB LEDs). I2C (micro:bit I2C pins) carries motor and servo commands to the co-processor at 0x08. Don't reuse these pins for add-ons.
@@ -70,7 +72,9 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 - **Maker Line reading** [GH]: `line detected on` far left / left / center / right / far right / all / none, from analog bands on P1. `line position` returns -100 to 100 (negative = left, 0 = center, positive = right). It returns center (0) when all sensors or no sensor see the line.
 - **micro:bit orientation:** the README says to "take note of the position of the micro:bit on ZOOM:BIT robot" when mapping line position to the LED matrix. Its example draws "far left" in the right-hand column [GH].
 - **Ultrasonic** [GH]: `ultrasonic distance (cm)` returns 1–255 cm. It returns 255 if the distance is over 255 cm or there is no echo. The first call starts a background reader and pauses 300 ms. Readings refresh every 200 ms (code comment cites the RCWL-9610 module). The extension applies a different timing constant on micro:bit V1 than on V2.
-- **Head servo** is 180° [UM]. To fix head alignment, unscrew the head, reposition it and reattach it to the servo horn [UM].
+- **Head servo** is 180° and plugs into **S1** [UM]. To fix head alignment, unscrew the head, reposition it and reattach it to the servo horn [UM].
+- **Headlights turn on automatically when dark:** the guidebook uses the micro:bit **light level** reading (0 = no light, 255 = brightest) and switches the headlights on below **50** [UM].
+- **micro:bit V1 and the Maker Line:** do not connect the white (CAL) wire; leave it unconnected [UM].
 - **Power cycle = reset:** slide the power switch to OFF and back ON to reset [UM]. The REKA:BIT extension watches the power state and calls `control.reset()` when power returns [GH].
 - **Flashing:** WebUSB download needs the new Edge or Chrome browser and the latest micro:bit firmware [UM].
 
@@ -97,7 +101,8 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 
 ## Common mistakes / troubleshooting
 - **No sound on V1:** expected; add a Grove buzzer on Port P0:P1 [UM].
-- **Wheels turn the wrong way:** swap the DC motor connections [UM, DS].
+- **Wheels turn the wrong way:** check the MOTOR 1 / MOTOR 2 wire colours against the table above, or swap that motor's wires [UM, DS].
+- **Headlights stay off:** they come on only when the light level drops below 50 in the guidebook code; test in a dark room or cover the micro:bit [UM].
 - **Line following erratic:** re-calibrate the Maker Line; check the "DARK" line-colour switch [UM].
 - **Motors and servos dead but micro:bit runs:** input over 7 V triggers the over-voltage cut-off [DS]. Below 3.6 V the low-voltage LED blinks [DS].
 - **Assembly:** "The wires should be facing inwards and the notch facing outwards." "Clamp the exposed wire lead, and not the insulator." [UM]
@@ -114,13 +119,10 @@ REKA:BIT board features used by the kit [DS]: power input (3.6–6 V), on/off sw
 
 ## Needs verification
 - **Product codes:** `ZOOMBIT` and `V-ZOOMBIT` are now Cytron-sourced [PP: tutorial]. Still open: per-option codes (without micro:bit — `ZOOMBIT-NB` only from RobotShop [3P]; Classroom Pack), and how the `V-ZOOMBIT` listing differs from the main page.
-- **Grove port each sensor plugs into** (Maker Line, ultrasonic, both LED modules) — only shown in guidebook wiring diagrams, which could not be read. The pins above come from [GH] code.
-- Whether the Grove buzzer port "P0:P1" [UM] and the Maker Line on P1 [GH] can be used together. The buzzer on V1 (MakeCode music default pin P0) has not been confirmed.
-- **Which REKA:BIT servo port** (S1–S4) the head servo uses.
+- Whether a Grove buzzer on port P0:P1 (V1 only) can be used while the Maker Line is on P1:P9 — both ports carry P1; MakeCode plays music on P0 by default. Not stated in the guidebook.
 - Whether the kit runs from USB power alone (motors and servos), or needs the AA pack.
 - Guidebook v1.2 (`ZOOMBIT-Quick-Start-Guide-Book-EN-v1.2-2022.pdf`) exists on static.cytron.io but could not be read. Check whether its contents differ from v1.1.
-- How headlights "automatically turn ON when the surrounding is dark" [UM] senses light (presumably the micro:bit light-level block — not stated).
-- Which ultrasonic module ships: the packing list links the SR04P (HC-SR04P) page, while a pxt-zoombit code comment names RCWL-9610 timing [GH]; confirm the part with the EDU team.
+- Which ultrasonic module ships: the packing list links the SR04P (HC-SR04P) page and the guidebook photos show a module labelled HC-SR04, while a pxt-zoombit code comment names RCWL-9610 timing [GH]; confirm the part with the EDU team.
 - AA battery type: the packing list links PKCELL Heavy Duty AA cells; voltage under motor load and run time are not stated.
 - Per-option prices (the page shows "from RM262.50" for the default option).
 
