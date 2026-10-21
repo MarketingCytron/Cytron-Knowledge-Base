@@ -37,7 +37,7 @@ A rugged IP67 LoRaWAN door and window open/close sensor with built-in temperatur
 - Milesight: "3 sensors in 1", industrial-grade design for harsh environments (datasheet).
 - Cytron: adds physical security monitoring against intrusion or unauthorised entry (product page).
 ## Price band
-RM301.35, out of stock (Cytron product page, read 2026-10-21)
+RM301.35, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-em300-magnetic-contact-switch
 ## Datasheet

@@ -39,7 +39,7 @@ A battery-powered LoRaWAN ultrasonic distance and level sensor made by Milesight
 - Cytron page: rugged, low-maintenance non-contact sensing for corrosive liquids, wastewater and chemicals.
 - Milesight: object distance or level detection without touch in harsh environments.
 ## Price band
-W050 RM1,851.15; W100 RM1,980.30 (Cytron product pages, read 2026-10-21; out of stock / enquiry)
+W050 RM1,851.15; W100 RM1,980.30 (Cytron product pages, read 2026-10-21; sold on enquiry)
 ## Product page
 [NOT STATED]
 

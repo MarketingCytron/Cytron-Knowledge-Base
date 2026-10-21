@@ -36,7 +36,7 @@ A wire-free, battery-powered LoRaWAN door and window open/close sensor with tamp
 - Milesight: minimal, compact, wire-free design for smart homes, offices and factories (datasheet).
 - Cytron: "uncompromising security" with tamper detection (product page).
 ## Price band
-RM223.85, out of stock (Cytron product page, read 2026-10-21)
+RM223.85, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-ws301-lorawan-magnetic-contact-switch
 ## Datasheet

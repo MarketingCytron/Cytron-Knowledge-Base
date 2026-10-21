@@ -35,7 +35,7 @@ A battery-powered LoRaWAN PT100 platinum RTD temperature sensor made by Milesigh
 - Cytron page: industrial-grade, UV- and vibration-resistant, for precise temperature control.
 - Milesight: corrosion-resistant cable and multiple probe options.
 ## Price band
-RM671.60 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM671.60 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-pt100-industrial-temperature-sensor
 ## Datasheet

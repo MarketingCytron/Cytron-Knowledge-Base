@@ -40,7 +40,7 @@ A ceiling-mounted 3D stereo-vision AI people counter for low ceilings, made by M
 - Milesight: privacy-by-design, GDPR compliant, "up to 99.8%" accuracy (datasheet).
 - Cytron: GDPR-certified people counting and shopper insights for low-ceiling retail (product page).
 ## Price band
-RM3,400.95, out of stock (Cytron product page, read 2026-10-21)
+RM3,400.95, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-vs125-poe-ai-stereo-vision-people-counter-low-and-wide-version
 ## Datasheet

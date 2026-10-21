@@ -40,7 +40,7 @@ A battery-powered LoRaWAN 60 GHz millimetre-wave radar distance and liquid-level
 - Cytron page: millimetre-level accuracy where ultrasonic or float sensors fall short.
 - Milesight: less affected by dust, condensate, temperature and acoustic noise.
 ## Price band
-RM1,334.55 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM1,334.55 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em410-rdl-lorawan-radar-distance-level-sensor
 ## Datasheet

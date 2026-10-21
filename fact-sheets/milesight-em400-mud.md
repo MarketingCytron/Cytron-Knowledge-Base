@@ -40,7 +40,7 @@ A battery-powered LoRaWAN ultrasonic distance sensor made by Milesight (Xiamen M
 - Milesight: "multifunctional ultrasonic distance sensor" with small blind spots and three pre-set modes.
 - Cytron page: cost-effective and reliable option for smart waste and smart parking.
 ## Price band
-RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM499.40 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em400-mud-lorawan-ultrasonic-distance-sensor
 ## Datasheet

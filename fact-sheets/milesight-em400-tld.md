@@ -36,7 +36,7 @@ A battery-powered LoRaWAN time-of-flight laser distance sensor made by Milesight
 - Milesight: "almost no blind spot" when installed on small waste bins.
 - Cytron page: monitors fill level of small and mini trash bins with high accuracy.
 ## Price band
-RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM499.40 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em400-tld-lorawan-tof-laser-distance-sensor
 ## Datasheet

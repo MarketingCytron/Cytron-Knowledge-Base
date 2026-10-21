@@ -36,7 +36,7 @@ A small battery-powered LoRaWAN PIR motion and occupancy sensor with a built-in 
 - Milesight: compact, easy-to-install sensor for smart homes, offices, schools and warehouses (datasheet).
 - Cytron: reliable presence detection for lighting control and energy saving (product page).
 ## Price band
-RM189.40, out of stock (Cytron product page, read 2026-10-21)
+RM189.40, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-ws202-lorawan-pir-and-light-sensor
 ## Datasheet

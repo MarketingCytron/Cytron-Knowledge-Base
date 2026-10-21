@@ -35,7 +35,7 @@ A battery-powered outdoor LoRaWAN sensor for CO2, temperature, humidity and baro
 - Cytron page: "More than Just a Carbon Dioxide Sensor", ultra-rugged enclosure for harsh environments.
 - Milesight: outdoor LoRaWAN CO2 sensor integrating multiple sensors.
 ## Price band
-RM1,033.20 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM1,033.20 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-co2-lorawan-carbon-dioxide-sensor-4-in-1
 ## Datasheet

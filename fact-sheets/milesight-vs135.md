@@ -39,7 +39,7 @@ A ceiling-mounted 3D Time-of-Flight AI people counter made by Milesight and dist
 - Milesight: GDPR compliant, no images collected, up to 99.8% accuracy (datasheet).
 - Cytron: "far exceeding traditional camera-based systems", privacy-first smart analytics tool (product page).
 ## Price band
-RM3,271.80 – RM3,314.85, out of stock (Cytron product page, read 2026-10-21)
+RM3,271.80 – RM3,314.85, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-vs135-poe-ultra-tof-people-counter
 ## Datasheet

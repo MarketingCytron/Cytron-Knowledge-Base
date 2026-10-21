@@ -10949,7 +10949,7 @@ A battery-powered LoRaWAN ultrasonic distance sensor made by Milesight (Xiamen M
 - Milesight: "multifunctional ultrasonic distance sensor" with small blind spots and three pre-set modes.
 - Cytron page: cost-effective and reliable option for smart waste and smart parking.
 ## Price band
-RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM499.40 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em400-mud-lorawan-ultrasonic-distance-sensor
 ## Datasheet
@@ -10997,7 +10997,7 @@ A battery-powered LoRaWAN time-of-flight laser distance sensor made by Milesight
 - Milesight: "almost no blind spot" when installed on small waste bins.
 - Cytron page: monitors fill level of small and mini trash bins with high accuracy.
 ## Price band
-RM499.40 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM499.40 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em400-tld-lorawan-tof-laser-distance-sensor
 ## Datasheet
@@ -11049,7 +11049,7 @@ A battery-powered LoRaWAN 60 GHz millimetre-wave radar distance and liquid-level
 - Cytron page: millimetre-level accuracy where ultrasonic or float sensors fall short.
 - Milesight: less affected by dust, condensate, temperature and acoustic noise.
 ## Price band
-RM1,334.55 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM1,334.55 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em410-rdl-lorawan-radar-distance-level-sensor
 ## Datasheet
@@ -11100,7 +11100,7 @@ A battery-powered LoRaWAN ultrasonic distance and level sensor made by Milesight
 - Cytron page: rugged, low-maintenance non-contact sensing for corrosive liquids, wastewater and chemicals.
 - Milesight: object distance or level detection without touch in harsh environments.
 ## Price band
-W050 RM1,851.15; W100 RM1,980.30 (Cytron product pages, read 2026-10-21; out of stock / enquiry)
+W050 RM1,851.15; W100 RM1,980.30 (Cytron product pages, read 2026-10-21; sold on enquiry)
 ## Product page
 [NOT STATED]
 
@@ -11198,7 +11198,7 @@ A battery-powered LoRaWAN PT100 platinum RTD temperature sensor made by Milesigh
 - Cytron page: industrial-grade, UV- and vibration-resistant, for precise temperature control.
 - Milesight: corrosion-resistant cable and multiple probe options.
 ## Price band
-RM671.60 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM671.60 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-pt100-industrial-temperature-sensor
 ## Datasheet
@@ -11245,7 +11245,7 @@ A battery-powered LoRaWAN soil moisture, temperature and electrical-conductivity
 - Cytron page: real-time data for better irrigation, fertilisation and crop yield.
 - Milesight: high precision for multiple kinds of soil, corrosion-resistant tough probe.
 ## Price band
-RM2,135.30 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM2,135.30 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-smtc-soil-moisture-temperature-and-ec-sensor
 ## Datasheet
@@ -11292,7 +11292,7 @@ A battery-powered outdoor LoRaWAN sensor for CO2, temperature, humidity and baro
 - Cytron page: "More than Just a Carbon Dioxide Sensor", ultra-rugged enclosure for harsh environments.
 - Milesight: outdoor LoRaWAN CO2 sensor integrating multiple sensors.
 ## Price band
-RM1,033.20 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM1,033.20 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-co2-lorawan-carbon-dioxide-sensor-4-in-1
 ## Datasheet
@@ -11394,7 +11394,7 @@ A ceiling-mounted 3D stereo-vision AI people counter for low ceilings, made by M
 - Milesight: privacy-by-design, GDPR compliant, "up to 99.8%" accuracy (datasheet).
 - Cytron: GDPR-certified people counting and shopper insights for low-ceiling retail (product page).
 ## Price band
-RM3,400.95, out of stock (Cytron product page, read 2026-10-21)
+RM3,400.95, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-vs125-poe-ai-stereo-vision-people-counter-low-and-wide-version
 ## Datasheet
@@ -11445,7 +11445,7 @@ A ceiling-mounted 3D Time-of-Flight AI people counter made by Milesight and dist
 - Milesight: GDPR compliant, no images collected, up to 99.8% accuracy (datasheet).
 - Cytron: "far exceeding traditional camera-based systems", privacy-first smart analytics tool (product page).
 ## Price band
-RM3,271.80 – RM3,314.85, out of stock (Cytron product page, read 2026-10-21)
+RM3,271.80 – RM3,314.85, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-vs135-poe-ultra-tof-people-counter
 ## Datasheet
@@ -11590,7 +11590,7 @@ A small battery-powered LoRaWAN PIR motion and occupancy sensor with a built-in 
 - Milesight: compact, easy-to-install sensor for smart homes, offices, schools and warehouses (datasheet).
 - Cytron: reliable presence detection for lighting control and energy saving (product page).
 ## Price band
-RM189.40, out of stock (Cytron product page, read 2026-10-21)
+RM189.40, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-ws202-lorawan-pir-and-light-sensor
 ## Datasheet
@@ -11638,7 +11638,7 @@ A wire-free, battery-powered LoRaWAN door and window open/close sensor with tamp
 - Milesight: minimal, compact, wire-free design for smart homes, offices and factories (datasheet).
 - Cytron: "uncompromising security" with tamper detection (product page).
 ## Price band
-RM223.85, out of stock (Cytron product page, read 2026-10-21)
+RM223.85, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-ws301-lorawan-magnetic-contact-switch
 ## Datasheet
@@ -11687,7 +11687,7 @@ A rugged IP67 LoRaWAN door and window open/close sensor with built-in temperatur
 - Milesight: "3 sensors in 1", industrial-grade design for harsh environments (datasheet).
 - Cytron: adds physical security monitoring against intrusion or unauthorised entry (product page).
 ## Price band
-RM301.35, out of stock (Cytron product page, read 2026-10-21)
+RM301.35, sold on enquiry (Cytron product page, read 2026-10-21)
 ## Product page
 https://my.cytron.io/Milesight/p-em300-magnetic-contact-switch
 ## Datasheet

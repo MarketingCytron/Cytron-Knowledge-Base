@@ -35,7 +35,7 @@ A battery-powered LoRaWAN soil moisture, temperature and electrical-conductivity
 - Cytron page: real-time data for better irrigation, fertilisation and crop yield.
 - Milesight: high precision for multiple kinds of soil, corrosion-resistant tough probe.
 ## Price band
-RM2,135.30 (Cytron product page, read 2026-10-21; out of stock / enquiry)
+RM2,135.30 (Cytron product page, read 2026-10-21; sold on enquiry)
 ## Product page
 https://my.cytron.io/Milesight/p-em500-smtc-soil-moisture-temperature-and-ec-sensor
 ## Datasheet
