@@ -21,7 +21,8 @@ A Cytron smart-agriculture control kit built on an IRIV PiControl CM4 (4GB RAM /
 - Temperature and humidity sensor: RS485, 24 V; -40 to 120 ℃; 0–99.9 %RH; ±0.3 ℃ and ±2 %RH at 25 ℃; 3 s sampling period (product page)
 - Illuminated push button: 24 V, push button with built-in LED, NC or NO (product page)
 - MyAgritech software: real-time dashboard, cloud storage and database, automation scheduling, data analysis and reporting, email alerts and notifications; reachable from PC, laptop or smartphone (product page)
-- MyAgritech entitlement: 1 user account, a Getting Started Guide and a dedicated support channel upon purchase (product page)
+- MyAgritech entitlement: 1 user account, a Getting Started Guide and a dedicated support channel upon purchase (product page, confirmed by the Cytron team)
+- Setup tutorial: "IRIV PiControl - Setting-Up Dashboard of IRIV Agribox Agriculture Kit" (Cytron tutorial, named by the team); its Node-RED flows are on GitHub (RadenFatih/IRIV-PiControl-Node-RED-Code)
 - MyAgritech provider: [NOT STATED]
 - MyAgritech licence or subscription terms: [NOT STATED]
 - In the box: 1x IRIV PiControl Industry 4.0 Agribox; 1x IRIV PiControl 4GB 32eMMC; 1x IRIV IO Controller; 5x industrial relay; 3x Hangton HE21 2-pin male connectors; 2x AC sockets; 1x industrial illuminated push button; 1x RS485 industrial temperature and humidity sensor; 1x RS485 3-in-1 soil sensor; 1x Meanwell 24V 100W DC power supply (product page)
@@ -31,7 +32,7 @@ A Cytron smart-agriculture control kit built on an IRIV PiControl CM4 (4GB RAM /
 - DC pumps and valves connect through Hangton HE21 2-pin connectors or directly to the relays (product page)
 - AC pumps plug into the two 3-pin 16A AC sockets (product page)
 - Both sensors use RS485 Modbus; on the IRIV PiControl CM4 the RS485 port is /dev/ttyACM0 (controller datasheet)
-- An earlier Cytron tutorial build (PiControl only, Node-RED) used DI0 GPIO13 for the push button, DO0/DO1 GPIO23/24 for pumps and DO2 GPIO25 for the AC socket relay, with the sensors at 9600 baud on Modbus IDs 1 (soil) and 2 (temperature/humidity) (Cytron tutorial)
+- The Cytron Agribox tutorial build (PiControl only, Node-RED) used DI0 GPIO13 for the push button, DO0/DO1 GPIO23/24 for pumps and DO2 GPIO25 for the AC socket relay, with the sensors at 9600 baud on Modbus IDs 1 (soil) and 2 (temperature/humidity) (Cytron tutorial)
 - Integration targets: fertigation, aquaponics, greenhouse, open-field farming (product page)
 - Pumps, valves and sprinklers are not included (product page)
 
@@ -67,4 +68,5 @@ https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4.0-agribox-v2-my
 Website
 
 ## Source link
-https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4.0-agribox-v2-myagritech-software-included
+[NOT STATED]
+

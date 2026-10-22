@@ -5,8 +5,7 @@
 | Product code | `V-KIT-IRIV-EAI` (training page) [PP]. Its only option, "Kit + 2 Days Training", opens the page "IRIV EdgeAI Industry 4.0 Complete Training Kit", code `KIT-IRIV-EAI-SP` [PP]. Controller inside: **IRIV EdgeAI CM5** (`IRIV-EDGEAI-CM5`), Raspberry Pi CM5 **8GB RAM / 32GB eMMC with a 13 TOPS Hailo AI accelerator** [PP] (wireless or not is not stated) |
 | Family | Workshops and services |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-21 |
-| Reviewed | 2026-10-21 — new product added: live training page read in full (description, workshop outline, laptop requirement, features, technical specifications, packing list) and the option page (code, price, stock); Cytron workshop landing page (syllabus card, FAQ); Cytron success story "IRIV EdgeAI Workshop with DRB-HICOM" (13 Aug 2026). Drive slide deck "IRIV Edge AI Defect Detection Workshop" (Dec 2025) found but has no readable text (image-only slides) |
+| Last verified | 2026-10-22 |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
@@ -32,7 +31,8 @@ Service / logistics table.
 | Times / participant limit | Not stated | — |
 | Meals | Included | [PP] |
 | Certificate | "Professional certificate upon completion" | [PP] |
-| HRDC | Not stated on this page (the page's related tutorials include "How to Claim HRDC for our HRDC Claimable Training"; the landing page says Cytron's workshops in general are HRD Corp claimable) | [PP][PP: landing] |
+| HRDC | **Claimable** (team confirmation); the page itself does not say so, but links "How to Claim HRDC for our HRDC Claimable Training" | [PP] |
+| Scheduling | No public dates or venue yet; **customers can request a session** (team). Example run: DRB-HICOM Port Klang, 2 days, 11–12 Jun 2026, 3 participants | [PP: tutorial] |
 | Laptop | Required, with **Windows**; recommended Intel Core i5 10th Gen / AMD Ryzen 5 5th Gen or better and 16GB RAM for custom model training. A pre-trained custom model/dataset is provided if training does not finish in time | [PP] |
 | Kit taken home | Yes — "participants can bring home the full kit" | [PP] |
 | Kit controller | IRIV EdgeAI, Raspberry Pi CM5, 8GB RAM, 32GB eMMC, Hailo AI accelerator 13 TOPS | [PP] |
@@ -72,7 +72,7 @@ Not applicable as a service; kit wiring is not documented. Controller facts that
 - **USB camera:** the description and Features list include it; the packing list omits it [PP]. Say "USB camera included (description)" and flag the packing list.
 - **Temperature/humidity sensor:** in the description and packing list, but missing from the Features hardware list [PP].
 - **"Up to four cameras"** is 2 USB + 2 CSI ports [PP]; the two USB 3.0 ports share one hub (`iriv-edgeai-cm5.md`), so do not promise four full-rate streams.
-- **Status is Out of stock** with no dates; the option page says Enquiry. Do not advertise a date.
+- **Example run to cite:** "IRIV EdgeAI Workshop with DRB-HICOM" (11–12 Jun 2026, 3 participants, custom logo-detection model, aimed at product defect detection) [PP: tutorial].
 
 ## Power and electrical limits
 - Kit mains input 240 VAC; Meanwell 24 V supply (100 W per packing list; "24 VDC, 1 A" per spec line) [PP].
@@ -109,10 +109,10 @@ Not applicable as a service; kit wiring is not documented. Controller facts that
 | Camera board size | "38×38 mm/28x28 mm with Case" [PP] | — | As printed; the "with case" size smaller than the board is probably reversed — do not quote |
 
 ## Needs verification
-- Next dates, venue (Cytron HQ or on-site), daily times and participant limit — none on the page.
-- Refund/cancellation terms and HRDC claimability for this specific course.
+- Venue options for requested sessions (Cytron HQ or customer site), daily times and participant limit.
+- Refund/cancellation terms.
 - Whether the IRIV EdgeAI in the kit is the wireless variant; which Hailo chip the 13 TOPS AI HAT+ uses.
-- Exact Meanwell PSU model and rating; relay current rating; USB camera make/model.
+- Exact Meanwell PSU model and rating; relay current rating; USB camera brand (the page gives an IMX219 UVC camera spec but no brand).
 - Model-training toolchain (framework, model family) and the Blynk plan used.
 - Whether KIT-IRIV-EAI-SP is the same as the "Complete Kit" option on the IRIV EdgeAI CM5 page, and whether the kit is sold without training.
 - Content of the "IRIV Edge AI Defect Detection Workshop" slides (Dec 2025; image-only) and whether they are this course's deck.

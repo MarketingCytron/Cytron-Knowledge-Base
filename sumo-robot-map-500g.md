@@ -5,12 +5,11 @@
 | Product code | `PM-MAP-SUMO` [PP] |
 | Family | Sumo robot kits and parts |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-21 |
-| Reviewed | 2026-10-21 — new product added: Cytron OEM product page read in full (notes, description, features, packing list) and both product images viewed (photo of the map in use; flat artwork). No drawing, datasheet or tutorial is linked |
-| Primary source | No datasheet, drawing or guide exists. Primary source = the **Cytron product page** https://my.cytron.io/cytron-oem/p-map-for-sumo-robot (read 2026-10-21) [PP] and its two images [PP: img] |
+| Last verified | 2026-10-22 |
+| Primary source | No datasheet, drawing or guide exists. Primary source = the **Cytron product page** https://my.cytron.io/cytron-oem/p-map-for-sumo-robot (read 2026-10-21) [PP] and its two images [PP: img]; Cytron team confirmation 2026-10-22  |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Tag notes: [PP] = product page text, read in the browser 2026-10-21. [PP: img] = the page's images `pm-map-sumo-b.jpg` (photo: the map flat on a tiled floor with two mini sumo robots) and `pm-map-sumo-a2.jpg` (artwork: black disc with a thin white outer ring), viewed 2026-10-21. The page calls the product a "Map", "Sumo Robot Training Arena" and (packing list) "Map for Sumo Robot"; in sumo terms it is a printed practice dohyo (ring).
+Tag notes: [PP] = product page text, read in the browser 2026-10-21. [PP: img] = the page's images `pm-map-sumo-b.jpg` (photo: the map flat on a tiled floor with two mini sumo robots) and `pm-map-sumo-a2.jpg` (artwork: black disc with a thin white outer ring), viewed 2026-10-21. The page calls the product a "Map", "Sumo Robot Training Arena" and (packing list) "Map for Sumo Robot"; in sumo terms it is a printed practice dohyo (ring).  = Cytron team answer to the KB, 2026-10-22.
 
 ## What it is
 - A flexible, printed **practice ring for 500 g (mini) sumo robots**: a black circle with a white border, printed on UV vinyl [PP].
@@ -56,7 +55,6 @@ Tag notes: [PP] = product page text, read in the browser 2026-10-21. [PP: img] =
 - **No start lines** are printed [PP: img]; mark start positions yourself if the code needs them (e.g. a 5 s countdown start).
 - **Flat vinyl on the floor:** no raised edge, so a robot pushed out lands on the floor beside the mat; the floor colour around the mat affects any sensor that looks past the edge (inferred).
 - **Calibrate edge sensors on the mat itself:** a printed vinyl surface reflects differently from a painted wooden dohyo (general practice, not stated by Cytron).
-- **Lay it flat:** creases or curling from a rolled sheet can lift robots or trip edge sensors (general practice; how it is shipped is not stated).
 
 ## Power and electrical limits
 - None (passive mat) [PP].
@@ -80,9 +78,7 @@ Tag notes: [PP] = product page text, read in the browser 2026-10-21. [PP: img] =
 | Robot class | [PP] title "500g Sumo Robot Map"; description "Mini Sumo Robot battles" | [PP] "You May Also Need" also lists 1 kg kits (SUMO:BIT, 1KG RC, 1KG Auto) | No spec conflict; the map is sized and titled for 500 g; the 1 kg kits are cross-sell only |
 
 ## Needs verification
-- **Which rule set the 77 cm / 72 cm sizes follow** — not stated. (Note, not a source: a 77 cm ring with a 2.5 cm white border matches the size used for the 500 g mini-sumo class in widely used sumo rules; confirm against the event's own rules before saying so.)
 - **Vinyl thickness, weight, surface finish (matt/gloss)** — not stated.
-- **How it is shipped** (rolled or folded) — not stated.
 - Whether the black area has start lines in any version — none visible in the images read.
 
 ## Sources

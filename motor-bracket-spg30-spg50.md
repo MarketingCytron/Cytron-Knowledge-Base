@@ -10,7 +10,7 @@
 | Primary source | No datasheet. Primary sources = the **Cytron mechanical drawing "HD-BK-SPG"** ((Cytron document — link not public) linked as "Mechanical Drawing" / "Technical Drawing") [PP: drawing] and the **Cytron product page** https://my.cytron.io/cytron-oem/p-dc-geared-motor-bracket-spg30-spg50, read 2026-10-21 [PP] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Tag notes: [PP: drawing] = Cytron drawing HD-BK-SPG (A4, 1:1, mm; material alloy steel, powder coating). [PP: img] = page images `SPG-Motor-Bracket-Instruction-2.jpg` (exploded assembly with screw sizes) and `DC Motor Brackets Selection.png` (bracket-to-motor table shared by all three Cytron motor brackets). Page and drawing agree. Sister brackets: `motor-bracket-ig32e.md`, `motor-bracket-ig42e-ig45.md`.
+Tag notes: [PP: drawing] = Cytron drawing HD-BK-SPG (A4, 1:1, mm; material alloy steel, powder coating). [PP: img] = page images `SPG-Motor-Bracket-Instruction-2.jpg` (exploded assembly with screw sizes) and `DC Motor Brackets Selection.png` (bracket-to-motor table shared by all three Cytron motor brackets). Page and drawing agree. Sister brackets: `motor-bracket-ig42e-ig45.md`.
 
 ## What it is
 - A light-grey powder-coated **1.5 mm alloy-steel L-bracket** that holds a Ø37 mm SPG-series DC geared motor and bolts to a chassis [PP].
@@ -65,7 +65,7 @@ Tag notes: [PP: drawing] = Cytron drawing HD-BK-SPG (A4, 1:1, mm; material alloy
 ## Compatibility and accessories
 - Motors: SPG30 / SPG30E (`dc-geared-motor-37mm-12v.md`), SPG30HP-30K / -10K (`high-power-dc-geared-motor-12v.md`, page offers this bracket), SPG50 (no KB file) [PP].
 - Shaft hubs for these motors: `metal-key-hub.md` (6 mm), `mecanum-key-hub-6mm.md`.
-- Sister brackets: `motor-bracket-ig32e.md`, `motor-bracket-ig42e-ig45.md`.
+- Sister brackets: `motor-bracket-ig42e-ig45.md`; HD-BK-IG3X (IG32E bracket, being discontinued — not in the KB).
 
 ## Common mistakes / troubleshooting
 - **Motor face screws too long** → use the M3 × 4 mm screws [PP][PP: img].
@@ -87,4 +87,4 @@ Tag notes: [PP: drawing] = Cytron drawing HD-BK-SPG (A4, 1:1, mm; material alloy
 - [PP] https://my.cytron.io/cytron-oem/p-dc-geared-motor-bracket-spg30-spg50 — read 2026-10-21
 - [PP: img] `SPG-Motor-Bracket-Instruction-2.jpg`, `DC Motor Brackets Selection.png` — viewed 2026-10-21
 - [PP: tutorial] https://my.cytron.io/tutorial/getting-started-mdd3a-makerdrive-motor-driver-using-arduino — read 2026-10-21 (component list)
-- KB cross-references: `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `metal-key-hub.md`, `mecanum-key-hub-6mm.md`, `motor-bracket-ig32e.md`, `motor-bracket-ig42e-ig45.md`, `mdd3a.md`
+- KB cross-references: `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `metal-key-hub.md`, `mecanum-key-hub-6mm.md`, `motor-bracket-ig42e-ig45.md`, `mdd3a.md`

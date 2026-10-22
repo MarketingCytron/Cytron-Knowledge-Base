@@ -12,14 +12,14 @@ A 64GB Cytron-brand MakerDisk A2 microSD card preloaded with the official RDK X5
 ## Specs and functions
 - Product code: MMR-USD-64-RDK (product page)
 - Capacity: 64GB, 56.9GB actual (product page)
-- Preloaded OS: RDK X5 OS, version [NOT STATED] (product page)
+- Preloaded OS: RDK X5 OS, version [NOT STATED] (product page); D-Robotics RDK OS, Ubuntu 22.04 based (D-Robotics docs)
 - Sequential write above 44MB/s; random write above 2000 IOPS; random read above 4000 IOPS (product page)
 - Class 10, A2, U3, V30 (product page)
 - Warranty: 12 months (product page)
 - Operating temperature, endurance: [NOT STATED]
 
 ## Interfaces and compatibility
-- RDK X5 AI Development Board only (product page)
+- RDK X5 AI Development Board by D-Robotics only (product page, D-Robotics docs)
 - Does not boot a Raspberry Pi
 - A USB microSD reader is needed to re-flash (not offered on the page)
 
@@ -47,4 +47,5 @@ https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
 Website
 
 ## Source link
-https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
+[NOT STATED]
+

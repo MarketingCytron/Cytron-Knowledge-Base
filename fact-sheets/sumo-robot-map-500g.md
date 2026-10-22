@@ -17,6 +17,8 @@ A flexible UV-vinyl practice ring for 500 g (mini) sumo robots: a 72 cm black ci
 - No start lines visible in the product images (product page images)
 - Flat flexible sheet laid on the floor (product page)
 - Packing list: 1 x Map for Sumo Robot (product page)
+- Ships rolled (Cytron team)
+- Made for the 500g Sumo category (Cytron team)
 - Thickness: [NOT STATED]
 - Weight: [NOT STATED]
 - Warranty: 12 months (product page)
@@ -33,9 +35,10 @@ A flexible UV-vinyl practice ring for 500 g (mini) sumo robots: a 72 cm black ci
 
 ## Known limitations
 - Practice map only, not for competition (product page)
-- Competition rule set not stated
+- Made for the 500g Sumo category, but no competition rule book is named
 - No start lines printed
 - Flat mat with no raised edge
+- Ships rolled, so it may curl at first; store rolled, not folded
 - Order it separately from other items to ensure proper packaging (product page)
 
 ## Positioning (kept apart from specs)

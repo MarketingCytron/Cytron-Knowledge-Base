@@ -13,7 +13,10 @@ A Cytron two-day Edge AI vision workshop sold with an IRIV EdgeAI training kit t
 - Sales status: Out Of Stock, RM5,000.00 (product page, 2026-10-21)
 - Option "Kit + 2 Days Training" opens KIT-IRIV-EAI-SP "IRIV EdgeAI Industry 4.0 Complete Training Kit", RM5,250.00, Enquiry, warranty 12 months (product page)
 - Duration: 2 days (product page)
-- Dates, venue, times and participant limit: [NOT STATED]
+- Dates and venue: none scheduled; sessions run on customer request (Cytron team)
+- HRDC: claimable (Cytron team)
+- Example run: DRB-HICOM Port Klang, 11-12 Jun 2026, 3 participants (Cytron success story)
+- Daily times and participant limit: [NOT STATED]
 - Meals included; professional certificate on completion (product page)
 - Kit is taken home after the workshop (product page)
 - Laptop: Windows required; recommended Intel i5 10th Gen / AMD Ryzen 5 5th Gen or above with 16GB RAM for custom model training; a pre-trained model is provided if training runs out of time (product page)
@@ -38,7 +41,7 @@ A Cytron two-day Edge AI vision workshop sold with an IRIV EdgeAI training kit t
 - Linking AI results to alarms, indicators and IoT dashboards (product page)
 
 ## Known limitations
-- Out of stock with no dates listed on 21 Oct 2026 (product page)
+- Out of stock with no dates listed on 21 Oct 2026 (product page); run on request instead (Cytron team)
 - Windows laptop required; custom training needs a mid-range laptop (product page)
 - The packing list omits the USB camera that the description and Features list include
 - Power supply rating is stated two ways (24 VDC 1 A vs Meanwell 24V 100W)

@@ -10,7 +10,7 @@
 | Primary source | No datasheet. Primary sources = the **Cytron drawing "IG4X Bracket"** ((Cytron document — link not public) linked as "Mechanical Drawing") [PP: drawing] and the **Cytron product page** https://my.cytron.io/cytron-oem/p-planetary-motor-bracket-ig42e-ig45, read 2026-10-21 [PP] |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
-Tag notes: [PP: drawing] = Cytron drawing "IG4X Bracket" (2016). [PP: img] = the shared bracket selection table image `DC Motor Brackets Selection.png`. [PP: tutorial] = "Measuring DC Motor RPM Through Built-in Hall Sensor Encoder" (Idris Zainal Abidin, 04 Jul 2018), shown as related on the page. The IG42E / IG45 motors themselves have no KB file. Sister brackets: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`.
+Tag notes: [PP: drawing] = Cytron drawing "IG4X Bracket" (2016). [PP: img] = the shared bracket selection table image `DC Motor Brackets Selection.png`. [PP: tutorial] = "Measuring DC Motor RPM Through Built-in Hall Sensor Encoder" (Idris Zainal Abidin, 04 Jul 2018), shown as related on the page. The IG42E / IG45 motors themselves have no KB file. Sister brackets: `motor-bracket-spg30-spg50.md`.
 
 ## What it is
 - A light-grey powder-coated alloy-steel L-bracket for Cytron's **IG42E** and **IG45** planetary DC geared motors [PP].
@@ -63,7 +63,7 @@ Tag notes: [PP: drawing] = Cytron drawing "IG4X Bracket" (2016). [PP: img] = the
 - Motors: IG42E, IG45 (no KB files) [PP].
 - Wheel/hub for these motors: `robot-wheel-5in.md` with `metal-key-hub.md` (8 mm hub for IG42; 10 mm hub for IG45) [PP of those listings].
 - Driver used in the related tutorial: MD10C (`md10c.md`) [PP: tutorial].
-- Sister brackets: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`.
+- Sister brackets: `motor-bracket-spg30-spg50.md`; HD-BK-IG3X (IG32E bracket, being discontinued — not in the KB).
 
 ## Common mistakes / troubleshooting
 - **Screws don't fit** → M4 hardware, not M3 [PP].
@@ -86,4 +86,4 @@ Tag notes: [PP: drawing] = Cytron drawing "IG4X Bracket" (2016). [PP: img] = the
 - [PP] https://my.cytron.io/cytron-oem/p-planetary-motor-bracket-ig42e-ig45 — read 2026-10-21
 - [PP: img] `DC Motor Brackets Selection.png` — viewed 2026-10-21
 - [PP: tutorial] https://my.cytron.io/tutorial/measuring-dc-motor-rpm-built-hall-sensor-encoder — read 2026-10-21
-- KB cross-references: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`, `robot-wheel-5in.md`, `metal-key-hub.md`, `md10c.md`
+- KB cross-references: `motor-bracket-spg30-spg50.md`, `robot-wheel-5in.md`, `metal-key-hub.md`, `md10c.md`

@@ -70,7 +70,7 @@ Tag notes: [PP: drawing] = the three Cytron drawings above (mm). The 10 mm drawi
 - 6 mm: SPG30 / SPG30E (`dc-geared-motor-37mm-12v.md`), SPG30HP (`high-power-dc-geared-motor-12v.md`), SPG50, IG32 [PP].
 - 8 mm: IG42 [PP]; with `robot-wheel-5in.md` as WL-RBT-508.
 - 10 mm: IG45, 40W DC brush motor, 30W Vexta brushless [PP]; with `robot-wheel-5in.md` as WL-RBT-510.
-- Brackets for these motors: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`, `motor-bracket-ig42e-ig45.md`.
+- Brackets for these motors: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig42e-ig45.md` (the IG32E bracket HD-BK-IG3X is being discontinued and is not in the KB).
 
 ## Common mistakes / troubleshooting
 - **Hub slips on the shaft** → tighten the set screws; on a D-shaft, onto the flat (inferred).
@@ -94,4 +94,4 @@ Tag notes: [PP: drawing] = the three Cytron drawings above (mm). The 10 mm drawi
 - [PP: drawing] https://static.cytron.io/download/Metal%20Key%20Hub%20-%208mm.pdf ("Bush - Steel - 8mm", rev 1.0, 24/2/2015) — read 2026-10-21
 - [PP: drawing] https://static.cytron.io/download/Metal%20Key%20Hub%20-%2010mm.pdf — read 2026-10-21
 - [PP] https://my.cytron.io/cytron-oem/p-metal-key-hub-6mm ; https://my.cytron.io/cytron-oem/p-metal-key-hub-8mm ; https://my.cytron.io/cytron-oem/p-metal-key-hub-10mm — read 2026-10-21
-- KB cross-references: `robot-wheel-5in.md`, `power-window-motor.md`, `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `mecanum-key-hub-6mm.md`, `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`, `motor-bracket-ig42e-ig45.md`
+- KB cross-references: `robot-wheel-5in.md`, `power-window-motor.md`, `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `mecanum-key-hub-6mm.md`, `motor-bracket-spg30-spg50.md`, `motor-bracket-ig42e-ig45.md`

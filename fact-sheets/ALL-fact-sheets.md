@@ -4501,6 +4501,8 @@ A flexible UV-vinyl practice ring for 500 g (mini) sumo robots: a 72 cm black ci
 - No start lines visible in the product images (product page images)
 - Flat flexible sheet laid on the floor (product page)
 - Packing list: 1 x Map for Sumo Robot (product page)
+- Ships rolled (Cytron team)
+- Made for the 500g Sumo category (Cytron team)
 - Thickness: [NOT STATED]
 - Weight: [NOT STATED]
 - Warranty: 12 months (product page)
@@ -4517,9 +4519,10 @@ A flexible UV-vinyl practice ring for 500 g (mini) sumo robots: a 72 cm black ci
 
 ## Known limitations
 - Practice map only, not for competition (product page)
-- Competition rule set not stated
+- Made for the 500g Sumo category, but no competition rule book is named
 - No start lines printed
 - Flat mat with no raised edge
+- Ships rolled, so it may curl at first; store rolled, not folded
 - Order it separately from other items to ensure proper packaging (product page)
 
 ## Positioning (kept apart from specs)
@@ -4549,24 +4552,23 @@ Metal Base for Sumo Robot
 HD-BSC-MSUMO-MB, Metal Base for Sumo Robot, Metal Plate for Sumo Robot, metal base for mini sumo robot, sumo robot weight plate, sumo ballast plate
 
 ## What it is
-A flat black metal plate (8.3 x 5 x 0.3 cm, 96 g) with M3 mounting holes, screwed into sumo and soccer robot bodies to add weight. Sold as a replacement part or an upgrade.
+A flat black steel plate (about 8.4 x 5 x 0.3 cm, 96 g) with two counterbored M3 mounting holes, the same size as Cytron's Copper Base for Mini Sumo Robot,, screwed into sumo and soccer robot bodies to add weight. Sold as a replacement part or an upgrade.
 
 ## Specs and functions
 - Product code: HD-BSC-MSUMO-MB (product page)
-- Material: metal; alloy not stated, density consistent with steel (product page; inferred)
-- Dimensions: 8.3 cm x 5 cm x 0.3 cm (product page)
+- Material: steel (Cytron team)
+- Dimensions: 8.5 x 5 x 0.3 cm per the team and the Copper Base page; 8.3 cm on this page; Copper Base CAD measures 83.6 x 50.1 x 3.0 mm (team, product pages, STL)
 - Weight: 96 g (product page)
-- Mounting holes: M3; the photo shows 2 holes near opposite corners (product page, product photo)
+- Mounting holes: 2 x M3 on the long centre line, 49 mm apart; Ø3.2 mm through-hole with a Ø6 mm counterbore (Copper Base STL, same-size part)
 - Colour: black (product photo)
 - Packing list: 1 x Metal Plate for Sumo Robot; no screws (product page)
-- Hole positions: [NOT STATED]
 - Warranty: 12 months (product page)
 
 ## Interfaces and compatibility
 - Mechanical part; fixes to the robot body with M3 screws (not included)
 - Used as 2x "metal base for mini sumo robot" in the 1KG Sumo Robot Bundles - Radio Controlled (RC)
 - Suits sumo and soccer robots (product page)
-- Different from the Copper Base for Mini Sumo Robot
+- Same size as the Copper Base for Mini Sumo Robot (copper, 110 g), so the two are interchangeable for weight tuning (Cytron team)
 
 ## Use cases
 - Add weight to a sumo robot to reach the class limit and improve traction
@@ -4575,8 +4577,8 @@ A flat black metal plate (8.3 x 5 x 0.3 cm, 96 g) with M3 mounting holes, screwe
 
 ## Known limitations
 - No screws included
-- Hole positions not dimensioned
-- Metal type not stated
+- Hole positions come from the Copper Base STL; the steel plate's own STL is not yet checked
+- Page length (8.3 cm) differs from the team figure (8.5 cm)
 - 96 g per plate counts toward the robot's weight limit
 
 ## Positioning (kept apart from specs)
@@ -4595,7 +4597,7 @@ https://my.cytron.io/cytron-oem/p-metal-base-for-sumo-robot
 Website
 
 ## Source link
-https://my.cytron.io/cytron-oem/p-metal-base-for-sumo-robot
+[NOT STATED]
 
 # Product fact sheets
 
@@ -6350,59 +6352,6 @@ https://my.cytron.io/cytron-oem/p-planetary-motor-bracket-ig42e-ig45
 # Product fact sheets
 
 ## Product name
-Planetary Geared Motor Bracket (IG32E)
-
-## Aliases
-HD-BK-IG3X, IG32E bracket, IG32 motor bracket, 32mm planetary motor bracket
-
-## What it is
-A light-grey powder-coated 1.5 mm alloy-steel L-bracket that holds Cytron's IG32E 32 mm planetary DC geared motor and bolts to a chassis with M3 hardware (product page).
-
-## Specs and functions
-- Product code: HD-BK-IG3X (product page)
-- Material alloy steel, 1.5 mm, powder coating, light grey (product page)
-- Fitted motor: IG32E; bore size 21 mm (product page, selection table)
-- Packing list: 1 × bracket, 4 × M3 × 4 mm screw, 4 × M3 × 10 mm screw, 4 × M3 nut (product page)
-- Hole sizes and positions: [NOT STATED]
-- Overall dimensions: [NOT STATED]
-- Weight: [NOT STATED]
-- Warranty: 12 months (product page)
-
-## Interfaces and compatibility
-- Mechanical part; no electrical interface
-- Motor face: 4 holes around the bore; base: two rows of holes (product photo; sizes not stated)
-- Fits IG32E only; SPG30 needs HD-BK-SPG and IG42E/IG45 need HD-BK-IG4X (selection table)
-- Shaft hub for IG32: Metal Key Hub 6mm CO-SPG
-
-## Use cases
-- Mount an IG32E planetary motor on a robot chassis (product page)
-
-## Known limitations
-- No drawing or dimensions are published
-- Screw use is inferred from the packing list and photos
-- Weight is not stated
-
-## Positioning (kept apart from specs)
-- "Strong enough to hold your DC motor at its position regardless of the strong vibration" (product page)
-
-## Price band
-RM14.00 (10 or more RM12.80) (Cytron product page, read 2026-10-21)
-
-## Product page
-https://my.cytron.io/cytron-oem/p-planetary-geared-motor-bracket-ig32e
-
-## Datasheet
-[NOT STATED]
-
-## Source type
-Website
-
-## Source link
-https://my.cytron.io/cytron-oem/p-planetary-geared-motor-bracket-ig32e
-
-# Product fact sheets
-
-## Product name
 5 Inches Robot Wheel (without key hub / with 8 mm key hub / with 10 mm key hub)
 
 ## Aliases
@@ -6534,7 +6483,7 @@ A Cytron OEM aluminium shaft hub that mounts to the 60 mm Mecanum Wheel so a sma
 - Mechanical part; no electrical interface
 - Fits the 60mm Mecanum Wheel (product page)
 - Motors: SPG30 / SPG30E / SPG30HP, SPG50, IG32 (6 mm shaft) (product page)
-- Brackets: HD-BK-SPG for SPG motors, HD-BK-IG3X for IG32E
+- Brackets: HD-BK-SPG for SPG motors, HD-BK-IG3X for IG32E (being discontinued)
 
 ## Use cases
 - Build a small omnidirectional (mecanum) robot on 6 mm-shaft DC geared motors (product page)
@@ -9806,7 +9755,8 @@ A Cytron smart-agriculture control kit built on an IRIV PiControl CM4 (4GB RAM /
 - Temperature and humidity sensor: RS485, 24 V; -40 to 120 ℃; 0–99.9 %RH; ±0.3 ℃ and ±2 %RH at 25 ℃; 3 s sampling period (product page)
 - Illuminated push button: 24 V, push button with built-in LED, NC or NO (product page)
 - MyAgritech software: real-time dashboard, cloud storage and database, automation scheduling, data analysis and reporting, email alerts and notifications; reachable from PC, laptop or smartphone (product page)
-- MyAgritech entitlement: 1 user account, a Getting Started Guide and a dedicated support channel upon purchase (product page)
+- MyAgritech entitlement: 1 user account, a Getting Started Guide and a dedicated support channel upon purchase (product page, confirmed by the Cytron team)
+- Setup tutorial: "IRIV PiControl - Setting-Up Dashboard of IRIV Agribox Agriculture Kit" (Cytron tutorial, named by the team); its Node-RED flows are on GitHub (RadenFatih/IRIV-PiControl-Node-RED-Code)
 - MyAgritech provider: [NOT STATED]
 - MyAgritech licence or subscription terms: [NOT STATED]
 - In the box: 1x IRIV PiControl Industry 4.0 Agribox; 1x IRIV PiControl 4GB 32eMMC; 1x IRIV IO Controller; 5x industrial relay; 3x Hangton HE21 2-pin male connectors; 2x AC sockets; 1x industrial illuminated push button; 1x RS485 industrial temperature and humidity sensor; 1x RS485 3-in-1 soil sensor; 1x Meanwell 24V 100W DC power supply (product page)
@@ -9816,7 +9766,7 @@ A Cytron smart-agriculture control kit built on an IRIV PiControl CM4 (4GB RAM /
 - DC pumps and valves connect through Hangton HE21 2-pin connectors or directly to the relays (product page)
 - AC pumps plug into the two 3-pin 16A AC sockets (product page)
 - Both sensors use RS485 Modbus; on the IRIV PiControl CM4 the RS485 port is /dev/ttyACM0 (controller datasheet)
-- An earlier Cytron tutorial build (PiControl only, Node-RED) used DI0 GPIO13 for the push button, DO0/DO1 GPIO23/24 for pumps and DO2 GPIO25 for the AC socket relay, with the sensors at 9600 baud on Modbus IDs 1 (soil) and 2 (temperature/humidity) (Cytron tutorial)
+- The Cytron Agribox tutorial build (PiControl only, Node-RED) used DI0 GPIO13 for the push button, DO0/DO1 GPIO23/24 for pumps and DO2 GPIO25 for the AC socket relay, with the sensors at 9600 baud on Modbus IDs 1 (soil) and 2 (temperature/humidity) (Cytron tutorial)
 - Integration targets: fertigation, aquaponics, greenhouse, open-field farming (product page)
 - Pumps, valves and sprinklers are not included (product page)
 
@@ -9852,7 +9802,7 @@ https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4.0-agribox-v2-my
 Website
 
 ## Source link
-https://my.cytron.io/cytron-industry/p-iriv-picontrol-industry-4.0-agribox-v2-myagritech-software-included
+[NOT STATED]
 
 # Product fact sheets
 
@@ -14405,14 +14355,14 @@ A 64GB Cytron-brand MakerDisk A2 microSD card preloaded with the official RDK X5
 ## Specs and functions
 - Product code: MMR-USD-64-RDK (product page)
 - Capacity: 64GB, 56.9GB actual (product page)
-- Preloaded OS: RDK X5 OS, version [NOT STATED] (product page)
+- Preloaded OS: RDK X5 OS, version [NOT STATED] (product page); D-Robotics RDK OS, Ubuntu 22.04 based (D-Robotics docs)
 - Sequential write above 44MB/s; random write above 2000 IOPS; random read above 4000 IOPS (product page)
 - Class 10, A2, U3, V30 (product page)
 - Warranty: 12 months (product page)
 - Operating temperature, endurance: [NOT STATED]
 
 ## Interfaces and compatibility
-- RDK X5 AI Development Board only (product page)
+- RDK X5 AI Development Board by D-Robotics only (product page, D-Robotics docs)
 - Does not boot a Raspberry Pi
 - A USB microSD reader is needed to re-flash (not offered on the page)
 
@@ -14440,7 +14390,7 @@ https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
 Website
 
 ## Source link
-https://my.cytron.io/cytron-oem/p-makerdisk-microsd-card-64gb-with-rdk-x5-os
+[NOT STATED]
 
 # Product fact sheets
 
@@ -14843,7 +14793,10 @@ A Cytron two-day Edge AI vision workshop sold with an IRIV EdgeAI training kit t
 - Sales status: Out Of Stock, RM5,000.00 (product page, 2026-10-21)
 - Option "Kit + 2 Days Training" opens KIT-IRIV-EAI-SP "IRIV EdgeAI Industry 4.0 Complete Training Kit", RM5,250.00, Enquiry, warranty 12 months (product page)
 - Duration: 2 days (product page)
-- Dates, venue, times and participant limit: [NOT STATED]
+- Dates and venue: none scheduled; sessions run on customer request (Cytron team)
+- HRDC: claimable (Cytron team)
+- Example run: DRB-HICOM Port Klang, 11-12 Jun 2026, 3 participants (Cytron success story)
+- Daily times and participant limit: [NOT STATED]
 - Meals included; professional certificate on completion (product page)
 - Kit is taken home after the workshop (product page)
 - Laptop: Windows required; recommended Intel i5 10th Gen / AMD Ryzen 5 5th Gen or above with 16GB RAM for custom model training; a pre-trained model is provided if training runs out of time (product page)
@@ -14868,7 +14821,7 @@ A Cytron two-day Edge AI vision workshop sold with an IRIV EdgeAI training kit t
 - Linking AI results to alarms, indicators and IoT dashboards (product page)
 
 ## Known limitations
-- Out of stock with no dates listed on 21 Oct 2026 (product page)
+- Out of stock with no dates listed on 21 Oct 2026 (product page); run on request instead (Cytron team)
 - Windows laptop required; custom training needs a mid-range laptop (product page)
 - The packing list omits the USB camera that the description and Features list include
 - Power supply rating is stated two ways (24 VDC 1 A vs Meanwell 24V 100W)

@@ -24,7 +24,7 @@ A Cytron OEM aluminium shaft hub that mounts to the 60 mm Mecanum Wheel so a sma
 - Mechanical part; no electrical interface
 - Fits the 60mm Mecanum Wheel (product page)
 - Motors: SPG30 / SPG30E / SPG30HP, SPG50, IG32 (6 mm shaft) (product page)
-- Brackets: HD-BK-SPG for SPG motors, HD-BK-IG3X for IG32E
+- Brackets: HD-BK-SPG for SPG motors, HD-BK-IG3X for IG32E (being discontinued)
 
 ## Use cases
 - Build a small omnidirectional (mecanum) robot on 6 mm-shaft DC geared motors (product page)

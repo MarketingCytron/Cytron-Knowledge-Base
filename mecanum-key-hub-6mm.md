@@ -60,7 +60,7 @@ Tag notes: [PP: drawing] = Cytron drawing CO-MEC-06 (front view, section A-A, si
 ## Compatibility and accessories
 - Wheel: 60mm Mecanum Wheel (separate listing; no KB file) [PP].
 - Motors: SPG30 / SPG30E (`dc-geared-motor-37mm-12v.md`), SPG30HP (`high-power-dc-geared-motor-12v.md`, 6 mm D-shaft), SPG50, IG32 [PP].
-- Brackets: `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`.
+- Brackets: `motor-bracket-spg30-spg50.md` (HD-BK-IG3X (IG32E bracket, being discontinued — not in the KB)).
 
 ## Common mistakes / troubleshooting
 - **Supplied screw doesn't fit the side hole** → the drawing shows an M4 thread; use an M4 set screw (see *Conflicts*).
@@ -79,4 +79,4 @@ Tag notes: [PP: drawing] = Cytron drawing CO-MEC-06 (front view, section A-A, si
 ## Sources
 - [PP: drawing] "CO-MEC-06.pdf" (rev 1.0, 6/8/2023) (Cytron document — link not public) — read 2026-10-21
 - [PP] https://my.cytron.io/cytron-oem/p-6mm-key-hub-for-60mm-mecanum-wheel — read 2026-10-21
-- KB cross-references: `metal-key-hub.md`, `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `motor-bracket-spg30-spg50.md`, `motor-bracket-ig32e.md`, `robo-base.md`
+- KB cross-references: `metal-key-hub.md`, `dc-geared-motor-37mm-12v.md`, `high-power-dc-geared-motor-12v.md`, `motor-bracket-spg30-spg50.md`, `robo-base.md`
