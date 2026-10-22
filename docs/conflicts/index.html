@@ -129,7 +129,7 @@ td.muted{color:var(--muted)}
 
 <script>
 // ---- Config: set SHEET_ID to the Google Sheet's ID to read live status. Leave "" to show the snapshot. ----
-const SHEET_ID = "";
+const SHEET_ID = "1ItTEXnoKXsDg3vG6N4YvQXSoGtBdv5zE3STXDqBaYUE";
 const SHEET_TAB = "Fixes";
 // ---------------------------------------------------------------------------------------------------------
 const TEAMS = ["Commerce team","RH2T team","Marketing team"];
@@ -156,8 +156,10 @@ function parseCSV(text){
 function fromCSV(text){
   const t=parseCSV(text); const head=t[0].map(h=>h.trim());
   return t.slice(1).filter(r=>r.some(v=>v.trim()!=="")).map(r=>{ const o={}; head.forEach((h,i)=>{ if(MAP[h]) o[MAP[h]]=(r[i]||"").trim(); }); return o; })
-          .filter(o=>o.id && o.team);
+          .filter(o=>o.id && o.team).map(o=>({...o, team: TEAM_ALIAS[o.team]||o.team}));
 }
+// Older copies of the sheet used the first team names; show them under the current teams.
+const TEAM_ALIAS = {"Web team":"Commerce team","Product and design team":"RH2T team","Product & design team":"RH2T team","Software team":"RH2T team","Content team":"Marketing team"};
 const isClosed = (r) => r.status==="Done" || r.status==="Won't fix";
 
 async function load(){
