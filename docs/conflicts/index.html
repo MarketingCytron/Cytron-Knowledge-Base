@@ -76,6 +76,21 @@ td.muted{color:var(--muted)}
 .st.prog{color:var(--accent)}
 .hide-team .c-team{display:none}
 .empty{padding:24px;text-align:center;color:var(--muted)}
+.editbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;padding:10px 12px;border:1px dashed var(--line);border-radius:8px}
+.editbar input{font:inherit;font-size:13px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-width:0;flex:0 1 180px}
+.btn{font:inherit;font-size:13px;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:8px;padding:6px 12px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.5;cursor:default}
+.msg{font-size:12.5px;color:var(--muted)}
+.msg.err{color:var(--high)}
+td select.stsel{font:inherit;font-size:12.5px;padding:3px 6px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+td .linkbtn{font:inherit;font-size:12px;background:none;border:0;color:var(--accent);padding:0;cursor:pointer;text-decoration:underline}
+tr.editrow td{background:var(--bg)}
+.editform{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr) auto;gap:8px;align-items:start}
+.editform input,.editform textarea{font:inherit;font-size:13px;color:var(--fg);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 10px;width:100%}
+.editform textarea{min-height:58px;resize:vertical}
+@media (max-width:700px){.editform{grid-template-columns:1fr}}
+.toast{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:13px;z-index:10}
 .foot{font-size:12px;color:var(--muted)}
 .foot a{color:var(--accent)}
 @media (max-width:700px){.c-wrong,.c-file,.c-owner{display:none}.bar{grid-template-columns:minmax(0,110px) minmax(0,1fr) 32px}h1{font-size:23px}}
@@ -107,7 +122,8 @@ td.muted{color:var(--muted)}
 
   <section class="card" id="list">
     <h2>Fix list</h2>
-    <p class="note">To update a fix, change its Status, Owner, Notes and Date done in the team's Google Sheet. This page shows the sheet's latest values.</p>
+    <p class="note" id="editNote">To update a fix, sign in to edit below with your name and the team passcode, then change its Status or notes in the table. Changes are saved straight to the team Google Sheet.</p>
+    <div class="editbar" id="editbar" hidden></div>
     <div class="controls">
       <select id="fTeam" aria-label="Team"><option value="">All teams</option><option>Commerce team</option><option>RH2T team</option><option>Marketing team</option></select>
       <span class="seg" id="fSev" role="group" aria-label="Severity"><button data-v="" aria-pressed="true">All</button><button data-v="High">High</button><button data-v="Medium">Medium</button><button data-v="Low">Low</button></span>
@@ -131,6 +147,8 @@ td.muted{color:var(--muted)}
 // ---- Config: set SHEET_ID to the Google Sheet's ID to read live status. Leave "" to show the snapshot. ----
 const SHEET_ID = "1uqhhlO7YKSP0oADx1_1nvc8liCilkjGbyVzz6421bsk";
 const SHEET_TAB = "Fixes";
+// Set API_URL to the tracker's Apps Script web app URL (ends with /exec) to read and edit through it.
+const API_URL = "";
 // ---------------------------------------------------------------------------------------------------------
 const TEAMS = ["Commerce team","RH2T team","Marketing team"];
 const SEVO = {High:0, Medium:1, Low:2};
@@ -139,6 +157,9 @@ const $ = (s) => document.querySelector(s);
 const fmt = (n) => n.toLocaleString("en");
 const state = {team:"", sev:"", status:"open", q:"", product:""};
 let ROWS = [];
+let EDITOR = null; // {name, pass} once signed in
+let OPEN_EDIT = null;
+try{ const s=JSON.parse(localStorage.getItem("cx-editor")||"null"); if(s&&s.name&&s.pass) EDITOR=s; }catch(e){}
 
 function parseCSV(text){
   const out=[]; let row=[], f="", q=false;
@@ -153,8 +174,9 @@ function parseCSV(text){
   if(f!==""||row.length){ row.push(f); out.push(row); }
   return out;
 }
-function fromCSV(text){
-  const t=parseCSV(text); const head=t[0].map(h=>h.trim());
+function fromCSV(text){ const t=parseCSV(text); return fromRows(t[0], t.slice(1)); }
+function fromRows(header, body){
+  const head=header.map(h=>String(h).trim()); const t=[head, ...body.map(r=>r.map(v=>String(v)))];
   return t.slice(1).filter(r=>r.some(v=>v.trim()!=="")).map(r=>{ const o={}; head.forEach((h,i)=>{ if(MAP[h]) o[MAP[h]]=(r[i]||"").trim(); }); return o; })
           .filter(o=>o.id && o.team).map(o=>({...o, team: TEAM_ALIAS[o.team]||o.team}));
 }
@@ -164,7 +186,15 @@ const isClosed = (r) => r.status==="Done" || r.status==="Won't fix";
 
 async function load(){
   let rows=null, mode="snap", when="";
-  if(SHEET_ID){
+  if(API_URL){
+    try{
+      const res=await fetch(API_URL+"?_="+Date.now(),{cache:"no-store"});
+      const d=await res.json();
+      if(!d.ok) throw new Error("api");
+      rows=fromRows(d.header,d.rows); mode="live"; when=new Date().toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"});
+    }catch(e){ rows=null; }
+  }
+  if(!rows && SHEET_ID){
     try{
       const url=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_TAB)}&_=${Date.now()}`;
       const res=await fetch(url,{cache:"no-store"});
@@ -185,6 +215,7 @@ async function load(){
   const dot=document.createElement("i"); dot.className="dot"; dot.style.background= mode==="live"?"var(--done)":"var(--med)";
   b.append(dot, mode==="live" ? `Live from the team Google Sheet · loaded ${when}` : (SHEET_ID ? `The Google Sheet could not be read, so this is the snapshot from ${when}. Check that the sheet is shared as "Anyone with the link can view".` : `Snapshot from ${when}. Live status from the Google Sheet is not connected yet.`));
   if(SHEET_ID){ const a=document.createElement("a"); a.href=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`; a.target="_blank"; a.rel="noopener"; a.textContent="Open the Google Sheet to update a fix."; $("#sheetLink").replaceChildren(a); }
+  renderEditBar();
   render();
 }
 
@@ -267,11 +298,87 @@ function renderTable(){
     const cell=(txt,cls)=>{ const td=document.createElement("td"); if(cls) td.className=cls; td.textContent=txt; tr.append(td); return td; };
     const s=cell("",""); const p=document.createElement("span"); p.className="pill "+r.severity; p.textContent=r.severity; s.append(p);
     cell(r.product,"prod"); cell(r.team,"c-team muted"); cell(r.fact,"fact"); cell(r.wrong,"c-wrong muted"); cell(r.correct,""); cell(r.fix,"fix");
-    const st=cell("",""); const sp=document.createElement("span"); sp.className="st "+(isClosed(r)?"Done":(r.status==="In progress"?"prog":"Open")); sp.textContent=(isClosed(r)?"✓ ":"")+(r.status||"Open")+(r.date_done?` · ${String(r.date_done).slice(0,10)}`:""); st.append(sp);
-    cell([r.owner,r.notes].filter(Boolean).join(" — "),"c-owner muted"); cell(r.kb_file,"c-file file");
+    const st=cell("","");
+    if(EDITOR){
+      const sel=document.createElement("select"); sel.className="stsel"; sel.setAttribute("aria-label","Status of fix "+r.id);
+      for(const o of STATUSES){ const op=document.createElement("option"); op.textContent=o; sel.append(op); }
+      sel.value=STATUSES.includes(r.status)?r.status:"Open";
+      sel.addEventListener("change",()=>saveFix(r,{status:sel.value, owner: r.owner||EDITOR.name},sel));
+      st.append(sel);
+      if(r.date_done){ const d=document.createElement("div"); d.className="muted"; d.style.fontSize="12px"; d.textContent=String(r.date_done).slice(0,10); st.append(d); }
+    } else {
+      const sp=document.createElement("span"); sp.className="st "+(isClosed(r)?"Done":(r.status==="In progress"?"prog":"Open")); sp.textContent=(isClosed(r)?"✓ ":"")+(r.status||"Open")+(r.date_done?` · ${String(r.date_done).slice(0,10)}`:""); st.append(sp);
+    }
+    const on=cell([r.owner,r.notes].filter(Boolean).join(" — "),"c-owner muted");
+    if(EDITOR){ const b=document.createElement("button"); b.className="linkbtn"; b.type="button"; b.textContent=(r.owner||r.notes)?" Edit":"Add owner / note"; b.addEventListener("click",()=>{ OPEN_EDIT= OPEN_EDIT===r.id?null:r.id; renderTable(); }); on.append(document.createElement("br"), b); }
+    cell(r.kb_file,"c-file file");
     frag.append(tr);
+    if(EDITOR && OPEN_EDIT===r.id) frag.append(editRow(r));
   }
   body.append(frag);
+}
+
+const STATUSES=["Open","In progress","Done","Won't fix"];
+function toast(msg){ document.querySelectorAll(".toast").forEach(x=>x.remove()); const t=document.createElement("div"); t.className="toast"; t.setAttribute("role","status"); t.textContent=msg; document.body.append(t); setTimeout(()=>t.remove(),2600); }
+async function api(payload){
+  const res=await fetch(API_URL,{method:"POST",body:JSON.stringify(payload)});
+  return await res.json();
+}
+function renderEditBar(){
+  const bar=$("#editbar");
+  if(!API_URL){ bar.hidden=true; $("#editNote").textContent="To update a fix, change its Status, Owner, Notes and Date done in the team's Google Sheet. This page shows the sheet's latest values."; return; }
+  bar.hidden=false; bar.replaceChildren();
+  if(EDITOR){
+    const s=document.createElement("span"); s.textContent=`Editing as ${EDITOR.name}. Change a Status in the table, or use "Edit" to add an owner or note.`;
+    const out=document.createElement("button"); out.className="btn ghost"; out.type="button"; out.textContent="Stop editing";
+    out.addEventListener("click",()=>{ EDITOR=null; OPEN_EDIT=null; try{localStorage.removeItem("cx-editor");}catch(e){} renderEditBar(); renderTable(); });
+    bar.append(s,out); return;
+  }
+  const n=document.createElement("input"); n.id="edName"; n.placeholder="Your name"; n.autocomplete="name"; n.setAttribute("aria-label","Your name");
+  const p=document.createElement("input"); p.id="edPass"; p.type="password"; p.placeholder="Team passcode"; p.setAttribute("aria-label","Team passcode");
+  const go=document.createElement("button"); go.className="btn"; go.type="button"; go.textContent="Sign in to edit";
+  const m=document.createElement("span"); m.className="msg";
+  const submit=async()=>{
+    const name=n.value.trim(), pass=p.value;
+    if(!name||!pass){ m.className="msg err"; m.textContent="Enter your name and the team passcode."; return; }
+    go.disabled=true; m.className="msg"; m.textContent="Checking…";
+    try{ const d=await api({action:"check",passcode:pass});
+      if(!d.ok){ m.className="msg err"; m.textContent="That passcode didn't work. Ask the Marketing team for the current one."; go.disabled=false; return; }
+      EDITOR={name,pass}; try{localStorage.setItem("cx-editor",JSON.stringify(EDITOR));}catch(e){}
+      renderEditBar(); renderTable(); toast("You can now edit fixes");
+    }catch(e){ m.className="msg err"; m.textContent="Couldn't reach the Google Sheet. Check your connection and try again."; go.disabled=false; }
+  };
+  go.addEventListener("click",submit); p.addEventListener("keydown",e=>{ if(e.key==="Enter") submit(); });
+  bar.append(n,p,go,m);
+}
+async function saveFix(r, changes, ctl){
+  if(ctl) ctl.disabled=true;
+  try{
+    const d=await api({action:"update",passcode:EDITOR.pass,editor:EDITOR.name,id:r.id,...changes});
+    if(!d.ok){
+      if(d.error==="Wrong passcode"){ EDITOR=null; try{localStorage.removeItem("cx-editor");}catch(e){} renderEditBar(); }
+      toast("Not saved: "+(d.error||"unknown error")); renderTable(); return false;
+    }
+    const fresh=fromRows(d.header,[d.row])[0];
+    if(fresh) Object.assign(r,fresh); else Object.assign(r,changes);
+    toast(`Saved fix ${r.id}`);
+    OPEN_EDIT=null; render(); return true;
+  }catch(e){ toast("Not saved: couldn't reach the Google Sheet"); renderTable(); return false; }
+}
+function editRow(r){
+  const tr=document.createElement("tr"); tr.className="editrow";
+  const td=document.createElement("td"); td.colSpan=10;
+  const f=document.createElement("div"); f.className="editform";
+  const o=document.createElement("input"); o.value=r.owner||EDITOR.name; o.setAttribute("aria-label","Owner"); o.placeholder="Owner";
+  const n=document.createElement("textarea"); n.value=r.notes||""; n.setAttribute("aria-label","Notes"); n.placeholder="Notes, e.g. what was changed or why it won't be fixed";
+  const box=document.createElement("div"); box.style.display="flex"; box.style.gap="6px";
+  const s=document.createElement("button"); s.className="btn"; s.type="button"; s.textContent="Save";
+  const c=document.createElement("button"); c.className="btn ghost"; c.type="button"; c.textContent="Cancel";
+  s.addEventListener("click",()=>{ s.disabled=true; saveFix(r,{owner:o.value,notes:n.value}).then(ok=>{ if(!ok) s.disabled=false; }); });
+  c.addEventListener("click",()=>{ OPEN_EDIT=null; renderTable(); });
+  box.append(s,c); f.append(o,n,box); td.append(f); tr.append(td);
+  setTimeout(()=>n.focus(),0);
+  return tr;
 }
 
 $("#fTeam").addEventListener("change",e=>{state.team=e.target.value; render();});
