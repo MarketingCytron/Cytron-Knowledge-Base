@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cytron Source Conflicts</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: header + team tiles + two charts + fix list. Colour: Cytron-ish blue ink on cool paper; semantic red/amber/green for severity and status. */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --fg:#14213d; --muted:#5b6475; --line:#dde1e8; --accent:#1f5fbf;
+  --high:#c0362c; --med:#b7791f; --low:#8a93a3; --done:#2f855a; --track:#eceff4;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{--bg:#0f141c;--panel:#161d28;--fg:#e6eaf1;--muted:#9aa4b5;--line:#2a3443;--accent:#6ea8ff;--high:#ff7b6e;--med:#f0b44c;--low:#7c879a;--done:#5ccf8e;--track:#222b38;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.5 var(--sans);font-variant-numeric:tabular-nums}
+.wrap{max-width:1280px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:22px}
+h1{font-size:28px;font-weight:600;margin:0;letter-spacing:-.01em}
+h2{font-size:16px;font-weight:600;margin:0}
+.take{margin:6px 0 0;max-width:75ch;color:var(--muted);font-size:15px}
+.take b{color:var(--fg);font-weight:600}
+.note{margin:0;color:var(--muted);font-size:12.5px}
+.banner{font-size:12.5px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--muted)}
+.banner.live{border-color:color-mix(in srgb,var(--done) 45%,var(--line))}
+.banner.snap{border-color:color-mix(in srgb,var(--med) 55%,var(--line))}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:baseline}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.tile{font:inherit;color:inherit;text-align:left;cursor:pointer;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tile:hover{border-color:var(--muted)}
+.tile:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tile[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.tile .name{font-size:12.5px;color:var(--muted)}
+.tile .big{font-size:30px;font-weight:500;line-height:1.1}
+.tile .big small{font-size:14px;color:var(--muted);font-weight:400}
+.tile .sub{font-size:12.5px;color:var(--muted)}
+.tile .sub .hi{color:var(--high);font-weight:500}
+.prog{height:6px;border-radius:3px;background:var(--track);overflow:hidden}
+.prog span{display:block;height:100%;background:var(--done)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:12px;color:var(--muted)}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr) 40px;gap:10px;align-items:center;font:inherit;font-size:12.5px;background:none;border:0;padding:2px 0;color:inherit;text-align:left;cursor:pointer;border-radius:4px}
+.bar .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .tr{display:flex;height:14px;border-radius:4px;overflow:hidden;background:var(--track)}
+.bar .tr span{height:100%}
+.bar .v{text-align:right;color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+select,input[type=search]{font:inherit;font-size:13px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:6px 10px;min-width:0}
+input[type=search]{flex:1 1 220px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{font:inherit;font-size:13px;background:var(--bg);color:var(--fg);border:0;border-left:1px solid var(--line);padding:6px 10px;cursor:pointer}
+.seg button:first-child{border-left:0}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.chip{font:inherit;font-size:12.5px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--fg);padding:3px 10px;cursor:pointer}
+.count{font-size:12.5px;color:var(--muted);margin:0}
+.tbox{max-height:70vh;overflow:auto;border-top:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;color:var(--muted);font-size:12px;padding:8px;border-bottom:1px solid var(--line);z-index:1;white-space:nowrap}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.45}
+td.prod{font-weight:500;min-width:140px}
+td.fix{min-width:260px}
+td.fact{min-width:140px}
+td.file{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+td.muted{color:var(--muted)}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;border:1px solid currentColor;font-size:12px;white-space:nowrap}
+.pill.High{color:var(--high)}.pill.Medium{color:var(--med)}.pill.Low{color:var(--low)}
+.st{display:inline-block;font-size:12px;white-space:nowrap}
+.st.Done{color:var(--done)}
+.st.Open{color:var(--fg)}
+.st.prog{color:var(--accent)}
+.hide-team .c-team{display:none}
+.empty{padding:24px;text-align:center;color:var(--muted)}
+.foot{font-size:12px;color:var(--muted)}
+.foot a{color:var(--accent)}
+@media (max-width:700px){.c-wrong,.c-file,.c-owner{display:none}.bar{grid-template-columns:minmax(0,110px) minmax(0,1fr) 32px}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Cytron Source Conflicts</h1>
+    <p class="take" id="take">Loading…</p>
+  </header>
+  <div class="banner" id="banner" role="status">Loading data…</div>
+
+  <section class="tiles" id="tiles" aria-label="Progress by team"></section>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Open fixes by team and severity</h2>
+      <p class="note">Click a team to filter the list.</p>
+      <div class="legend"><span><i class="sw" style="background:var(--high)"></i>High: could damage hardware or break wiring or code</span><span><i class="sw" style="background:var(--med)"></i>Medium: wrong spec or compatibility</span><span><i class="sw" style="background:var(--low)"></i>Low: wording, naming, links</span></div>
+      <div class="bars" id="teamBars"></div>
+    </section>
+    <section class="card">
+      <h2>Products with the most open fixes</h2>
+      <p class="note">Top 12; the red part is high severity. Click a product to filter the list.</p>
+      <div class="bars" id="prodBars"></div>
+    </section>
+  </div>
+
+  <section class="card" id="list">
+    <h2>Fix list</h2>
+    <p class="note">To update a fix, change its Status, Owner, Notes and Date done in the team's Google Sheet. This page shows the sheet's latest values.</p>
+    <div class="controls">
+      <select id="fTeam" aria-label="Team"><option value="">All teams</option><option>Web team</option><option>Product and design team</option><option>Content team</option><option>Software team</option></select>
+      <span class="seg" id="fSev" role="group" aria-label="Severity"><button data-v="" aria-pressed="true">All</button><button data-v="High">High</button><button data-v="Medium">Medium</button><button data-v="Low">Low</button></span>
+      <select id="fStatus" aria-label="Status"><option value="open">Not done yet</option><option value="Open">Open</option><option value="In progress">In progress</option><option value="Done">Done</option><option value="Won't fix">Won't fix</option><option value="">All statuses</option></select>
+      <input type="search" id="fQ" placeholder="Search product, fact or fix" aria-label="Search">
+      <button class="chip" id="fProd" hidden></button>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="tbox">
+      <table id="tbl">
+        <thead><tr><th>Severity</th><th>Product</th><th class="c-team">Team</th><th>What disagrees</th><th class="c-wrong">Wrong source</th><th>Correct value</th><th>Fix to make</th><th>Status</th><th class="c-owner">Owner / notes</th><th class="c-file">KB file</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="foot">Found while building the Cytron Product Knowledge Base (October 2026), where two Cytron sources (datasheet, user manual, product page, tutorial, GitHub) disagree. Cytron-brand products only. Team and severity were assigned by Claude from the KB conflict tables. <span id="sheetLink"></span></p>
+</div>
+
+<script>
+// ---- Config: set SHEET_ID to the Google Sheet's ID to read live status. Leave "" to show the snapshot. ----
+const SHEET_ID = "";
+const SHEET_TAB = "Fixes";
+// ---------------------------------------------------------------------------------------------------------
+const TEAMS = ["Web team","Product and design team","Content team","Software team"];
+const SEVO = {High:0, Medium:1, Low:2};
+const MAP = {"ID":"id","Team":"team","Severity":"severity","Product":"product","What disagrees":"fact","Wrong source":"wrong","Correct value":"correct","Fix to make":"fix","KB file":"kb_file","Status":"status","Owner":"owner","Notes":"notes","Date done":"date_done"};
+const $ = (s) => document.querySelector(s);
+const fmt = (n) => n.toLocaleString("en");
+const state = {team:"", sev:"", status:"open", q:"", product:""};
+let ROWS = [];
+
+function parseCSV(text){
+  const out=[]; let row=[], f="", q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){ row.push(f); f=""; }
+    else if(c==='\n'){ row.push(f); out.push(row); row=[]; f=""; }
+    else if(c!=='\r') f+=c;
+  }
+  if(f!==""||row.length){ row.push(f); out.push(row); }
+  return out;
+}
+function fromCSV(text){
+  const t=parseCSV(text); const head=t[0].map(h=>h.trim());
+  return t.slice(1).filter(r=>r.some(v=>v.trim()!=="")).map(r=>{ const o={}; head.forEach((h,i)=>{ if(MAP[h]) o[MAP[h]]=(r[i]||"").trim(); }); return o; })
+          .filter(o=>o.id && o.team);
+}
+const isClosed = (r) => r.status==="Done" || r.status==="Won't fix";
+
+async function load(){
+  let rows=null, mode="snap", when="";
+  if(SHEET_ID){
+    try{
+      const url=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_TAB)}&_=${Date.now()}`;
+      const res=await fetch(url,{cache:"no-store"});
+      if(!res.ok) throw new Error(res.status);
+      const txt=await res.text();
+      if(!/^"?ID"?,/.test(txt.trim())) throw new Error("not the tracker");
+      rows=fromCSV(txt); mode="live"; when=new Date().toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"});
+    }catch(e){ rows=null; }
+  }
+  if(!rows){
+    const d=await (await fetch("data.json",{cache:"no-store"})).json();
+    rows=d.rows.map(r=>Object.fromEntries(Object.entries(r).map(([k,v])=>[k,String(v)]))); when=d.snapshot;
+  }
+  ROWS=rows;
+  const b=$("#banner");
+  b.className="banner "+mode;
+  b.replaceChildren();
+  const dot=document.createElement("i"); dot.className="dot"; dot.style.background= mode==="live"?"var(--done)":"var(--med)";
+  b.append(dot, mode==="live" ? `Live from the team Google Sheet · loaded ${when}` : (SHEET_ID ? `The Google Sheet could not be read, so this is the snapshot from ${when}. Check that the sheet is shared as "Anyone with the link can view".` : `Snapshot from ${when}. Live status from the Google Sheet is not connected yet.`));
+  if(SHEET_ID){ const a=document.createElement("a"); a.href=`https://docs.google.com/spreadsheets/d/${SHEET_ID}/edit`; a.target="_blank"; a.rel="noopener"; a.textContent="Open the Google Sheet to update a fix."; $("#sheetLink").replaceChildren(a); }
+  render();
+}
+
+function render(){
+  const open=ROWS.filter(r=>!isClosed(r));
+  const hi=open.filter(r=>r.severity==="High").length;
+  const prods=new Set(open.map(r=>r.product)).size;
+  const closed=ROWS.length-open.length;
+  const t=$("#take"); t.replaceChildren();
+  const b=(x)=>{const e=document.createElement("b"); e.textContent=x; return e;};
+  t.append(b(fmt(open.length))," fixes still open across ",b(fmt(prods))," Cytron products, ",b(fmt(hi))," of them high severity (wrong current, voltage, pins or wiring). ",b(fmt(closed))," of ",fmt(ROWS.length)," are done or closed. Start with the high-severity rows for your team.");
+
+  // tiles
+  const tiles=$("#tiles"); tiles.replaceChildren();
+  const DESC={"Web team":"product pages","Product and design team":"datasheets, manuals","Content team":"tutorials, guides","Software team":"GitHub, libraries"};
+  for(const team of TEAMS){
+    const all=ROWS.filter(r=>r.team===team), op=all.filter(r=>!isClosed(r)), h=op.filter(r=>r.severity==="High").length;
+    const pct=all.length? (all.length-op.length)/all.length : 0;
+    const el=document.createElement("button"); el.type="button"; el.className="tile"; el.setAttribute("aria-pressed",String(state.team===team));
+    el.innerHTML=`<span class="name"></span><span class="big"></span><span class="sub"><span class="hi"></span> high open · <span class="pc"></span> done</span><span class="prog"><span></span></span>`;
+    el.querySelector(".name").textContent=`${team} · ${DESC[team]}`;
+    el.querySelector(".big").append(fmt(op.length)); const sm=document.createElement("small"); sm.textContent=` open of ${fmt(all.length)}`; el.querySelector(".big").append(sm);
+    el.querySelector(".hi").textContent=fmt(h);
+    el.querySelector(".pc").textContent=Math.round(pct*100)+"%";
+    el.querySelector(".prog span").style.width=(pct*100)+"%";
+    el.addEventListener("click",()=>{ state.team= state.team===team?"":team; state.product=""; render(); $("#list").scrollIntoView({behavior:"smooth",block:"start"}); });
+    tiles.append(el);
+  }
+
+  // team bars
+  const tb=$("#teamBars"); tb.replaceChildren();
+  const byT=TEAMS.map(team=>{ const o=open.filter(r=>r.team===team); return {team,n:o.length,h:o.filter(r=>r.severity==="High").length,m:o.filter(r=>r.severity==="Medium").length,l:o.filter(r=>r.severity==="Low").length}; });
+  const mx=Math.max(1,...byT.map(x=>x.n));
+  for(const x of byT){
+    const el=document.createElement("button"); el.type="button"; el.className="bar"; el.title=`${x.team}: ${x.h} high, ${x.m} medium, ${x.l} low`;
+    if(state.team&&state.team!==x.team) el.style.opacity=".45";
+    const lab=document.createElement("span"); lab.className="lab"; lab.textContent=x.team;
+    const tr=document.createElement("span"); tr.className="tr"; tr.style.background="transparent";
+    for(const [k,c] of [["h","var(--high)"],["m","var(--med)"],["l","var(--low)"]]){ const s=document.createElement("span"); s.style.width=(x[k]/mx*100)+"%"; s.style.background=c; tr.append(s); }
+    const v=document.createElement("span"); v.className="v"; v.textContent=fmt(x.n);
+    el.append(lab,tr,v); el.addEventListener("click",()=>{ state.team= state.team===x.team?"":x.team; state.product=""; render(); });
+    tb.append(el);
+  }
+
+  // product bars
+  const pb=$("#prodBars"); pb.replaceChildren();
+  const m=new Map(); for(const r of open){ const o=m.get(r.product)||{p:r.product,n:0,h:0}; o.n++; if(r.severity==="High") o.h++; m.set(r.product,o); }
+  const top=[...m.values()].sort((a,b)=>b.n-a.n||b.h-a.h||a.p.localeCompare(b.p)).slice(0,12);
+  const mp=Math.max(1,...top.map(x=>x.n));
+  for(const x of top){
+    const el=document.createElement("button"); el.type="button"; el.className="bar"; el.title=`${x.p}: ${x.n} open, ${x.h} high`;
+    const lab=document.createElement("span"); lab.className="lab"; lab.textContent=x.p;
+    const tr=document.createElement("span"); tr.className="tr"; tr.style.background="transparent";
+    const a=document.createElement("span"); a.style.width=(x.h/mp*100)+"%"; a.style.background="var(--high)";
+    const c=document.createElement("span"); c.style.width=((x.n-x.h)/mp*100)+"%"; c.style.background="var(--accent)";
+    tr.append(a,c);
+    const v=document.createElement("span"); v.className="v"; v.textContent=fmt(x.n);
+    el.append(lab,tr,v); el.addEventListener("click",()=>{ state.product=x.p; state.team=""; state.sev=""; state.status="open"; render(); $("#list").scrollIntoView({behavior:"smooth",block:"start"}); });
+    pb.append(el);
+  }
+  renderTable();
+}
+
+function renderTable(){
+  $("#fTeam").value=state.team; $("#fStatus").value=state.status;
+  document.querySelectorAll("#fSev button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.sev)));
+  const chip=$("#fProd"); chip.hidden=!state.product; chip.textContent=state.product? state.product+" ×":"";
+  $("#tbl").classList.toggle("hide-team",!!state.team);
+  const q=state.q.trim().toLowerCase();
+  const rows=ROWS.filter(r=>(!state.team||r.team===state.team)&&(!state.sev||r.severity===state.sev)&&
+     (state.status===""||(state.status==="open"?!isClosed(r):r.status===state.status))&&(!state.product||r.product===state.product)&&
+     (!q||(r.product+" "+r.fact+" "+r.fix+" "+r.correct+" "+r.wrong+" "+r.kb_file+" "+r.notes).toLowerCase().includes(q)))
+    .sort((a,b)=>(SEVO[a.severity]??3)-(SEVO[b.severity]??3)||a.product.localeCompare(b.product)||(+a.id)-(+b.id));
+  $("#count").textContent=`Showing ${fmt(rows.length)} of ${fmt(ROWS.length)} fixes`;
+  const body=$("#tbody"); body.replaceChildren();
+  if(!rows.length){ const tr=document.createElement("tr"); const td=document.createElement("td"); td.colSpan=10; td.className="empty"; td.textContent="No fixes match these filters."; tr.append(td); body.append(tr); return; }
+  const frag=document.createDocumentFragment();
+  for(const r of rows){
+    const tr=document.createElement("tr");
+    const cell=(txt,cls)=>{ const td=document.createElement("td"); if(cls) td.className=cls; td.textContent=txt; tr.append(td); return td; };
+    const s=cell("",""); const p=document.createElement("span"); p.className="pill "+r.severity; p.textContent=r.severity; s.append(p);
+    cell(r.product,"prod"); cell(r.team,"c-team muted"); cell(r.fact,"fact"); cell(r.wrong,"c-wrong muted"); cell(r.correct,""); cell(r.fix,"fix");
+    const st=cell("",""); const sp=document.createElement("span"); sp.className="st "+(isClosed(r)?"Done":(r.status==="In progress"?"prog":"Open")); sp.textContent=(isClosed(r)?"✓ ":"")+(r.status||"Open")+(r.date_done?` · ${String(r.date_done).slice(0,10)}`:""); st.append(sp);
+    cell([r.owner,r.notes].filter(Boolean).join(" — "),"c-owner muted"); cell(r.kb_file,"c-file file");
+    frag.append(tr);
+  }
+  body.append(frag);
+}
+
+$("#fTeam").addEventListener("change",e=>{state.team=e.target.value; render();});
+$("#fStatus").addEventListener("change",e=>{state.status=e.target.value; renderTable();});
+document.querySelectorAll("#fSev button").forEach(b=>b.addEventListener("click",()=>{state.sev=b.dataset.v; renderTable();}));
+$("#fQ").addEventListener("input",e=>{state.q=e.target.value; renderTable();});
+$("#fProd").addEventListener("click",()=>{state.product=""; renderTable();});
+load();
+</script>
+</body>
+</html>
