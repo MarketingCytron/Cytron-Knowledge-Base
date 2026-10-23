@@ -28,7 +28,7 @@ h2{font-size:16px;font-weight:600;margin:0}
 .banner.live{border-color:color-mix(in srgb,var(--done) 45%,var(--line))}
 .banner.snap{border-color:color-mix(in srgb,var(--med) 55%,var(--line))}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:baseline}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
 .tile{font:inherit;color:inherit;text-align:left;cursor:pointer;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .tile:hover{border-color:var(--muted)}
 .tile:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -125,7 +125,7 @@ tr.editrow td{background:var(--bg)}
     <p class="note" id="editNote">To update a fix, sign in to edit below with your name and the team passcode, then change its Status or notes in the table. Changes are saved straight to the team Google Sheet.</p>
     <div class="editbar" id="editbar" hidden></div>
     <div class="controls">
-      <select id="fTeam" aria-label="Team"><option value="">All teams</option><option>Commerce team</option><option>RH2T team</option><option>Marketing team</option></select>
+      <select id="fTeam" aria-label="Team"><option value="">All teams</option><option>Commerce team</option><option>RH2T team</option><option>Marketing team</option><option>Edu team</option></select>
       <span class="seg" id="fSev" role="group" aria-label="Severity"><button data-v="" aria-pressed="true">All</button><button data-v="High">High</button><button data-v="Medium">Medium</button><button data-v="Low">Low</button></span>
       <select id="fStatus" aria-label="Status"><option value="open">Not done yet</option><option value="Open">Open</option><option value="In progress">In progress</option><option value="Done">Done</option><option value="Won't fix">Won't fix</option><option value="">All statuses</option></select>
       <input type="search" id="fQ" placeholder="Search product, fact or fix" aria-label="Search">
@@ -150,7 +150,7 @@ const SHEET_TAB = "Fixes";
 // Set API_URL to the tracker's Apps Script web app URL (ends with /exec) to read and edit through it.
 const API_URL = "https://script.google.com/macros/s/AKfycbwBEE2-axMqBVBlUDd-eip7vKpMDhyE1KIx7QKvCkaQL_nMI8rwCgqOJcea62wb7FS5/exec";
 // ---------------------------------------------------------------------------------------------------------
-const TEAMS = ["Commerce team","RH2T team","Marketing team"];
+const TEAMS = ["Commerce team","RH2T team","Marketing team","Edu team"];
 const SEVO = {High:0, Medium:1, Low:2};
 const MAP = {"ID":"id","Team":"team","Severity":"severity","Product":"product","What disagrees":"fact","Wrong source":"wrong","Correct value":"correct","Fix to make":"fix","KB file":"kb_file","Status":"status","Owner":"owner","Notes":"notes","Date done":"date_done"};
 const $ = (s) => document.querySelector(s);
@@ -230,7 +230,7 @@ function render(){
 
   // tiles
   const tiles=$("#tiles"); tiles.replaceChildren();
-  const DESC={"Commerce team":"my.cytron.io product pages","RH2T team":"R&D: datasheets, manuals, GitHub","Marketing team":"tutorials, guides, workshops"};
+  const DESC={"Commerce team":"my.cytron.io product pages","RH2T team":"R&D: datasheets, manuals, GitHub","Marketing team":"tutorials, guides, workshops","Edu team":"education kits and learning materials"};
   for(const team of TEAMS){
     const all=ROWS.filter(r=>r.team===team), op=all.filter(r=>!isClosed(r)), h=op.filter(r=>r.severity==="High").length;
     const pct=all.length? (all.length-op.length)/all.length : 0;
@@ -283,7 +283,7 @@ function renderTable(){
   $("#fTeam").value=state.team; $("#fStatus").value=state.status;
   document.querySelectorAll("#fSev button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===state.sev)));
   const chip=$("#fProd"); chip.hidden=!state.product; chip.textContent=state.product? state.product+" ×":"";
-  $("#tbl").classList.toggle("hide-team",!!state.team);
+  $("#tbl").classList.toggle("hide-team",!!state.team && !EDITOR);
   const q=state.q.trim().toLowerCase();
   const rows=ROWS.filter(r=>(!state.team||r.team===state.team)&&(!state.sev||r.severity===state.sev)&&
      (state.status===""||(state.status==="open"?!isClosed(r):r.status===state.status))&&(!state.product||r.product===state.product)&&
@@ -297,7 +297,16 @@ function renderTable(){
     const tr=document.createElement("tr");
     const cell=(txt,cls)=>{ const td=document.createElement("td"); if(cls) td.className=cls; td.textContent=txt; tr.append(td); return td; };
     const s=cell("",""); const p=document.createElement("span"); p.className="pill "+r.severity; p.textContent=r.severity; s.append(p);
-    cell(r.product,"prod"); cell(r.team,"c-team muted"); cell(r.fact,"fact"); cell(r.wrong,"c-wrong muted"); cell(r.correct,""); cell(r.fix,"fix");
+    cell(r.product,"prod");
+    const tc=cell(EDITOR?"":r.team,"c-team muted");
+    if(EDITOR){
+      const ts=document.createElement("select"); ts.className="stsel"; ts.setAttribute("aria-label","Team for fix "+r.id);
+      for(const o of TEAMS){ const op=document.createElement("option"); op.textContent=o; ts.append(op); }
+      if(!TEAMS.includes(r.team)){ const op=document.createElement("option"); op.textContent=r.team; ts.prepend(op); }
+      ts.value=r.team;
+      ts.addEventListener("change",()=>saveFix(r,{team:ts.value},ts));
+      tc.append(ts);
+    } cell(r.fact,"fact"); cell(r.wrong,"c-wrong muted"); cell(r.correct,""); cell(r.fix,"fix");
     const st=cell("","");
     if(EDITOR){
       const sel=document.createElement("select"); sel.className="stsel"; sel.setAttribute("aria-label","Status of fix "+r.id);
@@ -329,7 +338,7 @@ function renderEditBar(){
   if(!API_URL){ bar.hidden=true; $("#editNote").textContent="To update a fix, change its Status, Owner, Notes and Date done in the team's Google Sheet. This page shows the sheet's latest values."; return; }
   bar.hidden=false; bar.replaceChildren();
   if(EDITOR){
-    const s=document.createElement("span"); s.textContent=`Editing as ${EDITOR.name}. Change a Status in the table, or use "Edit" to add an owner or note.`;
+    const s=document.createElement("span"); s.textContent=`Editing as ${EDITOR.name}. Change a Team or Status in the table, or use "Edit" to add an owner or note.`;
     const out=document.createElement("button"); out.className="btn ghost"; out.type="button"; out.textContent="Stop editing";
     out.addEventListener("click",()=>{ EDITOR=null; OPEN_EDIT=null; try{localStorage.removeItem("cx-editor");}catch(e){} renderEditBar(); renderTable(); });
     bar.append(s,out); return;
@@ -360,8 +369,9 @@ async function saveFix(r, changes, ctl){
       toast("Not saved: "+(d.error||"unknown error")); renderTable(); return false;
     }
     const fresh=fromRows(d.header,[d.row])[0];
+    if(changes.team && fresh && fresh.team!==changes.team){ toast("Team not saved: the sheet's Apps Script needs the latest version"); renderTable(); return false; }
     if(fresh) Object.assign(r,fresh); else Object.assign(r,changes);
-    toast(`Saved fix ${r.id}`);
+    toast(changes.team?`Moved fix ${r.id} to ${r.team}`:`Saved fix ${r.id}`);
     OPEN_EDIT=null; render(); return true;
   }catch(e){ toast("Not saved: couldn't reach the Google Sheet"); renderTable(); return false; }
 }
