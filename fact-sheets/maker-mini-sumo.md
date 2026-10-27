@@ -42,7 +42,12 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 
 ## Interfaces and compatibility
 - Arduino IDE with the Cytron Maker Sumo Library (version 1.2.3, architectures=avr, depends on Servo); install via Library Manager by searching "Cytron Maker Sumo Library"; `#include "CytronMakerSumo.h"`; call `MakerSumo.begin()` first
+- Arduino board to select: Arduino Uno ("Arduino/Genuino Uno" in the Arduino IDE 1.8.6 screenshot of Cytron's Ikedo Mini Sumo Robot Pro Hackster guide); in Arduino IDE 2.x: Tools > Board > Arduino AVR Boards > Arduino Uno (not yet bench-tested on IDE 2.x)
 - Official examples: AutoSumo, CalibrateEdgeSensors, RcSumo, TestInputs, TestOutputs (File > Examples > Cytron Maker Sumo Library)
+- TestInputs prints START, the 5 opponent inputs, EDGE_L/EDGE_R, POT, MODE and BATT every 250 ms at 115200 baud, with a start-up melody (GitHub example)
+- TestOutputs waits for START, then loops forward, backward, left, right at speed 128 for 1 s each, toggling the LED and moving the servo 0/90/180 (GitHub example)
+- CalibrateEdgeSensors: hold START during power-up/reset, release after the beep, sweep both sensors over white and black, press START; thresholds saved to EEPROM and printed (GitHub example)
+- AutoSumo uses fixed edge thresholds 720 (left) / 638 (right) with analogRead(), not the EEPROM calibration, and attacks at speed 255 (GitHub example)
 - Library functions: begin, readDipSwitch, readBatteryVoltage, stop, moveForward, moveBackward, turnLeft, turnRight, setMotorSpeed, setServoPosition, playTone, playMelody, calibrateEdgeSensors, readEdgeSensorThreshold, isEdgeDetected
 - Sensor, GPIO, start and servo ports: S (signal), + (+5V), - (GND); screw terminals for sensors and motors (solderless)
 - Opponent sensors: Maker Object (used in the Ikedo V2 kit); edge sensors: Maker Reflect S (used in the Ikedo V2 kit)
@@ -80,12 +85,13 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - I²C pins A4/A5 are used by the user LED and potentiometer; SPI pins D11/D12/D13 are used by PWM_R, OPP_L and OPP_R
 - A6 (DIP switch) and A7 (battery sense) are analog-only
 - Edge calibration is stored in EEPROM from address 0; user EEPROM writes there overwrite it
+- After CalibrateEdgeSensors, the AutoSumo example still uses its fixed 720/638 thresholds unless those defines are edited or the sketch uses isEdgeDetected()
 - Library declares architectures=avr only
 - README sample snippets call bare `println(...)`, which does not compile; use `Serial.println(...)`
 - PS2X library default pins (13, 11, 10, 12) clash with the board's pins
 - No USB cable in the packing list
 - Operating temperature: [NOT STATED]
-- Arduino IDE board selection: [NOT STATED]
+- Arduino Uno selection on Arduino IDE 2.x not yet bench-tested
 
 ## Positioning (kept apart from specs)
 - Product page title: "Maker Mini Sumo Controller: Simplifying Sumo Robot for Beginner"

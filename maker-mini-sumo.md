@@ -5,13 +5,13 @@
 | Product code | `MAKER-MSUMO` (shown as "Code: MAKER-MSUMO" on the product page [PP]; datasheet title [DS]; library README [GH]) |
 | Family | Cytron sumo robot controllers |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-20 |
-| Reviewed | 2026-10-20 — final review round (not-started products): live my.cytron.io product page read. Page matches the KB; the Arduino board to select is still not stated |
+| Last verified | 2026-10-27 |
+| Reviewed | 2026-10-27 — W3 Maker Mini Sumo tutorial research: Arduino board to select found in the Arduino IDE screenshot of Cytron's Hackster guide (Arduino Uno) [PP: Hackster screenshot]; TestInputs, TestOutputs, CalibrateEdgeSensors and AutoSumo examples read from the raw GitHub files [GH]. Earlier: 2026-10-20 — final review round (not-started products): live my.cytron.io product page read; page matched the KB; the Arduino board to select was then still not stated |
 | Primary source | MAKER-MSUMO Datasheet **Rev 1.0, November 2019** (Google Doc linked from the product page): https://docs.google.com/document/d/1HrApn-5ldC58r9UOs4APiLVk_vUcJKDNX2-tJEHuHKk/edit |
 
 **Authority rule:** Datasheet [DS] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > chip vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [PP] also covers Cytron tutorials on my.cytron.io/tutorial and Cytron's own "Ikedo Mini Sumo Robot Pro" setup guide on Hackster (linked as "Software Setting Up" from the Ikedo V2 product page). No [DT] confirmation exists for this product yet.
+Tag notes: [PP] also covers Cytron tutorials on my.cytron.io/tutorial and Cytron's own "Ikedo Mini Sumo Robot Pro" setup guide on Hackster (linked as "Software Setting Up" from the Ikedo V2 product page). No [DT] confirmation exists for this product yet. [PP: Hackster screenshot] = a screenshot inside that Hackster guide (Arduino IDE 1.8.6 Tools menu); the guide's text itself never names the board — only the screenshot does (read 27 Oct 2026). [GH] example facts below were read from the raw example files in the library repo (27 Oct 2026).
 
 ## What it is
 A mini sumo robot controller built on the ATmega328P, "Arduino Nano/Uno Compatible", with a 2-channel motor driver (3 A continuous / 6 A peak per channel), screw-terminal and header ports for 5 opponent sensors, 2 edge sensors, a start module, 2 GPIO ports and an RC servo, plus onboard start button, user LED, potentiometer, 3-way mode DIP switch and piezo buzzer [DS][PP]. Programmed from the Arduino IDE with the **Cytron Maker Sumo Library** [PP][GH]. Positioned for beginners through professional builders, and sized for the 500g mini sumo category [PP]. It is the controller inside the Ikedo Mini Sumo Robot V2 kit [PP].
@@ -80,6 +80,7 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - Motor direction is wiring-dependent — verify with the onboard motor test buttons and swap MxA/MxB rather than changing code [DS][PP: Hackster].
 - `moveForward()` sets both DIR pins LOW; README defines forward as left motor counter-clockwise and right motor clockwise [GH].
 - `readBatteryVoltage()` = ADC × 5.0/1023 × (1 + 10/3.9) [GH]. (Derived: full ADC scale ≈ 17.8 V.)
+- **After running `CalibrateEdgeSensors`, `AutoSumo` still uses its fixed 720 / 638 thresholds** unless you edit `EDGE_L_THRESHOLD` / `EDGE_R_THRESHOLD`, or change the sketch to use `MakerSumo.isEdgeDetected()`, which reads the EEPROM calibration [GH]. Calibrating alone does not change AutoSumo's behaviour.
 
 ## Power and electrical limits
 - Vin **7.0–18.0 VDC**; reverse polarity protection on Vin only [DS].
@@ -95,14 +96,18 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - Include `#include "CytronMakerSumo.h"`; static instance `MakerSumo` [GH].
 - Functions: `begin, readDipSwitch, readBatteryVoltage, stop, moveForward, moveBackward, turnLeft, turnRight, setMotorSpeed(MOTOR_L|MOTOR_R, -255..255), setServoPosition(0..180), playTone, playMelody, calibrateEdgeSensors, readEdgeSensorThreshold, isEdgeDetected` [GH].
 - Official examples (`File > Examples > Cytron Maker Sumo Library`): `AutoSumo`, `CalibrateEdgeSensors`, `RcSumo`, `TestInputs`, `TestOutputs` [GH]. Serial examples use 115200 baud [GH].
+- `TestInputs`: plays a melody at start-up, then every 250 ms prints START, OPP_L / OPP_FL / OPP_FC / OPP_FR / OPP_R (digital), EDGE_L / EDGE_R and POT (analog), MODE (`readDipSwitch()`) and BATT (`readBatteryVoltage()`) at 115200 baud [GH].
+- `TestOutputs`: waits for START, then loops forward, backward, turn left, turn right at speed 128 for 1 s each, toggling the LED and moving the servo to 0 / 90 / 180 [GH].
+- `CalibrateEdgeSensors`: hold START during power-up/reset, release after the beep; the LED blinks; sweep both edge sensors over white and black, then press START. The thresholds are saved in EEPROM and printed on Serial [GH].
+- `AutoSumo`: uses **fixed** thresholds `#define EDGE_L_THRESHOLD 720` / `#define EDGE_R_THRESHOLD 638` with `analogRead()` — **not** the EEPROM calibration — and attacks at speed 255 [GH].
 - `RcSumo`: 2-channel RC receiver, forward/reverse channel → GPIO1, left/right → GPIO2 [GH].
-- Board to select in Tools > Board: **not stated by any Cytron source** — see Needs verification.
+- **Board to select: Arduino Uno.** Cytron's Hackster guide "Ikedo Mini Sumo Robot Pro" (15 Jan 2020) shows Arduino IDE 1.8.6 with Tools > Board: "Arduino/Genuino Uno" and Port "COM5" [PP: Hackster screenshot]; the guide's text does not name the board. In Arduino IDE 2.x the same entry is Tools > Board > Arduino AVR Boards > Arduino Uno — **not yet bench-tested on IDE 2.x**.
 - MicroBlocks / CircuitPython / MakeCode / MicroPython: **not stated** for this board [DS][PP][GH].
 - Repo: master branch, 21 commits, last commit 2020-07-15, tags 1.0.0 → 1.2.3, MIT licence [GH].
 
 ## Compatibility and accessories
 - Sensors used in Cytron's own kit: Maker Object sensor (opponent, ×5) and Maker Reflect S / Maker Reflectance sensor (edge, ×2) [PP].
-- Motors: Cytron states no recommended-motor list; only the 3 A continuous limit. The Ikedo V2 kit uses 2 × 600RPM 6V DC Micro Metal Gearmotor [PP].
+- Motors: Cytron states no recommended-motor list; only the 3 A continuous limit. The Ikedo V2 kit uses 2 × 600RPM 6V DC Micro Metal Gearmotor [PP]. That motor is `SPG10MP-30K`: 500 mA stall at 6 V (`ikedo-mini-sumo-v2.md` [PP: motor page]). The Ikedo Pro's 800 RPM motor (NovaMax figures) stalls at 5.75 A at 6 V — close to this controller's 6 A peak (< 5 s) (`ikedo-mini-sumo-pro.md` [PP: tutorial SumoRobot1KG]).
 - Battery in the Ikedo V2 kit: 7.4V 450mAh LiPo with a JST LiPo battery wire extension to the Battery Terminal (VB+ red, VB- black) [PP]. Hackster guide: 2-cell LiPo [PP: Hackster].
 - RC: RC receiver on GPIO1/GPIO2, without using any sensor port, so the same robot can enter both RC and autonomous categories [PP]; Cytron tutorial tested Flysky and HotRC [PP tutorial].
 - Bluetooth: Cytron tutorial "Maker Mini Sumo with Bluetooth Controller" uses an HC-05 or HC-06 (listing summary only; wiring not read) [PP].
@@ -118,6 +123,8 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - **Motors over 3 A continuous** burn the driver and void the warranty; the 6 A figure is a < 5 s peak, not a running rating [DS][PP].
 - The library declares `architectures=avr` only, so the Arduino IDE flags it as incompatible if a non-AVR board is selected [GH][VEN].
 - Don't describe the start port as "pulled down" or active high — it is pulled high, active low [DS].
+- **"I calibrated the edge sensors but AutoSumo still falls off / stops at the wrong place"** — AutoSumo ignores the EEPROM calibration and uses its fixed 720 / 638 defines; edit the defines or switch to `isEdgeDetected()` [GH].
+- **Upload fails with the wrong board selected** — select Arduino Uno ("Arduino/Genuino Uno" in IDE 1.8.x) as in Cytron's guide [PP: Hackster screenshot].
 
 ## Conflicts between sources
 | Fact | Source A says | Source B says | Resolution |
@@ -130,7 +137,7 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 | Edge sensor name in V2 kit |  "Maker Reflectance Sensor" | [PP] Ikedo V2 page: "Maker Reflect S" from March 2026 | Use Maker Reflect S (product page note, read 2026-10-19) |
 
 ## Needs verification
-- **Arduino board to select** (Arduino Uno vs Arduino Nano, and Nano "ATmega328P (Old Bootloader)" or not) — no Cytron source states it. Critical for upload-error troubleshooting. Ask design team.
+- Arduino Uno board selection **on Arduino IDE 2.x** (Tools > Board > Arduino AVR Boards > Arduino Uno) — not yet bench-tested; the Cytron screenshot is IDE 1.8.6.
 - USB-serial chip (CH340 implied by Cytron's Hackster guide; not in datasheet).
 - Over-current, thermal and short-circuit protection: present or absent? Not stated anywhere.
 - Motor driver: discrete MOSFET H-bridge vs driver IC (see Conflicts).
@@ -140,6 +147,9 @@ All pins are predefined in the library header `CytronMakerSumo.h`; names below a
 - Recommended or maximum motor types beyond the 3 A rule.
 - Ikedo Mini Sumo Robot Pro Bundle contents (product page not read).
 - Library behaviour on Arduino IDE 2.x / current AVR core (last commit 2020) — untested here.
+
+## Resolved verification items
+- **Arduino board to select** — resolved 27 Oct 2026: Arduino Uno ("Arduino/Genuino Uno" in Arduino IDE 1.8.6), from the Tools-menu screenshot in Cytron's Hackster guide "Ikedo Mini Sumo Robot Pro" (15 Jan 2020) [PP: Hackster screenshot]. Was: "Arduino Uno vs Arduino Nano, and Nano 'ATmega328P (Old Bootloader)' or not — no Cytron source states it." IDE 2.x not yet bench-tested (kept under Needs verification).
 
 ## Cytron tutorials
 Add-on: Cytron tutorials that use this product, most-read first. Use them for wiring examples and project ideas; they never override [DS] or [UM] specs, and tutorial code is not copied here [PP: tutorial].
@@ -154,7 +164,8 @@ Add-on: Cytron tutorials that use this product, most-read first. Use them for wi
 - [PP] Ikedo V2 kit page https://my.cytron.io/p-ikedo-mini-sumo-robot-v2-starter
 - [PP tutorial] https://my.cytron.io/tutorial/rc-sumo-using-maker-mini-sumo-controller · https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller · https://my.cytron.io/tutorial/maker-mini-sumo-with-bluetooth-controller (not read)
 - [PP: Hackster] Cytron "Ikedo Mini Sumo Robot Pro" (15 Jan 2020) — https://www.hackster.io/cytron-technologies/ikedo-mini-sumo-robot-pro-7da610
-- [GH] https://github.com/CytronTechnologies/CytronMakerSumo (README, library.properties, CytronMakerSumo.h/.cpp, examples/)
+- [GH] https://github.com/CytronTechnologies/CytronMakerSumo (README, library.properties, CytronMakerSumo.h/.cpp, examples/) — example sketches TestInputs, TestOutputs, CalibrateEdgeSensors and AutoSumo re-read from the raw files on 27 Oct 2026
+- [PP: Hackster screenshot] Arduino IDE 1.8.6 Tools-menu screenshot (Board "Arduino/Genuino Uno", Port "COM5") in https://www.hackster.io/cytron-technologies/ikedo-mini-sumo-robot-pro-7da610 — read 27 Oct 2026 (W3 tutorial research)
 - [VEN] Arduino `tone()` reference — https://github.com/arduino/reference-en/blob/master/Language/Functions/Advanced%20IO/tone.adoc · Servo library — https://github.com/arduino-libraries/Servo · ATmega328P — https://www.microchip.com/en-us/product/atmega328p
 - [3P] (cross-check only) https://thepihut.com/collections/cytron/products/maker-mini-sumo-controller · https://www.robotshop.com/products/cytron-maker-mini-sumo-controller · https://stg.robu.in/product/maker-mini-sumo-controller-simplifying-sumo-robot-for-beginner
 - [PP: tutorial] Cytron tutorials on my.cytron.io/tutorial (catalogue of 24 Sep 2026 and tutorial database of 17 Oct 2026), listed only where the tutorial uses this product.

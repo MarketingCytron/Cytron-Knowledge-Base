@@ -3885,7 +3885,12 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 
 ## Interfaces and compatibility
 - Arduino IDE with the Cytron Maker Sumo Library (version 1.2.3, architectures=avr, depends on Servo); install via Library Manager by searching "Cytron Maker Sumo Library"; `#include "CytronMakerSumo.h"`; call `MakerSumo.begin()` first
+- Arduino board to select: Arduino Uno ("Arduino/Genuino Uno" in the Arduino IDE 1.8.6 screenshot of Cytron's Ikedo Mini Sumo Robot Pro Hackster guide); in Arduino IDE 2.x: Tools > Board > Arduino AVR Boards > Arduino Uno (not yet bench-tested on IDE 2.x)
 - Official examples: AutoSumo, CalibrateEdgeSensors, RcSumo, TestInputs, TestOutputs (File > Examples > Cytron Maker Sumo Library)
+- TestInputs prints START, the 5 opponent inputs, EDGE_L/EDGE_R, POT, MODE and BATT every 250 ms at 115200 baud, with a start-up melody (GitHub example)
+- TestOutputs waits for START, then loops forward, backward, left, right at speed 128 for 1 s each, toggling the LED and moving the servo 0/90/180 (GitHub example)
+- CalibrateEdgeSensors: hold START during power-up/reset, release after the beep, sweep both sensors over white and black, press START; thresholds saved to EEPROM and printed (GitHub example)
+- AutoSumo uses fixed edge thresholds 720 (left) / 638 (right) with analogRead(), not the EEPROM calibration, and attacks at speed 255 (GitHub example)
 - Library functions: begin, readDipSwitch, readBatteryVoltage, stop, moveForward, moveBackward, turnLeft, turnRight, setMotorSpeed, setServoPosition, playTone, playMelody, calibrateEdgeSensors, readEdgeSensorThreshold, isEdgeDetected
 - Sensor, GPIO, start and servo ports: S (signal), + (+5V), - (GND); screw terminals for sensors and motors (solderless)
 - Opponent sensors: Maker Object (used in the Ikedo V2 kit); edge sensors: Maker Reflect S (used in the Ikedo V2 kit)
@@ -3923,12 +3928,13 @@ A mini sumo robot controller based on the ATmega328P (Arduino Nano/Uno compatibl
 - I²C pins A4/A5 are used by the user LED and potentiometer; SPI pins D11/D12/D13 are used by PWM_R, OPP_L and OPP_R
 - A6 (DIP switch) and A7 (battery sense) are analog-only
 - Edge calibration is stored in EEPROM from address 0; user EEPROM writes there overwrite it
+- After CalibrateEdgeSensors, the AutoSumo example still uses its fixed 720/638 thresholds unless those defines are edited or the sketch uses isEdgeDetected()
 - Library declares architectures=avr only
 - README sample snippets call bare `println(...)`, which does not compile; use `Serial.println(...)`
 - PS2X library default pins (13, 11, 10, 12) clash with the board's pins
 - No USB cable in the packing list
 - Operating temperature: [NOT STATED]
-- Arduino IDE board selection: [NOT STATED]
+- Arduino Uno selection on Arduino IDE 2.x not yet bench-tested
 
 ## Positioning (kept apart from specs)
 - Product page title: "Maker Mini Sumo Controller: Simplifying Sumo Robot for Beginner"
@@ -4156,6 +4162,9 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Opponent sensors: 5 x Maker Object Sensor; product page: "range 50cm adjustable"
 - Edge sensors: 2 x Maker Reflect S, mounted underneath (product page: "From March 2026 onwards … will include Maker Reflect S as the edge sensor"); the older Getting Started guide links Maker Reflect
 - Motors: 2 x 600RPM 6V DC Micro Metal Gearmotor; product page: "6V DC motors (600rpm, 0.065kg.cm)"
+- Motor model: 6V 600RPM Medium Power DC Micro Metal Gearmotor, code SPG10MP-30K (motor product page, read 27 Oct 2026)
+- Motor ratings: rated 6 VDC, tested 3-9 V; free run 600 rpm / 50 mA at 6 V; 500 rpm and 150 mA at rated torque; rated torque 0.065 kg-cm (the kit page figure); stall 500 mA and 0.3 kg-cm at 6 V; gear ratio 30:1 (motor product page)
+- Motor build: 5 cm wire with JST PHR-2 (mating socket JST S2B-PH-K-S); D-shaft 3 mm x 9 mm; motor 10 x 12 x 35.2 mm; motor page: higher voltage gives more torque and speed but shortens motor life (motor product page)
 - Wheels: 2 x High Grade Silicon Wheels Set (32mm x 22mm); blue from 17 Jul 2025
 - Control: auto and manual control mode; RC transmitter/receiver sold separately
 - Programming: through the Micro USB-B port on the right side of the assembled robot
@@ -4173,6 +4182,8 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO)
 - Opponent sensor: Maker Object (MAKER-OBJECT); edge sensor: Maker Reflect S (product page) / Maker Reflectance Sensor (Getting Started guide)
 - Software: Arduino IDE with the Cytron Maker Sumo Library v1.2.3 (architectures=avr, depends=Servo); examples AutoSumo, RcSumo, CalibrateEdgeSensors, TestInputs, TestOutputs
+- Arduino board: Arduino Uno ("Arduino/Genuino Uno" in the IDE 1.8.6 screenshot of Cytron's Ikedo Pro Hackster guide; same controller); IDE 2.x: Arduino AVR Boards > Arduino Uno, not yet bench-tested
+- After CalibrateEdgeSensors, AutoSumo still uses its fixed 720/638 edge thresholds unless the defines are edited or isEdgeDetected() is used (GitHub example)
 - RC (manual) mode: 2-channel RC receiver, forward/reverse channel to GPIO1 and left/right channel to GPIO2 (RcSumo example); invert the channel in the transmitter settings if the direction is reversed
 - Start: onboard START button on the controller (AutoSumo waits for press-and-release; pressing START again stops the motors)
 - Cytron tutorials linked from the product page: Maker Mini Sumo with Bluetooth controller; with PS2 controller; RC sumo using Maker Mini Sumo Controller
@@ -4194,7 +4205,8 @@ A ready-to-assemble mini sumo robot kit built around the Maker Mini Sumo Control
 - Getting Started guide bolt sizes are inconsistent (6 x M2.5x20 in the list; 4 x M3x20 + 2 x M2.5x20 in the steps)
 - Controller limits apply: 3.0 A continuous / 6.0 A peak per motor channel, Vin 7.0-18.0 V (see MAKER-MSUMO)
 - Pre-loaded code: [NOT STATED]
-- Arduino board selection: [NOT STATED]
+- Motors are rated 6 V but run from the 7.4 V pack; the motor page says higher voltage shortens motor life
+- Arduino Uno selection on Arduino IDE 2.x not yet bench-tested
 - Competition weight class on the kit page: [NOT STATED]
 
 ## Positioning (kept apart from specs)
@@ -4238,6 +4250,10 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 - Opponent sensors: 5 x Maker Object; product page: "range 50cm adjustable"
 - Edge sensors: 2 x Maker Reflect S (product page links "Datasheet for Edge Sensor (MAKER-REFLECT-S)")
 - Motors: 2 x 800RPM 6V DC micro metal gearmotor; "6V DC motors (800rpm, 3.1kg.cm)"
+- 800 RPM motor figures match Cytron's NovaMax 6V 800RPM Super Power DC Micro Metal Gearmotor (match inferred from the figures; the Pro page does not name NovaMax)
+- NovaMax motor (Cytron tutorial "Let's Upgrade your Mini Sumo to 1kg Sumo Robot"): 800 rpm at 6 VDC; no-load current 190 mA; operating current 260 mA; stopping (stall) current 5.75 A; rated load torque 3.1 kg/cm; stall torque 4.5 kg/cm; Cytron highly recommends a 2S (7.4V) battery only in a sumo robot
+- NovaMax voltage: nominal 6 VDC, "can withstand up to 12VDC" (NovaMax product page); the tutorial's "max 16 VDC" conflicts and the product page wins
+- NovaMax installation (product page): bend both terminals inward, solder on the outside, cover with cloth tape to avoid shorting the motor driver
 - Wheels: 2 x silicon wheels 32x22mm; blue from July 2025
 - Armour: 1 x laser-cut stainless steel shield, 1 x 4" stainless steel razor blade, 1 x copper weight base
 - Control: auto and manual mode; RC transmitter/receiver sold separately; on-board start button (controller START, active low) and a port for an external start module (not included)
@@ -4251,6 +4267,8 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 ## Interfaces and compatibility
 - Controller: see the Maker Mini Sumo Controller fact sheet (MAKER-MSUMO); opponent sensor Maker Object (MAKER-OBJECT); edge sensor Maker Reflect S (MAKER-REFLECT-S)
 - Software: Arduino IDE with the Cytron Maker Sumo Library v1.2.3 (architectures=avr, depends=Servo), linked from the product page; examples AutoSumo, RcSumo, CalibrateEdgeSensors, TestInputs, TestOutputs
+- Arduino board: Arduino Uno ("Arduino/Genuino Uno", Port COM5, in the Arduino IDE 1.8.6 screenshot of Cytron's Pro Hackster guide); IDE 2.x: Arduino AVR Boards > Arduino Uno, not yet bench-tested
+- After CalibrateEdgeSensors, AutoSumo still uses its fixed 720/638 edge thresholds unless the defines are edited or isEdgeDetected() is used (GitHub example)
 - RC (manual) mode: 2-channel RC receiver, forward/reverse channel to GPIO1 and left/right channel to GPIO2 (RcSumo example); robot stops when no pulse is received
 - Battery wiring: VB+ = red, VB- = black at the controller's Battery Terminal (shared with the V2 Getting Started guide); Cytron's Pro guide uses a 2-cell LiPo
 - Edge sensor wiring: S/OUT = white, +/VCC = red, -/GND = black, using the 2561 3-way wire cut in two (shared with the V2 Getting Started guide)
@@ -4269,9 +4287,10 @@ The higher-specification Ikedo mini sumo robot kit: the Maker Mini Sumo Controll
 - RC transmitter/receiver, external start module and LiPo charger are not included
 - No Pro-specific assembly document; the Ikedo Bot V2 Getting Started Instruction covers the V2 Starter only
 - Controller limits apply: 3.0 A continuous / 6.0 A peak (< 5 s) per motor channel; motors over 3 A are not covered by the controller's warranty (see MAKER-MSUMO)
-- 800 RPM motor current rating: [NOT STATED]
+- 800 RPM motor stall current is 5.75 A at 6 V (Cytron tutorial), close to the controller's 6 A peak (< 5 s); it is higher on a full 2S pack, so avoid long stalls
 - Whether 350 g includes battery, shield, blade and copper base: [NOT STATED]
-- Pre-loaded code and Arduino board selection: [NOT STATED]
+- Pre-loaded code: [NOT STATED]
+- Arduino Uno selection on Arduino IDE 2.x not yet bench-tested
 - Competition weight class on the kit page: [NOT STATED]
 
 ## Positioning (kept apart from specs)

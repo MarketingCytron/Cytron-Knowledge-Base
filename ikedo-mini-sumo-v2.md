@@ -5,13 +5,13 @@
 | Product code | `KIT-IKEDO-MSV2-S` [PP] |
 | Family | Sumo robot kits |
 | Status | Check the live product page on my.cytron.io |
-| Last verified | 2026-10-19 |
-| Reviewed | 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). The full page now reads: from March 2026 the kit ships with Maker Reflect S edge sensors; full packing list and 500 g class are Cytron-stated |
+| Last verified | 2026-10-27 |
+| Reviewed | 2026-10-27 — W3 Maker Mini Sumo tutorial research: kit motor identified as the 6V 600RPM Medium Power DC Micro Metal Gearmotor `SPG10MP-30K` and its product page read [PP: motor page] (0.065 kg-cm = rated torque); Arduino board to select (Arduino Uno) from Cytron's Hackster screenshot [PP: Hackster screenshot]; AutoSumo / CalibrateEdgeSensors behaviour from the raw example files [GH]. Earlier: 2026-10-19 — master-table review (Medium batch 3): live my.cytron.io product page read (description, features, packing list, resources). The full page now reads: from March 2026 the kit ships with Maker Reflect S edge sensors; full packing list and 500 g class are Cytron-stated |
 | Primary source | Getting Started doc: **"Ikedo Bot V2 Getting Started Instruction"** (Google Doc, heading "Ikedo Bot Starter Kit V2 Getting Started Instruction"; no revision number or date printed; Drive metadata: created 7 Dec 2023, last modified 20 Jan 2026) [UM] — https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit. No kit datasheet exists. |
 
 **Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] / internal docs > Cytron GitHub [GH] > vendor docs [VEN] > third-party [3P]. Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
-Tag notes: [UM] = the Getting Started Google Doc above. [PP] = my.cytron.io product page as read by the coordinator on 2026-10-19 (two page passages are truncated in that extract). [GH] = CytronMakerSumo library (README, library.properties, examples) read 2026-10-19. The three Cytron tutorials linked from the page (RC sumo, PS2, Bluetooth) could **not** be fetched here (my.cytron.io and www.cytron.io blocked); PS2 wiring facts come from `maker-mini-sumo.md`, which read the PS2 tutorial earlier. The Cytron Hackster guide "Building A Mini Sumo Robot (500g)" (5 Dec 2019) describes the **original** Ikedo Starter Kit (3 opponent sensors), not V2 — only kit-independent facts are taken from it, tagged [PP: Hackster V1].
+Tag notes: [UM] = the Getting Started Google Doc above. [PP] = my.cytron.io product page as read by the coordinator on 2026-10-19 (two page passages are truncated in that extract). [GH] = CytronMakerSumo library (README, library.properties, examples) read 2026-10-19. The three Cytron tutorials linked from the page (RC sumo, PS2, Bluetooth) could **not** be fetched here (my.cytron.io and www.cytron.io blocked); PS2 wiring facts come from `maker-mini-sumo.md`, which read the PS2 tutorial earlier. The Cytron Hackster guide "Building A Mini Sumo Robot (500g)" (5 Dec 2019) describes the **original** Ikedo Starter Kit (3 opponent sensors), not V2 — only kit-independent facts are taken from it, tagged [PP: Hackster V1]. [PP: motor page] = the kit motor's own Cytron product page, "6V 600RPM Medium Power DC Micro Metal Gearmotor" (`SPG10MP-30K`), https://my.cytron.io/p-6v-600rpm-medium-power-dc-micro-metal-gearmotor, read 27 Oct 2026. [PP: Hackster screenshot] = the Arduino IDE screenshot in Cytron's "Ikedo Mini Sumo Robot Pro" Hackster guide (same controller), read 27 Oct 2026.
 
 **Kit rule:** this file does not re-document the boards. For the controller see `maker-mini-sumo.md`; for the opponent sensor see `maker-object.md`; for the edge sensor see `maker-reflect-s.md` (product page name) and `maker-reflect.md` (Getting Started guide name) — the naming conflict is recorded below.
 
@@ -31,12 +31,27 @@ No datasheet spec table exists; rows are the product page "Specifications" block
 | Battery | 7.4 V 450 mAh LiPo (1 ×) | [PP][UM] |
 | Opponent sensors | 5 × Maker Object Sensor; page: "range 50cm adjustable" | [PP][UM] — see `maker-object.md` (conflict below) |
 | Edge sensors | 2 × Maker Reflect S, mounted underneath — "From March 2026 onwards, Ikedo Mini Sumo Robot V2 will include Maker Reflect S as the edge sensor"; the older guide calls them "Maker Reflectance Sensor" | [PP][UM] |
-| Motors | 2 × 600 RPM 6 V DC micro metal gearmotor; page: "6V DC motors (600rpm, 0.065kg.cm)" | [PP][UM] |
+| Motors | 2 × 600 RPM 6 V DC micro metal gearmotor; page: "6V DC motors (600rpm, 0.065kg.cm)". Motor = "6V 600RPM Medium Power DC Micro Metal Gearmotor", code `SPG10MP-30K` — 0.065 kg-cm is its **rated** torque (stall 0.3 kg-cm); full specs below | [PP][UM][PP: motor page] |
 | Wheels | 2 × high grade silicon wheel set 32 mm × 22 mm; blue from 17 Jul 2025 | [PP][UM] |
 | Control modes | "auto and manual control mode"; RC transmitter/receiver sold separately | [PP] |
 | Programming port | Micro USB-B on the right side of the assembled robot | [UM] |
 | Warranty | "There is NO warranty for Sumo Robot." | [PP] |
 | Price | RM418.95 (Cytron product page, read 2026-10-19) | [PP] |
+
+### Kit motor — SPG10MP-30K (motor's own product page, read 27 Oct 2026) [PP: motor page]
+| Item | Value |
+|---|---|
+| Name / code | 6V 600RPM Medium Power DC Micro Metal Gearmotor, `SPG10MP-30K` (176 in stock, 3-month warranty) |
+| Rated voltage | 6 VDC; tested 3–9 V |
+| Free run (6 V) | 600 rpm, 50 mA |
+| At rated torque | 500 rpm, 150 mA |
+| Rated torque | 0.065 kg-cm |
+| Stall (6 V) | 500 mA, 0.3 kg-cm |
+| Gear ratio | 30:1 |
+| Wire / connector | 5 cm wire with JST PHR-2 (mating socket JST S2B-PH-K-S) |
+| Shaft | D-shaft 3 mm × 9 mm |
+| Motor size | 10 × 12 × 35.2 mm |
+| Page note | "higher voltage will provide higher torque and higher speed, but it will shorten the life of the motor." |
 
 **Kit contents — Getting Started components list [UM]:** 1 × Maker Mini Sumo Controller; 5 × Maker Object Sensor (opponent); 2 × Maker Reflectance Sensor (edge) [link → MAKER-REFLECT page]; 2 × 600RPM 6V DC Micro Metal Gearmotor; 2 × High Grade Silicon Wheels Set (32mm x 22mm); 1 × 7.4V 450mAh LiPo Battery; 1 × Mini Sumo Robot Chassis (Top Cover); 1 × Mini Sumo Robot Chassis (Main); 1 × Mini Sumo Robot Chassis (Motor Bracket); 1 × JST LiPo Battery Wire Extension; 1 × 2561 3Ways Connector Extension Wire; 4 × M3x6 Self-Tapping Screw (Black); 6 × M2.5x20 Bolt; 1 × Tiny Phillips Screwdriver (3mm); 1 × Tiny Flat Head Screwdriver (2mm); 1 × USB Cable (FREE).
 **Product page packing list [PP]** (full list read 2026-10-19): see *Product page facts* below.
@@ -67,6 +82,8 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 - Motor wiring colours differ per side (left red→MLA, right black→MRA) [UM]; direction is wiring-dependent, so verify with the controller's motor test buttons and swap MxA/MxB if reversed (`maker-mini-sumo.md` [DS]).
 - Leave the 1 mm bracket gap; over-tightening bends the body [UM].
 - Edge thresholds: `AutoSumo` uses fixed 720 (L) / 638 (R) and treats a reading **below** threshold as the white edge; use `CalibrateEdgeSensors` (hold START at power-up, sweep sensors over white edge and black ring, press START) to store thresholds in EEPROM [GH].
+- **After calibrating, `AutoSumo` still uses 720 / 638** — it reads `analogRead()` against its own `#define EDGE_L_THRESHOLD` / `EDGE_R_THRESHOLD`, not the EEPROM values. Edit those defines or change the sketch to `isEdgeDetected()` (see `maker-mini-sumo.md`) [GH].
+- **Motors on 7.4 V:** the SPG10MP-30K is rated 6 V and tested 3–9 V; its page warns that higher voltage gives more torque and speed "but it will shorten the life of the motor" [PP: motor page]. The kit's 2S pack is above the rated 6 V — expect shorter motor life with hard use (matches the kit page's "avoid extensive use" note [PP]).
 - Opponent sensors read LOW when an object is detected; `AutoSumo` searches when all five read HIGH [GH].
 - Do not use `tone()` on this controller (it breaks motor PWM on D3/D11) — see `maker-mini-sumo.md`.
 - Edge sensor: Maker Reflect S on kits from March 2026 [PP]. It runs at 5.0 V only (Maker Reflect S spec [PP]), which the controller's edge port supplies.
@@ -74,7 +91,7 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 
 ## Power and electrical limits
 - Battery: 1 × 7.4 V 450 mAh LiPo (2S) via JST wire extension to VB+/VB− [PP][UM]. The controller's Vin range is 7.0–18.0 V with reverse-polarity protection (`maker-mini-sumo.md` [DS]).
-- Motors are 6 V gearmotors on a 7.4 V pack [PP][UM]; no motor current rating is stated by any kit source. Controller limit 3 A continuous / 6 A peak (< 5 s) per channel (`maker-mini-sumo.md` [DS]).
+- Motors are 6 V gearmotors on a 7.4 V pack [PP][UM]. The kit sources state no motor current; the motor's own page gives, at 6 V: 50 mA free run, 150 mA at rated torque, **500 mA stall** [PP: motor page] — well inside the controller's 3 A continuous / 6 A peak (< 5 s) per channel (`maker-mini-sumo.md` [DS]). At 7.4 V the currents are higher than the 6 V figures (not stated — do not quote a derived number).
 - Charger: not in the kit [UM][PP]. Cytron's V1 guide: use a LiPo balance charger on its 2-cell port; LEDs red while charging, green when full, blinking = faulty battery; "Charge the battery regularly. Letting it over-drain can damage it." [PP: Hackster V1]
 - "There is NO warranty for Sumo Robot." [PP]
 
@@ -82,7 +99,7 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 - Arduino IDE + **Cytron Maker Sumo Library** v1.2.3 (`architectures=avr`, `depends=Servo`), installed from Library Manager; `#include "CytronMakerSumo.h"`; call `MakerSumo.begin()` first [GH].
 - Examples: `AutoSumo` (autonomous: start → search → attack → back-off), `RcSumo` (2-channel RC on GPIO1/GPIO2), `CalibrateEdgeSensors`, `TestInputs`, `TestOutputs`; serial examples at 115200 baud [GH].
 - Code shipped pre-loaded on the kit: **not stated** by any source.
-- USB-serial driver: page says CH340C [PP]; Cytron's V1 guide installs the WCH CH341SER driver (Windows/Mac) and selects the CH340 COM port [PP: Hackster V1]. Arduino board selection: not stated by any Cytron source (open item in `maker-mini-sumo.md`).
+- USB-serial driver: page says CH340C [PP]; Cytron's V1 guide installs the WCH CH341SER driver (Windows/Mac) and selects the CH340 COM port [PP: Hackster V1]. **Arduino board: Arduino Uno** — "Arduino/Genuino Uno" in the Arduino IDE 1.8.6 screenshot of Cytron's Ikedo Pro Hackster guide (same controller) [PP: Hackster screenshot]; in IDE 2.x: Tools > Board > Arduino AVR Boards > Arduino Uno (not yet bench-tested on IDE 2.x) — see `maker-mini-sumo.md`.
 - Cytron tutorials linked from the page (not read here): "Maker Mini Sumo with Bluetooth controller", "Maker Mini Sumo with PS2 controller", "RC sumo using Maker Mini Sumo Controller" [PP].
 
 ## Compatibility and accessories
@@ -113,17 +130,23 @@ Assembly/wiring facts stated by the Getting Started guide [UM] (controller pin n
 | Motor wiring colours | [UM] V2: left MLA=red/MLB=black, right MRA=black/MRB=red | [PP: Hackster V1]: "Red typically goes to MRA… black to MRB", then test and swap | Kit-specific; rule = test with motor buttons |
 
 ## Needs verification
-- Motor torque "0.065kg.cm" for the 600 RPM motor [PP] — unusually low next to the Pro's 3.1 kg.cm; the motor's own product page was not readable. Confirm before quoting.
-- Whether the kit ships with any firmware/example pre-loaded, and which Arduino board to select.
+- Whether the kit ships with any firmware/example pre-loaded.
+- Arduino Uno selection on Arduino IDE 2.x — not yet bench-tested (see `maker-mini-sumo.md`).
 - Weight "~200 g": with or without battery not stated.
 - Contents and wiring of the three linked Cytron tutorials (RC, PS2, Bluetooth) — pages not readable here.
 - Age/syllabus tags on the page (none in the extract).
 - Edge sensor on kits sold before March 2026: the Getting Started guide links Maker Reflect (MAKER-REFLECT); confirm whether older stock shipped Maker Reflect.
+
+## Resolved verification items
+- **Motor torque "0.065kg.cm"** — resolved 27 Oct 2026: it is the **rated** torque of the kit motor `SPG10MP-30K` (6V 600RPM Medium Power DC Micro Metal Gearmotor); stall torque is 0.3 kg-cm at 6 V [PP: motor page]. Was: "unusually low next to the Pro's 3.1 kg.cm; the motor's own product page was not readable." The Pro uses a different, much stronger motor (800 rpm, 3.1 kg/cm rated — see `ikedo-mini-sumo-pro.md`).
+- **Which Arduino board to select** — resolved 27 Oct 2026: Arduino Uno [PP: Hackster screenshot] (see `maker-mini-sumo.md`). Pre-loaded firmware stays open.
 
 ## Sources
 - [UM] Ikedo Bot V2 Getting Started Instruction (Google Doc; Drive: created 2023-12-07, modified 2026-01-20) — https://docs.google.com/document/d/1K1BmYpMD1huE4dlEoHFVP3EIPX8xbpfYs_28KDh52f4/edit
 - [PP] Product page (read by coordinator 2026-10-19) — https://my.cytron.io/p-ikedo-mini-sumo-robot-v2-starter
 - [PP] Tutorials linked from the page (not readable here) — https://my.cytron.io/tutorial/rc-sumo-using-maker-mini-sumo-controller · https://my.cytron.io/tutorial/maker-mini-sumo-with-ps2-controller · https://my.cytron.io/tutorial/maker-mini-sumo-with-bluetooth-controller
 - [PP: Hackster V1] Cytron Technologies, "Building A Mini Sumo Robot (500g)", 5 Dec 2019 (original Starter Kit) — https://www.hackster.io/cytron-technologies/building-a-mini-sumo-robot-500g-a7a685
-- [GH] CytronMakerSumo library (README, library.properties v1.2.3, examples RcSumo/AutoSumo/CalibrateEdgeSensors) — https://github.com/CytronTechnologies/CytronMakerSumo
+- [GH] CytronMakerSumo library (README, library.properties v1.2.3, examples RcSumo/AutoSumo/CalibrateEdgeSensors; raw example files re-read 27 Oct 2026) — https://github.com/CytronTechnologies/CytronMakerSumo
+- [PP: motor page] 6V 600RPM Medium Power DC Micro Metal Gearmotor, `SPG10MP-30K` (read 27 Oct 2026; 176 in stock; 3-month warranty) — https://my.cytron.io/p-6v-600rpm-medium-power-dc-micro-metal-gearmotor
+- [PP: Hackster screenshot] Arduino IDE 1.8.6 Tools menu (Board "Arduino/Genuino Uno", Port "COM5") in Cytron's "Ikedo Mini Sumo Robot Pro" guide — https://www.hackster.io/cytron-technologies/ikedo-mini-sumo-robot-pro-7da610
 - KB cross-references: /home/claude/kb/maker-mini-sumo.md · /home/claude/kb/maker-object.md · /home/claude/kb/maker-reflect-s.md · /home/claude/kb/maker-reflect.md
