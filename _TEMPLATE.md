@@ -8,7 +8,7 @@
 | Last verified | YYYY-MM-DD |
 | Primary source | <datasheet name + revision + link> |
 
-**Authority rule:** Datasheet [DS] > Cytron design team [DT] > Cytron product page [PP] > Cytron GitHub [GH] > chip vendor docs [VEN] > third-party [3P].
+**Authority rule:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] > Cytron GitHub [GH] = staff wiki [WIKI] > chip vendor docs [VEN] > third-party [3P].
 Where sources disagree, the higher one wins and the conflict is listed under *Conflicts*. A [3P]-only fact is never stated as a spec — it goes to *Needs verification*.
 
 ## What it is

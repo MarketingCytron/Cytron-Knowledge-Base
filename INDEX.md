@@ -11,8 +11,10 @@ This is the public edition. Internal working notes (internal document links, pri
 ## Rules for any agent using this KB
 
 1. **Only state a spec that is in a product file.** If it isn't there, say it's unconfirmed — never fill the gap from memory or a reseller page.
+2. **Authority:** Datasheet [DS] > user manual [UM] > Cytron design team [DT] > Cytron product page [PP] > Cytron GitHub [GH] = staff wiki [WIKI] > chip vendor [VEN] > third-party [3P]. Teltonika and Milesight files use the manufacturer's own order (see their sections below).
 3. **Read the *Conflicts* and *Needs verification* sections** before writing about a product. Anything listed under *Needs verification* must not appear as fact in published content.
 4. **Pin rules are hard rules.** Code and wiring must follow each file's "Pin rules and gotchas".
+5. **Never copy credentials.** Files note where a public credential exists; they never contain one.
 6. **Dated facts** (price, stock, store list) must be re-checked on the live page before going public.
 7. **Source rule by product type (decided 19 Oct 2026):**
    - **Boards, shields, sensors, motor drivers, controllers:** the Cytron datasheet is the main source (rule 2).

@@ -16,7 +16,7 @@ It is written to be used as ground truth by AI assistants that write tutorials, 
 
 ## Source rules
 
-- The **datasheet is the main source**. User manuals rank second, then the Cytron product page, Cytron GitHub, chip-vendor documentation, and finally third-party sites. For kits, accessories, consumables and services that have no datasheet, a Cytron guide book, Getting Started document, Cytron tutorial or the product page is the source, and the fact sheet says so.
+- The **datasheet is the main source**. Ranking: datasheet `[DS]` > user manual `[UM]` > Cytron design team `[DT]` > Cytron product page `[PP]` > Cytron GitHub `[GH]` = staff wiki `[WIKI]` > chip-vendor documentation `[VEN]` > third-party sites `[3P]`. Teltonika and Milesight files use the manufacturer's datasheet and user guide first, then the Cytron product page (see `INDEX.md`). For kits, accessories, consumables and services that have no datasheet, a Cytron guide book, Getting Started document, Cytron tutorial or the product page is the source, and the fact sheet says so.
 - Every fact carries a source tag: `[DS]` datasheet, `[UM]` user manual, `[DT]` Cytron design team, `[PP]` product page, `[GH]` GitHub, `[WIKI]` staff wiki, `[VEN]` chip vendor, `[3P]` third party.
 - Where sources disagree, both values are recorded under *Conflicts between sources* and the higher-ranked source wins.
 - A fact that only a third party states is never presented as a specification — it is listed under *Needs verification*.
@@ -30,4 +30,4 @@ Maker ESP32 · Robo ESP32 · Maker Feather AIoT S3 · Maker UNO · Maker UNO Plu
 
 - Always check prices, stock and availability on the live product page at [my.cytron.io](https://my.cytron.io) before publishing them.
 - This is the public edition. Internal working notes are kept privately by the Cytron marketing team.
-- Maintained by Cytron Technologies marketing. Last updated 20 Oct 2026.
+- Maintained by Cytron Technologies marketing. Last updated 28 Oct 2026.
