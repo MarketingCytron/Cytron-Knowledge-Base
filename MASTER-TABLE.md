@@ -1,6 +1,6 @@
 # Cytron Product Master Table
 
-One row per product in the Cytron Product Knowledge Base (209 products), in review-queue order. Reviewed: 209 of 209. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
+One row per product in the Cytron Product Knowledge Base (210 products), in review-queue order. Reviewed: 210 of 210. Live, sortable version: https://claude.ai/artifact/2sDxK5cq5Jqk6h5h6U8m69
 
 - **Queue** = review order: high priority first, then lowest confidence and most open checks. **KB #** = order in INDEX / ALL-fact-sheets.
 - **Open checks** = items under *Needs verification* in the product file. **Conflicts** = rows in *Conflicts between sources*. **Gaps** = [NOT STATED] fields on the fact sheet.
@@ -218,6 +218,7 @@ One row per product in the Cytron Product Knowledge Base (209 products), in revi
 | 207 | 53 | [Metal Base for Sumo Robot](sumo-metal-base.md) | `HD-BSC-MSUMO-MB` | Sumo robot kits and parts | Sold | Medium | Medium | 3 | 3 | 1 | Done (2026-10-22) | Cytron product page + team confirmation + Copper Base STL (same-size part) |
 | 208 | 83 | [Line Following Mobile Robot Bundle](line-following-mobile-robot-bundle.md) | `KIT-RBT-LF` | Robot parts and accessories | Sold | Medium | Medium | 6 | 5 | 2 | Done (2026-10-21) | Cytron tutorial (2025) + product page |
 | 209 | 84 | [Obstacle Avoidance Mobile Robot Bundle](obstacle-avoidance-mobile-robot-bundle.md) | `KIT-RBT-OA` | Robot parts and accessories | Sold | Medium | Medium | 6 | 7 | 2 | Done (2026-10-21) | Cytron tutorial (2025) + product page |
+| 210 | 210 | [AI Defect Detection Bundle](ai-defect-detection-bundle.md) | `KIT-AI-DEFECT` | AI vision kits (Raspberry Pi) | Sold | Medium | Medium | 8 | 7 | 5 | Done (2026-10-29) | Product page + 2 Cytron tutorials (Dec 2024); no kit datasheet |
 
 ## Review log
 
@@ -429,3 +430,4 @@ One row per product in the Cytron Product Knowledge Base (209 products), in revi
 - **Metal Base for Sumo Robot** (2026-10-22): Medium-low follow-up 22 Oct 2026: team confirmed steel, same size as Copper Base (8.5×5×0.3 cm); Copper Base STL measured (83.6×50.1×3.0 mm, 2× Ø3.2 holes 49 mm apart, Ø6 counterbore) — raised to Medium; open: steel plate STL, page length 8.3 vs 8.5
 - **Line Following Mobile Robot Bundle** (2026-10-21): New product added 21 Oct 2026 (Cytron OEM page + linked datasheet/drawing) — packing list vs tutorial differ; sample sketch expects a 3rd sensor
 - **Obstacle Avoidance Mobile Robot Bundle** (2026-10-21): New product added 21 Oct 2026 (Cytron OEM page + linked datasheet/drawing) — page sample code pins differ from tutorial wiring; standoff mismatch
+- **AI Defect Detection Bundle** (2026-10-29): New product added 29 Oct 2026 from the Industry category (product page, packing image, linked component pages, 2 Cytron tutorials) — Medium; open: defect classes, accuracy, OS version, camera box, page 4GB vs 8GB link

@@ -483,6 +483,15 @@ Milesight notes for every agent:
 
 - **IRIV training kits:** the PiControl Industry 4.0 Workshop kit is a PiControl **CM4** (2GB/16GB wireless); the EdgeAI Industry 4.0 Training kit is an EdgeAI CM5 8GB/32GB at **13 TOPS** (not 26). Both are 2-day courses; participants keep the kit. The Agribox (IRIV industrial series) is a PiControl CM4 4GB/32GB + IRIV IO Controller kit; who provides MyAgritech and its terms are not stated.
 - **Workshop dates are purchase variants and expire** — re-check the page before quoting one; several listed dates had passed on 2026-10-19. Only the Raspbot workshop states a participant cap, meals and a certificate.
+
+### AI vision kits (Raspberry Pi)
+
+| Product | File | Code | What it is | Primary source | Confidence |
+|---|---|---|---|---|---|
+| AI Defect Detection Bundle | [`ai-defect-detection-bundle.md`](ai-defect-detection-bundle.md) | `KIT-AI-DEFECT` | Raspberry Pi 5 (4GB) + AI HAT+ (13 TOPS) + Camera Module 3 kit with a custom OS and a pre-trained YOLOv8 defect model (HEF); 2 defect samples; for POC / FYP | Product page + 2 Cytron tutorials (Getting Started, Use Your Own Dataset, Dec 2024); no kit datasheet | **Medium** |
+
+- **AI Defect Detection Bundle:** a POC kit — no accuracy, frame rate or defect classes are stated, so never quote any. Run steps: enable the faster PCIe speed in raspi-config, check the HAT with `hailortcli fw-control identify`, then run `basic_pipelines/detection.py` with `resources/cytron.hef` and `resources/cytron-labels.json` from `hailo-rpi5-examples`. Monitor, keyboard, mouse and HDMI cable are not included. The PSU is the Raspberry Pi-brand 27W PD unit (`V-RPI-PD-27W`), not Cytron's `V-AD-27W-PD`. Don't repeat the page's YOLOv8 history sentence or its "69%" statistic.
+
 ## Quick cross-product facts (ESP32 family)
 
 | | Maker ESP32 | Robo ESP32 | Maker Feather AIoT S3 |
